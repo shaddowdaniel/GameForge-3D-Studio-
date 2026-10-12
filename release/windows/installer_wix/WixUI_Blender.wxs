@@ -26,9 +26,11 @@ Patch dialog sequence:
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Fragment>
         <UI Id="WixUI_Blender">
-            <TextStyle Id="WixUI_Font_Normal" FaceName="Tahoma" Size="8" />
-            <TextStyle Id="WixUI_Font_Bigger" FaceName="Tahoma" Size="12" />
-            <TextStyle Id="WixUI_Font_Title" FaceName="Tahoma" Size="9" Bold="yes" />
+            <!-- GameForge style: titles in the deep navy of the brand, drawn over the parchment
+                 areas of gameforge_dialog.bmp / gameforge_banner.bmp. -->
+            <TextStyle Id="WixUI_Font_Normal" FaceName="Segoe UI" Size="8" />
+            <TextStyle Id="WixUI_Font_Bigger" FaceName="Segoe UI" Size="13" Bold="yes" Red="20" Green="40" Blue="74" />
+            <TextStyle Id="WixUI_Font_Title" FaceName="Segoe UI" Size="9" Bold="yes" Red="20" Green="40" Blue="74" />
 
             <Property Id="DefaultUIFont" Value="WixUI_Font_Normal" />
             <Property Id="WixUI_Mode" Value="InstallDir" />
