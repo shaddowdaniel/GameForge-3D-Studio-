@@ -767,7 +767,14 @@ bool load_elements_schema(std::string_view cfg_text,
     for (size_t f = 0; f < types.size(); f++) {
       ElementFieldDef field;
       bool talk = false;
-      if (!parse_field_type(types[f], field, talk)) {
+      /* Schemas generated from one file (`PW_AUTO_*`) type the talk-proc list as that file's
+       * byte count; talk procs are variable-sized, so read it as `byte:AUTO`. */
+      if (lists.size() == talk_index && types.size() == 1 &&
+          trim(types[0]).substr(0, 5) == "byte:")
+      {
+        talk = true;
+      }
+      else if (!parse_field_type(types[f], field, talk)) {
         set_error(r_error, where + ": unknown field type '" + std::string(types[f]) + "'");
         return false;
       }
