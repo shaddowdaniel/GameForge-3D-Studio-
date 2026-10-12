@@ -7,21 +7,22 @@
 
     <Product Id="$(var.CPACK_WIX_PRODUCT_GUID)"
         Name="$(var.CPACK_PACKAGE_NAME)"
-        Language="1033"
+        Language="1046"
+        Codepage="1252"
         Version="$(var.CPACK_PACKAGE_VERSION)"
         Manufacturer="$(var.CPACK_PACKAGE_VENDOR)"
         UpgradeCode="$(var.CPACK_WIX_UPGRADE_GUID)">
 
-        <Package InstallerVersion="301" Compressed="yes"/>
+        <Package InstallerVersion="301" Compressed="yes" SummaryCodepage="1252"/>
 
         <Media Id="1" Cabinet="media1.cab" EmbedCab="yes"/>
-        <Condition Message="This application is only supported on Windows 8.1, Windows Server 2016, or higher.">
+        <Condition Message="O GameForge 3D Studio requer o Windows 8.1, o Windows Server 2016 ou mais recente.">
             <![CDATA[Installed OR (VersionNT >= 603)]]>
         </Condition>
         <MajorUpgrade
             Schedule="afterInstallInitialize"
             AllowSameVersionUpgrades="yes"
-            DowngradeErrorMessage="A later version of [ProductName] is already installed. Setup will now exit."/>
+            DowngradeErrorMessage="Uma versão mais nova do [ProductName] já está instalada. A instalação será encerrada."/>
 
         <WixVariable Id="WixUILicenseRtf" Value="$(var.CPACK_WIX_LICENSE_RTF)"/>
         <Property Id="WIXUI_INSTALLDIR" Value="INSTALL_ROOT"/>
@@ -49,15 +50,15 @@
                 Control="Finish" 
                 Event="DoAction" 
                 Value="LaunchBrowser">WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 and NOT Installed</Publish>
-            <ProgressText Action="RegisterBlender">Registering Blender</ProgressText>
+            <ProgressText Action="RegisterBlender">Registrando o GameForge 3D Studio</ProgressText>
         </UI>
-        <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT" Value="Learn how to support Blender" />
+        <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT" Value="Abrir atomgameforge.com" />
         <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOX" Value="1" />
         <SetProperty Id="REINSTALLMODE" Value="amus" Before="FindRelatedProducts" Sequence="first">NOT REINSTALLMODE</SetProperty>
         
         <UIRef Id="WixUI_ErrorProgressText" />
         <CustomAction Id="LaunchBrowser"
-             ExeCommand="explorer.exe &quot;https://fund.blender.org/?utm_source=blender-$(var.CPACK_PACKAGE_VERSION)-installer-msi&quot;"
+             ExeCommand="explorer.exe &quot;https://atomgameforge.com&quot;"
              Directory="INSTALL_ROOT"
               Return="asyncNoWait" >
            REMOVE="ALL"
