@@ -4,7 +4,9 @@
 
 set(INC
   ../include
+  ../asset
   ../../io/alembic
+  ../../io/angelica
   ../../io/common
   ../../io/fbx
   ../../io/grease_pencil
@@ -23,6 +25,7 @@ set(INC_SYS
 
 set(SRC
   io_alembic.cc
+  io_angelica_ops.cc
   io_cache.cc
   io_drop_import_file.cc
   io_fbx_ops.cc
@@ -37,6 +40,7 @@ set(SRC
   io_utils.cc
 
   io_alembic.hh
+  io_angelica_ops.hh
   io_cache.hh
   io_drop_import_file.hh
   io_fbx_ops.hh
@@ -97,6 +101,15 @@ if(WITH_IO_FBX)
     bf_io_fbx
   )
   add_definitions(-DWITH_IO_FBX)
+endif()
+
+if(WITH_IO_ANGELICA)
+  list(APPEND LIB
+    bf_io_angelica
+    PRIVATE bf::asset_system
+    bf_editor_asset
+  )
+  add_definitions(-DWITH_IO_ANGELICA)
 endif()
 
 if(WITH_IO_GREASE_PENCIL)
