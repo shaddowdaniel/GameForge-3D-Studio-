@@ -11,12 +11,15 @@
  *
  * The file is a versioned sequence of lists of fixed size records. Record layouts change with
  * every game build, so they are described by sELedit style `.cfg` schema files, one per file
- * version (see `release/datafiles/angelica/elements/README.md` and `angelica_elements.cc` for the
+ * version, loaded from a folder the user configures (see
+ * `release/datafiles/angelica/elements/README.md` and `angelica_elements.cc` for the
  * layout).
  *
  * Everything that is not modelled field by field (list prefixes such as the exporter tag blocks,
  * the talk-proc list, trailing bytes) is kept as raw bytes, and records keep their raw bytes too,
- * so #parse_elements followed by #write_elements reproduces the input byte for byte.
+ * so #parse_elements followed by #write_elements reproduces the input byte for byte. Versions 350+
+ * (PW 1.7.4 and later) compress each record; the original compressed bytes of records that were
+ * not changed are kept and written back as they were.
  */
 
 #pragma once
@@ -157,6 +160,14 @@ bool load_elements_schema_for_version(const std::string &folder,
 /** Decoded field value: integers, floating point numbers, UTF-8 text or opaque bytes. */
 using ElementValue = std::variant<int64_t, double, std::string, Bytes>;
 
+/** Index entry of a compressed record (versions 350+): `u32 id, u16 size` plus its data. */
+struct ElementsPackedSlot {
+  uint32_t id = 0;
+  /** Offset into #ElementsList::packed_data. */
+  uint32_t offset = 0;
+  uint16_t size = 0;
+};
+
 struct ElementsList {
   /** Index into #ElementsSchema::lists. */
   int def_index = -1;
@@ -171,6 +182,15 @@ struct ElementsList {
   Bytes raw;
   /** Talk-proc list only: number of talk procs in #raw. */
   uint32_t raw_count = 0;
+  /**
+   * Packed versions only: the compressed records as read, one slot per record of #records (slots
+   * follow #ElementsData::remove_record; records past the end have none). When writing, a
+   * record whose bytes still decompress from its slot keeps the original compressed bytes and
+   * index id, so untouched records are written byte for byte; others are compressed again.
+   */
+  std::vector<ElementsPackedSlot> packed;
+  /** Packed versions only: the compressed bytes the slots point into. */
+  Bytes packed_data;
 
   size_t size() const
   {
@@ -253,7 +273,10 @@ struct ElementsData {
 /** Bytes tolerated after the last list before a schema is considered not to match the file. */
 constexpr size_t ELEMENTS_MAX_TRAILING = 4096;
 
-/** Versions 350 and later (except 1488 and >= 30000) compress every list: not supported. */
+/**
+ * Versions 350 and later (PW 1.7.4+, except 1488 and >= 30000) compress every record with MPPC
+ * and store extra exporter blocks after the header (kept in the prefix of list 0).
+ */
 bool elements_version_is_packed(uint32_t version);
 /** Versions 191..349 store `i32 list_type` before and `u32 item_size` after each record count. */
 bool elements_version_has_list_headers(uint32_t version);
@@ -276,6 +299,15 @@ bool write_elements(const ElementsData &data,
                     const ElementsSchema &schema,
                     Bytes &r_out,
                     std::string *r_error);
+
+/**
+ * MPPC compression of packed records, the bit stream of `GNET::mppc`: records up to 8192 bytes
+ * are one block (`compress` / `uncompress`), larger ones a sequence of blocks of at most 8192
+ * input bytes each preceded by a u16 (`compress2` / `uncompress2`: bit 15 set for a compressed
+ * block, else the block is stored). Decompression fails unless exactly `size` bytes result.
+ */
+bool mppc_compress_record(ByteSpan data, Bytes &r_packed);
+bool mppc_decompress_record(ByteSpan packed, size_t size, Bytes &r_data);
 
 /* Talk procs (NPC dialogue trees, `talk_proc` in ExpTypes.h), decoded read-only from the raw list.
  */

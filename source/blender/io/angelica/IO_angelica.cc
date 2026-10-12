@@ -8,6 +8,7 @@
 
 #include <cctype>
 
+#include "BKE_appdir.hh"
 #include "BKE_collection.hh"
 #include "BKE_report.hh"
 
@@ -33,6 +34,30 @@ const std::vector<std::string> &supported_extensions()
   static const std::vector<std::string> extensions = {
       ".pck", ".ecm", ".smd", ".ski", ".bon", ".stck", ".bmd", ".mox", ".trn2", ".hmap"};
   return extensions;
+}
+
+std::string schemas_directory(const std::string &kind)
+{
+  const std::optional<std::string> cache = BKE_appdir_folder_id_user_notest(
+      BLENDER_USER_DATAFILES, "gameforge_plugins" SEP_STR "estudio-angelica-schemas");
+  if (!cache) {
+    return {};
+  }
+  Bytes current;
+  if (!read_file(path_join(*cache, "current.txt"), current)) {
+    return {};
+  }
+  std::string version(current.begin(), current.end());
+  while (!version.empty() && std::isspace(uint8_t(version.back()))) {
+    version.pop_back();
+  }
+  if (version.empty() || version.find_first_of("/\\:") != std::string::npos ||
+      version.find("..") != std::string::npos)
+  {
+    return {};
+  }
+  const std::string dir = path_join(path_join(*cache, version), kind);
+  return BLI_is_dir(dir.c_str()) ? dir : std::string();
 }
 
 /** Engine path of a file that lies inside the client folder, empty otherwise. */

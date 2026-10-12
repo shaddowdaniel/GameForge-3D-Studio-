@@ -17,16 +17,22 @@ set(INC_SYS
 set(SRC
   IO_angelica.cc
   IO_angelica_character.cc
+  formats/angelica_aipolicy.cc
   formats/angelica_anim.cc
+  formats/angelica_domain.cc
   formats/angelica_elements.cc
+  formats/angelica_gshop.cc
   formats/angelica_hmap.cc
   formats/angelica_model.cc
   formats/angelica_npcgen.cc
+  formats/angelica_pathmap.cc
   formats/angelica_pck.cc
+  formats/angelica_precinct.cc
   formats/angelica_reader.cc
   formats/angelica_skeleton.cc
   formats/angelica_skin.cc
   formats/angelica_static.cc
+  formats/angelica_tasks.cc
   formats/angelica_terrain.cc
   formats/angelica_vfs.cc
   importer/angelica_import_character.cc
@@ -37,16 +43,22 @@ set(SRC
 
   IO_angelica.hh
   IO_angelica_character.hh
+  formats/angelica_aipolicy.hh
   formats/angelica_anim.hh
+  formats/angelica_domain.hh
   formats/angelica_elements.hh
+  formats/angelica_gshop.hh
   formats/angelica_hmap.hh
   formats/angelica_model.hh
   formats/angelica_npcgen.hh
+  formats/angelica_pathmap.hh
   formats/angelica_pck.hh
+  formats/angelica_precinct.hh
   formats/angelica_reader.hh
   formats/angelica_skeleton.hh
   formats/angelica_skin.hh
   formats/angelica_static.hh
+  formats/angelica_tasks.hh
   formats/angelica_terrain.hh
   formats/angelica_vfs.hh
   importer/angelica_import_character.hh
@@ -88,6 +100,7 @@ if(WITH_GTESTS)
   set(TEST_SRC
     tests/angelica_character_test.cc
     tests/angelica_data_formats_test.cc
+    tests/angelica_game_data_test.cc
     tests/angelica_model_formats_test.cc
     tests/angelica_world_formats_test.cc
   )

@@ -256,6 +256,12 @@ add_python_test(
   ${CMAKE_CURRENT_LIST_DIR}/gameforge_account_test.py
 )
 
+# Studio plugins downloaded from atomgameforge.com (data schemas), plain Python with a fake portal.
+add_python_test(
+  script_gameforge_plugins
+  ${CMAKE_CURRENT_LIST_DIR}/gameforge_plugins_test.py
+)
+
 # Blender is launched by the script so each test controls the command-line arguments & preferences
 # `add_blender_test` hard-codes these arguments which isn't compatible with the tests,
 # see `TEST_BLENDER_EXE_PARAMS`.

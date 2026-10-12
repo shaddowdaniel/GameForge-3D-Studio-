@@ -23,6 +23,7 @@ _modules = [
     "file",
     "gameforge_character",
     "gameforge_login",
+    "gameforge_plugins",
     "geometry_nodes",
     "grease_pencil",
     "image",
@@ -76,6 +77,7 @@ def register():
     copy_global_transform.register()
     project.register()
     gameforge_login.register()
+    gameforge_plugins.register()
     gameforge_character.register()
 
 
@@ -88,6 +90,7 @@ def unregister():
 
     gameforge_character.unregister()
     gameforge_login.unregister()
+    gameforge_plugins.unregister()
     bone_selection_sets.unregister()
     copy_global_transform.unregister()
     project.unregister()

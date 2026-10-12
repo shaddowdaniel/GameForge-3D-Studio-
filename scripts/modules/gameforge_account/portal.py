@@ -46,6 +46,7 @@ _DEFAULT_ANON_KEY = (
 )
 _DEFAULT_PLANS_URL = "https://atomgameforge.com/planos"
 _TIMEOUT_SEC = 15.0
+_DOWNLOAD_TIMEOUT_SEC = 120.0
 
 
 @dataclass(frozen=True)
@@ -217,3 +218,36 @@ class Portal:
 
     def heartbeat(self, session_token):
         return self._call("heartbeat-session", session_token=session_token)
+
+    # Plugins (`plugin-download`): data and add-ons published in the portal's /admin, gated by plan.
+
+    def plugin_versions(self, slug, session_token):
+        """``{"current_version": str, "versions": [{"version", "published_at", "changelog"}]}``."""
+        return self._call("plugin-download", body={"plugin_id": slug, "list": True}, session_token=session_token)
+
+    def plugin_download(self, slug, session_token, version=None):
+        """
+        A short lived signed URL for one version (the current one by default):
+        ``{"version", "download_url", "file_hash", "signature", "expires_in"}``.
+        """
+        body = {"plugin_id": slug}
+        if version:
+            body["version"] = version
+        result = self._call("plugin-download", body=body, session_token=session_token)
+        if not result.get("download_url") or not result.get("file_hash") or not result.get("version"):
+            raise PortalError("resposta inesperada do plugin-download")
+        return result
+
+    def fetch(self, url, *, max_bytes):
+        """Download a signed storage URL (no portal headers), refusing anything larger than ``max_bytes``."""
+        request = urllib.request.Request(url, method="GET")
+        try:
+            with self._opener.open(request, timeout=_DOWNLOAD_TIMEOUT_SEC) as response:
+                data = response.read(max_bytes + 1)
+        except urllib.error.HTTPError as ex:
+            raise PortalError("download recusado ({:d})".format(ex.code), status=ex.code) from ex
+        except (urllib.error.URLError, OSError, ssl.SSLError) as ex:
+            raise NetworkError("Não foi possível baixar de atomgameforge.com ({:s})".format(str(ex))) from ex
+        if len(data) > max_bytes:
+            raise PortalError("arquivo maior que o esperado")
+        return data
