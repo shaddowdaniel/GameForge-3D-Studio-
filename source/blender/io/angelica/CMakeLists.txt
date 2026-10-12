@@ -17,8 +17,10 @@ set(INC_SYS
 set(SRC
   IO_angelica.cc
   formats/angelica_anim.cc
+  formats/angelica_elements.cc
   formats/angelica_hmap.cc
   formats/angelica_model.cc
+  formats/angelica_npcgen.cc
   formats/angelica_pck.cc
   formats/angelica_reader.cc
   formats/angelica_skeleton.cc
@@ -33,8 +35,10 @@ set(SRC
 
   IO_angelica.hh
   formats/angelica_anim.hh
+  formats/angelica_elements.hh
   formats/angelica_hmap.hh
   formats/angelica_model.hh
+  formats/angelica_npcgen.hh
   formats/angelica_pck.hh
   formats/angelica_reader.hh
   formats/angelica_skeleton.hh
@@ -78,6 +82,7 @@ blender_add_lib(bf_io_angelica "${SRC}" "${INC}" "${INC_SYS}" "${LIB}")
 
 if(WITH_GTESTS)
   set(TEST_SRC
+    tests/angelica_data_formats_test.cc
     tests/angelica_model_formats_test.cc
     tests/angelica_world_formats_test.cc
   )
