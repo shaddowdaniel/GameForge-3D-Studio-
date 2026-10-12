@@ -1269,7 +1269,11 @@ TEST(angelica_model_formats, real_files)
     EXPECT_TRUE(ok) << path << ": " << error;
     parsed++;
   }
-  EXPECT_GT(parsed, 0) << "no model files found below " << root;
+  if (parsed == 0) {
+    /* ANGELICA_TEST_DATA is shared with the other real-file tests; a client folder keeps its
+     * models inside packages, which `angelica_pck.real_packages` covers. */
+    GTEST_SKIP() << "no loose model files below " << root;
+  }
 }
 
 /** \} */
