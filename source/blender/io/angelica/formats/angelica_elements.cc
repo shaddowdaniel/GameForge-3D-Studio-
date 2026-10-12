@@ -30,8 +30,19 @@
  *                                  u32 tag (0xEE35679F), u32 len, len bytes (hardware info)
  * The bytes are kept verbatim so they round-trip exactly.
  *
- * Versions 350 and later (PW 1.7.4+) store every list compressed with a different header and are
- * rejected. `.cfg` field sizes are bytes: `wstring:64` is 32 UTF-16 code units.
+ * Versions 350 and later (PW 1.7.4+, except 1488 and >= 30000, `array<T>::load` in the 1.7.6
+ * server) are "packed":
+ *   after the header:   u32 time_t, u32 len + org data, u32 tag + u32 len + computer name +
+ *                       u32 time_t, u32 tag + u32 len + hardware info   (prefix of list 0)
+ *   each list:          i32 count, and when count > 0: count * { u32 id, u16 compressed size },
+ *                       u32 total compressed size, the compressed records one after the other
+ *   each record is MPPC compressed (see the MPPC section) and decompresses to the record size.
+ *   The talk-proc list (last) is stored as above. No list_type / item_size words.
+ * The compressed bytes of every record are kept, and written back for records whose bytes did
+ * not change, so an unedited round trip is byte identical even though the original encoder's
+ * output is not guaranteed to be reproducible (it reads an uninitialized hash table).
+ *
+ * `.cfg` field sizes are bytes: `wstring:64` is 32 UTF-16 code units.
  *
  * Cross-checked against the engine (`elementdataman.cpp`), sELedit and RAE ("Universal data
  * Editor") readers.
@@ -346,6 +357,44 @@ ElementValue decode_field(const ElementFieldDef &f, const uint8_t *p)
       return fixed_gbk_to_utf8(ByteSpan(p, f.size));
   }
   return int64_t(0);
+}
+
+/** Read a u32 length and skip that many bytes. */
+bool skip_sized_block(BinaryReader &r)
+{
+  const uint32_t len = r.u32();
+  if (r.failed() || len > MAX_TAG_BLOCK || len > r.remaining()) {
+    return false;
+  }
+  r.skip(len);
+  return !r.failed();
+}
+
+/**
+ * Read the header blocks of packed versions (`elementdataman::load_data`): u32 time_t, then
+ * u32 len + org data, u32 tag + u32 len + computer name + u32 time_t, u32 tag + u32 len +
+ * hardware info.
+ */
+bool read_packed_header(BinaryReader &r, Bytes &r_prefix, std::string *r_error)
+{
+  const size_t start = r.tell();
+  const ByteSpan all = r.data();
+  r.skip(4);
+  bool ok = skip_sized_block(r);
+  if (ok) {
+    r.skip(4);
+    ok = skip_sized_block(r);
+  }
+  if (ok) {
+    r.skip(8);
+    ok = skip_sized_block(r);
+  }
+  if (!ok || r.failed()) {
+    set_error(r_error, "elements.data: invalid exporter blocks after the header");
+    return false;
+  }
+  r_prefix.assign(all.begin() + start, all.begin() + r.tell());
+  return true;
 }
 
 /** Read an AUTO prefix block and return its raw bytes. */
@@ -853,6 +902,310 @@ bool load_elements_schema_for_version(const std::string &folder,
 /** \} */
 
 /* -------------------------------------------------------------------- */
+/** \name MPPC
+ *
+ * The bit stream of `GNET::mppc` (an RFC 2118 variant without history reset bits), most
+ * significant bit first, padded with zero bits to a whole byte:
+ *
+ *   literal < 0x80     0 + 7 bits
+ *   literal >= 0x80    10 + 7 low bits
+ *   offset < 64        1111 + 6 bits
+ *   offset < 320       1110 + 8 bits of (offset - 64)
+ *   offset < 8192      110 + 13 bits of (offset - 320)
+ *   then the length:   0 for 3, else k ones, a zero and k + 1 bits for 2^(k+1) + bits (k <= 11)
+ *
+ * The encoder follows the reference encoder's greedy match search (a table of the last position
+ * of every 2 byte value) so that it produces the same bytes for the same input.
+ * \{ */
+
+namespace {
+
+constexpr size_t MPPC_BLOCK = 8192;
+/** The reference decoder refuses blocks larger than this. */
+constexpr size_t MPPC_MAX_INPUT = MPPC_BLOCK * 9 / 8 + 1;
+
+class MppcBitWriter {
+ public:
+  explicit MppcBitWriter(Bytes &out) : out_(out) {}
+
+  void put(const uint32_t value, const int bits)
+  {
+    acc_ = (acc_ << bits) | (uint64_t(value) & ((uint64_t(1) << bits) - 1));
+    nbits_ += bits;
+    while (nbits_ >= 8) {
+      nbits_ -= 8;
+      out_.push_back(uint8_t(acc_ >> nbits_));
+    }
+    acc_ &= (uint64_t(1) << nbits_) - 1;
+  }
+  void put_literal(const uint8_t c)
+  {
+    if (c < 0x80) {
+      put(c, 8);
+    }
+    else {
+      put(uint32_t(c & 0x7F) | 0x100, 9);
+    }
+  }
+  void put_offset(const uint32_t off)
+  {
+    if (off < 64) {
+      put(0x3C0 | off, 10);
+    }
+    else if (off < 320) {
+      put(0xE00 | (off - 64), 12);
+    }
+    else {
+      put(0xC000 | (off - 320), 16);
+    }
+  }
+  void put_length(const uint32_t len)
+  {
+    if (len < 4) {
+      put(0, 1);
+      return;
+    }
+    /* k ones and a zero, then k + 1 low bits. */
+    int k = 1;
+    while ((len >> (k + 2)) != 0) {
+      k++;
+    }
+    const uint32_t prefix = ((1u << k) - 1) << 1;
+    put((prefix << (k + 1)) | (len & ((1u << (k + 1)) - 1)), 2 * k + 2);
+  }
+  void flush()
+  {
+    if (nbits_ > 0) {
+      put(0, 8 - nbits_);
+    }
+  }
+
+ private:
+  Bytes &out_;
+  uint64_t acc_ = 0;
+  int nbits_ = 0;
+};
+
+/** Reusable encoder state (the last position of every 2 byte value), reset per block cheaply. */
+class MppcEncoder {
+ public:
+  MppcEncoder() : last_(65536, 0), stamp_(65536, 0) {}
+
+  /** Compress one block of at most #MPPC_BLOCK bytes, appending to `out`. */
+  void compress_block(const uint8_t *in, const size_t size, Bytes &out)
+  {
+    if (++generation_ == 0) {
+      std::fill(stamp_.begin(), stamp_.end(), 0);
+      generation_ = 1;
+    }
+    MppcBitWriter w(out);
+    size_t lit = 0; /* Next byte not yet encoded. */
+    while (size - lit > 2) {
+      const uint16_t key = load_le<uint16_t>(in + lit);
+      const bool known = stamp_[key] == generation_;
+      const size_t prev = last_[key];
+      last_[key] = uint32_t(lit);
+      stamp_[key] = generation_;
+      if (!known || prev >= lit || in[prev] != in[lit] || in[prev + 1] != in[lit + 1] ||
+          in[prev + 2] != in[lit + 2])
+      {
+        w.put_literal(in[lit++]);
+        continue;
+      }
+      size_t p = prev + 3;
+      size_t s = lit + 3;
+      while (s < size && in[p] == in[s]) {
+        p++;
+        s++;
+      }
+      w.put_offset(uint32_t(s - p));
+      w.put_length(uint32_t(s - lit));
+      lit = s;
+    }
+    while (lit < size) {
+      w.put_literal(in[lit++]);
+    }
+    w.flush();
+  }
+
+  /** `GNET::mppc::compress` (one block) or `compress2` (2 byte framed chunks) by size. */
+  bool compress_record(ByteSpan in, Bytes &out)
+  {
+    out.clear();
+    if (in.empty()) {
+      return false;
+    }
+    if (in.size() <= MPPC_BLOCK) {
+      compress_block(in.data(), in.size(), out);
+      return !out.empty();
+    }
+    Bytes chunk;
+    for (size_t pos = 0; pos < in.size(); pos += MPPC_BLOCK) {
+      const size_t n = std::min(MPPC_BLOCK, in.size() - pos);
+      chunk.clear();
+      compress_block(in.data() + pos, n, chunk);
+      const size_t at = out.size();
+      out.resize(at + 2);
+      if (!chunk.empty() && chunk.size() < n) {
+        store_le(out.data() + at, uint16_t(chunk.size() | 0x8000));
+        out.insert(out.end(), chunk.begin(), chunk.end());
+      }
+      else {
+        store_le(out.data() + at, uint16_t(n));
+        out.insert(out.end(), in.begin() + ptrdiff_t(pos), in.begin() + ptrdiff_t(pos + n));
+      }
+    }
+    return true;
+  }
+
+ private:
+  std::vector<uint32_t> last_;
+  std::vector<uint32_t> stamp_;
+  uint32_t generation_ = 0;
+};
+
+/**
+ * Decode one MPPC block into `out[0, out_size)`. Returns the number of bytes produced, or -1 on
+ * malformed input (references before the start, output overflow, invalid length codes).
+ */
+int64_t mppc_decompress_block(const uint8_t *in,
+                              const size_t in_size,
+                              uint8_t *out,
+                              const size_t out_size)
+{
+  if (in_size > MPPC_MAX_INPUT) {
+    return -1;
+  }
+  const uint64_t total_bits = uint64_t(in_size) * 8;
+  uint64_t pos = 0;
+  /* 32 bits starting at bit `at`, zeros past the end. */
+  const auto peek = [&](const uint64_t at) {
+    uint64_t v = 0;
+    const size_t byte = size_t(at >> 3);
+    for (size_t i = 0; i < 5; i++) {
+      v = (v << 8) | (byte + i < in_size ? in[byte + i] : 0);
+    }
+    return uint32_t(v >> (8 - (at & 7)));
+  };
+  size_t o = 0;
+  while (total_bits - pos > 7) {
+    uint32_t v = peek(pos);
+    if (v < 0x80000000u) {
+      if (o >= out_size) {
+        return -1;
+      }
+      out[o++] = uint8_t(v >> 24);
+      pos += 8;
+      continue;
+    }
+    if (v < 0xC0000000u) {
+      if (o >= out_size) {
+        return -1;
+      }
+      out[o++] = uint8_t(((v >> 23) | 0x80) & 0xFF);
+      pos += 9;
+      continue;
+    }
+    size_t off;
+    if (v >= 0xF0000000u) {
+      off = (v >> 22) & 0x3F;
+      pos += 10;
+    }
+    else if (v >= 0xE0000000u) {
+      off = ((v >> 20) & 0xFF) + 64;
+      pos += 12;
+    }
+    else {
+      off = ((v >> 16) & 0x1FFF) + 320;
+      pos += 16;
+    }
+    v = peek(pos);
+    int k = 0;
+    while (k < 12 && (v & (0x80000000u >> k))) {
+      k++;
+    }
+    size_t len;
+    if (k == 0) {
+      len = 3;
+      pos += 1;
+    }
+    else if (k >= 12) {
+      return -1;
+    }
+    else {
+      const uint32_t bits = (v << (k + 1)) >> (32 - (k + 1));
+      len = (size_t(1) << (k + 1)) | bits;
+      pos += uint64_t(2 * k + 2);
+    }
+    if (off == 0 || off > o || len > out_size - o) {
+      return -1;
+    }
+    /* Byte by byte: the source may overlap the destination (run lengths). */
+    for (size_t i = 0; i < len; i++, o++) {
+      out[o] = out[o - off];
+    }
+  }
+  return int64_t(o);
+}
+
+/** `GNET::mppc::uncompress` / `uncompress2` by size, the result must be exactly `out_size`. */
+bool mppc_decompress_into(const uint8_t *in, size_t in_size, uint8_t *out, const size_t out_size)
+{
+  if (out_size == 0) {
+    return false;
+  }
+  if (out_size <= MPPC_BLOCK) {
+    return mppc_decompress_block(in, in_size, out, out_size) == int64_t(out_size);
+  }
+  size_t o = 0;
+  while (in_size > 2 && o < out_size) {
+    const uint16_t header = load_le<uint16_t>(in);
+    const size_t n = header & 0x7FFF;
+    if (n == 0 || n + 2 > in_size || n > MPPC_BLOCK) {
+      return false;
+    }
+    if (header & 0x8000) {
+      const int64_t produced = mppc_decompress_block(
+          in + 2, n, out + o, std::min(out_size - o, MPPC_BLOCK));
+      if (produced <= 0) {
+        return false;
+      }
+      o += size_t(produced);
+    }
+    else {
+      if (n > out_size - o) {
+        return false;
+      }
+      std::memcpy(out + o, in + 2, n);
+      o += n;
+    }
+    in += n + 2;
+    in_size -= n + 2;
+  }
+  return in_size == 0 && o == out_size;
+}
+
+}  // namespace
+
+bool mppc_compress_record(ByteSpan data, Bytes &r_packed)
+{
+  MppcEncoder encoder;
+  return encoder.compress_record(data, r_packed);
+}
+
+bool mppc_decompress_record(ByteSpan packed, const size_t size, Bytes &r_data)
+{
+  r_data.assign(size, 0);
+  if (!mppc_decompress_into(packed.data(), packed.size(), r_data.data(), size)) {
+    r_data.clear();
+    return false;
+  }
+  return true;
+}
+
+/** \} */
+
+/* -------------------------------------------------------------------- */
 /** \name Parse / write
  * \{ */
 
@@ -880,6 +1233,138 @@ bool peek_elements_version(ByteSpan data, uint32_t &r_version, std::string *r_er
   return true;
 }
 
+namespace {
+
+/**
+ * Read the records of a packed list after its count (`array<T>::load` of packed versions):
+ * count * { u32 id, u16 compressed size }, u32 total compressed size, the compressed records.
+ */
+bool read_packed_list(BinaryReader &r,
+                      const ElementListDef &def,
+                      const int32_t count,
+                      ElementsList &list,
+                      const std::string &where,
+                      std::string *r_error)
+{
+  if (count == 0) {
+    return true;
+  }
+  if (def.record_size == 0 || uint64_t(count) * 6 + 4 > r.remaining() ||
+      uint64_t(count) * def.record_size > (uint64_t(1) << 31))
+  {
+    set_error(r_error, where + ": invalid record count " + std::to_string(count));
+    return false;
+  }
+  list.packed.resize(size_t(count));
+  uint64_t sum = 0;
+  for (ElementsPackedSlot &slot : list.packed) {
+    slot.id = r.u32();
+    slot.size = r.u16();
+    slot.offset = uint32_t(sum);
+    sum += slot.size;
+  }
+  const uint32_t total = r.u32();
+  if (r.failed() || total != sum || total > r.remaining()) {
+    set_error(r_error,
+              where + ": compressed size " + std::to_string(total) + " does not match the index");
+    return false;
+  }
+  /* A 34 bit code yields at most 8191 bytes, so bound the output before allocating it. */
+  if (uint64_t(count) * def.record_size > uint64_t(total) * 2048) {
+    set_error(r_error,
+              where + ": records cannot decompress from " + std::to_string(total) + " bytes");
+    return false;
+  }
+  const ByteSpan packed = r.read_span(total);
+  list.packed_data.assign(packed.begin(), packed.end());
+  list.records.assign(size_t(count) * def.record_size, 0);
+  for (size_t i = 0; i < list.packed.size(); i++) {
+    const ElementsPackedSlot &slot = list.packed[i];
+    if (!mppc_decompress_into(list.packed_data.data() + slot.offset,
+                              slot.size,
+                              list.records.data() + i * def.record_size,
+                              def.record_size))
+    {
+      set_error(r_error,
+                where + ": record " + std::to_string(i) + " (id " + std::to_string(slot.id) +
+                    ") does not decompress to the record size " + std::to_string(def.record_size) +
+                    " (schema does not match the file)");
+      return false;
+    }
+  }
+  return true;
+}
+
+/** Write the records of a packed list after its count, see #read_packed_list. */
+bool write_packed_list(const ElementsList &list,
+                       const ElementListDef &def,
+                       MppcEncoder &encoder,
+                       Bytes &out,
+                       std::string *r_error)
+{
+  const size_t count = list.records.size() / def.record_size;
+  if (count == 0) {
+    return true;
+  }
+  Bytes blobs;
+  blobs.reserve(list.packed_data.size());
+  Bytes check(def.record_size);
+  Bytes compressed;
+  const size_t index_at = out.size();
+  out.resize(index_at + count * 6 + 4);
+  for (size_t i = 0; i < count; i++) {
+    const uint8_t *record = list.records.data() + i * def.record_size;
+    uint32_t id = 0;
+    const uint8_t *blob = nullptr;
+    size_t blob_size = 0;
+    if (i < list.packed.size()) {
+      const ElementsPackedSlot &slot = list.packed[i];
+      if (size_t(slot.offset) + slot.size <= list.packed_data.size() &&
+          mppc_decompress_into(
+              list.packed_data.data() + slot.offset, slot.size, check.data(), check.size()) &&
+          std::memcmp(check.data(), record, def.record_size) == 0)
+      {
+        id = slot.id;
+        blob = list.packed_data.data() + slot.offset;
+        blob_size = slot.size;
+      }
+    }
+    if (!blob) {
+      if (!encoder.compress_record(ByteSpan(record, def.record_size), compressed) ||
+          compressed.size() > 0xFFFF)
+      {
+        set_error(r_error,
+                  "write elements: record " + std::to_string(i) + " of " + def.name +
+                      " does not compress to 64 KiB");
+        return false;
+      }
+      if (!def.fields.empty()) {
+        const ElementFieldDef &f = def.fields[0];
+        if (f.type == ElementFieldType::Int32 || f.type == ElementFieldType::UInt32) {
+          id = load_le<uint32_t>(record + f.offset);
+        }
+        else if (f.type == ElementFieldType::Int16) {
+          id = uint32_t(int32_t(load_le<int16_t>(record + f.offset)));
+        }
+      }
+      blob = compressed.data();
+      blob_size = compressed.size();
+    }
+    store_le(out.data() + index_at + i * 6, id);
+    store_le(out.data() + index_at + i * 6 + 4, uint16_t(blob_size));
+    blobs.insert(blobs.end(), blob, blob + blob_size);
+  }
+  if (blobs.size() > std::numeric_limits<uint32_t>::max()) {
+    set_error(r_error, "write elements: list " + def.name + " is too large");
+    return false;
+  }
+  store_le(out.data() + index_at + count * 6, uint32_t(blobs.size()));
+  out.insert(out.end(), blobs.begin(), blobs.end());
+  return true;
+}
+
+}  // namespace
+
 bool parse_elements(ByteSpan data,
                     const ElementsSchema &schema,
                     ElementsData &r_data,
@@ -900,12 +1385,7 @@ bool parse_elements(ByteSpan data,
     set_error(r_error, "elements.data: empty schema");
     return false;
   }
-  if (elements_version_is_packed(version)) {
-    set_error(r_error,
-              "elements.data: version " + std::to_string(version) +
-                  " stores compressed lists, which are not supported");
-    return false;
-  }
+  const bool packed = elements_version_is_packed(version);
   const bool list_headers = elements_version_has_list_headers(version);
 
   BinaryReader r(data);
@@ -918,7 +1398,12 @@ bool parse_elements(ByteSpan data,
     list.record_size = def.record_size;
     const std::string where = "elements.data: list " + std::to_string(i) + " " + def.name;
 
-    if (def.prefix_auto) {
+    if (packed && i == 0) {
+      if (!read_packed_header(r, list.prefix, r_error)) {
+        return false;
+      }
+    }
+    else if (def.prefix_auto) {
       if (!read_auto_prefix(r, i, def.name, list.prefix, r_error)) {
         return false;
       }
@@ -959,6 +1444,12 @@ bool parse_elements(ByteSpan data,
         return false;
       }
     }
+    if (packed) {
+      if (!read_packed_list(r, def, count, list, where, r_error)) {
+        return false;
+      }
+      continue;
+    }
     const uint64_t bytes = uint64_t(count) * def.record_size;
     if (bytes > r.remaining()) {
       set_error(r_error,
@@ -995,10 +1486,8 @@ bool write_elements(const ElementsData &data,
     return false;
   }
   const uint32_t version = data.header & 0xFFFF;
-  if (elements_version_is_packed(version)) {
-    set_error(r_error, "write elements: compressed versions are not supported");
-    return false;
-  }
+  const bool packed = elements_version_is_packed(version);
+  MppcEncoder encoder;
   const bool list_headers = elements_version_has_list_headers(version);
   size_t total = 4 + data.trailing.size();
   for (const ElementsList &list : data.lists) {
@@ -1009,7 +1498,7 @@ bool write_elements(const ElementsData &data,
   for (size_t i = 0; i < schema.lists.size(); i++) {
     const ElementListDef &def = schema.lists[i];
     const ElementsList &list = data.lists[i];
-    if (!def.prefix_auto && list.prefix.size() != def.prefix_size) {
+    if (!def.prefix_auto && !(packed && i == 0) && list.prefix.size() != def.prefix_size) {
       set_error(r_error, "write elements: list " + def.name + " has a prefix of the wrong size");
       return false;
     }
@@ -1032,6 +1521,12 @@ bool write_elements(const ElementsData &data,
       put_u32(r_out, uint32_t(list.list_type));
     }
     put_u32(r_out, uint32_t(list.records.size() / def.record_size));
+    if (packed) {
+      if (!write_packed_list(list, def, encoder, r_out, r_error)) {
+        return false;
+      }
+      continue;
+    }
     if (list_headers) {
       put_u32(r_out, def.record_size);
     }
@@ -1392,6 +1887,10 @@ bool ElementsData::remove_record(const int list, const size_t record)
   Bytes &records = lists[list].records;
   const auto first = records.begin() + ptrdiff_t(record * def->record_size);
   records.erase(first, first + def->record_size);
+  std::vector<ElementsPackedSlot> &packed = lists[list].packed;
+  if (record < packed.size()) {
+    packed.erase(packed.begin() + ptrdiff_t(record));
+  }
   return true;
 }
 

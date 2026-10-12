@@ -6,10 +6,11 @@
  * \ingroup angelica
  *
  * Tests for the game data formats: `elements.data` (with sELedit `.cfg` schemas) and the server
- * spawn file `npcgen.data`. Files are synthesized in memory. When the environment variable
- * `ANGELICA_TEST_DATA` points at a client `element` folder, `data/elements.data` is additionally
- * parsed with the schemas in `release/datafiles/angelica/elements` (or the folder named by
- * `ANGELICA_ELEMENTS_SCHEMAS`) and written back byte for byte.
+ * spawn file `npcgen.data`. Files and schemas are synthesized in memory. When the environment
+ * variable `ANGELICA_TEST_DATA` points at a client `element` folder, `data/elements.data` is
+ * additionally parsed and written back byte for byte, with the `.cfg` schemas of the folder named
+ * by `ANGELICA_ELEMENTS_SCHEMAS` (or a `schemas` / `configs` folder inside `ANGELICA_TEST_DATA`).
+ * No schemas ship with the repository.
  */
 
 #include <algorithm>
@@ -433,12 +434,11 @@ TEST(angelica_elements, rejects_malformed)
   Bytes bad = file;
   bad[0] = 0;
   EXPECT_FALSE(parse_elements(bad, schema, data, &err));
-  /* Compressed (1.7.4+) versions are refused. */
+  /* The same bytes read as a packed (1.7.4+) version do not parse. */
   bad = file;
   bad[0] = uint8_t(352 & 0xFF);
   bad[1] = uint8_t(352 >> 8);
   EXPECT_FALSE(parse_elements(bad, schema, data, &err));
-  EXPECT_NE(err.find("compressed"), std::string::npos) << err;
   /* Huge record count. */
   bad = file;
   std::memset(bad.data() + 8, 0x7F, 4);
@@ -549,6 +549,297 @@ TEST(angelica_elements, text_helpers)
   if (utf8_to_gbk("\xE6\x80\xAA\xE7\x89\xA9", gbk)) {
     EXPECT_EQ(gbk, "\xB9\xD6\xCE\xEF");
     EXPECT_EQ(gbk_to_utf8(gbk), "\xE6\x80\xAA\xE7\x89\xA9");
+  }
+}
+
+/** \} */
+
+/* -------------------------------------------------------------------- */
+/** \name elements.data packed versions (350+, PW 1.7.4 and later)
+ * \{ */
+
+TEST(angelica_elements, mppc)
+{
+  /* Streams produced by the reference `GNET::mppc::compress`. */
+  const std::vector<std::pair<std::string, Bytes>> known = {
+      {"aaaaaaaaaa", {0x61, 0xF0, 0x71}},
+      {std::string("abcabcabcabc\x80\xFF", 14), {0x61, 0x62, 0x63, 0xF0, 0xF1, 0x80, 0x5F, 0xC0}},
+      {"Perfect World Perfect World Perfect World!",
+       {0x50,
+        0x65,
+        0x72,
+        0x66,
+        0x65,
+        0x63,
+        0x74,
+        0x20,
+        0x57,
+        0x6F,
+        0x72,
+        0x6C,
+        0x64,
+        0x20,
+        0xF3,
+        0xBA,
+        0xC8,
+        0x40}},
+  };
+  for (const auto &[text, stream] : known) {
+    const ByteSpan in(reinterpret_cast<const uint8_t *>(text.data()), text.size());
+    Bytes packed, back;
+    ASSERT_TRUE(mppc_compress_record(in, packed));
+    EXPECT_EQ(packed, stream) << text;
+    ASSERT_TRUE(mppc_decompress_record(stream, text.size(), back)) << text;
+    EXPECT_EQ(std::string(back.begin(), back.end()), text);
+    /* The size must match exactly. */
+    EXPECT_FALSE(mppc_decompress_record(stream, text.size() + 1, back));
+    EXPECT_FALSE(mppc_decompress_record(stream, text.size() - 1, back));
+  }
+
+  /* Round trips, single blocks and framed blocks (records above 8192 bytes). */
+  std::mt19937 rng(7);
+  for (int i = 0; i < 300; i++) {
+    const size_t size = 1 + rng() % (i % 4 == 0 ? 40000 : 8192);
+    Bytes in(size);
+    for (size_t k = 0; k < size; k++) {
+      switch (i % 3) {
+        case 0:
+          in[k] = uint8_t(rng());
+          break;
+        case 1:
+          in[k] = (k % 23 < 4) ? uint8_t(rng()) : 0;
+          break;
+        default:
+          in[k] = uint8_t(0x80 + rng() % 3);
+          break;
+      }
+    }
+    Bytes packed, back;
+    ASSERT_TRUE(mppc_compress_record(in, packed));
+    ASSERT_TRUE(mppc_decompress_record(packed, size, back)) << size;
+    EXPECT_EQ(back, in);
+  }
+  Bytes packed;
+  EXPECT_FALSE(mppc_compress_record({}, packed));
+
+  /* Garbage never crashes the decoder. */
+  for (int i = 0; i < 3000; i++) {
+    Bytes garbage(rng() % 200);
+    for (uint8_t &b : garbage) {
+      b = uint8_t(rng());
+    }
+    Bytes back;
+    mppc_decompress_record(garbage, 1 + rng() % 20000, back);
+  }
+}
+
+static const char *PACKED_CFG =
+    "4\n"
+    "3\n"
+    "\n"
+    "001 - EQUIPMENT_ADDON\n"
+    "AUTO\n"
+    "ID;Name;num_params\n"
+    "int32;wstring:8;int32\n"
+    "\n"
+    "002 - MONSTER_ESSENCE\n"
+    "0\n"
+    "ID;Name;file_model;size\n"
+    "int32;wstring:16;string:16;float\n"
+    "\n"
+    "003 - ILLUSTRATED_REWARD_CONFIG\n"
+    "0\n"
+    "ID;table\n"
+    "int32;byte:9000\n"
+    "\n"
+    "004 - TALK_PROC\n"
+    "0\n"
+    "RAW\n"
+    "byte:AUTO\n";
+
+struct PackedRecord {
+  uint32_t id;
+  Bytes blob;
+};
+
+static void put_packed_list(Writer &w, const std::vector<PackedRecord> &records)
+{
+  w.i32(int32_t(records.size()));
+  if (records.empty()) {
+    return;
+  }
+  uint32_t total = 0;
+  for (const PackedRecord &r : records) {
+    w.u32(r.id).u16(uint16_t(r.blob.size()));
+    total += uint32_t(r.blob.size());
+  }
+  w.u32(total);
+  for (const PackedRecord &r : records) {
+    w.raw(r.blob.data(), r.blob.size());
+  }
+}
+
+static Bytes pack(const Bytes &record)
+{
+  Bytes out;
+  EXPECT_TRUE(mppc_compress_record(record, out));
+  return out;
+}
+
+/**
+ * A packed file. Two records are stored the way another encoder could have written them, not as
+ * #mppc_compress_record would: an all-zero record as plain literals, and a large record as stored
+ * (uncompressed) 8192 byte chunks. They must still be written back unchanged.
+ */
+static Bytes build_packed_elements()
+{
+  Writer w;
+  w.u16(402).u16(0x3000);
+  /* Export time, org data, computer name block, hardware info block. */
+  w.u32(0x66778899);
+  w.u32(3).raw("org", 3);
+  w.u32(0x12345678).u32(4).raw("host", 4).u32(0x66778899);
+  w.u32(0x9ABCDEF0).u32(2).raw("hw", 2);
+
+  /* EQUIPMENT_ADDON. */
+  Writer a1, a2;
+  a1.i32(1).wstr("Atk", 8).i32(1);
+  a2.zeros(16);
+  put_packed_list(w, {{1, pack(a1.data)}, {0, Bytes(16, 0)}});
+
+  /* MONSTER_ESSENCE. */
+  Writer m1;
+  m1.i32(100).wstr("Wolf", 16).str("models\\wolf.ecm", 16).f32(1.5f);
+  put_packed_list(w, {{100, pack(m1.data)}});
+
+  /* ILLUSTRATED_REWARD_CONFIG: 9004 byte records use framed chunks. */
+  Writer big;
+  big.i32(7);
+  for (int i = 0; i < 9000; i++) {
+    big.u8(uint8_t(i % 7 == 0 ? i : 0));
+  }
+  Bytes stored;
+  for (size_t pos = 0; pos < big.data.size(); pos += 8192) {
+    const size_t n = std::min<size_t>(8192, big.data.size() - pos);
+    stored.push_back(uint8_t(n & 0xFF));
+    stored.push_back(uint8_t(n >> 8));
+    stored.insert(stored.end(), big.data.begin() + pos, big.data.begin() + pos + n);
+  }
+  put_packed_list(w, {{7, stored}});
+
+  /* TALK_PROC, stored as is. */
+  w.i32(1);
+  w.u32(9).wstr("t", 128).i32(0);
+  return w.data;
+}
+
+TEST(angelica_elements, packed_roundtrip)
+{
+  ElementsSchema schema;
+  std::string err;
+  ASSERT_TRUE(load_elements_schema(PACKED_CFG, schema, &err)) << err;
+  ASSERT_TRUE(elements_version_is_packed(402));
+  ASSERT_TRUE(elements_version_is_packed(350));
+  EXPECT_FALSE(elements_version_is_packed(349));
+  EXPECT_FALSE(elements_version_is_packed(1488));
+  EXPECT_FALSE(elements_version_is_packed(30000));
+
+  const Bytes file = build_packed_elements();
+  ElementsData data;
+  ASSERT_TRUE(parse_elements(file, schema, data, &err)) << err;
+  EXPECT_EQ(data.version(), 402u);
+  EXPECT_EQ(data.lists[0].prefix.size(), 4u + 7u + 16u + 10u);
+  EXPECT_EQ(data.lists[0].size(), 2u);
+  EXPECT_EQ(data.get_string(data.find("EQUIPMENT_ADDON", 1), "Name"), "Atk");
+  const ElementRef wolf = data.find("MONSTER_ESSENCE", 100);
+  ASSERT_TRUE(wolf.valid());
+  EXPECT_EQ(data.get_string(wolf, "file_model"), "models\\wolf.ecm");
+  EXPECT_FLOAT_EQ(float(data.get_float(wolf, "size")), 1.5f);
+  ElementValue table;
+  ASSERT_TRUE(data.get(data.find("ILLUSTRATED_REWARD_CONFIG", 7), "table", table));
+  EXPECT_EQ(std::get<Bytes>(table)[7], 7);
+  EXPECT_EQ(data.lists[3].size(), 1u);
+  EXPECT_TRUE(data.trailing.empty());
+
+  Bytes out;
+  ASSERT_TRUE(write_elements(data, schema, out, &err)) << err;
+  EXPECT_EQ(out, file);
+
+  /* Edit one record, add and remove others; untouched records keep their stored bytes. */
+  ASSERT_TRUE(data.set(wolf, "Name", std::string("Lobo"), &err)) << err;
+  const int monsters = data.list_index("MONSTER_ESSENCE");
+  ASSERT_EQ(data.add_record(monsters, 101, 0), 1);
+  ASSERT_TRUE(data.set({monsters, 1}, "size", 2.5, &err)) << err;
+  ASSERT_TRUE(data.remove_record(0, 0));
+  /* Setting a field to its current value changes nothing. */
+  ASSERT_TRUE(data.set(data.find("ILLUSTRATED_REWARD_CONFIG", 7), "ID", int64_t(7), &err));
+  ASSERT_TRUE(write_elements(data, schema, out, &err)) << err;
+
+  ElementsData again;
+  ASSERT_TRUE(parse_elements(out, schema, again, &err)) << err;
+  EXPECT_EQ(again.get_string(again.find("MONSTER_ESSENCE", 100), "Name"), "Lobo");
+  const ElementRef added = again.find("MONSTER_ESSENCE", 101);
+  ASSERT_TRUE(added.valid());
+  EXPECT_EQ(again.get_string(added, "Name"), "Lobo");
+  EXPECT_FLOAT_EQ(float(again.get_float(added, "size")), 2.5f);
+  ASSERT_EQ(again.lists[0].size(), 1u);
+  EXPECT_EQ(again.lists[0].packed[0].id, 0u);
+  EXPECT_EQ(again.lists[0].packed[0].size, 16u);        /* The literal-only zero record. */
+  EXPECT_EQ(again.lists[2].packed[0].size, 9004u + 4u); /* The stored chunks. */
+  EXPECT_EQ(again.lists[1].packed[1].id, 101u);
+  EXPECT_EQ(again.lists[0].prefix, data.lists[0].prefix);
+  EXPECT_EQ(again.lists[3].raw, data.lists[3].raw);
+
+  Bytes out2;
+  ASSERT_TRUE(write_elements(again, schema, out2, &err)) << err;
+  EXPECT_EQ(out2, out);
+
+  /* An emptied list stores only its count. */
+  ASSERT_TRUE(again.remove_record(0, 0));
+  ASSERT_TRUE(write_elements(again, schema, out2, &err)) << err;
+  ElementsData emptied;
+  ASSERT_TRUE(parse_elements(out2, schema, emptied, &err)) << err;
+  EXPECT_EQ(emptied.lists[0].size(), 0u);
+}
+
+TEST(angelica_elements, packed_rejects_malformed)
+{
+  ElementsSchema schema;
+  std::string err;
+  ASSERT_TRUE(load_elements_schema(PACKED_CFG, schema, &err)) << err;
+  const Bytes file = build_packed_elements();
+  ElementsData data;
+  for (size_t n = 0; n < file.size(); n++) {
+    EXPECT_FALSE(parse_elements(ByteSpan(file).first(n), schema, data, &err)) << n;
+  }
+  /* Header blocks start after the 8 byte header + time; list 0 starts after them. */
+  const size_t list0 = 4 + 4 + 7 + 16 + 10;
+  /* Total compressed size that disagrees with the index. */
+  Bytes bad = file;
+  bad[list0 + 4 + 12] ^= 1;
+  EXPECT_FALSE(parse_elements(bad, schema, data, &err));
+  /* A record that decompresses to the wrong size. */
+  bad = file;
+  bad[list0 + 4 + 4] = uint8_t(bad[list0 + 4 + 4] - 1);
+  bad[list0 + 4 + 12] = uint8_t(bad[list0 + 4 + 12] - 1);
+  EXPECT_FALSE(parse_elements(bad, schema, data, &err));
+  /* Huge exporter block. */
+  bad = file;
+  bad[8 + 3] = 0x7F;
+  EXPECT_FALSE(parse_elements(bad, schema, data, &err));
+
+  std::mt19937 rng(99);
+  Bytes out;
+  for (int i = 0; i < 2000; i++) {
+    Bytes fuzz = file;
+    const int flips = 1 + int(rng() % 6);
+    for (int k = 0; k < flips; k++) {
+      fuzz[4 + rng() % (fuzz.size() - 4)] = uint8_t(rng());
+    }
+    if (parse_elements(fuzz, schema, data, nullptr)) {
+      ASSERT_TRUE(write_elements(data, schema, out, nullptr));
+      EXPECT_EQ(out, fuzz);
+    }
   }
 }
 
@@ -917,14 +1208,19 @@ TEST(angelica_npcgen, rejects_malformed)
 /** \name Real client data (optional)
  * \{ */
 
-static std::string elements_schema_dir()
+/** Folder of `.cfg` schemas for the real file test, empty when there is none. */
+static std::string elements_schema_dir(const std::string &test_data)
 {
   if (const char *env = std::getenv("ANGELICA_ELEMENTS_SCHEMAS")) {
     return env;
   }
-  /* tests/ -> angelica -> io -> blender -> source -> repository root. */
-  const fs::path root = fs::path(__FILE__).parent_path() / ".." / ".." / ".." / ".." / "..";
-  return (root / "release" / "datafiles" / "angelica" / "elements").lexically_normal().string();
+  for (const char *sub : {"schemas", "configs", "."}) {
+    const fs::path dir = fs::path(test_data) / sub;
+    if (!list_elements_schemas(dir.string()).empty()) {
+      return dir.string();
+    }
+  }
+  return {};
 }
 
 static std::string find_child_ci(const fs::path &dir, const std::string &name)
@@ -958,8 +1254,12 @@ TEST(angelica_elements, real_elements_data)
   uint32_t version = 0;
   std::string err;
   ASSERT_TRUE(peek_elements_version(file, version, &err)) << err;
+  const std::string schema_dir = elements_schema_dir(root);
+  if (schema_dir.empty()) {
+    GTEST_SKIP() << "no .cfg schemas: set ANGELICA_ELEMENTS_SCHEMAS";
+  }
   ElementsSchema schema;
-  if (!load_elements_schema_for_version(elements_schema_dir(), version, schema, &err)) {
+  if (!load_elements_schema_for_version(schema_dir, version, schema, &err)) {
     GTEST_SKIP() << err;
   }
   ElementsData data;
@@ -1001,7 +1301,9 @@ TEST(angelica_elements, real_elements_data)
   ASSERT_TRUE(data.set(first, "Name", std::string("GameForge test"), &err)) << err;
   ASSERT_TRUE(data.set(first, "size", 4.5, &err)) << err;
   ASSERT_TRUE(write_elements(data, schema, out, &err)) << err;
-  EXPECT_EQ(out.size(), file.size());
+  if (!elements_version_is_packed(version)) {
+    EXPECT_EQ(out.size(), file.size());
+  }
   ElementsData again;
   ASSERT_TRUE(parse_elements(out, schema, again, &err)) << err;
   const ElementRef ref = again.find("MONSTER_ESSENCE", id);
