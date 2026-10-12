@@ -53,6 +53,7 @@ static PyStructSequence_Field app_builtopts_info_fields[] = {
     {"io_spz", nullptr},
     {"io_stl", nullptr},
     {"io_fbx", nullptr},
+    {"io_angelica", nullptr},
     {"io_gpencil", nullptr},
     {"opencolorio", nullptr},
     {"openmp", nullptr},
@@ -265,6 +266,12 @@ static PyObject *make_builtopts_info()
 #endif
 
 #ifdef WITH_IO_FBX
+  SetObjIncref(Py_True);
+#else
+  SetObjIncref(Py_False);
+#endif
+
+#ifdef WITH_IO_ANGELICA
   SetObjIncref(Py_True);
 #else
   SetObjIncref(Py_False);

@@ -310,6 +310,10 @@ if(WITH_IO_FBX)
   add_definitions(-DWITH_IO_FBX)
 endif()
 
+if(WITH_IO_ANGELICA)
+  add_definitions(-DWITH_IO_ANGELICA)
+endif()
+
 if(WITH_IO_GREASE_PENCIL)
   add_definitions(-DWITH_IO_GREASE_PENCIL)
 endif()

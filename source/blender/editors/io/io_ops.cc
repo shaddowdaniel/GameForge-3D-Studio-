@@ -22,6 +22,10 @@
 #  include "io_fbx_ops.hh"
 #endif
 
+#ifdef WITH_IO_ANGELICA
+#  include "io_angelica_ops.hh"
+#endif
+
 #ifdef WITH_OPENTIMELINEIO
 #  include "io_otio_ops.hh"
 #endif
@@ -92,6 +96,12 @@ void ED_operatortypes_io()
 #ifdef WITH_IO_FBX
   WM_operatortype_append(WM_OT_fbx_import);
   ed::io::fbx_file_handler_add();
+#endif
+
+#ifdef WITH_IO_ANGELICA
+  WM_operatortype_append(WM_OT_angelica_import);
+  WM_operatortype_append(WM_OT_angelica_import_map);
+  ed::io::angelica_file_handler_add();
 #endif
 
 #ifdef WITH_OPENTIMELINEIO
