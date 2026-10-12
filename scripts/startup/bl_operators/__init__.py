@@ -21,6 +21,7 @@ _modules = [
     "constraint",
     "copy_global_transform",
     "file",
+    "gameforge_character",
     "gameforge_login",
     "gameforge_plugins",
     "geometry_nodes",
@@ -77,6 +78,7 @@ def register():
     project.register()
     gameforge_login.register()
     gameforge_plugins.register()
+    gameforge_character.register()
 
 
 def unregister():
@@ -86,6 +88,7 @@ def unregister():
         copy_global_transform,
     )
 
+    gameforge_character.unregister()
     gameforge_login.unregister()
     gameforge_plugins.unregister()
     bone_selection_sets.unregister()

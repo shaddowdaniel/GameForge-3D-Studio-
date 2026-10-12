@@ -109,8 +109,8 @@ class Session:
     def state(self):
         return self._snapshot
 
-    def authorized_token(self):
-        """The session token while the plan includes the Studio (for calls such as plugin downloads), else None."""
+    def session_token(self):
+        """The token for the GameForge services (PWOps), only while the Studio is authorized."""
         with self._lock:
             return self._token if self._snapshot.state is State.AUTHORIZED else None
 

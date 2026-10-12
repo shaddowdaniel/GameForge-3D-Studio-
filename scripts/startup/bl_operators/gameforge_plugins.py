@@ -60,7 +60,7 @@ def _run(token, directory):
 
 def start_sync(force=False):
     """Start a background sync when the account is authorized. Returns False when it cannot start."""
-    token = gameforge_account.get().authorized_token()
+    token = gameforge_account.get().session_token()
     if not token:
         return False
     with _Sync.lock:

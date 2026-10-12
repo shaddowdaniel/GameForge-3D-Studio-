@@ -16,6 +16,7 @@ set(INC_SYS
 
 set(SRC
   IO_angelica.cc
+  IO_angelica_character.cc
   formats/angelica_aipolicy.cc
   formats/angelica_anim.cc
   formats/angelica_domain.cc
@@ -34,12 +35,14 @@ set(SRC
   formats/angelica_tasks.cc
   formats/angelica_terrain.cc
   formats/angelica_vfs.cc
+  importer/angelica_import_character.cc
   importer/angelica_import_common.cc
   importer/angelica_import_model.cc
   importer/angelica_import_package.cc
   importer/angelica_import_terrain.cc
 
   IO_angelica.hh
+  IO_angelica_character.hh
   formats/angelica_aipolicy.hh
   formats/angelica_anim.hh
   formats/angelica_domain.hh
@@ -58,6 +61,7 @@ set(SRC
   formats/angelica_tasks.hh
   formats/angelica_terrain.hh
   formats/angelica_vfs.hh
+  importer/angelica_import_character.hh
   importer/angelica_import_common.hh
   importer/angelica_import_model.hh
   importer/angelica_import_package.hh
@@ -94,6 +98,7 @@ blender_add_lib(bf_io_angelica "${SRC}" "${INC}" "${INC_SYS}" "${LIB}")
 
 if(WITH_GTESTS)
   set(TEST_SRC
+    tests/angelica_character_test.cc
     tests/angelica_data_formats_test.cc
     tests/angelica_game_data_test.cc
     tests/angelica_model_formats_test.cc

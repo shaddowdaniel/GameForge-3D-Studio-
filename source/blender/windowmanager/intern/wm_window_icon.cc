@@ -6,20 +6,22 @@
  * \ingroup wm
  *
  * Window icon generation for Wayland.
- * Rasterizes the full-color application SVG for a window icon.
+ * Scales the full-color GameForge 3D Studio crest (a PNG, see `tools/gameforge/branding`)
+ * to the requested window icon size.
  */
 
 #include <algorithm>
 #include <cstring>
-#include <string>
 
 #include "GHOST_Types.hh"
 
-#include "nanosvgrast.h"
+#include "IMB_imbuf.hh"
+#include "IMB_imbuf_types.hh"
 
 #include "wm_window_icon.hh"
 
-extern "C" const char datatoc_blender_app_icon_svg[];
+extern "C" const int datatoc_gameforge_app_icon_png_size;
+extern "C" const char datatoc_gameforge_app_icon_png[];
 
 static void wm_ghost_icon_generate(const GHOST_IconGenerator * /*icon_generator*/,
                                    GHOST_IWindow * /*window*/,
@@ -27,41 +29,35 @@ static void wm_ghost_icon_generate(const GHOST_IconGenerator * /*icon_generator*
                                    int icon_size)
 {
   const size_t buffer_size = size_t(icon_size) * icon_size * 4;
-  const int stride = icon_size * 4;
-
-  /* Rasterize the Blender logo SVG into the icon buffer.
-   * `nsvgParse` modifies the source string, so make a copy. */
-  std::string svg_source = datatoc_blender_app_icon_svg;
-  NSVGimage *image = nsvgParse(svg_source.data(), "px", 96.0f);
-  /* The bundled SVG is known to be valid. */
-  if (image == nullptr || image->width == 0 || image->height == 0) [[unlikely]] {
-    if (image) {
-      nsvgDelete(image);
-    }
-    memset(pixels, 0, buffer_size);
-    return;
-  }
-
-  NSVGrasterizer *rast = nsvgCreateRasterizer();
-  /* Rasterizer allocation should not fail for a small buffer. */
-  if (rast == nullptr) [[unlikely]] {
-    nsvgDelete(image);
-    memset(pixels, 0, buffer_size);
-    return;
-  }
-
-  /* Scale to fit the icon, centering the shorter axis. */
-  const float scale = float(icon_size) / std::max(image->width, image->height);
-  const float offset_x = (icon_size - image->width * scale) * 0.5f;
-  const float offset_y = (icon_size - image->height * scale) * 0.5f;
-
-  /* Clear the buffer first since the SVG may not fill the entire square. */
+  const size_t stride = size_t(icon_size) * 4;
   memset(pixels, 0, buffer_size);
 
-  nsvgRasterize(rast, image, offset_x, offset_y, scale, pixels, icon_size, icon_size, stride);
+  ImBuf *ibuf = IMB_load_image_from_memory(
+      reinterpret_cast<const uchar *>(datatoc_gameforge_app_icon_png),
+      size_t(datatoc_gameforge_app_icon_png_size),
+      ImBufFlags::ByteData,
+      "<window icon>");
+  /* The bundled PNG is known to be valid. */
+  if (ibuf == nullptr || ibuf->byte_buffer.data == nullptr) [[unlikely]] {
+    if (ibuf) {
+      IMB_freeImBuf(ibuf);
+    }
+    return;
+  }
 
-  nsvgDeleteRasterizer(rast);
-  nsvgDelete(image);
+  if (ibuf->x != icon_size || ibuf->y != icon_size) {
+    IMB_scale(ibuf, icon_size, icon_size, IMBScaleFilter::Box, false);
+  }
+
+  /* #ImBuf rows go bottom to top, the icon buffer rows go top to bottom. */
+  const int height = std::min(ibuf->y, icon_size);
+  const size_t row_size = size_t(std::min(ibuf->x, icon_size)) * 4;
+  for (int y = 0; y < height; y++) {
+    const uchar *src = ibuf->byte_buffer.data + size_t(ibuf->y - 1 - y) * ibuf->x * 4;
+    memcpy(pixels + size_t(y) * stride, src, row_size);
+  }
+
+  IMB_freeImBuf(ibuf);
 }
 
 const GHOST_IconGenerator wm_ghost_icon_generator = {
