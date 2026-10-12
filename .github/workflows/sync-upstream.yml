@@ -1,0 +1,73 @@
+# Mantém o GameForge 3D Studio em dia com o Blender.
+#
+# Aponta o branch `upstream-sync` para o último commit de `blender/blender` e abre
+# (ou mantém aberto) um PR de `upstream-sync` para `main`. Como este repositório é
+# um fork do Blender, o commit do upstream já existe na rede de forks e não é
+# preciso clonar o histórico.
+
+name: Sincronizar com o Blender
+
+on:
+  schedule:
+    # Segunda-feira, 06:00 UTC.
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      REPO: ${{ github.repository }}
+      UPSTREAM: blender/blender
+      UPSTREAM_BRANCH: main
+      BASE: main
+      SYNC_BRANCH: upstream-sync
+    steps:
+      - name: Atualizar o branch upstream-sync
+        id: ref
+        run: |
+          set -euo pipefail
+          sha=$(gh api "repos/$UPSTREAM/commits/$UPSTREAM_BRANCH" --jq .sha)
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          echo "Último commit do Blender: $sha"
+
+          ahead=$(gh api "repos/$REPO/compare/$BASE...$sha" --jq .ahead_by)
+          echo "ahead=$ahead" >> "$GITHUB_OUTPUT"
+          if [ "$ahead" = "0" ]; then
+            echo "$BASE já contém $sha; nada a sincronizar."
+            exit 0
+          fi
+
+          if gh api "repos/$REPO/git/ref/heads/$SYNC_BRANCH" > /dev/null 2>&1; then
+            gh api -X PATCH "repos/$REPO/git/refs/heads/$SYNC_BRANCH" \
+              -f sha="$sha" -F force=true > /dev/null
+          else
+            gh api -X POST "repos/$REPO/git/refs" \
+              -f ref="refs/heads/$SYNC_BRANCH" -f sha="$sha" > /dev/null
+          fi
+
+      - name: Abrir PR de sincronização
+        if: steps.ref.outputs.ahead != '0'
+        run: |
+          set -euo pipefail
+          sha=${{ steps.ref.outputs.sha }}
+          existing=$(gh pr list --repo "$REPO" --head "$SYNC_BRANCH" --base "$BASE" \
+            --state open --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            echo "PR #$existing já está aberto; o branch foi atualizado para $sha."
+            exit 0
+          fi
+          gh pr create --repo "$REPO" --base "$BASE" --head "$SYNC_BRANCH" \
+            --title "Sincronizar com o Blender (${sha:0:8})" \
+            --body "Traz as mudanças de \`$UPSTREAM\` até $UPSTREAM/commit/$sha.
+
+          Gerado automaticamente por \`.github/workflows/sync-upstream.yml\`. Se houver conflito com mudanças do GameForge, resolva no próprio PR fazendo merge de \`$BASE\` em \`$SYNC_BRANCH\`."

@@ -1,4 +1,11 @@
-This repository is only used as a mirror. Blender development happens on projects.blender.org.
+## O que muda
 
-To get started with contributing code, please see:
-https://developer.blender.org/docs/handbook/contributing/
+<!-- Antes / depois, do ponto de vista de quem usa o GameForge 3D Studio. -->
+
+## Como testar
+
+<!-- Passos ou arquivos de exemplo (ex.: qual .pck ou mapa foi usado). -->
+
+## Item do roadmap
+
+<!-- Qual item do ROADMAP.md este PR avança, se algum. -->

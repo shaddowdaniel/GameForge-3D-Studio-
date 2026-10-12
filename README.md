@@ -1,38 +1,49 @@
 <!--
-Keep this document short & concise,
-linking to external resources instead of including content in-line.
-See 'release/text/readme.html' for the end user read-me.
+Mantenha este documento curto. Detalhes de planejamento ficam em ROADMAP.md.
+O read-me para usuários finais do Blender está em 'release/text/readme.html'.
 -->
 
-Blender
-=======
+GameForge 3D Studio
+===================
 
-Blender is the free and open source 3D creation suite.
-It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing,
-motion tracking and video editing.
+O GameForge 3D Studio é um fork do [Blender](https://www.blender.org) voltado à criação e edição de conteúdo
+para jogos feitos na **Angelica Engine** (Perfect World e derivados).
 
-![Blender screenshot](https://code.blender.org/wp-content/uploads/2018/12/springrg.jpg "Blender screenshot")
+A meta é abrir os arquivos do cliente diretamente, sem plugins e sem conversores externos:
+pacotes `.pck`, modelos, terrenos e mapas entram nativamente na biblioteca de assets, prontos para editar.
 
-Project Pages
--------------
+O que muda em relação ao Blender
+--------------------------------
 
-- [Main Website](https://www.blender.org)
-- [Reference Manual](https://docs.blender.org/manual/en/latest/index.html)
-- [User Community](https://www.blender.org/community/)
+- **Suporte nativo à Angelica Engine.** Importação de `.pck`, `.hmap`, terrenos e demais formatos do cliente
+  direto para a Asset Library, com leitura da lista de arquivos e importação em lote.
+- **Importação de mapas pelo código.** Selecionar a pasta de um mapa (por exemplo `world`, `a26`) importa o mapa
+  inteiro como assets.
+- **Acompanha o Blender.** Um workflow semanal traz as mudanças do `blender/blender` e abre um PR,
+  para que as correções do upstream continuem chegando.
 
-Development
------------
+O plano completo e o status de cada item estão em [ROADMAP.md](ROADMAP.md).
 
-- [Build Instructions](https://developer.blender.org/docs/handbook/building_blender/)
-- [Code Review & Bug Tracker](https://projects.blender.org)
-- [Developer Forum](https://devtalk.blender.org)
-- [Developer Documentation](https://developer.blender.org/docs/)
+Referências de formato
+----------------------
 
+Os formatos são estudados a partir dos sources dos clientes 1.5.5 e 1.7.8 mantidos pelo autor do projeto.
 
-License
+Desenvolvimento
+---------------
+
+O código-base é o do Blender, então as instruções de build são as mesmas:
+
+- [Como compilar](https://developer.blender.org/docs/handbook/building_blender/)
+- [Documentação para desenvolvedores do Blender](https://developer.blender.org/docs/)
+
+Mudanças específicas do GameForge são feitas por pull request neste repositório.
+A sincronização com o Blender é feita pelo workflow `.github/workflows/sync-upstream.yml`.
+
+Licença
 -------
 
-Blender as a whole is licensed under the GNU General Public License, Version 3.
-Individual files may have a different but compatible license.
+Como o Blender, o GameForge 3D Studio é licenciado sob a GNU General Public License, versão 3.
+Arquivos individuais podem ter licenças diferentes, porém compatíveis.
 
-See [blender.org/about/license](https://www.blender.org/about/license) for details.
+Veja [blender.org/about/license](https://www.blender.org/about/license) para detalhes.
