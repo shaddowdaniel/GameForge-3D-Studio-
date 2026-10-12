@@ -50,10 +50,10 @@ float4x4 engine_matrix_to_blender(const float m[16], const float scale)
   float4x4 e;
   std::memcpy(e.ptr(), m, sizeof(float) * 16);
   float4x4 b;
-  const int perm[4] = {0, 2, 1, 3};
+  const auto perm = [](const int i) { return i == 1 ? 2 : (i == 2 ? 1 : i); };
   for (int col = 0; col < 4; col++) {
     for (int row = 0; row < 4; row++) {
-      b[col][row] = e[perm[col]][perm[row]];
+      b[col][row] = e[perm(col)][perm(row)];
     }
   }
   b[3][0] *= scale;
