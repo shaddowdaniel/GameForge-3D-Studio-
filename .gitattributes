@@ -116,3 +116,4 @@ scripts/modules/_bpy_internal/assets/remote_library/*_openapi.py linguist-genera
 # LFS uploads to this fork. Regenerate them with tools/gameforge/branding.
 release/datafiles/splash.png -filter binary
 release/datafiles/gameforge/**/*.png -filter binary
+release/darwin/Blender.app/Contents/Resources/blender_icon_legacy.icns -filter binary

@@ -134,13 +134,12 @@ if(WITH_GHOST_WAYLAND)
     intern/wm_window_icon.cc
     intern/wm_window_icon.hh
   )
-  # Full-color application icon for the Wayland window icon.
+  # Full-color GameForge application icon for the Wayland window icon.
   data_to_c(
-    "${CMAKE_SOURCE_DIR}/release/freedesktop/icons/scalable/apps/blender.svg"
-    "${CMAKE_CURRENT_BINARY_DIR}/blender_app_icon.svg.c"
+    "${CMAKE_SOURCE_DIR}/release/datafiles/gameforge/gameforge_app_icon.png"
+    "${CMAKE_CURRENT_BINARY_DIR}/gameforge_app_icon.png.c"
     SRC
-    # Name override to avoid conflicting with the UI icon `datatoc_blender_svg`.
-    "blender_app_icon_svg"
+    "gameforge_app_icon_png"
   )
   add_definitions(-DWITH_GHOST_WAYLAND)
 endif()
