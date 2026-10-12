@@ -4375,6 +4375,9 @@ void wm_operatortypes_register()
   WM_operatortype_append(WM_OT_operator_defaults);
   WM_operatortype_append(WM_OT_splash);
   WM_operatortype_append(WM_OT_splash_about);
+  WM_operatortype_append(WM_OT_gameforge_login);
+  WM_operatortype_append(WM_OT_gameforge_login_refresh);
+  WM_operatortype_append(WM_OT_gameforge_login_close);
   WM_operatortype_append(WM_OT_search_menu);
   WM_operatortype_append(WM_OT_search_operator);
   WM_operatortype_append(WM_OT_search_single_menu);

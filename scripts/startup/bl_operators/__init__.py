@@ -21,6 +21,7 @@ _modules = [
     "constraint",
     "copy_global_transform",
     "file",
+    "gameforge_login",
     "geometry_nodes",
     "grease_pencil",
     "image",
@@ -73,6 +74,7 @@ def register():
     bone_selection_sets.register()
     copy_global_transform.register()
     project.register()
+    gameforge_login.register()
 
 
 def unregister():
@@ -82,6 +84,7 @@ def unregister():
         copy_global_transform,
     )
 
+    gameforge_login.unregister()
     bone_selection_sets.unregister()
     copy_global_transform.unregister()
     project.unregister()

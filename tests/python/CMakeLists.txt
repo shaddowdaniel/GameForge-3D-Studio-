@@ -250,6 +250,12 @@ add_blender_test(
   --python ${CMAKE_CURRENT_LIST_DIR}/bl_disk_file_hash_service_test.py
 )
 
+# GameForge account client (sign in with atomgameforge.com), plain Python with a fake portal.
+add_python_test(
+  script_gameforge_account
+  ${CMAKE_CURRENT_LIST_DIR}/gameforge_account_test.py
+)
+
 # Blender is launched by the script so each test controls the command-line arguments & preferences
 # `add_blender_test` hard-codes these arguments which isn't compatible with the tests,
 # see `TEST_BLENDER_EXE_PARAMS`.

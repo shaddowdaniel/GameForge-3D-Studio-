@@ -29,6 +29,7 @@ set(SRC
   intern/wm_files.cc
   intern/wm_files_colorspace.cc
   intern/wm_files_link.cc
+  intern/wm_gameforge_login.cc
   intern/wm_gesture.cc
   intern/wm_gesture_ops.cc
   intern/wm_init_exit.cc
