@@ -228,18 +228,20 @@ TEST(angelica_elements, schema)
   /* `PW_AUTO_*` schemas type the talk-proc list with one file's byte count. */
   std::string err;
   ElementsSchema auto_schema;
-  ASSERT_TRUE(load_elements_schema("2\n1\n\n001 - A\n0\nID\nint32\n\n"
-                                   "002 - TALK_PROC\n0\nRAW\nbyte:2204548\n",
-                                   auto_schema,
-                                   &err))
+  ASSERT_TRUE(
+      load_elements_schema("2\n1\n\n001 - A\n0\nID\nint32\n\n"
+                           "002 - TALK_PROC\n0\nRAW\nbyte:2204548\n",
+                           auto_schema,
+                           &err))
       << err;
   EXPECT_EQ(auto_schema.talk_proc_index, 1);
   EXPECT_TRUE(auto_schema.lists[1].is_talk_proc);
   /* Elsewhere `byte:N` stays a fixed-size field. */
-  ASSERT_TRUE(load_elements_schema("2\n1\n\n001 - A\n0\nID;Blob\nint32;byte:12\n\n"
-                                   "002 - TALK_PROC\n0\nRAW\nbyte:AUTO\n",
-                                   auto_schema,
-                                   &err))
+  ASSERT_TRUE(
+      load_elements_schema("2\n1\n\n001 - A\n0\nID;Blob\nint32;byte:12\n\n"
+                           "002 - TALK_PROC\n0\nRAW\nbyte:AUTO\n",
+                           auto_schema,
+                           &err))
       << err;
   EXPECT_EQ(auto_schema.lists[0].record_size, 16u);
 }
