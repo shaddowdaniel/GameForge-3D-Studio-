@@ -583,7 +583,7 @@ static void wm_window_title_text(wmWindowManager *wm,
       win_title.append(StringRef(IFACE_(ED_area_name(area).c_str())));
     }
     else {
-      win_title.append(StringRef("Blender"));
+      win_title.append(StringRef("GameForge 3D Studio"));
     }
     return;
   }
@@ -680,7 +680,7 @@ static void wm_window_title_text(wmWindowManager *wm,
     win_title.append(project->get_name());
   }
 
-  win_title.append(StringRef(" — Blender "));
+  win_title.append(StringRef(" — GameForge 3D Studio "));
   win_title.append(StringRef(BKE_blender_version_string()));
 }
 
