@@ -436,6 +436,20 @@ static bool wm_init_splash_show_on_startup_check()
 
 void WM_init_splash_on_startup(bContext *C)
 {
+  /* GameForge: the account login comes first. Once signed in, the login screen opens the splash
+   * itself when the preferences ask for it (see `scripts/startup/bl_operators/gameforge_login.py`). */
+  if (wm_gameforge_login_required(C)) {
+    wmWindowManager *wm = CTX_wm_manager(C);
+    if (!wm->windows.is_empty()) {
+      wmWindow *prevwin = CTX_wm_window(C);
+      CTX_wm_window_set(C, wm->windows.first());
+      WM_operator_name_call(
+          C, "WM_OT_gameforge_login", wm::OpCallContext::InvokeDefault, nullptr, nullptr);
+      CTX_wm_window_set(C, prevwin);
+    }
+    return;
+  }
+
   if (!wm_init_splash_show_on_startup_check()) {
     return;
   }

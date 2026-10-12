@@ -109,6 +109,14 @@ void wm_autosave_delete();
 void WM_OT_splash(wmOperatorType *ot);
 void WM_OT_splash_about(wmOperatorType *ot);
 
+/* `wm_gameforge_login.cc` */
+
+void WM_OT_gameforge_login(wmOperatorType *ot);
+void WM_OT_gameforge_login_refresh(wmOperatorType *ot);
+void WM_OT_gameforge_login_close(wmOperatorType *ot);
+/** True when the GameForge account gate must be shown before the editor can be used. */
+bool wm_gameforge_login_required(bContext *C);
+
 /* `wm_stereo.cc` */
 
 void wm_stereo3d_draw_sidebyside(wmWindow *win, int view);
