@@ -91,6 +91,13 @@ struct ImportedAsset {
 const std::vector<std::string> &supported_extensions();
 
 /**
+ * Folder with the `.data` field layouts of one kind (`"elements"`, ...), from the schemas plugin
+ * the Studio downloads from atomgameforge.com (`estudio-angelica-schemas`, installed under the
+ * user's data files by `gameforge_account.plugins`). Empty when the plugin is not installed yet.
+ */
+std::string schemas_directory(const std::string &kind);
+
+/**
  * Import one file. Imported data is added to `bmain`; objects are linked to the active
  * collection of `view_layer` when `params.link_to_scene` is set.
  */
