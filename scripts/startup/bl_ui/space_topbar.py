@@ -412,6 +412,11 @@ class TOPBAR_MT_file_import(Menu):
             self.layout.operator(
                 "wm.fbx_import", text=FileHandler.label_with_extensions("IO_FH_fbx"))
 
+        if bpy.app.build_options.io_angelica:
+            self.layout.separator()
+            self.layout.operator("wm.angelica_import", text="Angelica / Perfect World (.pck, .ski, .trn2, .hmap, ...)")
+            self.layout.operator("wm.angelica_import_map", text="Angelica / Perfect World Map (folder)")
+
         if bpy.app.build_options.opentimelineio:
             self.layout.operator("wm.otio_import", text="OpenTimelineIO (.otio)")
 

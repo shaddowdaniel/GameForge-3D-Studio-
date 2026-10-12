@@ -30,6 +30,10 @@ if(WITH_IO_FBX)
   add_subdirectory(fbx)
 endif()
 
+if(WITH_IO_ANGELICA)
+  add_subdirectory(angelica)
+endif()
+
 if(WITH_ALEMBIC)
   add_subdirectory(alembic)
 endif()
