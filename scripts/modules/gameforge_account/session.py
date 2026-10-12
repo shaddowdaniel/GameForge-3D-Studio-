@@ -109,6 +109,11 @@ class Session:
     def state(self):
         return self._snapshot
 
+    def session_token(self):
+        """The token for the GameForge services (PWOps), only while the Studio is authorized."""
+        with self._lock:
+            return self._token if self._snapshot.state is State.AUTHORIZED else None
+
     def begin_login(self):
         with self._lock:
             if self._snapshot.state in {State.WAITING_APPROVAL, State.AUTHORIZED}:

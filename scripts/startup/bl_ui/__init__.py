@@ -91,6 +91,7 @@ _modules = [
     "space_topbar",
     "space_userpref",
     "space_view3d",
+    "space_view3d_gameforge",
     "space_view3d_sidebar",
     "space_view3d_toolbar",
 
