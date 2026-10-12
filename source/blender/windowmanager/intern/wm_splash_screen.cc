@@ -453,7 +453,7 @@ static ui::Block *wm_block_about_create(bContext *C, ARegion *region, void * /*a
                                         0,
                                         style);
 
-/* Blender logo. */
+/* GameForge 3D Studio wordmark (replaces the Blender logo, see `tools/gameforge/branding`). */
 #ifndef WITH_HEADLESS
   constexpr bool show_color = false;
   const float size = 0.2f * dialog_width;
@@ -478,7 +478,7 @@ static ui::Block *wm_block_about_create(bContext *C, ARegion *region, void * /*a
 
   ui::Layout &col = layout.column(true);
 
-  uiItemL_ex(&col, IFACE_("Blender"), ICON_NONE, true, false);
+  uiItemL_ex(&col, IFACE_("GameForge 3D Studio"), ICON_NONE, true, false);
 
   MenuType *mt = WM_menutype_find("WM_MT_splash_about", true);
   if (mt) {

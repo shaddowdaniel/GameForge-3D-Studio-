@@ -111,3 +111,8 @@
 *.rgb filter=lfs diff=lfs merge=lfs -text
 *.btx filter=lfs diff=lfs merge=lfs -text
 scripts/modules/_bpy_internal/assets/remote_library/*_openapi.py linguist-generated=true
+
+# GameForge branding images are stored directly in git: GitHub refuses new
+# LFS uploads to this fork. Regenerate them with tools/gameforge/branding.
+release/datafiles/splash.png -filter binary
+release/datafiles/gameforge/**/*.png -filter binary
