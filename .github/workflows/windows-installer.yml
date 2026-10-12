@@ -1,0 +1,103 @@
+# Instalador do GameForge 3D Studio para Windows (.msi) e versão portátil (.zip).
+#
+# Compila o Studio no Windows com o Visual Studio 2022 e as bibliotecas pré-compiladas
+# do Blender, e empacota com o CPack (WiX). O visual do instalador vem de
+# release/windows/installer_wix (tools/gameforge/branding/make_installer_art.py).
+#
+# Roda à mão (Actions › Instalador Windows › Run workflow), em tags `v*` (anexa os
+# arquivos à release da tag) e em PRs que mexem no empacotamento.
+
+name: Instalador Windows
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+  pull_request:
+    paths:
+      - ".github/workflows/windows-installer.yml"
+      - "build_files/cmake/packaging.cmake"
+      - "build_files/cmake/config/gameforge_windows.cmake"
+      - "release/windows/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: windows-installer-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    # O windows-2022 traz o WiX Toolset 3.14 usado pelo CPack.
+    runs-on: windows-2022
+    timeout-minutes: 350
+    env:
+      BUILD_DIR: C:\gf-build
+    steps:
+      - name: Espaço em disco
+        shell: pwsh
+        run: Get-PSDrive -PSProvider FileSystem | Format-Table Name, Used, Free
+
+      - uses: actions/checkout@v4
+        with:
+          # Os arquivos LFS do Blender não estão no GitHub deste fork: vêm do
+          # projects.blender.org no passo seguinte.
+          lfs: false
+
+      - name: Arquivos LFS e bibliotecas do Blender
+        shell: pwsh
+        run: |
+          git lfs install --skip-repo
+          python build_files/utils/make_update.py --no-blender
+          git lfs pull lfs-fallback
+          git lfs checkout
+
+      - uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      - name: Ninja
+        shell: pwsh
+        run: python -m pip install ninja
+
+      - name: Configurar
+        shell: pwsh
+        run: >
+          cmake -S . -B $env:BUILD_DIR -G Ninja
+          -C build_files/cmake/config/gameforge_windows.cmake
+          -D CMAKE_BUILD_TYPE=Release
+
+      - name: Compilar
+        shell: pwsh
+        run: cmake --build $env:BUILD_DIR --parallel
+
+      - name: Empacotar (.msi e .zip)
+        shell: pwsh
+        run: |
+          $wix = "${env:ProgramFiles(x86)}\WiX Toolset v3.14\bin"
+          if (Test-Path $wix) { $env:WIX = Split-Path $wix -Parent }
+          Push-Location $env:BUILD_DIR
+          cpack -G WIX -C Release
+          if ($LASTEXITCODE -ne 0) {
+            Get-ChildItem -Recurse -Filter *.log _CPack_Packages | ForEach-Object { Get-Content $_.FullName -Tail 80 }
+            exit 1
+          }
+          cpack -G ZIP -C Release
+          Pop-Location
+          New-Item -ItemType Directory -Force dist | Out-Null
+          Copy-Item "$env:BUILD_DIR\*.msi", "$env:BUILD_DIR\*.zip" dist/
+          Get-ChildItem dist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gameforge-3d-studio-windows-x64
+          path: dist/*
+          if-no-files-found: error
+
+      - name: Anexar à release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
