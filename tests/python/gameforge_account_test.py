@@ -28,6 +28,7 @@ from gameforge_account.portal import (  # noqa: E402
     SessionInvalid,
     studio_included,
 )
+from gameforge_account.pwops import PWOps, PWOpsError, parse_try_on  # noqa: E402
 from gameforge_account.session import (  # noqa: E402
     ENTITLEMENTS_INTERVAL_SEC,
     HEARTBEAT_INTERVAL_SEC,
@@ -260,6 +261,15 @@ class SessionSavedTokenTest(unittest.TestCase):
         self.session.step()
         self.assertIs(self.session.state.state, State.OFFLINE)
 
+    def test_session_token_only_while_authorized(self):
+        self.assertIsNone(self.session.session_token())
+        self.session.step()
+        self.assertEqual(self.session.session_token(), "saved")
+        self.portal.ent = entitlements(included=False)
+        self.clock.t += ENTITLEMENTS_INTERVAL_SEC + 1
+        self.session.step()
+        self.assertIsNone(self.session.session_token())
+
     def test_sign_out(self):
         self.session.step()
         self.session.sign_out()
@@ -290,6 +300,17 @@ class _Handler(http.server.BaseHTTPRequestHandler):
         body = self.rfile.read(int(self.headers.get("content-length", 0)))
         _Handler.seen.append((self.path, {k.lower(): v for k, v in self.headers.items()}, json.loads(body or b"{}")))
         status, payload = _Handler.routes[self.path]
+        data = json.dumps(payload).encode("utf-8")
+        self.send_response(status)
+        self.send_header("content-type", "application/json")
+        self.send_header("content-length", str(len(data)))
+        self.end_headers()
+        self.wfile.write(data)
+
+    def do_GET(self):
+        path, _, query = self.path.partition("?")
+        _Handler.seen.append((path, {k.lower(): v for k, v in self.headers.items()}, query))
+        status, payload = _Handler.routes[path]
         data = json.dumps(payload).encode("utf-8")
         self.send_response(status)
         self.send_header("content-type", "application/json")
@@ -355,6 +376,65 @@ class PortalHttpTest(unittest.TestCase):
         portal = Portal(Config("http://127.0.0.1:9", "k", ""), app_version="", os_name="")
         with self.assertRaises(NetworkError):
             portal.heartbeat("tok")
+
+
+class PWOpsHttpTest(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        cls.server = http.server.HTTPServer(("127.0.0.1", 0), _Handler)
+        threading.Thread(target=cls.server.serve_forever, daemon=True).start()
+        cls.pwops = PWOps("http://127.0.0.1:{:d}/".format(cls.server.server_address[1]))
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.server.shutdown()
+
+    def setUp(self):
+        _Handler.seen.clear()
+
+    def test_characters(self):
+        _Handler.routes["/api/studio/characters"] = (200, {"ok": True, "characters": [
+            {"accountId": "a1", "serverGroup": "Unlimited", "roleid": 1024, "name": "Herói",
+             "class": "blademaster", "level": 105, "occupation": 0, "gender": 0},
+            "garbage",
+        ]})
+        chars = self.pwops.characters("tok")
+        self.assertEqual(len(chars), 1)
+        self.assertEqual(chars[0].role_id, 1024)
+        self.assertEqual(chars[0].label, "Herói (nv. 105 · Unlimited)")
+        self.assertEqual(_Handler.seen[0][1]["x-session-token"], "tok")
+
+    def test_appearance(self):
+        character = {"smdPath": "models\\players\\a.smd", "parts": [], "attachments": []}
+        _Handler.routes["/api/studio/appearance"] = (200, {"ok": True, "character": character})
+        spec = self.pwops.appearance("tok", 1024, try_on=[11, 12], fashion=False)
+        self.assertEqual(json.loads(spec), {"character": character})
+        self.assertEqual(_Handler.seen[0][2], "roleId=1024&provando=11%2C12&fashion=0")
+
+    def test_appearance_without_model(self):
+        _Handler.routes["/api/studio/appearance"] = (200, {"ok": True, "character": {"parts": []}})
+        with self.assertRaises(PWOpsError):
+            self.pwops.appearance("tok", 1)
+
+    def test_errors(self):
+        _Handler.routes["/api/studio/characters"] = (401, {"ok": False, "code": "session_invalid"})
+        with self.assertRaises(SessionInvalid):
+            self.pwops.characters("tok")
+        _Handler.routes["/api/studio/characters"] = (403, {"ok": False, "error": "plano", "code": "plano_sem_estudio"})
+        with self.assertRaises(PWOpsError) as cm:
+            self.pwops.characters("tok")
+        self.assertEqual(cm.exception.code, "plano_sem_estudio")
+        _Handler.routes["/api/studio/characters"] = (429, {"ok": False, "code": "rate_limited"})
+        with self.assertRaises(NetworkError):
+            self.pwops.characters("tok")
+        with self.assertRaises(SessionInvalid):
+            self.pwops.characters("")
+
+    def test_parse_try_on(self):
+        self.assertEqual(parse_try_on("12, 34;34 x -5 0 56"), [12, 34, 56])
+        self.assertEqual(len(parse_try_on(",".join(str(i) for i in range(1, 20)))), 8)
+        self.assertEqual(parse_try_on(""), [])
 
 
 if __name__ == "__main__":

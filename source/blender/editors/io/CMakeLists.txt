@@ -25,6 +25,7 @@ set(INC_SYS
 
 set(SRC
   io_alembic.cc
+  io_angelica_character_ops.cc
   io_angelica_ops.cc
   io_cache.cc
   io_drop_import_file.cc
@@ -40,6 +41,7 @@ set(SRC
   io_utils.cc
 
   io_alembic.hh
+  io_angelica_character_ops.hh
   io_angelica_ops.hh
   io_cache.hh
   io_drop_import_file.hh

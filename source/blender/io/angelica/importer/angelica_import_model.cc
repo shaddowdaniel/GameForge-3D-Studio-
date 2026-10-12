@@ -1184,4 +1184,63 @@ Collection *import_model(ImportContext &ctx,
 
 /** \} */
 
+/* -------------------------------------------------------------------- */
+/** \name Building Blocks for Assembled Characters
+ * \{ */
+
+Object *import_smd_with_skins(ImportContext &ctx,
+                              const std::string &smd_path,
+                              const Vector<std::string> &extra_skins,
+                              const ModelOptions &options,
+                              Collection *collection)
+{
+  return import_skin_model(ctx, smd_path, options, collection, extra_skins, "", nullptr);
+}
+
+Object *import_bon_with_skins(ImportContext &ctx,
+                              const std::string &bon_path,
+                              const Vector<std::string> &skins,
+                              const std::string &stck_path,
+                              const ModelOptions &options,
+                              Collection *collection)
+{
+  LoadedSkeleton skeleton = load_skeleton(ctx, path_basename(bon_path), engine_dirname(bon_path));
+  if (!skeleton.valid || skeleton.skeleton.bones.empty()) {
+    return nullptr;
+  }
+  ArmatureBuild armature = build_armature(
+      ctx, collection, skeleton.skeleton, name_from_engine_path(bon_path));
+  for (const std::string &skin_path : skins) {
+    Skin skin;
+    if (load_skin(ctx, skin_path, "", skin)) {
+      import_skin(ctx, collection, skin, skin_path, &skeleton.skeleton, &armature);
+    }
+  }
+  if (options.import_animations) {
+    TrackSet tracks;
+    if (!skeleton.skeleton.embedded_tracks.empty()) {
+      tracks.anim_start = skeleton.skeleton.anim_start;
+      tracks.anim_end = skeleton.skeleton.anim_end;
+      tracks.anim_fps = skeleton.skeleton.anim_fps;
+      tracks.tracks = skeleton.skeleton.embedded_tracks;
+    }
+    else if (!stck_path.empty()) {
+      load_tracks(ctx, stck_path, "", tracks);
+    }
+    if (!tracks.tracks.empty()) {
+      import_action(ctx,
+                    skeleton.skeleton,
+                    armature,
+                    tracks,
+                    name_from_engine_path(bon_path),
+                    0.0f,
+                    -1.0f,
+                    0.0f);
+    }
+  }
+  return armature.object;
+}
+
+/** \} */
+
 }  // namespace blender::io::angelica
