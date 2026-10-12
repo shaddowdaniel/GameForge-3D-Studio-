@@ -7,7 +7,7 @@ forge-fire accent.
 | Script | What it writes |
 | --- | --- |
 | `apply_theme.py` | Re-colors Blender's built-in default theme (`release/datafiles/userdef/userdef_default_theme.c`) into the GameForge "Forge" theme. Idempotent; run it again after an upstream sync touches the default theme (`--check` fails when it needs re-running). |
-| `branding/make_branding.py` | Draws the crest, the splash screen, the Linux/Windows application icons and the About dialog wordmark from code. Needs `pip install pillow numpy cairosvg fonttools`; downloads the Cinzel fonts (OFL) on first run. |
+| `branding/make_branding.py` | Builds the logo from the PWOps logo (`release/datafiles/gameforge/source/pwops_logo.png`) by replacing only its name with "GAMEFORGE 3D STUDIO" (`branding/make_logo.py`), then the splash screen, the Linux/Windows application icons and the About dialog wordmark. Needs `pip install pillow numpy fonttools opencv-python-headless`; downloads the Cinzel fonts (OFL) on first run. |
 
 Color palette (shared by both scripts):
 
