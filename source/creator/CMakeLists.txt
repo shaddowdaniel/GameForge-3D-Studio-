@@ -2188,15 +2188,16 @@ if(WIN32)
     # `CMAKE_CFG_INTDIR` variable and multi-target generators like `msbuild` will not have
     # `CMAKE_BUILD_TYPE`. This can be simplified by `target_link_options` and the `$<CONFIG>`
     # generator expression in newer CMAKE (2.13+) but until that time this fill have suffice.
+    # The path is quoted so a build folder with spaces does not split the linker argument.
     if(CMAKE_BUILD_TYPE)
       set_property(
         TARGET blender APPEND_STRING PROPERTY LINK_FLAGS_RELEASE
-        " /PDBSTRIPPED:${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_BUILD_TYPE}/blender_public.pdb"
+        " \"/PDBSTRIPPED:${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_BUILD_TYPE}/blender_public.pdb\""
       )
     else()
       set_property(
         TARGET blender APPEND_STRING PROPERTY LINK_FLAGS_RELEASE
-        " /PDBSTRIPPED:${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/blender_public.pdb"
+        " \"/PDBSTRIPPED:${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/blender_public.pdb\""
       )
     endif()
   endif()
