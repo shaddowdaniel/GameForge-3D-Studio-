@@ -338,8 +338,30 @@ class ApplyTest(unittest.TestCase):
         self.assertEqual(parsed[3:], arguments)
 
     def test_studio_running(self):
-        self.assertTrue(applier.studio_running('"GameForge3DStudio.exe","1234","Console","1","500.000 K"\r\n'))
-        self.assertFalse(applier.studio_running("INFORMAÇÕES: nenhuma tarefa em execução.\r\n"))
+        self.assertTrue(applier.studio_running(b'"GameForge3DStudio.exe","1234","Console","1","500.000 K"\r\n'))
+        self.assertFalse(applier.studio_running("INFORMAÇÕES: nenhuma tarefa em execução.\r\n".encode("cp850")))
+        # tasklist writes the OEM code page: a German "no tasks" line has bytes the ANSI page cannot decode.
+        self.assertFalse(applier.studio_running("INFORMATION: Es werden keine Tasks ausgeführt.\r\n".encode("cp850")))
+
+    def test_folder_of_the_user_needs_no_permission(self):
+        """An installation the user can write is updated without UAC: elevating there would run an apply.py any
+        program of the user could have changed."""
+        install = self.install(self.builds.b0)
+        log = os.path.join(self.tmp, "update.log")
+        signature.PINS["key_test"] = TEST_PINS["key_test"]
+        self.addCleanup(signature.PINS.pop, "key_test", None)
+        envelope = signature.envelope_from_download(signed_answer("5.4.2", package.file_sha256(self.p2)))
+        envelope_path = os.path.join(self.tmp, "envelope.json")
+        with open(envelope_path, "w", encoding="utf-8") as fh:
+            json.dump(envelope, fh)
+        originals = applier.studio_running, applier.run_elevated
+        self.addCleanup(lambda: (setattr(applier, "studio_running", originals[0]),
+                                 setattr(applier, "run_elevated", originals[1])))
+        applier.studio_running = lambda *_args: False
+        applier.run_elevated = lambda *_args: self.fail("asked Windows for permission on the user's own folder")
+        applier.watch(install, self.p2, envelope_path, log)
+        self.assertEqual(versions.installed(install)["version"], "5.4.2")
+        self.assertFalse(os.path.exists(os.path.join(install, ".gameforge-write-test")))
 
 
 class FakePortal:

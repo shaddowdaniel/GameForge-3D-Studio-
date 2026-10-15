@@ -44,12 +44,26 @@ def log(path, text):
 
 
 def studio_running(tasklist_output=None):
-    """True while any GameForge3DStudio.exe runs (every window of the Studio)."""
+    """True while any GameForge3DStudio.exe runs (every window of the Studio). ``tasklist`` writes the OEM code
+    page, which the ANSI one cannot always decode (German, Polish, Russian...): the bytes are compared as they are."""
     if tasklist_output is None:
         tasklist_output = subprocess.run(
             ["tasklist", "/FI", "IMAGENAME eq " + STUDIO_EXE, "/FO", "CSV", "/NH"],
-            capture_output=True, text=True, creationflags=_NO_WINDOW).stdout
-    return '"{:s}"'.format(STUDIO_EXE.lower()) in tasklist_output.lower()
+            capture_output=True, creationflags=_NO_WINDOW).stdout
+    return '"{:s}"'.format(STUDIO_EXE.lower()).encode("ascii") in tasklist_output.lower()
+
+
+def writable_by_user(install_dir):
+    """True when this process, not elevated, can write the installation (a folder of the user's): then the update
+    needs no permission, and elevating would run an apply.py that any program of the user could have changed."""
+    probe = os.path.join(install_dir, ".gameforge-write-test")
+    try:
+        with open(probe, "wb"):
+            pass
+        os.remove(probe)
+    except OSError:
+        return False
+    return True
 
 
 def elevated_parameters(arguments):
@@ -92,15 +106,20 @@ def watch(install_dir, package_path, envelope_path, log_path, dry_run=False):
     log(log_path, "esperando o Studio fechar")
     while studio_running():
         time.sleep(1.0)
-    code = run_elevated(["apply", install_dir, package_path, envelope_path, log_path] + (["--dry-run"] if dry_run else []))
+    if writable_by_user(install_dir):
+        code = apply(install_dir, package_path, envelope_path, log_path, dry_run)
+    else:
+        code = run_elevated(["apply", install_dir, package_path, envelope_path, log_path] +
+                            (["--dry-run"] if dry_run else []))
     if code is None:
         log(log_path, "RESULTADO adiado: o Windows não deu a permissão; o Studio oferece de novo na próxima vez")
     elif code != 0:
         log(log_path, "o aplicador terminou com o código {:d}".format(code))
-    exe = os.path.join(install_dir, LAUNCHER_EXE)
-    if not os.path.isfile(exe):
-        exe = os.path.join(install_dir, STUDIO_EXE)
-    subprocess.Popen([exe], cwd=install_dir, close_fds=True)
+    for name in (LAUNCHER_EXE, STUDIO_EXE):
+        exe = os.path.join(install_dir, name)
+        if os.path.isfile(exe):
+            subprocess.Popen([exe], cwd=install_dir, close_fds=True)
+            break
 
 
 def apply(install_dir, package_path, envelope_path, log_path, dry_run=False):
