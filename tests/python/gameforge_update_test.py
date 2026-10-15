@@ -28,7 +28,8 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 sys.path.insert(0, os.path.join(ROOT, "scripts", "modules"))
 sys.path.insert(0, os.path.join(ROOT, "release", "windows", "gameforge"))
 
-from gameforge_update import ed25519, signature, versions  # noqa: E402
+from gameforge_update import ed25519, package, signature, versions  # noqa: E402
+import pack_update  # noqa: E402
 import write_manifest  # noqa: E402
 
 TEST_SEED = bytes(range(32))
@@ -143,6 +144,72 @@ class ManifestTest(unittest.TestCase):
             self.assertEqual(versions.installed(root), {"version": "5.4.0", "base_version": "5.4.0", "build": ""})
             # Running again does not list its own files.
             self.assertEqual(write_manifest.write(root, "5.4.0"), files)
+
+
+class Builds:
+    """Three builds of a fake Studio and the installer manifest of the first (5.4.0)."""
+
+    def __init__(self, tmp):
+        self.manifests = os.path.join(tmp, "manifests")
+        self.out = os.path.join(tmp, "out")
+        self.b0 = make_build(os.path.join(tmp, "b0"), "5.4.0", {
+            "a.txt": b"a0", "b.txt": b"b0", "sub/c.dll": b"c0", "blender.pdb": b"p0"})
+        self.b1 = make_build(os.path.join(tmp, "b1"), "5.4.1", {
+            "a.txt": b"a1", "b.txt": b"b0", "sub/c.dll": b"c0", "sub/d.py": b"d1", "blender.pdb": b"p1"})
+        # a.txt goes back to the installer's bytes; b.txt is gone.
+        self.b2 = make_build(os.path.join(tmp, "b2"), "5.4.2", {
+            "a.txt": b"a0", "sub/c.dll": b"c0", "sub/d.py": b"d1", "blender.pdb": b"p2"})
+        pack_update.record_installer(self.b0, self.manifests)
+
+
+def open_release(release):
+    """(pwops-release.json, its zip entries, gameforge-update.json, names in the package, package bytes)."""
+    with zipfile.ZipFile(release) as rz:
+        manifest = json.loads(rz.read("pwops-release.json"))
+        payload = rz.read(manifest["payload"])
+        infos = rz.infolist()
+    with zipfile.ZipFile(io.BytesIO(payload)) as zf:
+        return manifest, infos, json.loads(zf.read(package.UPDATE_FILE)), sorted(zf.namelist()), payload
+
+
+class PackTest(unittest.TestCase):
+
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmp, True)
+        self.builds = Builds(self.tmp)
+
+    def test_cumulative_package(self):
+        b = self.builds
+        pack_update.pack(b.b1, "Primeira", b.manifests, b.out)
+        release, _changed, _removed = pack_update.pack(b.b2, "Segunda", b.manifests, b.out)
+        manifest, infos, update, names, payload = open_release(release)
+        # a.txt is back to the installer's bytes but changed in 5.4.1: an installation on 5.4.1 still needs it.
+        self.assertEqual(sorted(update["files"]), ["a.txt", "sub/d.py"])
+        self.assertEqual(update["removed"], ["b.txt"])
+        self.assertEqual((update["version"], update["base_version"]), ("5.4.2", "5.4.0"))
+        self.assertNotIn("blender.pdb", update["manifest"])
+        self.assertEqual(names, sorted(["a.txt", "sub/d.py", package.UPDATE_FILE]))
+        # The zip for the /admin: STORED, the payload listed with its SHA-256, the base as min_helper_version.
+        self.assertTrue(all(info.compress_type == zipfile.ZIP_STORED for info in infos))
+        self.assertEqual((manifest["schema"], manifest["plugin"], manifest["version"]), (1, "gameforge-3d-studio", "5.4.2"))
+        self.assertEqual(manifest["min_helper_version"], "5.4.0")
+        self.assertEqual(manifest["files"], [{"path": manifest["payload"], "sha256": hashlib.sha256(payload).hexdigest(),
+                                              "bytes": len(payload)}])
+        self.assertTrue(os.path.isfile(os.path.join(b.manifests, "5.4.2.json")))
+
+    def test_refusals(self):
+        b = self.builds
+        with self.assertRaises(SystemExit):
+            pack_update.pack(b.b0, "Mesma versão", b.manifests, b.out)
+        with self.assertRaises(SystemExit):
+            pack_update.pack(b.b1, "", b.manifests, b.out)
+        with self.assertRaises(SystemExit):
+            pack_update.pack(b.b1, "x" * 601, b.manifests, b.out)
+        with self.assertRaises(SystemExit):
+            pack_update.pack(b.b1, "Grande demais", b.manifests, b.out, max_bytes=100)
+        with self.assertRaises(SystemExit):
+            pack_update.pack(b.b1, "Sem base", os.path.join(self.tmp, "vazio"), b.out)
 
 
 if __name__ == "__main__":
