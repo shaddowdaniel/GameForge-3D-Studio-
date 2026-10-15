@@ -2302,3 +2302,24 @@ endif()
 if(POSTINSTALL_SCRIPT)
   install(SCRIPT ${POSTINSTALL_SCRIPT})
 endif()
+
+# -----------------------------------------------------------------------------
+# GameForge: version and manifest of the installed files (auto-update).
+# The last install rule: every file is in place. CPack installs into its own folder, so the installer
+# gets them too.
+
+if(WIN32)
+  install(CODE "
+    execute_process(
+      COMMAND \"\${CMAKE_INSTALL_PREFIX}/${TARGETDIR_VER}/python/bin/python.exe\" -I
+              \"${CMAKE_SOURCE_DIR}/release/windows/gameforge/write_manifest.py\"
+              \"\${CMAKE_INSTALL_PREFIX}\"
+              \"${BLENDER_VERSION_MAJOR}.${BLENDER_VERSION_MINOR}.${BLENDER_VERSION_PATCH}\"
+              \"${CMAKE_SOURCE_DIR}\"
+      RESULT_VARIABLE _gameforge_result
+    )
+    if(NOT _gameforge_result EQUAL 0)
+      message(FATAL_ERROR \"GameForge: write_manifest.py failed (\${_gameforge_result})\")
+    endif()
+  ")
+endif()

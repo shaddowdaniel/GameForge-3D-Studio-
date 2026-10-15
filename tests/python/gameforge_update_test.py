@@ -29,6 +29,7 @@ sys.path.insert(0, os.path.join(ROOT, "scripts", "modules"))
 sys.path.insert(0, os.path.join(ROOT, "release", "windows", "gameforge"))
 
 from gameforge_update import ed25519, signature, versions  # noqa: E402
+import write_manifest  # noqa: E402
 
 TEST_SEED = bytes(range(32))
 TEST_PINS = {"key_test": ed25519.public_key(TEST_SEED)}
@@ -117,6 +118,31 @@ class SignatureTest(unittest.TestCase):
         self.assertFalse(signature.envelope_ok({"signature": envelope["signature"]}, TEST_PINS))
         # The production keys never accept a test signature.
         self.assertFalse(signature.envelope_ok(envelope))
+
+
+def make_build(root, version, files):
+    """A fake installation: ``files`` = {relative path: bytes}, plus its manifest and version files."""
+    for path, data in files.items():
+        target = os.path.join(root, *path.split("/"))
+        os.makedirs(os.path.dirname(target), exist_ok=True)
+        with open(target, "wb") as fh:
+            fh.write(data)
+    write_manifest.write(root, version)
+    return root
+
+
+class ManifestTest(unittest.TestCase):
+
+    def test_manifest_and_version(self):
+        with tempfile.TemporaryDirectory() as root:
+            make_build(root, "5.4.0", {"x.txt": b"x", "sub/y.bin": b"y", "sub/__pycache__/z.pyc": b"z"})
+            with open(os.path.join(root, versions.MANIFEST_FILE), encoding="utf-8") as fh:
+                files = json.load(fh)
+            self.assertEqual(files, {"sub/y.bin": hashlib.sha256(b"y").hexdigest(),
+                                     "x.txt": hashlib.sha256(b"x").hexdigest()})
+            self.assertEqual(versions.installed(root), {"version": "5.4.0", "base_version": "5.4.0", "build": ""})
+            # Running again does not list its own files.
+            self.assertEqual(write_manifest.write(root, "5.4.0"), files)
 
 
 if __name__ == "__main__":
