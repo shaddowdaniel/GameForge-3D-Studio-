@@ -9,12 +9,16 @@ Builds a GameForge 3D Studio update for the portal (atomgameforge.com /admin > V
         The update from the last installer up to the build: <out>/gameforge-3d-studio-<v>-release.zip (the zip to
         upload) and <manifests>/<v>.json.
 
-    python pack_update.py <build dir> --record-installer --manifests <folder>
-        After publishing a full installer (MSI) of the build: its manifest becomes the base of the next updates.
+    python pack_update.py <component folder>... --record-installer --manifests <folder>
+        After publishing a full installer (MSI): the files in the folders CPack installed its components into
+        (C:\\gfpk\\_CPack_Packages\\Windows\\WIX\\<package>\\Blender, Libraries and Unspecified) become the base of
+        the next updates.
 
 The update is cumulative: it carries every file that differs between the build and the installer or any update
-published since, so one package takes any of those installations to the new version. <build dir> is an
-installation with gameforge-manifest.json (gf-build\\bin, or the folder CPack installed into).
+published since, so one package takes any of those installations to the new version. <build dir> is a clean
+installation of the build, never gf-build\\bin (it keeps build tools and files of older versions):
+    cmake --install gf-build --config Release --prefix <empty folder>
+The files themselves are hashed; the gameforge-manifest.json in a folder is not trusted.
 """
 
 import argparse
@@ -30,7 +34,9 @@ import zipfile
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "scripts", "modules"))
 
 from gameforge_update.package import UPDATE_FILE  # noqa: E402
-from gameforge_update.versions import MANIFEST_FILE, VERSION_FILE, ver_cmp  # noqa: E402
+from gameforge_update.versions import VERSION_FILE, ver_cmp  # noqa: E402
+
+import write_manifest  # noqa: E402  (next to this script)
 
 PLUGIN = "gameforge-3d-studio"
 MAX_BYTES = 45 * 1024 * 1024  # The portal stores files up to 50 MB (Supabase Free).
@@ -48,12 +54,22 @@ def _write_json(path, data):
         json.dump(data, fh, ensure_ascii=False, indent=0, sort_keys=True)
 
 
+def _files(folder):
+    """The installed files of a folder, {path: sha256}, without debug symbols."""
+    return {path: digest for path, digest in write_manifest.manifest(folder).items() if not _skip(path)}
+
+
+def _version(folders):
+    for folder in folders:
+        path = os.path.join(folder, VERSION_FILE)
+        if os.path.isfile(path):
+            with open(path, encoding="utf-8") as fh:
+                return json.load(fh)["version"]
+    raise SystemExit("sem {:s} em {:s}".format(VERSION_FILE, ", ".join(folders)))
+
+
 def load_build(build_dir):
-    with open(os.path.join(build_dir, VERSION_FILE), encoding="utf-8") as fh:
-        version = json.load(fh)["version"]
-    with open(os.path.join(build_dir, MANIFEST_FILE), encoding="utf-8") as fh:
-        files = {path: digest for path, digest in json.load(fh).items() if not _skip(path)}
-    return version, files
+    return _version([build_dir]), _files(build_dir)
 
 
 def load_manifests(folder):
@@ -67,8 +83,13 @@ def load_manifests(folder):
     return found
 
 
-def record_installer(build_dir, manifests):
-    version, files = load_build(build_dir)
+def record_installer(folders, manifests):
+    """The base of the next updates: the files of every folder (the MSI's components) together."""
+    folders = [folders] if isinstance(folders, str) else list(folders)
+    version = _version(folders)
+    files = {}
+    for folder in folders:
+        files.update(_files(folder))
     os.makedirs(manifests, exist_ok=True)
     _write_json(os.path.join(manifests, version + ".json"), {"version": version, "base_version": version, "files": files})
     return version
@@ -118,7 +139,8 @@ def pack(build_dir, changelog, manifests, out, max_bytes=MAX_BYTES):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Atualização do GameForge 3D Studio para o portal.")
-    parser.add_argument("build", help="a instalação do build, com gameforge-manifest.json")
+    parser.add_argument("build", nargs="+",
+                        help="a instalação limpa do build (ou, com --record-installer, as pastas dos componentes do MSI)")
     parser.add_argument("--manifests", required=True, help="a pasta dos manifestos publicados")
     parser.add_argument("--record-installer", action="store_true", help="registra o build como base (depois do MSI)")
     parser.add_argument("--changelog", default="", help="o texto do changelog (até 600 caracteres)")
@@ -127,7 +149,9 @@ def main(argv=None):
     if args.record_installer:
         print("base registrada:", record_installer(args.build, args.manifests))
         return
-    release, changed, removed = pack(args.build, args.changelog, args.manifests, args.out)
+    if len(args.build) != 1:
+        raise SystemExit("o pacote parte de uma pasta só: a instalação limpa do build")
+    release, changed, removed = pack(args.build[0], args.changelog, args.manifests, args.out)
     print("{:s}: {:d} arquivo(s) no pacote, {:d} removido(s)".format(release, len(changed), len(removed)))
 
 

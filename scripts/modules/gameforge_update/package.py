@@ -49,6 +49,11 @@ def file_sha256(path):
     return digest.hexdigest()
 
 
+def _installed_sha256(install_dir, path):
+    target = os.path.join(install_dir, *path.split("/"))
+    return file_sha256(target) if os.path.isfile(target) else None
+
+
 def _safe(path):
     """A relative path that stays inside the installation (the rule of the portal's `relOk`)."""
     return (isinstance(path, str) and bool(path) and all(part not in {"", ".", ".."} for part in path.split("/"))
@@ -117,10 +122,12 @@ def apply_update(install_dir, zip_path, log=print):
     try:
         with open(os.path.join(install_dir, MANIFEST_FILE), encoding="utf-8") as fh:
             old = json.load(fh)
-    except (OSError, ValueError) as ex:
-        raise UpdateError("instalação sem {:s}".format(MANIFEST_FILE)) from ex
+    except (OSError, ValueError):
+        old = {}
     files, manifest = info["files"], info["manifest"]
-    changed = sorted(path for path, digest in manifest.items() if old.get(path) != digest)
+    # The installed files themselves decide what changed: the installer's own manifest lists only one of its
+    # components (CPack builds the MSI component by component), so it cannot be trusted for this.
+    changed = sorted(path for path, digest in manifest.items() if _installed_sha256(install_dir, path) != digest)
     missing = [path for path in changed if path not in files]
     if missing:
         raise UpdateError("o pacote não traz {:d} arquivo(s) que mudaram, ex.: {:s}".format(len(missing), missing[0]))

@@ -215,6 +215,26 @@ class PackTest(unittest.TestCase):
         with self.assertRaises(SystemExit):
             pack_update.pack(b.b1, "Sem base", os.path.join(self.tmp, "vazio"), b.out)
 
+    def test_record_installer_from_component_folders(self):
+        """CPack installs each component of the MSI (Blender, Libraries, Unspecified) into its own folder: the base
+        is all of them together, from the files themselves."""
+        root = os.path.join(self.tmp, "cpack")
+        parts = {"Blender": {"GameForge3DStudio.exe": b"exe"},
+                 "Unspecified": {"a.txt": b"a0", "sub/c.dll": b"c0", "blender.pdb": b"p0"}}
+        for component, files in parts.items():
+            for path, data in files.items():
+                target = os.path.join(root, component, *path.split("/"))
+                os.makedirs(os.path.dirname(target), exist_ok=True)
+                with open(target, "wb") as fh:
+                    fh.write(data)
+        write_manifest.write(os.path.join(root, "Unspecified"), "5.4.0")  # Lists only its own component.
+        manifests = os.path.join(self.tmp, "componentes")
+        version = pack_update.record_installer([os.path.join(root, c) for c in parts], manifests)
+        self.assertEqual(version, "5.4.0")
+        with open(os.path.join(manifests, "5.4.0.json"), encoding="utf-8") as fh:
+            base = json.load(fh)
+        self.assertEqual(sorted(base["files"]), ["GameForge3DStudio.exe", "a.txt", "sub/c.dll"])
+
 
 def read(root, path):
     with open(os.path.join(root, *path.split("/")), "rb") as fh:
@@ -268,6 +288,18 @@ class ApplyTest(unittest.TestCase):
             leftovers = [name for _folder, dirs, names in os.walk(install) for name in names + dirs
                          if name.endswith(".gfold") or name == ".gameforge-update"]
             self.assertEqual(leftovers, [])
+
+    def test_partial_manifest_like_the_installer(self):
+        """The MSI's own manifest lists only one component's files: the update compares the installed files."""
+        install = self.install(self.builds.b0)
+        with open(os.path.join(install, versions.MANIFEST_FILE), encoding="utf-8") as fh:
+            manifest = json.load(fh)
+        del manifest["sub/c.dll"]  # The same in every version, so no package carries it.
+        with open(os.path.join(install, versions.MANIFEST_FILE), "w", encoding="utf-8") as fh:
+            json.dump(manifest, fh)
+        self.assertEqual(package.apply_update(install, self.p2, log=lambda _text: None), "5.4.2")
+        self.assertEqual(read(install, "sub/c.dll"), b"c0")
+        self.assertEqual(read(install, "a.txt"), b"a0")
 
     @unittest.skipUnless(sys.platform == "win32", "Windows file locks")
     def test_file_in_use_puts_everything_back(self):
