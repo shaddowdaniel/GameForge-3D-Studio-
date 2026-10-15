@@ -1755,9 +1755,9 @@ static PyMethodDef IMB_methods[] = {
 PyDoc_STRVAR(
     /* Wrap. */
     IMB_doc,
-    "This module provides access to Blender's image manipulation API.\n"
+    "This module provides access to GameForge 3D Studio's image manipulation API.\n"
     "\n"
-    "It provides access to image buffers outside of Blender's\n"
+    "It provides access to image buffers outside of GameForge 3D Studio's\n"
     ":class:`bpy.types.Image` data-block context.\n");
 static PyModuleDef IMB_module_def = {
     /*m_base*/ PyModuleDef_HEAD_INIT,

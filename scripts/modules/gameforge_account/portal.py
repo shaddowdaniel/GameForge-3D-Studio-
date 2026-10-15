@@ -25,6 +25,8 @@ __all__ = (
     "studio_included",
 )
 
+import hashlib
+import http.client
 import json
 import os
 import ssl
@@ -251,3 +253,35 @@ class Portal:
         if len(data) > max_bytes:
             raise PortalError("arquivo maior que o esperado")
         return data
+
+    def fetch_to_file(self, url, path, *, max_bytes, progress=None):
+        """
+        Download a signed storage URL into ``path`` in pieces, refusing more than ``max_bytes``. Returns the
+        SHA-256 (hex) of what was written; ``progress(done, total)`` runs after each piece (``total`` is 0 when the
+        server does not say). A connection that drops halfway raises ``NetworkError``.
+        """
+        digest = hashlib.sha256()
+        request = urllib.request.Request(url, method="GET")
+        try:
+            with self._opener.open(request, timeout=_DOWNLOAD_TIMEOUT_SEC) as response, open(path, "wb") as fh:
+                total = int(response.headers.get("content-length") or 0)
+                done = 0
+                while True:
+                    chunk = response.read(1 << 20)
+                    if not chunk:
+                        break
+                    done += len(chunk)
+                    if done > max_bytes:
+                        raise PortalError("arquivo maior que o esperado")
+                    digest.update(chunk)
+                    fh.write(chunk)
+                    if progress is not None:
+                        progress(done, total)
+        except urllib.error.HTTPError as ex:
+            raise PortalError("download recusado ({:d})".format(ex.code), status=ex.code) from ex
+        except (urllib.error.URLError, OSError, ssl.SSLError, http.client.HTTPException) as ex:
+            raise NetworkError("Não foi possível baixar de atomgameforge.com ({:s})".format(str(ex))) from ex
+        # `read(n)` returns nothing when the connection drops before the announced size, without an error.
+        if total and done < total:
+            raise NetworkError("O download parou no meio ({:d} de {:d} bytes)".format(done, total))
+        return digest.hexdigest()

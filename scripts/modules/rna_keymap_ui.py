@@ -9,6 +9,7 @@ __all__ = (
     "draw_filtered",
     "draw_hierarchy",
     "draw_keymaps",
+    "keyconfig_display_name",
 )
 
 
@@ -535,6 +536,21 @@ def draw_hierarchy(display_keymaps, layout):
         draw_entry(display_keymaps, entry, layout)
 
 
+# The default key maps keep their internal names (the default one is `WM_KEYCONFIG_STR_DEFAULT`).
+_KEYCONFIG_DISPLAY_NAMES = {
+    "blender": "GameForge 3D Studio",
+    "blender 27x": "GameForge 3D Studio 2.7X",
+}
+
+
+def keyconfig_display_name(name):
+    """
+    Name of a key configuration, or of its preset file, as shown to the user.
+    """
+    text = bpy.path.display_name(name, title_case=False)
+    return _KEYCONFIG_DISPLAY_NAMES.get(text.lower(), text)
+
+
 def draw_keymaps(context, layout):
     from bl_keymap_utils.io import keyconfig_merge
 
@@ -544,9 +560,9 @@ def draw_keymaps(context, layout):
     spref = context.space_data
 
     # row.prop_search(wm.keyconfigs, "active", wm, "keyconfigs", text="Key Config")
-    text = bpy.path.display_name(kc_active.name, has_ext=False)
+    text = keyconfig_display_name(kc_active.name)
     if not text:
-        text = "Blender (default)"
+        text = "GameForge 3D Studio (default)"
 
     split = layout.split(factor=0.6)
 

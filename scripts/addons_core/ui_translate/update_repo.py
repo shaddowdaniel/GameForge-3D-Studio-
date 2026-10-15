@@ -162,9 +162,9 @@ class UI_OT_i18n_cleanuptranslation_work_repo(Operator):
 
 
 class UI_OT_i18n_updatetranslation_blender_repo(Operator):
-    """Update i18n data (po files) in Blender source code repository"""
+    """Update i18n data (po files) in GameForge 3D Studio source code repository"""
     bl_idname = "ui.i18n_updatetranslation_blender_repo"
-    bl_label = "Update I18n Blender Repository"
+    bl_label = "Update I18n GameForge 3D Studio Repository"
 
     def execute(self, context):
         if not hasattr(self, "settings"):

@@ -1638,14 +1638,14 @@ void RNA_def_property_deprecated(PropertyRNA *prop,
    * Note that one version in the future is still allowed, as this might be useful in some rare
    * cases. */
   BLI_assert_msg(version <= BLENDER_VERSION + 1,
-                 "Deprecation version is set in a future version of Blender");
+                 "Deprecation version is set in a future version of GameForge 3D Studio");
 
   /* This message is to alert developers of deprecation
    * without breaking the build after a version bump. */
   if (removal_version <= BLENDER_VERSION) {
     fprintf(stderr,
             "\nWARNING: \"%s.%s\" deprecation starting at %d.%d marks this property to be removed "
-            "in the current Blender version!\n\n",
+            "in the current GameForge 3D Studio version!\n\n",
             srna->identifier.c_str(),
             prop->identifier.c_str(),
             version / 100,

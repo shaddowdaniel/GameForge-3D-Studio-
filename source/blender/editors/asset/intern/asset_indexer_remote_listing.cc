@@ -234,7 +234,7 @@ static ReadingResult<ApiVersionInfo> choose_api_version(const AssetLibraryMeta &
   }
 
   return ReadingResult<ApiVersionInfo>::Failure(
-      N_("remote does not offer an API version supported by this version of Blender"));
+      N_("remote does not offer an API version supported by this version of GameForge 3D Studio"));
 }
 
 bool read_remote_listing(const StringRefNull root_dirpath,

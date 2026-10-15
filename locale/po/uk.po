@@ -547,8 +547,8 @@ msgid "Source Root"
 msgstr "Корінь джерела"
 
 
-msgid "The Blender source root path"
-msgstr "Кореневий каталог сирцевого коду Blender"
+msgid "The GameForge 3D Studio source root path"
+msgstr "Кореневий каталог сирцевого коду GameForge 3D Studio"
 
 
 msgid "Spell Cache"
@@ -571,8 +571,8 @@ msgid "Persistent Data Path"
 msgstr "Постійні дані"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Назва файлу json для зберігання цих налаштувань (на жаль, система Blender тут не діє)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
+msgstr "Назва файлу json для зберігання цих налаштувань (на жаль, система GameForge 3D Studio тут не діє)"
 
 
 msgid "User Add-ons"
@@ -2743,8 +2743,8 @@ msgid "Project"
 msgstr "Проєктування"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgctxt "ID"
@@ -2760,12 +2760,12 @@ msgid "Path"
 msgstr "Шлях"
 
 
-msgid "Blender RNA"
-msgstr "Blender RNA"
+msgid "GameForge 3D Studio RNA"
+msgstr "GameForge 3D Studio RNA"
 
 
-msgid "Blender RNA structure definitions"
-msgstr "Визначення структури Blender RNA"
+msgid "GameForge 3D Studio RNA structure definitions"
+msgstr "Визначення структури GameForge 3D Studio RNA"
 
 
 msgid "Structs"
@@ -5681,8 +5681,8 @@ msgid "Lin error"
 msgstr "Лін. помилка"
 
 
-msgid "Amount of residual error in Blender space unit for constraints that work on position"
-msgstr "Величина залишкової похибки в одиницях Blender для примусів, що працюють з позицією"
+msgid "Amount of residual error in GameForge 3D Studio space unit for constraints that work on position"
+msgstr "Величина залишкової похибки в одиницях GameForge 3D Studio для примусів, що працюють з позицією"
 
 
 msgid "Rotation error"
@@ -9134,8 +9134,8 @@ msgid "Max Velocity"
 msgstr "Найбільша швидкість"
 
 
-msgid "Velocity considered as maximum influence (Blender units per frame)"
-msgstr "Швидкість, при якій вплив буде найбільшим (одиниць Blender на кадр)"
+msgid "Velocity considered as maximum influence (GameForge 3D Studio units per frame)"
+msgstr "Швидкість, при якій вплив буде найбільшим (одиниць GameForge 3D Studio на кадр)"
 
 
 msgid "Velocity Color Ramp"
@@ -9474,8 +9474,8 @@ msgid "Premultiply Alpha"
 msgstr "Передмноження Альфа"
 
 
-msgid "Multiply color by alpha (recommended for Blender input)"
-msgstr "Помножити колір на альфа (рекомендовано для вводу Blender)"
+msgid "Multiply color by alpha (recommended for GameForge 3D Studio input)"
+msgstr "Помножити колір на альфа (рекомендовано для вводу GameForge 3D Studio)"
 
 
 msgid "Use Shrink"
@@ -11492,23 +11492,23 @@ msgid "Hide .blend files items that are not data-blocks with asset metadata"
 msgstr "Сховати елементів .blend файлів, що не є блоками даних з метаданими активів"
 
 
-msgid "Filter Blender Backup Files"
-msgstr "Фільтр Резервних Файлів Blender"
+msgid "Filter GameForge 3D Studio Backup Files"
+msgstr "Фільтр Резервних Файлів GameForge 3D Studio"
 
 
 msgid "Show .blend1, .blend2, etc. files"
 msgstr "Показати файли .blend1, .blend2 тощо"
 
 
-msgid "Filter Blender"
-msgstr "Фільтр Blender"
+msgid "Filter GameForge 3D Studio"
+msgstr "Фільтр GameForge 3D Studio"
 
 
 msgid "Show .blend files"
 msgstr "Показати .blend-файли"
 
 
-msgid "Filter Blender IDs"
+msgid "Filter GameForge 3D Studio IDs"
 msgstr "Фільтр за ID елементів"
 
 
@@ -17953,8 +17953,8 @@ msgid "External .blend file from which data is linked"
 msgstr "Зовнішній blend-файл, з якого пов'язано дані"
 
 
-msgid "Version of Blender the library .blend was saved with"
-msgstr "Версія Blender'а, за допомогою якої бібліотека .blend була збережена"
+msgid "Version of GameForge 3D Studio the library .blend was saved with"
+msgstr "Версія GameForge 3D Studio'а, за допомогою якої бібліотека .blend була збережена"
 
 
 msgctxt "Light"
@@ -21730,12 +21730,12 @@ msgid "Noise basis used for turbulence"
 msgstr "Базис шуму для турбулентності"
 
 
-msgid "Blender Original"
-msgstr "Оригінальний Blender"
+msgid "GameForge 3D Studio Original"
+msgstr "Оригінальний GameForge 3D Studio"
 
 
-msgid "Noise algorithm - Blender original: Smooth interpolated noise"
-msgstr "Алгоритм шуму - оригінальний Blender: м'який інтерпольований шум"
+msgid "Noise algorithm - GameForge 3D Studio original: Smooth interpolated noise"
+msgstr "Алгоритм шуму - оригінальний GameForge 3D Studio: м'який інтерпольований шум"
 
 
 msgid "Original Perlin"
@@ -30805,7 +30805,7 @@ msgstr "Розмір області"
 
 
 msgid "Size of the simulation domain (in meters), and of the generated geometry (in BU)"
-msgstr "Розмір області моделювання (у метрах) та створеної геометрії (в одиницях Blender)"
+msgstr "Розмір області моделювання (у метрах) та створеної геометрії (в одиницях GameForge 3D Studio)"
 
 
 msgid "Spectrum"
@@ -35036,20 +35036,20 @@ msgid "World space normal mapping"
 msgstr "Розкладка нормалей у просторі світу"
 
 
-msgid "Blender Object Space"
-msgstr "Простір об'єкта Blender"
+msgid "GameForge 3D Studio Object Space"
+msgstr "Простір об'єкта GameForge 3D Studio"
 
 
-msgid "Object space normal mapping, compatible with Blender render baking"
-msgstr "Розкладання нормалей у просторі об'єкта, сумісне з запіканням Blender"
+msgid "Object space normal mapping, compatible with GameForge 3D Studio render baking"
+msgstr "Розкладання нормалей у просторі об'єкта, сумісне з запіканням GameForge 3D Studio"
 
 
-msgid "Blender World Space"
-msgstr "Простір світу Blender"
+msgid "GameForge 3D Studio World Space"
+msgstr "Простір світу GameForge 3D Studio"
 
 
-msgid "World space normal mapping, compatible with Blender render baking"
-msgstr "Розкладання нормалей у просторі світу, сумісне з запіканням Blender"
+msgid "World space normal mapping, compatible with GameForge 3D Studio render baking"
+msgstr "Розкладання нормалей у просторі світу, сумісне з запіканням GameForge 3D Studio"
 
 
 msgid "UV Map for tangent space maps"
@@ -36992,8 +36992,8 @@ msgid "Uninstall Studio Light"
 msgstr "Деінсталювати Студійний Освітлювач"
 
 
-msgid "Load and apply a Blender XML theme file"
-msgstr "Завантажити та застосувати XML-файл з темою Blender'а"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
+msgstr "Завантажити та застосувати XML-файл з темою GameForge 3D Studio'а"
 
 
 msgctxt "Operator"
@@ -41721,8 +41721,8 @@ msgid "Apply Scalings"
 msgstr "Застосувати масштабування"
 
 
-msgid "How to apply custom and units scalings in generated FBX file (Blender uses FBX scale to detect units on import, but many other applications do not handle the same way)"
-msgstr "Як застосувати власне та масштабування одиниць у генерований FBX-файл (Blender використовує масштаб FBX для визначення одиниць під час імпорту, але багато інших застосунків не обробляють імпортоване так само)"
+msgid "How to apply custom and units scalings in generated FBX file (GameForge 3D Studio uses FBX scale to detect units on import, but many other applications do not handle the same way)"
+msgstr "Як застосувати власне та масштабування одиниць у генерований FBX-файл (GameForge 3D Studio використовує масштаб FBX для визначення одиниць під час імпорту, але багато інших застосунків не обробляють імпортоване так само)"
 
 
 msgid "All Local"
@@ -41761,8 +41761,8 @@ msgid "Apply Unit"
 msgstr "Застосувати одиниці виміру"
 
 
-msgid "Take into account current Blender units settings (if unset, raw Blender Units values are used as-is)"
-msgstr "Врахувати поточні параметри одиниць Blender'а (якщо не задано, то сирі одиниці Blender'а використовується як є)"
+msgid "Take into account current GameForge 3D Studio units settings (if unset, raw GameForge 3D Studio Units values are used as-is)"
+msgstr "Врахувати поточні параметри одиниць GameForge 3D Studio'а (якщо не задано, то сирі одиниці GameForge 3D Studio'а використовується як є)"
 
 
 msgid "Armature FBXNode Type"
@@ -41773,8 +41773,8 @@ msgid "Null"
 msgstr "Null"
 
 
-msgid "'Null' FBX node, similar to Blender's Empty (default)"
-msgstr "Тип вузла FBX - 'Null', подібний до об’єкта Порожня у Blender'і (стандартно)"
+msgid "'Null' FBX node, similar to GameForge 3D Studio's Empty (default)"
+msgstr "Тип вузла FBX - 'Null', подібний до об’єкта Порожня у GameForge 3D Studio'і (стандартно)"
 
 
 msgid "'Root' FBX node, supposed to be the root of chains of bones..."
@@ -42057,8 +42057,8 @@ msgid "Use Modifiers Render Setting"
 msgstr "Вжити Устави Рендера для Модифікаторів"
 
 
-msgid "Use render settings when applying modifiers to mesh objects (DISABLED in Blender 2.8)"
-msgstr "Вживати устави рендера при застосуванні модифікаторів для сітьових об'єктів (ВИМКНЕНО у Blender 2.8)"
+msgid "Use render settings when applying modifiers to mesh objects (DISABLED in version 2.8)"
+msgstr "Вживати устави рендера при застосуванні модифікаторів для сітьових об'єктів (ВИМКНЕНО у GameForge 3D Studio 2.8)"
 
 
 msgid "Use Metadata"
@@ -42313,8 +42313,8 @@ msgid "Remember Export Settings"
 msgstr "Пам'ятати Устави Експорту"
 
 
-msgid "Store glTF export settings in the Blender project"
-msgstr "Зберігати устави експорту glTF у прокті Blender'а"
+msgid "Store glTF export settings in the GameForge 3D Studio project"
+msgstr "Зберігати устави експорту glTF у прокті GameForge 3D Studio'а"
 
 
 msgid "URL"
@@ -44878,8 +44878,8 @@ msgid "Import FBX animation"
 msgstr "Імпортувати анімацію FBX"
 
 
-msgid "Import custom normals, if available (otherwise Blender will recompute them)"
-msgstr "Імпортувати власні нормалі, якщо доступно (інакше Blender переобчислить їх)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will recompute them)"
+msgstr "Імпортувати власні нормалі, якщо доступно (інакше GameForge 3D Studio переобчислить їх)"
 
 
 msgid "Import user properties as custom properties"
@@ -45014,8 +45014,8 @@ msgid "Update Reports Display"
 msgstr "Оновити екран звітів"
 
 
-msgid "Update the display of reports in Blender UI (internal use)"
-msgstr "Поновити показ звітів у інтерфейсі Blender (для внутрішнього використання)"
+msgid "Update the display of reports in GameForge 3D Studio UI (internal use)"
+msgstr "Поновити показ звітів у інтерфейсі GameForge 3D Studio (для внутрішнього використання)"
 
 
 msgid "Change selection of all visible reports"
@@ -57127,8 +57127,8 @@ msgid "Eyedropper"
 msgstr "Піпетка"
 
 
-msgid "Sample a color from the Blender window to store in a property"
-msgstr "Відібрати зразок з вікна Blender для збереження у властивості"
+msgid "Sample a color from the GameForge 3D Studio window to store in a property"
+msgstr "Відібрати зразок з вікна GameForge 3D Studio для збереження у властивості"
 
 
 msgctxt "Operator"
@@ -57220,8 +57220,8 @@ msgid "Grease Pencil Eyedropper"
 msgstr "Піпетка Нарисного Олівця"
 
 
-msgid "Sample a color from the Blender Window and create Grease Pencil material"
-msgstr "Вибірка кольору з Вікна Blender та створення матеріалу Нарисного Олівця"
+msgid "Sample a color from the GameForge 3D Studio Window and create Grease Pencil material"
+msgstr "Вибірка кольору з Вікна GameForge 3D Studio та створення матеріалу Нарисного Олівця"
 
 
 msgctxt "Operator"
@@ -58863,8 +58863,8 @@ msgid "Run as Background Job"
 msgstr "Запустити в фоновому режимі"
 
 
-msgid "Enable this to run the import in the background, disable to block Blender while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
-msgstr "Вмикайте це для виконання імпорту у фоні, вимикайте для блокування Blender'а при імпортуванні. Ця опція застаріла; ВИКОНУЙТЕ цей оператор для виконання на передньому плані та ВИКЛИКАЙТЕ його для виконання як фонове завдання"
+msgid "Enable this to run the import in the background, disable to block GameForge 3D Studio while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgstr "Вмикайте це для виконання імпорту у фоні, вимикайте для блокування GameForge 3D Studio'а при імпортуванні. Ця опція застаріла; ВИКОНУЙТЕ цей оператор для виконання на передньому плані та ВИКЛИКАЙТЕ його для виконання як фонове завдання"
 
 
 msgid "Curves as Mesh"
@@ -59008,8 +59008,8 @@ msgid "Load an Alembic archive"
 msgstr "Завантажити архів Alembic"
 
 
-msgid "Enable this to run the export in the background, disable to block Blender while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
-msgstr "Вмикайте це для виконання експорту у фоні, вимикайте для блокування Blender'а при експортуванні. Ця опція застаріла; ВИКОНУЙТЕ цей оператор для виконання на передньому плані та ВИКЛИКАЙТЕ його для виконання як фонове завдання"
+msgid "Enable this to run the export in the background, disable to block GameForge 3D Studio while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgstr "Вмикайте це для виконання експорту у фоні, вимикайте для блокування GameForge 3D Studio'а при експортуванні. Ця опція застаріла; ВИКОНУЙТЕ цей оператор для виконання на передньому плані та ВИКЛИКАЙТЕ його для виконання як фонове завдання"
 
 
 msgid "Is Sequence"
@@ -59290,8 +59290,8 @@ msgid "Open"
 msgstr "Відкриття"
 
 
-msgid "Open a Blender file"
-msgstr "Відкрити файл Blender"
+msgid "Open a GameForge 3D Studio file"
+msgstr "Відкрити файл GameForge 3D Studio"
 
 
 msgid "Display File Selector"
@@ -59464,12 +59464,12 @@ msgstr "Лімітує повзунок Значення Властивості 
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Вийти з Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Вийти з GameForge 3D Studio"
 
 
-msgid "Quit Blender"
-msgstr "Вийти з Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Вийти з GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -59760,16 +59760,16 @@ msgstr "Записати стартовий файл"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Зберегти файл Blender"
+msgid "Save GameForge 3D Studio File"
+msgstr "Зберегти файл GameForge 3D Studio"
 
 
-msgid "Save the current Blender file"
-msgstr "Зберегти поточний файл Blender"
+msgid "Save the current GameForge 3D Studio file"
+msgstr "Зберегти поточний файл GameForge 3D Studio"
 
 
-msgid "Exit Blender after saving"
-msgstr "Вийти з Blender'а після збереження"
+msgid "Exit GameForge 3D Studio after saving"
+msgstr "Вийти з GameForge 3D Studio'а після збереження"
 
 
 msgctxt "Operator"
@@ -59906,12 +59906,12 @@ msgstr "Відкрити заставку з інформацією про ви�
 
 
 msgctxt "Operator"
-msgid "About Blender"
-msgstr "Про Blender"
+msgid "About GameForge 3D Studio"
+msgstr "Про GameForge 3D Studio"
 
 
-msgid "Open a window with information about Blender"
-msgstr "Відкрити вікно з інформацією про Blender"
+msgid "Open a window with information about GameForge 3D Studio"
+msgstr "Відкрити вікно з інформацією про GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -62964,8 +62964,8 @@ msgid "Edit Methods"
 msgstr "Методи редагування"
 
 
-msgid "Settings for interacting with Blender data"
-msgstr "Параметри для взаємодії з даними Blender"
+msgid "Settings for interacting with GameForge 3D Studio data"
+msgstr "Параметри для взаємодії з даними GameForge 3D Studio"
 
 
 msgid "Settings for features that are still early in their development stage"
@@ -63008,8 +63008,8 @@ msgid "Save preferences on exit when modified (unless factory settings have been
 msgstr "Зберегти уподобання на виході, коли вони модифіковані (якщо заводські устави не були завантажені)"
 
 
-msgid "Version of Blender the userpref.blend was saved with"
-msgstr "Версія Blender, якою було збережено файл userpref.blend"
+msgid "Version of GameForge 3D Studio the userpref.blend was saved with"
+msgstr "Версія GameForge 3D Studio, якою було збережено файл userpref.blend"
 
 
 msgid "View & Controls"
@@ -63680,16 +63680,16 @@ msgid "Max Threshold"
 msgstr "Макс Поріг"
 
 
-msgid "Raw input pressure value that is interpreted as 100% by Blender"
-msgstr "Сирцеве увідне значення натиску, що інтерпретується Blender'ом як 100%"
+msgid "Raw input pressure value that is interpreted as 100% by GameForge 3D Studio"
+msgstr "Сирцеве увідне значення натиску, що інтерпретується GameForge 3D Studio'ом як 100%"
 
 
 msgid "Tablet API"
 msgstr "API Планшета"
 
 
-msgid "Select the tablet API to use for pressure sensitivity (may require restarting Blender for changes to take effect)"
-msgstr "Вибрати API планшета для чутливості натиску (може вимагати перезапуску Blender'а для застосування змін)"
+msgid "Select the tablet API to use for pressure sensitivity (may require restarting GameForge 3D Studio for changes to take effect)"
+msgstr "Вибрати API планшета для чутливості натиску (може вимагати перезапуску GameForge 3D Studio'а для застосування змін)"
 
 
 msgid "Automatically choose Wintab or Windows Ink depending on the device"
@@ -64520,8 +64520,8 @@ msgid "Show Memory"
 msgstr "Показ пам'яті"
 
 
-msgid "Show Blender memory usage"
-msgstr "Показувати використання пам'яті програмою Blender"
+msgid "Show GameForge 3D Studio memory usage"
+msgstr "Показувати використання пам'яті програмою GameForge 3D Studio"
 
 
 msgid "Show Statistics"
@@ -64536,8 +64536,8 @@ msgid "Show Version"
 msgstr "Показ версії"
 
 
-msgid "Show Blender version string"
-msgstr "Показувати рядок з версією програми Blender"
+msgid "Show GameForge 3D Studio version string"
+msgstr "Показувати рядок з версією програми GameForge 3D Studio"
 
 
 msgid "Show VRAM"
@@ -66908,12 +66908,12 @@ msgid "Which implementation of spring to use"
 msgstr "Яку реалізацію пружності використовувати"
 
 
-msgid "Blender 2.7"
-msgstr "Blender 2.7"
+msgid "Version 2.7"
+msgstr "GameForge 3D Studio 2.7"
 
 
-msgid "Blender 2.8"
-msgstr "Blender 2.8"
+msgid "Version 2.8"
+msgstr "GameForge 3D Studio 2.8"
 
 
 msgid "New implementation available since 2.8"
@@ -69587,8 +69587,8 @@ msgid "Display data belonging to the Video Sequencer"
 msgstr "Показувати дані, що належать до Секвенсера Відео"
 
 
-msgid "Blender File"
-msgstr "Файл Blender"
+msgid "GameForge 3D Studio File"
+msgstr "Файл GameForge 3D Studio"
 
 
 msgid "Display data of current file and linked libraries"
@@ -69599,8 +69599,8 @@ msgid "Data API"
 msgstr "API Даних"
 
 
-msgid "Display low level Blender data and its properties"
-msgstr "Показувати дані нижнього рівня Blender'а та їх властивості"
+msgid "Display low level GameForge 3D Studio data and its properties"
+msgstr "Показувати дані нижнього рівня GameForge 3D Studio'а та їх властивості"
 
 
 msgid "Library Overrides"
@@ -69768,8 +69768,8 @@ msgid "Space Preferences"
 msgstr "Уподобання Простору"
 
 
-msgid "Blender preferences space data"
-msgstr "Уподобання Blender'а щодо даних простору"
+msgid "GameForge 3D Studio preferences space data"
+msgstr "Уподобання GameForge 3D Studio'а щодо даних простору"
 
 
 msgid "Search term for filtering in the UI"
@@ -72751,8 +72751,8 @@ msgid "Theme Preferences"
 msgstr "Тема Уподобань"
 
 
-msgid "Theme settings for the Blender Preferences"
-msgstr "Устави теми для Уподобань Blender'а"
+msgid "Theme settings for the GameForge 3D Studio Preferences"
+msgstr "Устави теми для Уподобань GameForge 3D Studio'а"
 
 
 msgid "Search Match"
@@ -76030,8 +76030,8 @@ msgid "Contributions"
 msgstr "Внески"
 
 
-msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and Blender scene have the same frame rate"
-msgstr "Файл BVH не містить значення тривалості кадрів у його секції MOTION, припускається, що файл BVH та файл сцени Blender'а мають однакову частоту кадрів"
+msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and GameForge 3D Studio scene have the same frame rate"
+msgstr "Файл BVH не містить значення тривалості кадрів у його секції MOTION, припускається, що файл BVH та файл сцени GameForge 3D Studio'а мають однакову частоту кадрів"
 
 
 msgid "Unable to update scene frame rate, as the BVH file contains a zero frame duration in its MOTION section"
@@ -76397,8 +76397,8 @@ msgid "Open..."
 msgstr "Відкриття..."
 
 
-msgid "Blender is free software"
-msgstr "Blender є безоплатним програмним забезпеченням"
+msgid "GameForge 3D Studio is free software"
+msgstr "GameForge 3D Studio є безоплатним програмним забезпеченням"
 
 
 msgid "Licensed under the GNU General Public License"
@@ -76444,13 +76444,13 @@ msgstr "Ліцензія"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
-msgstr "Сховище Blender'а"
+msgid "GameForge 3D Studio Store"
+msgstr "Сховище GameForge 3D Studio'а"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
-msgstr "Вебсайт Blender'а"
+msgid "GameForge 3D Studio Website"
+msgstr "Вебсайт GameForge 3D Studio'а"
 
 
 msgid "Trusted Source [Untrusted Path]"
@@ -78558,8 +78558,8 @@ msgid "Volume Files"
 msgstr "Файли Об'ємів"
 
 
-msgid "Blender IDs"
-msgstr "Ідентифікатори Blender"
+msgid "GameForge 3D Studio IDs"
+msgstr "Ідентифікатори GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -79702,8 +79702,8 @@ msgid "Video Memory"
 msgstr "Пам'ять Відео"
 
 
-msgid "Blender Version"
-msgstr "Версія Blender'а"
+msgid "GameForge 3D Studio Version"
+msgstr "Версія GameForge 3D Studio'а"
 
 
 msgid "Top Level"
@@ -81515,12 +81515,12 @@ msgid "Unable to create app-template userpref path"
 msgstr "Увімкнути користувацький шлях для створення шаблонів застосунків"
 
 
-msgid "File written by newer Blender binary (%d.%d), expect loss of data!"
-msgstr "Файл записано новішою версією Blender (%d.%d), можлива втрата даних!"
+msgid "File written by newer GameForge 3D Studio binary (%d.%d), expect loss of data!"
+msgstr "Файл записано новішою версією GameForge 3D Studio (%d.%d), можлива втрата даних!"
 
 
-msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current Blender"
-msgstr "Прив'язування або прилучення з дуже старого .blend-файлу формату (%d.%d), анімація не буде перетворена! Спробуйте переписати бібліотечний файл з поточної версії Blender'а."
+msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current GameForge 3D Studio"
+msgstr "Прив'язування або прилучення з дуже старого .blend-файлу формату (%d.%d), анімація не буде перетворена! Спробуйте переписати бібліотечний файл з поточної версії GameForge 3D Studio'а."
 
 
 msgid "Lib Reload: Replacing all references to old data-block '%s' by reloaded one failed, old one (%d remaining users) had to be kept and was renamed to '%s'"
@@ -81866,8 +81866,8 @@ msgid "At least 8 common tracks on both keyframes are needed for reconstruction"
 msgstr "Для реконструкції потрібно принаймні 8 спільних стежок на обох ключових кадрах"
 
 
-msgid "Blender is compiled without motion tracking library"
-msgstr "Blender скомпільовано без бібліотеки відстеження руху"
+msgid "GameForge 3D Studio is compiled without motion tracking library"
+msgstr "GameForge 3D Studio скомпільовано без бібліотеки відстеження руху"
 
 
 msgid "Original Mode"
@@ -84648,8 +84648,8 @@ msgid "Unable to remove material slot in edit mode"
 msgstr "Неможливо вилучити гніздо матеріалу в режимі редагування"
 
 
-msgid "Blender Render"
-msgstr "Рендер Blender"
+msgid "GameForge 3D Studio Render"
+msgstr "Рендер GameForge 3D Studio"
 
 
 msgid "Failed to open window!"
@@ -84692,12 +84692,12 @@ msgid "Flip to Bottom"
 msgstr "Перевернути донизу"
 
 
-msgid "Blender Drivers Editor"
-msgstr "Редактор Драйверів Blender"
+msgid "GameForge 3D Studio Drivers Editor"
+msgstr "Редактор Драйверів GameForge 3D Studio"
 
 
-msgid "Blender Info Log"
-msgstr "Інфо Лог Blender'а"
+msgid "GameForge 3D Studio Info Log"
+msgstr "Інфо Лог GameForge 3D Studio'а"
 
 
 msgid "Can only scale region size from an action zone"
@@ -85874,8 +85874,8 @@ msgid "Class"
 msgstr "Клас"
 
 
-msgid "File Modified Outside and Inside Blender"
-msgstr "Файл змінено за межами та у Blender'і"
+msgid "File Modified Outside and Inside GameForge 3D Studio"
+msgstr "Файл змінено за межами та у GameForge 3D Studio'і"
 
 
 msgid "Reload from disk (ignore local changes)"
@@ -85890,16 +85890,16 @@ msgid "Make text internal (separate copy)"
 msgstr "Зробити текст внутрішнім (виокремити копію)"
 
 
-msgid "File Modified Outside Blender"
-msgstr "Файл змінено за межами Blender"
+msgid "File Modified Outside GameForge 3D Studio"
+msgstr "Файл змінено за межами GameForge 3D Studio"
 
 
 msgid "Reload from disk"
 msgstr "Перезавантажити з диску"
 
 
-msgid "File Deleted Outside Blender"
-msgstr "Файл видалено за межами Blender"
+msgid "File Deleted Outside GameForge 3D Studio"
+msgstr "Файл видалено за межами GameForge 3D Studio"
 
 
 msgid "Make text internal"
@@ -87231,8 +87231,8 @@ msgid "Modifier was not found in the stack"
 msgstr "Модифікатор не знайдено у стосі"
 
 
-msgid "Blender compiled without Audaspace support"
-msgstr "Blender скомпільовано без підтримки Audaspace"
+msgid "GameForge 3D Studio compiled without Audaspace support"
+msgstr "GameForge 3D Studio скомпільовано без підтримки Audaspace"
 
 
 msgid "Sound not packed"
@@ -88091,8 +88091,8 @@ msgid "window_managers"
 msgstr "Диспетчерт вікон"
 
 
-msgid "Blender File View"
-msgstr "Перегляд файлу Blender"
+msgid "GameForge 3D Studio File View"
+msgstr "Перегляд файлу GameForge 3D Studio"
 
 
 msgid "Missing 'window' in context"

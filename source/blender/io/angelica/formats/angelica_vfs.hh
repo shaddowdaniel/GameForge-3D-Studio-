@@ -5,10 +5,14 @@
 /** \file
  * \ingroup angelica
  *
- * The client's virtual file system: files are looked up first as loose files under the client
- * folder (`element`), then inside the `.pck` package named after the first path component
- * (`models\npc\x.ski` lives in `models.pck`), the same order the client uses when it runs with
- * packages enabled. Lookups are case insensitive, like on Windows.
+ * The client's virtual file system, in the order the client looks files up when it runs with
+ * packages (`AFileImage::Init`, `AFilePackMan::GetFilePck`): first inside the package whose
+ * folder holds the path (`models\npc\x.ski` lives in `models.pck`, `help\script\x.lua` in
+ * `help\script.pck`), then as a loose file under the client folder (`element`) when the package
+ * does not have it. Lookups are case insensitive, like on Windows.
+ *
+ * Packages are opened once per process and shared (#open_package_shared), so browsing a client
+ * and importing from it do not read the file tables again.
  */
 
 #pragma once
@@ -24,6 +28,7 @@
 namespace blender::io::angelica {
 
 class PckArchive;
+struct PckEntry;
 
 /** Convert a UTF-8 path to a `std::filesystem` friendly string on every platform. */
 std::string path_join(std::string_view a, std::string_view b);
@@ -48,6 +53,35 @@ std::string detect_client_root(const std::string &path);
 /** Case-insensitive match of `text` against a pattern with `*` and `?`. */
 bool wildcard_match(std::string_view pattern, std::string_view text);
 
+/** Where the client finds a file. */
+struct FileLocation {
+  enum class Kind : uint8_t {
+    /** Not found. */
+    None,
+    /** An entry of a package (`.pck`). */
+    Packed,
+    /** A loose file under the client folder. */
+    Loose,
+    /** A file in a search folder outside the client (see #ClientFileSystem::add_search_dir). */
+    External,
+  };
+  Kind kind = Kind::None;
+  /** Engine path that was found (normalized), relative to the client root. */
+  std::string engine_path;
+  /** The package file for packed files, the file itself otherwise. */
+  std::string container;
+  /** Packed files: mount folder of the package (`models`, `help\script`). */
+  std::string mount;
+  /** Packed files: path of the entry inside the package, as stored (UTF-8, original case). */
+  std::string entry;
+  /** Uncompressed size in bytes. */
+  uint64_t size = 0;
+
+  /** Internal: the package and entry, for reading without a second lookup. */
+  std::shared_ptr<PckArchive> package;
+  const PckEntry *pck_entry = nullptr;
+};
+
 class ClientFileSystem {
  public:
   explicit ClientFileSystem(std::string client_root);
@@ -68,10 +102,18 @@ class ClientFileSystem {
   void add_package(std::shared_ptr<PckArchive> package, std::string mount);
 
   /**
-   * Read a file by its engine path (`models\npc\x.ski`, separators and case do not matter).
-   * When `base_dir` (an engine path) is given, the path is first tried relative to it.
+   * Find a file by its engine path (`models\npc\x.ski`, separators and case do not matter) in
+   * the order the client uses: the package whose folder holds the path first, then the loose
+   * file (`AFileImage::Init`). When `base_dir` (an engine path) is given, the path is first tried
+   * relative to it.
    */
+  FileLocation locate(std::string_view engine_path, std::string_view base_dir = {});
+
+  /** #locate and read the file. */
   bool read(std::string_view engine_path, Bytes &r_data, std::string_view base_dir = {});
+
+  /** Read a file found by #locate. */
+  bool read(const FileLocation &location, Bytes &r_data);
 
   bool exists(std::string_view engine_path);
 
@@ -81,6 +123,15 @@ class ClientFileSystem {
    */
   void add_search_dir(std::string directory);
 
+  /**
+   * When set, every successful read appends where the file came from (used to know which files
+   * of the client an import used). Pass null to stop.
+   */
+  void set_read_log(std::vector<FileLocation> *log)
+  {
+    read_log_ = log;
+  }
+
   /** Every opened package with its mount folder. */
   const std::vector<std::pair<std::string, std::shared_ptr<PckArchive>>> &packages() const
   {
@@ -88,15 +139,17 @@ class ClientFileSystem {
   }
 
  private:
+  /** The package mounted at `mount` (`models`, `help\script`), opened on first use. */
   std::shared_ptr<PckArchive> package_for_mount(const std::string &mount);
-  bool read_loose(const std::string &normalized, Bytes &r_data);
-  bool read_packed(const std::string &normalized, Bytes &r_data);
+  FileLocation locate_packed(const std::string &normalized);
+  FileLocation locate_loose(const std::string &normalized);
 
   std::string root_;
   std::vector<std::string> search_dirs_;
   std::vector<std::pair<std::string, std::shared_ptr<PckArchive>>> packages_;
   /** Mount folders that were looked for and have no package, to avoid probing the disk again. */
   std::map<std::string, bool> missing_mounts_;
+  std::vector<FileLocation> *read_log_ = nullptr;
 };
 
 }  // namespace blender::io::angelica

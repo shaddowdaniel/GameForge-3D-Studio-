@@ -666,8 +666,8 @@ msgid "Fribidi Library"
 msgstr "Fribidi Kitaplığı"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
-msgstr "FriBidi C derlenmiş kitaplığı (Linux altında .so, Windows altında .dll...); Windows kullanıyorsanız büyük olasılıkla onu düzenlemeniz gerekecektir; örn. Blender kitaplıkları deposundaki kullanarak)"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
+msgstr "FriBidi C derlenmiş kitaplığı (Linux altında .so, Windows altında .dll...); Windows kullanıyorsanız büyük olasılıkla onu düzenlemeniz gerekecektir; örn. GameForge 3D Studio kitaplıkları deposundaki kullanarak)"
 
 
 msgid "Translation Root"
@@ -690,8 +690,8 @@ msgid "Source Root"
 msgstr "Kaynak Kökü"
 
 
-msgid "The Blender source root path"
-msgstr "Blender kaynak kökü yolu"
+msgid "The GameForge 3D Studio source root path"
+msgstr "GameForge 3D Studio kaynak kökü yolu"
 
 
 msgid "Spell Cache"
@@ -714,8 +714,8 @@ msgid "Persistent Data Path"
 msgstr "Kalıcı Veri Yolu"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Bu ayarları depolayan json dosyasının adı (maalesef Blender'ın sistemi burada çalışmıyor)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
+msgstr "Bu ayarları depolayan json dosyasının adı (maalesef GameForge 3D Studio'ın sistemi burada çalışmıyor)"
 
 
 msgid "User Add-ons"
@@ -1578,8 +1578,8 @@ msgid "Current File"
 msgstr "Geçerli Dosya"
 
 
-msgid "Show the assets currently available in this Blender session"
-msgstr "Bu Blender oturumunda şu anda mevcut olan varlıkları göster"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
+msgstr "Bu GameForge 3D Studio oturumunda şu anda mevcut olan varlıkları göster"
 
 
 msgid "Essentials"
@@ -1646,8 +1646,8 @@ msgid "Catalog UUID"
 msgstr "Katalog UUID'si"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
-msgstr "Blender'ın varlığın katalog yolunu araması için kullanılan varlığın kataloğu için tanımlayıcı. RFC4122'ye göre bir UUID olmalıdır."
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgstr "GameForge 3D Studio'ın varlığın katalog yolunu araması için kullanılan varlığın kataloğu için tanımlayıcı. RFC4122'ye göre bir UUID olmalıdır."
 
 
 msgid "Catalog Simple Name"
@@ -2279,8 +2279,8 @@ msgid "Is Internal"
 msgstr "İçsel"
 
 
-msgid "The attribute is meant for internal use by Blender"
-msgstr "Bu özellik Blender'ın dahili kullanımı içindir"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
+msgstr "Bu özellik GameForge 3D Studio'ın dahili kullanımı içindir"
 
 
 msgid "Is Required"
@@ -3451,7 +3451,7 @@ msgid "Project"
 msgstr "Proje"
 
 
-msgid "Blender"
+msgid "GameForge 3D Studio"
 msgstr "Karıştırıcı"
 
 
@@ -3559,12 +3559,12 @@ msgid "Path"
 msgstr "Yol"
 
 
-msgid "Blender RNA"
-msgstr "Blender RNA'sı"
+msgid "GameForge 3D Studio RNA"
+msgstr "GameForge 3D Studio RNA'sı"
 
 
-msgid "Blender RNA structure definitions"
-msgstr "Blender RNA yapısı tanımları"
+msgid "GameForge 3D Studio RNA structure definitions"
+msgstr "GameForge 3D Studio RNA yapısı tanımları"
 
 
 msgid "Structs"
@@ -9571,8 +9571,8 @@ msgid "Multiply brush intersection depth (displace, waves) by velocity ramp alph
 msgstr "Fırça kesişim derinliğini (yer değiştirme, dalgalar) hız rampası alfa ile çarpın"
 
 
-msgid "Velocity considered as maximum influence (Blender units per frame)"
-msgstr "Maksimum etki olarak kabul edilen hız (kare başına Blender birimi)"
+msgid "Velocity considered as maximum influence (GameForge 3D Studio units per frame)"
+msgstr "Maksimum etki olarak kabul edilen hız (kare başına GameForge 3D Studio birimi)"
 
 
 msgid "Velocity Color Ramp"
@@ -9905,8 +9905,8 @@ msgid "Premultiply Alpha"
 msgstr "Alfa'yı önceden çarp"
 
 
-msgid "Multiply color by alpha (recommended for Blender input)"
-msgstr "Rengi alfa ile çarp (Blender girişi için önerilir)"
+msgid "Multiply color by alpha (recommended for GameForge 3D Studio input)"
+msgstr "Rengi alfa ile çarp (GameForge 3D Studio girişi için önerilir)"
 
 
 msgid "Use Shrink"
@@ -12003,24 +12003,24 @@ msgid "Hide .blend files items that are not data-blocks with asset metadata"
 msgstr "Varlık üst verisi içeren veri blokları olmayan .blend dosya öğelerini gizle"
 
 
-msgid "Filter Blender Backup Files"
-msgstr "Blender Yedekleme Dosyalarını Filtrele"
+msgid "Filter GameForge 3D Studio Backup Files"
+msgstr "GameForge 3D Studio Yedekleme Dosyalarını Filtrele"
 
 
 msgid "Show .blend1, .blend2, etc. files"
 msgstr ".blend1, .blend2 vb. dosyaları göster"
 
 
-msgid "Filter Blender"
-msgstr "Filtre Blender"
+msgid "Filter GameForge 3D Studio"
+msgstr "Filtre GameForge 3D Studio"
 
 
 msgid "Show .blend files"
 msgstr ".blend dosyalarını göster"
 
 
-msgid "Filter Blender IDs"
-msgstr "Filtre Blender Kimlikleri"
+msgid "Filter GameForge 3D Studio IDs"
+msgstr "Filtre GameForge 3D Studio Kimlikleri"
 
 
 msgid "Show .blend files items (objects, materials, etc.)"
@@ -12095,8 +12095,8 @@ msgid "Library Browser"
 msgstr "Kütüphane Tarayıcısı"
 
 
-msgid "Whether we may browse Blender files' content or not"
-msgstr "Blender dosyalarının içeriğine göz atabilir miyiz yoksa atamaz mıyız"
+msgid "Whether we may browse GameForge 3D Studio files' content or not"
+msgstr "GameForge 3D Studio dosyalarının içeriğine göz atabilir miyiz yoksa atamaz mıyız"
 
 
 msgid "Reverse Sorting"
@@ -19054,8 +19054,8 @@ msgid "Library Overrides Need resync"
 msgstr "Kütüphane Geçersiz Kılmalarının Yeniden Senkronize Edilmesi Gerekiyor"
 
 
-msgid "Version of Blender the library .blend was saved with"
-msgstr "Blender'ın .blend kütüphanesinin kaydedildiği sürüm"
+msgid "Version of GameForge 3D Studio the library .blend was saved with"
+msgstr "GameForge 3D Studio'ın .blend kütüphanesinin kaydedildiği sürüm"
 
 
 msgctxt "Light"
@@ -23480,12 +23480,12 @@ msgid "Noise basis used for turbulence"
 msgstr "Türbülans için kullanılan gürültü temeli"
 
 
-msgid "Blender Original"
-msgstr "Blender Orijinal"
+msgid "GameForge 3D Studio Original"
+msgstr "GameForge 3D Studio Orijinal"
 
 
-msgid "Noise algorithm - Blender original: Smooth interpolated noise"
-msgstr "Gürültü algoritması - Blender orijinali: Düzgün interpole edilmiş gürültü"
+msgid "Noise algorithm - GameForge 3D Studio original: Smooth interpolated noise"
+msgstr "Gürültü algoritması - GameForge 3D Studio orijinali: Düzgün interpole edilmiş gürültü"
 
 
 msgid "Original Perlin"
@@ -24231,8 +24231,8 @@ msgid "Asset Blend Path"
 msgstr "Varlık Karışımı Yolu"
 
 
-msgid "Full path to the Blender file containing the active asset"
-msgstr "Etkin varlığı içeren Blender dosyasının tam yolu"
+msgid "Full path to the GameForge 3D Studio file containing the active asset"
+msgstr "Etkin varlığı içeren GameForge 3D Studio dosyasının tam yolu"
 
 
 msgid "Filter by extension name, author & category"
@@ -41379,20 +41379,20 @@ msgid "World space normal mapping"
 msgstr "Dünya uzay normal haritalaması"
 
 
-msgid "Blender Object Space"
-msgstr "Blender Nesne Alanı"
+msgid "GameForge 3D Studio Object Space"
+msgstr "GameForge 3D Studio Nesne Alanı"
 
 
-msgid "Object space normal mapping, compatible with Blender render baking"
-msgstr "Nesne alanı normal eşlemesi, Blender render pişirme ile uyumlu"
+msgid "Object space normal mapping, compatible with GameForge 3D Studio render baking"
+msgstr "Nesne alanı normal eşlemesi, GameForge 3D Studio render pişirme ile uyumlu"
 
 
-msgid "Blender World Space"
-msgstr "Blender Dünya Uzayı"
+msgid "GameForge 3D Studio World Space"
+msgstr "GameForge 3D Studio Dünya Uzayı"
 
 
-msgid "World space normal mapping, compatible with Blender render baking"
-msgstr "Dünya uzay normal haritalama, Blender render pişirme ile uyumlu"
+msgid "World space normal mapping, compatible with GameForge 3D Studio render baking"
+msgstr "Dünya uzay normal haritalama, GameForge 3D Studio render pişirme ile uyumlu"
 
 
 msgid "UV Map for tangent space maps"
@@ -44761,8 +44761,8 @@ msgid "Uninstall Studio Light"
 msgstr "Studio Light'ı kaldırın"
 
 
-msgid "Load and apply a Blender XML theme file"
-msgstr "Bir Blender XML tema dosyası yükleyin ve uygulayın"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
+msgstr "Bir GameForge 3D Studio XML tema dosyası yükleyin ve uygulayın"
 
 
 msgctxt "Operator"
@@ -45067,13 +45067,13 @@ msgid "I18n Save Settings"
 msgstr "I18n Ayarları Kaydet"
 
 
-msgid "Update i18n data (po files) in Blender source code repository"
-msgstr "Blender kaynak kodu deposundaki i18n verilerini (po dosyalarını) güncelleyin"
+msgid "Update i18n data (po files) in GameForge 3D Studio source code repository"
+msgstr "GameForge 3D Studio kaynak kodu deposundaki i18n verilerini (po dosyalarını) güncelleyin"
 
 
 msgctxt "Operator"
-msgid "Update I18n Blender Repository"
-msgstr "I18n Blender Deposunu Güncelle"
+msgid "Update I18n GameForge 3D Studio Repository"
+msgstr "I18n GameForge 3D Studio Deposunu Güncelle"
 
 
 msgid "Init settings for i18n files update operators"
@@ -50578,8 +50578,8 @@ msgid "Null"
 msgstr "Hükümsüz"
 
 
-msgid "'Null' FBX node, similar to Blender's Empty (default)"
-msgstr "Blender'ın Empty (varsayılan) düğümüne benzer 'Null' FBX düğümü"
+msgid "'Null' FBX node, similar to GameForge 3D Studio's Empty (default)"
+msgstr "GameForge 3D Studio'ın Empty (varsayılan) düğümüne benzer 'Null' FBX düğümü"
 
 
 msgid "'Root' FBX node, supposed to be the root of chains of bones..."
@@ -51214,8 +51214,8 @@ msgid "Raw (Deprecated)"
 msgstr "Ham (Kullanımdan Kaldırılmış)"
 
 
-msgid "Blender lighting strengths with no conversion"
-msgstr "Blender aydınlatma güçleri dönüşüm olmadan"
+msgid "GameForge 3D Studio lighting strengths with no conversion"
+msgstr "GameForge 3D Studio aydınlatma güçleri dönüşüm olmadan"
 
 
 msgid "Bone Influences"
@@ -51330,8 +51330,8 @@ msgid "When exporting animations, disable viewport for other objects, for perfor
 msgstr "Animasyonları dışa aktarırken performans için diğer nesneler için görünüm alanını devre dışı bırakın"
 
 
-msgid "Export original glTF PBR Specular, instead of Blender Principled Shader Specular"
-msgstr "Blender Principled Shader Specular yerine orijinal glTF PBR Specular'ı dışa aktarın"
+msgid "Export original glTF PBR Specular, instead of GameForge 3D Studio Principled Shader Specular"
+msgstr "GameForge 3D Studio Principled Shader Specular yerine orijinal glTF PBR Specular'ı dışa aktarın"
 
 
 msgid "Export Animation Pointer (Experimental)"
@@ -51478,8 +51478,8 @@ msgid "Remember Export Settings"
 msgstr "İhracat Ayarlarını Hatırla"
 
 
-msgid "Store glTF export settings in the Blender project"
-msgstr "glTF dışa aktarma ayarlarını Blender projesinde saklayın"
+msgid "Store glTF export settings in the GameForge 3D Studio project"
+msgstr "glTF dışa aktarma ayarlarını GameForge 3D Studio projesinde saklayın"
 
 
 msgid "Package ID"
@@ -54983,8 +54983,8 @@ msgid "Definition"
 msgstr "Tanım"
 
 
-msgid "Number of pixels per inch or Blender Unit"
-msgstr "İnç başına piksel sayısı veya Blender Birimi"
+msgid "Number of pixels per inch or GameForge 3D Studio Unit"
+msgstr "İnç başına piksel sayısı veya GameForge 3D Studio Birimi"
 
 
 msgid "Filepath used for importing the file"
@@ -55075,12 +55075,12 @@ msgid "Scale based on pixels per inch"
 msgstr "İnç başına piksele dayalı ölçek"
 
 
-msgid "Pixels per Blender Unit"
-msgstr "Blender Birimi Başına Piksel"
+msgid "Pixels per GameForge 3D Studio Unit"
+msgstr "GameForge 3D Studio Birimi Başına Piksel"
 
 
-msgid "Scale based on pixels per Blender Unit"
-msgstr "Blender Birimi başına piksel bazında ölçeklendirme"
+msgid "Scale based on pixels per GameForge 3D Studio Unit"
+msgstr "GameForge 3D Studio Birimi başına piksel bazında ölçeklendirme"
 
 
 msgctxt "Operator"
@@ -55328,8 +55328,8 @@ msgid "Save the image with another name and/or settings"
 msgstr "Görüntüyü başka bir ad ve/veya ayarlarla kaydedin"
 
 
-msgid "Create a new image file without modifying the current image in Blender"
-msgstr "Blender'da geçerli görüntüyü değiştirmeden yeni bir görüntü dosyası oluşturun"
+msgid "Create a new image file without modifying the current image in GameForge 3D Studio"
+msgstr "GameForge 3D Studio'da geçerli görüntüyü değiştirmeden yeni bir görüntü dosyası oluşturun"
 
 
 msgid "Save As Render"
@@ -55615,8 +55615,8 @@ msgid "Import FBX animation"
 msgstr "FBX animasyonunu içe aktar"
 
 
-msgid "Import custom normals, if available (otherwise Blender will recompute them)"
-msgstr "Eğer mümkünse özel normalleri içe aktarın (aksi takdirde Blender bunları yeniden hesaplayacaktır)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will recompute them)"
+msgstr "Eğer mümkünse özel normalleri içe aktarın (aksi takdirde GameForge 3D Studio bunları yeniden hesaplayacaktır)"
 
 
 msgid "Import user properties as custom properties"
@@ -55671,8 +55671,8 @@ msgid "Heuristic for placing bones. Tries to make bones pretty"
 msgstr "Kemikleri yerleştirmek için sezgisel yöntem. Kemikleri güzel yapmaya çalışır"
 
 
-msgid "Blender (best for import/export round trip)"
-msgstr "Blender (ithalat/ihracat gidiş dönüş için en iyisi)"
+msgid "GameForge 3D Studio (best for import/export round trip)"
+msgstr "GameForge 3D Studio (ithalat/ihracat gidiş dönüş için en iyisi)"
 
 
 msgid "Temperance (average)"
@@ -55755,8 +55755,8 @@ msgid "Update Reports Display"
 msgstr "Raporları Güncelle Ekranı"
 
 
-msgid "Update the display of reports in Blender UI (internal use)"
-msgstr "Blender UI'de raporların görüntüsünü güncelleyin (dahili kullanım)"
+msgid "Update the display of reports in GameForge 3D Studio UI (internal use)"
+msgstr "GameForge 3D Studio UI'de raporların görüntüsünü güncelleyin (dahili kullanım)"
 
 
 msgid "Change selection of all visible reports"
@@ -65835,8 +65835,8 @@ msgid "Check for Updates on Startup"
 msgstr "Başlangıçta Güncellemeleri Kontrol Et"
 
 
-msgid "Allow Blender to check for updates upon launch"
-msgstr "Blender'ın başlatma sırasında güncellemeleri kontrol etmesine izin verin"
+msgid "Allow GameForge 3D Studio to check for updates upon launch"
+msgstr "GameForge 3D Studio'ın başlatma sırasında güncellemeleri kontrol etmesine izin verin"
 
 
 msgctxt "Operator"
@@ -67024,8 +67024,8 @@ msgid "Save Screenshot"
 msgstr "Ekran Görüntüsü Kaydet"
 
 
-msgid "Capture a picture of the whole Blender window"
-msgstr "Blender penceresinin tamamının resmini çekin"
+msgid "Capture a picture of the whole GameForge 3D Studio window"
+msgstr "GameForge 3D Studio penceresinin tamamının resmini çekin"
 
 
 msgctxt "Operator"
@@ -70467,8 +70467,8 @@ msgid "Eyedropper"
 msgstr "Damlalık"
 
 
-msgid "Sample a color from the Blender window to store in a property"
-msgstr "Blender penceresinden bir rengi örnekleyerek bir özellikte saklayın"
+msgid "Sample a color from the GameForge 3D Studio window to store in a property"
+msgstr "GameForge 3D Studio penceresinden bir rengi örnekleyerek bir özellikte saklayın"
 
 
 msgctxt "Operator"
@@ -70560,8 +70560,8 @@ msgid "Grease Pencil Eyedropper"
 msgstr "Yağlı Kalem Damlalık"
 
 
-msgid "Sample a color from the Blender Window and create Grease Pencil material"
-msgstr "Blender Penceresinden bir renk örneği alın ve Grease Pencil materyali oluşturun"
+msgid "Sample a color from the GameForge 3D Studio Window and create Grease Pencil material"
+msgstr "GameForge 3D Studio Penceresinden bir renk örneği alın ve Grease Pencil materyali oluşturun"
 
 
 msgctxt "Operator"
@@ -73041,8 +73041,8 @@ msgid "Vertex colors in the file are in linear color space"
 msgstr "Dosyadaki tepe noktası renkleri doğrusal renk uzayındadır"
 
 
-msgid "Import custom normals, if available (otherwise Blender will compute them)"
-msgstr "Eğer mümkünse özel normalleri içe aktarın (aksi takdirde Blender bunları hesaplayacaktır)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will compute them)"
+msgstr "Eğer mümkünse özel normalleri içe aktarın (aksi takdirde GameForge 3D Studio bunları hesaplayacaktır)"
 
 
 msgctxt "Operator"
@@ -73350,8 +73350,8 @@ msgid "Open"
 msgstr "Aç"
 
 
-msgid "Open a Blender file"
-msgstr "Bir Blender dosyası aç"
+msgid "Open a GameForge 3D Studio file"
+msgstr "Bir GameForge 3D Studio dosyası aç"
 
 
 msgid "Display File Selector"
@@ -73481,8 +73481,8 @@ msgid "Enable Python evaluation for selected files"
 msgstr "Seçili dosyalar için Python değerlendirmesini etkinleştir"
 
 
-msgid "Show Blender files in the File Browser"
-msgstr "Blender dosyalarını Dosya Tarayıcısında göster"
+msgid "Show GameForge 3D Studio files in the File Browser"
+msgstr "GameForge 3D Studio dosyalarını Dosya Tarayıcısında göster"
 
 
 msgid "Show folders in the File Browser"
@@ -73640,12 +73640,12 @@ msgstr "Yumuşak Sınırlar"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Blender'dan Çık"
+msgid "Quit GameForge 3D Studio"
+msgstr "GameForge 3D Studio'dan Çık"
 
 
-msgid "Quit Blender"
-msgstr "Blender'dan Çık"
+msgid "Quit GameForge 3D Studio"
+msgstr "GameForge 3D Studio'dan Çık"
 
 
 msgctxt "Operator"
@@ -73936,16 +73936,16 @@ msgstr "Başlangıç Dosyası Olarak Kaydet"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Blender Dosyasını Kaydet"
+msgid "Save GameForge 3D Studio File"
+msgstr "GameForge 3D Studio Dosyasını Kaydet"
 
 
-msgid "Save the current Blender file"
-msgstr "Geçerli Blender dosyasını kaydet"
+msgid "Save the current GameForge 3D Studio file"
+msgstr "Geçerli GameForge 3D Studio dosyasını kaydet"
 
 
-msgid "Exit Blender after saving"
-msgstr "Kaydettikten sonra Blender'dan çıkın"
+msgid "Exit GameForge 3D Studio after saving"
+msgstr "Kaydettikten sonra GameForge 3D Studio'dan çıkın"
 
 
 msgctxt "Operator"
@@ -74095,12 +74095,12 @@ msgstr "Sürüm bilgisini içeren açılış ekranını aç"
 
 
 msgctxt "Operator"
-msgid "About Blender"
-msgstr "Blender Hakkında"
+msgid "About GameForge 3D Studio"
+msgstr "GameForge 3D Studio Hakkında"
 
 
-msgid "Open a window with information about Blender"
-msgstr "Blender hakkında bilgi içeren bir pencere aç"
+msgid "Open a window with information about GameForge 3D Studio"
+msgstr "GameForge 3D Studio hakkında bilgi içeren bir pencere aç"
 
 
 msgctxt "Operator"
@@ -74539,8 +74539,8 @@ msgid "Scale for the intensity of imported lights"
 msgstr "İthal ışıkların yoğunluğu için ölçek"
 
 
-msgid "Import each USD material as a unique Blender material"
-msgstr "Her USD malzemesini benzersiz bir Blender malzemesi olarak içe aktarın"
+msgid "Import each USD material as a unique GameForge 3D Studio material"
+msgstr "Her USD malzemesini benzersiz bir GameForge 3D Studio malzemesi olarak içe aktarın"
 
 
 msgid "All Purpose"
@@ -74555,8 +74555,8 @@ msgid "Path Mask"
 msgstr "Yol Maskesi"
 
 
-msgid "Behavior when importing USD attributes as Blender custom properties"
-msgstr "USD niteliklerini Blender özel özellikleri olarak içe aktarırken davranış"
+msgid "Behavior when importing USD attributes as GameForge 3D Studio custom properties"
+msgstr "USD niteliklerini GameForge 3D Studio özel özellikleri olarak içe aktarırken davranış"
 
 
 msgid "Do not import USD custom attributes"
@@ -78113,8 +78113,8 @@ msgid "Edit Methods"
 msgstr "Düzenleme Metotları"
 
 
-msgid "Settings for interacting with Blender data"
-msgstr "Blender verileriyle etkileşime yönelik ayarlar"
+msgid "Settings for interacting with GameForge 3D Studio data"
+msgstr "GameForge 3D Studio verileriyle etkileşime yönelik ayarlar"
 
 
 msgid "Settings for features that are still early in their development stage"
@@ -78165,8 +78165,8 @@ msgid "Sort the recently searched items at the top"
 msgstr "Son aranan öğeleri en üste sırala"
 
 
-msgid "Version of Blender the userpref.blend was saved with"
-msgstr "Blender sürümü userpref.blend ile kaydedildi"
+msgid "Version of GameForge 3D Studio the userpref.blend was saved with"
+msgstr "GameForge 3D Studio sürümü userpref.blend ile kaydedildi"
 
 
 msgid "View & Controls"
@@ -79018,8 +79018,8 @@ msgid "Max Threshold"
 msgstr "Maksimum Eşik"
 
 
-msgid "Raw input pressure value that is interpreted as 100% by Blender"
-msgstr "Blender tarafından %100 olarak yorumlanan ham giriş basınç değeri"
+msgid "Raw input pressure value that is interpreted as 100% by GameForge 3D Studio"
+msgstr "GameForge 3D Studio tarafından %100 olarak yorumlanan ham giriş basınç değeri"
 
 
 msgid "Tablet API"
@@ -79442,8 +79442,8 @@ msgid "Device"
 msgstr "Cihaz"
 
 
-msgid "Auto detect best GPU for running Blender"
-msgstr "Blender'ı çalıştırmak için en iyi GPU'yu otomatik olarak algıla"
+msgid "Auto detect best GPU for running GameForge 3D Studio"
+msgstr "GameForge 3D Studio'ı çalıştırmak için en iyi GPU'yu otomatik olarak algıla"
 
 
 msgid "Is Microsoft Store Install"
@@ -79970,8 +79970,8 @@ msgid "Show Memory"
 msgstr "Hafızayı Göster"
 
 
-msgid "Show Blender memory usage"
-msgstr "Blender bellek kullanımını göster"
+msgid "Show GameForge 3D Studio memory usage"
+msgstr "GameForge 3D Studio bellek kullanımını göster"
 
 
 msgid "Show Scene Duration"
@@ -79994,8 +79994,8 @@ msgid "Show Version"
 msgstr "Sürümü Göster"
 
 
-msgid "Show Blender version string"
-msgstr "Blender sürüm dizesini göster"
+msgid "Show GameForge 3D Studio version string"
+msgstr "GameForge 3D Studio sürüm dizesini göster"
 
 
 msgid "Show VRAM"
@@ -81572,12 +81572,12 @@ msgid "Path to the relevant po file in the work repository"
 msgstr "Çalışma deposundaki ilgili po dosyasının yolu"
 
 
-msgid "PO Blender File Path"
-msgstr "PO Blender Dosya Yolu"
+msgid "PO GameForge 3D Studio File Path"
+msgstr "PO GameForge 3D Studio Dosya Yolu"
 
 
-msgid "Path to the relevant po file in Blender's source repository"
-msgstr "Blender'ın kaynak deposundaki ilgili po dosyasının yolu"
+msgid "Path to the relevant po file in GameForge 3D Studio's source repository"
+msgstr "GameForge 3D Studio'ın kaynak deposundaki ilgili po dosyasının yolu"
 
 
 msgid "Language ID"
@@ -83748,16 +83748,16 @@ msgid "Which implementation of spring to use"
 msgstr "Hangi yay uygulamasını kullanmalıyım"
 
 
-msgid "Blender 2.7"
-msgstr "Blender 2.7"
+msgid "Version 2.7"
+msgstr "GameForge 3D Studio 2.7"
 
 
-msgid "Spring implementation used in Blender 2.7. Damping is capped at 1.0"
-msgstr "Blender 2.7'de kullanılan yay uygulaması. Sönümleme 1.0 ile sınırlandırılmıştır"
+msgid "Spring implementation used in version 2.7. Damping is capped at 1.0"
+msgstr "GameForge 3D Studio 2.7'de kullanılan yay uygulaması. Sönümleme 1.0 ile sınırlandırılmıştır"
 
 
-msgid "Blender 2.8"
-msgstr "Blender 2.8"
+msgid "Version 2.8"
+msgstr "GameForge 3D Studio 2.8"
 
 
 msgid "New implementation available since 2.8"
@@ -84604,8 +84604,8 @@ msgid "Export Method"
 msgstr "İhracat Yöntemi"
 
 
-msgid "How to export the Blender scene to the Hydra render engine"
-msgstr "Blender sahnesi Hydra render motoruna nasıl aktarılır"
+msgid "How to export the GameForge 3D Studio scene to the Hydra render engine"
+msgstr "GameForge 3D Studio sahnesi Hydra render motoruna nasıl aktarılır"
 
 
 msgid "Fast interactive editing through native Hydra integration"
@@ -86809,8 +86809,8 @@ msgid "Display data belonging to the Video Sequencer"
 msgstr "Video Dizicisine ait verileri görüntüle"
 
 
-msgid "Blender File"
-msgstr "Blender Dosyası"
+msgid "GameForge 3D Studio File"
+msgstr "GameForge 3D Studio Dosyası"
 
 
 msgid "Display data of current file and linked libraries"
@@ -86821,8 +86821,8 @@ msgid "Data API"
 msgstr "Veri API'si"
 
 
-msgid "Display low level Blender data and its properties"
-msgstr "Düşük seviyeli Blender verilerini ve özelliklerini görüntüle"
+msgid "Display low level GameForge 3D Studio data and its properties"
+msgstr "Düşük seviyeli GameForge 3D Studio verilerini ve özelliklerini görüntüle"
 
 
 msgid "Library Overrides"
@@ -87026,8 +87026,8 @@ msgid "Space Preferences"
 msgstr "Alan Tercihleri"
 
 
-msgid "Blender preferences space data"
-msgstr "Blender tercihleri alan verileri"
+msgid "GameForge 3D Studio preferences space data"
+msgstr "GameForge 3D Studio tercihleri alan verileri"
 
 
 msgid "Search term for filtering in the UI"
@@ -90820,8 +90820,8 @@ msgid "Theme Preferences"
 msgstr "Tema Tercihleri"
 
 
-msgid "Theme settings for the Blender Preferences"
-msgstr "Blender Tercihleri için tema ayarları"
+msgid "Theme settings for the GameForge 3D Studio Preferences"
+msgstr "GameForge 3D Studio Tercihleri için tema ayarları"
 
 
 msgid "Search Match"
@@ -97188,8 +97188,8 @@ msgid "Online access required to install or update."
 msgstr "Kurulum veya güncelleme için çevrimiçi erişim gereklidir."
 
 
-msgid "Launch Blender without --offline-mode"
-msgstr "Blender'ı --offline-mode olmadan başlatın"
+msgid "Launch GameForge 3D Studio without --offline-mode"
+msgstr "GameForge 3D Studio'ı --offline-mode olmadan başlatın"
 
 
 msgid "Internet access is required to install extensions from the internet."
@@ -97256,8 +97256,8 @@ msgid "Missing Built-in Add-ons"
 msgstr "Eksik Yerleşik Eklentiler"
 
 
-msgid "Add-ons previously shipped with Blender are now available from extensions.blender.org."
-msgstr "Daha önce Blender ile birlikte gelen eklentiler artık extensions.blender.org adresinden edinilebilir."
+msgid "Add-ons previously shipped with GameForge 3D Studio are now available from extensions.blender.org."
+msgstr "Daha önce GameForge 3D Studio ile birlikte gelen eklentiler artık extensions.blender.org adresinden edinilebilir."
 
 
 msgid "Missing Add-ons"
@@ -97316,8 +97316,8 @@ msgid "Maintainer"
 msgstr "Bakımcı"
 
 
-msgid "Blender's extension repository not found!"
-msgstr "Blender'ın eklenti deposu bulunamadı!"
+msgid "GameForge 3D Studio's extension repository not found!"
+msgstr "GameForge 3D Studio'ın eklenti deposu bulunamadı!"
 
 
 msgid ":"
@@ -97350,8 +97350,8 @@ msgid "No visible tags."
 msgstr "Görünür etiket yok."
 
 
-msgid "Blender's extension repository must be enabled to install extensions!"
-msgstr "Uzantıları yüklemek için Blender'ın uzantı deposunun etkinleştirilmesi gerekir!"
+msgid "GameForge 3D Studio's extension repository must be enabled to install extensions!"
+msgstr "Uzantıları yüklemek için GameForge 3D Studio'ın uzantı deposunun etkinleştirilmesi gerekir!"
 
 
 msgid "Permissions"
@@ -97378,8 +97378,8 @@ msgid "Uninstall Marked"
 msgstr "İşaretliyi Kaldır"
 
 
-msgid "Blender's extension repository must be refreshed!"
-msgstr "Blender'ın eklenti deposunun yenilenmesi gerekiyor!"
+msgid "GameForge 3D Studio's extension repository must be refreshed!"
+msgstr "GameForge 3D Studio'ın eklenti deposunun yenilenmesi gerekiyor!"
 
 
 msgid "No permissions specified"
@@ -97465,8 +97465,8 @@ msgid "Use Intel OpenImageDenoise AI denoiser"
 msgstr "Intel OpenImageDenoise AI gürültü gidericisini kullanın"
 
 
-msgid "Blender was compiled without a viewport denoiser"
-msgstr "Blender, bir görünüm denoizer'ı olmadan derlendi"
+msgid "GameForge 3D Studio was compiled without a viewport denoiser"
+msgstr "GameForge 3D Studio, bir görünüm denoizer'ı olmadan derlendi"
 
 
 msgid "No compatible GPUs found for Cycles"
@@ -98684,8 +98684,8 @@ msgstr "Çalışma Deposunu Güncelle"
 
 
 msgctxt "Operator"
-msgid "Update Blender Repository"
-msgstr "Blender Deposunu Güncelle"
+msgid "Update GameForge 3D Studio Repository"
+msgstr "GameForge 3D Studio Deposunu Güncelle"
 
 
 msgctxt "Operator"
@@ -98914,8 +98914,8 @@ msgid "Unable to find any running process"
 msgstr "Çalışan herhangi bir işlem bulunamadı"
 
 
-msgid "Blender sub-process exited with error code {:d}"
-msgstr "Blender alt işlemi {:d} hata koduyla sonlandırıldı"
+msgid "GameForge 3D Studio sub-process exited with error code {:d}"
+msgstr "GameForge 3D Studio alt işlemi {:d} hata koduyla sonlandırıldı"
 
 
 msgid "Selection pair not found"
@@ -99327,8 +99327,8 @@ msgid "Open..."
 msgstr "Aç…"
 
 
-msgid "Blender is free software"
-msgstr "Blender ücretsiz bir yazılımdır"
+msgid "GameForge 3D Studio is free software"
+msgstr "GameForge 3D Studio ücretsiz bir yazılımdır"
 
 
 msgid "Licensed under the GNU General Public License"
@@ -99421,13 +99421,13 @@ msgstr "Lisans"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
-msgstr "Blender Mağazası"
+msgid "GameForge 3D Studio Store"
+msgstr "GameForge 3D Studio Mağazası"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
-msgstr "Blender Web Sitesi"
+msgid "GameForge 3D Studio Website"
+msgstr "GameForge 3D Studio Web Sitesi"
 
 
 msgid "Trusted Source [Untrusted Path]"
@@ -99460,24 +99460,24 @@ msgid "Release Notes"
 msgstr "Sürüm Notları"
 
 
-msgid "Read about what's new in this version of Blender"
-msgstr "Blender'ın bu sürümündeki yenilikleri okuyun"
+msgid "Read about what's new in this version of GameForge 3D Studio"
+msgstr "GameForge 3D Studio'ın bu sürümündeki yenilikleri okuyun"
 
 
 msgid "User Manual"
 msgstr "Kullanıcı Kılavuzu"
 
 
-msgid "The reference manual for this version of Blender"
-msgstr "Blender'ın bu sürümü için referans kılavuzu"
+msgid "The reference manual for this version of GameForge 3D Studio"
+msgstr "GameForge 3D Studio'ın bu sürümü için referans kılavuzu"
 
 
 msgid "Python API Reference"
 msgstr "Python API Başvurusu"
 
 
-msgid "The API reference manual for this version of Blender"
-msgstr "Blender'ın bu sürümü için API başvuru kılavuzu"
+msgid "The API reference manual for this version of GameForge 3D Studio"
+msgstr "GameForge 3D Studio'ın bu sürümü için API başvuru kılavuzu"
 
 
 msgid "Development Fund"
@@ -99488,16 +99488,16 @@ msgid "The donation program to support maintenance and improvements"
 msgstr "Bakım ve iyileştirmeleri desteklemek için bağış programı"
 
 
-msgid "Blender's official web-site"
-msgstr "Blender'ın resmi web sitesi"
+msgid "GameForge 3D Studio's official web-site"
+msgstr "GameForge 3D Studio'ın resmi web sitesi"
 
 
 msgid "Credits"
 msgstr "Katkıda Bulunanlar"
 
 
-msgid "Lists committers to Blender's source code"
-msgstr "Blender'ın kaynak koduna katkıda bulunanları listeler"
+msgid "Lists committers to GameForge 3D Studio's source code"
+msgstr "GameForge 3D Studio'ın kaynak koduna katkıda bulunanları listeler"
 
 
 msgid "Extensions Platform"
@@ -99636,8 +99636,8 @@ msgstr "Malzeme(ler)"
 
 
 msgctxt "Operator"
-msgid "Import Blender {:d}.{:d} Preferences"
-msgstr "Blender {:d}.{:d} Tercihlerini İçe Aktar"
+msgid "Import GameForge 3D Studio {:d}.{:d} Preferences"
+msgstr "GameForge 3D Studio {:d}.{:d} Tercihlerini İçe Aktar"
 
 
 msgid "Windowing Environment: {:s}"
@@ -102170,8 +102170,8 @@ msgid "Volume Files"
 msgstr "Birim Dosyaları"
 
 
-msgid "Blender IDs"
-msgstr "Blender Kimlikleri"
+msgid "GameForge 3D Studio IDs"
+msgstr "GameForge 3D Studio Kimlikleri"
 
 
 msgctxt "Operator"
@@ -103604,8 +103604,8 @@ msgstr "Daha fazla..."
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Settings"
-msgstr "Blender Fabrika Ayarlarını Yükle"
+msgid "Load Factory GameForge 3D Studio Settings"
+msgstr "GameForge 3D Studio Fabrika Ayarlarını Yükle"
 
 
 msgctxt "Operator"
@@ -103721,8 +103721,8 @@ msgid "Video Memory"
 msgstr "Video Belleği"
 
 
-msgid "Blender Version"
-msgstr "Blender Sürümü"
+msgid "GameForge 3D Studio Version"
+msgstr "GameForge 3D Studio Sürümü"
 
 
 msgid "Top Level"
@@ -103977,20 +103977,20 @@ msgstr "Stüdyo ışığı olarak kaydet"
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Preferences"
-msgstr "Blender Fabrika Tercihlerini Yükle"
+msgid "Load Factory GameForge 3D Studio Preferences"
+msgstr "GameForge 3D Studio Fabrika Tercihlerini Yükle"
 
 
 msgid "Cycles is disabled in this build"
 msgstr "Bu yapıda döngüler devre dışı bırakıldı"
 
 
-msgid "A restart of Blender is required"
-msgstr "Blender'ın yeniden başlatılması gerekiyor"
+msgid "A restart of GameForge 3D Studio is required"
+msgstr "GameForge 3D Studio'ın yeniden başlatılması gerekiyor"
 
 
-msgid "Open blend files with this Blender version"
-msgstr "Blender dosyalarını bu Blender sürümüyle aç"
+msgid "Open blend files with this GameForge 3D Studio version"
+msgstr "GameForge 3D Studio dosyalarını bu GameForge 3D Studio sürümüyle aç"
 
 
 msgctxt "Operator"
@@ -106353,8 +106353,8 @@ msgid "Unable to create app-template userpref path"
 msgstr "Uygulama şablonu kullanıcı tercihi yolu oluşturulamıyor"
 
 
-msgid "File written by newer Blender binary (%d.%d), expect loss of data!"
-msgstr "Yeni Blender ikili dosyası (%d.%d) ile yazılmış dosyada veri kaybı yaşanabilir!"
+msgid "File written by newer GameForge 3D Studio binary (%d.%d), expect loss of data!"
+msgstr "Yeni GameForge 3D Studio ikili dosyası (%d.%d) ile yazılmış dosyada veri kaybı yaşanabilir!"
 
 
 msgid "File could not be read, critical data corruption detected"
@@ -106881,8 +106881,8 @@ msgid "At least 8 common tracks on both keyframes are needed for reconstruction"
 msgstr "Yeniden yapılandırma için her iki anahtar karede en az 8 ortak parçaya ihtiyaç vardır"
 
 
-msgid "Blender is compiled without motion tracking library"
-msgstr "Blender hareket izleme kütüphanesi olmadan derlendi"
+msgid "GameForge 3D Studio is compiled without motion tracking library"
+msgstr "GameForge 3D Studio hareket izleme kütüphanesi olmadan derlendi"
 
 
 msgid "Original Mode"
@@ -107987,8 +107987,8 @@ msgid "Asset catalogs cannot be edited in this asset library"
 msgstr "Varlık katalogları bu varlık kütüphanesinde düzenlenemez"
 
 
-msgid "Cannot save asset catalogs before the Blender file is saved"
-msgstr "Blender dosyası kaydedilmeden varlık katalogları kaydedilemez"
+msgid "Cannot save asset catalogs before the GameForge 3D Studio file is saved"
+msgstr "GameForge 3D Studio dosyası kaydedilmeden varlık katalogları kaydedilemez"
 
 
 msgid "No changes to be saved"
@@ -111145,8 +111145,8 @@ msgid "Unable to remove material slot in edit mode"
 msgstr "Düzenleme modunda malzeme yuvası kaldırılamıyor"
 
 
-msgid "Blender Render"
-msgstr "Blender Sunumu"
+msgid "GameForge 3D Studio Render"
+msgstr "GameForge 3D Studio Sunumu"
 
 
 msgid "Failed to open window!"
@@ -111229,12 +111229,12 @@ msgid "Flip to Bottom"
 msgstr "Alt tarafa çevir"
 
 
-msgid "Blender Drivers Editor"
-msgstr "Blender Sürücüleri Editörü"
+msgid "GameForge 3D Studio Drivers Editor"
+msgstr "GameForge 3D Studio Sürücüleri Editörü"
 
 
-msgid "Blender Info Log"
-msgstr "Blender Bilgi Günlüğü"
+msgid "GameForge 3D Studio Info Log"
+msgstr "GameForge 3D Studio Bilgi Günlüğü"
 
 
 msgid "Show {} preferences"
@@ -111993,8 +111993,8 @@ msgid "Path to asset library does not exist:"
 msgstr "Varlık kütüphanesine giden yol mevcut değil:"
 
 
-msgid "Unreadable Blender library file:"
-msgstr "Okunamayan Blender kütüphane dosyası:"
+msgid "Unreadable GameForge 3D Studio library file:"
+msgstr "Okunamayan GameForge 3D Studio kütüphane dosyası:"
 
 
 msgid "Create new directory?"
@@ -113262,8 +113262,8 @@ msgid "Jump to Line Number"
 msgstr "Satır Numarasına Atla"
 
 
-msgid "File Modified Outside and Inside Blender"
-msgstr "Blender'ın Dış ve İç Kısımlarında Değiştirilen Dosya"
+msgid "File Modified Outside and Inside GameForge 3D Studio"
+msgstr "GameForge 3D Studio'ın Dış ve İç Kısımlarında Değiştirilen Dosya"
 
 
 msgid "Reload from disk (ignore local changes)"
@@ -113278,16 +113278,16 @@ msgid "Make text internal (separate copy)"
 msgstr "Metni dahili yap (ayrı kopya)"
 
 
-msgid "File Modified Outside Blender"
-msgstr "Dosya Blender Dışında Değiştirildi"
+msgid "File Modified Outside GameForge 3D Studio"
+msgstr "Dosya GameForge 3D Studio Dışında Değiştirildi"
 
 
 msgid "Reload from disk"
 msgstr "Diskten yeniden yükle"
 
 
-msgid "File Deleted Outside Blender"
-msgstr "Dosya Blender Dışında Silindi"
+msgid "File Deleted Outside GameForge 3D Studio"
+msgstr "Dosya GameForge 3D Studio Dışında Silindi"
 
 
 msgid "Make text internal"
@@ -115644,8 +115644,8 @@ msgid "Recursion detected, cannot use this strip"
 msgstr "Tekrarlama algılandı, bu şerit kullanılamaz"
 
 
-msgid "Blender compiled without Audaspace support"
-msgstr "Audaspace desteği olmadan derlenen Blender"
+msgid "GameForge 3D Studio compiled without Audaspace support"
+msgstr "Audaspace desteği olmadan derlenen GameForge 3D Studio"
 
 
 msgid "Sound not packed"
@@ -117130,8 +117130,8 @@ msgid "Node must be run as tool"
 msgstr "Düğüm araç olarak çalıştırılmalıdır"
 
 
-msgid "Disabled, Blender was compiled without OpenVDB"
-msgstr "Devre dışı bırakıldı, Blender OpenVDB olmadan derlendi"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenVDB"
+msgstr "Devre dışı bırakıldı, GameForge 3D Studio OpenVDB olmadan derlendi"
 
 
 msgid "Leading"
@@ -117262,8 +117262,8 @@ msgid "Reset Children"
 msgstr "Çocukları Sıfırla"
 
 
-msgid "Disabled, Blender was compiled without Bullet"
-msgstr "Devre dışı bırakıldı, Blender Bullet olmadan derlendi"
+msgid "Disabled, GameForge 3D Studio was compiled without Bullet"
+msgstr "Devre dışı bırakıldı, GameForge 3D Studio Bullet olmadan derlendi"
 
 
 msgid "Bounding box volume must be greater than 0"
@@ -117832,24 +117832,24 @@ msgid "Delimiter"
 msgstr "Ayırıcı"
 
 
-msgid "Disabled, Blender was compiled without OBJ I/O"
-msgstr "Devre dışı bırakıldı, Blender OBJ G/Ç olmadan derlendi"
+msgid "Disabled, GameForge 3D Studio was compiled without OBJ I/O"
+msgstr "Devre dışı bırakıldı, GameForge 3D Studio OBJ G/Ç olmadan derlendi"
 
 
 msgid "Path to a OBJ file"
 msgstr "OBJ dosyasına giden yol"
 
 
-msgid "Disabled, Blender was compiled without PLY I/O"
-msgstr "Devre dışı bırakıldı, Blender PLY G/Ç olmadan derlendi"
+msgid "Disabled, GameForge 3D Studio was compiled without PLY I/O"
+msgstr "Devre dışı bırakıldı, GameForge 3D Studio PLY G/Ç olmadan derlendi"
 
 
 msgid "Path to a PLY file"
 msgstr "PLY dosyasına giden yol"
 
 
-msgid "Disabled, Blender was compiled without STL I/O"
-msgstr "Devre dışı bırakıldı, Blender STL G/Ç olmadan derlendi"
+msgid "Disabled, GameForge 3D Studio was compiled without STL I/O"
+msgstr "Devre dışı bırakıldı, GameForge 3D Studio STL G/Ç olmadan derlendi"
 
 
 msgid "Path to a STL file"
@@ -118287,8 +118287,8 @@ msgid "The number of horizontal rings"
 msgstr "Yatay halkaların sayısı"
 
 
-msgid "Disabled, Blender was compiled without OpenSubdiv"
-msgstr "Devre dışı bırakıldı, Blender OpenSubdiv olmadan derlendi"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenSubdiv"
+msgstr "Devre dışı bırakıldı, GameForge 3D Studio OpenSubdiv olmadan derlendi"
 
 
 msgid "Gradient Width"
@@ -119632,8 +119632,8 @@ msgid "Dragging {} files"
 msgstr "{} dosyalarını sürükleme"
 
 
-msgid "Blender File View"
-msgstr "Blender Dosya Görünümü"
+msgid "GameForge 3D Studio File View"
+msgstr "GameForge 3D Studio Dosya Görünümü"
 
 
 msgid "Missing 'window' in context"
@@ -119724,12 +119724,12 @@ msgid "Cannot overwrite asset system files. Save as new file"
 msgstr "Varlık sistem dosyalarının üzerine yazılamıyor. Yeni dosya olarak kaydet"
 
 
-msgid "with an older Blender version?"
-msgstr "eski bir Blender sürümüyle mi?"
+msgid "with an older GameForge 3D Studio version?"
+msgstr "eski bir GameForge 3D Studio sürümüyle mi?"
 
 
-msgid "Overwrite file with an older Blender version?"
-msgstr "Dosyayı eski bir Blender sürümüyle üzerine yazmak ister misiniz?"
+msgid "Overwrite file with an older GameForge 3D Studio version?"
+msgstr "Dosyayı eski bir GameForge 3D Studio sürümüyle üzerine yazmak ister misiniz?"
 
 
 msgid "Cannot overwrite asset system files. Save as new file?"
@@ -119955,8 +119955,8 @@ msgstr "Grafik kartınız veya macOS sürümünüz desteklenmiyor"
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
-msgstr "En son macOS sürümüne yükseltme yapmak Blender desteğini iyileştirebilir"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
+msgstr "En son macOS sürümüne yükseltme yapmak GameForge 3D Studio desteğini iyileştirebilir"
 
 
 msgid "Intel binary detected. Expect reduced performance."
@@ -120340,8 +120340,8 @@ msgid "Stroke and Fill"
 msgstr "Kontur ve Dolgu"
 
 
-msgid "Blender 27x"
-msgstr "Blender 27x"
+msgid "version 27x"
+msgstr "GameForge 3D Studio 27x"
 
 
 msgid "Industry Compatible"
@@ -120532,8 +120532,8 @@ msgid "Import-Export BVH from armature objects"
 msgstr "Armatür nesnelerinden BVH İthalat-İhracat"
 
 
-msgid "Blender Extensions"
-msgstr "Blender Uzantıları"
+msgid "GameForge 3D Studio Extensions"
+msgstr "GameForge 3D Studio Uzantıları"
 
 
 msgid "Extension repository support for remote repositories"

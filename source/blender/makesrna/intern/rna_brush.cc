@@ -2893,7 +2893,7 @@ static void rna_def_brush(BlenderRNA *brna)
   RNA_def_property_float_funcs(prop, nullptr, "rna_Brush_set_unprojected_size", nullptr);
   RNA_def_property_range(prop, 0.001, FLT_MAX);
   RNA_def_property_ui_range(prop, 0.001, 1, 1, -1);
-  RNA_def_property_ui_text(prop, "Unprojected Size", "Diameter of brush in Blender units");
+  RNA_def_property_ui_text(prop, "Unprojected Size", "Diameter of brush in GameForge 3D Studio units");
   RNA_def_property_update(prop, 0, "rna_Brush_size_update");
 
   prop = RNA_def_property(srna, "input_samples", PROP_INT, PROP_UNSIGNED);

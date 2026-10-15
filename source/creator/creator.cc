@@ -121,7 +121,7 @@ char **environ = nullptr;
 
 #include "creator_intern.h" /* Own include. */
 
-BLI_STATIC_ASSERT(ENDIAN_ORDER == L_ENDIAN, "Blender only builds on little endian systems")
+BLI_STATIC_ASSERT(ENDIAN_ORDER == L_ENDIAN, "GameForge 3D Studio only builds on little endian systems")
 
 /* -------------------------------------------------------------------- */
 /** \name GMP Allocator Workaround
@@ -527,6 +527,7 @@ int main(int argc,
   /* After parsing #ARG_PASS_ENVIRONMENT such as `--env-*`,
    * since they impact `BKE_appdir` behavior. */
   BKE_appdir_init();
+  BKE_appdir_legacy_user_folder_migrate();
 
   /* After parsing number of threads argument.
    *
@@ -617,7 +618,7 @@ int main(int argc,
 #ifndef WITH_PYTHON
   fprintf(stderr,
           "\n"
-          "WARNING: Blender compiled without Python!\n"
+          "WARNING: GameForge 3D Studio compiled without Python!\n"
           "This is not intended for typical usage.\n"
           "\n");
 #endif

@@ -115,7 +115,7 @@ static bool register_blender_prog_id(const char *prog_id,
         hkey_progid, "AppUserModelId", 0, REG_SZ, (BYTE *)prog_id, strlen(prog_id) + 1);
   }
   if (lresult != ERROR_SUCCESS) {
-    registry_error(root, "Unable to register Blender App Id");
+    registry_error(root, "Unable to register GameForge 3D Studio App Id");
     return false;
   }
 
@@ -151,7 +151,7 @@ static bool register_blender_prog_id(const char *prog_id,
     RegCloseKey(hkey_progid);
   }
   if (lresult != ERROR_SUCCESS) {
-    registry_error(root, "Unable to register Blender App Id");
+    registry_error(root, "Unable to register GameForge 3D Studio App Id");
     return false;
   }
 
@@ -172,10 +172,42 @@ static bool register_blender_prog_id(const char *prog_id,
     RegCloseKey(hkey_progid);
   }
   if (lresult != ERROR_SUCCESS) {
-    registry_error(root, "Unable to register Blender App Id");
+    registry_error(root, "Unable to register GameForge 3D Studio App Id");
     return false;
   }
   return true;
+}
+
+/**
+ * GameForge 3D Studio registered itself as `blender.<major>.<minor>` before it had its own App
+ * Id. Remove that registration, but only when it starts this installation: an official
+ * Blender installed on the same computer keeps its own.
+ */
+static void unregister_legacy_prog_id(HKEY root, const char *install_dir)
+{
+  const char *version = strchr(BLENDER_WIN_APPID, '.');
+  if (version == nullptr) {
+    return;
+  }
+  char legacy_id[64];
+  SNPRINTF(legacy_id, "blender%s", version);
+
+  char key[256];
+  SNPRINTF(key, "%s\\shell\\open\\command", legacy_id);
+  char command[MAX_PATH * 2] = {0};
+  DWORD size = sizeof(command);
+  if (RegGetValueA(root, key, nullptr, RRF_RT_REG_SZ, nullptr, command, &size) != ERROR_SUCCESS ||
+      BLI_strcasestr(command, install_dir) == nullptr)
+  {
+    return;
+  }
+  RegDeleteTree(root, legacy_id);
+
+  HKEY hkey = 0;
+  if (RegOpenKeyEx(root, ".blend\\OpenWithProgids", 0, KEY_ALL_ACCESS, &hkey) == ERROR_SUCCESS) {
+    RegDeleteValue(hkey, legacy_id);
+    RegCloseKey(hkey);
+  }
 }
 
 bool BLI_windows_register_blend_extension(const bool all_users)
@@ -187,33 +219,28 @@ bool BLI_windows_register_blend_extension(const bool all_users)
 
   HKEY root = 0;
   char blender_path[MAX_PATH];
-  char *blender_app;
   HKEY hkey = 0;
   LONG lresult;
   DWORD dwd = 0;
   const char *prog_id = BLENDER_WIN_APPID;
   const char *friendly_name = BLENDER_WIN_APPID_FRIENDLY_NAME;
 
-  GetModuleFileName(0, blender_path, sizeof(blender_path));
-
-  /* Prevent overflow when we add -launcher to the executable name. */
-  if (strlen(blender_path) > (sizeof(blender_path) - 10)) {
+  /* Files are opened through the launcher next to the executable (no console window). */
+  char install_dir[FILE_MAXDIR];
+  BLI_windows_get_executable_dir(install_dir);
+  if (strlen(install_dir) + 1 + strlen(BLENDER_WIN_LAUNCHER_NAME) >= sizeof(blender_path)) {
     return false;
   }
-
-  /* Replace the actual app name with the wrapper. */
-  blender_app = strstr(blender_path, "blender.exe");
-  if (!blender_app) {
-    return false;
-  }
-  strcpy(blender_app, "blender-launcher.exe");
+  BLI_path_join(blender_path, sizeof(blender_path), install_dir, BLENDER_WIN_LAUNCHER_NAME);
 
   if (!open_registry_hive(all_users, &root)) {
     return false;
   }
 
+  unregister_legacy_prog_id(root, install_dir);
+
   if (!register_blender_prog_id(prog_id, blender_path, friendly_name, all_users)) {
-    registry_error(root, "Unable to register Blender file type");
+    registry_error(root, "Unable to register the .blend file type");
     return false;
   }
 
@@ -224,7 +251,7 @@ bool BLI_windows_register_blend_extension(const bool all_users)
     lresult = RegSetValueEx(hkey, nullptr, 0, REG_SZ, (BYTE *)prog_id, strlen(prog_id) + 1);
 
     if (lresult != ERROR_SUCCESS) {
-      registry_error(root, "Unable to register Blender file type");
+      registry_error(root, "Unable to register the .blend file type");
       RegCloseKey(hkey);
       return false;
     }
@@ -241,7 +268,7 @@ bool BLI_windows_register_blend_extension(const bool all_users)
                              &dwd);
 
     if (lresult != ERROR_SUCCESS) {
-      registry_error(root, "Unable to register Blender file type");
+      registry_error(root, "Unable to register the .blend file type");
       RegCloseKey(hkey);
       return false;
     }
@@ -250,7 +277,7 @@ bool BLI_windows_register_blend_extension(const bool all_users)
   }
 
   if (lresult != ERROR_SUCCESS) {
-    registry_error(root, "Unable to register Blender file type");
+    registry_error(root, "Unable to register the .blend file type");
     return false;
   }
 

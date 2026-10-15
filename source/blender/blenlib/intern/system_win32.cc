@@ -523,9 +523,13 @@ static std::string get_os_info()
   return "Windows-" + version + " " + architecture;
 }
 
+/* `BLENDER_WIN_LAUNCHER_NAME` is a narrow string literal defined by CMake. */
+#define WIDEN_IMPL(x) L##x
+#define WIDEN(x) WIDEN_IMPL(x)
+
 /**
- * Retrieve the path to "blender-launcher.exe" if it exists; otherwise, return the current
- * executable path.
+ * Retrieve the path to the launcher (#BLENDER_WIN_LAUNCHER_NAME) if it exists; otherwise, return
+ * the current executable path.
  */
 static bool bli_executable_path_get(LPWSTR path, DWORD size)
 {
@@ -544,20 +548,20 @@ static bool bli_executable_path_get(LPWSTR path, DWORD size)
     return false;
   }
 
-  /* Replace the filename "blender.exe" with "blender-launcher.exe". */
+  /* Replace the executable's file name with the launcher's. */
   if (!PathRemoveFileSpecW(executable_path)) {
     /* Failed to remove the file spec. Use the original path. */
     return true;
   }
-  if (!PathAppendW(executable_path, L"blender-launcher.exe")) {
+  if (!PathAppendW(executable_path, WIDEN(BLENDER_WIN_LAUNCHER_NAME))) {
     /* Failed to append the new filename. Use the original path. */
     return true;
   }
 
-  /* Check if "blender-launcher.exe" exists at this path. */
+  /* Check if the launcher exists at this path. */
   DWORD attributes = GetFileAttributesW(executable_path);
   if (attributes == INVALID_FILE_ATTRIBUTES || (attributes & FILE_ATTRIBUTE_DIRECTORY)) {
-    /* "blender-launcher.exe" does not exist. Use the original executable path. */
+    /* The launcher does not exist. Use the original executable path. */
     return true;
   }
 
@@ -609,25 +613,25 @@ void BLI_windows_exception_show_dialog(const char *filepath_crashlog,
                                          nullptr;
 
   std::wstring full_message_16 =
-      L"A problem has caused the program to stop functioning correctly. If you know the steps to "
-      L"reproduce this issue, please submit a bug report.\n"
+      L"Um problema fez o programa parar de funcionar corretamente. Se você souber os passos "
+      L"para reproduzir o problema, envie um relato.\n"
       "\n"
-      L"The crash log can be found at:\n" +
+      L"O registro do erro está em:\n" +
       std::wstring(filepath_crashlog_utf16);
 
   TASKDIALOGCONFIG config = {0};
-  const TASKDIALOG_BUTTON buttons[] = {{IDRETRY, L"Restart"},
-                                       {IDOK, L"Report a Bug"},
-                                       {IDHELP, L"View Crash Log"},
-                                       {IDCLOSE, L"Close"}};
+  const TASKDIALOG_BUTTON buttons[] = {{IDRETRY, L"Reiniciar"},
+                                       {IDOK, L"Relatar o problema"},
+                                       {IDHELP, L"Ver registro do erro"},
+                                       {IDCLOSE, L"Fechar"}};
 
   config.cbSize = sizeof(config);
   config.hwndParent = GetActiveWindow();
   config.hInstance = 0;
   config.dwCommonButtons = 0;
   config.pszMainIcon = TD_ERROR_ICON;
-  config.pszWindowTitle = L"Blender";
-  config.pszMainInstruction = L"Blender has stopped working";
+  config.pszWindowTitle = L"GameForge 3D Studio";
+  config.pszMainInstruction = L"O GameForge 3D Studio parou de funcionar";
   config.pszContent = full_message_16.c_str();
   config.pButtons = buttons;
   config.cButtons = ARRAY_SIZE(buttons);
@@ -679,12 +683,12 @@ void BLI_windows_exception_show_dialog(const char *filepath_crashlog,
             nullptr, L"open", data_ptr->filepath_crashlog_utf16, nullptr, nullptr, SW_SHOWNORMAL);
         return S_FALSE;
       case IDOK: {
-        /* Open the bug report form with pre-filled data. */
+        /* Open the support site with the crash details. */
         /* clang-format off */
         std::wstring link =
-            L"https://redirect.blender.org/"
+            L"https://atomgameforge.com/"
             L"?type=bug_report"
-            L"&project=blender"
+            L"&project=gameforge-3d-studio"
             L"&os=" + url_encode_wstring(get_os_info()) +
             L"&gpu=" + url_encode_wstring(data_ptr->gpu_name) +
             L"&broken_version=" + url_encode_wstring(data_ptr->build_version) +

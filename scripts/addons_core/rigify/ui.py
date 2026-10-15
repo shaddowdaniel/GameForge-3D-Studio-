@@ -594,8 +594,8 @@ class DATA_OT_rigify_add_color_sets(bpy.types.Operator):
 # noinspection PyPep8Naming
 class DATA_OT_rigify_use_standard_colors(bpy.types.Operator):
     bl_idname = "armature.rigify_use_standard_colors"
-    bl_label = "Get active/selected colors from current Blender theme"
-    bl_description = "Set the color palette to match Blender's active theme for selected and active bones"
+    bl_label = "Get active/selected colors from current GameForge 3D Studio theme"
+    bl_description = "Set the color palette to match GameForge 3D Studio's active theme for selected and active bones"
     bl_options = {'UNDO'}
 
     @classmethod

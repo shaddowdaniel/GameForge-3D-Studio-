@@ -463,7 +463,7 @@ def read_project_toml_config(root_path, report=None):
     # Handle project config versioning.
     if config_dict["schema_version"] > PROJECT_SCHEMA_VERSION:
         if report:
-            report({'ERROR'}, rpt_("Project configuration is newer than this version of Blender supports"))
+            report({'ERROR'}, rpt_("Project configuration is newer than this version of GameForge 3D Studio supports"))
         raise ProjectLoadException
     elif config_dict["schema_version"] < PROJECT_SCHEMA_VERSION:
         # Put versioning upgrade code here when needed.

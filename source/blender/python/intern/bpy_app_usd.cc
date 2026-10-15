@@ -24,7 +24,7 @@ namespace blender {
 static PyTypeObject BlenderAppUSDType;
 
 static PyStructSequence_Field app_usd_info_fields[] = {
-    {"supported", "Boolean, True when Blender is built with USD support"},
+    {"supported", "Boolean, True when GameForge 3D Studio is built with USD support"},
     {"version", "The USD version as a tuple of 3 numbers"},
     {"version_string", "The USD version formatted as a string"},
     {nullptr},

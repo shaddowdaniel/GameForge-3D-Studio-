@@ -175,7 +175,7 @@ ScrArea *render_view_open(bContext *C, int mx, int my, ReportList *reports)
 
     /* changes context! */
     wmWindow *win = WM_window_open(C,
-                                   IFACE_("Blender Render"),
+                                   IFACE_("GameForge 3D Studio Render"),
                                    &window_rect,
                                    SPACE_IMAGE,
                                    true,

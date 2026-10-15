@@ -514,8 +514,8 @@ msgid "Source Root"
 msgstr "Rădăcina Sursei"
 
 
-msgid "The Blender source root path"
-msgstr "Calea rădăcină sursă Blender"
+msgid "The GameForge 3D Studio source root path"
+msgstr "Calea rădăcină sursă GameForge 3D Studio"
 
 
 msgid "Spell Cache"
@@ -538,8 +538,8 @@ msgid "Persistent Data Path"
 msgstr "Calea a Datelor Persistentă"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Numele unui fișier json care stochează acele setări (din păcate, sistemul Blender nu funcționează aici)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
+msgstr "Numele unui fișier json care stochează acele setări (din păcate, sistemul GameForge 3D Studio nu funcționează aici)"
 
 
 msgid "User Add-ons"
@@ -1778,8 +1778,8 @@ msgid "Shape Key data-blocks"
 msgstr "Blocurile de date ale Cheilor de Formă"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Path"
@@ -3548,8 +3548,8 @@ msgid "Modifier '%s' not in object '%s'"
 msgstr "Modificatorul '%s' nu este în obiectul '%s'"
 
 
-msgid "Blender Render"
-msgstr "Render Blender"
+msgid "GameForge 3D Studio Render"
+msgstr "Render GameForge 3D Studio"
 
 
 msgid "Compiled without sound support"
@@ -3801,8 +3801,8 @@ msgid "Bokeh Type:"
 msgstr "Tip Bokeh:"
 
 
-msgid "Blender File View"
-msgstr "Vizualizatorul de Fișiere Blender"
+msgid "GameForge 3D Studio File View"
+msgstr "Vizualizatorul de Fișiere GameForge 3D Studio"
 
 
 msgid "Context window not set"

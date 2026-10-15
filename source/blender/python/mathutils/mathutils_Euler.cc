@@ -925,7 +925,7 @@ PyDoc_STRVAR(
     euler_doc,
     ".. class:: Euler(angles=(0.0, 0.0, 0.0), order='XYZ', /)\n"
     "\n"
-    "   This object gives access to Eulers in Blender.\n"
+    "   This object gives access to Eulers in GameForge 3D Studio.\n"
     "\n"
     "   .. seealso:: `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__ on "
     "Wikipedia.\n"

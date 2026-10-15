@@ -636,7 +636,7 @@ PyDoc_STRVAR(
     bpy_op_fn_idname_doc,
     ".. method:: idname()\n"
     "\n"
-    ":return: Return the Blender-format operator idname (e.g., 'OBJECT_OT_select_all').\n"
+    ":return: Return the GameForge 3D Studio-format operator idname (e.g., 'OBJECT_OT_select_all').\n"
     ":rtype: str\n");
 static PyObject *bpy_op_fn_idname(BPyOpFunction *self, PyObject * /*args*/)
 {

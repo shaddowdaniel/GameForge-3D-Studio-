@@ -440,7 +440,7 @@ const ColorSpace *LibOCIOConfig::get_color_space(const StringRefNull name) const
 
   if (!ocio_config_->isInactiveColorSpace(ocio_color_space->getName())) {
     report_error(
-        fmt::format("Invalid OpenColorIO configuration: color space {} not found on Blender side",
+        fmt::format("Invalid OpenColorIO configuration: color space {} not found on GameForge 3D Studio side",
                     ocio_color_space->getName()));
   }
 

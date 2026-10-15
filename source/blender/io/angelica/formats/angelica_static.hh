@@ -38,6 +38,14 @@ enum : uint32_t {
   LIT_MODEL_VERSION_LIGHTMAP = 0x10000101,
   LIT_MODEL_VERSION_SHARED = 0x10000200,
   LIT_MODEL_VERSION_EX = 0x10000300,
+  /**
+   * Newer extended versions, without source (measured on the files of the 1.7.8 and PWNH clients,
+   * every sampled file reads to its end): 0x10000301 grows the sized extra blocks (skipped),
+   * 0x10000302 stores 32-bit indices, 0x10000303 adds an `int32` after the transform,
+   * 0x10000304 an `int32` per mesh before its material, 0x10000305 four floats there instead.
+   */
+  LIT_MODEL_VERSION_EX_INDEX32 = 0x10000302,
+  LIT_MODEL_VERSION_EX_LAST = 0x10000305,
 };
 
 /** `CELBrushBuilding` version tag in front of the lit model (followed by `bool collide only`). */
@@ -71,6 +79,8 @@ struct LitMesh {
   std::vector<uint32_t> night_colors_extra;
   /** Triangle list. */
   std::vector<uint16_t> indices;
+  /** Triangle list of models from #LIT_MODEL_VERSION_EX_INDEX32 on (then #indices is empty). */
+  std::vector<uint32_t> indices32;
 
   float aabb_min[3] = {0.0f, 0.0f, 0.0f};
   float aabb_max[3] = {0.0f, 0.0f, 0.0f};

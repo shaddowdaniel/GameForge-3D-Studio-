@@ -304,7 +304,7 @@ PyDoc_STRVAR(
     "   Registers an addon's UI translations.\n"
     "\n"
     "   .. note::\n"
-    "      Does nothing when Blender is built without internationalization support.\n"
+    "      Does nothing when GameForge 3D Studio is built without internationalization support.\n"
     "\n"
     "   :param module_name: The name identifying the addon.\n"
     "   :type module_name: str\n"
@@ -365,7 +365,7 @@ PyDoc_STRVAR(
     "   Unregisters an addon's UI translations.\n"
     "\n"
     "   .. note::\n"
-    "      Does nothing when Blender is built without internationalization support.\n"
+    "      Does nothing when GameForge 3D Studio is built without internationalization support.\n"
     "\n"
     "   :param module_name: The name identifying the addon.\n"
     "   :type module_name: str\n"
@@ -496,7 +496,7 @@ static PyMemberDef app_translations_members[] = {
 PyDoc_STRVAR(
     /* Wrap. */
     app_translations_locale_doc,
-    "The actual locale currently in use (will always return an empty string when Blender "
+    "The actual locale currently in use (will always return an empty string when GameForge 3D Studio "
     "is built without "
     "internationalization support).\n"
     "\n"
@@ -510,7 +510,7 @@ static PyObject *app_translations_locale_get(PyObject * /*self*/, void * /*userd
 PyDoc_STRVAR(
     /* Wrap. */
     app_translations_locales_doc,
-    "All locales currently known by Blender (i.e. available as translations).\n"
+    "All locales currently known by GameForge 3D Studio (i.e. available as translations).\n"
     "\n"
     ":type: list[str]\n");
 static PyObject *app_translations_locales_get(PyObject * /*self*/, void * /*userdata*/)
@@ -616,13 +616,13 @@ PyDoc_STRVAR(
     "   .. note::\n"
     "      You should really rarely need to use this function in regular addon code, as all "
     "translation should be\n"
-    "      handled by Blender internal code. "
+    "      handled by GameForge 3D Studio internal code. "
     "The only exceptions are strings containing formatting "
     "(like \"File: %r\"),\n"
     "      but you should rather use :func:`pgettext_iface`/:func:`pgettext_tip` in those cases!\n"
     "\n"
     "   .. note::\n"
-    "      Does nothing when Blender is built without internationalization support (hence always "
+    "      Does nothing when GameForge 3D Studio is built without internationalization support (hence always "
     "returns ``msgid``).\n"
     "\n"
     "   :param msgid: The string to translate.\n"
@@ -940,7 +940,7 @@ static void app_translations_free(void *self_v)
 PyDoc_STRVAR(
     /* Wrap. */
     app_translations_doc,
-    "This object contains some data/methods regarding internationalization in Blender, "
+    "This object contains some data/methods regarding internationalization in GameForge 3D Studio, "
     "and allows every py script\n"
     "to feature translations for its own UI messages.\n"
     "\n");

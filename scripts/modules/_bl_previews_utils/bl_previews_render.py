@@ -472,7 +472,7 @@ def main():
     argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
 
     parser = argparse.ArgumentParser(
-        description="Use Blender to generate previews for currently open Blender file's items.",
+        description="Use GameForge 3D Studio to generate previews for currently open GameForge 3D Studio file's items.",
     )
     parser.add_argument(
         '--clear',

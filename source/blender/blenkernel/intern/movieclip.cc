@@ -1945,7 +1945,7 @@ gpu::Texture *BKE_movieclip_get_gpu_texture(MovieClip *clip, MovieClipUser *cuse
   /* check if we have a valid image buffer */
   ImBuf *ibuf = BKE_movieclip_get_ibuf(clip, cuser);
   if (ibuf == nullptr) {
-    CLOG_ERROR(&LOG, "Failed to create GPU texture from Blender movie clip");
+    CLOG_ERROR(&LOG, "Failed to create GPU texture from GameForge 3D Studio movie clip");
     *tex = GPU_texture_create_error(2, false);
     return *tex;
   }

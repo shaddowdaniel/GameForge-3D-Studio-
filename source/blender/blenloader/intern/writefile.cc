@@ -769,7 +769,7 @@ static bool write_at_address_validate(WriteData *wd, const int filecode, const v
     if (!wd->validation_data.per_id_addresses_set.add(address)) {
       CLOG_ERROR(&LOG,
                  "Same identifier (old address) used several times for a same ID, skipping this "
-                 "block to avoid critical corruption of the Blender file.");
+                 "block to avoid critical corruption of the GameForge 3D Studio file.");
       return false;
     }
   }

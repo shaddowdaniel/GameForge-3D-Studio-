@@ -86,7 +86,7 @@ struct CDataFile {
 
 static int cdf_endian()
 {
-  BLI_STATIC_ASSERT(ENDIAN_ORDER == L_ENDIAN, "Blender only builds on little endian systems")
+  BLI_STATIC_ASSERT(ENDIAN_ORDER == L_ENDIAN, "GameForge 3D Studio only builds on little endian systems")
   return CDF_ENDIAN_LITTLE;
 }
 

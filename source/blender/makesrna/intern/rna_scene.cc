@@ -5044,7 +5044,7 @@ static void rna_def_unit_settings(BlenderRNA *brna)
   RNA_def_property_ui_text(
       prop,
       "Unit Scale",
-      "Scale to use when converting between Blender units and dimensions."
+      "Scale to use when converting between GameForge 3D Studio units and dimensions."
       " When working at microscopic or astronomical scale, a small or large unit scale"
       " respectively can be used to avoid numerical precision problems");
   RNA_def_property_range(prop, 1e-9f, 1e+9f);
@@ -9221,7 +9221,7 @@ static void rna_def_scene_hydra(BlenderRNA *brna)
   prop = RNA_def_property(srna, "export_method", PROP_ENUM, PROP_NONE);
   RNA_def_property_enum_items(prop, hydra_export_method_items);
   RNA_def_property_ui_text(
-      prop, "Export Method", "How to export the Blender scene to the Hydra render engine");
+      prop, "Export Method", "How to export the GameForge 3D Studio scene to the Hydra render engine");
   RNA_def_property_update(prop, NC_SCENE | ND_RENDER_OPTIONS, nullptr);
 }
 

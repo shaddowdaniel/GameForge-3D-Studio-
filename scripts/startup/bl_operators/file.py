@@ -45,7 +45,7 @@ class WM_OT_previews_batch_generate(Operator):
         default=True,
         options={'HIDDEN', 'SKIP_SAVE'},
         name="",
-        description="Show Blender files in the File Browser",
+        description="Show GameForge 3D Studio files in the File Browser",
     )
     filter_folder: BoolProperty(
         default=True,

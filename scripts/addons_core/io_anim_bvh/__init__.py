@@ -75,7 +75,7 @@ class ImportBVH(bpy.types.Operator, ImportHelper):
         name="Scale FPS",
         description=(
             "Scale the frame-rate from the BVH to the current scenes, "
-            "otherwise each BVH frame maps directly to a Blender frame"
+            "otherwise each BVH frame maps directly to a GameForge 3D Studio frame"
         ),
         default=False,
     )

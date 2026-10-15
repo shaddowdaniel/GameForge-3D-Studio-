@@ -358,8 +358,11 @@ else()
         ${CMAKE_BINARY_DIR}/blender.exe.manifest
       )
     endif()
-    target_compile_definitions(blender-launcher PRIVATE -D_UNICODE -DUNICODE)
+    target_compile_definitions(blender-launcher PRIVATE -D_UNICODE -DUNICODE -DBLENDER_RC_LAUNCHER)
     target_link_libraries(blender-launcher Pathcch.lib)
+    # GameForge 3D Studio names (see `BLENDER_WIN_EXE_STEM` in the root `CMakeLists.txt`).
+    set_target_properties(blender PROPERTIES OUTPUT_NAME "${BLENDER_WIN_EXE_STEM}")
+    set_target_properties(blender-launcher PROPERTIES OUTPUT_NAME "${BLENDER_WIN_EXE_STEM}-launcher")
   endif()
 endif()
 
@@ -1098,11 +1101,12 @@ elseif(WIN32)
     install(
       FILES ${CMAKE_BINARY_DIR}/blender.exe.manifest
       DESTINATION "."
+      RENAME ${BLENDER_WIN_EXE_STEM}.exe.manifest
     )
     install(
       FILES ${CMAKE_BINARY_DIR}/blender.exe.manifest
       DESTINATION "."
-      RENAME blender-launcher.exe.manifest
+      RENAME ${BLENDER_WIN_EXE_STEM}-launcher.exe.manifest
     )
   endif()
   windows_install_shared_manifest(
@@ -1753,40 +1757,40 @@ elseif(WIN32)
     # for the Python executable name. So the file needs to be generated afterwards
     # to get the correct name.
     configure_file(
-      ${CMAKE_SOURCE_DIR}/release/windows/batch/blender_system_info.cmd.in
-      ${CMAKE_BINARY_DIR}/release/windows/batch/blender_system_info.with_vars.cmd.in
+      ${CMAKE_SOURCE_DIR}/release/windows/batch/gameforge_system_info.cmd.in
+      ${CMAKE_BINARY_DIR}/release/windows/batch/gameforge_system_info.with_vars.cmd.in
       @ONLY
     )
     unset(PYTHON_EXECUTABLE_NAME_ONLY)
     # Replace Python executable generator with actual executable name.
     file(GENERATE
-      OUTPUT ${CMAKE_BINARY_DIR}/release/windows/batch/blender_system_info_$<CONFIG>.cmd
-      INPUT ${CMAKE_BINARY_DIR}/release/windows/batch/blender_system_info.with_vars.cmd.in
+      OUTPUT ${CMAKE_BINARY_DIR}/release/windows/batch/gameforge_system_info_$<CONFIG>.cmd
+      INPUT ${CMAKE_BINARY_DIR}/release/windows/batch/gameforge_system_info.with_vars.cmd.in
     )
     install(
       FILES
-      ${CMAKE_BINARY_DIR}/release/windows/batch/blender_system_info_$<CONFIG>.cmd
+      ${CMAKE_BINARY_DIR}/release/windows/batch/gameforge_system_info_$<CONFIG>.cmd
       DESTINATION ${TARGETDIR_EXE}
-      RENAME blender_system_info.cmd
+      RENAME gameforge_system_info.cmd
     )
     if(WITH_CYCLES)
       install(
         FILES
-          ${CMAKE_SOURCE_DIR}/release/windows/batch/blender_debug_cycles.cmd
+          ${CMAKE_SOURCE_DIR}/release/windows/batch/gameforge_debug_cycles.cmd
         DESTINATION ${TARGETDIR_EXE}
       )
     endif()
     install(
       FILES
-        ${CMAKE_SOURCE_DIR}/release/windows/batch/blender_debug_gpu.cmd
-        ${CMAKE_SOURCE_DIR}/release/windows/batch/blender_debug_gpu_glitchworkaround.cmd
-        ${CMAKE_SOURCE_DIR}/release/windows/batch/blender_debug_log.cmd
-        ${CMAKE_SOURCE_DIR}/release/windows/batch/blender_factory_startup.cmd
-        ${CMAKE_SOURCE_DIR}/release/windows/batch/blender_factory_startup_opengl.cmd
-        ${CMAKE_SOURCE_DIR}/release/windows/batch/blender_factory_startup_vulkan.cmd
-        ${CMAKE_SOURCE_DIR}/release/windows/batch/blender_startup_opengl.cmd
-        ${CMAKE_SOURCE_DIR}/release/windows/batch/blender_startup_vulkan.cmd
-        ${CMAKE_SOURCE_DIR}/release/windows/batch/blender_oculus.cmd
+        ${CMAKE_SOURCE_DIR}/release/windows/batch/gameforge_debug_gpu.cmd
+        ${CMAKE_SOURCE_DIR}/release/windows/batch/gameforge_debug_gpu_glitchworkaround.cmd
+        ${CMAKE_SOURCE_DIR}/release/windows/batch/gameforge_debug_log.cmd
+        ${CMAKE_SOURCE_DIR}/release/windows/batch/gameforge_factory_startup.cmd
+        ${CMAKE_SOURCE_DIR}/release/windows/batch/gameforge_factory_startup_opengl.cmd
+        ${CMAKE_SOURCE_DIR}/release/windows/batch/gameforge_factory_startup_vulkan.cmd
+        ${CMAKE_SOURCE_DIR}/release/windows/batch/gameforge_startup_opengl.cmd
+        ${CMAKE_SOURCE_DIR}/release/windows/batch/gameforge_startup_vulkan.cmd
+        ${CMAKE_SOURCE_DIR}/release/windows/batch/gameforge_oculus.cmd
         ${CMAKE_SOURCE_DIR}/release/windows/batch/oculus.json
       DESTINATION ${TARGETDIR_EXE}
     )
@@ -2191,12 +2195,12 @@ if(WIN32)
     if(CMAKE_BUILD_TYPE)
       set_property(
         TARGET blender APPEND_STRING PROPERTY LINK_FLAGS_RELEASE
-        " /PDBSTRIPPED:${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_BUILD_TYPE}/blender_public.pdb"
+        " \"/PDBSTRIPPED:${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_BUILD_TYPE}/blender_public.pdb\""
       )
     else()
       set_property(
         TARGET blender APPEND_STRING PROPERTY LINK_FLAGS_RELEASE
-        " /PDBSTRIPPED:${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/blender_public.pdb"
+        " \"/PDBSTRIPPED:${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/blender_public.pdb\""
       )
     endif()
   endif()
@@ -2206,7 +2210,7 @@ endif()
 # Setup launcher
 
 if(WIN32 AND NOT WITH_PYTHON_MODULE)
-  set(BLENDER_BIN "blender.exe")
+  set(BLENDER_BIN "${BLENDER_WIN_EXE_STEM}.exe")
   install(
     TARGETS blender blender-launcher
     COMPONENT Blender
@@ -2297,4 +2301,25 @@ endif()
 
 if(POSTINSTALL_SCRIPT)
   install(SCRIPT ${POSTINSTALL_SCRIPT})
+endif()
+
+# -----------------------------------------------------------------------------
+# GameForge: version and manifest of the installed files (auto-update).
+# The last install rule: every file is in place. CPack installs into its own folder, so the installer
+# gets them too.
+
+if(WIN32)
+  install(CODE "
+    execute_process(
+      COMMAND \"\${CMAKE_INSTALL_PREFIX}/${TARGETDIR_VER}/python/bin/python.exe\" -I
+              \"${CMAKE_SOURCE_DIR}/release/windows/gameforge/write_manifest.py\"
+              \"\${CMAKE_INSTALL_PREFIX}\"
+              \"${BLENDER_VERSION_MAJOR}.${BLENDER_VERSION_MINOR}.${BLENDER_VERSION_PATCH}\"
+              \"${CMAKE_SOURCE_DIR}\"
+      RESULT_VARIABLE _gameforge_result
+    )
+    if(NOT _gameforge_result EQUAL 0)
+      message(FATAL_ERROR \"GameForge: write_manifest.py failed (\${_gameforge_result})\")
+    endif()
+  ")
 endif()

@@ -316,7 +316,7 @@ bool BKE_tracking_reconstruction_check(MovieTracking *tracking,
 
 #ifndef WITH_LIBMV
   BLI_strncpy_utf8(
-      error_msg, N_("Blender is compiled without motion tracking library"), error_msg_maxncpy);
+      error_msg, N_("GameForge 3D Studio is compiled without motion tracking library"), error_msg_maxncpy);
   return false;
 #endif
 

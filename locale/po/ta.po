@@ -836,7 +836,7 @@ msgid "Fribidi Library"
 msgstr "fribidi தொகுப்பு"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
 msgstr "ஃப்ரிபிடி சி தொகுக்கப்பட்ட நூலகம் (.so லினக்சின் கீழ், .dll விண்டோசின் கீழ் ...), நீங்கள் விண்டோசின் கீழ் இருந்தால் அதைத் திருத்த வேண்டியிருக்கும், எ.கா. கலப்பான் நூலகங்களின் களஞ்சியத்தில் சேர்க்கப்பட்டதைப் பயன்படுத்துதல்"
 
 
@@ -860,7 +860,7 @@ msgid "Source Root"
 msgstr "மூல வேர்"
 
 
-msgid "The Blender source root path"
+msgid "The GameForge 3D Studio source root path"
 msgstr "கலப்பான் மூல வேர் பாதை"
 
 
@@ -884,7 +884,7 @@ msgid "Persistent Data Path"
 msgstr "நிலையான தரவு பாதை"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
 msgstr "அந்த அமைப்புகளைச் சேமிக்கும் சாதொபொகு கோப்பின் பெயர் (துரதிர்ச்டவசமாக, கலப்பானின் அமைப்பு இங்கே வேலை செய்யாது)"
 
 
@@ -1820,7 +1820,7 @@ msgid "Current File"
 msgstr "தற்போதைய கோப்பு"
 
 
-msgid "Show the assets currently available in this Blender session"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
 msgstr "இந்த கலப்பான் அமர்வில் தற்போது கிடைக்கும் சொத்துக்களைக் காட்டு"
 
 
@@ -1888,7 +1888,7 @@ msgid "Catalog UUID"
 msgstr "அட்டவணை uuid"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
 msgstr "சொத்தின் பட்டியலுக்கான அடையாளங்காட்டி, சொத்தின் பட்டியல் பாதையைப் பார்க்க பிளெண்டர் பயன்படுத்தினார். RFC4122 இன் படி ஒரு UUID ஆக இருக்க வேண்டும்."
 
 
@@ -2585,7 +2585,7 @@ msgid "Is Internal"
 msgstr "உள்"
 
 
-msgid "The attribute is meant for internal use by Blender"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
 msgstr "பண்புக்கூறு கலப்பானின் உள் பயன்பாட்டிற்காக உள்ளது"
 
 
@@ -3852,7 +3852,7 @@ msgid "Project"
 msgstr "திட்டம்"
 
 
-msgid "Blender"
+msgid "GameForge 3D Studio"
 msgstr "கலப்பான்"
 
 
@@ -4089,11 +4089,11 @@ msgid "Path"
 msgstr "பாதை"
 
 
-msgid "Blender RNA"
+msgid "GameForge 3D Studio RNA"
 msgstr "கலப்பான் ஆர்என்ஏ"
 
 
-msgid "Blender RNA structure definitions"
+msgid "GameForge 3D Studio RNA structure definitions"
 msgstr "கலப்பான் ஆர்என்ஏ கட்டமைப்பு வரையறைகள்"
 
 
@@ -8102,7 +8102,7 @@ msgid "Lin error"
 msgstr "லின் பிழை"
 
 
-msgid "Amount of residual error in Blender space unit for constraints that work on position"
+msgid "Amount of residual error in GameForge 3D Studio space unit for constraints that work on position"
 msgstr "நிலையில் செயல்படும் தடைகளுக்கு கலப்பான் ச்பேச் யூனிட்டில் எஞ்சிய பிழையின் அளவு"
 
 
@@ -12070,7 +12070,7 @@ msgid "Max Velocity"
 msgstr "அதிகபட்ச விரைவு"
 
 
-msgid "Velocity considered as maximum influence (Blender units per frame)"
+msgid "Velocity considered as maximum influence (GameForge 3D Studio units per frame)"
 msgstr "விரைவு அதிகபட்ச செல்வாக்காகக் கருதப்படுகிறது (ஒரு சட்டத்திற்கு கலப்பான் அலகுகள்)"
 
 
@@ -12448,7 +12448,7 @@ msgid "Premultiply Alpha"
 msgstr "preultiply ஆல்பா"
 
 
-msgid "Multiply color by alpha (recommended for Blender input)"
+msgid "Multiply color by alpha (recommended for GameForge 3D Studio input)"
 msgstr "ஆல்பாவால் வண்ணம் பெருக்கவும் (கலப்பான் உள்ளீட்டிற்கு பரிந்துரைக்கப்படுகிறது)"
 
 
@@ -14844,7 +14844,7 @@ msgid "Hide .blend files items that are not data-blocks with asset metadata"
 msgstr "மறைக்க .கலப்பு சொத்து மேவுடேட்டாவுடன் தரவு-தொகுதிகள் இல்லாத உருப்படிகளை அனுப்பவும்"
 
 
-msgid "Filter Blender Backup Files"
+msgid "Filter GameForge 3D Studio Backup Files"
 msgstr "கலப்பான் காப்பு கோப்புகளை வடிகட்டவும்"
 
 
@@ -14852,7 +14852,7 @@ msgid "Show .blend1, .blend2, etc. files"
 msgstr ".கலப்பு1, .கலப்பு2, முதலியன கோப்புகளைக் காட்டு"
 
 
-msgid "Filter Blender"
+msgid "Filter GameForge 3D Studio"
 msgstr "வடிகட்டி கலப்பான்"
 
 
@@ -14860,7 +14860,7 @@ msgid "Show .blend files"
 msgstr ".கலப்பு கோப்புகளைக் காட்டு"
 
 
-msgid "Filter Blender IDs"
+msgid "Filter GameForge 3D Studio IDs"
 msgstr "கலப்பான் ஐடிகளை வடிகட்டவும்"
 
 
@@ -14936,7 +14936,7 @@ msgid "Library Browser"
 msgstr "நூலக உலாவி"
 
 
-msgid "Whether we may browse Blender files' content or not"
+msgid "Whether we may browse GameForge 3D Studio files' content or not"
 msgstr "நாங்கள் கலப்பான் கோப்புகளின் உள்ளடக்கத்தை உலாவலாமா இல்லையா"
 
 
@@ -15328,7 +15328,7 @@ msgid "Export Mantaflow Script"
 msgstr "மாண்டாஃப்ளோ ச்கிரிப்டை ஏற்றுமதி செய்யுங்கள்"
 
 
-msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of Blender) after baking the simulation."
+msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of GameForge 3D Studio) after baking the simulation."
 msgstr "சுட்டுக்கொள்ளும் போது தற்போதைய டொமைன் அமைப்புகளிலிருந்து மாண்டாஃப்ளோ ச்கிரிப்டை உருவாக்கி ஏற்றுமதி செய்யுங்கள். உருவகப்படுத்துதலை சுடிய பின் நேரடியாக மாண்டாஃப்ளோவில் உள்ள தற்காலிக சேமிப்பை (எ.கா. கட்டங்கள், திசைவேக திசையன்கள், துகள்கள்) பகுப்பாய்வு செய்ய திட்டமிட்டால் மட்டுமே இது தேவைப்படுகிறது."
 
 
@@ -18581,7 +18581,7 @@ msgid "Is Legacy Action"
 msgstr "மரபு நடவடிக்கை"
 
 
-msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since Blender 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
+msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since version 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
 msgstr "இது மரபுவழிச் செயலா என்பதைத் தெரிவிக்கவும். மரபுச் செயல்களுக்கு அடுக்குகள் அல்லது ச்லாட்டுகள் இல்லை. பிளெண்டர் 4.4 செயல்கள் தானாக லேயர்டு செயல்களுக்கு புதுப்பிக்கப்படும் என்பதால். வெற்று செயல்களில் மட்டுமே இது உண்மையாக இருக்கும்"
 
 
@@ -20419,7 +20419,7 @@ msgid "Unprojected Size"
 msgstr "திட்டமிடப்படாத அளவு"
 
 
-msgid "Diameter of brush in Blender units"
+msgid "Diameter of brush in GameForge 3D Studio units"
 msgstr "பிளெண்டர் அலகுகளில் தூரிகையின் விட்டம்"
 
 
@@ -23711,7 +23711,7 @@ msgid "Library Overrides Need resync"
 msgstr "நூலகம் மீறுவதற்கு மறுசீரமைப்பு தேவை"
 
 
-msgid "Version of Blender the library .blend was saved with"
+msgid "Version of GameForge 3D Studio the library .blend was saved with"
 msgstr "கலப்பான் நூலகத்தின் பதிப்பு .கலப்பு சேமிக்கப்பட்டது"
 
 
@@ -28818,11 +28818,11 @@ msgid "Noise basis used for turbulence"
 msgstr "கொந்தளிப்புக்கு பயன்படுத்தப்படும் இரைச்சல் அடிப்படை"
 
 
-msgid "Blender Original"
+msgid "GameForge 3D Studio Original"
 msgstr "கலப்பான் அசல்"
 
 
-msgid "Noise algorithm - Blender original: Smooth interpolated noise"
+msgid "Noise algorithm - GameForge 3D Studio original: Smooth interpolated noise"
 msgstr "ஒலி அல்காரிதம் - கலப்பான் அசல்: மென்மையான இடைக்கணிப்பு ஒலி"
 
 
@@ -29692,7 +29692,7 @@ msgid "Asset Blend Path"
 msgstr "சொத்து கலப்பு பாதை"
 
 
-msgid "Full path to the Blender file containing the active asset"
+msgid "Full path to the GameForge 3D Studio file containing the active asset"
 msgstr "செயலில் உள்ள சொத்துக்களைக் கொண்ட கலப்பான் கோப்புக்கு முழு பாதை"
 
 
@@ -30800,7 +30800,7 @@ msgid "Custom Icon"
 msgstr "தனிப்பயன் படவுரு"
 
 
-msgid "True if this preview icon has been modified by py script, and is no more auto-generated by Blender"
+msgid "True if this preview icon has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
 msgstr "இந்த மாதிரிக்காட்சி படவுரு py ச்கிரிப்டால் மாற்றியமைக்கப்பட்டிருந்தால் உண்மைதான், மேலும் கலப்பானால் தானாக உருவாக்கப்படவில்லை"
 
 
@@ -30808,7 +30808,7 @@ msgid "Custom Image"
 msgstr "தனிப்பயன் படம்"
 
 
-msgid "True if this preview image has been modified by py script, and is no more auto-generated by Blender"
+msgid "True if this preview image has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
 msgstr "இந்த முன்னோட்டப் படம் py ச்கிரிப்டால் மாற்றியமைக்கப்பட்டிருந்தால் உண்மைதான், மேலும் கலப்பானால் தானாக உருவாக்கப்படவில்லை"
 
 
@@ -50482,19 +50482,19 @@ msgid "World space normal mapping"
 msgstr "உலக விண்வெளி சாதாரண மேப்பிங்"
 
 
-msgid "Blender Object Space"
+msgid "GameForge 3D Studio Object Space"
 msgstr "கலப்பான் பொருள் இடம்"
 
 
-msgid "Object space normal mapping, compatible with Blender render baking"
+msgid "Object space normal mapping, compatible with GameForge 3D Studio render baking"
 msgstr "பொருள் விண்வெளி சாதாரண மேப்பிங், கலப்பான் வழங்குதல் பேக்கிங்குடன் இணக்கமானது"
 
 
-msgid "Blender World Space"
+msgid "GameForge 3D Studio World Space"
 msgstr "கலப்பான் உலக இடம்"
 
 
-msgid "World space normal mapping, compatible with Blender render baking"
+msgid "World space normal mapping, compatible with GameForge 3D Studio render baking"
 msgstr "உலக விண்வெளி இயல்பான மேப்பிங், கலப்பான் வழங்குதல் பேக்கிங்குடன் இணக்கமானது"
 
 
@@ -53771,7 +53771,7 @@ msgid "Clear Status"
 msgstr "தெளிவான நிலை"
 
 
-msgid "Allow Blender to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, Blender cannot prevent third-party add-ons from violating this rule."
+msgid "Allow GameForge 3D Studio to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, GameForge 3D Studio cannot prevent third-party add-ons from violating this rule."
 msgstr "இணையத்தை அணுக பிளெண்டரை அனுமதிக்கவும். இந்த அமைப்பைப் பின்பற்றும் துணை நிரல்கள் இயக்கப்பட்டால் மட்டுமே இணையத்துடன் இணைக்கும். இருப்பினும், மூன்றாம் தரப்பு துணை நிரல்கள் இந்த விதியை மீறுவதைத் தடுக்க முடியாது."
 
 
@@ -54965,7 +54965,7 @@ msgid "Uninstall Studio Light"
 msgstr "ச்டுடியோ லைட் நிறுவல் நீக்குதல்"
 
 
-msgid "Load and apply a Blender XML theme file"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
 msgstr "கலப்பான் எக்ச்எம்எல் கருப்பொருள் கோப்பை ஏற்றவும் பயன்படுத்தவும்"
 
 
@@ -55345,12 +55345,12 @@ msgid "I18n Save Settings"
 msgstr "ஐ18ன் அமைப்புகளை சேமிக்கவும்"
 
 
-msgid "Update i18n data (po files) in Blender source code repository"
+msgid "Update i18n data (po files) in GameForge 3D Studio source code repository"
 msgstr "கலப்பான் மூலக் குறியீடு களஞ்சியத்தில் ஐ18ன் தரவைப் புதுப்பிக்கவும்"
 
 
 msgctxt "Operator"
-msgid "Update I18n Blender Repository"
+msgid "Update I18n GameForge 3D Studio Repository"
 msgstr "ஐ18ன் கலப்பான் களஞ்சியத்தைப் புதுப்பிக்கவும்"
 
 
@@ -57007,7 +57007,7 @@ msgid "Debug Channel List"
 msgstr "பிழைத்திருத்த சேனல் பட்டியல்"
 
 
-msgid "Log the channel list info in the terminal. This operator is only available in debug builds of Blender"
+msgid "Log the channel list info in the terminal. This operator is only available in debug builds of GameForge 3D Studio"
 msgstr "டெர்மினலில் சேனல் பட்டியல் தகவலை பதிவு செய்யுங்கள். இந்த ஆபரேட்டர் பிளெண்டரின் பிழைத்திருத்த கட்டமைப்பில் மட்டுமே கிடைக்கிறது"
 
 
@@ -61472,7 +61472,7 @@ msgid "Apply Scalings"
 msgstr "அளவிடுதல் பயன்படுத்துங்கள்"
 
 
-msgid "How to apply custom and units scalings in generated FBX file (Blender uses FBX scale to detect units on import, but many other applications do not handle the same way)"
+msgid "How to apply custom and units scalings in generated FBX file (GameForge 3D Studio uses FBX scale to detect units on import, but many other applications do not handle the same way)"
 msgstr "உருவாக்கப்பட்ட fbx கோப்பில் தனிப்பயன் மற்றும் அலகுகள் அளவிடுதல் எவ்வாறு பயன்படுத்துவது (இறக்குமதியில் அலகுகளைக் கண்டறிய கலப்பான் fbx அளவைப் பயன்படுத்துகிறது, ஆனால் பல பயன்பாடுகள் அதே வழியில் கையாளாது)"
 
 
@@ -61512,7 +61512,7 @@ msgid "Apply Unit"
 msgstr "அலகு விண்ணப்பிக்கவும்"
 
 
-msgid "Take into account current Blender units settings (if unset, raw Blender Units values are used as-is)"
+msgid "Take into account current GameForge 3D Studio units settings (if unset, raw GameForge 3D Studio Units values are used as-is)"
 msgstr "தற்போதைய கலப்பான் அலகுகள் அமைப்புகளை கணக்கில் எடுத்துக்கொள்ளுங்கள் (அமைக்கப்படாவிட்டால், மூல கலப்பான் அலகுகள் மதிப்புகள் பயன்படுத்தப்படுகின்றன)"
 
 
@@ -61520,7 +61520,7 @@ msgid "Armature FBXNode Type"
 msgstr "ஆர்மேச்சர் fbxnode வகை"
 
 
-msgid "FBX type of node (object) used to represent Blender's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into Blender...)"
+msgid "FBX type of node (object) used to represent GameForge 3D Studio's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into GameForge 3D Studio...)"
 msgstr "கலப்பானின் ஆயுதங்களைக் குறிக்கப் பயன்படுத்தப்படும் fbx வகை முனை (பொருள்) (மற்ற பயன்பாட்டுடன் சிக்கல்களை நீங்கள் அனுபவிக்காவிட்டால் சுழிய வகையைப் பயன்படுத்தவும், ஏனெனில் மற்ற தேர்வுகள் கலப்பானில் சரியாக இறக்குமதி செய்யாது ...)"
 
 
@@ -61528,7 +61528,7 @@ msgid "Null"
 msgstr "ஏதுமில்லை"
 
 
-msgid "'Null' FBX node, similar to Blender's Empty (default)"
+msgid "'Null' FBX node, similar to GameForge 3D Studio's Empty (default)"
 msgstr "'சுழிய' fbx முனை, கலப்பானின் காலியாக (இயல்புநிலை) போன்றது"
 
 
@@ -61644,7 +61644,7 @@ msgid "Apply Transform"
 msgstr "உருமாற்றத்தைப் பயன்படுத்துங்கள்"
 
 
-msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
+msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with GameForge 3D Studio's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
 msgstr "சுட்டிக்காட்டும் இடம் பொருள் தரவுகளாக மாறுகிறது, இலக்கு இடம் கலப்பானின் இடத்துடன் சீரமைக்கப்படாதபோது பொருள்களுக்கு தேவையற்ற சுழற்சிகளைப் பெறுவதைத் தவிர்க்கிறது (எச்சரிக்கை! சோதனை விருப்பம், சொந்த ஆபத்தில் பயன்படுத்துதல், ஆயுதங்கள்/அனிமேசன்களால் உடைக்கப்படுவதாக அறியப்படுகிறது)"
 
 
@@ -61911,7 +61911,7 @@ msgid "Use Modifiers Render Setting"
 msgstr "மாற்றியமைக்கும் அமைப்பைப் பயன்படுத்தவும்"
 
 
-msgid "Use render settings when applying modifiers to mesh objects (DISABLED in Blender 2.8)"
+msgid "Use render settings when applying modifiers to mesh objects (DISABLED in version 2.8)"
 msgstr "மெச் பொருள்களுக்கு மாற்றியமைப்பாளர்களைப் பயன்படுத்தும்போது வழங்குதல் அமைப்புகளைப் பயன்படுத்தவும் (கலப்பான் 2.8 இல் முடக்கப்பட்டுள்ளது)"
 
 
@@ -62435,7 +62435,7 @@ msgid "Raw (Deprecated)"
 msgstr "மூல (நீக்கப்பட்டது)"
 
 
-msgid "Blender lighting strengths with no conversion"
+msgid "GameForge 3D Studio lighting strengths with no conversion"
 msgstr "எந்த மாற்றமும் இல்லாமல் கலப்பான் லைட்டிங் பலங்கள்"
 
 
@@ -62635,7 +62635,7 @@ msgid "Export Original PBR Specular"
 msgstr "அசல் பிபிஆர் ஏகப்பட்ட ஏற்றுமதி"
 
 
-msgid "Export original glTF PBR Specular, instead of Blender Principled Shader Specular"
+msgid "Export original glTF PBR Specular, instead of GameForge 3D Studio Principled Shader Specular"
 msgstr "அசல் சி.எல்.டி.எஃப் பிபிஆர் ஏகப்பட்ட ஏற்றுமதி, கலப்பான் கொள்கை ரீதியான சேடர் ஏகப்பட்டருக்கு பதிலாக"
 
 
@@ -62863,7 +62863,7 @@ msgid "Remember Export Settings"
 msgstr "ஏற்றுமதி அமைப்புகளை நினைவில் கொள்க"
 
 
-msgid "Store glTF export settings in the Blender project"
+msgid "Store glTF export settings in the GameForge 3D Studio project"
 msgstr "கலப்பான் திட்டத்தில் சி.எல்.டி.எஃப் ஏற்றுமதி அமைப்புகளை சேமிக்கவும்"
 
 
@@ -67107,7 +67107,7 @@ msgid "Definition"
 msgstr "வரையறை"
 
 
-msgid "Number of pixels per inch or Blender Unit"
+msgid "Number of pixels per inch or GameForge 3D Studio Unit"
 msgstr "ஒரு அங்குலத்திற்கு பிக்சல்களின் எண்ணிக்கை அல்லது பிளெண்டர் அலகுக்கு"
 
 
@@ -67131,7 +67131,7 @@ msgid "Force Reload"
 msgstr "படை மறுஏற்றம்"
 
 
-msgid "Force reload the image if it is already opened elsewhere in Blender"
+msgid "Force reload the image if it is already opened elsewhere in GameForge 3D Studio"
 msgstr "படத்தை ஏற்கனவே வேறு இடங்களில் திறக்கப்பட்டிருந்தால் மீண்டும் ஏற்றவும்"
 
 
@@ -67223,11 +67223,11 @@ msgid "Scale based on pixels per inch"
 msgstr "ஒரு அங்குலத்திற்கு பிக்சல்களை அடிப்படையாகக் கொண்ட அளவு"
 
 
-msgid "Pixels per Blender Unit"
+msgid "Pixels per GameForge 3D Studio Unit"
 msgstr "பிளெண்டர் அலகுக்கு படப்புள்ளிகள்"
 
 
-msgid "Scale based on pixels per Blender Unit"
+msgid "Scale based on pixels per GameForge 3D Studio Unit"
 msgstr "பிளெண்டர் அலகுக்கு பிக்சல்களின் அடிப்படையில் அளவு"
 
 
@@ -67496,7 +67496,7 @@ msgid "Save the image with another name and/or settings"
 msgstr "மற்றொரு பெயர் மற்றும்/அல்லது அமைப்புகளுடன் படத்தை சேமிக்கவும்"
 
 
-msgid "Create a new image file without modifying the current image in Blender"
+msgid "Create a new image file without modifying the current image in GameForge 3D Studio"
 msgstr "கலப்பானில் தற்போதைய படத்தை மாற்றாமல் புதிய படக் கோப்பை உருவாக்கவும்"
 
 
@@ -67696,7 +67696,7 @@ msgid "Scale FPS"
 msgstr "அளவிலான எஃப்பிஎச்"
 
 
-msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a Blender frame"
+msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a GameForge 3D Studio frame"
 msgstr "BVH இலிருந்து தற்போதைய காட்சிகளுக்கு பிரேம் வீதத்தை அளவிடவும், இல்லையெனில் ஒவ்வொரு BVH சட்டமும் நேரடியாக ஒரு பிளெண்டர் சட்டத்திற்கு வரைபடமாகும்"
 
 
@@ -67768,7 +67768,7 @@ msgid "Make Unique"
 msgstr "தனித்துவமானது"
 
 
-msgid "Import each FBX material as a unique Blender material"
+msgid "Import each FBX material as a unique GameForge 3D Studio material"
 msgstr "ஒவ்வொரு FBX பொருளையும் தனித்த பிளெண்டர் பொருளாக இறக்குமதி செய்யவும்"
 
 
@@ -67812,7 +67812,7 @@ msgid "Import FBX animation"
 msgstr "fbx அனிமேசனை இறக்குமதி செய்யுங்கள்"
 
 
-msgid "Import custom normals, if available (otherwise Blender will recompute them)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will recompute them)"
 msgstr "கிடைத்தால் தனிப்பயன் இயல்புகளை இறக்குமதி செய்யுங்கள் (இல்லையெனில் கலப்பான் அவற்றை மீண்டும் தொகுக்கும்)"
 
 
@@ -67868,11 +67868,11 @@ msgid "Heuristic for placing bones. Tries to make bones pretty"
 msgstr "எலும்புகளை வைப்பதற்கான ஊரிச்டிக். எலும்புகளை அழகாக மாற்ற முயற்சிக்கிறது"
 
 
-msgid "Blender (best for import/export round trip)"
+msgid "GameForge 3D Studio (best for import/export round trip)"
 msgstr "கலப்பான் (இறக்குமதி/ஏற்றுமதி சுற்று பயணத்திற்கு சிறந்தது)"
 
 
-msgid "Good for re-importing glTFs exported from Blender, and re-exporting glTFs to glTFs after Blender editing. Bone tips are placed on their local +Y axis (in glTF space)"
+msgid "Good for re-importing glTFs exported from GameForge 3D Studio, and re-exporting glTFs to glTFs after GameForge 3D Studio editing. Bone tips are placed on their local +Y axis (in glTF space)"
 msgstr "கலப்பானிலிருந்து ஏற்றுமதி செய்யப்பட்ட சி.எல்.டி.எஃப்-களை மீண்டும் இறக்குமதி செய்வதற்கும், கலப்பான் திருத்துதல் பிறகு சி.எல்.டி.எஃப்.எச்-க்கு சி.எல்.டி.எஃப்.எச். எலும்பு உதவிக்குறிப்புகள் அவற்றின் உள்ளக +y அச்சில் வைக்கப்படுகின்றன (gltf இடத்தில்)"
 
 
@@ -68020,7 +68020,7 @@ msgid "Update Reports Display"
 msgstr "புதுப்பிப்பு அறிக்கைகள் காட்சி"
 
 
-msgid "Update the display of reports in Blender UI (internal use)"
+msgid "Update the display of reports in GameForge 3D Studio UI (internal use)"
 msgstr "கலப்பான் இடைமுகம் (உள் பயன்பாடு) இல் அறிக்கைகளின் காட்சியைப் புதுப்பிக்கவும்"
 
 
@@ -79888,7 +79888,7 @@ msgid "Check for Updates on Startup"
 msgstr "தொடக்கத்தின் புதுப்பிப்புகளைச் சரிபார்க்கவும்"
 
 
-msgid "Allow Blender to check for updates upon launch"
+msgid "Allow GameForge 3D Studio to check for updates upon launch"
 msgstr "வெளியீட்டில் புதுப்பிப்புகளை சரிபார்க்க பிளெண்டரை அனுமதிக்கவும்"
 
 
@@ -81192,7 +81192,7 @@ msgid "Save Screenshot"
 msgstr "ச்கிரீன்சாட்டை சேமிக்கவும்"
 
 
-msgid "Capture a picture of the whole Blender window"
+msgid "Capture a picture of the whole GameForge 3D Studio window"
 msgstr "முழு கலப்பான் சாளரத்தின் படத்தைப் பிடிக்கவும்"
 
 
@@ -83123,11 +83123,11 @@ msgid "Auto Detect"
 msgstr "தானாக கண்டறிதல்"
 
 
-msgid "Add images as individual strips, unless their filenames match Blender's numbered sequence pattern, in which case they are grouped into a single image sequence"
+msgid "Add images as individual strips, unless their filenames match GameForge 3D Studio's numbered sequence pattern, in which case they are grouped into a single image sequence"
 msgstr "கோப்புப் பெயர்கள் பிளெண்டரின் எண்ணிடப்பட்ட வரிசை முறையுடன் பொருந்தாத வரை, படங்களை தனித்தனி பட்டைகளாகச் சேர்க்கவும்."
 
 
-msgid "Import all selected images as a single image sequence. The sequence of images does not have to match Blender's numbered sequence pattern, so placeholders cannot be inferred"
+msgid "Import all selected images as a single image sequence. The sequence of images does not have to match GameForge 3D Studio's numbered sequence pattern, so placeholders cannot be inferred"
 msgstr "தேர்ந்தெடுக்கப்பட்ட அனைத்து படங்களையும் ஒரே பட வரிசையாக இறக்குமதி செய்யவும். படங்களின் வரிசையானது பிளெண்டரின் எண்ணிடப்பட்ட வரிசை முறையுடன் பொருந்தவில்லை, எனவே ஒதுக்கிடங்களை ஊகிக்க முடியாது"
 
 
@@ -85421,7 +85421,7 @@ msgid "Eyedropper"
 msgstr "கண்"
 
 
-msgid "Sample a color from the Blender window to store in a property"
+msgid "Sample a color from the GameForge 3D Studio window to store in a property"
 msgstr "ஒரு சொத்தில் சேமிக்க கலப்பான் சாளரத்திலிருந்து ஒரு வண்ணத்தை மாதிரி செய்யுங்கள்"
 
 
@@ -85518,7 +85518,7 @@ msgid "Grease Pencil Eyedropper"
 msgstr "பசை எழுதுகோல் ஐட்ராப்பர்"
 
 
-msgid "Sample a color from the Blender Window and create Grease Pencil material"
+msgid "Sample a color from the GameForge 3D Studio Window and create Grease Pencil material"
 msgstr "கலப்பான் சாளரத்திலிருந்து ஒரு வண்ணத்தை மாதிரி செய்து பசை எழுதுகோல் மூலப்பொருளை உருவாக்கவும்"
 
 
@@ -87985,7 +87985,7 @@ msgid "Run as Background Job"
 msgstr "பின்னணி வேலையாக இயக்கவும்"
 
 
-msgid "Enable this to run the import in the background, disable to block Blender while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgid "Enable this to run the import in the background, disable to block GameForge 3D Studio while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
 msgstr "இறக்குமதியை பின்னணியில் இயக்க இதை இயக்கவும், இறக்குமதி செய்யும் போது கலப்பானைத் தடுக்க முடக்கு. இந்த விருப்பம் நீக்கப்பட்டது; முன்புறத்தில் இயங்க இந்த ஆபரேட்டரை இயக்கவும், பின்னணி வேலையாக இயக்கவும் அதை அழைக்கவும்"
 
 
@@ -88150,7 +88150,7 @@ msgid "Add cache modifiers and constraints to imported objects even if they are 
 msgstr "இறக்குமதி செய்யப்பட்ட பொருள்களுக்கு அனிமேசன் செய்யப்படாவிட்டாலும் கூட கேச் மாற்றிகள் மற்றும் தடைகளைச் சேர்க்கவும், இதனால் அவை அலெம்பிக் காப்பகத்தை மீண்டும் ஏற்றும்போது புதுப்பிக்கப்படும்"
 
 
-msgid "Enable this to run the export in the background, disable to block Blender while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgid "Enable this to run the export in the background, disable to block GameForge 3D Studio while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
 msgstr "பின்னணியில் ஏற்றுமதியை இயக்க இதை இயக்கவும், ஏற்றுமதி செய்யும் போது கலப்பானைத் தடுக்க முடக்கு. இந்த விருப்பம் நீக்கப்பட்டது; முன்புறத்தில் இயங்க இந்த ஆபரேட்டரை இயக்கவும், பின்னணி வேலையாக இயக்கவும் அதை அழைக்கவும்"
 
 
@@ -88559,7 +88559,7 @@ msgid "Vertex colors in the file are in linear color space"
 msgstr "கோப்பில் உள்ள வெர்டெக்ச் வண்ணங்கள் நேரியல் வண்ண இடத்தில் உள்ளன"
 
 
-msgid "Import custom normals, if available (otherwise Blender will compute them)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will compute them)"
 msgstr "கிடைத்தால் தனிப்பயன் இயல்புகளை இறக்குமதி செய்யுங்கள் (இல்லையெனில் கலப்பான் அவற்றைக் கணக்கிடும்)"
 
 
@@ -88972,7 +88972,7 @@ msgid "Open"
 msgstr "திற"
 
 
-msgid "Open a Blender file"
+msgid "Open a GameForge 3D Studio file"
 msgstr "கலப்பான் கோப்பைத் திறக்கவும்"
 
 
@@ -89119,7 +89119,7 @@ msgid "Collection of file paths with common ``directory`` root"
 msgstr "பொதுவான `` அடைவு`` மூலத்துடன் கோப்பு பாதைகளின் சேகரிப்பு"
 
 
-msgid "Show Blender files in the File Browser"
+msgid "Show GameForge 3D Studio files in the File Browser"
 msgstr "கோப்பு உலாவியில் கலப்பான் கோப்புகளைக் காட்டு"
 
 
@@ -89294,11 +89294,11 @@ msgstr "பைதான் வெளிப்பாடாக மட்டும�
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "கலப்பானை விட்டு வெளியேறவும்"
 
 
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "கலப்பானை விட்டு வெளியேறவும்"
 
 
@@ -89618,19 +89618,19 @@ msgstr "தற்போதைய கோப்பை இயல்புநில�
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
+msgid "Save GameForge 3D Studio File"
 msgstr "கலப்பான் கோப்பை சேமிக்கவும்"
 
 
-msgid "Save the current Blender file"
+msgid "Save the current GameForge 3D Studio file"
 msgstr "தற்போதைய கலப்பான் கோப்பை சேமிக்கவும்"
 
 
-msgid "Exit Blender after saving"
+msgid "Exit GameForge 3D Studio after saving"
 msgstr "சேமித்த பிறகு கலப்பானை விட்டு வெளியேறவும்"
 
 
-msgid "Save the current Blender file with a numerically incremented name that does not overwrite any existing files"
+msgid "Save the current GameForge 3D Studio file with a numerically incremented name that does not overwrite any existing files"
 msgstr "தற்போதுள்ள எந்த கோப்புகளையும் மேலெழுதாத எண்ணியல் ரீதியாக அதிகரிக்கும் பெயருடன் தற்போதைய கலப்பான் கோப்பை சேமிக்கவும்"
 
 
@@ -89814,11 +89814,11 @@ msgstr "வெளியீட்டு தகவலுடன் ச்பிள�
 
 
 msgctxt "Operator"
-msgid "About Blender"
+msgid "About GameForge 3D Studio"
 msgstr "கலப்பான் பற்றி"
 
 
-msgid "Open a window with information about Blender"
+msgid "Open a window with information about GameForge 3D Studio"
 msgstr "கலப்பான் பற்றிய தகவலுடன் ஒரு சாளரத்தைத் திறக்கவும்"
 
 
@@ -89933,11 +89933,11 @@ msgid "Preserve UTF-8 encoded characters when writing USD prim and property name
 msgstr "யு.எச்.டி ப்ரிம் மற்றும் சொத்து பெயர்களை எழுதும் போது யுடிஎஃப் -8 குறியிடப்பட்ட எழுத்துக்களைப் பாதுகாக்கவும் (இதன் விளைவாக வரும் கோப்புகளைத் திறக்கும்போது 24.03 அல்லது அதற்கு மேற்பட்ட அமெரிக்க டாலர் பயன்படுத்தும் மென்பொருள் தேவைப்படுகிறது)"
 
 
-msgid "Blender Names"
+msgid "GameForge 3D Studio Names"
 msgstr "பிளெண்டர் பெயர்கள்"
 
 
-msgid "Author USD custom attributes containing the original Blender object and object data names"
+msgid "Author USD custom attributes containing the original GameForge 3D Studio object and object data names"
 msgstr "அசல் பிளெண்டர் பொருள் மற்றும் பொருள் தரவு பெயர்களைக் கொண்ட யு.எச்.டி தனிப்பயன் பண்புக்கூறுகள்"
 
 
@@ -90442,7 +90442,7 @@ msgid "Allow USD primitives to merge with their Xform parent if they are the onl
 msgstr "வரிசைமுறையில் ஒரே குழந்தையாக இருந்தால், அவர்கள் எக்ச்ஃபார்ம் பெற்றோருடன் ஒன்றிணைக்க யு.எச்.டி ஆதிமனிதர்களை அனுமதிக்கவும்"
 
 
-msgid "Import each USD material as a unique Blender material"
+msgid "Import each USD material as a unique GameForge 3D Studio material"
 msgstr "ஒவ்வொரு யு.எச்.டி மூலப்பொருளையும் ஒரு தனித்துவமான கலப்பான் மூலப்பொருளாக இறக்குமதி செய்யுங்கள்"
 
 
@@ -90478,7 +90478,7 @@ msgid "Import only the primitive at the given path and its descendants. Multiple
 msgstr "கொடுக்கப்பட்ட பாதையிலும் அதன் சந்ததியினரையும் மட்டுமே இறக்குமதி செய்க. காற்புள்ளிகள் அல்லது அரைக்காற்புள்ளிகளால் பிரிக்கப்பட்ட பட்டியலில் பல பாதைகள் குறிப்பிடப்படலாம்"
 
 
-msgid "Behavior when importing USD attributes as Blender custom properties"
+msgid "Behavior when importing USD attributes as GameForge 3D Studio custom properties"
 msgstr "நடத்தை யு.எச்.டி பண்புகளை பிளெண்டர் தனிப்பயன் பண்புகளாக இறக்குமதி செய்யும் போது நடத்தை"
 
 
@@ -90486,7 +90486,7 @@ msgid "Do not import USD custom attributes"
 msgstr "அமெரிக்க டாலர் தனிப்பயன் பண்புகளை இறக்குமதி செய்ய வேண்டாம்"
 
 
-msgid "Import USD attributes in the 'userProperties' namespace as Blender custom properties. The namespace will be stripped from the property names"
+msgid "Import USD attributes in the 'userProperties' namespace as GameForge 3D Studio custom properties. The namespace will be stripped from the property names"
 msgstr "'USERPROPERTIES' பெயர்வெளியில் பிளெண்டர் தனிப்பயன் பண்புகளாக USD பண்புகளை இறக்குமதி செய்யுங்கள். பெயர்வெளி சொத்து பெயர்களிலிருந்து அகற்றப்படும்"
 
 
@@ -90494,7 +90494,7 @@ msgid "All Custom"
 msgstr "அனைத்து வழக்கம்"
 
 
-msgid "Import all USD custom attributes as Blender custom properties. Namespaces will be retained in the property names"
+msgid "Import all USD custom attributes as GameForge 3D Studio custom properties. Namespaces will be retained in the property names"
 msgstr "அனைத்து அமெரிக்க டாலர் தனிப்பயன் பண்புகளையும் பிளெண்டர் தனிப்பயன் பண்புகளாக இறக்குமதி செய்க. பெயர்வெளிகள் சொத்து பெயர்களில் தக்கவைக்கப்படும்"
 
 
@@ -91403,7 +91403,7 @@ msgid "Set the mask layer from the UV map buttons"
 msgstr "புறஊதா வரைபட பொத்தான்களிலிருந்து முகமூடி அடுக்கை அமைக்கவும்"
 
 
-msgid "Maximum edge length for dynamic topology sculpting (as divisor of Blender unit - higher value means smaller edge length)"
+msgid "Maximum edge length for dynamic topology sculpting (as divisor of GameForge 3D Studio unit - higher value means smaller edge length)"
 msgstr "மாறும் டோபாலசி சிற்பத்திற்கான அதிகபட்ச விளிம்பு நீளம் (கலப்பான் யூனிட்டின் வகுப்பாளராக - அதிக மதிப்பு என்பது சிறிய விளிம்பு நீளம் என்று பொருள்)"
 
 
@@ -94660,7 +94660,7 @@ msgid "Edit Methods"
 msgstr "முறைகளைத் திருத்து"
 
 
-msgid "Settings for interacting with Blender data"
+msgid "Settings for interacting with GameForge 3D Studio data"
 msgstr "கலப்பான் தரவுடன் தொடர்புகொள்வதற்கான அமைப்புகள்"
 
 
@@ -94720,7 +94720,7 @@ msgid "Sort the recently searched items at the top"
 msgstr "அண்மைக் காலத்தில் தேடப்பட்ட உருப்படிகளை மேலே வரிசைப்படுத்தவும்"
 
 
-msgid "Version of Blender the userpref.blend was saved with"
+msgid "Version of GameForge 3D Studio the userpref.blend was saved with"
 msgstr "கலப்பானின் பதிப்பு userpref .கலப்பு சேமிக்கப்பட்டது"
 
 
@@ -95233,7 +95233,7 @@ msgid "All Linked Data Direct"
 msgstr "அனைத்து இணைக்கப்பட்ட தரவு நேரடியாக"
 
 
-msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (Blender studio pipeline tool)"
+msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (GameForge 3D Studio studio pipeline tool)"
 msgstr "இணைக்கப்பட்ட அனைத்து தரவுகளும் நேரடியாக இணைக்கப்பட்டதாக கருதப்பட வேண்டும். bat இல் தற்போதைய சிக்கல்கள்/வரம்புகளுக்கான பணித்தொகுப்பு (கலப்பான் ச்டுடியோ பைப்லைன் கருவி)"
 
 
@@ -95325,7 +95325,7 @@ msgid "Write Legacy Blend File Format"
 msgstr "மரபு கலப்பு கோப்பு வடிவமைப்பை எழுதுங்கள்"
 
 
-msgid "Use file format used before Blender 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
+msgid "Use file format used before version 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
 msgstr "பிளெண்டர் 5.0 க்கு முன் பயன்படுத்தப்படும் கோப்பு வடிவமைப்பைப் பயன்படுத்தவும். இந்த வடிவம் மிகவும் குறைவாகவே உள்ளது, ஆனால் புதிய வடிவமைப்பை இன்னும் ஆதரிக்காத கருவிகளுடன் இது சிறந்த பொருந்தக்கூடிய தன்மையைக் கொண்டிருக்கலாம்"
 
 
@@ -95879,7 +95879,7 @@ msgid "Max Threshold"
 msgstr "அதிகபட்ச வாசல்"
 
 
-msgid "Raw input pressure value that is interpreted as 100% by Blender"
+msgid "Raw input pressure value that is interpreted as 100% by GameForge 3D Studio"
 msgstr "கலப்பான் மூலம் 100% என விளக்கப்படும் மூல உள்ளீட்டு அழுத்த மதிப்பு"
 
 
@@ -95895,7 +95895,7 @@ msgid "Tablet API"
 msgstr "டேப்லெட் பநிஇ"
 
 
-msgid "Select the tablet API to use for pressure sensitivity (may require restarting Blender for changes to take effect)"
+msgid "Select the tablet API to use for pressure sensitivity (may require restarting GameForge 3D Studio for changes to take effect)"
 msgstr "அழுத்தம் உணர்திறனைப் பயன்படுத்த டேப்லெட் பநிஇ என்பதைத் தேர்ந்தெடுக்கவும் (மாற்றங்கள் நடைமுறைக்கு வர மறுதொடக்கம் செய்ய வேண்டியிருக்கும்)"
 
 
@@ -96343,7 +96343,7 @@ msgid "GPU Backend"
 msgstr "gpu பின்தளத்தில்"
 
 
-msgid "GPU backend to use (requires restarting Blender for changes to take effect)"
+msgid "GPU backend to use (requires restarting GameForge 3D Studio for changes to take effect)"
 msgstr "பயன்படுத்த சிபியு பின்தளத்தில் (மாற்றங்கள் நடைமுறைக்கு வருவதற்கு கலப்பானை மறுதொடக்கம் செய்ய வேண்டும்)"
 
 
@@ -96371,11 +96371,11 @@ msgid "Device"
 msgstr "சாதனம்"
 
 
-msgid "Preferred device to select during detection (requires restarting Blender for changes to take effect)"
+msgid "Preferred device to select during detection (requires restarting GameForge 3D Studio for changes to take effect)"
 msgstr "கண்டறிதலின் போது தேர்ந்தெடுக்க விருப்பமான சாதனம் (மாற்றங்கள் நடைமுறைக்கு வருவதற்கு பிளெண்டரை மறுதொடக்கம் செய்ய வேண்டும்)"
 
 
-msgid "Auto detect best GPU for running Blender"
+msgid "Auto detect best GPU for running GameForge 3D Studio"
 msgstr "பிளெண்டரை இயக்குவதற்கு சிறந்த சி.பீ.யை ஆட்டோ கண்டறிதல்"
 
 
@@ -96383,7 +96383,7 @@ msgid "Shader Compilation Workers"
 msgstr "சேடர் தொகுப்பு தொழிலாளர்கள்"
 
 
-msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting Blender for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
+msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting GameForge 3D Studio for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
 msgstr "சிபியு ஆல் ஆதரிக்கப்படும் அதிகபட்ச நூல்களில் பிணைக்கப்பட்டுள்ள சேடர் தொகுப்பு நூல்கள் அல்லது துணை செயலாக்கங்களின் எண்ணிக்கை (மாற்றங்கள் நடைமுறைக்கு வருவதற்கு மறுதொடக்கம் செய்ய வேண்டும்). தொகுப்பு நேரத்தைக் குறைக்கும் போது அதிக எண்ணிக்கையானது ரேம் பயன்பாட்டை அதிகரிக்கிறது. 0 இன் மதிப்பு தானியங்கி உள்ளமைவைப் பயன்படுத்தும். (Opengl மட்டும்)"
 
 
@@ -96439,7 +96439,7 @@ msgid "Register for All Users"
 msgstr "அனைத்து பயனர்களுக்கும் பதிவு செய்யுங்கள்"
 
 
-msgid "Make this Blender version open blend files for all users. Requires elevated privileges."
+msgid "Make this GameForge 3D Studio version open blend files for all users. Requires elevated privileges."
 msgstr "இந்த பிளெண்டர் பதிப்பை அனைத்து பயனர்களுக்கும் திறந்த கலப்பு கோப்புகளை உருவாக்கவும். உயர்ந்த சலுகைகள் தேவை."
 
 
@@ -96471,7 +96471,7 @@ msgid "Shader Compilation Method"
 msgstr "சேடர் தொகுப்பு முறை"
 
 
-msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting Blender for changes to take effect. (OpenGL only)"
+msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting GameForge 3D Studio for changes to take effect. (OpenGL only)"
 msgstr "இணையாக சேடர்களை தொகுக்கப் பயன்படுத்தப்படும் தொகுப்பு முறை. துணை செயலாக்கத்திற்கு ஒவ்வொரு தொழிலாளிக்கும் நிறைய ரேம் தேவைப்படுகிறது, ஆனால் சில அமைப்புகளில் சேடர்களை வேகமாக தொகுக்கலாம். மாற்றங்கள் நடைமுறைக்கு வருவதற்கு பிளெண்டரை மறுதொடக்கம் செய்ய வேண்டும். (Opengl மட்டும்)"
 
 
@@ -96519,7 +96519,7 @@ msgid "UI Line Width"
 msgstr "இடைமுகம் வரி அகலம்"
 
 
-msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and Blender UI scale"
+msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and GameForge 3D Studio UI scale"
 msgstr "இயக்க முறைமை அமைப்புகள் மற்றும் கலப்பான் இடைமுகம் அளவின் அடிப்படையில் தனிப்பயன் பயனர் இடைமுக கூறுகளைக் காண்பிக்கும் துணை நிரல்களுக்கு, பிக்சல்களில் பரிந்துரைக்கப்பட்ட வரி தடிமன் மற்றும் புள்ளி அளவு"
 
 
@@ -96527,7 +96527,7 @@ msgid "UI Scale"
 msgstr "இடைமுகம் அளவு"
 
 
-msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and Blender display scale."
+msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and GameForge 3D Studio display scale."
 msgstr "தனிப்பயன் பயனர் இடைமுக கூறுகளைக் காண்பிக்கும் போது பயன்படுத்த வேண்டிய அளவு பெருக்கி, இதனால் அவை வெவ்வேறு டிபிஐ கொண்ட திரைகளில் சரியாக அளவிடப்படுகின்றன. இந்த மதிப்பு இயக்க முறைமை டிபிஐ அமைப்புகள் மற்றும் பிளெண்டர் டிச்ப்ளே அளவை அடிப்படையாகக் கொண்டது."
 
 
@@ -97323,7 +97323,7 @@ msgid "Show Memory"
 msgstr "நினைவகத்தைக் காட்டு"
 
 
-msgid "Show Blender memory usage"
+msgid "Show GameForge 3D Studio memory usage"
 msgstr "கலப்பான் நினைவக பயன்பாட்டைக் காட்டு"
 
 
@@ -97347,7 +97347,7 @@ msgid "Show Version"
 msgstr "பதிப்பைக் காட்டு"
 
 
-msgid "Show Blender version string"
+msgid "Show GameForge 3D Studio version string"
 msgstr "கலப்பான் பதிப்பு சரம் காட்டு"
 
 
@@ -97675,7 +97675,7 @@ msgid "Deprecated Removal Version"
 msgstr "நீக்கப்பட்ட நீக்குதல் பதிப்பு"
 
 
-msgid "The Blender version this is expected to be removed"
+msgid "The GameForge 3D Studio version this is expected to be removed"
 msgstr "பிளெண்டர் பதிப்பு இது அகற்றப்படும் என்று எதிர்பார்க்கப்படுகிறது"
 
 
@@ -97683,7 +97683,7 @@ msgid "Deprecated Version"
 msgstr "மதிப்பிடப்பட்ட பதிப்பு"
 
 
-msgid "The Blender version this was deprecated"
+msgid "The GameForge 3D Studio version this was deprecated"
 msgstr "இது பிளெண்டர் பதிப்பு நீக்கப்பட்டது"
 
 
@@ -99750,11 +99750,11 @@ msgid "Path to the relevant po file in the work repository"
 msgstr "பணி களஞ்சியத்தில் தொடர்புடைய po கோப்பிற்கான பாதை"
 
 
-msgid "PO Blender File Path"
+msgid "PO GameForge 3D Studio File Path"
 msgstr "போ கலப்பான் கோப்பு பாதை"
 
 
-msgid "Path to the relevant po file in Blender's source repository"
+msgid "Path to the relevant po file in GameForge 3D Studio's source repository"
 msgstr "கலப்பானின் மூல களஞ்சியத்தில் தொடர்புடைய po கோப்பிற்கான பாதை"
 
 
@@ -102379,15 +102379,15 @@ msgid "Which implementation of spring to use"
 msgstr "பயன்படுத்த வசந்தத்தை செயல்படுத்துதல்"
 
 
-msgid "Blender 2.7"
+msgid "Version 2.7"
 msgstr "கலப்பான் 2.7"
 
 
-msgid "Spring implementation used in Blender 2.7. Damping is capped at 1.0"
+msgid "Spring implementation used in version 2.7. Damping is capped at 1.0"
 msgstr "கலப்பான் 2.7 இல் பயன்படுத்தப்படும் வசந்த செயல்படுத்தல். அடர்த்தியானது 1.0 இல் மூடப்பட்டுள்ளது"
 
 
-msgid "Blender 2.8"
+msgid "Version 2.8"
 msgstr "கலப்பான் 2.8"
 
 
@@ -103427,7 +103427,7 @@ msgid "Export Method"
 msgstr "ஏற்றுமதி முறை"
 
 
-msgid "How to export the Blender scene to the Hydra render engine"
+msgid "How to export the GameForge 3D Studio scene to the Hydra render engine"
 msgstr "ஐட்ரா வழங்குதல் எஞ்சினுக்கு கலப்பான் காட்சியை எவ்வாறு ஏற்றுமதி செய்வது"
 
 
@@ -105857,7 +105857,7 @@ msgid "Display data belonging to the Video Sequencer"
 msgstr "வீடியோ சீக்வென்சருக்கு சொந்தமான தரவைக் காண்பி"
 
 
-msgid "Blender File"
+msgid "GameForge 3D Studio File"
 msgstr "கலப்பான் கோப்பு"
 
 
@@ -105869,7 +105869,7 @@ msgid "Data API"
 msgstr "தரவு பநிஇ"
 
 
-msgid "Display low level Blender data and its properties"
+msgid "Display low level GameForge 3D Studio data and its properties"
 msgstr "குறைந்த அளவிலான கலப்பான் தரவு மற்றும் அதன் பண்புகளைக் காண்பி"
 
 
@@ -106094,7 +106094,7 @@ msgid "Space Preferences"
 msgstr "விண்வெளி விருப்பத்தேர்வுகள்"
 
 
-msgid "Blender preferences space data"
+msgid "GameForge 3D Studio preferences space data"
 msgstr "கலப்பான் விருப்பத்தேர்வுகள் விண்வெளி தரவு"
 
 
@@ -110739,7 +110739,7 @@ msgid "Theme Preferences"
 msgstr "கருப்பொருள் விருப்பத்தேர்வுகள்"
 
 
-msgid "Theme settings for the Blender Preferences"
+msgid "Theme settings for the GameForge 3D Studio Preferences"
 msgstr "கலப்பான் விருப்பங்களுக்கான கருப்பொருள் அமைப்புகள்"
 
 
@@ -112733,7 +112733,7 @@ msgid "Unit Scale"
 msgstr "அலகு அளவு"
 
 
-msgid "Scale to use when converting between Blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
+msgid "Scale to use when converting between GameForge 3D Studio units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
 msgstr "கலப்பான் அலகுகள் மற்றும் பரிமாணங்களுக்கு இடையில் மாற்றும்போது பயன்படுத்த வேண்டிய அளவு. நுண்ணிய அல்லது வானியல் அளவில் பணிபுரியும் போது, எண் துல்லிய சிக்கல்களைத் தவிர்க்க முறையே ஒரு சிறிய அல்லது பெரிய அலகு அளவைப் பயன்படுத்தலாம்"
 
 
@@ -118330,7 +118330,7 @@ msgid "Unlocked: {:s}"
 msgstr "திறக்கப்பட்டது: {:s}"
 
 
-msgid "Warning! Before unlocking, ensure another instance of Blender is not running."
+msgid "Warning! Before unlocking, ensure another instance of GameForge 3D Studio is not running."
 msgstr "எச்சரிக்கை! திறப்பதற்கு முன், பிளெண்டரின் மற்றொரு நிகழ்வு இயங்கவில்லை என்பதை உறுதிப்படுத்தவும்."
 
 
@@ -118459,7 +118459,7 @@ msgid "Manifest validation failed: {:s}"
 msgstr "மேனிஃபெச்ட் சரிபார்ப்பு தோல்வியடைந்தது: {:s}"
 
 
-msgid "Online access required to install or update. Launch Blender without --offline-mode"
+msgid "Online access required to install or update. Launch GameForge 3D Studio without --offline-mode"
 msgstr "நிறுவ அல்லது புதுப்பிக்க நிகழ்நிலை அணுகல் தேவை. -ஆஃப்லைன்-பயன்முறை இல்லாமல் பிளெண்டரைத் தொடங்கவும்"
 
 
@@ -118471,7 +118471,7 @@ msgid "Add-on \"{:s}\" is already installed!"
 msgstr "கூடுதல் \"{:s}\" ஏற்கனவே நிறுவப்பட்டுள்ளது!"
 
 
-msgid "Blender was launched in offline mode, which cannot be changed at runtime"
+msgid "GameForge 3D Studio was launched in offline mode, which cannot be changed at runtime"
 msgstr "இணைப்பில்லாத பயன்முறையில் பிளெண்டர் தொடங்கப்பட்டது, அதை இயக்க நேரத்தில் மாற்ற முடியாது"
 
 
@@ -118479,7 +118479,7 @@ msgid "Online access required to install or update."
 msgstr "நிறுவ அல்லது புதுப்பிக்க நிகழ்நிலை அணுகல் தேவை."
 
 
-msgid "Launch Blender without --offline-mode"
+msgid "Launch GameForge 3D Studio without --offline-mode"
 msgstr "-ஆஃப்லைன்-பயன்முறை இல்லாமல் பிளெண்டரைத் தொடங்கவும்"
 
 
@@ -118575,8 +118575,8 @@ msgid "Missing Built-in Add-ons"
 msgstr "உள்ளமைக்கப்பட்ட துணை நிரல்களைக் காணவில்லை"
 
 
-msgid "Add-ons previously shipped with Blender are now available from extensions.blender.org."
-msgstr "முன்னர் பிளெண்டருடன் அனுப்பப்பட்ட துணை நிரல்கள் இப்போது நீட்டிப்புகளிலிருந்து கிடைக்கின்றன. Blender.org."
+msgid "Add-ons previously shipped with GameForge 3D Studio are now available from extensions.blender.org."
+msgstr "முன்னர் பிளெண்டருடன் அனுப்பப்பட்ட துணை நிரல்கள் இப்போது நீட்டிப்புகளிலிருந்து கிடைக்கின்றன. GameForge 3D Studio.org."
 
 
 msgid "Missing Add-ons"
@@ -118652,7 +118652,7 @@ msgid "Maintainer"
 msgstr "பராமரிப்பாளர்"
 
 
-msgid "Blender's extension repository not found!"
+msgid "GameForge 3D Studio's extension repository not found!"
 msgstr "பிளெண்டரின் நீட்டிப்பு களஞ்சியம் கிடைக்கவில்லை!"
 
 
@@ -118686,7 +118686,7 @@ msgid "No visible tags."
 msgstr "புலப்படும் குறிச்சொற்கள் இல்லை."
 
 
-msgid "Blender's extension repository must be enabled to install extensions!"
+msgid "GameForge 3D Studio's extension repository must be enabled to install extensions!"
 msgstr "நீட்டிப்புகளை நிறுவ பிளெண்டரின் நீட்டிப்பு களஞ்சியத்தை இயக்க வேண்டும்!"
 
 
@@ -118731,7 +118731,7 @@ msgid "Uninstall Marked"
 msgstr "நிறுவல் நீக்கப்பட்டது"
 
 
-msgid "Blender's extension repository must be refreshed!"
+msgid "GameForge 3D Studio's extension repository must be refreshed!"
 msgstr "பிளெண்டரின் நீட்டிப்பு களஞ்சியத்தை புதுப்பிக்க வேண்டும்!"
 
 
@@ -118942,7 +118942,7 @@ msgid "Use GPU accelerated denoising if supported, for the best performance. Pre
 msgstr "சிறந்த செயல்திறனுக்காக, ஆதரிக்கப்பட்டால் சி.பீ.யு துரிதப்படுத்தப்பட்ட டெனோயிங்கைப் பயன்படுத்தவும். ஆப்டிக்சை விட திறந்த உருவத்தை விரும்புங்கள்"
 
 
-msgid "Blender was compiled without a viewport denoiser"
+msgid "GameForge 3D Studio was compiled without a viewport denoiser"
 msgstr "காட்சியகம் டெனோசர் இல்லாமல் பிளெண்டர் தொகுக்கப்பட்டது"
 
 
@@ -119254,7 +119254,7 @@ msgid "Invalid context"
 msgstr "தவறான சூழல்"
 
 
-msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and Blender scene have the same frame rate"
+msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and GameForge 3D Studio scene have the same frame rate"
 msgstr "பி.வி.எச் கோப்பில் அதன் இயக்கப் பிரிவில் பிரேம் கால அளவு இல்லை, பி.வி.எச் மற்றும் கலப்பான் காட்சி ஒரே பிரேம் வீதத்தைக் கொண்டுள்ளன என்று கருதி"
 
 
@@ -120195,7 +120195,7 @@ msgid "This feature set depends on the following feature set to work properly:"
 msgstr "இந்த அம்ச தொகுப்பு சரியாக வேலை செய்ய பின்வரும் அம்சத்தைப் பொறுத்தது:"
 
 
-msgid "This feature set requires Blender {:s} or newer to work properly."
+msgid "This feature set requires GameForge 3D Studio {:s} or newer to work properly."
 msgstr "இந்த அம்சத் தொகுப்பிற்கு பிளெண்டர் {:s} அல்லது சரியாக வேலை செய்ய புதியது தேவைப்படுகிறது."
 
 
@@ -120718,7 +120718,7 @@ msgstr "வேலை களஞ்சியத்தை தூய்மை செ
 
 
 msgctxt "Operator"
-msgid "Update Blender Repository"
+msgid "Update GameForge 3D Studio Repository"
 msgstr "கலப்பான் களஞ்சியத்தைப் புதுப்பிக்கவும்"
 
 
@@ -121017,7 +121017,7 @@ msgid "Unable to find any running process"
 msgstr "இயங்கும் எந்தவொரு செயல்முறையையும் கண்டுபிடிக்க முடியவில்லை"
 
 
-msgid "Blender sub-process exited with error code {:d}"
+msgid "GameForge 3D Studio sub-process exited with error code {:d}"
 msgstr "பிழைக் குறியீட்டைக் கொண்டு வெளியேறும் பிளெண்டர் துணை செயல்முறை {:d}"
 
 
@@ -121541,7 +121541,7 @@ msgid "Installing keymap failed: {:s}"
 msgstr "கீமாப்பை நிறுவுதல் தோல்வியுற்றது: {:s}"
 
 
-msgid "This script was written for Blender version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
+msgid "This script was written for GameForge 3D Studio version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
 msgstr "இந்த ச்கிரிப்ட் பிளெண்டர் பதிப்பிற்காக எழுதப்பட்டது {:d}. {:d}. {:d} மற்றும் அது இயக்கப்பட்டிருந்தாலும் (சரியாக) செயல்படக்கூடாது (சரியாக)"
 
 
@@ -121650,7 +121650,7 @@ msgid "Open..."
 msgstr "திறந்த ..."
 
 
-msgid "Blender is free software"
+msgid "GameForge 3D Studio is free software"
 msgstr "கலப்பான் இலவச மென்பொருள்"
 
 
@@ -121739,7 +121739,7 @@ msgstr "புதியது என்ன"
 
 
 msgctxt "Operator"
-msgid "Donate to Blender"
+msgid "Donate to GameForge 3D Studio"
 msgstr "பிளெண்டருக்கு நன்கொடை அளிக்கவும்"
 
 
@@ -121763,12 +121763,12 @@ msgstr "உரிமம்"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
+msgid "GameForge 3D Studio Store"
 msgstr "கலப்பான் கடை"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
+msgid "GameForge 3D Studio Website"
 msgstr "கலப்பான் வலைத்தளம்"
 
 
@@ -121806,7 +121806,7 @@ msgid "Release Notes"
 msgstr "வெளியீட்டு குறிப்புகள்"
 
 
-msgid "Read about what's new in this version of Blender"
+msgid "Read about what's new in this version of GameForge 3D Studio"
 msgstr "கலப்பானின் இந்த பதிப்பில் புதியது பற்றி படியுங்கள்"
 
 
@@ -121814,7 +121814,7 @@ msgid "User Manual"
 msgstr "பயனர் கையேடு"
 
 
-msgid "The reference manual for this version of Blender"
+msgid "The reference manual for this version of GameForge 3D Studio"
 msgstr "கலப்பானின் இந்த பதிப்பிற்கான குறிப்பு கையேடு"
 
 
@@ -121822,7 +121822,7 @@ msgid "Python API Reference"
 msgstr "பைதான் பநிஇ குறிப்பு"
 
 
-msgid "The API reference manual for this version of Blender"
+msgid "The API reference manual for this version of GameForge 3D Studio"
 msgstr "கலப்பானின் இந்த பதிப்பிற்கான பநிஇ குறிப்பு கையேடு"
 
 
@@ -121834,7 +121834,7 @@ msgid "The donation program to support maintenance and improvements"
 msgstr "பராமரிப்பு மற்றும் மேம்பாடுகளை ஆதரிப்பதற்கான நன்கொடை திட்டம்"
 
 
-msgid "Blender's official web-site"
+msgid "GameForge 3D Studio's official web-site"
 msgstr "கலப்பானின் அதிகாரப்பூர்வ வலைத் தளம்"
 
 
@@ -121842,7 +121842,7 @@ msgid "Credits"
 msgstr "வரவு"
 
 
-msgid "Lists committers to Blender's source code"
+msgid "Lists committers to GameForge 3D Studio's source code"
 msgstr "blender இன் மூலக் குறியீட்டிற்கு பொறுப்பாளர்களை பட்டியலிடுகிறது"
 
 
@@ -122007,7 +122007,7 @@ msgstr "தவறான வழக்கமான வெளிப்பாடு 
 
 
 msgctxt "Operator"
-msgid "Import Blender {:d}.{:d} Preferences"
+msgid "Import GameForge 3D Studio {:d}.{:d} Preferences"
 msgstr "பிளெண்டரை இறக்குமதி செய்க {:d}. {:d} விருப்பத்தேர்வுகள்"
 
 
@@ -124864,7 +124864,7 @@ msgid "Volume Files"
 msgstr "தொகுதி கோப்புகள்"
 
 
-msgid "Blender IDs"
+msgid "GameForge 3D Studio IDs"
 msgstr "கலப்பான் ஐடிகள்"
 
 
@@ -126597,7 +126597,7 @@ msgstr "மேலும் ..."
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Settings"
+msgid "Load Factory GameForge 3D Studio Settings"
 msgstr "சுமை தொழிற்சாலை கலப்பான் அமைப்புகள்"
 
 
@@ -126733,7 +126733,7 @@ msgid "Video Memory"
 msgstr "வீடியோ நினைவகம்"
 
 
-msgid "Blender Version"
+msgid "GameForge 3D Studio Version"
 msgstr "கலப்பான் பதிப்பு"
 
 
@@ -127006,7 +127006,7 @@ msgstr "ச்டுடியோ ஒளியாக சேமிக்கவு�
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "தொழிற்சாலை கலப்பான் விருப்பங்களை ஏற்றவும்"
 
 
@@ -127014,11 +127014,11 @@ msgid "Cycles is disabled in this build"
 msgstr "இந்த கட்டமைப்பில் சுழற்சிகள் முடக்கப்பட்டுள்ளன"
 
 
-msgid "A restart of Blender is required"
+msgid "A restart of GameForge 3D Studio is required"
 msgstr "பிளெண்டரின் மறுதொடக்கம் தேவை"
 
 
-msgid "Open blend files with this Blender version"
+msgid "Open blend files with this GameForge 3D Studio version"
 msgstr "இந்த கலப்பான் பதிப்பில் கலப்பு கோப்புகளைத் திறக்கவும்"
 
 
@@ -129752,7 +129752,7 @@ msgid "Unable to create app-template userpref path"
 msgstr "பயன்பாட்டு-டெம்ப்ளேட் userpref பாதையை உருவாக்க முடியவில்லை"
 
 
-msgid "File written by newer Blender binary (%d.%d), expect loss of data!"
+msgid "File written by newer GameForge 3D Studio binary (%d.%d), expect loss of data!"
 msgstr "புதிய கலப்பான் பைனரி (%d.%d) எழுதிய கோப்பு, தரவு இழப்பை எதிர்பார்க்கலாம்!"
 
 
@@ -129776,7 +129776,7 @@ msgid "Appended Data"
 msgstr "சேர்க்கப்பட்ட தரவு"
 
 
-msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current Blender"
+msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current GameForge 3D Studio"
 msgstr "மிகப் பழமையான .கலப்பு கோப்பு வடிவமைப்பிலிருந்து (%d.%d) இணைத்தல் அல்லது சேர்ப்பது, அனிமேசன் மாற்றங்கள் எதுவும் செய்யப்படாது! தற்போதைய கலப்பான் மூலம் உங்கள் லிப் கோப்பை மீண்டும் சேமிக்க விரும்பலாம்"
 
 
@@ -130553,7 +130553,7 @@ msgid "At least 8 common tracks on both keyframes are needed for reconstruction"
 msgstr "புனரமைப்புக்கு இரண்டு கீஃப்ரேம்களிலும் குறைந்தது 8 பொதுவான தடங்கள் தேவை"
 
 
-msgid "Blender is compiled without motion tracking library"
+msgid "GameForge 3D Studio is compiled without motion tracking library"
 msgstr "மோசன் டிராக்கிங் நூலகம் இல்லாமல் கலப்பான் தொகுக்கப்படுகிறது"
 
 
@@ -131025,11 +131025,11 @@ msgid "Critical blend-file corruption: Conflicts and/or otherwise invalid data-b
 msgstr "சிக்கலான கலவை-கோப்பு ஊழல்: மோதல்கள் மற்றும்/அல்லது வேறுவிதமாக தவறான தரவு-தடுப்பு பெயர்கள் (விவரங்களுக்கு கன்சோலைப் பார்க்கவும்)"
 
 
-msgid "The file was saved by a newer version, open it with Blender %s or later"
+msgid "The file was saved by a newer version, open it with GameForge 3D Studio %s or later"
 msgstr "கோப்பு ஒரு புதிய பதிப்பால் சேமிக்கப்பட்டது, அதை கலப்பான் %s அல்லது அதற்குப் பிறகு திறக்கவும்"
 
 
-msgid "Blend file '%s' created by a Big Endian version of Blender, support for these files has been removed in Blender 5.0, use an older version of Blender to open and convert it."
+msgid "Blend file '%s' created by a Big Endian version of GameForge 3D Studio, support for these files has been removed in version 5.0, use an older version of GameForge 3D Studio to open and convert it."
 msgstr "பிளெண்டரின் பெரிய எண்டியன் பதிப்பால் உருவாக்கப்பட்ட '%s' கலப்பு கோப்பு, இந்த கோப்புகளுக்கான உதவி பிளெண்டர் 5.0 இல் அகற்றப்பட்டுள்ளது, அதைத் திறந்து மாற்ற பிளெண்டரின் பழைய பதிப்பைப் பயன்படுத்தவும்."
 
 
@@ -131037,7 +131037,7 @@ msgid "Failed to read blend file '%s': %s"
 msgstr "கலப்பு கோப்பை ' %s' படிக்கத் தவறிவிட்டது: %s"
 
 
-msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of Blender"
+msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of GameForge 3D Studio"
 msgstr "கலப்பு கோப்பை '%s', முழுமையற்ற தலைப்பு, பிளெண்டரின் புதிய பதிப்பிலிருந்து படிக்க முடியாது"
 
 
@@ -131053,7 +131053,7 @@ msgid "Unable to open '%s': %s"
 msgstr "' %s' ஐ திறக்க முடியவில்லை: %s"
 
 
-msgid "Blendfile '%s' was created by a future version of Blender and contains ID names longer than currently supported. These have been truncated."
+msgid "Blendfile '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. These have been truncated."
 msgstr "Blendfile '%s' ஆனது பிளெண்டரின் எதிர்காலப் பதிப்பால் உருவாக்கப்பட்டது மற்றும் தற்போது ஆதரிக்கப்படுவதை விட நீண்ட அடையாளம் பெயர்களைக் கொண்டுள்ளது. இவை துண்டிக்கப்பட்டுள்ளன."
 
 
@@ -131061,7 +131061,7 @@ msgid "Blendfile '%s' appears corrupted, it contains invalid ID names. These hav
 msgstr "பிளெண்ட்ஃபைல் '%s' சிதைந்ததாகத் தோன்றுகிறது, அதில் தவறான அடையாளம் பெயர்கள் உள்ளன. இவை துண்டிக்கப்பட்டுள்ளன."
 
 
-msgid "Library '%s' was created by a future version of Blender and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current Blender version."
+msgid "Library '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current GameForge 3D Studio version."
 msgstr "பிளெண்டரின் எதிர்கால பதிப்பால் நூலகம் '%s' உருவாக்கப்பட்டது மற்றும் தற்போது ஆதரிக்கப்பட்டதை விட நீண்ட அடையாளம் பெயர்களைக் கொண்டுள்ளது. இது காணாமல் போன தரவைக் காணக்கூடும், தற்போதைய பிளெண்டர் பதிப்போடு அந்த நூலகத்தைத் திறந்து மீண்டும் சேமிப்பதைக் கருத்தில் கொள்ளுங்கள்."
 
 
@@ -131073,7 +131073,7 @@ msgid "GP_Palette"
 msgstr "gp_paletet"
 
 
-msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in Blender 2.80 and later, removed instancing"
+msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in version 2.80 and later, removed instancing"
 msgstr "வெற்று அல்லாத பொருள் '%s' கலப்பான் 2.80 இல் சேகரிப்பை '%s' நகலெடுக்க முடியாது, பின்னர், நிறுவலை அகற்றியது"
 
 
@@ -132280,7 +132280,7 @@ msgid "Asset catalogs cannot be edited in this asset library"
 msgstr "இந்த சொத்து நூலகத்தில் சொத்து பட்டியல்களைத் திருத்த முடியாது"
 
 
-msgid "Cannot save asset catalogs before the Blender file is saved"
+msgid "Cannot save asset catalogs before the GameForge 3D Studio file is saved"
 msgstr "கலப்பான் கோப்பு சேமிக்கப்படுவதற்கு முன்பு சொத்து பட்டியல்களைச் சேமிக்க முடியாது"
 
 
@@ -132893,7 +132893,7 @@ msgid "Drag to continue sampling, release when done"
 msgstr "மாதிரியைத் தொடர இழுக்கவும், முடிந்ததும் விடுவிக்கவும்"
 
 
-msgid "Press 'Enter' to sample outside of a Blender window"
+msgid "Press 'Enter' to sample outside of a GameForge 3D Studio window"
 msgstr "பிளெண்டர் சாளரத்திற்கு வெளியே மாதிரிக்கு 'Enter' ஐ அழுத்தவும்"
 
 
@@ -134257,15 +134257,13 @@ msgid "Show in Info Log"
 msgstr "செய்தி பதிவில் காண்பி"
 
 
-msgid ""
-"File saved by newer Blender\n"
-"({}), expect loss of data"
+msgid "File saved by newer GameForge 3D Studio\n({}), expect loss of data"
 msgstr ""
 "கோப்பு புதிய பிளெண்டரால் சேமிக்கப்பட்டது\n"
 " ({}), தரவு இழப்பை எதிர்பார்க்கலாம்"
 
 
-msgid "This file is managed by the Blender asset system and cannot be overridden"
+msgid "This file is managed by the GameForge 3D Studio asset system and cannot be overridden"
 msgstr "இந்த கோப்பு பிளெண்டர் சொத்து அமைப்பால் நிர்வகிக்கப்படுகிறது மற்றும் மீற முடியாது"
 
 
@@ -134402,7 +134400,7 @@ msgid "No filename given"
 msgstr "கோப்பு பெயர் கொடுக்கப்படவில்லை"
 
 
-msgid "Blender Data"
+msgid "GameForge 3D Studio Data"
 msgstr "பிளெண்டர் தரவு"
 
 
@@ -136821,7 +136819,7 @@ msgid "Unable to remove material slot in edit mode"
 msgstr "திருத்து பயன்முறையில் மூலப்பொருள் ச்லாட்டை அகற்ற முடியவில்லை"
 
 
-msgid "Blender Render"
+msgid "GameForge 3D Studio Render"
 msgstr "கலப்பான் வழங்குதல்"
 
 
@@ -136933,11 +136931,11 @@ msgid "Flip to Bottom"
 msgstr "கீழே புரட்டவும்"
 
 
-msgid "Blender Drivers Editor"
+msgid "GameForge 3D Studio Drivers Editor"
 msgstr "கலப்பான் டிரைவர்கள் ஆசிரியர்"
 
 
-msgid "Blender Info Log"
+msgid "GameForge 3D Studio Info Log"
 msgstr "கலப்பான் செய்தி பதிவு"
 
 
@@ -137951,7 +137949,7 @@ msgid "Path to asset library does not exist:"
 msgstr "சொத்து நூலகத்திற்கான பாதை இல்லை:"
 
 
-msgid "Unreadable Blender library file:"
+msgid "Unreadable GameForge 3D Studio library file:"
 msgstr "படிக்க முடியாத கலப்பான் நூலக கோப்பு:"
 
 
@@ -140364,7 +140362,7 @@ msgid "Jump to Line Number"
 msgstr "வரி எண்ணுக்கு செல்லவும்"
 
 
-msgid "File Modified Outside and Inside Blender"
+msgid "File Modified Outside and Inside GameForge 3D Studio"
 msgstr "கோப்பு வெளியே மற்றும் உள்ளே கலப்பானுக்குள் மாற்றியமைக்கப்பட்டது"
 
 
@@ -140380,7 +140378,7 @@ msgid "Make text internal (separate copy)"
 msgstr "உரையை உள் (தனி நகல்) உருவாக்குங்கள்"
 
 
-msgid "File Modified Outside Blender"
+msgid "File Modified Outside GameForge 3D Studio"
 msgstr "கோப்பு மாற்றியமைக்கப்பட்ட கலப்பானுக்கு வெளியே"
 
 
@@ -140388,7 +140386,7 @@ msgid "Reload from disk"
 msgstr "வட்டில் இருந்து மீண்டும் ஏற்றவும்"
 
 
-msgid "File Deleted Outside Blender"
+msgid "File Deleted Outside GameForge 3D Studio"
 msgstr "கலப்பானுக்கு வெளியே கோப்பு நீக்கப்பட்டது"
 
 
@@ -142040,7 +142038,7 @@ msgid "An exception occurred invoking USD hook '%s'"
 msgstr "யு.எச்.டி ஊக் '%s'"
 
 
-msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to Blender"
+msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to GameForge 3D Studio"
 msgstr "ப்ரிம்வார் ' %s' (இடைக்கணிப்பு %s, வகை %s) பிளெண்டராக மாற்ற முடியாது"
 
 
@@ -142132,7 +142130,7 @@ msgid "%s: Mismatch in bind xforms and joint counts for skeleton %s"
 msgstr "%s: பிணைப்பு எக்ச்ஃபார்ம்களில் பொருந்தாத தன்மை மற்றும் எலும்புக்கூடு %s க்கான கூட்டு எண்ணிக்கைகள்"
 
 
-msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to Blender's bone representation. The skeletal animation won't be imported"
+msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to GameForge 3D Studio's bone representation. The skeletal animation won't be imported"
 msgstr "USD எலும்புக்கூடு இறக்குமதி: ப்ரிம் %s இல் கண்டறியப்பட்ட எதிர்மறை தீர்மானிகளுடன் கூடிய எலும்பு மெட்ரிக்குகள். இத்தகைய மெட்ரிக்குகள் எதிர்மறை அளவுகளைக் குறிக்கலாம், ஒருவேளை பிரதிபலிப்பு செயல்பாடுகள் காரணமாக இருக்கலாம், மேலும் தற்போது பிளெண்டரின் எலும்பு பிரதிநிதித்துவமாக மாற்ற முடியாது. எலும்பு அனிமேசன் இறக்குமதி செய்யப்படாது"
 
 
@@ -142176,7 +142174,7 @@ msgid "Cannot export mixed cyclic and non-cyclic curves in the same Curves objec
 msgstr "ஒரே வளைவுகள் பொருளில் கலப்பு சுழற்சி மற்றும் சைக்ளிக் அல்லாத வளைவுகளை ஏற்றுமதி செய்ய முடியாது"
 
 
-msgid "Attribute '%s' (Blender domain %d, type %d) cannot be converted to USD"
+msgid "Attribute '%s' (GameForge 3D Studio domain %d, type %d) cannot be converted to USD"
 msgstr "பண்புக்கூறு ' %s' (பிளெண்டர் டொமைன் %d, வகை %d) அமெரிக்க டாலராக மாற்ற முடியாது"
 
 
@@ -143625,7 +143623,7 @@ msgid "Modifier \"%s\" is not in the strip's modifier list"
 msgstr "\"%s\" மாற்றியமைப்பானது ச்ட்ரிப்பின் மாற்றிப் பட்டியலில் இல்லை"
 
 
-msgid "Blender compiled without Audaspace support"
+msgid "GameForge 3D Studio compiled without Audaspace support"
 msgstr "ஆடாச்பேச் உதவி இல்லாமல் கலப்பான் தொகுக்கப்பட்டது"
 
 
@@ -146588,7 +146586,7 @@ msgid "Node must be run as tool"
 msgstr "முனை கருவியாக இயக்கப்பட வேண்டும்"
 
 
-msgid "Disabled, Blender was compiled without OpenVDB"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenVDB"
 msgstr "முடக்கப்பட்ட, கலப்பான் திறந்தவிடிபி இல்லாமல் தொகுக்கப்பட்டது"
 
 
@@ -146902,7 +146900,7 @@ msgid "Bundle Items"
 msgstr "மூட்டை உருப்படிகள்"
 
 
-msgid "Disabled, Blender was compiled without Bullet"
+msgid "Disabled, GameForge 3D Studio was compiled without Bullet"
 msgstr "முடக்கப்பட்ட, கலப்பான் புல்லட் இல்லாமல் தொகுக்கப்பட்டார்"
 
 
@@ -148089,7 +148087,7 @@ msgid "Path to a CSV file"
 msgstr "ஒரு காபிம கோப்பிற்கான பாதை"
 
 
-msgid "Disabled, Blender was compiled without OBJ I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without OBJ I/O"
 msgstr "முடக்கப்பட்ட, பிளெண்டர் OBJ I/O இல்லாமல் தொகுக்கப்பட்டது"
 
 
@@ -148097,7 +148095,7 @@ msgid "Path to a OBJ file"
 msgstr "ஒரு OBJ கோப்பிற்கான பாதை"
 
 
-msgid "Disabled, Blender was compiled without PLY I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without PLY I/O"
 msgstr "முடக்கப்பட்டது, பிளெண்டர் பிளை I/O இல்லாமல் தொகுக்கப்பட்டது"
 
 
@@ -148105,7 +148103,7 @@ msgid "Path to a PLY file"
 msgstr "ஒரு பிளை கோப்புக்கான பாதை"
 
 
-msgid "Disabled, Blender was compiled without STL I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without STL I/O"
 msgstr "முடக்கப்பட்டது, பிளெண்டர் STL I/O இல்லாமல் தொகுக்கப்பட்டது"
 
 
@@ -148713,7 +148711,7 @@ msgid "The subdivision level is too large"
 msgstr "உட்பிரிவு நிலை மிகப் பெரியது"
 
 
-msgid "Disabled, Blender was compiled without OpenSubdiv"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenSubdiv"
 msgstr "முடக்கப்பட்ட, கலப்பான் ஓபன்சுப்டிவ் இல்லாமல் தொகுக்கப்பட்டது"
 
 
@@ -149650,7 +149648,7 @@ msgid "Pack UV Islands Field"
 msgstr "புறஊதா தீவுகள் புலம்"
 
 
-msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in Blender"
+msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in GameForge 3D Studio"
 msgstr "MikkTSpace நூலகத்தைப் பயன்படுத்தி கணக்கிடுதல், பிளெண்டரில் மற்ற இடங்களில் பயன்படுத்தப்படும் தொடுகோடுகளுடன் ஒத்துப்போகிறது"
 
 
@@ -151261,7 +151259,7 @@ msgid "Input pending {}"
 msgstr "உள்ளீடு நிலுவையில் உள்ளது {}"
 
 
-msgid "Blender File View"
+msgid "GameForge 3D Studio File View"
 msgstr "கலப்பான் கோப்பு பார்வை"
 
 
@@ -151285,7 +151283,7 @@ msgid "Overwrite Startup File"
 msgstr "தொடக்க கோப்பை மேலெழுதும்"
 
 
-msgid "Blender will start next time as it is now."
+msgid "GameForge 3D Studio will start next time as it is now."
 msgstr "பிளெண்டர் இப்போது இருப்பதைப் போல அடுத்த முறை தொடங்கும்."
 
 
@@ -151309,7 +151307,7 @@ msgid "Load Factory \"{}\" Preferences."
 msgstr "தொழிற்சாலை \"{}\" விருப்பங்களை ஏற்றவும்."
 
 
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "தொழிற்சாலை பிளெண்டர் விருப்பங்களை ஏற்றவும்"
 
 
@@ -151401,19 +151399,19 @@ msgid "Unable to Load File"
 msgstr "கோப்பை ஏற்ற முடியவில்லை"
 
 
-msgid "The file is not a valid Blender file."
+msgid "The file is not a valid GameForge 3D Studio file."
 msgstr "கோப்பு சரியான பிளெண்டர் கோப்பு அல்ல."
 
 
-msgid "This file was saved by a newer version of Blender (%s)."
+msgid "This file was saved by a newer version of GameForge 3D Studio (%s)."
 msgstr "இந்த கோப்பு பிளெண்டரின் (%s) புதிய பதிப்பால் சேமிக்கப்பட்டது."
 
 
-msgid "Saving it with this Blender (%s) may cause loss of data."
+msgid "Saving it with this GameForge 3D Studio (%s) may cause loss of data."
 msgstr "இந்த கலப்பான் (%s) மூலம் சேமிப்பது தரவு இழப்பை ஏற்படுத்தக்கூடும்."
 
 
-msgid "This file is managed by the Blender asset system. It can only be"
+msgid "This file is managed by the GameForge 3D Studio asset system. It can only be"
 msgstr "இந்த கோப்பு பிளெண்டர் சொத்து அமைப்பால் நிர்வகிக்கப்படுகிறது. அது மட்டுமே இருக்க முடியும்"
 
 
@@ -151433,11 +151431,11 @@ msgid "Cannot overwrite asset system files. Save as new file"
 msgstr "சொத்து கணினி கோப்புகளை மேலெழுத முடியாது. புதிய கோப்பாக சேமிக்கவும்"
 
 
-msgid "with an older Blender version?"
+msgid "with an older GameForge 3D Studio version?"
 msgstr "பழைய பிளெண்டர் பதிப்போடு?"
 
 
-msgid "Overwrite file with an older Blender version?"
+msgid "Overwrite file with an older GameForge 3D Studio version?"
 msgstr "பழைய கலப்பான் பதிப்பைக் கொண்டு கோப்பை மேலெழுதவா?"
 
 
@@ -151453,7 +151451,7 @@ msgid "Save changes before closing?"
 msgstr "மூடுவதற்கு முன் மாற்றங்களைச் சேமிக்கவா?"
 
 
-msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with Blender v4.5 to convert animation data."
+msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with GameForge 3D Studio v4.5 to convert animation data."
 msgstr "2.50-க்கு முந்தைய கலவை கோப்பு ஏற்றப்பட்டது, அனிமேசன் தரவு ஏற்றப்படவில்லை. அனிமேசன் தரவை மாற்ற பிளெண்டர் v4.5 உடன் கோப்பைத் திறந்து சேமிக்கவும்."
 
 
@@ -151497,7 +151495,7 @@ msgid "%d libraries have overrides needing resync (auto resynced in %.0fm%.2fs),
 msgstr "%d நூலகங்கள் மறுசீரமைப்பு தேவைப்படுவதை மீறிவிட்டன (ஆட்டோ %.0fm %.2fs இல் ஒத்திருக்கிறது), விவரங்களுக்கு செய்தி எடிட்டரைச் சரிபார்க்கவும்"
 
 
-msgid "Proxies have been removed from Blender (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest Blender version"
+msgid "Proxies have been removed from GameForge 3D Studio (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest GameForge 3D Studio version"
 msgstr "கலப்பானிலிருந்து ப்ராக்சிகள் அகற்றப்பட்டுள்ளன ( %d ப்ராக்சிகள் தானாகவே நூலக மேலெழுதல்களாக மாற்றப்பட்டன, %d ப்ராக்சிகளை மாற்ற முடியவில்லை மற்றும் அழிக்கப்பட்டது). எந்தவொரு நூலகத்தையும் மீண்டும் சேமிப்பதைக் கவனியுங்கள். புதிய கலப்பான் பதிப்பைக் கொண்டு கோப்பை"
 
 
@@ -151773,7 +151771,7 @@ msgstr "உங்கள் கிராபிக்ச் அட்டை அல
 
 
 msgctxt "WindowManager"
-msgid "Newer graphics drivers might be available with better Blender compatibility."
+msgid "Newer graphics drivers might be available with better GameForge 3D Studio compatibility."
 msgstr "புதிய கிராபிக்ச் இயக்கிகள் சிறந்த பிளெண்டர் பொருந்தக்கூடிய தன்மையுடன் கிடைக்கக்கூடும்."
 
 
@@ -151798,7 +151796,7 @@ msgstr "உங்கள் கிராபிக்ச் அட்டை அல
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
 msgstr "அண்மைக் கால macos பதிப்பிற்கு மேம்படுத்துவது கலப்பான் ஆதரவை மேம்படுத்தக்கூடும்"
 
 
@@ -151808,7 +151806,7 @@ msgstr "உங்கள் கிராபிக்ச் அட்டை அல
 
 
 msgctxt "WindowManager"
-msgid "Blender will now close."
+msgid "GameForge 3D Studio will now close."
 msgstr "பிளெண்டர் இப்போது மூடப்படும்."
 
 
@@ -152209,7 +152207,7 @@ msgid "Stroke and Fill"
 msgstr "வீச்சு மற்றும் நிரப்ப"
 
 
-msgid "Blender 27x"
+msgid "version 27x"
 msgstr "கலப்பான் 27x"
 
 
@@ -152418,7 +152416,7 @@ msgid "Import-Export BVH from armature objects"
 msgstr "ஆர்மேச்சர் பொருட்களிலிருந்து இறக்குமதி-ஏற்றுமதி பி.வி.எச்"
 
 
-msgid "Blender Extensions"
+msgid "GameForge 3D Studio Extensions"
 msgstr "பிளெண்டர் நீட்டிப்புகள்"
 
 
@@ -152462,7 +152460,7 @@ msgid "Manage UI translations"
 msgstr "இடைமுகம் மொழிபெயர்ப்புகளை நிர்வகிக்கவும்"
 
 
-msgid "Allows managing UI translations directly from Blender (update main .po files, update scripts' translations, etc.)"
+msgid "Allows managing UI translations directly from GameForge 3D Studio (update main .po files, update scripts' translations, etc.)"
 msgstr "இடைமுகம் மொழிபெயர்ப்புகளை கலப்பானிலிருந்து நேரடியாக நிர்வகிக்க அனுமதிக்கிறது (மெயின் .po கோப்புகளை புதுப்பிக்கவும், கைஉரைகளின் மொழிபெயர்ப்புகளைப் புதுப்பிக்கவும்)"
 
 

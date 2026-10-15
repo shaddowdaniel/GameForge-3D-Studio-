@@ -60,6 +60,7 @@ bool parse_skeleton(ByteSpan data, Skeleton &r_skeleton, std::string *r_error)
   r_skeleton = Skeleton();
   const AFileContent content = afile_open(data);
   BinaryReader reader(content.body);
+  const size_t body_offset = size_t(content.body.data() - data.data());
 
   if (reader.remaining() < 96) {
     return skel_fail(r_error, "File too small for a skeleton header");
@@ -101,6 +102,7 @@ bool parse_skeleton(ByteSpan data, Skeleton &r_skeleton, std::string *r_error)
     bone.parent = reader.i32();
     bone.first_joint = reader.i32();
     const int32_t num_children = reader.i32();
+    bone.matrices_offset = body_offset + reader.tell();
     read_matrix(reader, bone.relative);
     read_matrix(reader, bone.bone_init);
     if (reader.failed()) {

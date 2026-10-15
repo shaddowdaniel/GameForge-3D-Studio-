@@ -21,7 +21,13 @@ _modules = [
     "constraint",
     "copy_global_transform",
     "file",
+    "gameforge_agent",
     "gameforge_character",
+    "gameforge_client",
+    "gameforge_data",
+    "gameforge_world",
+    "gameforge_tasks",
+    "gameforge_update",
     "gameforge_login",
     "gameforge_plugins",
     "geometry_nodes",
@@ -79,6 +85,12 @@ def register():
     gameforge_login.register()
     gameforge_plugins.register()
     gameforge_character.register()
+    gameforge_client.register()
+    gameforge_data.register()
+    gameforge_world.register()
+    gameforge_tasks.register()
+    gameforge_agent.register()
+    gameforge_update.register()
 
 
 def unregister():
@@ -88,6 +100,12 @@ def unregister():
         copy_global_transform,
     )
 
+    gameforge_update.unregister()
+    gameforge_agent.unregister()
+    gameforge_tasks.unregister()
+    gameforge_world.unregister()
+    gameforge_data.unregister()
+    gameforge_client.unregister()
     gameforge_character.unregister()
     gameforge_login.unregister()
     gameforge_plugins.unregister()

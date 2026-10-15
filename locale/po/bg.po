@@ -1946,17 +1946,17 @@ msgid "Print memory statistics to the console"
 msgstr "Принтирай статистиката на паметта в конзолата"
 
 
-msgid "Open a Blender file"
-msgstr "Отваряне на Blender файл"
+msgid "Open a GameForge 3D Studio file"
+msgstr "Отваряне на GameForge 3D Studio файл"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Излез от Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Излез от GameForge 3D Studio"
 
 
-msgid "Quit Blender"
-msgstr "Излез от Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Излез от GameForge 3D Studio"
 
 
 msgid "Color Path"
@@ -2015,12 +2015,12 @@ msgstr "Преначертай относителните"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Запази Blender Файл"
+msgid "Save GameForge 3D Studio File"
+msgstr "Запази GameForge 3D Studio Файл"
 
 
-msgid "Save the current Blender file"
-msgstr "Запази текущия Blender файл"
+msgid "Save the current GameForge 3D Studio file"
+msgstr "Запази текущия GameForge 3D Studio файл"
 
 
 msgctxt "Operator"

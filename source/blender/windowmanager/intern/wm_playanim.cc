@@ -103,7 +103,7 @@ static CLG_LogRef LOG = {"image"};
 
 /** Used in user viable messages. */
 static const char *message_prefix = "Animation Player";
-static const char *playanim_window_title = "Blender Animation Player";
+static const char *playanim_window_title = "GameForge 3D Studio Animation Player";
 
 struct PlayState;
 static void playanim_window_zoom(PlayState &ps, const float zoom_offset);
@@ -2340,8 +2340,8 @@ int WM_main_playanim(int argc, const char **argv)
 
     bke::sound_system_initialize();
 
-    if (!(g_audaspace.audio_device = bke::sound_device_init(nullptr, specs, 1024, "Blender"))) {
-      g_audaspace.audio_device = bke::sound_device_init("None", specs, 0, "Blender");
+    if (!(g_audaspace.audio_device = bke::sound_device_init(nullptr, specs, 1024, "GameForge 3D Studio"))) {
+      g_audaspace.audio_device = bke::sound_device_init("None", specs, 0, "GameForge 3D Studio");
     }
   }
 #endif

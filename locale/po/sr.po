@@ -263,8 +263,8 @@ msgid "Source Root"
 msgstr "Корен изворног кода"
 
 
-msgid "The Blender source root path"
-msgstr "Корени директоријум изворног кода Blender-а"
+msgid "The GameForge 3D Studio source root path"
+msgstr "Корени директоријум изворног кода GameForge 3D Studio-а"
 
 
 msgid "Persistent Data Path"
@@ -1063,11 +1063,11 @@ msgid "Path"
 msgstr "Путања"
 
 
-msgid "Blender RNA"
+msgid "GameForge 3D Studio RNA"
 msgstr "Блендер РНК"
 
 
-msgid "Blender RNA structure definitions"
+msgid "GameForge 3D Studio RNA structure definitions"
 msgstr "Дефиниције структуре Блендер РНК"
 
 
@@ -4349,8 +4349,8 @@ msgid "Show .blend1, .blend2, etc. files"
 msgstr "Прикажи .blend датотеке"
 
 
-msgid "Filter Blender"
-msgstr "Филтер Blender"
+msgid "Filter GameForge 3D Studio"
+msgstr "Филтер GameForge 3D Studio"
 
 
 msgid "Show .blend files"
@@ -7373,7 +7373,7 @@ msgid "Noise Basis"
 msgstr "Основа шума"
 
 
-msgid "Blender Original"
+msgid "GameForge 3D Studio Original"
 msgstr "Оригинални Блендеров"
 
 
@@ -10878,8 +10878,8 @@ msgid "Object space normal mapping"
 msgstr "Основни директоријум са текстурама"
 
 
-msgid "Blender Object Space"
-msgstr "Простор Blender објекта"
+msgid "GameForge 3D Studio Object Space"
+msgstr "Простор GameForge 3D Studio објекта"
 
 
 msgid "Cycles"
@@ -14070,7 +14070,7 @@ msgstr "Узорак боје"
 
 
 msgid "Save As Render"
-msgstr "Сачувај Blender датотеку"
+msgstr "Сачувај GameForge 3D Studio датотеку"
 
 
 msgctxt "Operator"
@@ -18736,12 +18736,12 @@ msgstr "Измена назива особине"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Излаз из Blender-а"
+msgid "Quit GameForge 3D Studio"
+msgstr "Излаз из GameForge 3D Studio-а"
 
 
-msgid "Quit Blender"
-msgstr "Излаз из Blender-а"
+msgid "Quit GameForge 3D Studio"
+msgstr "Излаз из GameForge 3D Studio-а"
 
 
 msgctxt "Operator"
@@ -18843,12 +18843,12 @@ msgstr "Сачувај почетну датотеку"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Сачувај Blender датотеку"
+msgid "Save GameForge 3D Studio File"
+msgstr "Сачувај GameForge 3D Studio датотеку"
 
 
-msgid "Save the current Blender file"
-msgstr "Уписује тренутну Blender датотеку"
+msgid "Save the current GameForge 3D Studio file"
+msgstr "Уписује тренутну GameForge 3D Studio датотеку"
 
 
 msgctxt "Operator"
@@ -21120,8 +21120,8 @@ msgid "Node tree type to display and edit"
 msgstr "Поставља приказ рендеровања у 3D погледу"
 
 
-msgid "Blender File"
-msgstr "Blender датотека"
+msgid "GameForge 3D Studio File"
+msgstr "GameForge 3D Studio датотека"
 
 
 msgid "Filter method"
@@ -24530,8 +24530,8 @@ msgid "Scene has no camera"
 msgstr "Сцена не садржи камеру"
 
 
-msgid "Blender Render"
-msgstr "Blender рендеринг"
+msgid "GameForge 3D Studio Render"
+msgstr "GameForge 3D Studio рендеринг"
 
 
 msgid "Flip to Top"
@@ -25235,8 +25235,8 @@ msgid "Rim"
 msgstr "Обод"
 
 
-msgid "Blender File View"
-msgstr "Blender-ов преглед датотека"
+msgid "GameForge 3D Studio File View"
+msgstr "GameForge 3D Studio-ов преглед датотека"
 
 
 msgid "Modified"

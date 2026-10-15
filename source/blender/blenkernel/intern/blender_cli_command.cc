@@ -147,7 +147,7 @@ void BKE_blender_cli_command_print_help()
       [](const CommandHandlerPtr &a, const CommandHandlerPtr &b) { return a->id < b->id; });
 
   for (int pass = 0; pass < 2; pass++) {
-    std::cout << ((pass == 0) ? "Blender Command Listing:" :
+    std::cout << ((pass == 0) ? "GameForge 3D Studio Command Listing:" :
                                 "Duplicate Command Listing (ignored):")
               << std::endl;
 

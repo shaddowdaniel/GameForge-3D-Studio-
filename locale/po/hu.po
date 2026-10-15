@@ -9511,8 +9511,8 @@ msgid "Restore Key Map(s)"
 msgstr "Billentyű-hozzárendelések visszaállítása"
 
 
-msgid "Load and apply a Blender XML theme file"
-msgstr "Egy Blender XML témafájl betöltése és alkalmazása"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
+msgstr "Egy GameForge 3D Studio XML témafájl betöltése és alkalmazása"
 
 
 msgctxt "Operator"
@@ -12573,8 +12573,8 @@ msgid "Include all scene frames"
 msgstr "Minden jelenet képkocka bevonása"
 
 
-msgid "Open a Blender file"
-msgstr "Blender fájl megnyitása"
+msgid "Open a GameForge 3D Studio file"
+msgstr "GameForge 3D Studio fájl megnyitása"
 
 
 msgid "Load UI"
@@ -12604,11 +12604,11 @@ msgstr "PLY importálása"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "Kilépés a Blenderből"
 
 
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "Kilépés a Blenderből"
 
 
@@ -12675,12 +12675,12 @@ msgstr "Indítófájl újratöltése"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Blender fájl mentése"
+msgid "Save GameForge 3D Studio File"
+msgstr "GameForge 3D Studio fájl mentése"
 
 
-msgid "Save the current Blender file"
-msgstr "Az aktuális Blender fájl mentése"
+msgid "Save the current GameForge 3D Studio file"
+msgstr "Az aktuális GameForge 3D Studio fájl mentése"
 
 
 msgctxt "Operator"
@@ -14183,8 +14183,8 @@ msgid "Channels of the image to draw"
 msgstr "A kép rajzolható csatornái"
 
 
-msgid "Blender File"
-msgstr "Blender fájl"
+msgid "GameForge 3D Studio File"
+msgstr "GameForge 3D Studio fájl"
 
 
 msgid "Show Object Children"
@@ -16535,8 +16535,8 @@ msgid "Scene has no camera"
 msgstr "Nincs kamera a jelenetben"
 
 
-msgid "Blender Render"
-msgstr "Blender Render"
+msgid "GameForge 3D Studio Render"
+msgstr "GameForge 3D Studio Render"
 
 
 msgid "GPencil Interpolation: "

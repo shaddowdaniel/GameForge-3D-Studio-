@@ -836,8 +836,8 @@ msgid "Fribidi Library"
 msgstr "Fribidi ბიბლიოთეკა"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
-msgstr "FriBidi C-ის კომპილირებული ბიბლიოთეკა (.so ლინუქსში, .dll ვინდოუსში...), თუ ვინდოუსს იყენებთ, სავარაუდოდ რედაქტირება მოგიწევთ, მაგ.: Blender-ის ბიბლიოთეკების საცავში მითვლილი ფაილის გამოყენებით"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
+msgstr "FriBidi C-ის კომპილირებული ბიბლიოთეკა (.so ლინუქსში, .dll ვინდოუსში...), თუ ვინდოუსს იყენებთ, სავარაუდოდ რედაქტირება მოგიწევთ, მაგ.: GameForge 3D Studio-ის ბიბლიოთეკების საცავში მითვლილი ფაილის გამოყენებით"
 
 
 msgid "Translation Root"
@@ -860,8 +860,8 @@ msgid "Source Root"
 msgstr "კოდის ძირეული საქაღალდე"
 
 
-msgid "The Blender source root path"
-msgstr "Blender-ის კოდის ძირეული საქაღალდის მისამართი"
+msgid "The GameForge 3D Studio source root path"
+msgstr "GameForge 3D Studio-ის კოდის ძირეული საქაღალდის მისამართი"
 
 
 msgid "Spell Cache"
@@ -884,8 +884,8 @@ msgid "Persistent Data Path"
 msgstr "მუდმივი მონაცემების მისამართი"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "სახელი იმ json ფაილისა, რომელშიც ის ანაწყობები ინახება (სამწუხაროდ, Blender-ის სისტემა აქ არ მუშაობს)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
+msgstr "სახელი იმ json ფაილისა, რომელშიც ის ანაწყობები ინახება (სამწუხაროდ, GameForge 3D Studio-ის სისტემა აქ არ მუშაობს)"
 
 
 msgid "User Add-ons"
@@ -1764,8 +1764,8 @@ msgid "Edit persistent configuration settings"
 msgstr "კონფიგურაციის მუდმივი ანაწყობების რედაქტირება"
 
 
-msgid "Manage the current Blender project"
-msgstr "მართე Blender-ის მიმდინარე პროექტი"
+msgid "Manage the current GameForge 3D Studio project"
+msgstr "მართე GameForge 3D Studio-ის მიმდინარე პროექტი"
 
 
 msgid "Width"
@@ -1860,8 +1860,8 @@ msgid "Is Editable"
 msgstr "თუა რედაქტირებადი"
 
 
-msgid "Assets and catalogs in this library can be edited from the current Blender instance"
-msgstr "ამ ბიბლიოთეკაში არსებული აქტივებისა და კატალოგების რედაქტირება Blender-ის მიმდინარე ინსტანციიდან შეიძლება"
+msgid "Assets and catalogs in this library can be edited from the current GameForge 3D Studio instance"
+msgstr "ამ ბიბლიოთეკაში არსებული აქტივებისა და კატალოგების რედაქტირება GameForge 3D Studio-ის მიმდინარე ინსტანციიდან შეიძლება"
 
 
 msgid "Library Type"
@@ -1880,16 +1880,16 @@ msgid "Current File"
 msgstr "მიმდინარე ფაილი"
 
 
-msgid "Show the assets currently available in this Blender session"
-msgstr "აჩვენე Blender-ის ამ სესიაში ამჟამად ხელმისაწვდომი აქტივები"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
+msgstr "აჩვენე GameForge 3D Studio-ის ამ სესიაში ამჟამად ხელმისაწვდომი აქტივები"
 
 
 msgid "Essentials"
 msgstr "აუცილებელი"
 
 
-msgid "Show basic building blocks and utilities coming with Blender"
-msgstr "აჩვენე ძირითადი მოდულები და უტილიტები, რომლებიც Blender-ს მოჰყვება"
+msgid "Show basic building blocks and utilities coming with GameForge 3D Studio"
+msgstr "აჩვენე ძირითადი მოდულები და უტილიტები, რომლებიც GameForge 3D Studio-ს მოჰყვება"
 
 
 msgid "Online Essentials"
@@ -1960,8 +1960,8 @@ msgid "Catalog UUID"
 msgstr "კატალოგის UUID"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
-msgstr "აქტივების კატალოგის იდენტიფიკატორი, რომელსაც Blender-ი იყენებს აქტივის კატალოგის მისამართის მოსაძებნად. UUID აუცილებლად უნდა იყოს RFC4122-ის მიხედვით."
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgstr "აქტივების კატალოგის იდენტიფიკატორი, რომელსაც GameForge 3D Studio-ი იყენებს აქტივის კატალოგის მისამართის მოსაძებნად. UUID აუცილებლად უნდა იყოს RFC4122-ის მიხედვით."
 
 
 msgid "Catalog Simple Name"
@@ -2709,8 +2709,8 @@ msgid "Is Internal"
 msgstr "თუა შიდა"
 
 
-msgid "The attribute is meant for internal use by Blender"
-msgstr "ატრიბუტი განკუთვნილია Blender-ის მიერ შიდა მომხმარებისთვის"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
+msgstr "ატრიბუტი განკუთვნილია GameForge 3D Studio-ის მიერ შიდა მომხმარებისთვის"
 
 
 msgid "Is Required"
@@ -3428,8 +3428,8 @@ msgid "All Data-Blocks"
 msgstr "მონაცემთა ყველა ბლოკი"
 
 
-msgid "Read-only list of all IDs listed in Blender data-base. Warning: Order is not guaranteed and should be considered an internal implementation detail"
-msgstr "Blender-ის მონაცემთა ბაზაში ჩამოთვლილი ID-ების არარედაქტირებადი სია. გაფრთხილება: თანმიმდევრობა გარანტირებული არაა და მხოლოდ შინაგანი იმპლემენტაციის დეტალის სახით უნდა იქნას მხედველობაში მიღებული"
+msgid "Read-only list of all IDs listed in GameForge 3D Studio data-base. Warning: Order is not guaranteed and should be considered an internal implementation detail"
+msgstr "GameForge 3D Studio-ის მონაცემთა ბაზაში ჩამოთვლილი ID-ების არარედაქტირებადი სია. გაფრთხილება: თანმიმდევრობა გარანტირებული არაა და მხოლოდ შინაგანი იმპლემენტაციის დეტალის სახით უნდა იქნას მხედველობაში მიღებული"
 
 
 msgid "Annotation"
@@ -3601,8 +3601,8 @@ msgid "Project"
 msgstr "პროექტი"
 
 
-msgid "The currently active Blender project, if any"
-msgstr "Blender-ის ამჟამად აქტიური პროექტი, თუ ასეთი არსებობს"
+msgid "The currently active GameForge 3D Studio project, if any"
+msgstr "GameForge 3D Studio-ის ამჟამად აქტიური პროექტი, თუ ასეთი არსებობს"
 
 
 msgid "Scene data-blocks"
@@ -3997,8 +3997,8 @@ msgid "Project"
 msgstr "პროეცირება"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Fallback"
@@ -4254,8 +4254,8 @@ msgid "Library (blend-file) reference in a BlendImportContext data. Currently on
 msgstr "ბიბლიოთეკის (ბლენდ-ფაილის) მითითება BlendImportContext-ის მონაცემებში. ამჟამად ჩანს მხოლოდ როგორც წაკითხვადი მონაცემები blend-იმპორტის წინა/შემდგომი დამმუშავებლებისთვის"
 
 
-msgid "Blender Project"
-msgstr "Blender-ის პროექტი"
+msgid "GameForge 3D Studio Project"
+msgstr "GameForge 3D Studio-ის პროექტი"
 
 
 msgid "Active Project Variable"
@@ -4302,12 +4302,12 @@ msgid "The variables in this project"
 msgstr "ცვლადები ამ პროექტში"
 
 
-msgid "Blender RNA"
-msgstr "Blender-ის RNA"
+msgid "GameForge 3D Studio RNA"
+msgstr "GameForge 3D Studio-ის RNA"
 
 
-msgid "Blender RNA structure definitions"
-msgstr "Blender-ის RNA-ის სტრუქტურის განსაზღვრებები"
+msgid "GameForge 3D Studio RNA structure definitions"
+msgstr "GameForge 3D Studio-ის RNA-ის სტრუქტურის განსაზღვრებები"
 
 
 msgid "Structs"
@@ -8714,8 +8714,8 @@ msgid "Lin error"
 msgstr "Lin-ის შეცდომა"
 
 
-msgid "Amount of residual error in Blender space unit for constraints that work on position"
-msgstr "რეზიდუალური შეცდომის ოდენობა Blender-ის სივრცით ერთეულში ბორკილებისთვის, რომლებიც მდებარეობაზე მუშაობენ"
+msgid "Amount of residual error in GameForge 3D Studio space unit for constraints that work on position"
+msgstr "რეზიდუალური შეცდომის ოდენობა GameForge 3D Studio-ის სივრცით ერთეულში ბორკილებისთვის, რომლებიც მდებარეობაზე მუშაობენ"
 
 
 msgid "Rotation error"
@@ -12686,8 +12686,8 @@ msgid "Max Velocity"
 msgstr "მაქს. სიჩქარე"
 
 
-msgid "Velocity considered as maximum influence (Blender units per frame)"
-msgstr "სიჩქარე, რომელიც მაქსიმალურ ზეგავლენად ითვლება (Blender-ის ერთეულები თითო კადრზე)"
+msgid "Velocity considered as maximum influence (GameForge 3D Studio units per frame)"
+msgstr "სიჩქარე, რომელიც მაქსიმალურ ზეგავლენად ითვლება (GameForge 3D Studio-ის ერთეულები თითო კადრზე)"
 
 
 msgid "Velocity Color Ramp"
@@ -13064,8 +13064,8 @@ msgid "Premultiply Alpha"
 msgstr "ალფას წინასწარი გამრავლება"
 
 
-msgid "Multiply color by alpha (recommended for Blender input)"
-msgstr "გაამრავლე ფერი ალფაზე (რეკომენდირებულია Blender-ის შემავალი ფაილებისთვის)"
+msgid "Multiply color by alpha (recommended for GameForge 3D Studio input)"
+msgstr "გაამრავლე ფერი ალფაზე (რეკომენდირებულია GameForge 3D Studio-ის შემავალი ფაილებისთვის)"
 
 
 msgid "Use Shrink"
@@ -15464,24 +15464,24 @@ msgid "Hide .blend files items that are not data-blocks with asset metadata"
 msgstr "დამალე .blend ფაილების საგნები, რომლებიც არ არის აქტივის მეტამონაცემებიანი მონაცემთა ბლოკები"
 
 
-msgid "Filter Blender Backup Files"
-msgstr "Blender-ის სათადარიგო ფაილების გაფილტრვა"
+msgid "Filter GameForge 3D Studio Backup Files"
+msgstr "GameForge 3D Studio-ის სათადარიგო ფაილების გაფილტრვა"
 
 
 msgid "Show .blend1, .blend2, etc. files"
 msgstr "აჩვენე .blend1, .blend2 და ა.შ. ფაილები"
 
 
-msgid "Filter Blender"
-msgstr "Blender-ის გაფილტრვა"
+msgid "Filter GameForge 3D Studio"
+msgstr "GameForge 3D Studio-ის გაფილტრვა"
 
 
 msgid "Show .blend files"
 msgstr "აჩვენე blend ფაილები"
 
 
-msgid "Filter Blender IDs"
-msgstr "გაფილტრე Blender-ის ID-ები"
+msgid "Filter GameForge 3D Studio IDs"
+msgstr "გაფილტრე GameForge 3D Studio-ის ID-ები"
 
 
 msgid "Show .blend files items (objects, materials, etc.)"
@@ -15556,8 +15556,8 @@ msgid "Library Browser"
 msgstr "ბიბლიოთეკის ბრაუზერი"
 
 
-msgid "Whether we may browse Blender files' content or not"
-msgstr "გვაქვს თუ არა Blender-ის ფაილების შიგთავსის დათვალიერების ნებართვა"
+msgid "Whether we may browse GameForge 3D Studio files' content or not"
+msgstr "გვაქვს თუ არა GameForge 3D Studio-ის ფაილების შიგთავსის დათვალიერების ნებართვა"
 
 
 msgid "Reverse Sorting"
@@ -16016,8 +16016,8 @@ msgid "Export Mantaflow Script"
 msgstr "Mantaflow სკრიპტის ექსპორტი"
 
 
-msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of Blender) after baking the simulation."
-msgstr "წარმოქმენი და დააექსპორტე Mantaflow სკრიპტი მიმდინარე სამოქმედო არეალის ანაწყობებიდან ცხობის დროს. ეს მხოლოდ მაშინაა საჭირო, თუ ქეშის ანალიზს გეგმავ (მაგ.: ბადეების, სიჩქარის ვექტორების, ნაწილაკების ნახვა) უშუალოდ Mantaflow-ში (Blender-ის გარეთ) სიმულაციის გამოცხობის შემდეგ."
+msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of GameForge 3D Studio) after baking the simulation."
+msgstr "წარმოქმენი და დააექსპორტე Mantaflow სკრიპტი მიმდინარე სამოქმედო არეალის ანაწყობებიდან ცხობის დროს. ეს მხოლოდ მაშინაა საჭირო, თუ ქეშის ანალიზს გეგმავ (მაგ.: ბადეების, სიჩქარის ვექტორების, ნაწილაკების ნახვა) უშუალოდ Mantaflow-ში (GameForge 3D Studio-ის გარეთ) სიმულაციის გამოცხობის შემდეგ."
 
 
 msgid "Flame Grid"
@@ -19309,7 +19309,7 @@ msgid "Is Legacy Action"
 msgstr "თუა ძველებური ქმედება"
 
 
-msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since Blender 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
+msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since version 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
 msgstr "დააბრუნე ჭეშმარიტი, ან მცდარი მნიშვნელობა იმიოს მიხედვით, ქმედება ძველებურია, თუ არა. ძველებურ ქმედებებს შრეები და სლოტები არ გააჩნია. ბლენდერ 4.4-იდან მოყოლებული, ქმედებები ავტომატურად განახლდება და გარდაიქმნება შრეებიან ქმედებებად. შესაბამისად, მნიშვნელობა ჭეშმარიტი მხოლოდ მაშინ დაბრუნდება, თუ ქმედება ცარიელია"
 
 
@@ -21309,8 +21309,8 @@ msgid "Unprojected Size"
 msgstr "არაპროეცირებული ზომა"
 
 
-msgid "Diameter of brush in Blender units"
-msgstr "ფუნჯის დიამეტრი Blender-ის ერთეულებში"
+msgid "Diameter of brush in GameForge 3D Studio units"
+msgstr "ფუნჯის დიამეტრი GameForge 3D Studio-ის ერთეულებში"
 
 
 msgid "Accumulate"
@@ -24641,8 +24641,8 @@ msgid "True if this library contains library overrides that are linked in curren
 msgstr "ჭეშმარიტია, თუ ეს ბიბლიოთეკა შეიცავს ბიბლიოთეკის უკუგდებებს, რომლებიც დაკავშირებულია მიმდინარე blend ფაილიდან, და რომლებსაც ჩატვირთვისას რეკურსიული ხელახალი სინქრონიზაცია მოუხდა (მაშინ რეკომენდირებულია იმ ბიბლიოთეკის blend ფაილის გახსნა და ხელახლა შენახვა)"
 
 
-msgid "Version of Blender the library .blend was saved with"
-msgstr "Blender-ის ვერსია, რომლითაც .blend ბიბლიოთეკა იქნა შენახული"
+msgid "Version of GameForge 3D Studio the library .blend was saved with"
+msgstr "GameForge 3D Studio-ის ვერსია, რომლითაც .blend ბიბლიოთეკა იქნა შენახული"
 
 
 msgctxt "Light"
@@ -29836,12 +29836,12 @@ msgid "Noise basis used for turbulence"
 msgstr "ხმაურის საფუძველი გამოყენებული ტურბულენტობისთვის"
 
 
-msgid "Blender Original"
-msgstr "Blender-ის ორიგინალი"
+msgid "GameForge 3D Studio Original"
+msgstr "GameForge 3D Studio-ის ორიგინალი"
 
 
-msgid "Noise algorithm - Blender original: Smooth interpolated noise"
-msgstr "ხმაურის ალგორითმი - Blender-ის ორიგინალი: გლუვი, ინტერპოლირებული ხმაური"
+msgid "Noise algorithm - GameForge 3D Studio original: Smooth interpolated noise"
+msgstr "ხმაურის ალგორითმი - GameForge 3D Studio-ის ორიგინალი: გლუვი, ინტერპოლირებული ხმაური"
 
 
 msgid "Original Perlin"
@@ -30710,8 +30710,8 @@ msgid "Asset Blend Path"
 msgstr "აქტივის Blend-ის მისამართი"
 
 
-msgid "Full path to the Blender file containing the active asset"
-msgstr "Blender-ის აქტიური აქტივის შემცველი ფაილის სრული მისამართი"
+msgid "Full path to the GameForge 3D Studio file containing the active asset"
+msgstr "GameForge 3D Studio-ის აქტიური აქტივის შემცველი ფაილის სრული მისამართი"
 
 
 msgid "Filter by Repository"
@@ -31862,16 +31862,16 @@ msgid "Custom Icon"
 msgstr "მორგებული ხატულა"
 
 
-msgid "True if this preview icon has been modified by py script, and is no more auto-generated by Blender"
-msgstr "ჭეშმარიტია, თუ გადახედვის ეს ხატულა მოდოფიცირებულ იქნა py სკრიპტის მიერ და აღარ არის Blender-ის მიერ ავტომატურად წარმოებული"
+msgid "True if this preview icon has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
+msgstr "ჭეშმარიტია, თუ გადახედვის ეს ხატულა მოდოფიცირებულ იქნა py სკრიპტის მიერ და აღარ არის GameForge 3D Studio-ის მიერ ავტომატურად წარმოებული"
 
 
 msgid "Custom Image"
 msgstr "მორგებული გამოსახულება"
 
 
-msgid "True if this preview image has been modified by py script, and is no more auto-generated by Blender"
-msgstr "ჭეშმარიტია, თუ გადახედვის გამოსახულებს მოდიფიცირებულია py სკრიპტის მიერ და აღარ არის Blender-ის მიერ ავტომატურად წარმოქმნილი"
+msgid "True if this preview image has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
+msgstr "ჭეშმარიტია, თუ გადახედვის გამოსახულებს მოდიფიცირებულია py სკრიპტის მიერ და აღარ არის GameForge 3D Studio-ის მიერ ავტომატურად წარმოქმნილი"
 
 
 msgid "Parameters defining how an Image data-block is used by another data-block"
@@ -42516,7 +42516,7 @@ msgstr "სივრცული ზომა"
 
 
 msgid "Size of the simulation domain (in meters), and of the generated geometry (in BU)"
-msgstr "სიმულაციის სამოქმედო არეალის ზომა (მეტრებში), და ასევე წარმოქმნილი გეომეტრიისა (Blender-ის ერთეულებში)"
+msgstr "სიმულაციის სამოქმედო არეალის ზომა (მეტრებში), და ასევე წარმოქმნილი გეომეტრიისა (GameForge 3D Studio-ის ერთეულებში)"
 
 
 msgid "Spectrum"
@@ -52084,20 +52084,20 @@ msgid "World space normal mapping"
 msgstr "სამყაროს სივრცის ნორმალების განაწილება"
 
 
-msgid "Blender Object Space"
-msgstr "Blender-ის ობიექტის სივრცე"
+msgid "GameForge 3D Studio Object Space"
+msgstr "GameForge 3D Studio-ის ობიექტის სივრცე"
 
 
-msgid "Object space normal mapping, compatible with Blender render baking"
-msgstr "ობიექტის სივრცის ნორმალების განაწილება, თავსებადია Blender-ის რენდერის ცხობასთან"
+msgid "Object space normal mapping, compatible with GameForge 3D Studio render baking"
+msgstr "ობიექტის სივრცის ნორმალების განაწილება, თავსებადია GameForge 3D Studio-ის რენდერის ცხობასთან"
 
 
-msgid "Blender World Space"
-msgstr "Blender-ის სამყაროს სივრცე"
+msgid "GameForge 3D Studio World Space"
+msgstr "GameForge 3D Studio-ის სამყაროს სივრცე"
 
 
-msgid "World space normal mapping, compatible with Blender render baking"
-msgstr "სამყაროს სივრცის ნორმალების განაწილება, თავსებადია Blender-ის რენდერის ცხობასთან"
+msgid "World space normal mapping, compatible with GameForge 3D Studio render baking"
+msgstr "სამყაროს სივრცის ნორმალების განაწილება, თავსებადია GameForge 3D Studio-ის რენდერის ცხობასთან"
 
 
 msgid "UV Map for tangent space maps"
@@ -54982,8 +54982,8 @@ msgstr "Rigify - მეტარიგის შრეთა აფგრეი�
 
 
 msgctxt "Operator"
-msgid "Get active/selected colors from current Blender theme"
-msgstr "აქტიური/მონიშნული ფერების მოპოვება Blender-ის ამჟამინდელი თემიდან"
+msgid "Get active/selected colors from current GameForge 3D Studio theme"
+msgstr "აქტიური/მონიშნული ფერების მოპოვება GameForge 3D Studio-ის ამჟამინდელი თემიდან"
 
 
 msgid "Validates references from rig component settings to bone collections"
@@ -55488,8 +55488,8 @@ msgid "Clear Status"
 msgstr "სტატუსის გასუფთავება"
 
 
-msgid "Allow Blender to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, Blender cannot prevent third-party add-ons from violating this rule."
-msgstr "დაუშვი Blender-ის წვდომა ინტერნეტზე. დანამატები, რომლებიც ამ ანაწყობს მიჰყვება, მხოლოდ ჩართვის შემთხვევაში დაუკავშირდება ინტერნეტს. თუმცა, Blender-ი ვერ აუკრძალავს მესამე მხარის დანამატებს ამ წესის დარღვევას."
+msgid "Allow GameForge 3D Studio to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, GameForge 3D Studio cannot prevent third-party add-ons from violating this rule."
+msgstr "დაუშვი GameForge 3D Studio-ის წვდომა ინტერნეტზე. დანამატები, რომლებიც ამ ანაწყობს მიჰყვება, მხოლოდ ჩართვის შემთხვევაში დაუკავშირდება ინტერნეტს. თუმცა, GameForge 3D Studio-ი ვერ აუკრძალავს მესამე მხარის დანამატებს ამ წესის დარღვევას."
 
 
 msgid "Open extensions preferences"
@@ -56697,8 +56697,8 @@ msgid "Uninstall Studio Light"
 msgstr "სტუდიური განათების მოშლა"
 
 
-msgid "Load and apply a Blender XML theme file"
-msgstr "ჩატვირთე და გამოიყენე Blender-ის XML თემის ფაილი"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
+msgstr "ჩატვირთე და გამოიყენე GameForge 3D Studio-ის XML თემის ფაილი"
 
 
 msgctxt "Operator"
@@ -57118,13 +57118,13 @@ msgid "I18n Save Settings"
 msgstr "I18n ანაწყობების შენახვა"
 
 
-msgid "Update i18n data (po files) in Blender source code repository"
-msgstr "განაახლე i18n მონაცემები (po ფაილები) Blender-ის წყაროს კოდის საცავში"
+msgid "Update i18n data (po files) in GameForge 3D Studio source code repository"
+msgstr "განაახლე i18n მონაცემები (po ფაილები) GameForge 3D Studio-ის წყაროს კოდის საცავში"
 
 
 msgctxt "Operator"
-msgid "Update I18n Blender Repository"
-msgstr "I18n Blender-ის საცავის განახლება"
+msgid "Update I18n GameForge 3D Studio Repository"
+msgstr "I18n GameForge 3D Studio-ის საცავის განახლება"
 
 
 msgid "Init settings for i18n files update operators"
@@ -58851,8 +58851,8 @@ msgid "Debug Channel List"
 msgstr "ხარვეზების აღმოსაფხვრელი არხების სია"
 
 
-msgid "Log the channel list info in the terminal. This operator is only available in debug builds of Blender"
-msgstr "შეიყვანე არხების სიის ინფორმაციის ჩანაწერი ტერმინალში. ეს ოპერატორი ხელმისაწვდომია მხოლოდ Blender-ის ხარვეზების აღმოსაფხვრელ კონფიგურაციებში"
+msgid "Log the channel list info in the terminal. This operator is only available in debug builds of GameForge 3D Studio"
+msgstr "შეიყვანე არხების სიის ინფორმაციის ჩანაწერი ტერმინალში. ეს ოპერატორი ხელმისაწვდომია მხოლოდ GameForge 3D Studio-ის ხარვეზების აღმოსაფხვრელ კონფიგურაციებში"
 
 
 msgctxt "Operator"
@@ -59845,8 +59845,8 @@ msgid "Upgrade the metarig from bone layers to bone collections"
 msgstr "მოახდინე მეტარიგის აფგრეიდი ძვალთა შრეებიდან ძვალთა კოლექციებზე"
 
 
-msgid "Set the color palette to match Blender's active theme for selected and active bones"
-msgstr "დააყენე ფერთა პალიტრა ისე, რომ მონიშნული და აქტიური ძვლების შემთხვევაში Blender-ის აქტიურ თემას ემთხვეოდეს"
+msgid "Set the color palette to match GameForge 3D Studio's active theme for selected and active bones"
+msgstr "დააყენე ფერთა პალიტრა ისე, რომ მონიშნული და აქტიური ძვლების შემთხვევაში GameForge 3D Studio-ის აქტიურ თემას ემთხვეოდეს"
 
 
 msgid ""
@@ -63515,8 +63515,8 @@ msgid "Apply Scalings"
 msgstr "მასშტაბირებების გამოყენება"
 
 
-msgid "How to apply custom and units scalings in generated FBX file (Blender uses FBX scale to detect units on import, but many other applications do not handle the same way)"
-msgstr "როგორ იქნას მორგებული და ერთეულების მასშტაბირებები გამოყენებული წარმოქმნილ FBX ფაილში (იმპორტირებისას ერთეულების აღმოსაჩენად Blender-ი იყენებს FBX მასშტაბს, მაგრამ ბევრი სხვა აპლიკაცია სხვანაირად მუშაობს)"
+msgid "How to apply custom and units scalings in generated FBX file (GameForge 3D Studio uses FBX scale to detect units on import, but many other applications do not handle the same way)"
+msgstr "როგორ იქნას მორგებული და ერთეულების მასშტაბირებები გამოყენებული წარმოქმნილ FBX ფაილში (იმპორტირებისას ერთეულების აღმოსაჩენად GameForge 3D Studio-ი იყენებს FBX მასშტაბს, მაგრამ ბევრი სხვა აპლიკაცია სხვანაირად მუშაობს)"
 
 
 msgid "All Local"
@@ -63555,24 +63555,24 @@ msgid "Apply Unit"
 msgstr "ერთეულის გამოყენება"
 
 
-msgid "Take into account current Blender units settings (if unset, raw Blender Units values are used as-is)"
-msgstr "მხედველობაში მიიღე Blender-ის ერთეულების მიმდინარე ანაწყობები (თუ დაუყენებელია, Blender-ის ერთეულების დაუმუშავებელი მნიშვნელობები გამოიყენება, როგორც არის)"
+msgid "Take into account current GameForge 3D Studio units settings (if unset, raw GameForge 3D Studio Units values are used as-is)"
+msgstr "მხედველობაში მიიღე GameForge 3D Studio-ის ერთეულების მიმდინარე ანაწყობები (თუ დაუყენებელია, GameForge 3D Studio-ის ერთეულების დაუმუშავებელი მნიშვნელობები გამოიყენება, როგორც არის)"
 
 
 msgid "Armature FBXNode Type"
 msgstr "არმატურის FBXNode ტიპი"
 
 
-msgid "FBX type of node (object) used to represent Blender's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into Blender...)"
-msgstr "კვანძის (ობიექტის) FBX ტიპი გამოყენებული Blender-ის არმატურების წარმოსადგენად (თუ სხვა აპლიკაციასთან პრობლემები არ გექმნება, ნულოვანი ტიპი გამოიყენე, რადგან სხვა ვარიანტები შესაძლოა, Blender-ში უნაკლოდ არ დაიმპორტდეს...)"
+msgid "FBX type of node (object) used to represent GameForge 3D Studio's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into GameForge 3D Studio...)"
+msgstr "კვანძის (ობიექტის) FBX ტიპი გამოყენებული GameForge 3D Studio-ის არმატურების წარმოსადგენად (თუ სხვა აპლიკაციასთან პრობლემები არ გექმნება, ნულოვანი ტიპი გამოიყენე, რადგან სხვა ვარიანტები შესაძლოა, GameForge 3D Studio-ში უნაკლოდ არ დაიმპორტდეს...)"
 
 
 msgid "Null"
 msgstr "ნული"
 
 
-msgid "'Null' FBX node, similar to Blender's Empty (default)"
-msgstr "'ნულოვანი' FBX კვანძი, Blender-ის ცარიელის მსგავსი (ნაგულისხმები)"
+msgid "'Null' FBX node, similar to GameForge 3D Studio's Empty (default)"
+msgstr "'ნულოვანი' FBX კვანძი, GameForge 3D Studio-ის ცარიელის მსგავსი (ნაგულისხმები)"
 
 
 msgid "'Root' FBX node, supposed to be the root of chains of bones..."
@@ -63687,8 +63687,8 @@ msgid "Apply Transform"
 msgstr "გარდაქმნის გამოყენება"
 
 
-msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
-msgstr "ჩააცხვე სივრცის გარდაქმნა ობიექტის მონაცემებში, თავიდან იცილებს ობიექტებზე არასასურველ ბრუნვებს, როცა სამიზნე სივრცე Blender-ის სივრცეს არა მიესადაგება (ფრთხილად! ექსპერიმენტალური ვარიანტია, გამოიყენე რისკის გათვალისწინებით, ცნობილია, როგორც არმატურების/ანიმაციების მიერ გაფუჭებადი)"
+msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with GameForge 3D Studio's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
+msgstr "ჩააცხვე სივრცის გარდაქმნა ობიექტის მონაცემებში, თავიდან იცილებს ობიექტებზე არასასურველ ბრუნვებს, როცა სამიზნე სივრცე GameForge 3D Studio-ის სივრცეს არა მიესადაგება (ფრთხილად! ექსპერიმენტალური ვარიანტია, გამოიყენე რისკის გათვალისწინებით, ცნობილია, როგორც არმატურების/ანიმაციების მიერ გაფუჭებადი)"
 
 
 msgid "Batch Mode"
@@ -63954,8 +63954,8 @@ msgid "Use Modifiers Render Setting"
 msgstr "მოდიფიკატორის რენდერის ანაწყობის გამოყენება"
 
 
-msgid "Use render settings when applying modifiers to mesh objects (DISABLED in Blender 2.8)"
-msgstr "მოდიფიკატორების მეშის ობიექტებზე გამოყენებისას რენდერის პარამეტრები გამოიყენე (Blender 2.8-ში გათიშულია)"
+msgid "Use render settings when applying modifiers to mesh objects (DISABLED in version 2.8)"
+msgstr "მოდიფიკატორების მეშის ობიექტებზე გამოყენებისას რენდერის პარამეტრები გამოიყენე (GameForge 3D Studio 2.8-ში გათიშულია)"
 
 
 msgid "Use Metadata"
@@ -64478,8 +64478,8 @@ msgid "Raw (Deprecated)"
 msgstr "დაუმუშავებელი (არარეკომენდირებული)"
 
 
-msgid "Blender lighting strengths with no conversion"
-msgstr "Blender-ის განათების სიძლიერეები კონვერტირების გარეშე"
+msgid "GameForge 3D Studio lighting strengths with no conversion"
+msgstr "GameForge 3D Studio-ის განათების სიძლიერეები კონვერტირების გარეშე"
 
 
 msgid "Bone Influences"
@@ -64702,8 +64702,8 @@ msgid "Export Original PBR Specular"
 msgstr "ორიგინალი PBR სპეკულარულის ექსპორტი"
 
 
-msgid "Export original glTF PBR Specular, instead of Blender Principled Shader Specular"
-msgstr "დააექსპორტე ორიგინალი glTF PBR სპეკულარობა, და არა Blender-ის პრინციპული იერფერის სპეკულარობა"
+msgid "Export original glTF PBR Specular, instead of GameForge 3D Studio Principled Shader Specular"
+msgstr "დააექსპორტე ორიგინალი glTF PBR სპეკულარობა, და არა GameForge 3D Studio-ის პრინციპული იერფერის სპეკულარობა"
 
 
 msgid "Export Animation Pointer (Experimental)"
@@ -64930,8 +64930,8 @@ msgid "Remember Export Settings"
 msgstr "ექსპორტის ანაწყობების დამახსოვრება"
 
 
-msgid "Store glTF export settings in the Blender project"
-msgstr "შეინახე glTF ექსპორტის ანაწყობები Blender-ის პროექტში"
+msgid "Store glTF export settings in the GameForge 3D Studio project"
+msgstr "შეინახე glTF ექსპორტის ანაწყობები GameForge 3D Studio-ის პროექტში"
 
 
 msgid "Package ID"
@@ -69243,8 +69243,8 @@ msgid "Definition"
 msgstr "განსაზღვრება"
 
 
-msgid "Number of pixels per inch or Blender Unit"
-msgstr "პიქსელების რაოდენობა დუიმზე, ან Blender-ის ერთეულზე"
+msgid "Number of pixels per inch or GameForge 3D Studio Unit"
+msgstr "პიქსელების რაოდენობა დუიმზე, ან GameForge 3D Studio-ის ერთეულზე"
 
 
 msgid "Filepath used for importing the file"
@@ -69267,8 +69267,8 @@ msgid "Force Reload"
 msgstr "იძულებითი ხელახალი ჩატვირთვა"
 
 
-msgid "Force reload the image if it is already opened elsewhere in Blender"
-msgstr "იძულებით გადატვირთე გამისახულება, თუ იგი უკვე გახსნილია Blender-ში სხვაგან"
+msgid "Force reload the image if it is already opened elsewhere in GameForge 3D Studio"
+msgstr "იძულებით გადატვირთე გამისახულება, თუ იგი უკვე გახსნილია GameForge 3D Studio-ში სხვაგან"
 
 
 msgid "Height of the created plane"
@@ -69359,12 +69359,12 @@ msgid "Scale based on pixels per inch"
 msgstr "მასშტაბი დუიმში პიქსელების რაოდენობის მიხედვით"
 
 
-msgid "Pixels per Blender Unit"
-msgstr "პიქსელი Blender-ის ერთეულში"
+msgid "Pixels per GameForge 3D Studio Unit"
+msgstr "პიქსელი GameForge 3D Studio-ის ერთეულში"
 
 
-msgid "Scale based on pixels per Blender Unit"
-msgstr "მასშტაბი Blender-ის ერთეულში პიქსელების რაოდენობის მიხედვით"
+msgid "Scale based on pixels per GameForge 3D Studio Unit"
+msgstr "მასშტაბი GameForge 3D Studio-ის ერთეულში პიქსელების რაოდენობის მიხედვით"
 
 
 msgctxt "Operator"
@@ -69640,8 +69640,8 @@ msgid "Save the image with another name and/or settings"
 msgstr "შეინახე გამოსახულება სხვა სახელით და/ან ანაწყობებით"
 
 
-msgid "Create a new image file without modifying the current image in Blender"
-msgstr "შექმენი ახალი გამოსახულების ფაილი Blender-ში მიმდინარე გამოსახულების მოდიფიცირების გარეშე"
+msgid "Create a new image file without modifying the current image in GameForge 3D Studio"
+msgstr "შექმენი ახალი გამოსახულების ფაილი GameForge 3D Studio-ში მიმდინარე გამოსახულების მოდიფიცირების გარეშე"
 
 
 msgid "Save As Render"
@@ -69840,8 +69840,8 @@ msgid "Scale FPS"
 msgstr "FPS-ის მასშტაბირება"
 
 
-msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a Blender frame"
-msgstr "დაამასშტაბირე კადრთა სიხშირე BVH-იდან მიმდინარე სცენებამდე, წინააღმდეგ შემთხვევაში თითოეული BVH კადრი პირდაპირ Blender-ის კადრზე გადანაწილდება"
+msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a GameForge 3D Studio frame"
+msgstr "დაამასშტაბირე კადრთა სიხშირე BVH-იდან მიმდინარე სცენებამდე, წინააღმდეგ შემთხვევაში თითოეული BVH კადრი პირდაპირ GameForge 3D Studio-ის კადრზე გადანაწილდება"
 
 
 msgid "Animation Offset"
@@ -69912,8 +69912,8 @@ msgid "Make Unique"
 msgstr "გაუნიკალურება"
 
 
-msgid "Import each FBX material as a unique Blender material"
-msgstr "დააიმპორტირე თითოეული FBX მასალა Blender-ის უნიკალურ მასალად"
+msgid "Import each FBX material as a unique GameForge 3D Studio material"
+msgstr "დააიმპორტირე თითოეული FBX მასალა GameForge 3D Studio-ის უნიკალურ მასალად"
 
 
 msgid "Reference Existing"
@@ -69956,8 +69956,8 @@ msgid "Import FBX animation"
 msgstr "დააიმპორტირე FBX ანიმაცია"
 
 
-msgid "Import custom normals, if available (otherwise Blender will recompute them)"
-msgstr "დააიმპორტირე მორგებული ნორმალები, თუ შესაძლებელია (წინააღმდეგ შემთხვევაში მათ Blender-ი გამოთვლის)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will recompute them)"
+msgstr "დააიმპორტირე მორგებული ნორმალები, თუ შესაძლებელია (წინააღმდეგ შემთხვევაში მათ GameForge 3D Studio-ი გამოთვლის)"
 
 
 msgid "Import user properties as custom properties"
@@ -70012,12 +70012,12 @@ msgid "Heuristic for placing bones. Tries to make bones pretty"
 msgstr "ევრისტიკა ძვლების განსათავსებლად. ცდილობს, ძვლები შეალამაზოს"
 
 
-msgid "Blender (best for import/export round trip)"
-msgstr "Blender (საუკეთესოა იმპორტის/ექსპორტის ორმხრივი პროცესისთვის)"
+msgid "GameForge 3D Studio (best for import/export round trip)"
+msgstr "GameForge 3D Studio (საუკეთესოა იმპორტის/ექსპორტის ორმხრივი პროცესისთვის)"
 
 
-msgid "Good for re-importing glTFs exported from Blender, and re-exporting glTFs to glTFs after Blender editing. Bone tips are placed on their local +Y axis (in glTF space)"
-msgstr "კარგია Blender-იდან დაექსპორტებული glTF-ების ხელახალი იმპორტისთვის, და glTF-ების glTFs-ებში ექსპორტისთვის Blender-ში რედაქტირების შემდეგ. ძვლის წვეტები მოთავსდებიან თავიანთ ლოკალურ +Y ღერძზე (glTF სივრცეში)"
+msgid "Good for re-importing glTFs exported from GameForge 3D Studio, and re-exporting glTFs to glTFs after GameForge 3D Studio editing. Bone tips are placed on their local +Y axis (in glTF space)"
+msgstr "კარგია GameForge 3D Studio-იდან დაექსპორტებული glTF-ების ხელახალი იმპორტისთვის, და glTF-ების glTFs-ებში ექსპორტისთვის GameForge 3D Studio-ში რედაქტირების შემდეგ. ძვლის წვეტები მოთავსდებიან თავიანთ ლოკალურ +Y ღერძზე (glTF სივრცეში)"
 
 
 msgid "Temperance (average)"
@@ -70172,8 +70172,8 @@ msgid "Update Reports Display"
 msgstr "პატაკების ასახვის განახლება"
 
 
-msgid "Update the display of reports in Blender UI (internal use)"
-msgstr "განაახლე პატაკების ასახვა Blender-ის UI-ში (შიდა გამოყენება)"
+msgid "Update the display of reports in GameForge 3D Studio UI (internal use)"
+msgstr "განაახლე პატაკების ასახვა GameForge 3D Studio-ის UI-ში (შიდა გამოყენება)"
 
 
 msgid "Change selection of all visible reports"
@@ -82436,8 +82436,8 @@ msgid "Check for Updates on Startup"
 msgstr "გაშვებისას განახლებების შემოწმება"
 
 
-msgid "Allow Blender to check for updates upon launch"
-msgstr "ნება დართე Blender-ს, გაშვებისას განახლებები შეამოწმოს"
+msgid "Allow GameForge 3D Studio to check for updates upon launch"
+msgstr "ნება დართე GameForge 3D Studio-ს, გაშვებისას განახლებები შეამოწმოს"
 
 
 msgctxt "Operator"
@@ -83813,8 +83813,8 @@ msgid "Save Screenshot"
 msgstr "ეკრანის ანაბეჭდის შენახვა"
 
 
-msgid "Capture a picture of the whole Blender window"
-msgstr "Blender-ის მთლიანი ფანჯრის სურათის გადაღება"
+msgid "Capture a picture of the whole GameForge 3D Studio window"
+msgstr "GameForge 3D Studio-ის მთლიანი ფანჯრის სურათის გადაღება"
 
 
 msgctxt "Operator"
@@ -85800,11 +85800,11 @@ msgid "Auto Detect"
 msgstr "ავტოაღმოჩენა"
 
 
-msgid "Add images as individual strips, unless their filenames match Blender's numbered sequence pattern, in which case they are grouped into a single image sequence"
+msgid "Add images as individual strips, unless their filenames match GameForge 3D Studio's numbered sequence pattern, in which case they are grouped into a single image sequence"
 msgstr "დაამატე გამოსახულებები ინდივიდუალურ ლენტებად, თუ მათი ფაილების სახელები არ ემთხვევა ბლენდერის დანომრილ თანამიმდევრობას, რა შემთხვევაშიც ისინი გამოსახულებათა ერთ თანამიმდევრობად დაჯგუფდება"
 
 
-msgid "Import all selected images as a single image sequence. The sequence of images does not have to match Blender's numbered sequence pattern, so placeholders cannot be inferred"
+msgid "Import all selected images as a single image sequence. The sequence of images does not have to match GameForge 3D Studio's numbered sequence pattern, so placeholders cannot be inferred"
 msgstr "დააიმპორტირე ყველა მონიშნული გამოსახულება ერთი თანამიმდევრობის სახით. აუცილებელი არაა, გამოსახულებათა თანამიმდევრობა ბლენდერის დანომრილი თანამიმდევრობის შაბლონს ემთხვეოდეს, ასე რომ, ლოგიკური ვარაუდით დროებითი ჩამნაცვლებლის შექმნა შეუძლებელია"
 
 
@@ -88237,8 +88237,8 @@ msgid "Eyedropper"
 msgstr "პიპეტი"
 
 
-msgid "Sample a color from the Blender window to store in a property"
-msgstr "აიღე ფერის ნიმუში Blender-ის ფანჯრიდან და შეინახე თვისებაში"
+msgid "Sample a color from the GameForge 3D Studio window to store in a property"
+msgstr "აიღე ფერის ნიმუში GameForge 3D Studio-ის ფანჯრიდან და შეინახე თვისებაში"
 
 
 msgid "Path of property to be set with the depth"
@@ -88334,8 +88334,8 @@ msgid "Grease Pencil Eyedropper"
 msgstr "გრიზ ფენსილის პიპეტი"
 
 
-msgid "Sample a color from the Blender Window and create Grease Pencil material"
-msgstr "აიღე Blender-ის ფანჯრიდან ფერის ნიმუში და შექმენი გრიზ ფენსილის მასალა"
+msgid "Sample a color from the GameForge 3D Studio Window and create Grease Pencil material"
+msgstr "აიღე GameForge 3D Studio-ის ფანჯრიდან ფერის ნიმუში და შექმენი გრიზ ფენსილის მასალა"
 
 
 msgctxt "GPencil"
@@ -90996,8 +90996,8 @@ msgid "Run as Background Job"
 msgstr "გაშვება ფონურ პროცესად"
 
 
-msgid "Enable this to run the import in the background, disable to block Blender while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
-msgstr "ეს ჩართე იმპორტის ფონურად გასაშვებად, გათიშე იმპორტის დროს Blender-ის დასაბლოკად. ეს ვარიანტი არარეკომენდირებულია; გაუშვი ეს ოპერატორი წინა პლანზე სამუშაოდ და გამოიძახე უკანა პლანზე სამუშაოდ"
+msgid "Enable this to run the import in the background, disable to block GameForge 3D Studio while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgstr "ეს ჩართე იმპორტის ფონურად გასაშვებად, გათიშე იმპორტის დროს GameForge 3D Studio-ის დასაბლოკად. ეს ვარიანტი არარეკომენდირებულია; გაუშვი ეს ოპერატორი წინა პლანზე სამუშაოდ და გამოიძახე უკანა პლანზე სამუშაოდ"
 
 
 msgid "Curves as Mesh"
@@ -91161,8 +91161,8 @@ msgid "Add cache modifiers and constraints to imported objects even if they are 
 msgstr "დაამატე ქეშის მოდიფიკატორები და ბორკილები იმპორტირებულ ობიექტებს მაშინაც კი, როცა ისინი ანიმირებული არაა, რაღა შეიძლებოდეს მათი განახლება Alembic-ის არქივის ხელახლა ჩატვირთვისას"
 
 
-msgid "Enable this to run the export in the background, disable to block Blender while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
-msgstr "ეს ჩართე ექსპორტის ფონურად გასაშვებად, გათიშე ექსპორტის დროს Blender-ის დასაბლოკად. ეს ვარიანტი არარეკომენდირებულია; გაუშვი ეს ოპერატორი წინა პლანზე სამუშაოდ და გამოიძახე უკანა პლანზე სამუშაოდ"
+msgid "Enable this to run the export in the background, disable to block GameForge 3D Studio while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgstr "ეს ჩართე ექსპორტის ფონურად გასაშვებად, გათიშე ექსპორტის დროს GameForge 3D Studio-ის დასაბლოკად. ეს ვარიანტი არარეკომენდირებულია; გაუშვი ეს ოპერატორი წინა პლანზე სამუშაოდ და გამოიძახე უკანა პლანზე სამუშაოდ"
 
 
 msgid "Is Sequence"
@@ -91570,8 +91570,8 @@ msgid "Vertex colors in the file are in linear color space"
 msgstr "წვეროთა ფერები ფაილში წრფივ ფერით სივრცეშია"
 
 
-msgid "Import custom normals, if available (otherwise Blender will compute them)"
-msgstr "დააიმპორტირე მორგებული ნორმალები, თუ ხელმისაწვდომია (წინააღმდეგ შემთხვევაში მათ Blender გამოითვლის)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will compute them)"
+msgstr "დააიმპორტირე მორგებული ნორმალები, თუ ხელმისაწვდომია (წინააღმდეგ შემთხვევაში მათ GameForge 3D Studio გამოითვლის)"
 
 
 msgid "Enums As Strings"
@@ -91991,8 +91991,8 @@ msgid "Open"
 msgstr "გახსნა"
 
 
-msgid "Open a Blender file"
-msgstr "გახსენი Blender-ის ფაილი"
+msgid "Open a GameForge 3D Studio file"
+msgstr "გახსენი GameForge 3D Studio-ის ფაილი"
 
 
 msgid "Display File Selector"
@@ -92142,8 +92142,8 @@ msgid "Collection of file paths with common ``directory`` root"
 msgstr "საერთო ``დირექტორია``-ს ძირის მქონე ფაილთა მისამართების კოლექცია"
 
 
-msgid "Show Blender files in the File Browser"
-msgstr "აჩვენე Blender-ის ფაილები ფაილების ბრაუზერში"
+msgid "Show GameForge 3D Studio files in the File Browser"
+msgstr "აჩვენე GameForge 3D Studio-ის ფაილები ფაილების ბრაუზერში"
 
 
 msgid "Show folders in the File Browser"
@@ -92317,12 +92317,12 @@ msgstr "სიდიდე მორგებული თვისების 
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Blender-ის დახურვა"
+msgid "Quit GameForge 3D Studio"
+msgstr "GameForge 3D Studio-ის დახურვა"
 
 
-msgid "Quit Blender"
-msgstr "Blender-ის დახურვა"
+msgid "Quit GameForge 3D Studio"
+msgstr "GameForge 3D Studio-ის დახურვა"
 
 
 msgctxt "Operator"
@@ -92658,20 +92658,20 @@ msgstr "გადააქციე მიმდინარე ფაილი 
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Blender-ის ფაილის შენახვა"
+msgid "Save GameForge 3D Studio File"
+msgstr "GameForge 3D Studio-ის ფაილის შენახვა"
 
 
-msgid "Save the current Blender file"
-msgstr "შეინახე Blender-ის მიმდინარე ფაილი"
+msgid "Save the current GameForge 3D Studio file"
+msgstr "შეინახე GameForge 3D Studio-ის მიმდინარე ფაილი"
 
 
-msgid "Exit Blender after saving"
-msgstr "გამოდი Blender-იდან შენახვის შემდეგ"
+msgid "Exit GameForge 3D Studio after saving"
+msgstr "გამოდი GameForge 3D Studio-იდან შენახვის შემდეგ"
 
 
-msgid "Save the current Blender file with a numerically incremented name that does not overwrite any existing files"
-msgstr "შეინახე Blender-ის ამჟამინდელი ფაილი რიცხვობრივად ინკრემენტირებული სახელით, რომელიც არცერთ არსებულ ფაილს არ გადაეწერება"
+msgid "Save the current GameForge 3D Studio file with a numerically incremented name that does not overwrite any existing files"
+msgstr "შეინახე GameForge 3D Studio-ის ამჟამინდელი ფაილი რიცხვობრივად ინკრემენტირებული სახელით, რომელიც არცერთ არსებულ ფაილს არ გადაეწერება"
 
 
 msgctxt "Operator"
@@ -92854,12 +92854,12 @@ msgstr "გამოშვების შესახებ ინფორმ�
 
 
 msgctxt "Operator"
-msgid "About Blender"
-msgstr "Blender-ის შესახებ"
+msgid "About GameForge 3D Studio"
+msgstr "GameForge 3D Studio-ის შესახებ"
 
 
-msgid "Open a window with information about Blender"
-msgstr "Blender-ის შესახებ ინფორმაციის მქონე ფანჯრის გახსნა"
+msgid "Open a window with information about GameForge 3D Studio"
+msgstr "GameForge 3D Studio-ის შესახებ ინფორმაციის მქონე ფანჯრის გახსნა"
 
 
 msgctxt "Operator"
@@ -92973,12 +92973,12 @@ msgid "Preserve UTF-8 encoded characters when writing USD prim and property name
 msgstr "შეინარჩუნე UTF-8-ით დაშიფრული სიმბოლოები USD პრიმიტივებისა და თვისებების სახელების ჩაწერისას (საჭიროებს პროგრამას, რომელიც ნაწარმი ფაილების გახსნისას იყენებს USD 24.03-ს, ან უფრო მაღალს)"
 
 
-msgid "Blender Names"
-msgstr "Blender-ის სახელები"
+msgid "GameForge 3D Studio Names"
+msgstr "GameForge 3D Studio-ის სახელები"
 
 
-msgid "Author USD custom attributes containing the original Blender object and object data names"
-msgstr "შექმენი USD მორგებული ატრიბუტები, რომლებიც Blender-ის ორიგინალი ობიექტისა და ობიექტის მონაცემთა სახელებს შეიცავს"
+msgid "Author USD custom attributes containing the original GameForge 3D Studio object and object data names"
+msgstr "შექმენი USD მორგებული ატრიბუტები, რომლებიც GameForge 3D Studio-ის ორიგინალი ობიექტისა და ობიექტის მონაცემთა სახელებს შეიცავს"
 
 
 msgid "Convert Orientation"
@@ -93062,7 +93062,7 @@ msgstr "სახელთა სივრცე"
 
 
 msgid "If set, add the given namespace as a prefix to exported custom property names. This only applies to property names that do not already have a prefix (e.g., it would apply to name 'bar' but not 'foo:bar') and does not apply to blender object and data names which are always exported in the 'userProperties:blender' namespace"
-msgstr "თუ დაყენებულია, დაამატე მოცემული სახელთა სივრცე ექსპორტირებულ მორგებულ თვისებათა სახელებს წინსართად. ეს მხოლოდ იმ თვისებათა სახელებს ეხება, რომლებსაც წინსართუ ჯერ არ გააჩნია (მაგ.: მიესადაგება სახელს 'bar', მაგრამ არა სახელს 'foo:bar') და არ ეხება Blender-ის ობიექტსა და მონაცემების სახელებს, რომლებიც ყოველთვის ექსპორტირდება 'userProperties:blender' სახელთა სივრცეში"
+msgstr "თუ დაყენებულია, დაამატე მოცემული სახელთა სივრცე ექსპორტირებულ მორგებულ თვისებათა სახელებს წინსართად. ეს მხოლოდ იმ თვისებათა სახელებს ეხება, რომლებსაც წინსართუ ჯერ არ გააჩნია (მაგ.: მიესადაგება სახელს 'bar', მაგრამ არა სახელს 'foo:bar') და არ ეხება GameForge 3D Studio-ის ობიექტსა და მონაცემების სახელებს, რომლებიც ყოველთვის ექსპორტირდება 'userProperties:blender' სახელთა სივრცეში"
 
 
 msgid "Use Settings for"
@@ -93490,8 +93490,8 @@ msgid "Allow USD primitives to merge with their Xform parent if they are the onl
 msgstr "დაუშვი USD პრიმიტივების შერწყმა თავიანთ Xform-ის მშობელთან, თუ ისინი იერარქიაში ერთადერთ შვილობილს წარმოადგენენ"
 
 
-msgid "Import each USD material as a unique Blender material"
-msgstr "დააიმპორტირე თითოეული USD მასალა Blender-ის უნიკალურ მასალად"
+msgid "Import each USD material as a unique GameForge 3D Studio material"
+msgstr "დააიმპორტირე თითოეული USD მასალა GameForge 3D Studio-ის უნიკალურ მასალად"
 
 
 msgid "Material Purpose"
@@ -93526,24 +93526,24 @@ msgid "Import only the primitive at the given path and its descendants. Multiple
 msgstr "დააიმპორტირე მხოლოდ მოცემულ მისამართზე მყოფი პრიმიტივი და მისი შთამომავლები. მძიმეებით, ან წერტილმძიმეებით გამიჯნულ სიაში შეიძლება, მრავალი მისამართი იყოს განსაზღვრული"
 
 
-msgid "Behavior when importing USD attributes as Blender custom properties"
-msgstr "ქცევა USD ატრიბუტების Blender-ის მორგებულ თვისებებად დაიმპორტებისას"
+msgid "Behavior when importing USD attributes as GameForge 3D Studio custom properties"
+msgstr "ქცევა USD ატრიბუტების GameForge 3D Studio-ის მორგებულ თვისებებად დაიმპორტებისას"
 
 
 msgid "Do not import USD custom attributes"
 msgstr "ნუ დააიმპორტირებ USD-ს მორგებულ ატრიბუტებს"
 
 
-msgid "Import USD attributes in the 'userProperties' namespace as Blender custom properties. The namespace will be stripped from the property names"
-msgstr "დააიმპორტე USD ატრიბუტები 'userProperties' სახელთა სივრცეში Blender-ის მორგებულ თვისებებად. სახელთა სივრცეს ჩამოეცლება თვისებათა სახელები"
+msgid "Import USD attributes in the 'userProperties' namespace as GameForge 3D Studio custom properties. The namespace will be stripped from the property names"
+msgstr "დააიმპორტე USD ატრიბუტები 'userProperties' სახელთა სივრცეში GameForge 3D Studio-ის მორგებულ თვისებებად. სახელთა სივრცეს ჩამოეცლება თვისებათა სახელები"
 
 
 msgid "All Custom"
 msgstr "ყველა მორგებული"
 
 
-msgid "Import all USD custom attributes as Blender custom properties. Namespaces will be retained in the property names"
-msgstr "დააიმპორტე ყველა მორგებული USD ატრიბუტი Blender-ის მორგებულ თვისებად. სახელთა სივრცეები თვისებათა სახელებში შენარჩუნდება"
+msgid "Import all USD custom attributes as GameForge 3D Studio custom properties. Namespaces will be retained in the property names"
+msgstr "დააიმპორტე ყველა მორგებული USD ატრიბუტი GameForge 3D Studio-ის მორგებულ თვისებად. სახელთა სივრცეები თვისებათა სახელებში შენარჩუნდება"
 
 
 msgid "Mesh Attributes"
@@ -94463,8 +94463,8 @@ msgid "Set the mask layer from the UV map buttons"
 msgstr "დააყენე ნიღბის შრე UV რუკის ღილაკებიდან"
 
 
-msgid "Maximum edge length for dynamic topology sculpting (as divisor of Blender unit - higher value means smaller edge length)"
-msgstr "წიბოს მაქსიმალური სიგრძე დინამიკური ტოპოლოგიის ძერწვისთვის (როგორც Blender-ის ერთეულისგამყოფი - უფრო დიდი მნიშვნელობა ნიშნავს წიბოს ნაკლებ სიგრძეს)"
+msgid "Maximum edge length for dynamic topology sculpting (as divisor of GameForge 3D Studio unit - higher value means smaller edge length)"
+msgstr "წიბოს მაქსიმალური სიგრძე დინამიკური ტოპოლოგიის ძერწვისთვის (როგორც GameForge 3D Studio-ის ერთეულისგამყოფი - უფრო დიდი მნიშვნელობა ნიშნავს წიბოს ნაკლებ სიგრძეს)"
 
 
 msgid "Detail Percentage"
@@ -97781,8 +97781,8 @@ msgid "Edit Methods"
 msgstr "რედაქტირების მეთოდები"
 
 
-msgid "Settings for interacting with Blender data"
-msgstr "ანაწყობები Blender-ის მონაცემებთან ურთიერთქმედებისთვის"
+msgid "Settings for interacting with GameForge 3D Studio data"
+msgstr "ანაწყობები GameForge 3D Studio-ის მონაცემებთან ურთიერთქმედებისთვის"
 
 
 msgid "Settings for features that are still early in their development stage"
@@ -97849,8 +97849,8 @@ msgid "Sort the recently searched items at the top"
 msgstr "დაალაგე ახლახანს მოძიებული საგნები ზემოთ"
 
 
-msgid "Version of Blender the userpref.blend was saved with"
-msgstr "Blender-ის ვერსია, რომლითაც userpref.blend იქნა შენახული"
+msgid "Version of GameForge 3D Studio the userpref.blend was saved with"
+msgstr "GameForge 3D Studio-ის ვერსია, რომლითაც userpref.blend იქნა შენახული"
 
 
 msgid "View & Controls"
@@ -98374,8 +98374,8 @@ msgid "All Linked Data Direct"
 msgstr "ყველა დაკავშირებული მონაცემი გაპირდაპირდეს"
 
 
-msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (Blender studio pipeline tool)"
-msgstr "აიძულებს ყველა ბმულით დაკავშირებულ მონაცემს, პირდაპირ დაკავშირებულად ჩაითვალოს. გადაჭრის შემოვლითი გზაა მიმდინარე პრობლემებისთვის/შეზღუდვებისთვის BAT-ში (Blender studio pipeline tool - Blender-ის სტუდიური ფაიფლაინის ხელსაწყო)"
+msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (GameForge 3D Studio studio pipeline tool)"
+msgstr "აიძულებს ყველა ბმულით დაკავშირებულ მონაცემს, პირდაპირ დაკავშირებულად ჩაითვალოს. გადაჭრის შემოვლითი გზაა მიმდინარე პრობლემებისთვის/შეზღუდვებისთვის BAT-ში (GameForge 3D Studio studio pipeline tool - GameForge 3D Studio-ის სტუდიური ფაიფლაინის ხელსაწყო)"
 
 
 msgid "No Asset Indexing"
@@ -98474,8 +98474,8 @@ msgid "Write Legacy Blend File Format"
 msgstr "ფაილის ძველებური Blend ფორმატის ჩაწერა"
 
 
-msgid "Use file format used before Blender 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
-msgstr "გამოიყენე Blender 5.0-მდე გამოყენებული ფაილის ფორმატი. ეს ფორმატი უფრო შეზღუდულია, მაგრამ შეიძლება, უკეთესად ეთავსებოდეს ხელსაწყოებს, რომლებსაც ახალი ფორმატის მხადარჭერა ჯერ არ გააჩნიათ"
+msgid "Use file format used before version 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
+msgstr "გამოიყენე GameForge 3D Studio 5.0-მდე გამოყენებული ფაილის ფორმატი. ეს ფორმატი უფრო შეზღუდულია, მაგრამ შეიძლება, უკეთესად ეთავსებოდეს ხელსაწყოებს, რომლებსაც ახალი ფორმატის მხადარჭერა ჯერ არ გააჩნიათ"
 
 
 msgid "Index of the extensions repository being edited in the Preferences UI"
@@ -99068,8 +99068,8 @@ msgid "Max Threshold"
 msgstr "მაქს. მიჯნა"
 
 
-msgid "Raw input pressure value that is interpreted as 100% by Blender"
-msgstr "შემავალი ზეწოლის მნიშვნელობა, რომელიც 100%-ად ინტერპრეტირდება Blender-ის მიერ"
+msgid "Raw input pressure value that is interpreted as 100% by GameForge 3D Studio"
+msgstr "შემავალი ზეწოლის მნიშვნელობა, რომელიც 100%-ად ინტერპრეტირდება GameForge 3D Studio-ის მიერ"
 
 
 msgid "Show Tablet Debug Values"
@@ -99084,8 +99084,8 @@ msgid "Tablet API"
 msgstr "პლანშეტის API"
 
 
-msgid "Select the tablet API to use for pressure sensitivity (may require restarting Blender for changes to take effect)"
-msgstr "მონიშნე პლანშეტის API ზეწოლისადმი მგრძნობიარობისთვის გამოსაყენებლად (შეიძლება, ცვლილებების ძალაში შესასვლელად Blender-ის გადატვირთვა იყოს საჭირო)"
+msgid "Select the tablet API to use for pressure sensitivity (may require restarting GameForge 3D Studio for changes to take effect)"
+msgstr "მონიშნე პლანშეტის API ზეწოლისადმი მგრძნობიარობისთვის გამოსაყენებლად (შეიძლება, ცვლილებების ძალაში შესასვლელად GameForge 3D Studio-ის გადატვირთვა იყოს საჭირო)"
 
 
 msgid "Automatically choose Wintab or Windows Ink depending on the device"
@@ -99532,8 +99532,8 @@ msgid "GPU Backend"
 msgstr "GPU ბექენდი"
 
 
-msgid "GPU backend to use (requires restarting Blender for changes to take effect)"
-msgstr "გამოსაყენებელი GPU ბექენდი (ცვლილებების ძალაში შესასვლელად Blender-ის გადატვირთვას საჭიროებს)"
+msgid "GPU backend to use (requires restarting GameForge 3D Studio for changes to take effect)"
+msgstr "გამოსაყენებელი GPU ბექენდი (ცვლილებების ძალაში შესასვლელად GameForge 3D Studio-ის გადატვირთვას საჭიროებს)"
 
 
 msgid "Use OpenGL backend"
@@ -99560,20 +99560,20 @@ msgid "Device"
 msgstr "მოწყობილობა"
 
 
-msgid "Preferred device to select during detection (requires restarting Blender for changes to take effect)"
-msgstr "აღმოჩენის დროს მოსანიშნი სასურველი ხელსაწყო (ცვლილებების ძალაში შესასვლელად Blender-ის გადატვირთვას მოითხოვს)"
+msgid "Preferred device to select during detection (requires restarting GameForge 3D Studio for changes to take effect)"
+msgstr "აღმოჩენის დროს მოსანიშნი სასურველი ხელსაწყო (ცვლილებების ძალაში შესასვლელად GameForge 3D Studio-ის გადატვირთვას მოითხოვს)"
 
 
-msgid "Auto detect best GPU for running Blender"
-msgstr "ავტომატურად აღმოაჩინე საუკეთესო GPU Blender-ის გასაშვებად"
+msgid "Auto detect best GPU for running GameForge 3D Studio"
+msgstr "ავტომატურად აღმოაჩინე საუკეთესო GPU GameForge 3D Studio-ის გასაშვებად"
 
 
 msgid "Shader Compilation Workers"
 msgstr "იერფერის კომპილაციის სამუშაოები"
 
 
-msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting Blender for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
-msgstr "იერფერთა კომპილაციის ნაკადების, ან ქვეპროცესების რიცხვი, ჩაჭერილი CPU-ს მიერ მხარდაჭერილ მაქსიმალურ რაოდენობაზე (ცვლილებების ძალაში შესვლა Blender-ის გადატვირთვას საჭიროებს). დიდი რიცხვი ზრდის RAM-ის მოხმარებას და ამცირებს კომპილირების დროს. 0-ოვანი მნიშვნელობა ავტომატურ კონფიგურაციას გამოიყენებს. (მხოლოდ OpenGL)"
+msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting GameForge 3D Studio for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
+msgstr "იერფერთა კომპილაციის ნაკადების, ან ქვეპროცესების რიცხვი, ჩაჭერილი CPU-ს მიერ მხარდაჭერილ მაქსიმალურ რაოდენობაზე (ცვლილებების ძალაში შესვლა GameForge 3D Studio-ის გადატვირთვას საჭიროებს). დიდი რიცხვი ზრდის RAM-ის მოხმარებას და ამცირებს კომპილირების დროს. 0-ოვანი მნიშვნელობა ავტომატურ კონფიგურაციას გამოიყენებს. (მხოლოდ OpenGL)"
 
 
 msgid "Is Microsoft Store Install"
@@ -99581,7 +99581,7 @@ msgstr "თუა მაიკროსოფტის მაღაზიის 
 
 
 msgid "Whether this blender installation is a sandboxed Microsoft Store version"
-msgstr "არის თუ არა Blender-ის ეს ინსტალაცია Microsoft-ის მაღაზიის სენდბოქსიანი ვერსია"
+msgstr "არის თუ არა GameForge 3D Studio-ის ეს ინსტალაცია Microsoft-ის მაღაზიის სენდბოქსიანი ვერსია"
 
 
 msgid "Legacy Compute Device Type"
@@ -99636,8 +99636,8 @@ msgid "Register for All Users"
 msgstr "რეგისტრირება ყველა მომხმარებლისთვის"
 
 
-msgid "Make this Blender version open blend files for all users. Requires elevated privileges."
-msgstr "გაახსნევინე Blender-ის ამ ვერსიას blend ფაილები ყველა მომხმარებლისთვის. საჭიროებს მომატებულ პრივილეგიებს."
+msgid "Make this GameForge 3D Studio version open blend files for all users. Requires elevated privileges."
+msgstr "გაახსნევინე GameForge 3D Studio-ის ამ ვერსიას blend ფაილები ყველა მომხმარებლისთვის. საჭიროებს მომატებულ პრივილეგიებს."
 
 
 msgid "Maximum number of lines to store for the console buffer"
@@ -99668,8 +99668,8 @@ msgid "Shader Compilation Method"
 msgstr "იერფერის კომპილირების მეთოდი"
 
 
-msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting Blender for changes to take effect. (OpenGL only)"
-msgstr "იერფერების პარალელური კომპილირებისთვის გამოყენებული კომპილაციის მეთოდი. ქვეპროცესი ბევრად მეტ RAM-ს მოითხოვს თითოეული სამუშაოსთვის, მაგრამ შეიძლება, სწრაფად დააკომპილიროს იერფერები ზოგიერთ სისტემაზე. ცვლილებების ძალაში შესვლისთვის საჭიროა Blender-ის გადატვირთვა. (მხოლოდ OpenGL)"
+msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting GameForge 3D Studio for changes to take effect. (OpenGL only)"
+msgstr "იერფერების პარალელური კომპილირებისთვის გამოყენებული კომპილაციის მეთოდი. ქვეპროცესი ბევრად მეტ RAM-ს მოითხოვს თითოეული სამუშაოსთვის, მაგრამ შეიძლება, სწრაფად დააკომპილიროს იერფერები ზოგიერთ სისტემაზე. ცვლილებების ძალაში შესვლისთვის საჭიროა GameForge 3D Studio-ის გადატვირთვა. (მხოლოდ OpenGL)"
 
 
 msgid "Thread"
@@ -99724,16 +99724,16 @@ msgid "UI Line Width"
 msgstr "UI-ის ხაზის სისქე"
 
 
-msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and Blender UI scale"
-msgstr "შემოთავაზებული ხაზის სისქე და წერტილის ზომა პიქსელებში, დანამატებისთვის, რომლებიც მორგებული მომხმარებლის ინტერფეისის ელემენტებს ასახავენ, დაფუძნებული ოპერაციული სისტემის ანაწყობებსა და Blender-ის UI-ის მასშტაბზე"
+msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and GameForge 3D Studio UI scale"
+msgstr "შემოთავაზებული ხაზის სისქე და წერტილის ზომა პიქსელებში, დანამატებისთვის, რომლებიც მორგებული მომხმარებლის ინტერფეისის ელემენტებს ასახავენ, დაფუძნებული ოპერაციული სისტემის ანაწყობებსა და GameForge 3D Studio-ის UI-ის მასშტაბზე"
 
 
 msgid "UI Scale"
 msgstr "UI მასშტაბი"
 
 
-msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and Blender display scale."
-msgstr "ზომის მამრავლი, რომელიც მორგებული სამომხმარებლო ინტერფეისის ელემენტების გამოსახვისასაა გამოსაყენებელი, რათა სხვადასხვა DPI-ის მქონე ეკრანზე სწორად მასშტაბირდნენ. ეს მნიშვნელობა დაფუძნებულია ოპერაციული სისტემის DPI ანაწყობებსა და Blender-ის დისპლეის მასშტაბზე."
+msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and GameForge 3D Studio display scale."
+msgstr "ზომის მამრავლი, რომელიც მორგებული სამომხმარებლო ინტერფეისის ელემენტების გამოსახვისასაა გამოსაყენებელი, რათა სხვადასხვა DPI-ის მქონე ეკრანზე სწორად მასშტაბირდნენ. ეს მნიშვნელობა დაფუძნებულია ოპერაციული სისტემის DPI ანაწყობებსა და GameForge 3D Studio-ის დისპლეის მასშტაბზე."
 
 
 msgid "Edit Mode Smooth Wires"
@@ -100644,8 +100644,8 @@ msgid "Show Memory"
 msgstr "მეხსიერების ჩვენება"
 
 
-msgid "Show Blender memory usage"
-msgstr "აჩვენე Blender-ის მიერ მეხსიერების გამოყენება"
+msgid "Show GameForge 3D Studio memory usage"
+msgstr "აჩვენე GameForge 3D Studio-ის მიერ მეხსიერების გამოყენება"
 
 
 msgid "Show Scene Duration"
@@ -100668,8 +100668,8 @@ msgid "Show Version"
 msgstr "ვერსიის ჩვენება"
 
 
-msgid "Show Blender version string"
-msgstr "აჩვენე Blender-ის ვერსიის სტრიქონი"
+msgid "Show GameForge 3D Studio version string"
+msgstr "აჩვენე GameForge 3D Studio-ის ვერსიის სტრიქონი"
 
 
 msgid "Show VRAM"
@@ -101020,16 +101020,16 @@ msgid "Deprecated Removal Version"
 msgstr "არარეკომენდირებულის მომცილებელი ვერსია"
 
 
-msgid "The Blender version this is expected to be removed"
-msgstr "Blender-ის ვერსია, რომლიდანაც ეს ამოღებული უნდა იყოს"
+msgid "The GameForge 3D Studio version this is expected to be removed"
+msgstr "GameForge 3D Studio-ის ვერსია, რომლიდანაც ეს ამოღებული უნდა იყოს"
 
 
 msgid "Deprecated Version"
 msgstr "არრეკომენდირების ვერსია"
 
 
-msgid "The Blender version this was deprecated"
-msgstr "Blender-ის ვერსია, რომელშიც ეს არარეკომენდირებულად იქცა"
+msgid "The GameForge 3D Studio version this was deprecated"
+msgstr "GameForge 3D Studio-ის ვერსია, რომელშიც ეს არარეკომენდირებულად იქცა"
 
 
 msgid "Description of the property for tooltips"
@@ -103255,12 +103255,12 @@ msgid "Path to the relevant po file in the work repository"
 msgstr "შესაბამისი po ფაილის მისამართი სამუშაო საცავში"
 
 
-msgid "PO Blender File Path"
-msgstr "PO Blender-ის ფაილის მისამართი"
+msgid "PO GameForge 3D Studio File Path"
+msgstr "PO GameForge 3D Studio-ის ფაილის მისამართი"
 
 
-msgid "Path to the relevant po file in Blender's source repository"
-msgstr "შესაბამისი po ფაილის მისამართი Blender-ის წყაროს საცავში"
+msgid "Path to the relevant po file in GameForge 3D Studio's source repository"
+msgstr "შესაბამისი po ფაილის მისამართი GameForge 3D Studio-ის წყაროს საცავში"
 
 
 msgid "Language ID"
@@ -106040,16 +106040,16 @@ msgid "Which implementation of spring to use"
 msgstr "ზამბარის რომელი იმპლემენტაცია იქნას გამოყენებული"
 
 
-msgid "Blender 2.7"
-msgstr "Blender 2.7"
+msgid "Version 2.7"
+msgstr "GameForge 3D Studio 2.7"
 
 
-msgid "Spring implementation used in Blender 2.7. Damping is capped at 1.0"
-msgstr "ზამბარის იმპლემენტაცია გამოყენებული Blender 2.7-ში. დემპფირება ჩერდება 1.0-ზე"
+msgid "Spring implementation used in version 2.7. Damping is capped at 1.0"
+msgstr "ზამბარის იმპლემენტაცია გამოყენებული GameForge 3D Studio 2.7-ში. დემპფირება ჩერდება 1.0-ზე"
 
 
-msgid "Blender 2.8"
-msgstr "Blender 2.8"
+msgid "Version 2.8"
+msgstr "GameForge 3D Studio 2.8"
 
 
 msgid "New implementation available since 2.8"
@@ -107104,8 +107104,8 @@ msgid "Export Method"
 msgstr "ექსპორტის მეთოდი"
 
 
-msgid "How to export the Blender scene to the Hydra render engine"
-msgstr "როგორ დაექსპორტირდეს Blender-ის სცენა Hydra სარენდერო ძრავაში"
+msgid "How to export the GameForge 3D Studio scene to the Hydra render engine"
+msgstr "როგორ დაექსპორტირდეს GameForge 3D Studio-ის სცენა Hydra სარენდერო ძრავაში"
 
 
 msgid "Fast interactive editing through native Hydra integration"
@@ -109630,8 +109630,8 @@ msgid "Display data belonging to the Video Sequencer"
 msgstr "ასახე მონაცემები, რომლებიც ვიდეო სეკვენსერს ეკუთვნის"
 
 
-msgid "Blender File"
-msgstr "Blender-ის ფაილი"
+msgid "GameForge 3D Studio File"
+msgstr "GameForge 3D Studio-ის ფაილი"
 
 
 msgid "Display data of current file and linked libraries"
@@ -109642,8 +109642,8 @@ msgid "Data API"
 msgstr "მონაცემების API"
 
 
-msgid "Display low level Blender data and its properties"
-msgstr "ასახე Blender-ის დაბალი დონის მონაცემები და მათი თვისებები"
+msgid "Display low level GameForge 3D Studio data and its properties"
+msgstr "ასახე GameForge 3D Studio-ის დაბალი დონის მონაცემები და მათი თვისებები"
 
 
 msgid "Library Overrides"
@@ -109871,8 +109871,8 @@ msgid "Space Preferences"
 msgstr "სასურველი პარამეტრების სივრცე"
 
 
-msgid "Blender preferences space data"
-msgstr "Blender-ის სასურველი პარამეტრების სივრცის მონაცემები"
+msgid "GameForge 3D Studio preferences space data"
+msgstr "GameForge 3D Studio-ის სასურველი პარამეტრების სივრცის მონაცემები"
 
 
 msgid "Search term for filtering in the UI"
@@ -114588,8 +114588,8 @@ msgid "Theme Preferences"
 msgstr "თემის სასურველი პარამეტრები"
 
 
-msgid "Theme settings for the Blender Preferences"
-msgstr "თემის ანაწყობები Blender-ის უპირატესი პარამეტრებისთვის"
+msgid "Theme settings for the GameForge 3D Studio Preferences"
+msgstr "თემის ანაწყობები GameForge 3D Studio-ის უპირატესი პარამეტრებისთვის"
 
 
 msgid "Search Match"
@@ -116662,8 +116662,8 @@ msgid "Unit Scale"
 msgstr "ერთეულთა მასშტაბი"
 
 
-msgid "Scale to use when converting between Blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
-msgstr "Blender-ის ერთეულებსა და განზომილებებს შორის კონვერტირებისას გამოსაყენებელი მასშტაბი. მიკროსკოპულ, ან ასტრონომიულ მასშტაბებში მუშაობისას შეიძლება ერთეულის მცირე, ან დიდი მასშტაბის გამოყენება რიცხვითი სიზუსტის პრობლემების თავიდან ასაცილებლად"
+msgid "Scale to use when converting between GameForge 3D Studio units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
+msgstr "GameForge 3D Studio-ის ერთეულებსა და განზომილებებს შორის კონვერტირებისას გამოსაყენებელი მასშტაბი. მიკროსკოპულ, ან ასტრონომიულ მასშტაბებში მუშაობისას შეიძლება ერთეულის მცირე, ან დიდი მასშტაბის გამოყენება რიცხვითი სიზუსტის პრობლემების თავიდან ასაცილებლად"
 
 
 msgid "Unit System"
@@ -122614,8 +122614,8 @@ msgid "Unlocked: {:s}"
 msgstr "განბლოკილი: {:s}"
 
 
-msgid "Warning! Before unlocking, ensure another instance of Blender is not running."
-msgstr "ფრთხილად! განბლოკვამდე დარწმუნდი, რომ Blender-ის სხვა ინსტანცია არაა გაშვებული."
+msgid "Warning! Before unlocking, ensure another instance of GameForge 3D Studio is not running."
+msgstr "ფრთხილად! განბლოკვამდე დარწმუნდი, რომ GameForge 3D Studio-ის სხვა ინსტანცია არაა გაშვებული."
 
 
 msgid "Force unlocking may be necessary in the case of a crash or power failure,"
@@ -122743,8 +122743,8 @@ msgid "Manifest validation failed: {:s}"
 msgstr "ჩვენების ვალიდაცია წარუმატებელად დასრულდა: {:s}"
 
 
-msgid "Online access required to install or update. Launch Blender without --offline-mode"
-msgstr "დასაინსტალირებლად, ან განსაახლებლად საჭიროა ონლაინ წვდომა. გაუშვი Blender --ოფლაინ-რეჟიმის გარეშე"
+msgid "Online access required to install or update. Launch GameForge 3D Studio without --offline-mode"
+msgstr "დასაინსტალირებლად, ან განსაახლებლად საჭიროა ონლაინ წვდომა. გაუშვი GameForge 3D Studio --ოფლაინ-რეჟიმის გარეშე"
 
 
 msgid "Online access required to install or update. Enable online access in System preferences"
@@ -122755,16 +122755,16 @@ msgid "Add-on \"{:s}\" is already installed!"
 msgstr "დანამატი \"{:s}\" უკვე დაინსტალირებულია!"
 
 
-msgid "Blender was launched in offline mode, which cannot be changed at runtime"
-msgstr "Blender-ი ოფლაინ რეჟიმში გაეშვა, რაც შესრულებისას ვერ შეიცვლება"
+msgid "GameForge 3D Studio was launched in offline mode, which cannot be changed at runtime"
+msgstr "GameForge 3D Studio-ი ოფლაინ რეჟიმში გაეშვა, რაც შესრულებისას ვერ შეიცვლება"
 
 
 msgid "Online access required to install or update."
 msgstr "განახლების დასაინსტალირებლად საჭიროა ონლაინ წვდომა."
 
 
-msgid "Launch Blender without --offline-mode"
-msgstr "გაუშვი Blender --ოფლაინ-რეჟიმის გარეშე"
+msgid "Launch GameForge 3D Studio without --offline-mode"
+msgstr "გაუშვი GameForge 3D Studio --ოფლაინ-რეჟიმის გარეშე"
 
 
 msgid "Please enable Online Access from the System settings."
@@ -122859,8 +122859,8 @@ msgid "Missing Built-in Add-ons"
 msgstr "დაკარგული ჩაშენებული დანამატები"
 
 
-msgid "Add-ons previously shipped with Blender are now available from extensions.blender.org."
-msgstr "უწინ Blender-თან ერთად გამოსული დანამატები ახლა extensions.blender.org-იდანაა ხელმისაწვდომი."
+msgid "Add-ons previously shipped with GameForge 3D Studio are now available from extensions.blender.org."
+msgstr "უწინ GameForge 3D Studio-თან ერთად გამოსული დანამატები ახლა extensions.blender.org-იდანაა ხელმისაწვდომი."
 
 
 msgid "Missing Add-ons"
@@ -122936,8 +122936,8 @@ msgid "Maintainer"
 msgstr "მომსახურე"
 
 
-msgid "Blender's extension repository not found!"
-msgstr "Blender-ის გაფართოებათა საცავი ვერ მოიძებნა!"
+msgid "GameForge 3D Studio's extension repository not found!"
+msgstr "GameForge 3D Studio-ის გაფართოებათა საცავი ვერ მოიძებნა!"
 
 
 msgid ":"
@@ -122970,8 +122970,8 @@ msgid "No visible tags."
 msgstr "ხილული ტეგები არაა."
 
 
-msgid "Blender's extension repository must be enabled to install extensions!"
-msgstr "გაფართოებათა დასაინსტალირებლად Blender-ის გაფართოებათა საცავი გააქტიურებული უნდა იყოს!"
+msgid "GameForge 3D Studio's extension repository must be enabled to install extensions!"
+msgstr "გაფართოებათა დასაინსტალირებლად GameForge 3D Studio-ის გაფართოებათა საცავი გააქტიურებული უნდა იყოს!"
 
 
 msgctxt "Operator"
@@ -123015,8 +123015,8 @@ msgid "Uninstall Marked"
 msgstr "აღნიშნულის დეინსტალირება"
 
 
-msgid "Blender's extension repository must be refreshed!"
-msgstr "Blender-ის გაფართოებათა საცავი უნდა განახლდეს!"
+msgid "GameForge 3D Studio's extension repository must be refreshed!"
+msgstr "GameForge 3D Studio-ის გაფართოებათა საცავი უნდა განახლდეს!"
 
 
 msgid "No permissions specified"
@@ -123246,8 +123246,8 @@ msgid "Use GPU accelerated denoising if supported, for the best performance. Pre
 msgstr "საუკეთესო მწარმოებლურობისთვის გამოიყენე GPU-ს მიერ აჩქარებული განხმაურება, თუ მხარდაჭერა აქვს. OptiX-ს OpenImageDenoise ამჯობინე"
 
 
-msgid "Blender was compiled without a viewport denoiser"
-msgstr "Blender-ი სარკმლის განმახმაურებლის გარეშე დაკომპილირდა"
+msgid "GameForge 3D Studio was compiled without a viewport denoiser"
+msgstr "GameForge 3D Studio-ი სარკმლის განმახმაურებლის გარეშე დაკომპილირდა"
 
 
 msgid "Do not use compute device"
@@ -123623,8 +123623,8 @@ msgid "Invalid context"
 msgstr "უვარგისი კონტექსტი"
 
 
-msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and Blender scene have the same frame rate"
-msgstr "BVH ფაილი არ შეიცავს კადრის ხანგრძლივობას თავის MOTION განყოფილებაში, ვარაუდით, რომ BVH-სა და Blender-ის სცენას კადრთა ერთი და იგივე სიხშირე აქვთ"
+msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and GameForge 3D Studio scene have the same frame rate"
+msgstr "BVH ფაილი არ შეიცავს კადრის ხანგრძლივობას თავის MOTION განყოფილებაში, ვარაუდით, რომ BVH-სა და GameForge 3D Studio-ის სცენას კადრთა ერთი და იგივე სიხშირე აქვთ"
 
 
 msgid "Unable to update scene frame rate, as the BVH file contains a zero frame duration in its MOTION section"
@@ -124597,8 +124597,8 @@ msgid "This feature set depends on the following feature set to work properly:"
 msgstr "მახასიათებელთა ეს ნაკრები, წესიერად რომ იმუშავოს, დამოკიდებულია შემდეგ მახასიათებელთა ნაკრებზე:"
 
 
-msgid "This feature set requires Blender {:s} or newer to work properly."
-msgstr "მახასიათებელთა ეს ნაკრები საჭიროებს Blender {:s}-ს, ან უფრო ახალს, რათა წესიერად იმუშავოს."
+msgid "This feature set requires GameForge 3D Studio {:s} or newer to work properly."
+msgstr "მახასიათებელთა ეს ნაკრები საჭიროებს GameForge 3D Studio {:s}-ს, ან უფრო ახალს, რათა წესიერად იმუშავოს."
 
 
 msgid "The feature set archive must contain one base directory"
@@ -125157,8 +125157,8 @@ msgstr "გაასუფთავე სამუშაო საცავი"
 
 
 msgctxt "Operator"
-msgid "Update Blender Repository"
-msgstr "Blender-ის საცავის განახლება"
+msgid "Update GameForge 3D Studio Repository"
+msgstr "GameForge 3D Studio-ის საცავის განახლება"
 
 
 msgctxt "Operator"
@@ -125472,8 +125472,8 @@ msgid "Unable to find any running process"
 msgstr "ვერც ერთი გაშვებული პროცესი ვერ მოიძებნა"
 
 
-msgid "Blender sub-process exited with error code {:d}"
-msgstr "Blender-ის ქვე-პროცესიდან გამოსვლა მოხდა შეცდომის კოდით {:d}"
+msgid "GameForge 3D Studio sub-process exited with error code {:d}"
+msgstr "GameForge 3D Studio-ის ქვე-პროცესიდან გამოსვლა მოხდა შეცდომის კოდით {:d}"
 
 
 msgid "Asset local to the current file, which is not saved anywhere"
@@ -125632,8 +125632,8 @@ msgid "Could not find image '{:s}'"
 msgstr "გამოსახულება '{:s}' ვერ მოიძებნა"
 
 
-msgid "Image editor could not be launched, ensure that the path in User Preferences > File Paths > Applications > Image Editor is valid, and Blender has rights to launch it"
-msgstr "გამოსახულების რედაქტორი ვერ გაეშვა, დარწმუნდი, რომ მისამართი მომხმარებლის სასურველი პარამეტრები > ფაილების მისამართები > აპლიკაციები > გამოსახულების რედაქტორში ვარგისია, და რომ Blender-ს მისი გაშვების უფლება აქვს"
+msgid "Image editor could not be launched, ensure that the path in User Preferences > File Paths > Applications > Image Editor is valid, and GameForge 3D Studio has rights to launch it"
+msgstr "გამოსახულების რედაქტორი ვერ გაეშვა, დარწმუნდი, რომ მისამართი მომხმარებლის სასურველი პარამეტრები > ფაილების მისამართები > აპლიკაციები > გამოსახულების რედაქტორში ვარგისია, და რომ GameForge 3D Studio-ს მისი გაშვების უფლება აქვს"
 
 
 msgid "Context incorrect, image not found"
@@ -126068,8 +126068,8 @@ msgid "Installing keymap failed: {:s}"
 msgstr "კლავიშრუკის ინსტალირება წარუმატებელია: {:s}"
 
 
-msgid "This script was written for Blender version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
-msgstr "ეს სკრიპტი დაწერილია Blender-ის ვერსიისთვის {:d}.{:d}.{:d} და შეიძლება, (სწორად) არ ფუნქციონირებდეს, თუმცა, ჩართულია"
+msgid "This script was written for GameForge 3D Studio version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
+msgstr "ეს სკრიპტი დაწერილია GameForge 3D Studio-ის ვერსიისთვის {:d}.{:d}.{:d} და შეიძლება, (სწორად) არ ფუნქციონირებდეს, თუმცა, ჩართულია"
 
 
 msgid "File already installed to {!r}"
@@ -126177,8 +126177,8 @@ msgid "Open..."
 msgstr "გახსნა..."
 
 
-msgid "Blender is free software"
-msgstr "Blender უფასო პროგრამაა"
+msgid "GameForge 3D Studio is free software"
+msgstr "GameForge 3D Studio უფასო პროგრამაა"
 
 
 msgid "Licensed under the GNU General Public License"
@@ -126266,8 +126266,8 @@ msgstr "რა არის ახალი"
 
 
 msgctxt "Operator"
-msgid "Donate to Blender"
-msgstr "შემოწირულობა Blender-ისთვის"
+msgid "Donate to GameForge 3D Studio"
+msgstr "შემოწირულობა GameForge 3D Studio-ისთვის"
 
 
 msgid "Running in Offline Mode"
@@ -126290,13 +126290,13 @@ msgstr "ლიცენზია"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
-msgstr "Blender-ის მაღაზია"
+msgid "GameForge 3D Studio Store"
+msgstr "GameForge 3D Studio-ის მაღაზია"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
-msgstr "Blender-ის ვებსაიტი"
+msgid "GameForge 3D Studio Website"
+msgstr "GameForge 3D Studio-ის ვებსაიტი"
 
 
 msgid "Trusted Source [Untrusted Path]"
@@ -126333,24 +126333,24 @@ msgid "Release Notes"
 msgstr "გამოშვების შენიშვნები"
 
 
-msgid "Read about what's new in this version of Blender"
-msgstr "წაიკითხე სიახლეების შესახებ Blender-ის ამ ვერსიაში"
+msgid "Read about what's new in this version of GameForge 3D Studio"
+msgstr "წაიკითხე სიახლეების შესახებ GameForge 3D Studio-ის ამ ვერსიაში"
 
 
 msgid "User Manual"
 msgstr "მომხმარებლის სახელმძღვანელო"
 
 
-msgid "The reference manual for this version of Blender"
-msgstr "ცნობარიანი სახელმძღვანელო Blender-ის ამ ვერსიისთვის"
+msgid "The reference manual for this version of GameForge 3D Studio"
+msgstr "ცნობარიანი სახელმძღვანელო GameForge 3D Studio-ის ამ ვერსიისთვის"
 
 
 msgid "Python API Reference"
 msgstr "Python API-ს ცნობარი"
 
 
-msgid "The API reference manual for this version of Blender"
-msgstr "API-ს ცნობარიანი სახელმძღვანელო Blender-ის ამ ვერსიისთვის"
+msgid "The API reference manual for this version of GameForge 3D Studio"
+msgstr "API-ს ცნობარიანი სახელმძღვანელო GameForge 3D Studio-ის ამ ვერსიისთვის"
 
 
 msgid "Development Fund"
@@ -126361,16 +126361,16 @@ msgid "The donation program to support maintenance and improvements"
 msgstr "დონაციის პროგრამა ტექნიკური მომსახურებისა და გაუმჯობესების მხარდასაჭერად"
 
 
-msgid "Blender's official web-site"
-msgstr "Blender-ის ოფიციალური ვებ-საიტი"
+msgid "GameForge 3D Studio's official web-site"
+msgstr "GameForge 3D Studio-ის ოფიციალური ვებ-საიტი"
 
 
 msgid "Credits"
 msgstr "ავტორები"
 
 
-msgid "Lists committers to Blender's source code"
-msgstr "ჩამოთვლის Blender-ის საწყის კოდში წვლილის შემომტანებს"
+msgid "Lists committers to GameForge 3D Studio's source code"
+msgstr "ჩამოთვლის GameForge 3D Studio-ის საწყის კოდში წვლილის შემომტანებს"
 
 
 msgid "Extensions Platform"
@@ -126534,8 +126534,8 @@ msgstr "უვარგისი რეგულარული გამოს�
 
 
 msgctxt "Operator"
-msgid "Import Blender {:d}.{:d} Preferences"
-msgstr "Blender {:d}.{:d}-ის სასურველი პარამეტრების იმპორტი"
+msgid "Import GameForge 3D Studio {:d}.{:d} Preferences"
+msgstr "GameForge 3D Studio {:d}.{:d}-ის სასურველი პარამეტრების იმპორტი"
 
 
 msgid "Windowing Environment: {:s}"
@@ -129436,8 +129436,8 @@ msgid "Volume Files"
 msgstr "მოცულობის ფაილები"
 
 
-msgid "Blender IDs"
-msgstr "Blender-ის ID-ები"
+msgid "GameForge 3D Studio IDs"
+msgstr "GameForge 3D Studio-ის ID-ები"
 
 
 msgctxt "Operator"
@@ -131281,8 +131281,8 @@ msgstr "მეტი..."
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Settings"
-msgstr "Blender-ის ქარხნული ანაწყობების ჩატვირთვა"
+msgid "Load Factory GameForge 3D Studio Settings"
+msgstr "GameForge 3D Studio-ის ქარხნული ანაწყობების ჩატვირთვა"
 
 
 msgctxt "Operator"
@@ -131422,8 +131422,8 @@ msgid "Video Memory"
 msgstr "ვიდეო მეხსიერება"
 
 
-msgid "Blender Version"
-msgstr "Blender-ის ვერსია"
+msgid "GameForge 3D Studio Version"
+msgstr "GameForge 3D Studio-ის ვერსია"
 
 
 msgid "Top Level"
@@ -131715,20 +131715,20 @@ msgstr "შენახვა სტუდიურ განათებად"
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Preferences"
-msgstr "Blender-ის ქარხნული სასურველი პარამეტრების ჩატვირთვა"
+msgid "Load Factory GameForge 3D Studio Preferences"
+msgstr "GameForge 3D Studio-ის ქარხნული სასურველი პარამეტრების ჩატვირთვა"
 
 
 msgid "Cycles is disabled in this build"
 msgstr "ამ კომპილაციაში Cycles გათიშულია"
 
 
-msgid "A restart of Blender is required"
-msgstr "საჭიროა Blender-ის გადატვირთვა"
+msgid "A restart of GameForge 3D Studio is required"
+msgstr "საჭიროა GameForge 3D Studio-ის გადატვირთვა"
 
 
-msgid "Open blend files with this Blender version"
-msgstr "გახსენი blend ფაილები Blender-ის ამ ვერსიით"
+msgid "Open blend files with this GameForge 3D Studio version"
+msgstr "გახსენი blend ფაილები GameForge 3D Studio-ის ამ ვერსიით"
 
 
 msgctxt "Operator"
@@ -134449,11 +134449,11 @@ msgid "This asset does not require downloading"
 msgstr "ეს აქტივი ჩამოტვირთვას არ საჭიროებს"
 
 
-msgid "Downloading assets requires Python, and this Blender is built without"
+msgid "Downloading assets requires Python, and this GameForge 3D Studio is built without"
 msgstr "აქტივთა ჩამოტვირთვა Python-ს საჭიროებს, და ბლენდერის ეს ინსტანცია მის გარეშეა კომპილირებული"
 
 
-msgid "Downloading asset previews requires Python, and this Blender is built without"
+msgid "Downloading asset previews requires Python, and this GameForge 3D Studio is built without"
 msgstr "აქტივთა გადახედვების ჩამოტვირთვა Python-ს საჭიროებს და ბლენდერის ეს ინსტანცია მის გარეშეა კომპილირებული"
 
 
@@ -134617,8 +134617,8 @@ msgid "Unable to create app-template userpref path"
 msgstr "აპლიკაციის შაბლონის userpref (მომხმარებლის სასურველი) მისამართის შექმნა შეუძლებელია"
 
 
-msgid "File written by newer Blender binary (%d.%d), expect loss of data!"
-msgstr "ფაილი ჩაწერილია Blender-ის უფრო ახალი ბინარულით (%d.%d), მოსალოდნელია მონაცემთა დაკარგვა!"
+msgid "File written by newer GameForge 3D Studio binary (%d.%d), expect loss of data!"
+msgstr "ფაილი ჩაწერილია GameForge 3D Studio-ის უფრო ახალი ბინარულით (%d.%d), მოსალოდნელია მონაცემთა დაკარგვა!"
 
 
 msgid "File could not be read, critical data corruption detected"
@@ -134641,8 +134641,8 @@ msgid "Appended Data"
 msgstr "დართული მონაცემები"
 
 
-msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current Blender"
-msgstr "დაკავშირება, ან მომაგრება ძალიან ძველი .blend ფაილის ფორმატიდან (%d.%d), ანიმაციის კონვერტირება არ მოხდება! შეიძლება, საჭირო იყოს ბიბლიოთეკის ფაილის ხელახლა შენახვა Blender-ის ახლანდელი ვერსიით"
+msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current GameForge 3D Studio"
+msgstr "დაკავშირება, ან მომაგრება ძალიან ძველი .blend ფაილის ფორმატიდან (%d.%d), ანიმაციის კონვერტირება არ მოხდება! შეიძლება, საჭირო იყოს ბიბლიოთეკის ფაილის ხელახლა შენახვა GameForge 3D Studio-ის ახლანდელი ვერსიით"
 
 
 msgid "Lib Reload: Replacing all references to old data-block '%s' by reloaded one failed, old one (%d remaining users) had to be kept and was renamed to '%s'"
@@ -135462,8 +135462,8 @@ msgid "At least 8 common tracks on both keyframes are needed for reconstruction"
 msgstr "რეკონსტრუქციისთის ორივე ბილიკს უნდა ჰქონდეს სულ ცოტა, 8 საერთო კვალი ორივე საკვანძო ფაზაზე"
 
 
-msgid "Blender is compiled without motion tracking library"
-msgstr "Blender-ი მოძრაობაზე თვალის დევნების ბიბლიოთეკის გარეშე დაკომპილირდა"
+msgid "GameForge 3D Studio is compiled without motion tracking library"
+msgstr "GameForge 3D Studio-ი მოძრაობაზე თვალის დევნების ბიბლიოთეკის გარეშე დაკომპილირდა"
 
 
 msgid "Original Mode"
@@ -135938,20 +135938,20 @@ msgid "Blend file '%s' is corrupt, unable to read"
 msgstr "Blend ფაილი '%s' დაზიანებულია, წაკითხვა შეუძლებელია"
 
 
-msgid "The file was saved by a newer version, open it with Blender %s or later"
-msgstr "ფაილი შენახულია უფრო ახალი ვერსიიდან, გახსენი Blender-ის ვერსიით %s, ან უფრო გვიანდელით"
+msgid "The file was saved by a newer version, open it with GameForge 3D Studio %s or later"
+msgstr "ფაილი შენახულია უფრო ახალი ვერსიიდან, გახსენი GameForge 3D Studio-ის ვერსიით %s, ან უფრო გვიანდელით"
 
 
-msgid "Blend file '%s' created by a Big Endian version of Blender, support for these files has been removed in Blender 5.0, use an older version of Blender to open and convert it."
-msgstr "Blend ფაილი '%s' შექმნილია Big Endian-ის Blender-ის ვერსიით, ამ ფაილების მხარდაჭერა Blender 5.0-ში გაუქმდება, Blender-ის უფრო ძველ ვერსიაში გახსენი და დააკონვერტირე."
+msgid "Blend file '%s' created by a Big Endian version of GameForge 3D Studio, support for these files has been removed in version 5.0, use an older version of GameForge 3D Studio to open and convert it."
+msgstr "Blend ფაილი '%s' შექმნილია Big Endian-ის GameForge 3D Studio-ის ვერსიით, ამ ფაილების მხარდაჭერა GameForge 3D Studio 5.0-ში გაუქმდება, GameForge 3D Studio-ის უფრო ძველ ვერსიაში გახსენი და დააკონვერტირე."
 
 
 msgid "Failed to read blend file '%s': %s"
 msgstr "blend ფაილის '%s': %s წაკითხვა ვერ მოხერხდა"
 
 
-msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of Blender"
-msgstr "blend ფაილი '%s' წაკითხული ვერ იქნა, კოლონტიტული დაუსრულებელია, შესაძლოა, Blender-ის უფრო ახალი ვერსიიდან იყოს"
+msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of GameForge 3D Studio"
+msgstr "blend ფაილი '%s' წაკითხული ვერ იქნა, კოლონტიტული დაუსრულებელია, შესაძლოა, GameForge 3D Studio-ის უფრო ახალი ვერსიიდან იყოს"
 
 
 msgid "Failed to read file '%s', not a blend file"
@@ -135966,16 +135966,16 @@ msgid "Unable to open '%s': %s"
 msgstr "'%s': %s-ის გახსნა ვერ მოხერხდა"
 
 
-msgid "Blendfile '%s' was created by a future version of Blender and contains ID names longer than currently supported. These have been truncated."
-msgstr "Blend-ფაილი '%s' შექმნილია Blender-ის მომავალ ვერსიაში და შეიცავს ID სახელებს, რომელთა მხარდაჭერაც აღარ არსებობს. ესენი შეიკვეცა."
+msgid "Blendfile '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. These have been truncated."
+msgstr "Blend-ფაილი '%s' შექმნილია GameForge 3D Studio-ის მომავალ ვერსიაში და შეიცავს ID სახელებს, რომელთა მხარდაჭერაც აღარ არსებობს. ესენი შეიკვეცა."
 
 
 msgid "Blendfile '%s' appears corrupted, it contains invalid ID names. These have been truncated."
 msgstr "როგორც ჩანს, Blend-ფაილი '%s' გაფუჭებულია, უვარგის ID სახელებს შეიცავს. ესენი შეიკვეცა."
 
 
-msgid "Library '%s' was created by a future version of Blender and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current Blender version."
-msgstr "ბიბლიოთეკა '%s' Blender-ის მომავალ ვერსიაშია შექმნილი და შეიცავს ისეთ ID სახელებს, რომელთა მხარდაჭერაც აღარ არსებობს. ამა შეიძლება, გამოიწვიოს დაკავშირებულ მონაცემთა დაკარგვა, სასურველია ამ ბიბლიოთეკის გახსნა და თავიდან შენახვა Blender-ის ამჟამინდელ ვერსიაში."
+msgid "Library '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current GameForge 3D Studio version."
+msgstr "ბიბლიოთეკა '%s' GameForge 3D Studio-ის მომავალ ვერსიაშია შექმნილი და შეიცავს ისეთ ID სახელებს, რომელთა მხარდაჭერაც აღარ არსებობს. ამა შეიძლება, გამოიწვიოს დაკავშირებულ მონაცემთა დაკარგვა, სასურველია ამ ბიბლიოთეკის გახსნა და თავიდან შენახვა GameForge 3D Studio-ის ამჟამინდელ ვერსიაში."
 
 
 msgid "Library '%s' appears corrupted, it contains invalid ID names. This may cause missing linked data."
@@ -135986,8 +135986,8 @@ msgid "GP_Palette"
 msgstr "GP_პალიტრა"
 
 
-msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in Blender 2.80 and later, removed instancing"
-msgstr "არა-ცარიელ ობიექტს '%s' კოლექციის '%s' დუბლიკაცია Blender 2.80-სა და უფრო გვიანდელ ვერსიაში აღარ შეუძლია, ინსტანციები მოცილებულია"
+msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in version 2.80 and later, removed instancing"
+msgstr "არა-ცარიელ ობიექტს '%s' კოლექციის '%s' დუბლიკაცია GameForge 3D Studio 2.80-სა და უფრო გვიანდელ ვერსიაში აღარ შეუძლია, ინსტანციები მოცილებულია"
 
 
 msgid "Hidden %d"
@@ -137259,7 +137259,7 @@ msgid "no API versions defined: {:s}"
 msgstr "API ვერსიები განსაზღვრული არაა: {:s}"
 
 
-msgid "remote does not offer an API version supported by this version of Blender"
+msgid "remote does not offer an API version supported by this version of GameForge 3D Studio"
 msgstr "დისტანციური აღნუსხვა არ იძლევა ბლენდერის ამ ვერსიის მიერ მხარდაჭერილ API-ს ვერსიას"
 
 
@@ -137279,15 +137279,15 @@ msgid "Could not read asset listing for '%s', see Info Editor for details"
 msgstr "'%s'-ისთვის აქტივთა აღნუსხვის წაკითხვა ვერ მოხერხდა, დეტალებისთვის იხ. ინფო რედაქტორი"
 
 
-msgid "could not read asset Blender versions, 'bl_versions' field not set"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions' field not set"
 msgstr "აქტივების ბლენდერის ვერსიის წაკითხვა ვერ მოხერხდა, 'bl_versions' ველი დაყენებული არაა"
 
 
-msgid "could not read asset Blender versions, 'bl_versions.min' field not set"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not set"
 msgstr "აქტივების ბლენდერის ვერსიის წაკითხვა ვერ მოხერხდა, 'bl_versions.min' ველი დაყენებული არაა"
 
 
-msgid "could not read asset Blender versions, 'bl_versions.min' field not in X.Y notation"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not in X.Y notation"
 msgstr "აქტივების ბლენდერის ვერსიის წაკითხვა ვერ მოხერხდა, 'bl_versions.min' ველი X.Y ნოტაციაში არაა"
 
 
@@ -137471,8 +137471,8 @@ msgid "Asset catalogs cannot be edited in this asset library"
 msgstr "აქტივთა კატალოგები ვერ რედაქტირდება ამ აქტივთა ბიბლიოთეკაში"
 
 
-msgid "Cannot save asset catalogs before the Blender file is saved"
-msgstr "Blender-ის ფაილის შენახვამდე აქტივთა კატალოგები ვერ შეინახება"
+msgid "Cannot save asset catalogs before the GameForge 3D Studio file is saved"
+msgstr "GameForge 3D Studio-ის ფაილის შენახვამდე აქტივთა კატალოგები ვერ შეინახება"
 
 
 msgid "No changes to be saved"
@@ -138132,8 +138132,8 @@ msgid "Drag to continue sampling, release when done"
 msgstr "გაათრიე სემპლირების გასაგრძელებლად, აუშვი, როცა დაამთავრებ"
 
 
-msgid "Press 'Enter' to sample outside of a Blender window"
-msgstr "Blender-ის ფანჯრის გარეთ ნიმუშის ასაღებად 'Enter'-ს დააჭირე"
+msgid "Press 'Enter' to sample outside of a GameForge 3D Studio window"
+msgstr "GameForge 3D Studio-ის ფანჯრის გარეთ ნიმუშის ასაღებად 'Enter'-ს დააჭირე"
 
 
 msgid "Could not resolve path '%s'"
@@ -139572,16 +139572,14 @@ msgid "Show in Info Log"
 msgstr "ჩვენება ინფოს ჟურნალში"
 
 
-msgid ""
-"File saved by newer Blender\n"
-"({}), expect loss of data"
+msgid "File saved by newer GameForge 3D Studio\n({}), expect loss of data"
 msgstr ""
-"ფაილი უფრო ახალ Blender-შია შენახული\n"
+"ფაილი უფრო ახალ GameForge 3D Studio-შია შენახული\n"
 "({}), მოსალოდნელია მონაცემების დაკარგვა"
 
 
-msgid "This file is managed by the Blender asset system and cannot be overridden"
-msgstr "ამ ფაილს მართავს Blender-ის აქტივთა სისტემა და უკუგდებული ვერ იქნება"
+msgid "This file is managed by the GameForge 3D Studio asset system and cannot be overridden"
+msgstr "ამ ფაილს მართავს GameForge 3D Studio-ის აქტივთა სისტემა და უკუგდებული ვერ იქნება"
 
 
 msgid "Displays, views or color spaces in this file were missing and have been changed"
@@ -139725,8 +139723,8 @@ msgid "No filename given"
 msgstr "ფაილის სახელი მოცემული არაა"
 
 
-msgid "Blender Data"
-msgstr "Blender-ის მონაცემები"
+msgid "GameForge 3D Studio Data"
+msgstr "GameForge 3D Studio-ის მონაცემები"
 
 
 msgid "File References"
@@ -142360,8 +142358,8 @@ msgid "Deleted %d tx files"
 msgstr "წაიშალა %d tx ფაილი"
 
 
-msgid "Blender Render"
-msgstr "Blender-ის რენდერი"
+msgid "GameForge 3D Studio Render"
+msgstr "GameForge 3D Studio-ის რენდერი"
 
 
 msgid "Failed to open window!"
@@ -142484,12 +142482,12 @@ msgid "Flip to Bottom"
 msgstr "შეტრიალება ქვევით"
 
 
-msgid "Blender Drivers Editor"
-msgstr "Blender-ის დრაივერების რედაქტორი"
+msgid "GameForge 3D Studio Drivers Editor"
+msgstr "GameForge 3D Studio-ის დრაივერების რედაქტორი"
 
 
-msgid "Blender Info Log"
-msgstr "Blender-ის ინფო ჟურნალი"
+msgid "GameForge 3D Studio Info Log"
+msgstr "GameForge 3D Studio-ის ინფო ჟურნალი"
 
 
 msgid "Show {} preferences"
@@ -143628,8 +143626,8 @@ msgstr ""
 "ამის შეცვლა მოგვიანებით \"სისტემის\" სასურველი პარამეტრებიდან შეგიძლია."
 
 
-msgid "Unreadable Blender library file:"
-msgstr "Blender-ის ბიბლიოთეკის წაუკითხვადი ფაილი:"
+msgid "Unreadable GameForge 3D Studio library file:"
+msgstr "GameForge 3D Studio-ის ბიბლიოთეკის წაუკითხვადი ფაილი:"
 
 
 msgid "Could not rename: %s"
@@ -146231,8 +146229,8 @@ msgid "Jump to Line Number"
 msgstr "გადახტომა ხაზის ნომერზე"
 
 
-msgid "File Modified Outside and Inside Blender"
-msgstr "ფაილი მოდიფიცირებულია Blender-ის გარეთ და შიგნით"
+msgid "File Modified Outside and Inside GameForge 3D Studio"
+msgstr "ფაილი მოდიფიცირებულია GameForge 3D Studio-ის გარეთ და შიგნით"
 
 
 msgid "Reload from disk (ignore local changes)"
@@ -146247,16 +146245,16 @@ msgid "Make text internal (separate copy)"
 msgstr "გახადე ტექსტი შიდა (ცალკე ასლი)"
 
 
-msgid "File Modified Outside Blender"
-msgstr "ფაილი მოდიფიცირებულია Blender-ის გარეთ"
+msgid "File Modified Outside GameForge 3D Studio"
+msgstr "ფაილი მოდიფიცირებულია GameForge 3D Studio-ის გარეთ"
 
 
 msgid "Reload from disk"
 msgstr "გადატვირთე დისკიდან"
 
 
-msgid "File Deleted Outside Blender"
-msgstr "ფაილი წაიშალა Blender-ის გარეთ"
+msgid "File Deleted Outside GameForge 3D Studio"
+msgstr "ფაილი წაიშალა GameForge 3D Studio-ის გარეთ"
 
 
 msgid "Make text internal"
@@ -147999,8 +147997,8 @@ msgid "An exception occurred invoking USD hook '%s'"
 msgstr "USD ჰუკის '%s' გამოძახებისას გამონაკლისი მოხდა"
 
 
-msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to Blender"
-msgstr "Primvar (პრიმიტიული ცვლადი) '%s' (ინტერპოლაცია %s, ტიპი %s) ვერ კონვერტირდება Blender-ში"
+msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to GameForge 3D Studio"
+msgstr "Primvar (პრიმიტიული ცვლადი) '%s' (ინტერპოლაცია %s, ტიპი %s) ვერ კონვერტირდება GameForge 3D Studio-ში"
 
 
 msgid "%s: Error: Couldn't get input socket %s for node %s"
@@ -148091,8 +148089,8 @@ msgid "%s: Mismatch in bind xforms and joint counts for skeleton %s"
 msgstr "%s: მიჯაჭვის ექსფორმებისა და სახსრების რაოდენობების დაუმთხვევლობა ჩონჩხისთვის %s"
 
 
-msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to Blender's bone representation. The skeletal animation won't be imported"
-msgstr "USD Skeleton იმპორტი: პრიმიტივ %s-ში აღმოჩენილია ძვლების მატრიცები უარყოფითი დეტერმინანტებით. ასეთი მატრიცები შეიძლება, უარყოფით მასშტაბებზე მიუთითებდეს, სავარაუდოდ, გასარკისებურების ოპერაციების გამო, და ამჟამად Blender-ის ძვლის გამოხატულებად ვერ კონვერტირდება. ჩონჩხის ანიმაცია არ იმპორტირდება"
+msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to GameForge 3D Studio's bone representation. The skeletal animation won't be imported"
+msgstr "USD Skeleton იმპორტი: პრიმიტივ %s-ში აღმოჩენილია ძვლების მატრიცები უარყოფითი დეტერმინანტებით. ასეთი მატრიცები შეიძლება, უარყოფით მასშტაბებზე მიუთითებდეს, სავარაუდოდ, გასარკისებურების ოპერაციების გამო, და ამჟამად GameForge 3D Studio-ის ძვლის გამოხატულებად ვერ კონვერტირდება. ჩონჩხის ანიმაცია არ იმპორტირდება"
 
 
 msgid "%s: Joint weights and joint indices element size mismatch for prim %s"
@@ -148135,8 +148133,8 @@ msgid "Cannot export mixed cyclic and non-cyclic curves in the same Curves objec
 msgstr "წირების ერთსა და იმავე ობიექტში შერეული ციკლური და არაციკლური წირების ექსპორტირება შეუძლებელია"
 
 
-msgid "Attribute '%s' (Blender domain %d, type %d) cannot be converted to USD"
-msgstr "ატრიბუტი '%s' (Blender-ის სამოქმედო არეალი %d, ტიპი %d) USD-დ ვერ კონვერტირდება"
+msgid "Attribute '%s' (GameForge 3D Studio domain %d, type %d) cannot be converted to USD"
+msgstr "ატრიბუტი '%s' (GameForge 3D Studio-ის სამოქმედო არეალი %d, ტიპი %d) USD-დ ვერ კონვერტირდება"
 
 
 msgid "USD does not support animating curve types. The curve type changes from %s to %s on frame %f"
@@ -149676,8 +149674,8 @@ msgid "Modifier \"%s\" is not in the strip's modifier list"
 msgstr "მოდიფიკატორი \"%s\" ლენტის მოდიფიკატორების სიაში არაა"
 
 
-msgid "Blender compiled without Audaspace support"
-msgstr "Blender კომპილირება Audaspace-ის მხარდაჭერის გარეშე მოახდინა"
+msgid "GameForge 3D Studio compiled without Audaspace support"
+msgstr "GameForge 3D Studio კომპილირება Audaspace-ის მხარდაჭერის გარეშე მოახდინა"
 
 
 msgid "StripElements.pop: cannot pop the last element"
@@ -152824,8 +152822,8 @@ msgid "Node must be run as tool"
 msgstr "კვანძი უნდა გაეშვას, როგორც ხელსაწყო"
 
 
-msgid "Disabled, Blender was compiled without OpenVDB"
-msgstr "გამორთულია, Blender-ი კომპილირებული იყო OpenVDB-ს გარეშე"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenVDB"
+msgstr "გამორთულია, GameForge 3D Studio-ი კომპილირებული იყო OpenVDB-ს გარეშე"
 
 
 msgid "Disabled, OpenVDB version is too old"
@@ -153162,8 +153160,8 @@ msgid "Bundle Items"
 msgstr "შეკვრის საგნები"
 
 
-msgid "Disabled, Blender was compiled without Bullet"
-msgstr "გათიშულია, Blender-ი დაკომპილირდა Bullet-ის გარეშე"
+msgid "Disabled, GameForge 3D Studio was compiled without Bullet"
+msgstr "გათიშულია, GameForge 3D Studio-ი დაკომპილირდა Bullet-ის გარეშე"
 
 
 msgid "Points to compute the convex hull of"
@@ -154453,24 +154451,24 @@ msgid "Path to a CSV file"
 msgstr "CSV ფაილის მისამართი"
 
 
-msgid "Disabled, Blender was compiled without OBJ I/O"
-msgstr "გამორთულია, Blender-ი კომპილირებული იყო OBJ I/O-ს გარეშე"
+msgid "Disabled, GameForge 3D Studio was compiled without OBJ I/O"
+msgstr "გამორთულია, GameForge 3D Studio-ი კომპილირებული იყო OBJ I/O-ს გარეშე"
 
 
 msgid "Path to a OBJ file"
 msgstr "OBJ ფაილის მისამართი"
 
 
-msgid "Disabled, Blender was compiled without PLY I/O"
-msgstr "გათიშულია, Blender დაკომპილირდა PLY I/O-ის გარეშე"
+msgid "Disabled, GameForge 3D Studio was compiled without PLY I/O"
+msgstr "გათიშულია, GameForge 3D Studio დაკომპილირდა PLY I/O-ის გარეშე"
 
 
 msgid "Path to a PLY file"
 msgstr "SPLY ფაილის მისამართი"
 
 
-msgid "Disabled, Blender was compiled without STL I/O"
-msgstr "გათიშულია, Blender დაკომპილირდა STL I/O-ის გარეშე"
+msgid "Disabled, GameForge 3D Studio was compiled without STL I/O"
+msgstr "გათიშულია, GameForge 3D Studio დაკომპილირდა STL I/O-ის გარეშე"
 
 
 msgid "Path to a STL file"
@@ -155201,8 +155199,8 @@ msgid "The subdivision level is too large"
 msgstr "დაყოფის დონე მეტისმეტად მაღალია"
 
 
-msgid "Disabled, Blender was compiled without OpenSubdiv"
-msgstr "გათიშულია, Blender-ი OpenSubdiv-ის გარეშე იქნა კომპილირებული"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenSubdiv"
+msgstr "გათიშულია, GameForge 3D Studio-ი OpenSubdiv-ის გარეშე იქნა კომპილირებული"
 
 
 msgid "Mesh to subdivide"
@@ -156462,8 +156460,8 @@ msgid "Pack UV Islands Field"
 msgstr "UV კუნძულების ჩარიგების ველი"
 
 
-msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in Blender"
-msgstr "გამოანგარიშება MikkTSpace ბიბლიოთეკის გამოყენებით, თავსებადია Blender-ში სხვა ადგილებში გამოყენებულ მხებებთან"
+msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in GameForge 3D Studio"
+msgstr "გამოანგარიშება MikkTSpace ბიბლიოთეკის გამოყენებით, თავსებადია GameForge 3D Studio-ში სხვა ადგილებში გამოყენებულ მხებებთან"
 
 
 msgid "Significantly faster method that approximates tangents interpolated across face corners with matching UVs. For a value actually tangential to the surface, use the cross product with the normal."
@@ -158238,8 +158236,8 @@ msgid "Input pending {}"
 msgstr "შენატანი მოლოდინში {}"
 
 
-msgid "Blender File View"
-msgstr "Blender-ის ფაილების ხედი"
+msgid "GameForge 3D Studio File View"
+msgstr "GameForge 3D Studio-ის ფაილების ხედი"
 
 
 msgid "Invalid context: \"%s\", %s"
@@ -158266,8 +158264,8 @@ msgid "Overwrite Startup File"
 msgstr "გაშვების ფაილზე გადაწერა"
 
 
-msgid "Blender will start next time as it is now."
-msgstr "შემდეგში Blender იმ მდგომარეობაში გაეშვება, რაშიც ახლაა."
+msgid "GameForge 3D Studio will start next time as it is now."
+msgstr "შემდეგში GameForge 3D Studio იმ მდგომარეობაში გაეშვება, რაშიც ახლაა."
 
 
 msgid "Template \"{}\" will start next time as it is now."
@@ -158290,8 +158288,8 @@ msgid "Load Factory \"{}\" Preferences."
 msgstr "ჩატვირთე ქარხნული \"{}\" სასურველი პარამეტრები."
 
 
-msgid "Load Factory Blender Preferences"
-msgstr "ჩატვირთე Blender-ის ქარხნული სასურველი პარამეტრები"
+msgid "Load Factory GameForge 3D Studio Preferences"
+msgstr "ჩატვირთე GameForge 3D Studio-ის ქარხნული სასურველი პარამეტრები"
 
 
 msgid "To make changes to Preferences permanent, use \"Save Preferences\""
@@ -158390,20 +158388,20 @@ msgid "Unable to Load File"
 msgstr "ფაილის ჩატვირთვა შეუძლებელია"
 
 
-msgid "The file is not a valid Blender file."
-msgstr "ეს ფაილი Blender-ის ვარგისი ფაილი არაა."
+msgid "The file is not a valid GameForge 3D Studio file."
+msgstr "ეს ფაილი GameForge 3D Studio-ის ვარგისი ფაილი არაა."
 
 
-msgid "This file was saved by a newer version of Blender (%s)."
-msgstr "ეს ფაილი შენახულია Blender-ის უფრო ახალ ვერსიაში (%s)."
+msgid "This file was saved by a newer version of GameForge 3D Studio (%s)."
+msgstr "ეს ფაილი შენახულია GameForge 3D Studio-ის უფრო ახალ ვერსიაში (%s)."
 
 
-msgid "Saving it with this Blender (%s) may cause loss of data."
-msgstr "Blender-ის ამ ვერსიით (%s) შენახვამ შესაძლოა, მონაცემთა დაკარგვა გამოიწვიოს."
+msgid "Saving it with this GameForge 3D Studio (%s) may cause loss of data."
+msgstr "GameForge 3D Studio-ის ამ ვერსიით (%s) შენახვამ შესაძლოა, მონაცემთა დაკარგვა გამოიწვიოს."
 
 
-msgid "This file is managed by the Blender asset system. It can only be"
-msgstr "ამ ფაილს Blender-ის აქტივთა სისტემა მართავს. შესაძლებელია მხოლოდ მისი"
+msgid "This file is managed by the GameForge 3D Studio asset system. It can only be"
+msgstr "ამ ფაილს GameForge 3D Studio-ის აქტივთა სისტემა მართავს. შესაძლებელია მხოლოდ მისი"
 
 
 msgid "saved as a new, regular file."
@@ -158422,12 +158420,12 @@ msgid "Cannot overwrite asset system files. Save as new file"
 msgstr "აქტივთა სისტემის ფაილებზე ვერ გადაეწერება. შეინახე ახალ ფაილად"
 
 
-msgid "with an older Blender version?"
-msgstr "Blender-ის უფრო ძველი ვერსიით?"
+msgid "with an older GameForge 3D Studio version?"
+msgstr "GameForge 3D Studio-ის უფრო ძველი ვერსიით?"
 
 
-msgid "Overwrite file with an older Blender version?"
-msgstr "გადავაწეროთ ფაილი Blender-ის უფრო ძველი ვერსიით?"
+msgid "Overwrite file with an older GameForge 3D Studio version?"
+msgstr "გადავაწეროთ ფაილი GameForge 3D Studio-ის უფრო ძველი ვერსიით?"
 
 
 msgid "Cannot overwrite asset system files. Save as new file?"
@@ -158442,8 +158440,8 @@ msgid "Save changes before closing?"
 msgstr "დახურვამდე ცვლილებები შევინახო?"
 
 
-msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with Blender v4.5 to convert animation data."
-msgstr "ჩაიტვირთა 2.50-ის წინა blend ფაილი, ანიმაციის მონაცემები არ ჩატვირთულა. ანიმაციის მონაცემთა დასაკონვერტირებლად გახსენი და შეინახე ფაილი Blender v4.5-ით."
+msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with GameForge 3D Studio v4.5 to convert animation data."
+msgstr "ჩაიტვირთა 2.50-ის წინა blend ფაილი, ანიმაციის მონაცემები არ ჩატვირთულა. ანიმაციის მონაცემთა დასაკონვერტირებლად გახსენი და შეინახე ფაილი GameForge 3D Studio v4.5-ით."
 
 
 msgid "Cannot overwrite files that are managed by the asset system"
@@ -158486,8 +158484,8 @@ msgid "%d libraries have overrides needing resync (auto resynced in %.0fm%.2fs),
 msgstr "%d ბიბლიოთეკას აქვს უკუგდება, რომელსაც ხელახალი სინქრონირება ჭირდება (ავტორესინქრონირება %.0fm%.2fs-ში), დეტალებისთვის შეამოწმე ინფო რედაქტორი"
 
 
-msgid "Proxies have been removed from Blender (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest Blender version"
-msgstr "პროქსები Blender-იდან მოცილებულია (%d პროქსი ავტომატურად კონვერტირდება ბიბლიოთეკის უკუგებებად, %d პროქსი ვერ კონვერტირდა და მოსუფთავდა). განიხილე ბიბლიოთეკის ნებისმიერი .blend ფაილის ხელახლა შენახვა Blender-ის ახალ ვერსიაში"
+msgid "Proxies have been removed from GameForge 3D Studio (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest GameForge 3D Studio version"
+msgstr "პროქსები GameForge 3D Studio-იდან მოცილებულია (%d პროქსი ავტომატურად კონვერტირდება ბიბლიოთეკის უკუგებებად, %d პროქსი ვერ კონვერტირდა და მოსუფთავდა). განიხილე ბიბლიოთეკის ნებისმიერი .blend ფაილის ხელახლა შენახვა GameForge 3D Studio-ის ახალ ვერსიაში"
 
 
 msgid "%d sequence strips were not read because they were in a channel larger than %d"
@@ -158770,8 +158768,8 @@ msgstr "თქვენი გრაფიკული ბარათის, �
 
 
 msgctxt "WindowManager"
-msgid "Newer graphics drivers might be available with better Blender compatibility."
-msgstr "შესაძლოა, ხელმისაწვდომი იყოს ახალი გრაფიკული დრაივერები Blender-თან უკეთესი თავსებადობით."
+msgid "Newer graphics drivers might be available with better GameForge 3D Studio compatibility."
+msgstr "შესაძლოა, ხელმისაწვდომი იყოს ახალი გრაფიკული დრაივერები GameForge 3D Studio-თან უკეთესი თავსებადობით."
 
 
 msgctxt "WindowManager"
@@ -158795,8 +158793,8 @@ msgstr "თქვენს გრაფიკულ ბარათს, ან m
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
-msgstr "macOS-ის უახლეს ვერსიაზე გადასვლამ შეიძლება, Blender-ის მხარდაჭერა გააუმჯობესოს"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
+msgstr "macOS-ის უახლეს ვერსიაზე გადასვლამ შეიძლება, GameForge 3D Studio-ის მხარდაჭერა გააუმჯობესოს"
 
 
 msgctxt "WindowManager"
@@ -158805,8 +158803,8 @@ msgstr "თქვენი გრაფიკული ბარათის, �
 
 
 msgctxt "WindowManager"
-msgid "Blender will now close."
-msgstr "ახლა Blender-ი დაიხურება."
+msgid "GameForge 3D Studio will now close."
+msgstr "ახლა GameForge 3D Studio-ი დაიხურება."
 
 
 msgid "Intel binary detected. Expect reduced performance."
@@ -159206,8 +159204,8 @@ msgid "Stroke and Fill"
 msgstr "შტრიხი და შევსება"
 
 
-msgid "Blender 27x"
-msgstr "Blender 27x"
+msgid "version 27x"
+msgstr "GameForge 3D Studio 27x"
 
 
 msgid "Industry Compatible"
@@ -159215,7 +159213,7 @@ msgstr "ინდუსტრიასთან თავსებადი"
 
 
 msgid "blender default"
-msgstr "Blender-ის ნაგულისხმები"
+msgstr "GameForge 3D Studio-ის ნაგულისხმები"
 
 
 msgid "industry compatible data"
@@ -159427,8 +159425,8 @@ msgid "Import-Export BVH from armature objects"
 msgstr "დააიმპორტ-ექსპორტირე BVH არმატურის ობიექტებიდან"
 
 
-msgid "Blender Extensions"
-msgstr "Blender-ის გაფართოებები"
+msgid "GameForge 3D Studio Extensions"
+msgstr "GameForge 3D Studio-ის გაფართოებები"
 
 
 msgid "Extension repository support for remote repositories"
@@ -159479,8 +159477,8 @@ msgid "Manage UI translations"
 msgstr "UI თარგმანების მართვა"
 
 
-msgid "Allows managing UI translations directly from Blender (update main .po files, update scripts' translations, etc.)"
-msgstr "UI თარგმანის პირდაპირ Blender-იდან თარგმნის საშუალებას იძლევა (განაახლებს .po ფაილებს, სკრიპტების თარგმანებს და სხვ.)"
+msgid "Allows managing UI translations directly from GameForge 3D Studio (update main .po files, update scripts' translations, etc.)"
+msgstr "UI თარგმანის პირდაპირ GameForge 3D Studio-იდან თარგმნის საშუალებას იძლევა (განაახლებს .po ფაილებს, სკრიპტების თარგმანებს და სხვ.)"
 
 
 msgid "Various tools to enhance and speed up node-based workflow"

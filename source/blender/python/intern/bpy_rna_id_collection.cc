@@ -991,7 +991,7 @@ PyDoc_STRVAR(
     "\n"
     "   Note that this function is quicker than individual calls to :func:`remove()` "
     "(from :class:`bpy.types.BlendData`\n"
-    "   ID collections), but less safe/versatile (it can break Blender, e.g. by removing "
+    "   ID collections), but less safe/versatile (it can break GameForge 3D Studio, e.g. by removing "
     "all scenes...).\n"
     "\n"
     "   :param ids: Sequence of IDs (types can be mixed).\n"

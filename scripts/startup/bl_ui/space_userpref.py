@@ -140,7 +140,7 @@ class USERPREF_MT_save_load(Menu):
         app_template = prefs.app_template
         if app_template:
             display_name = bpy.path.display_name(iface_(app_template))
-            layout.operator("wm.read_factory_userpref", text="Load Factory Blender Preferences")
+            layout.operator("wm.read_factory_userpref", text="Load Factory GameForge 3D Studio Preferences")
             props = layout.operator(
                 "wm.read_factory_userpref",
                 text=iface_("Load Factory {:s} Preferences").format(display_name),
@@ -359,7 +359,7 @@ class USERPREF_PT_interface_statusbar(InterfacePanel, CenterAlignMixIn, Panel):
         col.prop(view, "show_statusbar_memory", text="System Memory")
         col.prop(view, "show_statusbar_vram", text="Video Memory")
         col.prop(view, "show_extensions_updates", text="Extensions Updates")
-        col.prop(view, "show_statusbar_version", text="Blender Version")
+        col.prop(view, "show_statusbar_version", text="GameForge 3D Studio Version")
 
 
 class USERPREF_PT_interface_menus(InterfacePanel, CenterAlignMixIn, Panel):
@@ -771,7 +771,7 @@ class USERPREF_PT_system_display_graphics(SystemPanel, CenterAlignMixIn, Panel):
             col.prop(system, "gpu_preferred_device")
 
         if system.gpu_backend != gpu.platform.backend_type_get():
-            layout.label(text="A restart of Blender is required", icon='STATUS_INFO')
+            layout.label(text="A restart of GameForge 3D Studio is required", icon='STATUS_INFO')
 
         if system.gpu_backend == 'VULKAN':
             if sys.platform == "win32" and gpu.platform.device_type_get() == 'QUALCOMM':
@@ -816,7 +816,7 @@ class USERPREF_PT_system_os_settings(SystemPanel, CenterAlignMixIn, Panel):
 
     def draw_centered(self, context, layout):
         if self._draw_associate_supported_or_label(context, layout):
-            layout.label(text="Open blend files with this Blender version")
+            layout.label(text="Open blend files with this GameForge 3D Studio version")
             split = layout.split(factor=0.5)
             split.alignment = 'LEFT'
             split.operator("preferences.associate_blend", text="Register")
@@ -2266,8 +2266,15 @@ class USERPREF_MT_keyconfigs(Menu):
     preset_subdir = "keyconfig"
     preset_operator = "preferences.keyconfig_activate"
 
-    def draw(self, context):
-        Menu.draw_preset(self, context)
+    def draw(self, _context):
+        import rna_keymap_ui
+        # Like `Menu.draw_preset`, with the shown names of the default key maps.
+        self.path_menu(
+            bpy.utils.preset_paths(self.preset_subdir),
+            self.preset_operator,
+            filter_ext=lambda ext: ext.lower() in {".py", ".xml"},
+            display_name=rna_keymap_ui.keyconfig_display_name,
+        )
 
 
 class USERPREF_PT_keymap(KeymapPanel, Panel):

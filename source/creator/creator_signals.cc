@@ -76,10 +76,10 @@ static void sig_handle_blender_esc(int sig)
   if (sig == 2) {
     static int count = 0;
     if (count) {
-      printf("\nBlender killed\n");
+      printf("\nGameForge 3D Studio killed\n");
       exit(2);
     }
-    printf("\nSent an internal break event. Press ^C again to kill Blender\n");
+    printf("\nSent an internal break event. Press ^C again to kill GameForge 3D Studio\n");
     count++;
   }
 }

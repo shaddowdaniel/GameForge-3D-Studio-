@@ -477,10 +477,10 @@ static void sound_device_open_no_lock(const aud::DeviceSpecs &requested_specs)
   CLOG_DEBUG(&LOG, "Opening audio device name:%s", g_state.device_name);
 
   g_state.sound_device = bke::sound_device_init(
-      g_state.device_name, requested_specs, g_state.buffer_size, "Blender");
+      g_state.device_name, requested_specs, g_state.buffer_size, "GameForge 3D Studio");
   if (!g_state.sound_device) {
     g_state.sound_device = bke::sound_device_init(
-        "None", requested_specs, g_state.buffer_size, "Blender");
+        "None", requested_specs, g_state.buffer_size, "GameForge 3D Studio");
   }
 
   g_state.initialized_specs = g_state.sound_device->getSpecs();

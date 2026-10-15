@@ -370,24 +370,27 @@ bool skip_sized_block(BinaryReader &r)
   return !r.failed();
 }
 
+/** Tags in front of the computer name and hardware blocks of packed versions. */
+constexpr uint32_t PACKED_TAG_COMPUTER = 0xAB7689DDu;
+constexpr uint32_t PACKED_TAG_HARDWARE = 0xEE35679Fu;
+
 /**
- * Read the header blocks of packed versions (`elementdataman::load_data`): u32 time_t, then
- * u32 len + org data, u32 tag + u32 len + computer name + u32 time_t, u32 tag + u32 len +
- * hardware info.
+ * Read the header blocks of packed versions (`elementdataman::load_data`): u32 time, u32 len +
+ * org data (opaque, over 1 MB in retail files, only bounded by the file), u32 0xAB7689DD + u32
+ * len + computer name (XOR coded) + u32 time, u32 0xEE35679F + u32 len + hardware info. They are
+ * kept verbatim.
  */
 bool read_packed_header(BinaryReader &r, Bytes &r_prefix, std::string *r_error)
 {
   const size_t start = r.tell();
   const ByteSpan all = r.data();
   r.skip(4);
-  bool ok = skip_sized_block(r);
+  const uint32_t org_len = r.u32();
+  bool ok = !r.failed() && org_len <= r.remaining() && r.skip(org_len);
+  ok = ok && r.u32() == PACKED_TAG_COMPUTER && skip_sized_block(r);
   if (ok) {
     r.skip(4);
-    ok = skip_sized_block(r);
-  }
-  if (ok) {
-    r.skip(8);
-    ok = skip_sized_block(r);
+    ok = r.u32() == PACKED_TAG_HARDWARE && skip_sized_block(r);
   }
   if (!ok || r.failed()) {
     set_error(r_error, "elements.data: invalid exporter blocks after the header");

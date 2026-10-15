@@ -53,7 +53,9 @@
  *   MASK   = 0xA8937462 + id * 0x0AB2321F     CHECK  = 0x59374231 + id * 0x0987A223
  *   id 111 uses a fixed set, and "update" packages of some clients use another fixed set. The key
  *   set is detected from the guard words, so packages of any algorithm id open without
- *   configuration. Perfect World retail clients use id 0.
+ *   configuration. Perfect World retail clients use id 0; the 1.7.8 client keeps the id 0 guard
+ *   words with MASK 0xA7F88E3B and CHECK 0x4B813BDD, so every key set whose guards match is
+ *   checked against the first record of the file table.
  *
  * Package versions 0x0001xxxx (Angelica 1, 2002) predate the trailer layout and are rejected.
  */
@@ -140,6 +142,26 @@ bool detect_keys(const uint32_t guard0, const uint32_t guard1, KeySet &r_keys)
     return true;
   }
   return false;
+}
+
+/**
+ * Key sets to try for a package with these guard words. Some clients keep the guard words of a
+ * key set but change its mask and check words (the 1.7.8 client uses the id 0 guards with
+ * `MASK 0xA7F88E3B`, `CHECK 0x4B813BDD`), so the guards alone do not decide: the caller checks
+ * each candidate against the first record of the file table.
+ */
+std::vector<KeySet> candidate_keys(const uint32_t guard0, const uint32_t guard1)
+{
+  std::vector<KeySet> result;
+  KeySet keys;
+  if (!detect_keys(guard0, guard1, keys)) {
+    return result;
+  }
+  result.push_back(keys);
+  if (keys.id == 0) {
+    result.push_back({keys.guard0, keys.guard1, 0xA7F88E3Bu, 0x4B813BDDu, 0});
+  }
+  return result;
 }
 
 void set_error(std::string *r_error, std::string msg)
@@ -294,6 +316,58 @@ std::string fixed_string(const uint8_t *p, const size_t max_len)
   return std::string(reinterpret_cast<const char *>(p), len);
 }
 
+/**
+ * Decode the `count` records of a file table, calling `fn(record)` with the `entry_size` bytes of
+ * each `FILEENTRY` (inflated when stored compressed). False with `r_error` on the first bad record.
+ */
+template<typename Fn>
+bool decode_table(const ByteSpan table,
+                  const int32_t count,
+                  const size_t entry_size,
+                  const KeySet &keys,
+                  std::string &r_error,
+                  Fn &&fn)
+{
+  BinaryReader reader(table);
+  Bytes inflated;
+  for (int32_t i = 0; i < count; i++) {
+    const uint32_t stored = reader.u32() ^ keys.mask;
+    const uint32_t check = reader.u32() ^ keys.mask ^ keys.check;
+    if (reader.failed()) {
+      r_error = "file table truncated at entry " + std::to_string(i);
+      return false;
+    }
+    if (stored != check) {
+      r_error = "file table check failed at entry " + std::to_string(i);
+      return false;
+    }
+    if (stored == 0 || stored > entry_size + 1024) {
+      r_error = "invalid record size at entry " + std::to_string(i);
+      return false;
+    }
+    const ByteSpan record_data = reader.read_span(stored);
+    if (reader.failed()) {
+      r_error = "file table truncated at entry " + std::to_string(i);
+      return false;
+    }
+    const uint8_t *rec = record_data.data();
+    if (stored != entry_size) {
+      if (!zlib_inflate(record_data, entry_size, inflated)) {
+        r_error = "cannot decompress file table entry " + std::to_string(i);
+        return false;
+      }
+      if (inflated.size() < entry_size - 8) {
+        r_error = "file table entry " + std::to_string(i) + " too short";
+        return false;
+      }
+      inflated.resize(std::max(inflated.size(), entry_size), 0);
+      rec = inflated.data();
+    }
+    fn(rec);
+  }
+  return true;
+}
+
 }  // namespace
 
 PckArchive::PckArchive() = default;
@@ -317,6 +391,8 @@ void PckArchive::close()
   algorithm_id_ = 0;
   encrypted_ = false;
   description_.clear();
+  keys_ = {};
+  layout_ = {};
   entries_.clear();
   lookup_.clear();
 }
@@ -331,6 +407,15 @@ std::vector<std::string> PckArchive::part_paths() const
   std::vector<std::string> result;
   for (const Part &part : parts_) {
     result.push_back(part.path);
+  }
+  return result;
+}
+
+std::vector<uint64_t> PckArchive::part_sizes() const
+{
+  std::vector<uint64_t> result;
+  for (const Part &part : parts_) {
+    result.push_back(part.size);
   }
   return result;
 }
@@ -413,17 +498,23 @@ bool PckArchive::open(const std::string &filepath, std::string *r_error)
     }
     const uint32_t tag1 = load_u32(safe);
     if (tag1 == SAFE_TAG1 || tag1 == SAFE_TAG1_CUSTOM) {
-      const uint32_t tag2 = load_u32(safe + 8);
-      const bool known_tag2 = std::find(std::begin(SAFE_TAG2_KNOWN),
-                                        std::end(SAFE_TAG2_KNOWN),
-                                        tag2) != std::end(SAFE_TAG2_KNOWN);
+      auto is_known_tag2 = [](const uint32_t tag) {
+        return std::find(std::begin(SAFE_TAG2_KNOWN), std::end(SAFE_TAG2_KNOWN), tag) !=
+               std::end(SAFE_TAG2_KNOWN);
+      };
+      const bool known_tag2 = is_known_tag2(load_u32(safe + 8));
       const uint64_t end = known_tag2 ? uint64_t(load_u32(safe + 4)) : load_u64(safe + 4);
       /* Only trust it when it points inside the stream. */
       if (end >= 8 + HEADER_SIZE_V2 && end <= stream_size_) {
         data_end = end;
+        layout_.safe_header_u64 = !known_tag2;
+        /* 64-bit ends are followed by the second tag in some clients (1.7.8). */
+        layout_.safe_header_size = (!known_tag2 && is_known_tag2(load_u32(safe + 12))) ? 16 : 12;
+        std::memcpy(layout_.safe_header, safe, sizeof(safe));
       }
     }
   }
+  layout_.data_end = data_end;
 
   uint8_t trailer[8];
   if (!read_at(data_end - 8, trailer, 8)) {
@@ -463,11 +554,11 @@ bool PckArchive::open(const std::string &filepath, std::string *r_error)
   const size_t guard1_pos = flags_pos + 4 + DESCRIPTION_LEN;
   const uint32_t guard1 = load_u32(h + guard1_pos);
 
-  KeySet keys;
-  if (!detect_keys(guard0, guard1, keys)) {
+  const std::vector<KeySet> candidates = candidate_keys(guard0, guard1);
+  if (candidates.empty()) {
     return fail("unknown package key (guard words " + hex32(guard0) + ", " + hex32(guard1) + ")");
   }
-  algorithm_id_ = keys.id;
+  layout_.file_header.assign(header.begin(), header.end());
 
   if (looks_like_text(h + flags_pos)) {
     encrypted_ = false;
@@ -478,34 +569,64 @@ bool PckArchive::open(const std::string &filepath, std::string *r_error)
     description_ = gbk_to_utf8(fixed_string(h + flags_pos + 4, DESCRIPTION_LEN));
   }
 
-  /* Locate the file table. */
-  uint64_t entry_offset = 0;
-  {
-    const uint32_t low = load_u32(h + 8) ^ keys.mask;
-    bool found = false;
+  /* Locate the file table with a key set: false when the offset falls outside the package. */
+  auto table_offset = [&](const KeySet &k, uint64_t &r_offset) {
+    const uint32_t low = load_u32(h + 8) ^ k.mask;
     if (is_v3) {
       const uint32_t high_raw = load_u32(h + 12);
       /* Zero-extended mask, sign-extended mask, then the low half alone. */
-      const uint64_t candidates[] = {
+      const uint64_t offsets[] = {
           (uint64_t(high_raw) << 32) | low,
           (uint64_t(high_raw ^ 0xFFFFFFFFu) << 32) | low,
           uint64_t(low),
       };
-      for (const uint64_t c : candidates) {
-        if (c <= header_pos) {
-          entry_offset = c;
-          found = true;
-          break;
+      for (const uint64_t offset : offsets) {
+        if (offset <= header_pos) {
+          r_offset = offset;
+          return true;
         }
       }
+      return false;
     }
-    else if (low <= header_pos) {
-      entry_offset = low;
-      found = true;
+    r_offset = low;
+    return low <= header_pos;
+  };
+
+  /* The right key set decodes a consistent first record (both size words agree). */
+  KeySet keys;
+  uint64_t entry_offset = 0;
+  bool found_keys = false;
+  for (const KeySet &k : candidates) {
+    uint64_t offset;
+    if (!table_offset(k, offset)) {
+      continue;
     }
-    if (!found) {
-      return fail("file table offset out of range");
+    if (file_count > 0) {
+      uint8_t first[8];
+      if (!read_at(offset, first, sizeof(first))) {
+        continue;
+      }
+      const uint32_t stored = load_u32(first) ^ k.mask;
+      const uint32_t check = load_u32(first + 4) ^ k.mask ^ k.check;
+      if (stored != check || stored == 0 || stored > entry_size + 1024) {
+        continue;
+      }
     }
+    keys = k;
+    entry_offset = offset;
+    found_keys = true;
+    break;
+  }
+  if (!found_keys) {
+    return fail("cannot decode the file table with the package key (guard words " +
+                hex32(guard0) + ", " + hex32(guard1) + ")");
+  }
+  algorithm_id_ = keys.id;
+  keys_ = {keys.guard0, keys.guard1, keys.mask, keys.check, keys.id};
+  layout_.entry_offset = entry_offset;
+  if (is_v3) {
+    layout_.entry_offset_sign_extended = (load_u32(h + 12) ^ uint32_t(entry_offset >> 32)) ==
+                                         0xFFFFFFFFu;
   }
 
   /* Read the whole file table in one go; it sits between the data and the header. */
@@ -522,37 +643,8 @@ bool PckArchive::open(const std::string &filepath, std::string *r_error)
   }
 
   entries_.reserve(size_t(file_count));
-  BinaryReader reader(table);
-  Bytes inflated;
-  for (int32_t i = 0; i < file_count; i++) {
-    const uint32_t stored = reader.u32() ^ keys.mask;
-    const uint32_t check = reader.u32() ^ keys.mask ^ keys.check;
-    if (reader.failed()) {
-      return fail("file table truncated at entry " + std::to_string(i));
-    }
-    if (stored != check) {
-      return fail("file table check failed at entry " + std::to_string(i));
-    }
-    if (stored == 0 || stored > entry_size + 1024) {
-      return fail("invalid record size at entry " + std::to_string(i));
-    }
-    const ByteSpan record_data = reader.read_span(stored);
-    if (reader.failed()) {
-      return fail("file table truncated at entry " + std::to_string(i));
-    }
-
-    const uint8_t *rec = record_data.data();
-    if (stored != entry_size) {
-      if (!zlib_inflate(record_data, entry_size, inflated)) {
-        return fail("cannot decompress file table entry " + std::to_string(i));
-      }
-      if (inflated.size() < entry_size - 8) {
-        return fail("file table entry " + std::to_string(i) + " too short");
-      }
-      inflated.resize(std::max(inflated.size(), entry_size), 0);
-      rec = inflated.data();
-    }
-
+  std::string table_error;
+  const bool table_ok = decode_table(table, file_count, entry_size, keys, table_error, [&](const uint8_t *rec) {
     PckEntry entry;
     const std::string name_gbk = fixed_string(rec, NAME_LEN);
     if (is_v3) {
@@ -570,8 +662,46 @@ bool PckArchive::open(const std::string &filepath, std::string *r_error)
     std::replace(entry.path_display.begin(), entry.path_display.end(), '/', '\\');
     lookup_.emplace(entry.path, entries_.size());
     entries_.push_back(std::move(entry));
+  });
+  if (!table_ok) {
+    return fail(table_error);
   }
   return true;
+}
+
+bool PckArchive::raw_records(std::vector<Bytes> &r_records, std::string *r_error) const
+{
+  r_records.clear();
+  if (!is_open()) {
+    set_error(r_error, "Package is not open");
+    return false;
+  }
+  const bool is_v3 = version_ == VERSION_2_3;
+  const size_t header_size = is_v3 ? HEADER_SIZE_V3 : HEADER_SIZE_V2;
+  const size_t entry_size = is_v3 ? ENTRY_SIZE_V3 : ENTRY_SIZE_V2;
+  const uint64_t header_pos = layout_.data_end - 8 - header_size;
+  Bytes table(size_t(header_pos - layout_.entry_offset));
+  if (!read_at(layout_.entry_offset, table.data(), table.size())) {
+    set_error(r_error, "Cannot read the file table");
+    return false;
+  }
+  const KeySet keys = {keys_.guard0, keys_.guard1, keys_.mask, keys_.check, keys_.id};
+  r_records.reserve(entries_.size());
+  std::string error;
+  if (!decode_table(table, int32_t(entries_.size()), entry_size, keys, error, [&](const uint8_t *rec) {
+        r_records.emplace_back(rec, rec + entry_size);
+      }))
+  {
+    set_error(r_error, error);
+    return false;
+  }
+  return true;
+}
+
+bool PckArchive::read_stored(const PckEntry &entry, Bytes &r_data) const
+{
+  r_data.resize(entry.compressed_size);
+  return read_at(entry.offset, r_data.data(), r_data.size());
 }
 
 const PckEntry *PckArchive::find(const std::string_view path) const
@@ -597,9 +727,7 @@ bool PckArchive::read(const PckEntry &entry, Bytes &r_data, std::string *r_error
     set_error(r_error, "Package is not open");
     return false;
   }
-  if (entry.size > MAX_ENTRY_DATA || entry.compressed_size > MAX_ENTRY_DATA ||
-      entry.compressed_size > entry.size)
-  {
+  if (entry.size > MAX_ENTRY_DATA || entry.compressed_size > MAX_ENTRY_DATA) {
     set_error(r_error, "Invalid sizes for \"" + entry.path_display + "\"");
     return false;
   }
@@ -615,6 +743,21 @@ bool PckArchive::read(const PckEntry &entry, Bytes &r_data, std::string *r_error
   }
   if (encrypted_) {
     decrypt_data(stored.data(), stored.size());
+  }
+  if (entry.compressed_size > entry.size) {
+    /* Written by a tool that compresses every file, also the ones that grow (`AFilePackGame`
+     * only decompresses when the stored size is smaller, so the game reads these as raw bytes and
+     * gets garbage). Recover the real content when it inflates to the expected size, otherwise
+     * return what the game reads. */
+    Bytes inflated;
+    if (zlib_inflate(stored, entry.size, inflated) && inflated.size() == entry.size) {
+      r_data = std::move(inflated);
+    }
+    else {
+      stored.resize(entry.size);
+      r_data = std::move(stored);
+    }
+    return true;
   }
   if (!entry.is_compressed()) {
     r_data = std::move(stored);
@@ -633,5 +776,91 @@ bool PckArchive::read(const PckEntry &entry, Bytes &r_data, std::string *r_error
   }
   return true;
 }
+
+/* -------------------------------------------------------------------- */
+/** \name Shared Packages
+ * \{ */
+
+namespace {
+
+struct SharedPackage {
+  std::shared_ptr<PckArchive> archive;
+  uint64_t size = 0;
+  int64_t mtime = 0;
+};
+
+std::mutex &shared_packages_mutex()
+{
+  static std::mutex mutex;
+  return mutex;
+}
+
+std::unordered_map<std::string, SharedPackage> &shared_packages()
+{
+  static std::unordered_map<std::string, SharedPackage> packages;
+  return packages;
+}
+
+std::string shared_package_key(const std::string &pck_path)
+{
+  std::error_code ec;
+  std::filesystem::path path = std::filesystem::absolute(u8path(pck_path), ec);
+  if (ec) {
+    path = u8path(pck_path);
+  }
+  return ascii_lower(path_to_utf8(path.lexically_normal()));
+}
+
+bool package_file_stamp(const std::string &pck_path, uint64_t &r_size, int64_t &r_mtime)
+{
+  std::error_code ec;
+  const std::filesystem::path path = u8path(pck_path);
+  const uint64_t size = std::filesystem::file_size(path, ec);
+  if (ec) {
+    return false;
+  }
+  const auto time = std::filesystem::last_write_time(path, ec);
+  if (ec) {
+    return false;
+  }
+  r_size = size;
+  r_mtime = int64_t(time.time_since_epoch().count());
+  return true;
+}
+
+}  // namespace
+
+std::shared_ptr<PckArchive> open_package_shared(const std::string &pck_path, std::string *r_error)
+{
+  uint64_t size = 0;
+  int64_t mtime = 0;
+  if (!package_file_stamp(pck_path, size, mtime)) {
+    set_error(r_error, "Cannot open package file \"" + pck_path + "\"");
+    return nullptr;
+  }
+  const std::string key = shared_package_key(pck_path);
+  {
+    std::lock_guard lock(shared_packages_mutex());
+    const auto it = shared_packages().find(key);
+    if (it != shared_packages().end() && it->second.size == size && it->second.mtime == mtime) {
+      return it->second.archive;
+    }
+  }
+  auto archive = std::make_shared<PckArchive>();
+  if (!archive->open(pck_path, r_error)) {
+    return nullptr;
+  }
+  std::lock_guard lock(shared_packages_mutex());
+  shared_packages()[key] = {archive, size, mtime};
+  return archive;
+}
+
+void release_package_shared(const std::string &pck_path)
+{
+  std::lock_guard lock(shared_packages_mutex());
+  shared_packages().erase(shared_package_key(pck_path));
+}
+
+/** \} */
 
 }  // namespace blender::io::angelica

@@ -836,7 +836,7 @@ msgid "Fribidi Library"
 msgstr "Knižnica Fribidi"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
 msgstr "Skompilovaná knižnica FriBidi C (.so pod Linuxom, .dll pod Windows), budete pravdepodobne musieť upraviť, ak ste pod Windows, napríklad použitím jednou so zahrnutých knižníc úložiska Blenderu"
 
 
@@ -860,7 +860,7 @@ msgid "Source Root"
 msgstr "Kmeňové zdroje"
 
 
-msgid "The Blender source root path"
+msgid "The GameForge 3D Studio source root path"
 msgstr "Cesta kmeňových zdrojov Blendera"
 
 
@@ -884,7 +884,7 @@ msgid "Persistent Data Path"
 msgstr "Cesta trvalých údajov"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
 msgstr "Názov json súboru na uloženie týchto nastavení (bohužiaľ, systém Blenderu tu nefunguje)"
 
 
@@ -1764,7 +1764,7 @@ msgid "Edit persistent configuration settings"
 msgstr "Úprava trvalých konfiguračných nastavení"
 
 
-msgid "Manage the current Blender project"
+msgid "Manage the current GameForge 3D Studio project"
 msgstr "Správa aktuálneho projektu v Blenderi"
 
 
@@ -1860,7 +1860,7 @@ msgid "Is Editable"
 msgstr "Je upraviteľné"
 
 
-msgid "Assets and catalogs in this library can be edited from the current Blender instance"
+msgid "Assets and catalogs in this library can be edited from the current GameForge 3D Studio instance"
 msgstr "Aktíva a katalógy v tejto knižnici je možné upravovať v aktuálnej inštancii Blenderu"
 
 
@@ -1880,7 +1880,7 @@ msgid "Current File"
 msgstr "Aktuálny súbor"
 
 
-msgid "Show the assets currently available in this Blender session"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
 msgstr "Zobrazí aktíva, ktoré sú aktuálne k dispozícii v tejto relácii Blenderu"
 
 
@@ -1888,7 +1888,7 @@ msgid "Essentials"
 msgstr "Základné údaje"
 
 
-msgid "Show basic building blocks and utilities coming with Blender"
+msgid "Show basic building blocks and utilities coming with GameForge 3D Studio"
 msgstr "Ukáže základné stavebné bloky a nástroje dodávané s Blenderom"
 
 
@@ -1960,8 +1960,8 @@ msgid "Catalog UUID"
 msgstr "Katalóg UUID"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
-msgstr "Identifikátor katalógu aktíva, ktorý Blender používa na vyhľadanie katalógovej cesty aktíva. Musí to byť UUID podľa RFC4122."
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgstr "Identifikátor katalógu aktíva, ktorý GameForge 3D Studio používa na vyhľadanie katalógovej cesty aktíva. Musí to byť UUID podľa RFC4122."
 
 
 msgid "Catalog Simple Name"
@@ -2709,7 +2709,7 @@ msgid "Is Internal"
 msgstr "Je interný"
 
 
-msgid "The attribute is meant for internal use by Blender"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
 msgstr "Tento atribút je určený na interné použitie v Blenderi"
 
 
@@ -3428,7 +3428,7 @@ msgid "All Data-Blocks"
 msgstr "Všetky bloky údajov"
 
 
-msgid "Read-only list of all IDs listed in Blender data-base. Warning: Order is not guaranteed and should be considered an internal implementation detail"
+msgid "Read-only list of all IDs listed in GameForge 3D Studio data-base. Warning: Order is not guaranteed and should be considered an internal implementation detail"
 msgstr "Zoznam všetkých ID uvedených v databáze Blenderu, určený len na čítanie. Upozornenie: Poradie nie je zaručené a malo by sa považovať za interný detail implementácie"
 
 
@@ -3601,7 +3601,7 @@ msgid "Project"
 msgstr "Premietnuť"
 
 
-msgid "The currently active Blender project, if any"
+msgid "The currently active GameForge 3D Studio project, if any"
 msgstr "Aktuálne aktívny projekt v Blenderi, ak nejaký existuje"
 
 
@@ -3654,7 +3654,7 @@ msgstr "Verzia"
 
 
 msgid "File format version the .blend file was saved with"
-msgstr "Verzia programu Blender uložená do .blend súboru"
+msgstr "Verzia programu GameForge 3D Studio uložená do .blend súboru"
 
 
 msgid "Volume data-blocks"
@@ -4041,11 +4041,11 @@ msgid "The active project's OpenColorIO configuration setting"
 msgstr "Nastavenie konfigurácie OpenColorIO v aktívnom projekte"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
-msgid "The OpenColorIO configuration bundled with Blender"
+msgid "The OpenColorIO configuration bundled with GameForge 3D Studio"
 msgstr "Konfigurácia OpenColorIO dodávaná spolu s Blenderom"
 
 
@@ -4306,7 +4306,7 @@ msgid "Library (blend-file) reference in a BlendImportContext data. Currently on
 msgstr "Odkaz na knižnicu (blend-súbor) v údajoch kontextu BlendImportContext. V súčasnosti je k dispozícii iba ako údaje len na čítanie pre predbežné a následné obslužné rutiny importu blend-súborov"
 
 
-msgid "Blender Project"
+msgid "GameForge 3D Studio Project"
 msgstr "Projekt Blenderu"
 
 
@@ -4338,8 +4338,8 @@ msgid "OpenColorIO configuration to use for this project"
 msgstr "Konfigurácia OpenColorIO na použitie v tomto projekte"
 
 
-msgid "The default Blender OpenColorIO configuration. Works with both ACES workflows and Blender specific views and color spaces"
-msgstr "Predvolená konfigurácia OpenColorIO v Blenderi. Funguje ako s pracovnými postupmi ACES, tak aj so zobrazeniami a farebnými priestormi špecifickými pre Blender"
+msgid "The default GameForge 3D Studio OpenColorIO configuration. Works with both ACES workflows and GameForge 3D Studio specific views and color spaces"
+msgstr "Predvolená konfigurácia OpenColorIO v Blenderi. Funguje ako s pracovnými postupmi ACES, tak aj so zobrazeniami a farebnými priestormi špecifickými pre GameForge 3D Studio"
 
 
 msgid "ACES 2.0 Studio"
@@ -4390,11 +4390,11 @@ msgid "The variables in this project"
 msgstr "Premenné v tomto projekte"
 
 
-msgid "Blender RNA"
-msgstr "Blender RNA"
+msgid "GameForge 3D Studio RNA"
+msgstr "GameForge 3D Studio RNA"
 
 
-msgid "Blender RNA structure definitions"
+msgid "GameForge 3D Studio RNA structure definitions"
 msgstr "Definície štruktúry RNA Blendera"
 
 
@@ -9265,7 +9265,7 @@ msgid "Lin error"
 msgstr "Chyba riadka"
 
 
-msgid "Amount of residual error in Blender space unit for constraints that work on position"
+msgid "Amount of residual error in GameForge 3D Studio space unit for constraints that work on position"
 msgstr "Množstvo zostatkovej chyby v jednotke priestoru Blendera pre vynútenie pracujúceho na pozícii"
 
 
@@ -13237,7 +13237,7 @@ msgid "Max Velocity"
 msgstr "Maximálna rýchlosť"
 
 
-msgid "Velocity considered as maximum influence (Blender units per frame)"
+msgid "Velocity considered as maximum influence (GameForge 3D Studio units per frame)"
 msgstr "Rýchlosť považovaná ako maximálny vplyv (jednotky Blendera na snímku)"
 
 
@@ -13615,7 +13615,7 @@ msgid "Premultiply Alpha"
 msgstr "Prednásobiť alfa"
 
 
-msgid "Multiply color by alpha (recommended for Blender input)"
+msgid "Multiply color by alpha (recommended for GameForge 3D Studio input)"
 msgstr "Vynásobí farbu alfa (odporúča sa pre vstup Blendera)"
 
 
@@ -16019,7 +16019,7 @@ msgid "Hide .blend files items that are not data-blocks with asset metadata"
 msgstr "Skryje .blend súbory, ktoré nie sú blokmi údajov, s meta údajmi aktív"
 
 
-msgid "Filter Blender Backup Files"
+msgid "Filter GameForge 3D Studio Backup Files"
 msgstr "Filtrovať záložné súbory Blendera"
 
 
@@ -16027,15 +16027,15 @@ msgid "Show .blend1, .blend2, etc. files"
 msgstr "Zobrazí súbory .blend1, .blend2 a podobné"
 
 
-msgid "Filter Blender"
-msgstr "Filtrovať Blender"
+msgid "Filter GameForge 3D Studio"
+msgstr "Filtrovať GameForge 3D Studio"
 
 
 msgid "Show .blend files"
 msgstr "Zobrazí .blend súbory"
 
 
-msgid "Filter Blender IDs"
+msgid "Filter GameForge 3D Studio IDs"
 msgstr "Filtrovať ID Blendera"
 
 
@@ -16111,7 +16111,7 @@ msgid "Library Browser"
 msgstr "Prehliadač knižníc"
 
 
-msgid "Whether we may browse Blender files' content or not"
+msgid "Whether we may browse GameForge 3D Studio files' content or not"
 msgstr "Určuje možnosť prehliadania obsahu súborov Blendera"
 
 
@@ -16571,8 +16571,8 @@ msgid "Export Mantaflow Script"
 msgstr "Exportovať skript Mantaflow"
 
 
-msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of Blender) after baking the simulation."
-msgstr "Vygeneruje a exportuje skript Mantaflow z aktuálneho nastavenia oblasti vplyvu počas zapečenia. Toto je potrebné iba v prípade, že plánujete analyzovať zásobník (napr. Mriežky, vektory rýchlosti, častice) v skripte Mantaflow priamo (mimo Blender) po zapečení simulácie."
+msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of GameForge 3D Studio) after baking the simulation."
+msgstr "Vygeneruje a exportuje skript Mantaflow z aktuálneho nastavenia oblasti vplyvu počas zapečenia. Toto je potrebné iba v prípade, že plánujete analyzovať zásobník (napr. Mriežky, vektory rýchlosti, častice) v skripte Mantaflow priamo (mimo GameForge 3D Studio) po zapečení simulácie."
 
 
 msgid "Flame Grid"
@@ -19868,8 +19868,8 @@ msgid "Is Legacy Action"
 msgstr "Je akcia zdedená"
 
 
-msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since Blender 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
-msgstr "Vráti, či ide o staršiu akciu. Staršie akcie nemajú vrstvy ani zásuvky. Od verzie Blender 4.4 sa akcie automaticky aktualizujú na vrstvené akcie. Toto vráti hodnotu true (PRAVDA) len v prípade prázdnych akcií"
+msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since version 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
+msgstr "Vráti, či ide o staršiu akciu. Staršie akcie nemajú vrstvy ani zásuvky. Od verzie GameForge 3D Studio 4.4 sa akcie automaticky aktualizujú na vrstvené akcie. Toto vráti hodnotu true (PRAVDA) len v prípade prázdnych akcií"
 
 
 msgid "Is Empty"
@@ -21868,7 +21868,7 @@ msgid "Unprojected Size"
 msgstr "Nepremietnutá veľkosť"
 
 
-msgid "Diameter of brush in Blender units"
+msgid "Diameter of brush in GameForge 3D Studio units"
 msgstr "Priemer štetca v jednotkách Blenderu"
 
 
@@ -25200,7 +25200,7 @@ msgid "Source library from which this archive of packed IDs was generated"
 msgstr "Zdrojová knižnica, z ktorej bol vytvorený tento archív zabalených identifikátorov"
 
 
-msgid "Path to the library .blend file. WARNING: Typically, this value should be considered read-only, changing this path without proper processing afterwards can leave Blender data in an invalid state"
+msgid "Path to the library .blend file. WARNING: Typically, this value should be considered read-only, changing this path without proper processing afterwards can leave GameForge 3D Studio data in an invalid state"
 msgstr "Cesta k .blend súboru knižnice. UPOZORNENIE: Táto hodnota by sa zvyčajne mala považovať za iba na čítanie; zmena tejto cesty bez následného riadneho spracovania môže spôsobiť, že údaje v Blenderi budú v neplatnom stave"
 
 
@@ -25224,7 +25224,7 @@ msgid "True if this library contains library overrides that are linked in curren
 msgstr "Platí v prípade, že táto knižnica obsahuje prepisy, ktoré sú prepojené v aktuálnom blend-súbore a ktoré bolo potrebné pri načítaní rekurzívne zosynchronizovať (v takom prípade sa odporúča tento blend-súbor knižnice otvoriť a znovu uložiť)"
 
 
-msgid "Version of Blender the library .blend was saved with"
+msgid "Version of GameForge 3D Studio the library .blend was saved with"
 msgstr "Verzia knižnice Blendera bola uložená do .blend súboru"
 
 
@@ -30471,12 +30471,12 @@ msgid "Noise basis used for turbulence"
 msgstr "Nastaví základný šum používaný pre turbulencie"
 
 
-msgid "Blender Original"
-msgstr "Blender originál"
+msgid "GameForge 3D Studio Original"
+msgstr "GameForge 3D Studio originál"
 
 
-msgid "Noise algorithm - Blender original: Smooth interpolated noise"
-msgstr "Algoritmus šumu - Blender originál: Vyhladený interpólovaný šum"
+msgid "Noise algorithm - GameForge 3D Studio original: Smooth interpolated noise"
+msgstr "Algoritmus šumu - GameForge 3D Studio originál: Vyhladený interpólovaný šum"
 
 
 msgid "Original Perlin"
@@ -31345,7 +31345,7 @@ msgid "Asset Blend Path"
 msgstr "Cesta prelínania aktív"
 
 
-msgid "Full path to the Blender file containing the active asset"
+msgid "Full path to the GameForge 3D Studio file containing the active asset"
 msgstr "Úplná cesta k súboru Blenderu obsahujúci aktívne aktívum"
 
 
@@ -32497,7 +32497,7 @@ msgid "Custom Icon"
 msgstr "Vlastná ikona"
 
 
-msgid "True if this preview icon has been modified by py script, and is no more auto-generated by Blender"
+msgid "True if this preview icon has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
 msgstr "Pravdivé, ak tento náhľad ikony bola upravený Python skriptom a nie je viac automaticky generovaný Blenderom"
 
 
@@ -32505,7 +32505,7 @@ msgid "Custom Image"
 msgstr "Vlastný obrázok"
 
 
-msgid "True if this preview image has been modified by py script, and is no more auto-generated by Blender"
+msgid "True if this preview image has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
 msgstr "Pravdivé, ak tento náhľad obrázku bol upravený Python skriptom a nie je viac automaticky generovaný Blenderom"
 
 
@@ -52919,19 +52919,19 @@ msgid "World space normal mapping"
 msgstr "Priestor sveta mapovania normál"
 
 
-msgid "Blender Object Space"
+msgid "GameForge 3D Studio Object Space"
 msgstr "Priestor objektu Blendera"
 
 
-msgid "Object space normal mapping, compatible with Blender render baking"
+msgid "Object space normal mapping, compatible with GameForge 3D Studio render baking"
 msgstr "Priestor objektu mapovania normál, kompatibilné so zapečením Blendera"
 
 
-msgid "Blender World Space"
+msgid "GameForge 3D Studio World Space"
 msgstr "Priestor oblasti Blendera"
 
 
-msgid "World space normal mapping, compatible with Blender render baking"
+msgid "World space normal mapping, compatible with GameForge 3D Studio render baking"
 msgstr "Priestor oblasti mapovania normál, kompatibilný so zapečením Blendera"
 
 
@@ -55833,7 +55833,7 @@ msgstr "Aktualizácia vrstiev meta výbavy Rigify"
 
 
 msgctxt "Operator"
-msgid "Get active/selected colors from current Blender theme"
+msgid "Get active/selected colors from current GameForge 3D Studio theme"
 msgstr "Získať aktívne/vybrané farby z aktuálneho motívu Blenderu"
 
 
@@ -56339,8 +56339,8 @@ msgid "Clear Status"
 msgstr "Vymazať stav"
 
 
-msgid "Allow Blender to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, Blender cannot prevent third-party add-ons from violating this rule."
-msgstr "Povolí Blenderu prístup na internet. Doplnky, ktoré sa riadia týmto nastavením, sa budú pripájať k internetu len vtedy, ak je to povolené. Blender však nemôže zabrániť tomu, aby doplnky tretích strán toto pravidlo porušovali."
+msgid "Allow GameForge 3D Studio to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, GameForge 3D Studio cannot prevent third-party add-ons from violating this rule."
+msgstr "Povolí Blenderu prístup na internet. Doplnky, ktoré sa riadia týmto nastavením, sa budú pripájať k internetu len vtedy, ak je to povolené. GameForge 3D Studio však nemôže zabrániť tomu, aby doplnky tretích strán toto pravidlo porušovali."
 
 
 msgid "Open extensions preferences"
@@ -57548,8 +57548,8 @@ msgid "Uninstall Studio Light"
 msgstr "Odinštalovať štúdiové svetlo"
 
 
-msgid "Load and apply a Blender XML theme file"
-msgstr "Načíta a použije súbor motívu XML Blender"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
+msgstr "Načíta a použije súbor motívu XML GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -58026,12 +58026,12 @@ msgid "I18n Save Settings"
 msgstr "Uložiť nastavenia i18n"
 
 
-msgid "Update i18n data (po files) in Blender source code repository"
+msgid "Update i18n data (po files) in GameForge 3D Studio source code repository"
 msgstr "Aktualizuje údaje i18n (súbory .po) v úložisku zdrojového kódu Blendera"
 
 
 msgctxt "Operator"
-msgid "Update I18n Blender Repository"
+msgid "Update I18n GameForge 3D Studio Repository"
 msgstr "Aktualizovať úložisko I18n Blendera"
 
 
@@ -59759,7 +59759,7 @@ msgid "Debug Channel List"
 msgstr "Zoznam kanálov ladenia"
 
 
-msgid "Log the channel list info in the terminal. This operator is only available in debug builds of Blender"
+msgid "Log the channel list info in the terminal. This operator is only available in debug builds of GameForge 3D Studio"
 msgstr "Zaznamenáva informácie o zozname kanálov v termináli. Tento operátor je k dispozícii len v ladiacich zostavách Blenderu"
 
 
@@ -60811,7 +60811,7 @@ msgid "Upgrade the metarig from bone layers to bone collections"
 msgstr "Povyšuje meta výbavu z vrstiev kostí na kolekcie kostí"
 
 
-msgid "Set the color palette to match Blender's active theme for selected and active bones"
+msgid "Set the color palette to match GameForge 3D Studio's active theme for selected and active bones"
 msgstr "Nastaví paletu farieb tak, aby zodpovedala aktuálnemu motívu Blenderu pre vybrané a aktívne kosti"
 
 
@@ -64486,8 +64486,8 @@ msgid "Apply Scalings"
 msgstr "Použiť mierky"
 
 
-msgid "How to apply custom and units scalings in generated FBX file (Blender uses FBX scale to detect units on import, but many other applications do not handle the same way)"
-msgstr "Ako aplikovať vlastné a jednotky zmeny veľkosti generované FBX súborom (Blender používa FBX mierku pre detekciu jednotiek na import, ale mnoho ďalších aplikácií nezvláda rovnakým spôsobom)"
+msgid "How to apply custom and units scalings in generated FBX file (GameForge 3D Studio uses FBX scale to detect units on import, but many other applications do not handle the same way)"
+msgstr "Ako aplikovať vlastné a jednotky zmeny veľkosti generované FBX súborom (GameForge 3D Studio používa FBX mierku pre detekciu jednotiek na import, ale mnoho ďalších aplikácií nezvláda rovnakým spôsobom)"
 
 
 msgid "All Local"
@@ -64526,23 +64526,23 @@ msgid "Apply Unit"
 msgstr "Použiť jednotky"
 
 
-msgid "Take into account current Blender units settings (if unset, raw Blender Units values are used as-is)"
-msgstr "Zoberie do úvahy aktuálne nastavenia Blender jednotiek (ak je nenastavené, hrubé hodnoty Blender jednotiek sú používané ako sú)"
+msgid "Take into account current GameForge 3D Studio units settings (if unset, raw GameForge 3D Studio Units values are used as-is)"
+msgstr "Zoberie do úvahy aktuálne nastavenia GameForge 3D Studio jednotiek (ak je nenastavené, hrubé hodnoty GameForge 3D Studio jednotiek sú používané ako sú)"
 
 
 msgid "Armature FBXNode Type"
 msgstr "Typ armatúry uzla FBX"
 
 
-msgid "FBX type of node (object) used to represent Blender's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into Blender...)"
-msgstr "Typ uzla FBX (objekt), ktorý sa používa na reprezentáciu Blender armatúry (použije raz NULL, ak sa vyskytnú problémy s inými aplikáciami, ďalšie voľby sa v Blenderi nemusia dokonale importovať späť)"
+msgid "FBX type of node (object) used to represent GameForge 3D Studio's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into GameForge 3D Studio...)"
+msgstr "Typ uzla FBX (objekt), ktorý sa používa na reprezentáciu GameForge 3D Studio armatúry (použije raz NULL, ak sa vyskytnú problémy s inými aplikáciami, ďalšie voľby sa v Blenderi nemusia dokonale importovať späť)"
 
 
 msgid "Null"
 msgstr "Nula"
 
 
-msgid "'Null' FBX node, similar to Blender's Empty (default)"
+msgid "'Null' FBX node, similar to GameForge 3D Studio's Empty (default)"
 msgstr "Nulový uzol FBX, je podobný prázdnemu Blenderu (predvolené)"
 
 
@@ -64658,7 +64658,7 @@ msgid "Apply Transform"
 msgstr "Použiť transformáciu"
 
 
-msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
+msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with GameForge 3D Studio's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
 msgstr "Zapečie priestor na údaje o objektoch, vyhne sa nežiaducim rotáciám objektov, keď cieľový priestor nie je zarovnaný s priestorom Blenderu (VÝSTRAHA! experimentálna možnosť, použitie na vlastné riziko, o ktorom je známe, že je rozbitý armatúrami / animáciami)"
 
 
@@ -64925,7 +64925,7 @@ msgid "Use Modifiers Render Setting"
 msgstr "Použiť nastavenie prekreslenia modifikátorov"
 
 
-msgid "Use render settings when applying modifiers to mesh objects (DISABLED in Blender 2.8)"
+msgid "Use render settings when applying modifiers to mesh objects (DISABLED in version 2.8)"
 msgstr "Použije nastavenia prekreslenia pri použití modifikátorov na povrchové siete objektu (vypnuté v Blenderi 2.8)"
 
 
@@ -65449,7 +65449,7 @@ msgid "Raw (Deprecated)"
 msgstr "Surové (zastarané)"
 
 
-msgid "Blender lighting strengths with no conversion"
+msgid "GameForge 3D Studio lighting strengths with no conversion"
 msgstr "Osvetlenie Blendera bez konverzie"
 
 
@@ -65677,7 +65677,7 @@ msgid "Export Original PBR Specular"
 msgstr "Export pôvodného PBR odrazu"
 
 
-msgid "Export original glTF PBR Specular, instead of Blender Principled Shader Specular"
+msgid "Export original glTF PBR Specular, instead of GameForge 3D Studio Principled Shader Specular"
 msgstr "Exportuje pôvodný glTF PBR odraz namiesto odrazu principiálneho tieňovača Blenderu"
 
 
@@ -65909,8 +65909,8 @@ msgid "Remember Export Settings"
 msgstr "Zapamätať si nastavenia exportu"
 
 
-msgid "Store glTF export settings in the Blender project"
-msgstr "Uložiť exportné nastavenia glTF v projekte Blender"
+msgid "Store glTF export settings in the GameForge 3D Studio project"
+msgstr "Uložiť exportné nastavenia glTF v projekte GameForge 3D Studio"
 
 
 msgid "Package ID"
@@ -70231,7 +70231,7 @@ msgid "Definition"
 msgstr "Definícia"
 
 
-msgid "Number of pixels per inch or Blender Unit"
+msgid "Number of pixels per inch or GameForge 3D Studio Unit"
 msgstr "Počet pixelov na palec alebo jednotka Blendera"
 
 
@@ -70255,7 +70255,7 @@ msgid "Force Reload"
 msgstr "Vynútiť opätovné načítanie"
 
 
-msgid "Force reload the image if it is already opened elsewhere in Blender"
+msgid "Force reload the image if it is already opened elsewhere in GameForge 3D Studio"
 msgstr "Vynúti opätovné načítanie obrázka, ak je už otvorený inde v Blenderi"
 
 
@@ -70347,11 +70347,11 @@ msgid "Scale based on pixels per inch"
 msgstr "Mierka na základe pixelov na palec"
 
 
-msgid "Pixels per Blender Unit"
+msgid "Pixels per GameForge 3D Studio Unit"
 msgstr "Pixely na jednotku Blenderu"
 
 
-msgid "Scale based on pixels per Blender Unit"
+msgid "Scale based on pixels per GameForge 3D Studio Unit"
 msgstr "Mierka založená na pixeloch na jednotku Blenderu"
 
 
@@ -70628,7 +70628,7 @@ msgid "Save the image with another name and/or settings"
 msgstr "Uloží obrázok pod iným názvom a/alebo nastaveniami"
 
 
-msgid "Create a new image file without modifying the current image in Blender"
+msgid "Create a new image file without modifying the current image in GameForge 3D Studio"
 msgstr "Vytvorí nový súbor obrázka bez úpravy aktuálneho obrázka v Blenderi"
 
 
@@ -70828,7 +70828,7 @@ msgid "Scale FPS"
 msgstr "Mierka snímok/s"
 
 
-msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a Blender frame"
+msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a GameForge 3D Studio frame"
 msgstr "Mierka snímok/s z BVH pre aktuálne scény, inak každú BVH snímku mapuje priamo do snímok Blendera"
 
 
@@ -70900,7 +70900,7 @@ msgid "Make Unique"
 msgstr "Vytvoriť jedinečné"
 
 
-msgid "Import each FBX material as a unique Blender material"
+msgid "Import each FBX material as a unique GameForge 3D Studio material"
 msgstr "Importuje každý materiál FBX ako jedinečný materiál Blenderu"
 
 
@@ -70944,8 +70944,8 @@ msgid "Import FBX animation"
 msgstr "Importuje FBX animáciu"
 
 
-msgid "Import custom normals, if available (otherwise Blender will recompute them)"
-msgstr "Importuje vlastné normály, ak sú k dispozícii (inak Blender ich bude prepočítavať)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will recompute them)"
+msgstr "Importuje vlastné normály, ak sú k dispozícii (inak GameForge 3D Studio ich bude prepočítavať)"
 
 
 msgid "Import user properties as custom properties"
@@ -71000,11 +71000,11 @@ msgid "Heuristic for placing bones. Tries to make bones pretty"
 msgstr "Heuristika na rozmiestnenie kostí. Snaží sa urobiť pekné kosti"
 
 
-msgid "Blender (best for import/export round trip)"
-msgstr "Blender (najlepšie pre obojsmerný import/export)"
+msgid "GameForge 3D Studio (best for import/export round trip)"
+msgstr "GameForge 3D Studio (najlepšie pre obojsmerný import/export)"
 
 
-msgid "Good for re-importing glTFs exported from Blender, and re-exporting glTFs to glTFs after Blender editing. Bone tips are placed on their local +Y axis (in glTF space)"
+msgid "Good for re-importing glTFs exported from GameForge 3D Studio, and re-exporting glTFs to glTFs after GameForge 3D Studio editing. Bone tips are placed on their local +Y axis (in glTF space)"
 msgstr "Hodí sa na opätovný import glTF exportovaných z Blenderu a opätovný export glTF do glTF po úpravách v Blenderi. Špičky kostí sú umiestnené na ich lokálnej osi +Y (v priestore glTF)"
 
 
@@ -71160,8 +71160,8 @@ msgid "Update Reports Display"
 msgstr "Obnoviť zobrazenie zostáv"
 
 
-msgid "Update the display of reports in Blender UI (internal use)"
-msgstr "Aktualizuje zobrazenia zostáv v rozhraní Blender (interné použitie)"
+msgid "Update the display of reports in GameForge 3D Studio UI (internal use)"
+msgstr "Aktualizuje zobrazenia zostáv v rozhraní GameForge 3D Studio (interné použitie)"
 
 
 msgid "Change selection of all visible reports"
@@ -83552,7 +83552,7 @@ msgid "Check for Updates on Startup"
 msgstr "Kontrola aktualizácií pri spustení"
 
 
-msgid "Allow Blender to check for updates upon launch"
+msgid "Allow GameForge 3D Studio to check for updates upon launch"
 msgstr "Povolí Blenderu kontrolovať aktualizácie pri spustení"
 
 
@@ -85041,7 +85041,7 @@ msgid "Save Screenshot"
 msgstr "Uložiť snímku obrazovky"
 
 
-msgid "Capture a picture of the whole Blender window"
+msgid "Capture a picture of the whole GameForge 3D Studio window"
 msgstr "Zachytí obrázok celého okna Blenderu"
 
 
@@ -87028,11 +87028,11 @@ msgid "Auto Detect"
 msgstr "Automatické zisťovanie"
 
 
-msgid "Add images as individual strips, unless their filenames match Blender's numbered sequence pattern, in which case they are grouped into a single image sequence"
+msgid "Add images as individual strips, unless their filenames match GameForge 3D Studio's numbered sequence pattern, in which case they are grouped into a single image sequence"
 msgstr "Pridá obrázky ako jednotlivé pásy, pokiaľ ich názvy súborov nezodpovedajú číslovanému vzoru sekvencie Blenderu, v takom prípade sú zoskupené do jednej sekvencie obrázkov"
 
 
-msgid "Import all selected images as a single image sequence. The sequence of images does not have to match Blender's numbered sequence pattern, so placeholders cannot be inferred"
+msgid "Import all selected images as a single image sequence. The sequence of images does not have to match GameForge 3D Studio's numbered sequence pattern, so placeholders cannot be inferred"
 msgstr "Importuje všetky vybrané obrázky ako jednu sekvenciu obrázkov. Sekvencia obrázkov nemusí zodpovedať číslovanému vzoru sekvencie Blenderu, takže zástupné symboly nemožno odvodiť"
 
 
@@ -89489,7 +89489,7 @@ msgid "Eyedropper"
 msgstr "Kvapkadlo"
 
 
-msgid "Sample a color from the Blender window to store in a property"
+msgid "Sample a color from the GameForge 3D Studio window to store in a property"
 msgstr "Vzorka farby z okna Blendera na uloženie v objekte"
 
 
@@ -89586,7 +89586,7 @@ msgid "Grease Pencil Eyedropper"
 msgstr "Kvapkadlo Grease Pencil"
 
 
-msgid "Sample a color from the Blender Window and create Grease Pencil material"
+msgid "Sample a color from the GameForge 3D Studio Window and create Grease Pencil material"
 msgstr "Zosníma farbu z okna Blendera a vytvorí materiál Grease Pencil"
 
 
@@ -92292,8 +92292,8 @@ msgid "Run as Background Job"
 msgstr "Spustiť ako úlohu na pozadí"
 
 
-msgid "Enable this to run the import in the background, disable to block Blender while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
-msgstr "Povolí spustiť import na pozadí, zakáže blokovať Blender pri importe. Táto možnosť je zastaraná; Spuste tento operátor v popredí a SPUSŤTE ho ako úlohu na pozadí"
+msgid "Enable this to run the import in the background, disable to block GameForge 3D Studio while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgstr "Povolí spustiť import na pozadí, zakáže blokovať GameForge 3D Studio pri importe. Táto možnosť je zastaraná; Spuste tento operátor v popredí a SPUSŤTE ho ako úlohu na pozadí"
 
 
 msgid "Curves as Mesh"
@@ -92457,8 +92457,8 @@ msgid "Add cache modifiers and constraints to imported objects even if they are 
 msgstr "Pridá modifikátory a vynútenia do zásobníka k importovaným objektom, aj keď nie sú animované, aby sa mohli aktualizovať pri opätovnom načítaní archívu Alembic"
 
 
-msgid "Enable this to run the export in the background, disable to block Blender while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
-msgstr "Povolí spustiť export na pozadí, zakáže blokovať Blender pri exporte. Táto možnosť je zastaraná; Spuste tento operátor v popredí a SPUSŤTE ho ako úlohu na pozadí"
+msgid "Enable this to run the export in the background, disable to block GameForge 3D Studio while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgstr "Povolí spustiť export na pozadí, zakáže blokovať GameForge 3D Studio pri exporte. Táto možnosť je zastaraná; Spuste tento operátor v popredí a SPUSŤTE ho ako úlohu na pozadí"
 
 
 msgid "Is Sequence"
@@ -92879,8 +92879,8 @@ msgid "Vertex colors in the file are in linear color space"
 msgstr "Farby vrcholov v súbore sú v lineárnom farebnom priestore"
 
 
-msgid "Import custom normals, if available (otherwise Blender will compute them)"
-msgstr "Import vlastných normál, ak sú dostupné (inak ich Blender vypočíta)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will compute them)"
+msgstr "Import vlastných normál, ak sú dostupné (inak ich GameForge 3D Studio vypočíta)"
 
 
 msgid "Enums As Strings"
@@ -93300,7 +93300,7 @@ msgid "Open"
 msgstr "Otvoriť"
 
 
-msgid "Open a Blender file"
+msgid "Open a GameForge 3D Studio file"
 msgstr "Otvorí súbor Blendera"
 
 
@@ -93451,7 +93451,7 @@ msgid "Collection of file paths with common ``directory`` root"
 msgstr "Kolekcia ciest súborov so spoločným koreňovým priečinkom ``directory``"
 
 
-msgid "Show Blender files in the File Browser"
+msgid "Show GameForge 3D Studio files in the File Browser"
 msgstr "Zobraziť súbory Blenderu v Prehliadači súborov"
 
 
@@ -93626,12 +93626,12 @@ msgstr "Hodnota pre užívateľské typy vlastností, ktoré možno upravovať l
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Ukončiť Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Ukončiť GameForge 3D Studio"
 
 
-msgid "Quit Blender"
-msgstr "Ukončí Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Ukončí GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -93967,19 +93967,19 @@ msgstr "Nastaví aktuálny súbor ako predvolený spúšťací súbor"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
+msgid "Save GameForge 3D Studio File"
 msgstr "Uložiť súbor Blendera"
 
 
-msgid "Save the current Blender file"
+msgid "Save the current GameForge 3D Studio file"
 msgstr "Uloží aktuálny .blend súbor"
 
 
-msgid "Exit Blender after saving"
-msgstr "Ukončiť Blender po uložení"
+msgid "Exit GameForge 3D Studio after saving"
+msgstr "Ukončiť GameForge 3D Studio po uložení"
 
 
-msgid "Save the current Blender file with a numerically incremented name that does not overwrite any existing files"
+msgid "Save the current GameForge 3D Studio file with a numerically incremented name that does not overwrite any existing files"
 msgstr "Uloží aktuálny súbor Blenderu s číselne zvýšeným názvom, ktorý neprepíše žiadne existujúce súbory"
 
 
@@ -94163,12 +94163,12 @@ msgstr "Otvorí úvodnú obrazovku s informáciami o vydaní"
 
 
 msgctxt "Operator"
-msgid "About Blender"
-msgstr "O aplikácii Blender"
+msgid "About GameForge 3D Studio"
+msgstr "O aplikácii GameForge 3D Studio"
 
 
-msgid "Open a window with information about Blender"
-msgstr "Otvorí okno s informáciami o aplikácii Blender"
+msgid "Open a window with information about GameForge 3D Studio"
+msgstr "Otvorí okno s informáciami o aplikácii GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -94291,11 +94291,11 @@ msgid "Preserve UTF-8 encoded characters when writing USD prim and property name
 msgstr "Zachová znaky v kódovaní UTF-8 pri zápise názvov prim a vlastností USD (pri otváraní výsledných súborov je potrebný softvér využívajúci verziu USD 24.03 alebo vyššiu)"
 
 
-msgid "Blender Names"
+msgid "GameForge 3D Studio Names"
 msgstr "Názvy Blendera"
 
 
-msgid "Author USD custom attributes containing the original Blender object and object data names"
+msgid "Author USD custom attributes containing the original GameForge 3D Studio object and object data names"
 msgstr "Vlastné atribúty autora USD obsahujúce názvy pôvodného objektu Blenderu a údajov o objekte"
 
 
@@ -94808,7 +94808,7 @@ msgid "Allow USD primitives to merge with their Xform parent if they are the onl
 msgstr "Umožní prvotným tvarom USD zlúčiť sa s ich nadradeným Xform, ak sú jediným podriadeným v hierarchii"
 
 
-msgid "Import each USD material as a unique Blender material"
+msgid "Import each USD material as a unique GameForge 3D Studio material"
 msgstr "Importovať každý materiál USD ako jedinečný materiál Blenderu"
 
 
@@ -94844,7 +94844,7 @@ msgid "Import only the primitive at the given path and its descendants. Multiple
 msgstr "Importuje iba prvotný tvar na zadanej ceste a jeho potomkov. Viacero ciest možno zadať v zozname ohraničenom čiarkami alebo bodkočiarkami"
 
 
-msgid "Behavior when importing USD attributes as Blender custom properties"
+msgid "Behavior when importing USD attributes as GameForge 3D Studio custom properties"
 msgstr "Správanie pri importovaní atribútov USD ako užívateľských vlastností Blenderu"
 
 
@@ -94852,7 +94852,7 @@ msgid "Do not import USD custom attributes"
 msgstr "Neimportovať vlastné atribúty USD"
 
 
-msgid "Import USD attributes in the 'userProperties' namespace as Blender custom properties. The namespace will be stripped from the property names"
+msgid "Import USD attributes in the 'userProperties' namespace as GameForge 3D Studio custom properties. The namespace will be stripped from the property names"
 msgstr "Importuje atribúty USD v priestore názvov 'userProperties' ako užívateľské vlastnosti Blenderu. Z názvov vlastností bude odstránený priestor názvov"
 
 
@@ -94860,7 +94860,7 @@ msgid "All Custom"
 msgstr "Všetky vlastné"
 
 
-msgid "Import all USD custom attributes as Blender custom properties. Namespaces will be retained in the property names"
+msgid "Import all USD custom attributes as GameForge 3D Studio custom properties. Namespaces will be retained in the property names"
 msgstr "Importuje všetky vlastné atribúty USD ako užívateľské vlastnosti Blenderu. V názvoch vlastností sa zachovajú priestory názvov"
 
 
@@ -95781,8 +95781,8 @@ msgid "Set the mask layer from the UV map buttons"
 msgstr "Nastaví vrstvu masky z tlačidiel UV máp"
 
 
-msgid "Maximum edge length for dynamic topology sculpting (as divisor of Blender unit - higher value means smaller edge length)"
-msgstr "Maximálna dĺžka hrany pre dynamickú topológiu tvarovania (ako deliteľ Blender jednotky - vyššia hodnota znamená menšiu dĺžku hrany)"
+msgid "Maximum edge length for dynamic topology sculpting (as divisor of GameForge 3D Studio unit - higher value means smaller edge length)"
+msgstr "Maximálna dĺžka hrany pre dynamickú topológiu tvarovania (ako deliteľ GameForge 3D Studio jednotky - vyššia hodnota znamená menšiu dĺžku hrany)"
 
 
 msgid "Detail Percentage"
@@ -99120,7 +99120,7 @@ msgid "Edit Methods"
 msgstr "Editačné metódy"
 
 
-msgid "Settings for interacting with Blender data"
+msgid "Settings for interacting with GameForge 3D Studio data"
 msgstr "Nastavenia vzájomného pôsobenia údajmi Blendera"
 
 
@@ -99188,7 +99188,7 @@ msgid "Sort the recently searched items at the top"
 msgstr "Zoradí nedávno vyhľadávané položky na začiatok"
 
 
-msgid "Version of Blender the userpref.blend was saved with"
+msgid "Version of GameForge 3D Studio the userpref.blend was saved with"
 msgstr "Verzia Blendera bola uložená v userpref.blend"
 
 
@@ -99729,8 +99729,8 @@ msgid "All Linked Data Direct"
 msgstr "Priame prepojenie všetkých údajov"
 
 
-msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (Blender studio pipeline tool)"
-msgstr "Vynúti posúdenie všetkých prepojených údajov za priamo prepojené. Alternatívne riešenie aktuálnych problémov/obmedzení v BAT (nástroj Blender Studio Pipeline)"
+msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (GameForge 3D Studio studio pipeline tool)"
+msgstr "Vynúti posúdenie všetkých prepojených údajov za priamo prepojené. Alternatívne riešenie aktuálnych problémov/obmedzení v BAT (nástroj GameForge 3D Studio Studio Pipeline)"
 
 
 msgid "No Asset Indexing"
@@ -99829,7 +99829,7 @@ msgid "Write Legacy Blend File Format"
 msgstr "Zápis staršieho formátu blend-súboru"
 
 
-msgid "Use file format used before Blender 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
+msgid "Use file format used before version 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
 msgstr "Použije formát súboru používaný pred Blenderom 5.0. Tento formát je obmedzenejší, ale môže mať lepšiu kompatibilitu s nástrojmi, ktoré ešte nepodporujú nový formát"
 
 
@@ -100423,7 +100423,7 @@ msgid "Max Threshold"
 msgstr "Maximálny prah"
 
 
-msgid "Raw input pressure value that is interpreted as 100% by Blender"
+msgid "Raw input pressure value that is interpreted as 100% by GameForge 3D Studio"
 msgstr "Hodnota hrubého vstupného tlaku, ktorá sa podľa Blendera vykladá ako 100%"
 
 
@@ -100439,8 +100439,8 @@ msgid "Tablet API"
 msgstr "Tablet API"
 
 
-msgid "Select the tablet API to use for pressure sensitivity (may require restarting Blender for changes to take effect)"
-msgstr "Vyberte API tabletu, ktoré chcete použiť pre citlivosť na tlak (aby sa zmeny prejavili, môže byť potrebné reštartovať Blender)"
+msgid "Select the tablet API to use for pressure sensitivity (may require restarting GameForge 3D Studio for changes to take effect)"
+msgstr "Vyberte API tabletu, ktoré chcete použiť pre citlivosť na tlak (aby sa zmeny prejavili, môže byť potrebné reštartovať GameForge 3D Studio)"
 
 
 msgid "Automatically choose Wintab or Windows Ink depending on the device"
@@ -100887,7 +100887,7 @@ msgid "GPU Backend"
 msgstr "GPU Backend"
 
 
-msgid "GPU backend to use (requires restarting Blender for changes to take effect)"
+msgid "GPU backend to use (requires restarting GameForge 3D Studio for changes to take effect)"
 msgstr "GPU backend na použitie. (Vyžaduje reštartovanie Blenderu, aby zmeny nadobudli účinnosť)"
 
 
@@ -100915,11 +100915,11 @@ msgid "Device"
 msgstr "Zariadenie"
 
 
-msgid "Preferred device to select during detection (requires restarting Blender for changes to take effect)"
+msgid "Preferred device to select during detection (requires restarting GameForge 3D Studio for changes to take effect)"
 msgstr "Preferované zariadenie na výber počas detekcie (vyžaduje reštartovanie Blenderu, aby sa zmeny prejavili)"
 
 
-msgid "Auto detect best GPU for running Blender"
+msgid "Auto detect best GPU for running GameForge 3D Studio"
 msgstr "Automatická detekcia najlepšieho GPU pre spustenie Blenderu"
 
 
@@ -100927,8 +100927,8 @@ msgid "Shader Compilation Workers"
 msgstr "Pracovníci kompilácie tieňovačov"
 
 
-msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting Blender for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
-msgstr "Počet vlákien kompilácie tieňovačov alebo podprocesov, obmedzený na maximálny počet vlákien podporovaných procesorom (aby sa zmeny prejavili, je potrebné Blender reštartovať). Vyššie číslo zvyšuje využitie pamäte RAM a zároveň znižuje čas kompilácie. Hodnota 0 použije automatickú konfiguráciu. (iba OpenGL)"
+msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting GameForge 3D Studio for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
+msgstr "Počet vlákien kompilácie tieňovačov alebo podprocesov, obmedzený na maximálny počet vlákien podporovaných procesorom (aby sa zmeny prejavili, je potrebné GameForge 3D Studio reštartovať). Vyššie číslo zvyšuje využitie pamäte RAM a zároveň znižuje čas kompilácie. Hodnota 0 použije automatickú konfiguráciu. (iba OpenGL)"
 
 
 msgid "Is Microsoft Store Install"
@@ -100991,7 +100991,7 @@ msgid "Register for All Users"
 msgstr "Registrovať pre všetkých užívateľov"
 
 
-msgid "Make this Blender version open blend files for all users. Requires elevated privileges."
+msgid "Make this GameForge 3D Studio version open blend files for all users. Requires elevated privileges."
 msgstr "Vytvorí túto verziu Blenderu, ktorá bude otvárať blend súbory pre všetkých užívateľov. Vyžaduje zvýšené oprávnenia."
 
 
@@ -101023,7 +101023,7 @@ msgid "Shader Compilation Method"
 msgstr "Metóda kompilácie tieňovačov"
 
 
-msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting Blender for changes to take effect. (OpenGL only)"
+msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting GameForge 3D Studio for changes to take effect. (OpenGL only)"
 msgstr "Metóda kompilácie používaná na paralelnú kompiláciu tieňovačov. Podproces vyžaduje oveľa viac pamäte RAM pre každého pracovníka, ale na niektorých systémoch môže kompilovať tieňovače rýchlejšie. Vyžaduje reštart Blenderu, aby sa zmeny prejavili. (iba OpenGL)"
 
 
@@ -101079,7 +101079,7 @@ msgid "UI Line Width"
 msgstr "Šírka čiary užívateľského rozhrania"
 
 
-msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and Blender UI scale"
+msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and GameForge 3D Studio UI scale"
 msgstr "Navrhovaná hrúbka čiary a veľkosť bodu v pixeloch, pre doplnky zobrazujúce prvky vlastného užívateľského rozhrania na základe nastavení operačného systému a mierky užívateľského rozhrania Blenderu"
 
 
@@ -101087,7 +101087,7 @@ msgid "UI Scale"
 msgstr "Mierka užívateľského rozhrania"
 
 
-msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and Blender display scale."
+msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and GameForge 3D Studio display scale."
 msgstr "Násobič veľkosti, ktorý sa má použiť pri vlastnom zobrazovaní prvkov užívateľského rozhrania, aby boli správne zmenšené na obrazovkách s rôznymi DPI. Táto hodnota je založená na nastaveniach DPI operačného systému a mierke zobrazenia Blenderu."
 
 
@@ -102011,8 +102011,8 @@ msgid "Show Memory"
 msgstr "Zobraziť pamäť"
 
 
-msgid "Show Blender memory usage"
-msgstr "Zobrazí využitie pamäte aplikácie Blender"
+msgid "Show GameForge 3D Studio memory usage"
+msgstr "Zobrazí využitie pamäte aplikácie GameForge 3D Studio"
 
 
 msgid "Show Scene Duration"
@@ -102035,8 +102035,8 @@ msgid "Show Version"
 msgstr "Zobraziť verziu"
 
 
-msgid "Show Blender version string"
-msgstr "Zobrazí reťazec verzie aplikácie Blender"
+msgid "Show GameForge 3D Studio version string"
+msgstr "Zobrazí reťazec verzie aplikácie GameForge 3D Studio"
 
 
 msgid "Show VRAM"
@@ -102367,7 +102367,7 @@ msgid "Collection of project asset libraries"
 msgstr "Kolekcia knižníc aktív projektu"
 
 
-msgid "Blender Project Variable"
+msgid "GameForge 3D Studio Project Variable"
 msgstr "Premenná projektu Blenderu"
 
 
@@ -102471,7 +102471,7 @@ msgid "Deprecated Removal Version"
 msgstr "Zastaraná verzia na odstránenie"
 
 
-msgid "The Blender version this is expected to be removed"
+msgid "The GameForge 3D Studio version this is expected to be removed"
 msgstr "Očakáva sa, že táto verzia Blenderu bude odstránená"
 
 
@@ -102479,7 +102479,7 @@ msgid "Deprecated Version"
 msgstr "Zastaraná verzia"
 
 
-msgid "The Blender version this was deprecated"
+msgid "The GameForge 3D Studio version this was deprecated"
 msgstr "Verzia Blenderu, ktorá bola zastaraná"
 
 
@@ -104746,11 +104746,11 @@ msgid "Path to the relevant po file in the work repository"
 msgstr "Cesta k príslušnému .po súboru v pracovnom úložisku"
 
 
-msgid "PO Blender File Path"
+msgid "PO GameForge 3D Studio File Path"
 msgstr "Cesta k .po súboru Blenderu"
 
 
-msgid "Path to the relevant po file in Blender's source repository"
+msgid "Path to the relevant po file in GameForge 3D Studio's source repository"
 msgstr "Cesta k príslušnému .po súboru v úložisku zdrojov Blenderu"
 
 
@@ -107551,16 +107551,16 @@ msgid "Which implementation of spring to use"
 msgstr "Ktorá implementácia pružnosti bude použitá"
 
 
-msgid "Blender 2.7"
-msgstr "Blender 2.7"
+msgid "Version 2.7"
+msgstr "GameForge 3D Studio 2.7"
 
 
-msgid "Spring implementation used in Blender 2.7. Damping is capped at 1.0"
-msgstr "Implementácia pružnosti vo verzii Blender 2.7. Tlmenie je limitované na 1,0"
+msgid "Spring implementation used in version 2.7. Damping is capped at 1.0"
+msgstr "Implementácia pružnosti vo verzii GameForge 3D Studio 2.7. Tlmenie je limitované na 1,0"
 
 
-msgid "Blender 2.8"
-msgstr "Blender 2.8"
+msgid "Version 2.8"
+msgstr "GameForge 3D Studio 2.8"
 
 
 msgid "New implementation available since 2.8"
@@ -108655,7 +108655,7 @@ msgid "Export Method"
 msgstr "Metóda exportu"
 
 
-msgid "How to export the Blender scene to the Hydra render engine"
+msgid "How to export the GameForge 3D Studio scene to the Hydra render engine"
 msgstr "Určuje, ako exportovať scénu Blenderu do mechanizmu prekresľovania Hydra"
 
 
@@ -111193,7 +111193,7 @@ msgid "Display data belonging to the Video Sequencer"
 msgstr "Zobrazenie údajov patriacich k radiču videa"
 
 
-msgid "Blender File"
+msgid "GameForge 3D Studio File"
 msgstr "Súbor Blendera"
 
 
@@ -111205,7 +111205,7 @@ msgid "Data API"
 msgstr "Údaje rozhrania API"
 
 
-msgid "Display low level Blender data and its properties"
+msgid "Display low level GameForge 3D Studio data and its properties"
 msgstr "Zobrazí údaje Blendera nízkej úrovne a ich vlastností"
 
 
@@ -111558,7 +111558,7 @@ msgid "Space Preferences"
 msgstr "Predvoľby priestoru"
 
 
-msgid "Blender preferences space data"
+msgid "GameForge 3D Studio preferences space data"
 msgstr "Údaje o nastaveniach Blendera"
 
 
@@ -116288,7 +116288,7 @@ msgid "Theme Preferences"
 msgstr "Motív predvolieb"
 
 
-msgid "Theme settings for the Blender Preferences"
+msgid "Theme settings for the GameForge 3D Studio Preferences"
 msgstr "Nastavenia motívu pre predvoľby Blendera"
 
 
@@ -118362,7 +118362,7 @@ msgid "Unit Scale"
 msgstr "Jednotka mierky"
 
 
-msgid "Scale to use when converting between Blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
+msgid "Scale to use when converting between GameForge 3D Studio units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
 msgstr "Mierka použitá pri konverzii medzi jednotkami a rozmermi Blendera. Pri práci na mikroskopickej alebo astronomickej stupnici sa môže použiť malá alebo veľká jednotka stupnice, aby sa predišlo problémom s číselnou presnosťou"
 
 
@@ -124731,7 +124731,7 @@ msgid "Unlocked: {:s}"
 msgstr "Odomknuté: {:s}"
 
 
-msgid "Warning! Before unlocking, ensure another instance of Blender is not running."
+msgid "Warning! Before unlocking, ensure another instance of GameForge 3D Studio is not running."
 msgstr "Upozornenie! Pred odomknutím sa uistite, že nie je spustená iná inštancia Blenderu."
 
 
@@ -124860,8 +124860,8 @@ msgid "Manifest validation failed: {:s}"
 msgstr "Overenie manifestu zlyhalo: {:s}"
 
 
-msgid "Online access required to install or update. Launch Blender without --offline-mode"
-msgstr "Na inštaláciu alebo aktualizáciu je potrebný online prístup. Spustite Blender bez režimu --offline-mode"
+msgid "Online access required to install or update. Launch GameForge 3D Studio without --offline-mode"
+msgstr "Na inštaláciu alebo aktualizáciu je potrebný online prístup. Spustite GameForge 3D Studio bez režimu --offline-mode"
 
 
 msgid "Online access required to install or update. Enable online access in System preferences"
@@ -124872,16 +124872,16 @@ msgid "Add-on \"{:s}\" is already installed!"
 msgstr "Doplnok \"{:s}\" je už nainštalovaný!"
 
 
-msgid "Blender was launched in offline mode, which cannot be changed at runtime"
-msgstr "Blender bol spustený v režime offline, ktorý sa počas behu nedá zmeniť"
+msgid "GameForge 3D Studio was launched in offline mode, which cannot be changed at runtime"
+msgstr "GameForge 3D Studio bol spustený v režime offline, ktorý sa počas behu nedá zmeniť"
 
 
 msgid "Online access required to install or update."
 msgstr "Na inštaláciu alebo aktualizáciu je potrebný online prístup."
 
 
-msgid "Launch Blender without --offline-mode"
-msgstr "Spustí Blender bez režimu --offline"
+msgid "Launch GameForge 3D Studio without --offline-mode"
+msgstr "Spustí GameForge 3D Studio bez režimu --offline"
 
 
 msgid "Please enable Online Access from the System settings."
@@ -124976,7 +124976,7 @@ msgid "Missing Built-in Add-ons"
 msgstr "Chýbajúce zabudované doplnky"
 
 
-msgid "Add-ons previously shipped with Blender are now available from extensions.blender.org."
+msgid "Add-ons previously shipped with GameForge 3D Studio are now available from extensions.blender.org."
 msgstr "Doplnky, ktoré boli predtým dodávané s Blenderom, sú teraz k dispozícii na adrese extensions.blender.org."
 
 
@@ -125053,7 +125053,7 @@ msgid "Maintainer"
 msgstr "Udržiavateľ"
 
 
-msgid "Blender's extension repository not found!"
+msgid "GameForge 3D Studio's extension repository not found!"
 msgstr "Úložisko rozšírení Blenderu nebolo nájdené!"
 
 
@@ -125087,7 +125087,7 @@ msgid "No visible tags."
 msgstr "Bez viditeľných príznakov."
 
 
-msgid "Blender's extension repository must be enabled to install extensions!"
+msgid "GameForge 3D Studio's extension repository must be enabled to install extensions!"
 msgstr "Úložisko rozšírení Blenderu musí byť povolené, aby bolo možné inštalovať rozšírenia!"
 
 
@@ -125132,7 +125132,7 @@ msgid "Uninstall Marked"
 msgstr "Odinštalovať označené"
 
 
-msgid "Blender's extension repository must be refreshed!"
+msgid "GameForge 3D Studio's extension repository must be refreshed!"
 msgstr "Úložisko rozšírení Blenderu sa musí obnoviť!"
 
 
@@ -125367,8 +125367,8 @@ msgid "Use GPU accelerated denoising if supported, for the best performance. Pre
 msgstr "Na dosiahnutie najlepšieho výkonu odstránenia šumu použije GPU akceleráciu, ak je podporovaná. Uprednostňuje OpenImageDenoise pred OptiX"
 
 
-msgid "Blender was compiled without a viewport denoiser"
-msgstr "Blender bol skompilovaný bez odstraňovača šumu záberu"
+msgid "GameForge 3D Studio was compiled without a viewport denoiser"
+msgstr "GameForge 3D Studio bol skompilovaný bez odstraňovača šumu záberu"
 
 
 msgid "Do not use compute device"
@@ -125748,8 +125748,8 @@ msgid "Invalid context"
 msgstr "Neplatný kontext"
 
 
-msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and Blender scene have the same frame rate"
-msgstr "BVH súbor neobsahuje dĺžku snímky vo svojej sekcii pohybu, je predpoklad, že BVH a Blender scény majú rovnakú frekvenciu snímok"
+msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and GameForge 3D Studio scene have the same frame rate"
+msgstr "BVH súbor neobsahuje dĺžku snímky vo svojej sekcii pohybu, je predpoklad, že BVH a GameForge 3D Studio scény majú rovnakú frekvenciu snímok"
 
 
 msgid "Unable to update scene frame rate, as the BVH file contains a zero frame duration in its MOTION section"
@@ -126750,8 +126750,8 @@ msgid "This feature set depends on the following feature set to work properly:"
 msgstr "Správna funkčnosť tejto sústavy funkcií závisí od nasledujúcej sústavy funkcií:"
 
 
-msgid "This feature set requires Blender {:s} or newer to work properly."
-msgstr "Táto sústava funkcií vyžaduje Blender {:s} alebo novší, aby fungovala správne."
+msgid "This feature set requires GameForge 3D Studio {:s} or newer to work properly."
+msgstr "Táto sústava funkcií vyžaduje GameForge 3D Studio {:s} alebo novší, aby fungovala správne."
 
 
 msgid "The feature set archive must contain one base directory"
@@ -127310,7 +127310,7 @@ msgstr "Vyčistiť pracovné úložisko"
 
 
 msgctxt "Operator"
-msgid "Update Blender Repository"
+msgid "Update GameForge 3D Studio Repository"
 msgstr "Aktualizovať úložisko Blenderu"
 
 
@@ -127625,7 +127625,7 @@ msgid "Unable to find any running process"
 msgstr "Nemožno nájsť žiadny spustený proces"
 
 
-msgid "Blender sub-process exited with error code {:d}"
+msgid "GameForge 3D Studio sub-process exited with error code {:d}"
 msgstr "Podproces Blenderu sa ukončil kódom chyby {:d}"
 
 
@@ -127785,8 +127785,8 @@ msgid "Could not find image '{:s}'"
 msgstr "Nepodarilo sa nájsť obrázok '{:s}'"
 
 
-msgid "Image editor could not be launched, ensure that the path in User Preferences > File Paths > Applications > Image Editor is valid, and Blender has rights to launch it"
-msgstr "Nepodarilo sa spustiť editor obrázkov. Skontrolujte, či je cesta uvedená v položke Predvoľby > Cesty k súborom > Aplikácie > Editor obrázkov platná a či má Blender oprávnenie na jeho spustenie"
+msgid "Image editor could not be launched, ensure that the path in User Preferences > File Paths > Applications > Image Editor is valid, and GameForge 3D Studio has rights to launch it"
+msgstr "Nepodarilo sa spustiť editor obrázkov. Skontrolujte, či je cesta uvedená v položke Predvoľby > Cesty k súborom > Aplikácie > Editor obrázkov platná a či má GameForge 3D Studio oprávnenie na jeho spustenie"
 
 
 msgid "Context incorrect, image not found"
@@ -128089,7 +128089,7 @@ msgid "Cannot save project because there is no project to save."
 msgstr "Nemožno uložiť projekt, pretože neexistuje žiadny projekt na uloženie."
 
 
-msgid "Project configuration is newer than this version of Blender supports"
+msgid "Project configuration is newer than this version of GameForge 3D Studio supports"
 msgstr "Konfigurácia projektu je novšia, než akú táto verzia Blenderu podporuje"
 
 
@@ -128229,7 +128229,7 @@ msgid "Installing keymap failed: {:s}"
 msgstr "Inštalácia priradenia kláves zlyhala: {:s}"
 
 
-msgid "This script was written for Blender version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
+msgid "This script was written for GameForge 3D Studio version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
 msgstr "Tento skript bol napísaný pre verziu Blenderu {:d}.{:d}.{:d} a nemusí fungovať (správne), hoci je povolený"
 
 
@@ -128346,8 +128346,8 @@ msgid "Open..."
 msgstr "Otvoriť..."
 
 
-msgid "Blender is free software"
-msgstr "Blender je voľný softvér"
+msgid "GameForge 3D Studio is free software"
+msgstr "GameForge 3D Studio je voľný softvér"
 
 
 msgid "Licensed under the GNU General Public License"
@@ -128439,7 +128439,7 @@ msgstr "Čo je nového"
 
 
 msgctxt "Operator"
-msgid "Donate to Blender"
+msgid "Donate to GameForge 3D Studio"
 msgstr "Darovať Blenderu"
 
 
@@ -128463,13 +128463,13 @@ msgstr "Licencia"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
-msgstr "Blender obchod"
+msgid "GameForge 3D Studio Store"
+msgstr "GameForge 3D Studio obchod"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
-msgstr "Web stránka aplikácie Blender"
+msgid "GameForge 3D Studio Website"
+msgstr "Web stránka aplikácie GameForge 3D Studio"
 
 
 msgid "Trusted Source [Untrusted Path]"
@@ -128506,7 +128506,7 @@ msgid "Release Notes"
 msgstr "Poznámky k vydaniu"
 
 
-msgid "Read about what's new in this version of Blender"
+msgid "Read about what's new in this version of GameForge 3D Studio"
 msgstr "Prečítajte si, čo je nové v tejto verzii Blenderu"
 
 
@@ -128514,7 +128514,7 @@ msgid "User Manual"
 msgstr "Užívateľský manuál"
 
 
-msgid "The reference manual for this version of Blender"
+msgid "The reference manual for this version of GameForge 3D Studio"
 msgstr "Referenčný manuál pre túto verziu Blenderu"
 
 
@@ -128522,7 +128522,7 @@ msgid "Python API Reference"
 msgstr "Referencie API Python"
 
 
-msgid "The API reference manual for this version of Blender"
+msgid "The API reference manual for this version of GameForge 3D Studio"
 msgstr "Referenčný manuál API pre túto verziu Blenderu"
 
 
@@ -128534,15 +128534,15 @@ msgid "The donation program to support maintenance and improvements"
 msgstr "Program darovania pre podporu údržby a vylepšení"
 
 
-msgid "Blender's official web-site"
-msgstr "Oficiálna stránka aplikácie Blender"
+msgid "GameForge 3D Studio's official web-site"
+msgstr "Oficiálna stránka aplikácie GameForge 3D Studio"
 
 
 msgid "Credits"
 msgstr "Spolupracovali"
 
 
-msgid "Lists committers to Blender's source code"
+msgid "Lists committers to GameForge 3D Studio's source code"
 msgstr "Zoznamy prispievateľov zdrojového kódu Blenderu"
 
 
@@ -128707,7 +128707,7 @@ msgstr "Neplatný regulárny výraz (nahradiť): {:s}"
 
 
 msgctxt "Operator"
-msgid "Import Blender {:d}.{:d} Preferences"
+msgid "Import GameForge 3D Studio {:d}.{:d} Preferences"
 msgstr "Importovať predvoľby Blenderu {:d}.{:d}"
 
 
@@ -131631,7 +131631,7 @@ msgid "Volume Files"
 msgstr "Súbory objemu"
 
 
-msgid "Blender IDs"
+msgid "GameForge 3D Studio IDs"
 msgstr "ID Blendera"
 
 
@@ -133522,7 +133522,7 @@ msgstr "Viac..."
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Settings"
+msgid "Load Factory GameForge 3D Studio Settings"
 msgstr "Načítať továrenské nastavenie Blenderu"
 
 
@@ -133698,7 +133698,7 @@ msgid "Video Memory"
 msgstr "Video pamäť"
 
 
-msgid "Blender Version"
+msgid "GameForge 3D Studio Version"
 msgstr "Verzia Blendera"
 
 
@@ -133999,7 +133999,7 @@ msgstr "Uložiť ako štúdiové svetlo"
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "Načítať továrenské predvoľby Blendera"
 
 
@@ -134007,11 +134007,11 @@ msgid "Cycles is disabled in this build"
 msgstr "Cycles sú v tejto zostave zakázané"
 
 
-msgid "A restart of Blender is required"
+msgid "A restart of GameForge 3D Studio is required"
 msgstr "Je potrebný reštart Blenderu"
 
 
-msgid "Open blend files with this Blender version"
+msgid "Open blend files with this GameForge 3D Studio version"
 msgstr "Otvorí blend súbory touto verziou Blenderu"
 
 
@@ -136770,11 +136770,11 @@ msgid "This asset does not require downloading"
 msgstr "Toto aktívum nevyžaduje stiahnutie"
 
 
-msgid "Downloading assets requires Python, and this Blender is built without"
-msgstr "Na stiahnutie súborov je potrebný Python, a tento Blender je zostavený bez neho"
+msgid "Downloading assets requires Python, and this GameForge 3D Studio is built without"
+msgstr "Na stiahnutie súborov je potrebný Python, a tento GameForge 3D Studio je zostavený bez neho"
 
 
-msgid "Downloading asset previews requires Python, and this Blender is built without"
+msgid "Downloading asset previews requires Python, and this GameForge 3D Studio is built without"
 msgstr "Na stiahnutie náhľadov aktív je potrebný Python, a táto verzia Blenderu je vytvorená bez neho"
 
 
@@ -136938,7 +136938,7 @@ msgid "Unable to create app-template userpref path"
 msgstr "Nemožno vytvoriť cestu šablóny aplikácie užívateľských predvolieb"
 
 
-msgid "File written by newer Blender binary (%d.%d), expect loss of data!"
+msgid "File written by newer GameForge 3D Studio binary (%d.%d), expect loss of data!"
 msgstr "Súbor napísaný novším binárnym mixérom (%d.%d). Očakávajte stratu dát!"
 
 
@@ -136962,7 +136962,7 @@ msgid "Appended Data"
 msgstr "Pripojené údaje"
 
 
-msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current Blender"
+msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current GameForge 3D Studio"
 msgstr "Prepájanie alebo pridávanie z veľmi starého formátu .blend súboru (%d.%d), nedokončená žiadna konverzia animácie! Možno budete chcieť znovu uložiť súbor knižnice so súčasnou verziou Blendera"
 
 
@@ -137800,8 +137800,8 @@ msgid "At least 8 common tracks on both keyframes are needed for reconstruction"
 msgstr "Na rekonštrukciu je potrebných aspoň 8 bežných stôp na oboch kľúčových snímkach"
 
 
-msgid "Blender is compiled without motion tracking library"
-msgstr "Blender je kompilovaný bez knižnice snímania pohybu"
+msgid "GameForge 3D Studio is compiled without motion tracking library"
+msgstr "GameForge 3D Studio je kompilovaný bez knižnice snímania pohybu"
 
 
 msgid "Original Mode"
@@ -138276,11 +138276,11 @@ msgid "Blend file '%s' is corrupt, unable to read"
 msgstr "Blend-súbor '%s' je poškodený, nedá sa prečítať"
 
 
-msgid "The file was saved by a newer version, open it with Blender %s or later"
+msgid "The file was saved by a newer version, open it with GameForge 3D Studio %s or later"
 msgstr "Súbor bol uložený v novšej verzii, otvorte ho v Blenderi %s alebo novšom"
 
 
-msgid "Blend file '%s' created by a Big Endian version of Blender, support for these files has been removed in Blender 5.0, use an older version of Blender to open and convert it."
+msgid "Blend file '%s' created by a Big Endian version of GameForge 3D Studio, support for these files has been removed in version 5.0, use an older version of GameForge 3D Studio to open and convert it."
 msgstr "Blend-súbor ‚%s‘ vytvorený Blenderom verziou Big Endian, podpora týchto súborov bola v Blenderi 5.0 odstránená, na otvorenie a konverziu použite staršiu verziu Blenderu."
 
 
@@ -138288,7 +138288,7 @@ msgid "Failed to read blend file '%s': %s"
 msgstr "Nepodarilo sa načítať blend súbor '%s': %s"
 
 
-msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of Blender"
+msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of GameForge 3D Studio"
 msgstr "Nemožno načítať súbor blend '%s', neúplná hlavička, môže byť z novšej verzie Blenderu"
 
 
@@ -138304,7 +138304,7 @@ msgid "Unable to open '%s': %s"
 msgstr "Nemožno otvoriť '%s': %s"
 
 
-msgid "Blendfile '%s' was created by a future version of Blender and contains ID names longer than currently supported. These have been truncated."
+msgid "Blendfile '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. These have been truncated."
 msgstr "Blend súbor '%s' bol vytvorený budúcou verziou Blenderu a obsahuje názvy ID dlhšie, ako je v súčasnosti podporované. Tieto boli skrátené."
 
 
@@ -138312,7 +138312,7 @@ msgid "Blendfile '%s' appears corrupted, it contains invalid ID names. These hav
 msgstr "Blend súbor '%s' sa zdá byť poškodený, obsahuje neplatné ID názvy. Tieto boli skrátené."
 
 
-msgid "Library '%s' was created by a future version of Blender and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current Blender version."
+msgid "Library '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current GameForge 3D Studio version."
 msgstr "Knižnica '%s' bola vytvorená budúcou verziou Blenderu a obsahuje názvy ID dlhšie, ako je v súčasnosti podporované. Môže to spôsobiť chýbajúce prepojené údaje, zvážte otvorenie a opätovné uloženie tejto knižnice s aktuálnou verziou Blenderu."
 
 
@@ -138324,7 +138324,7 @@ msgid "GP_Palette"
 msgstr "Paleta_Grease Pencil"
 
 
-msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in Blender 2.80 and later, removed instancing"
+msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in version 2.80 and later, removed instancing"
 msgstr "Nevyprázdnený objekt '%s' už nemôže vytvárať kópiu kolekcie '%s' v Blenderi 2.80 a novších verziách, odstránené inštancovanie"
 
 
@@ -139657,7 +139657,7 @@ msgid "no API versions defined: {:s}"
 msgstr "neboli definované žiadne verzie API: {:s}"
 
 
-msgid "remote does not offer an API version supported by this version of Blender"
+msgid "remote does not offer an API version supported by this version of GameForge 3D Studio"
 msgstr "diaľkový ovládač neponúka verziu API, ktorú táto verzia Blenderu podporuje"
 
 
@@ -139677,15 +139677,15 @@ msgid "Could not read asset listing for '%s', see Info Editor for details"
 msgstr "Nemožno prečítať zoznam aktív '%s', podrobnosti nájdete v editore informácií"
 
 
-msgid "could not read asset Blender versions, 'bl_versions' field not set"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions' field not set"
 msgstr "nemožno prečítať verzie Blenderu, pole 'bl_versions' nie je nastavené"
 
 
-msgid "could not read asset Blender versions, 'bl_versions.min' field not set"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not set"
 msgstr "nemožno prečítať verzie Blenderu, pole 'bl_versions.min' nie je nastavené"
 
 
-msgid "could not read asset Blender versions, 'bl_versions.min' field not in X.Y notation"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not in X.Y notation"
 msgstr "nemožno prečítať verzie Blenderu v súbore, pole 'bl_versions.min' nie je v tvare X.Y"
 
 
@@ -139869,7 +139869,7 @@ msgid "Asset catalogs cannot be edited in this asset library"
 msgstr "Katalógy aktív nemožno upravovať v tejto knižnici aktív"
 
 
-msgid "Cannot save asset catalogs before the Blender file is saved"
+msgid "Cannot save asset catalogs before the GameForge 3D Studio file is saved"
 msgstr "Nemožno uložiť katalógy aktív pred uložením súboru Blenderu"
 
 
@@ -140706,7 +140706,7 @@ msgid "Drag to continue sampling, release when done"
 msgstr "Ťahaním pokračujte v snímaní, po dokončení ho uvoľnite"
 
 
-msgid "Press 'Enter' to sample outside of a Blender window"
+msgid "Press 'Enter' to sample outside of a GameForge 3D Studio window"
 msgstr "Stlačením 'Enter' snímate mimo okna Blenderu"
 
 
@@ -142173,15 +142173,13 @@ msgid "Show in Info Log"
 msgstr "Zobraziť v zázname informácií"
 
 
-msgid ""
-"File saved by newer Blender\n"
-"({}), expect loss of data"
+msgid "File saved by newer GameForge 3D Studio\n({}), expect loss of data"
 msgstr ""
 "Súbor uložený novšou verziou Blenderu\n"
 "({}), očakávajte stratu údajov"
 
 
-msgid "This file is managed by the Blender asset system and cannot be overridden"
+msgid "This file is managed by the GameForge 3D Studio asset system and cannot be overridden"
 msgstr "Tento súbor je spravovaný systémom aktív Blenderu a nie je možné ho prepísať"
 
 
@@ -142330,7 +142328,7 @@ msgid "No filename given"
 msgstr "Nie je zadaný žiadny názov súboru"
 
 
-msgid "Blender Data"
+msgid "GameForge 3D Studio Data"
 msgstr "Údaje Blenderu"
 
 
@@ -144990,8 +144988,8 @@ msgid "Deleted %d tx files"
 msgstr "Odstránených %d súborov tx"
 
 
-msgid "Blender Render"
-msgstr "Blender prekreslenie"
+msgid "GameForge 3D Studio Render"
+msgstr "GameForge 3D Studio prekreslenie"
 
 
 msgid "Failed to open window!"
@@ -145150,11 +145148,11 @@ msgid "Flip to Bottom"
 msgstr "Prepnúť na spodok"
 
 
-msgid "Blender Drivers Editor"
+msgid "GameForge 3D Studio Drivers Editor"
 msgstr "Editor Ovládače Blendera"
 
 
-msgid "Blender Info Log"
+msgid "GameForge 3D Studio Info Log"
 msgstr "Informačný záznam Blendera"
 
 
@@ -146294,7 +146292,7 @@ msgstr ""
 "Toto nastavenie môžete neskôr upraviť v nastaveniach \"Systém\"."
 
 
-msgid "Unreadable Blender library file:"
+msgid "Unreadable GameForge 3D Studio library file:"
 msgstr "Nečitateľný súbor knižnice Blenderu:"
 
 
@@ -148981,7 +148979,7 @@ msgid "Jump to Line Number"
 msgstr "Preskočiť na číslo riadku"
 
 
-msgid "File Modified Outside and Inside Blender"
+msgid "File Modified Outside and Inside GameForge 3D Studio"
 msgstr "Súbor upravený mimo a vnútri Blendera"
 
 
@@ -148997,16 +148995,16 @@ msgid "Make text internal (separate copy)"
 msgstr "Vytvoriť interný text (oddeliť kópiu)"
 
 
-msgid "File Modified Outside Blender"
-msgstr "Súbor upravený mimo Blender"
+msgid "File Modified Outside GameForge 3D Studio"
+msgstr "Súbor upravený mimo GameForge 3D Studio"
 
 
 msgid "Reload from disk"
 msgstr "Znova načítať z disku"
 
 
-msgid "File Deleted Outside Blender"
-msgstr "Súbor odstránený mimo Blender"
+msgid "File Deleted Outside GameForge 3D Studio"
+msgstr "Súbor odstránený mimo GameForge 3D Studio"
 
 
 msgid "Make text internal"
@@ -150909,7 +150907,7 @@ msgid "An exception occurred invoking USD hook '%s'"
 msgstr "Pri vyvolaní háčika USD '%s' došlo k výnimke"
 
 
-msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to Blender"
+msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to GameForge 3D Studio"
 msgstr "Premennú prvotného tvaru '%s' (interpolácia %s, typ %s) nemožno konvertovať do Blenderu"
 
 
@@ -151001,7 +150999,7 @@ msgid "%s: Mismatch in bind xforms and joint counts for skeleton %s"
 msgstr "%s: Nesúlad vo väzbách x-form a počtoch kĺbov pre kostru %s"
 
 
-msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to Blender's bone representation. The skeletal animation won't be imported"
+msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to GameForge 3D Studio's bone representation. The skeletal animation won't be imported"
 msgstr "USD Import kostry: v prvku %s boli zistené matice kostí so zápornými determinantmi. Takéto matice môžu indikovať záporné váhy, pravdepodobne v dôsledku operácií zrkadlenia, a v súčasnosti ich nemožno konvertovať na reprezentáciu kostí v Blenderi. Animácia kostry sa neimportuje"
 
 
@@ -151045,7 +151043,7 @@ msgid "Cannot export mixed cyclic and non-cyclic curves in the same Curves objec
 msgstr "Nemožno exportovať zmiešané cyklické a necyklické krivky v tom istom objekte krivky"
 
 
-msgid "Attribute '%s' (Blender domain %d, type %d) cannot be converted to USD"
+msgid "Attribute '%s' (GameForge 3D Studio domain %d, type %d) cannot be converted to USD"
 msgstr "Atribút '%s' (doména Blenderu %d, typ %d) nemožno konvertovať na USD"
 
 
@@ -152626,8 +152624,8 @@ msgid "Unable to open sound file"
 msgstr "Zvukový súbor sa nedá otvoriť"
 
 
-msgid "Blender compiled without Audaspace support"
-msgstr "Blender skompilovaný bez podpory Zvukového priestoru (Audaspace)"
+msgid "GameForge 3D Studio compiled without Audaspace support"
+msgstr "GameForge 3D Studio skompilovaný bez podpory Zvukového priestoru (Audaspace)"
 
 
 msgid "Invalid length"
@@ -155802,8 +155800,8 @@ msgid "Node must be run as tool"
 msgstr "Uzol musí byť spustený ako nástroj"
 
 
-msgid "Disabled, Blender was compiled without OpenVDB"
-msgstr "Zakázané, Blender bol skompilovaný bez OpenVDB"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenVDB"
+msgstr "Zakázané, GameForge 3D Studio bol skompilovaný bez OpenVDB"
 
 
 msgid "Disabled, OpenVDB version is too old"
@@ -156148,8 +156146,8 @@ msgid "List with one element per item"
 msgstr "Zoznam s jedným prvkom na položku"
 
 
-msgid "Disabled, Blender was compiled without Bullet"
-msgstr "Zakázané, Blender bol zostavený bez Bullet"
+msgid "Disabled, GameForge 3D Studio was compiled without Bullet"
+msgstr "Zakázané, GameForge 3D Studio bol zostavený bez Bullet"
 
 
 msgid "Points to compute the convex hull of"
@@ -157531,32 +157529,32 @@ msgid "Path to a CSV file"
 msgstr "Cesta k súboru CSV"
 
 
-msgid "Disabled, Blender was compiled without OBJ I/O"
-msgstr "Zakázané, Blender bol skompilovaný bez OBJ I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without OBJ I/O"
+msgstr "Zakázané, GameForge 3D Studio bol skompilovaný bez OBJ I/O"
 
 
 msgid "Path to a OBJ file"
 msgstr "Cesta k súboru OBJ"
 
 
-msgid "Disabled, Blender was compiled without PLY I/O"
-msgstr "Zakázané, Blender bol skompilovaný bez PLY I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without PLY I/O"
+msgstr "Zakázané, GameForge 3D Studio bol skompilovaný bez PLY I/O"
 
 
 msgid "Path to a PLY file"
 msgstr "Cesta k súboru PLY"
 
 
-msgid "Disabled, Blender was compiled without SPZ I/O"
-msgstr "Zakázané, Blender bol skompilovaný bez SPZ I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without SPZ I/O"
+msgstr "Zakázané, GameForge 3D Studio bol skompilovaný bez SPZ I/O"
 
 
 msgid "Path to a SPZ file"
 msgstr "Cesta k súboru SPZ"
 
 
-msgid "Disabled, Blender was compiled without STL I/O"
-msgstr "Zakázané, Blender bol skompilovaný bez STL I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without STL I/O"
+msgstr "Zakázané, GameForge 3D Studio bol skompilovaný bez STL I/O"
 
 
 msgid "Path to a STL file"
@@ -158292,8 +158290,8 @@ msgid "The subdivision level is too large"
 msgstr "Úroveň delenia je príliš veľká"
 
 
-msgid "Disabled, Blender was compiled without OpenSubdiv"
-msgstr "Zakázané, Blender bol skompilovaný bez OpenSubdiv"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenSubdiv"
+msgstr "Zakázané, GameForge 3D Studio bol skompilovaný bez OpenSubdiv"
 
 
 msgid "Mesh to subdivide"
@@ -159565,7 +159563,7 @@ msgid "Pack UV Islands Field"
 msgstr "Pole zbalených UV ostrovov"
 
 
-msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in Blender"
+msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in GameForge 3D Studio"
 msgstr "Výpočet pomocou knižnice MikkTSpace, v súlade s dotyčnicami používanými inde v Blenderi"
 
 
@@ -161439,7 +161437,7 @@ msgid "Input pending {}"
 msgstr "Očakáva vstup {}"
 
 
-msgid "Blender File View"
+msgid "GameForge 3D Studio File View"
 msgstr "Súbor zobrazenia Blendera"
 
 
@@ -161467,8 +161465,8 @@ msgid "Overwrite Startup File"
 msgstr "Prepísať spúšťací súbor"
 
 
-msgid "Blender will start next time as it is now."
-msgstr "Blender sa nabudúce spustí tak ako teraz."
+msgid "GameForge 3D Studio will start next time as it is now."
+msgstr "GameForge 3D Studio sa nabudúce spustí tak ako teraz."
 
 
 msgid "Template \"{}\" will start next time as it is now."
@@ -161491,7 +161489,7 @@ msgid "Load Factory \"{}\" Preferences."
 msgstr "Načítať továrenské \"{}\" predvoľby."
 
 
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "Načítať továrenské predvoľby Blendera"
 
 
@@ -161603,19 +161601,19 @@ msgid "Unable to Load File"
 msgstr "Nie je možné načítať súbor"
 
 
-msgid "The file is not a valid Blender file."
+msgid "The file is not a valid GameForge 3D Studio file."
 msgstr "Súbor nie je platný súbor Blenderu."
 
 
-msgid "This file was saved by a newer version of Blender (%s)."
+msgid "This file was saved by a newer version of GameForge 3D Studio (%s)."
 msgstr "Tento súbor bol uložený v novšej verzii Blenderu (%s)."
 
 
-msgid "Saving it with this Blender (%s) may cause loss of data."
+msgid "Saving it with this GameForge 3D Studio (%s) may cause loss of data."
 msgstr "Uloženie touto verziou Blenderu (%s) môže spôsobiť stratu údajov."
 
 
-msgid "This file is managed by the Blender asset system. It can only be"
+msgid "This file is managed by the GameForge 3D Studio asset system. It can only be"
 msgstr "Tento súbor je spravovaný systémom aktív Blenderu. Môže byť iba"
 
 
@@ -161639,11 +161637,11 @@ msgid "Cannot overwrite asset system files. Save as new file"
 msgstr "Nemožno prepísať systémové súbory aktív. Uložiť ako nový súbor"
 
 
-msgid "with an older Blender version?"
+msgid "with an older GameForge 3D Studio version?"
 msgstr "so staršou verziou Blenderu?"
 
 
-msgid "Overwrite file with an older Blender version?"
+msgid "Overwrite file with an older GameForge 3D Studio version?"
 msgstr "Prepísať súbor staršou verziou Blenderu?"
 
 
@@ -161659,7 +161657,7 @@ msgid "Save changes before closing?"
 msgstr "Uložiť zmeny pred ukončením?"
 
 
-msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with Blender v4.5 to convert animation data."
+msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with GameForge 3D Studio v4.5 to convert animation data."
 msgstr "Načítal sa blend súbor pred verziou 2.50, údaje animácie neboli načítané. Otvorte a uložte súbor v Blenderi v4.5, aby sa údaje animácie konvertovali."
 
 
@@ -161703,7 +161701,7 @@ msgid "%d libraries have overrides needing resync (auto resynced in %.0fm%.2fs),
 msgstr "%d knižnice majú prepisy vyžadujúce opätovnú synchronizáciu (automatická opätovná synchronizácia v %.0fm%.2fs), kvôli detailom skontrolujte, prosím, editor Informácie"
 
 
-msgid "Proxies have been removed from Blender (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest Blender version"
+msgid "Proxies have been removed from GameForge 3D Studio (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest GameForge 3D Studio version"
 msgstr "Náhrady boli z Blenderu odstránené (%d náhrady boli automaticky konvertované na prepisy knižnice, %d náhrady nemohli byť konvertované a boli vymazané). Prosím, zvážte opätovné uloženie akéhokoľvek súboru knižnice .blend najnovšou verziou Blenderu"
 
 
@@ -161987,7 +161985,7 @@ msgstr "Vaša grafická karta alebo verzia ovládača má obmedzenú podporu. M�
 
 
 msgctxt "WindowManager"
-msgid "Newer graphics drivers might be available with better Blender compatibility."
+msgid "Newer graphics drivers might be available with better GameForge 3D Studio compatibility."
 msgstr "Môžu byť k dispozícii novšie grafické ovládače s lepšou kompatibilitou s Blenderom."
 
 
@@ -162012,7 +162010,7 @@ msgstr "Vaša grafická karta alebo verzia systému macOS nie je podporovaná"
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
 msgstr "Aktualizácia na najnovšiu verziu systému macOS môže zlepšiť podporu Blenderu"
 
 
@@ -162022,8 +162020,8 @@ msgstr "Vaša grafická karta alebo verzia ovládača nie je podporovaná."
 
 
 msgctxt "WindowManager"
-msgid "Blender will now close."
-msgstr "Blender sa teraz zatvorí."
+msgid "GameForge 3D Studio will now close."
+msgstr "GameForge 3D Studio sa teraz zatvorí."
 
 
 msgid "Intel binary detected. Expect reduced performance."
@@ -162423,8 +162421,8 @@ msgid "Stroke and Fill"
 msgstr "Ťah a výplň"
 
 
-msgid "Blender 27x"
-msgstr "Blender 27x"
+msgid "version 27x"
+msgstr "GameForge 3D Studio 27x"
 
 
 msgid "Industry Compatible"
@@ -162660,7 +162658,7 @@ msgid "Import-Export BVH from armature objects"
 msgstr "Import-Export BVH z objektov armatúry"
 
 
-msgid "Blender Extensions"
+msgid "GameForge 3D Studio Extensions"
 msgstr "Rozšírenia Blendera"
 
 
@@ -162712,7 +162710,7 @@ msgid "Manage UI translations"
 msgstr "Správa prekladov užívateľského rozhrania"
 
 
-msgid "Allows managing UI translations directly from Blender (update main .po files, update scripts' translations, etc.)"
+msgid "Allows managing UI translations directly from GameForge 3D Studio (update main .po files, update scripts' translations, etc.)"
 msgstr "Umožní riadiť preklad UI priamo z Blendera (aktualizovať hlavný .po súbor, aktualizovať preklady skriptov, atď.)"
 
 

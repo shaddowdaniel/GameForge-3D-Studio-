@@ -174,10 +174,10 @@ static PyStructSequence_Field app_cb_info_fields[] = {
     {"blend_import_post",
      "on linking or appending data (after). " BLENDIMPORT_ARG PYDOC_BLENDIMPORT_TYPE},
     {"exit_pre",
-     "just before Blender shuts down, while all data is still valid. "
-     "Accepts one boolean argument. True indicates either that a user has been using Blender and "
-     "exited, or that Blender is exiting in a circumstance that should be treated as if that were "
-     "the case. False indicates that Blender is running in background mode, or is exiting due to "
+     "just before GameForge 3D Studio shuts down, while all data is still valid. "
+     "Accepts one boolean argument. True indicates either that a user has been using GameForge 3D Studio and "
+     "exited, or that GameForge 3D Studio is exiting in a circumstance that should be treated as if that were "
+     "the case. False indicates that GameForge 3D Studio is running in background mode, or is exiting due to "
      "failed command line arguments, etc." PYDOC_HANDLER_TYPE_BOOL},
 
 /* sets the permanent tag */

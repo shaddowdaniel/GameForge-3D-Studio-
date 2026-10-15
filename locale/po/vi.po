@@ -836,8 +836,8 @@ msgid "Fribidi Library"
 msgstr "Thư Viện Fribidi"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
-msgstr "Thư viện FriBidi được biên dịch trong ngôn ngữ C (.so trong Linux, .dll trong windows...), bạn có thể sẽ phải chỉnh sửa nó nếu bạn đang sử dụng Windows, ví dụ: dùng cái được kèm trong kho thư viện Blender"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
+msgstr "Thư viện FriBidi được biên dịch trong ngôn ngữ C (.so trong Linux, .dll trong windows...), bạn có thể sẽ phải chỉnh sửa nó nếu bạn đang sử dụng Windows, ví dụ: dùng cái được kèm trong kho thư viện GameForge 3D Studio"
 
 
 msgid "Translation Root"
@@ -860,8 +860,8 @@ msgid "Source Root"
 msgstr "Gốc Mã Nguồn"
 
 
-msgid "The Blender source root path"
-msgstr "Đường dẫn đến gốc mã nguồn của Blender"
+msgid "The GameForge 3D Studio source root path"
+msgstr "Đường dẫn đến gốc mã nguồn của GameForge 3D Studio"
 
 
 msgid "Spell Cache"
@@ -884,8 +884,8 @@ msgid "Persistent Data Path"
 msgstr "Đường Dẫn của Dữ Liệu Ổn Định"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Tên của tập tin json lưu các giá trị sắp đặt ở trên (rất không may, hệ thống Blender không hoạt động ở đây)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
+msgstr "Tên của tập tin json lưu các giá trị sắp đặt ở trên (rất không may, hệ thống GameForge 3D Studio không hoạt động ở đây)"
 
 
 msgid "User Add-ons"
@@ -1764,8 +1764,8 @@ msgid "Edit persistent configuration settings"
 msgstr "Biên soạn các cài đặt cấu hình ổn định"
 
 
-msgid "Manage the current Blender project"
-msgstr "Quản lý dự án Blender hiện tại"
+msgid "Manage the current GameForge 3D Studio project"
+msgstr "Quản lý dự án GameForge 3D Studio hiện tại"
 
 
 msgid "Width"
@@ -1860,8 +1860,8 @@ msgid "Is Editable"
 msgstr "Có Thể Biên Soạn"
 
 
-msgid "Assets and catalogs in this library can be edited from the current Blender instance"
-msgstr "Các tài sản và danh mục trong thư viện này có thể được chỉnh sửa từ phiên bản Blender hiện tại"
+msgid "Assets and catalogs in this library can be edited from the current GameForge 3D Studio instance"
+msgstr "Các tài sản và danh mục trong thư viện này có thể được chỉnh sửa từ phiên bản GameForge 3D Studio hiện tại"
 
 
 msgid "Library Type"
@@ -1880,16 +1880,16 @@ msgid "Current File"
 msgstr "Tập tin hiện tại"
 
 
-msgid "Show the assets currently available in this Blender session"
-msgstr "Hiển thị các tài sản hiện có trong phiên sử dụng Blender này"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
+msgstr "Hiển thị các tài sản hiện có trong phiên sử dụng GameForge 3D Studio này"
 
 
 msgid "Essentials"
 msgstr "Cốt Yếu"
 
 
-msgid "Show basic building blocks and utilities coming with Blender"
-msgstr "Hiển thị các khối xây dựng cơ bản và tiện ích đi kèm với Blender"
+msgid "Show basic building blocks and utilities coming with GameForge 3D Studio"
+msgstr "Hiển thị các khối xây dựng cơ bản và tiện ích đi kèm với GameForge 3D Studio"
 
 
 msgid "Online Essentials"
@@ -1960,8 +1960,8 @@ msgid "Catalog UUID"
 msgstr "UUID của Danh mục"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
-msgstr "Mã định danh cho danh mục tài sản, được Blender sử dụng để tra cứu đường dẫn đến danh mục tài sản. Phải là UUID chiểu theo RFC4122."
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgstr "Mã định danh cho danh mục tài sản, được GameForge 3D Studio sử dụng để tra cứu đường dẫn đến danh mục tài sản. Phải là UUID chiểu theo RFC4122."
 
 
 msgid "Catalog Simple Name"
@@ -2709,8 +2709,8 @@ msgid "Is Internal"
 msgstr "Là Nội Bộ"
 
 
-msgid "The attribute is meant for internal use by Blender"
-msgstr "Thuộc tính chỉ dành cho Blender sử dụng nội bộ mà thôi"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
+msgstr "Thuộc tính chỉ dành cho GameForge 3D Studio sử dụng nội bộ mà thôi"
 
 
 msgid "Is Required"
@@ -3428,8 +3428,8 @@ msgid "All Data-Blocks"
 msgstr "Toàn Bộ các Khối Dữ Liệu"
 
 
-msgid "Read-only list of all IDs listed in Blender data-base. Warning: Order is not guaranteed and should be considered an internal implementation detail"
-msgstr "Danh sách chỉ đọc chứa tất cả các ID có trong cơ sở dữ liệu của Blender. Cảnh báo: Thứ tự không được đảm bảo và nên được xem là chi tiết thực hiện nội bộ"
+msgid "Read-only list of all IDs listed in GameForge 3D Studio data-base. Warning: Order is not guaranteed and should be considered an internal implementation detail"
+msgstr "Danh sách chỉ đọc chứa tất cả các ID có trong cơ sở dữ liệu của GameForge 3D Studio. Cảnh báo: Thứ tự không được đảm bảo và nên được xem là chi tiết thực hiện nội bộ"
 
 
 msgid "Annotation"
@@ -3601,8 +3601,8 @@ msgid "Project"
 msgstr "Dự án"
 
 
-msgid "The currently active Blender project, if any"
-msgstr "Dự án Blender đang hoạt động hiện tại (nếu có)"
+msgid "The currently active GameForge 3D Studio project, if any"
+msgstr "Dự án GameForge 3D Studio đang hoạt động hiện tại (nếu có)"
 
 
 msgid "Scene data-blocks"
@@ -3997,8 +3997,8 @@ msgid "Project"
 msgstr "Phóng Chiếu"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Fallback"
@@ -4254,8 +4254,8 @@ msgid "Library (blend-file) reference in a BlendImportContext data. Currently on
 msgstr "Tham chiếu thư viện (tập tin blend) trong dữ liệu BlendImportContext. Hiện tại, chỉ được cung cấp dưới dạng dữ liệu chỉ đọc cho các trình xử lý trước và sau khi nhập tập tin blend"
 
 
-msgid "Blender Project"
-msgstr "Dự án Blender"
+msgid "GameForge 3D Studio Project"
+msgstr "Dự án GameForge 3D Studio"
 
 
 msgid "Active Project Variable"
@@ -4302,12 +4302,12 @@ msgid "The variables in this project"
 msgstr "Các biến trong dự án này"
 
 
-msgid "Blender RNA"
-msgstr "RNA Blender"
+msgid "GameForge 3D Studio RNA"
+msgstr "RNA GameForge 3D Studio"
 
 
-msgid "Blender RNA structure definitions"
-msgstr "Định nghĩa cấu trúc RNA của Blender"
+msgid "GameForge 3D Studio RNA structure definitions"
+msgstr "Định nghĩa cấu trúc RNA của GameForge 3D Studio"
 
 
 msgid "Structs"
@@ -8908,8 +8908,8 @@ msgid "Lin error"
 msgstr "Sai số tuyến tính"
 
 
-msgid "Amount of residual error in Blender space unit for constraints that work on position"
-msgstr "Lượng sai số tuyến tính thặng dư trong đơn vị không gian của Blender đối với những ràng buộc tác động đến vị trí"
+msgid "Amount of residual error in GameForge 3D Studio space unit for constraints that work on position"
+msgstr "Lượng sai số tuyến tính thặng dư trong đơn vị không gian của GameForge 3D Studio đối với những ràng buộc tác động đến vị trí"
 
 
 msgid "Rotation error"
@@ -12880,8 +12880,8 @@ msgid "Max Velocity"
 msgstr "Vận Tốc Tối Đa"
 
 
-msgid "Velocity considered as maximum influence (Blender units per frame)"
-msgstr "Vận tốc gây ra ảnh hưởng tối đa (đơn vị Blender / khung hình)"
+msgid "Velocity considered as maximum influence (GameForge 3D Studio units per frame)"
+msgstr "Vận tốc gây ra ảnh hưởng tối đa (đơn vị GameForge 3D Studio / khung hình)"
 
 
 msgid "Velocity Color Ramp"
@@ -13258,8 +13258,8 @@ msgid "Premultiply Alpha"
 msgstr "Nhân Trước Alpha"
 
 
-msgid "Multiply color by alpha (recommended for Blender input)"
-msgstr "Nhân màu với alpha (khuyến nghị cho đầu vào Blender)"
+msgid "Multiply color by alpha (recommended for GameForge 3D Studio input)"
+msgstr "Nhân màu với alpha (khuyến nghị cho đầu vào GameForge 3D Studio)"
 
 
 msgid "Use Shrink"
@@ -15662,24 +15662,24 @@ msgid "Hide .blend files items that are not data-blocks with asset metadata"
 msgstr "Ẩn Giấu các mục tập tin .blend không phải là khối dữ liệu có siêu dữ liệu chỉ định nó là tài sản"
 
 
-msgid "Filter Blender Backup Files"
-msgstr "Thanh Lọc các Tập Tin Dự Phòng của Blender"
+msgid "Filter GameForge 3D Studio Backup Files"
+msgstr "Thanh Lọc các Tập Tin Dự Phòng của GameForge 3D Studio"
 
 
 msgid "Show .blend1, .blend2, etc. files"
 msgstr "Hiển thị các tập tin .blend1, .blend2, vân vân"
 
 
-msgid "Filter Blender"
-msgstr "Thanh Lọc Blender"
+msgid "Filter GameForge 3D Studio"
+msgstr "Thanh Lọc GameForge 3D Studio"
 
 
 msgid "Show .blend files"
 msgstr "Hiển thị các tập tin .blend"
 
 
-msgid "Filter Blender IDs"
-msgstr "Thanh Lọc các ID của Blender"
+msgid "Filter GameForge 3D Studio IDs"
+msgstr "Thanh Lọc các ID của GameForge 3D Studio"
 
 
 msgid "Show .blend files items (objects, materials, etc.)"
@@ -15754,7 +15754,7 @@ msgid "Library Browser"
 msgstr "Trình Duyệt Thư Viện"
 
 
-msgid "Whether we may browse Blender files' content or not"
+msgid "Whether we may browse GameForge 3D Studio files' content or not"
 msgstr "Chúng ta có thể duyệt thảo nội dung của tập tin .blend hay không"
 
 
@@ -16214,8 +16214,8 @@ msgid "Export Mantaflow Script"
 msgstr "Xuất Khẩu Tập Lệnh Mantaflow"
 
 
-msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of Blender) after baking the simulation."
-msgstr "Sinh tạo và xuất khẩu tập lệnh Mantaflow từ các sắp đặt của phạm vi (domain) hiện tại, trong khi đang nướng. Cái này chỉ cần thiết nếu bạn dự định phân tích bộ đệm nhớ (chẳng hạn như quan sát khung lưới đồ thị, xem các véctơ vận tốc, hoặc xem các hạt) trực tiếp trong Mantaflow, (bên ngoài Blender) sau khi nướng mô phỏng."
+msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of GameForge 3D Studio) after baking the simulation."
+msgstr "Sinh tạo và xuất khẩu tập lệnh Mantaflow từ các sắp đặt của phạm vi (domain) hiện tại, trong khi đang nướng. Cái này chỉ cần thiết nếu bạn dự định phân tích bộ đệm nhớ (chẳng hạn như quan sát khung lưới đồ thị, xem các véctơ vận tốc, hoặc xem các hạt) trực tiếp trong Mantaflow, (bên ngoài GameForge 3D Studio) sau khi nướng mô phỏng."
 
 
 msgid "Flame Grid"
@@ -19511,8 +19511,8 @@ msgid "Is Legacy Action"
 msgstr "Là Hành Động Cũ"
 
 
-msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since Blender 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
-msgstr "Trả về kết quả kiểm nghiệm rằng cái này có phải là Hành Động cũ hay không. Các Hành Động cũ không có tầng lớp hoặc khe. Từ Blender 4.4 trở đi, các Hành Động sẽ được tự động cập nhật thành Hành Động có tầng lớp. Hàm này chỉ trả về Đúng (true) đối với các Hành Động trống"
+msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since version 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
+msgstr "Trả về kết quả kiểm nghiệm rằng cái này có phải là Hành Động cũ hay không. Các Hành Động cũ không có tầng lớp hoặc khe. Từ GameForge 3D Studio 4.4 trở đi, các Hành Động sẽ được tự động cập nhật thành Hành Động có tầng lớp. Hàm này chỉ trả về Đúng (true) đối với các Hành Động trống"
 
 
 msgid "Is Empty"
@@ -21511,8 +21511,8 @@ msgid "Unprojected Size"
 msgstr "Kích Thước Chưa Phóng Chiếu"
 
 
-msgid "Diameter of brush in Blender units"
-msgstr "Đường kính đầu bút tính theo đơn vị của Blender"
+msgid "Diameter of brush in GameForge 3D Studio units"
+msgstr "Đường kính đầu bút tính theo đơn vị của GameForge 3D Studio"
 
 
 msgid "Accumulate"
@@ -24863,8 +24863,8 @@ msgid "True if this library contains library overrides that are linked in curren
 msgstr "Giá trị là True nếu thư viện này chứa các phần ghi đè thư viện được liên kết trong tập tin blend hiện tại và cần được đồng bộ hóa lại theo cách đệ quy khi tải (lúc đó, nên mở và lưu lại tập tin blend của thư viện đó)."
 
 
-msgid "Version of Blender the library .blend was saved with"
-msgstr "Phiên bản của Blender mà thư viện .blend đã sử dụng khi lưu"
+msgid "Version of GameForge 3D Studio the library .blend was saved with"
+msgstr "Phiên bản của GameForge 3D Studio mà thư viện .blend đã sử dụng khi lưu"
 
 
 msgctxt "Light"
@@ -30086,12 +30086,12 @@ msgid "Noise basis used for turbulence"
 msgstr "Cơ sở nhiễu để dùng cho sự hỗn loạn"
 
 
-msgid "Blender Original"
-msgstr "Blender Gốc"
+msgid "GameForge 3D Studio Original"
+msgstr "GameForge 3D Studio Gốc"
 
 
-msgid "Noise algorithm - Blender original: Smooth interpolated noise"
-msgstr "Thuật toán tạo nhiễu - Blender gốc: Làm Mịn nhiễu nội suy"
+msgid "Noise algorithm - GameForge 3D Studio original: Smooth interpolated noise"
+msgstr "Thuật toán tạo nhiễu - GameForge 3D Studio gốc: Làm Mịn nhiễu nội suy"
 
 
 msgid "Original Perlin"
@@ -30960,8 +30960,8 @@ msgid "Asset Blend Path"
 msgstr "Đường Dẫn Tài Sản Blend"
 
 
-msgid "Full path to the Blender file containing the active asset"
-msgstr "Đường dẫn đầy đủ đến tập tin Blender có chứa tài sản hiện đang hoạt động"
+msgid "Full path to the GameForge 3D Studio file containing the active asset"
+msgstr "Đường dẫn đầy đủ đến tập tin GameForge 3D Studio có chứa tài sản hiện đang hoạt động"
 
 
 msgid "Filter by Repository"
@@ -32112,16 +32112,16 @@ msgid "Custom Icon"
 msgstr "Biểu Tượng Tùy Chọn"
 
 
-msgid "True if this preview icon has been modified by py script, and is no more auto-generated by Blender"
-msgstr "Đúng nếu biểu tượng xem trước này đã được sửa đổi bởi tập lệnh py và không còn được Blender sinh tạo tự động nữa"
+msgid "True if this preview icon has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
+msgstr "Đúng nếu biểu tượng xem trước này đã được sửa đổi bởi tập lệnh py và không còn được GameForge 3D Studio sinh tạo tự động nữa"
 
 
 msgid "Custom Image"
 msgstr "Hình Ảnh Tùy Chọn"
 
 
-msgid "True if this preview image has been modified by py script, and is no more auto-generated by Blender"
-msgstr "Đúng (True) nếu hình ảnh xem trước này đã được sửa đổi bởi tập lệnh py, và không còn được Blender tự động sinh tạo nữa"
+msgid "True if this preview image has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
+msgstr "Đúng (True) nếu hình ảnh xem trước này đã được sửa đổi bởi tập lệnh py, và không còn được GameForge 3D Studio tự động sinh tạo nữa"
 
 
 msgid "Parameters defining how an Image data-block is used by another data-block"
@@ -42778,7 +42778,7 @@ msgstr "Kích Thước Không Gian"
 
 
 msgid "Size of the simulation domain (in meters), and of the generated geometry (in BU)"
-msgstr "Kích thước của phạm vi mô phỏng (trong đơn vị mét), và hình học sinh tạo (trong đơn vị Blender)"
+msgstr "Kích thước của phạm vi mô phỏng (trong đơn vị mét), và hình học sinh tạo (trong đơn vị GameForge 3D Studio)"
 
 
 msgid "Spectrum"
@@ -52412,20 +52412,20 @@ msgid "World space normal mapping"
 msgstr "Ánh xạ pháp tuyến của không gian thế giới"
 
 
-msgid "Blender Object Space"
-msgstr "Không Gian Đối Tượng của Blender"
+msgid "GameForge 3D Studio Object Space"
+msgstr "Không Gian Đối Tượng của GameForge 3D Studio"
 
 
-msgid "Object space normal mapping, compatible with Blender render baking"
-msgstr "Ánh xạ pháp tuyến không gian đối tượng, thích hợp với quá trình nướng kết xuất của Blender"
+msgid "Object space normal mapping, compatible with GameForge 3D Studio render baking"
+msgstr "Ánh xạ pháp tuyến không gian đối tượng, thích hợp với quá trình nướng kết xuất của GameForge 3D Studio"
 
 
-msgid "Blender World Space"
-msgstr "Không Gian Thế Giới của Blender"
+msgid "GameForge 3D Studio World Space"
+msgstr "Không Gian Thế Giới của GameForge 3D Studio"
 
 
-msgid "World space normal mapping, compatible with Blender render baking"
-msgstr "Ánh xạ pháp tuyến không gian thế giới, thích hợp với quá trình nướng kết xuất của Blender"
+msgid "World space normal mapping, compatible with GameForge 3D Studio render baking"
+msgstr "Ánh xạ pháp tuyến không gian thế giới, thích hợp với quá trình nướng kết xuất của GameForge 3D Studio"
 
 
 msgid "UV Map for tangent space maps"
@@ -55326,8 +55326,8 @@ msgstr "Rigify Nâng Cấp Tầng Lớp Giàn Siêu"
 
 
 msgctxt "Operator"
-msgid "Get active/selected colors from current Blender theme"
-msgstr "Lấy các màu đang hoạt động/được chọn từ chủ đề hiện tại của Blender"
+msgid "Get active/selected colors from current GameForge 3D Studio theme"
+msgstr "Lấy các màu đang hoạt động/được chọn từ chủ đề hiện tại của GameForge 3D Studio"
 
 
 msgid "Validates references from rig component settings to bone collections"
@@ -55832,8 +55832,8 @@ msgid "Clear Status"
 msgstr "Xóa Trạng Thái"
 
 
-msgid "Allow Blender to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, Blender cannot prevent third-party add-ons from violating this rule."
-msgstr "Cho phép Blender truy cập internet. Các trình bổ sung tuân theo cài đặt này sẽ chỉ kết nối vào internet nếu được bật lên mà thôi. Đương nhiên, Blender không thể ngăn cản các trình bổ sung bên thứ ba vi phạm quy tắc này."
+msgid "Allow GameForge 3D Studio to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, GameForge 3D Studio cannot prevent third-party add-ons from violating this rule."
+msgstr "Cho phép GameForge 3D Studio truy cập internet. Các trình bổ sung tuân theo cài đặt này sẽ chỉ kết nối vào internet nếu được bật lên mà thôi. Đương nhiên, GameForge 3D Studio không thể ngăn cản các trình bổ sung bên thứ ba vi phạm quy tắc này."
 
 
 msgid "Open extensions preferences"
@@ -57041,8 +57041,8 @@ msgid "Uninstall Studio Light"
 msgstr "Tháo Lắp Đặt Ánh Sáng Studio"
 
 
-msgid "Load and apply a Blender XML theme file"
-msgstr "Nạp và áp dụng tập tin kiểu mẫu XML của Blender"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
+msgstr "Nạp và áp dụng tập tin kiểu mẫu XML của GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -57519,13 +57519,13 @@ msgid "I18n Save Settings"
 msgstr "I18n Lưu các Sắp Đặt"
 
 
-msgid "Update i18n data (po files) in Blender source code repository"
-msgstr "Cập nhật dữ liệu i18n (các tập tin po) trong kho lưu trữ mã nguồn Blender"
+msgid "Update i18n data (po files) in GameForge 3D Studio source code repository"
+msgstr "Cập nhật dữ liệu i18n (các tập tin po) trong kho lưu trữ mã nguồn GameForge 3D Studio"
 
 
 msgctxt "Operator"
-msgid "Update I18n Blender Repository"
-msgstr "Cập Nhật Kho Lưu Trữ Blender I18n"
+msgid "Update I18n GameForge 3D Studio Repository"
+msgstr "Cập Nhật Kho Lưu Trữ GameForge 3D Studio I18n"
 
 
 msgid "Init settings for i18n files update operators"
@@ -59252,8 +59252,8 @@ msgid "Debug Channel List"
 msgstr "Điều Tra Danh Sách Kênh"
 
 
-msgid "Log the channel list info in the terminal. This operator is only available in debug builds of Blender"
-msgstr "Thông báo thông tin danh sách kênh trong thiết bị đầu cuối. Thao tác này chỉ khả dụng trong bản dựng có tính năng điều tra gỡ lỗi của Blender mà thôi"
+msgid "Log the channel list info in the terminal. This operator is only available in debug builds of GameForge 3D Studio"
+msgstr "Thông báo thông tin danh sách kênh trong thiết bị đầu cuối. Thao tác này chỉ khả dụng trong bản dựng có tính năng điều tra gỡ lỗi của GameForge 3D Studio mà thôi"
 
 
 msgctxt "Operator"
@@ -60246,8 +60246,8 @@ msgid "Upgrade the metarig from bone layers to bone collections"
 msgstr "Nâng cấp giàn siêu từ các tầng lớp xương lên các bộ sưu tập xương"
 
 
-msgid "Set the color palette to match Blender's active theme for selected and active bones"
-msgstr "Đặt bảng màu sao cho phù hợp với chủ đề đang hoạt động của Blender cho các xương được chọn và xương đang hoạt động"
+msgid "Set the color palette to match GameForge 3D Studio's active theme for selected and active bones"
+msgstr "Đặt bảng màu sao cho phù hợp với chủ đề đang hoạt động của GameForge 3D Studio cho các xương được chọn và xương đang hoạt động"
 
 
 msgid ""
@@ -63921,8 +63921,8 @@ msgid "Apply Scalings"
 msgstr "Áp Dụng Biến Đổi Tỷ Lệ"
 
 
-msgid "How to apply custom and units scalings in generated FBX file (Blender uses FBX scale to detect units on import, but many other applications do not handle the same way)"
-msgstr "Phương pháp áp dụng tỷ lệ tùy biến và thang đo trong các tập tin FBX được sinh tạo (Blender sử dụng thang đo của FBX để phát hiện đơn vị đo lường trong khi nhập liệu, song nhiều trình ứng dụng khác không xử lý theo cùng một cách)"
+msgid "How to apply custom and units scalings in generated FBX file (GameForge 3D Studio uses FBX scale to detect units on import, but many other applications do not handle the same way)"
+msgstr "Phương pháp áp dụng tỷ lệ tùy biến và thang đo trong các tập tin FBX được sinh tạo (GameForge 3D Studio sử dụng thang đo của FBX để phát hiện đơn vị đo lường trong khi nhập liệu, song nhiều trình ứng dụng khác không xử lý theo cùng một cách)"
 
 
 msgid "All Local"
@@ -63961,24 +63961,24 @@ msgid "Apply Unit"
 msgstr "Áp Dụng Đơn Vị"
 
 
-msgid "Take into account current Blender units settings (if unset, raw Blender Units values are used as-is)"
-msgstr "Lưu tâm đến các sắp đặt về đơn vị của Blender hiện tại (nếu không đặt thì các giá trị Đơn Vị Blender nguyên thủy sẽ được sử dụng như hiện tại)"
+msgid "Take into account current GameForge 3D Studio units settings (if unset, raw GameForge 3D Studio Units values are used as-is)"
+msgstr "Lưu tâm đến các sắp đặt về đơn vị của GameForge 3D Studio hiện tại (nếu không đặt thì các giá trị Đơn Vị GameForge 3D Studio nguyên thủy sẽ được sử dụng như hiện tại)"
 
 
 msgid "Armature FBXNode Type"
 msgstr "Thể loại nút FBXNode cho Khung Rối"
 
 
-msgid "FBX type of node (object) used to represent Blender's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into Blender...)"
-msgstr "Loại nút FBX (đối tượng) được sử dụng để đại diện cho các khung rối của Blender (sử dụng loại Null trừ khi bạn gặp sự cố với ứng dụng khác, vì các lựa chọn khác có thể không được nhập khẩu hoàn hảo vào Blender...)"
+msgid "FBX type of node (object) used to represent GameForge 3D Studio's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into GameForge 3D Studio...)"
+msgstr "Loại nút FBX (đối tượng) được sử dụng để đại diện cho các khung rối của GameForge 3D Studio (sử dụng loại Null trừ khi bạn gặp sự cố với ứng dụng khác, vì các lựa chọn khác có thể không được nhập khẩu hoàn hảo vào GameForge 3D Studio...)"
 
 
 msgid "Null"
 msgstr "Null"
 
 
-msgid "'Null' FBX node, similar to Blender's Empty (default)"
-msgstr "Nút 'Null' của FBX, tương tự như Đối Tượng Rỗng của Blender (mặc định)"
+msgid "'Null' FBX node, similar to GameForge 3D Studio's Empty (default)"
+msgstr "Nút 'Null' của FBX, tương tự như Đối Tượng Rỗng của GameForge 3D Studio (mặc định)"
 
 
 msgid "'Root' FBX node, supposed to be the root of chains of bones..."
@@ -64093,8 +64093,8 @@ msgid "Apply Transform"
 msgstr "Áp Dụng Biến Hóa"
 
 
-msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
-msgstr "Nướng biến hóa không gian vào dữ liệu vật thể, tránh xoay chiều không mong muốn đối với các đối tượng khi không gian mục tiêu không căn chỉnh với không gian của Blender (CẢNH BÁO! đây là tùy chọn thử nghiệm, tự mình gánh chịu kết quả nếu cứ sử dụng, đã từng gây ra hỏng hóc với các hoạt họa, các khung rối)"
+msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with GameForge 3D Studio's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
+msgstr "Nướng biến hóa không gian vào dữ liệu vật thể, tránh xoay chiều không mong muốn đối với các đối tượng khi không gian mục tiêu không căn chỉnh với không gian của GameForge 3D Studio (CẢNH BÁO! đây là tùy chọn thử nghiệm, tự mình gánh chịu kết quả nếu cứ sử dụng, đã từng gây ra hỏng hóc với các hoạt họa, các khung rối)"
 
 
 msgid "Batch Mode"
@@ -64360,8 +64360,8 @@ msgid "Use Modifiers Render Setting"
 msgstr "Sử Dụng Sắp Đặt về Kết Xuất của các Bộ Điều Chỉnh"
 
 
-msgid "Use render settings when applying modifiers to mesh objects (DISABLED in Blender 2.8)"
-msgstr "Sử dụng các sắp đặt về kết xuất khi áp dụng các bộ điều chỉnh vào đối tượng khung lưới (BỊ TẮT (không hoạt động) trong Blender 2.8)"
+msgid "Use render settings when applying modifiers to mesh objects (DISABLED in version 2.8)"
+msgstr "Sử dụng các sắp đặt về kết xuất khi áp dụng các bộ điều chỉnh vào đối tượng khung lưới (BỊ TẮT (không hoạt động) trong GameForge 3D Studio 2.8)"
 
 
 msgid "Use Metadata"
@@ -64884,8 +64884,8 @@ msgid "Raw (Deprecated)"
 msgstr "Dạng Thô (Đã lỗi thời)"
 
 
-msgid "Blender lighting strengths with no conversion"
-msgstr "Cường độ chiếu sáng của Blender, không chuyển đổi"
+msgid "GameForge 3D Studio lighting strengths with no conversion"
+msgstr "Cường độ chiếu sáng của GameForge 3D Studio, không chuyển đổi"
 
 
 msgid "Bone Influences"
@@ -65112,8 +65112,8 @@ msgid "Export Original PBR Specular"
 msgstr "Xuất Khẩu Phản Xạ Chuẩn PBR Gốc"
 
 
-msgid "Export original glTF PBR Specular, instead of Blender Principled Shader Specular"
-msgstr "Xuất khẩu phản xạ chuẩn PBR glTF gốc, thay vì Phản Xạ Chuẩn của Bộ Tô Bóng Nguyên Tắc Blender"
+msgid "Export original glTF PBR Specular, instead of GameForge 3D Studio Principled Shader Specular"
+msgstr "Xuất khẩu phản xạ chuẩn PBR glTF gốc, thay vì Phản Xạ Chuẩn của Bộ Tô Bóng Nguyên Tắc GameForge 3D Studio"
 
 
 msgid "Export point clouds"
@@ -65344,8 +65344,8 @@ msgid "Remember Export Settings"
 msgstr "Ghi Nhớ các Sắp Đặt về Xuất Khẩu"
 
 
-msgid "Store glTF export settings in the Blender project"
-msgstr "Lưu các sắp đặt xuất khẩu glTF trong đề án Blender"
+msgid "Store glTF export settings in the GameForge 3D Studio project"
+msgstr "Lưu các sắp đặt xuất khẩu glTF trong đề án GameForge 3D Studio"
 
 
 msgid "Package ID"
@@ -69657,8 +69657,8 @@ msgid "Definition"
 msgstr "Độ Phân Giải"
 
 
-msgid "Number of pixels per inch or Blender Unit"
-msgstr "Số lượng điểm ảnh trên một inch hoặc một Đơn Vị Blender"
+msgid "Number of pixels per inch or GameForge 3D Studio Unit"
+msgstr "Số lượng điểm ảnh trên một inch hoặc một Đơn Vị GameForge 3D Studio"
 
 
 msgid "Filepath used for importing the file"
@@ -69681,8 +69681,8 @@ msgid "Force Reload"
 msgstr "Buộc Nạp Lại"
 
 
-msgid "Force reload the image if it is already opened elsewhere in Blender"
-msgstr "Buộc phải nạp lại hình ảnh nếu nó đã được mở ở nơi khác trong Blender"
+msgid "Force reload the image if it is already opened elsewhere in GameForge 3D Studio"
+msgstr "Buộc phải nạp lại hình ảnh nếu nó đã được mở ở nơi khác trong GameForge 3D Studio"
 
 
 msgid "Height of the created plane"
@@ -69773,12 +69773,12 @@ msgid "Scale based on pixels per inch"
 msgstr "Đổi tỷ lệ dựa trên số điểm ảnh trên mỗi inch"
 
 
-msgid "Pixels per Blender Unit"
-msgstr "Số Điểm Ảnh trên mỗi Đơn Vị Blender"
+msgid "Pixels per GameForge 3D Studio Unit"
+msgstr "Số Điểm Ảnh trên mỗi Đơn Vị GameForge 3D Studio"
 
 
-msgid "Scale based on pixels per Blender Unit"
-msgstr "Đổi tỷ lệ dựa vào số điểm ảnh trên mỗi Đơn Vị Blender"
+msgid "Scale based on pixels per GameForge 3D Studio Unit"
+msgstr "Đổi tỷ lệ dựa vào số điểm ảnh trên mỗi Đơn Vị GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -70054,8 +70054,8 @@ msgid "Save the image with another name and/or settings"
 msgstr "Lưu hình ảnh với một cái tên khác và/hoặc các sắp đặt khác"
 
 
-msgid "Create a new image file without modifying the current image in Blender"
-msgstr "Kiến tạo một tập tin hình ảnh mới mà không sửa đổi hình ảnh hiện tại trong Blender"
+msgid "Create a new image file without modifying the current image in GameForge 3D Studio"
+msgstr "Kiến tạo một tập tin hình ảnh mới mà không sửa đổi hình ảnh hiện tại trong GameForge 3D Studio"
 
 
 msgid "Save As Render"
@@ -70254,8 +70254,8 @@ msgid "Scale FPS"
 msgstr "Đổi Tỷ Lệ Tần Số Khung Hình"
 
 
-msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a Blender frame"
-msgstr "Điều chỉnh tốc độ khung hình từ tập tin BVH cho phù hợp với cảnh hiện tại, nếu không, mỗi khung hình BVH sẽ được ánh xạ trực tiếp thành một khung hình của Blender"
+msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a GameForge 3D Studio frame"
+msgstr "Điều chỉnh tốc độ khung hình từ tập tin BVH cho phù hợp với cảnh hiện tại, nếu không, mỗi khung hình BVH sẽ được ánh xạ trực tiếp thành một khung hình của GameForge 3D Studio"
 
 
 msgid "Animation Offset"
@@ -70326,8 +70326,8 @@ msgid "Make Unique"
 msgstr "Biến Thành Độc Nhất"
 
 
-msgid "Import each FBX material as a unique Blender material"
-msgstr "Nhập khẩu từng nguyên vật liệu FBX làm nguyên vật liệu Blender độc nhất"
+msgid "Import each FBX material as a unique GameForge 3D Studio material"
+msgstr "Nhập khẩu từng nguyên vật liệu FBX làm nguyên vật liệu GameForge 3D Studio độc nhất"
 
 
 msgid "Reference Existing"
@@ -70370,8 +70370,8 @@ msgid "Import FBX animation"
 msgstr "Nhập Khẩu hoạt họa của FBX"
 
 
-msgid "Import custom normals, if available (otherwise Blender will recompute them)"
-msgstr "Nhập Khẩu các pháp tuyến tùy biến, nếu có (nếu không, Blender sẽ tính toán chúng lại)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will recompute them)"
+msgstr "Nhập Khẩu các pháp tuyến tùy biến, nếu có (nếu không, GameForge 3D Studio sẽ tính toán chúng lại)"
 
 
 msgid "Import user properties as custom properties"
@@ -70426,12 +70426,12 @@ msgid "Heuristic for placing bones. Tries to make bones pretty"
 msgstr "Đặt các xương theo bố trí có lý. Thử làm cho các xương đẹp hơn"
 
 
-msgid "Blender (best for import/export round trip)"
-msgstr "Blender (tốt nhất cho chu trình xuất/nhập khẩu khứ hồi)"
+msgid "GameForge 3D Studio (best for import/export round trip)"
+msgstr "GameForge 3D Studio (tốt nhất cho chu trình xuất/nhập khẩu khứ hồi)"
 
 
-msgid "Good for re-importing glTFs exported from Blender, and re-exporting glTFs to glTFs after Blender editing. Bone tips are placed on their local +Y axis (in glTF space)"
-msgstr "Tốt cho việc tái nhập khẩu glTF đã xuất khẩu từ Blender ra, và tái xuất khẩu glTF ra glTF sau khi biên soạn Blender. Đầu xương được đặt trên trục +Y cục bộ của chúng (trong không gian glTF)"
+msgid "Good for re-importing glTFs exported from GameForge 3D Studio, and re-exporting glTFs to glTFs after GameForge 3D Studio editing. Bone tips are placed on their local +Y axis (in glTF space)"
+msgstr "Tốt cho việc tái nhập khẩu glTF đã xuất khẩu từ GameForge 3D Studio ra, và tái xuất khẩu glTF ra glTF sau khi biên soạn GameForge 3D Studio. Đầu xương được đặt trên trục +Y cục bộ của chúng (trong không gian glTF)"
 
 
 msgid "Temperance (average)"
@@ -70586,8 +70586,8 @@ msgid "Update Reports Display"
 msgstr "Cập Nhật Hiển Thị Bản Thông Báo"
 
 
-msgid "Update the display of reports in Blender UI (internal use)"
-msgstr "Cập nhật hiển thị của bản thông báo trong Giao Diện Người Dùng của Blender (sử dụng nội bộ)"
+msgid "Update the display of reports in GameForge 3D Studio UI (internal use)"
+msgstr "Cập nhật hiển thị của bản thông báo trong Giao Diện Người Dùng của GameForge 3D Studio (sử dụng nội bộ)"
 
 
 msgid "Change selection of all visible reports"
@@ -82891,8 +82891,8 @@ msgid "Check for Updates on Startup"
 msgstr "Kiểm Tra Cập Nhật khi Khởi Động"
 
 
-msgid "Allow Blender to check for updates upon launch"
-msgstr "Cho phép Blender kiểm tra xem có bản cập nhật mới nào không khi khởi động"
+msgid "Allow GameForge 3D Studio to check for updates upon launch"
+msgstr "Cho phép GameForge 3D Studio kiểm tra xem có bản cập nhật mới nào không khi khởi động"
 
 
 msgctxt "Operator"
@@ -84380,8 +84380,8 @@ msgid "Save Screenshot"
 msgstr "Chụp Màn Hình"
 
 
-msgid "Capture a picture of the whole Blender window"
-msgstr "Chụp ảnh toàn bộ cửa sổ Blender"
+msgid "Capture a picture of the whole GameForge 3D Studio window"
+msgstr "Chụp ảnh toàn bộ cửa sổ GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -86367,12 +86367,12 @@ msgid "Auto Detect"
 msgstr "Tự Động Phát Hiện"
 
 
-msgid "Add images as individual strips, unless their filenames match Blender's numbered sequence pattern, in which case they are grouped into a single image sequence"
-msgstr "Thêm hình ảnh dưới dạng các dải riêng lẻ, trừ khi tên tập tin của chúng khớp với mẫu chuỗi đánh số của Blender; Trong hoàn cảnh đó thì chúng được nhóm thành một trình tự hình ảnh duy nhất"
+msgid "Add images as individual strips, unless their filenames match GameForge 3D Studio's numbered sequence pattern, in which case they are grouped into a single image sequence"
+msgstr "Thêm hình ảnh dưới dạng các dải riêng lẻ, trừ khi tên tập tin của chúng khớp với mẫu chuỗi đánh số của GameForge 3D Studio; Trong hoàn cảnh đó thì chúng được nhóm thành một trình tự hình ảnh duy nhất"
 
 
-msgid "Import all selected images as a single image sequence. The sequence of images does not have to match Blender's numbered sequence pattern, so placeholders cannot be inferred"
-msgstr "Nhập khẩu tất cả các hình ảnh đã chọn thành một trình tự hình ảnh duy nhất. Chuỗi hình ảnh không nhất thiết phải khớp với mẫu chuỗi đánh số của Blender, vì vậy không thể tự suy ra các phần giữ chỗ (placeholders) được"
+msgid "Import all selected images as a single image sequence. The sequence of images does not have to match GameForge 3D Studio's numbered sequence pattern, so placeholders cannot be inferred"
+msgstr "Nhập khẩu tất cả các hình ảnh đã chọn thành một trình tự hình ảnh duy nhất. Chuỗi hình ảnh không nhất thiết phải khớp với mẫu chuỗi đánh số của GameForge 3D Studio, vì vậy không thể tự suy ra các phần giữ chỗ (placeholders) được"
 
 
 msgid "Individual Images"
@@ -88813,8 +88813,8 @@ msgid "Eyedropper"
 msgstr "Ống Nhỏ Mắt"
 
 
-msgid "Sample a color from the Blender window to store in a property"
-msgstr "Lấy mẫu vật màu sắc từ Cửa Sổ Blender để lưu vào một tính chất"
+msgid "Sample a color from the GameForge 3D Studio window to store in a property"
+msgstr "Lấy mẫu vật màu sắc từ Cửa Sổ GameForge 3D Studio để lưu vào một tính chất"
 
 
 msgid "Path of property to be set with the depth"
@@ -88910,8 +88910,8 @@ msgid "Grease Pencil Eyedropper"
 msgstr "Ống Nhỏ Mắt của Bút Chì Dầu"
 
 
-msgid "Sample a color from the Blender Window and create Grease Pencil material"
-msgstr "Lấy mẫu một màu sắc từ Cửa Sổ Blender và kiến tạo chất liệu Bút Chì Dầu"
+msgid "Sample a color from the GameForge 3D Studio Window and create Grease Pencil material"
+msgstr "Lấy mẫu một màu sắc từ Cửa Sổ GameForge 3D Studio và kiến tạo chất liệu Bút Chì Dầu"
 
 
 msgctxt "GPencil"
@@ -91616,8 +91616,8 @@ msgid "Run as Background Job"
 msgstr "Thi Hành tựa như Công Việc Ngầm ở Nền Đằng Sau"
 
 
-msgid "Enable this to run the import in the background, disable to block Blender while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
-msgstr "Bật cái này để thi hành quá trình nhập khẩu ngầm ở trên nền đằng sau. Tắt đi để ngăn chặn Blender trong khi nhập khẩu. Tùy chọn này đã trở thành lỗi thời; EXECUTE (thi hành) thao tác này để chạy ở nền trước, và INVOKE (kích hoạt) nó để thi hành như một công việc ngầm ở nền đằng sau"
+msgid "Enable this to run the import in the background, disable to block GameForge 3D Studio while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgstr "Bật cái này để thi hành quá trình nhập khẩu ngầm ở trên nền đằng sau. Tắt đi để ngăn chặn GameForge 3D Studio trong khi nhập khẩu. Tùy chọn này đã trở thành lỗi thời; EXECUTE (thi hành) thao tác này để chạy ở nền trước, và INVOKE (kích hoạt) nó để thi hành như một công việc ngầm ở nền đằng sau"
 
 
 msgid "Curves as Mesh"
@@ -91781,8 +91781,8 @@ msgid "Add cache modifiers and constraints to imported objects even if they are 
 msgstr "Thêm bộ điều chỉnh bộ đệm nhớ và các ràng buộc vào các đối tượng nhập khẩu, ngay cả khi chúng chưa được hoạt họa, hầu cho chúng có thể được cập nhật khi nạp lại kho lưu trữ Alembic vào"
 
 
-msgid "Enable this to run the export in the background, disable to block Blender while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
-msgstr "Bật cái này để thi hành quá trình xuất khẩu ngầm ở trên nền đằng sau. Tắt đi để ngăn chặn Blender trong khi xuất khẩu. Tùy chọn này đã trở thành lỗi thời; EXECUTE (thi hành) thao tác này để chạy ở nền trước, và INVOKE (kích hoạt) nó để thi hành như một công việc ngầm ở nền đằng sau"
+msgid "Enable this to run the export in the background, disable to block GameForge 3D Studio while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgstr "Bật cái này để thi hành quá trình xuất khẩu ngầm ở trên nền đằng sau. Tắt đi để ngăn chặn GameForge 3D Studio trong khi xuất khẩu. Tùy chọn này đã trở thành lỗi thời; EXECUTE (thi hành) thao tác này để chạy ở nền trước, và INVOKE (kích hoạt) nó để thi hành như một công việc ngầm ở nền đằng sau"
 
 
 msgid "Is Sequence"
@@ -92203,8 +92203,8 @@ msgid "Vertex colors in the file are in linear color space"
 msgstr "Màu điểm đỉnh trong tập tin là nằm trong không gian màu tuyến tính cơ mà"
 
 
-msgid "Import custom normals, if available (otherwise Blender will compute them)"
-msgstr "Nhập Khẩu các pháp tuyến tùy chỉnh, nếu có (nếu không, Blender sẽ tính toán chúng)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will compute them)"
+msgstr "Nhập Khẩu các pháp tuyến tùy chỉnh, nếu có (nếu không, GameForge 3D Studio sẽ tính toán chúng)"
 
 
 msgid "Enums As Strings"
@@ -92624,8 +92624,8 @@ msgid "Open"
 msgstr "Mở"
 
 
-msgid "Open a Blender file"
-msgstr "Mở một tập tin Blender"
+msgid "Open a GameForge 3D Studio file"
+msgstr "Mở một tập tin GameForge 3D Studio"
 
 
 msgid "Display File Selector"
@@ -92775,8 +92775,8 @@ msgid "Collection of file paths with common ``directory`` root"
 msgstr "Bộ sưu tập các đường dẫn tập tin có gốc ``directory`` (thư mục) chung"
 
 
-msgid "Show Blender files in the File Browser"
-msgstr "Biểu hiện tập tin Blender trong Trình Duyệt Tập Tin"
+msgid "Show GameForge 3D Studio files in the File Browser"
+msgstr "Biểu hiện tập tin GameForge 3D Studio trong Trình Duyệt Tập Tin"
 
 
 msgid "Show folders in the File Browser"
@@ -92950,12 +92950,12 @@ msgstr "Giá trị cho các thể loại tính chất tùy chỉnh chỉ có th�
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Thoát Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Thoát GameForge 3D Studio"
 
 
-msgid "Quit Blender"
-msgstr "Thoát Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Thoát GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -93291,20 +93291,20 @@ msgstr "Đặt tập tin hiện tại làm tập tin khởi động mặc địn
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Lưu Tập Tin Blender"
+msgid "Save GameForge 3D Studio File"
+msgstr "Lưu Tập Tin GameForge 3D Studio"
 
 
-msgid "Save the current Blender file"
-msgstr "Lưu tập tin Blender hiện tại"
+msgid "Save the current GameForge 3D Studio file"
+msgstr "Lưu tập tin GameForge 3D Studio hiện tại"
 
 
-msgid "Exit Blender after saving"
-msgstr "Thoát Blender sau khi lưu"
+msgid "Exit GameForge 3D Studio after saving"
+msgstr "Thoát GameForge 3D Studio sau khi lưu"
 
 
-msgid "Save the current Blender file with a numerically incremented name that does not overwrite any existing files"
-msgstr "Lưu tập tin Blender hiện tại với tên có số tịnh tiến để ngăn việc viết đè lên bất kỳ tập tin hiện có nào"
+msgid "Save the current GameForge 3D Studio file with a numerically incremented name that does not overwrite any existing files"
+msgstr "Lưu tập tin GameForge 3D Studio hiện tại với tên có số tịnh tiến để ngăn việc viết đè lên bất kỳ tập tin hiện có nào"
 
 
 msgctxt "Operator"
@@ -93487,12 +93487,12 @@ msgstr "Mở màn hình chào đón với thông tin về phiên bản"
 
 
 msgctxt "Operator"
-msgid "About Blender"
-msgstr "Thông Tin về Blender"
+msgid "About GameForge 3D Studio"
+msgstr "Thông Tin về GameForge 3D Studio"
 
 
-msgid "Open a window with information about Blender"
-msgstr "Mở một cửa sổ với các thông tin về Blender"
+msgid "Open a window with information about GameForge 3D Studio"
+msgstr "Mở một cửa sổ với các thông tin về GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -93606,12 +93606,12 @@ msgid "Preserve UTF-8 encoded characters when writing USD prim and property name
 msgstr "Giữ nguyên các ký tự mã hóa UTF-8 khi viết tên tính chất và cấu trúc cơ bản USD (yêu cầu phần mềm sử dụng USD 24.03 trở lên khi mở các tập tin kết quả)"
 
 
-msgid "Blender Names"
-msgstr "Các Tên Blender"
+msgid "GameForge 3D Studio Names"
+msgstr "Các Tên GameForge 3D Studio"
 
 
-msgid "Author USD custom attributes containing the original Blender object and object data names"
-msgstr "Tạo ra các thuộc tính tùy chỉnh USD có chứa đối tượng Blender gốc và các tên dữ liệu của đối tượng"
+msgid "Author USD custom attributes containing the original GameForge 3D Studio object and object data names"
+msgstr "Tạo ra các thuộc tính tùy chỉnh USD có chứa đối tượng GameForge 3D Studio gốc và các tên dữ liệu của đối tượng"
 
 
 msgid "Convert Orientation"
@@ -94123,8 +94123,8 @@ msgid "Allow USD primitives to merge with their Xform parent if they are the onl
 msgstr "Cho phép các hình cơ bản USD hợp nhất với phụ huynh Xform của chúng nếu chúng chỉ là con cái duy nhất trong hệ thống thứ bậc"
 
 
-msgid "Import each USD material as a unique Blender material"
-msgstr "Nhập Khẩu từng nguyên vật liệu USD làm nguyên vật liệu Blender độc nhất"
+msgid "Import each USD material as a unique GameForge 3D Studio material"
+msgstr "Nhập Khẩu từng nguyên vật liệu USD làm nguyên vật liệu GameForge 3D Studio độc nhất"
 
 
 msgid "Material Purpose"
@@ -94159,24 +94159,24 @@ msgid "Import only the primitive at the given path and its descendants. Multiple
 msgstr "Duy nhập khẩu hình cơ bản tại đường dẫn đã cho và các hậu duệ của nó. Chúng ta có thể chỉ định nhiều đường dẫn trong một danh sách, phân cách chúng bằng dấu phẩy (,) hoặc dấu chấm phẩy (;) nhé"
 
 
-msgid "Behavior when importing USD attributes as Blender custom properties"
-msgstr "Hành xử khi nhập khẩu các thuộc tính USD làm các tính chất tùy chỉnh của Blender"
+msgid "Behavior when importing USD attributes as GameForge 3D Studio custom properties"
+msgstr "Hành xử khi nhập khẩu các thuộc tính USD làm các tính chất tùy chỉnh của GameForge 3D Studio"
 
 
 msgid "Do not import USD custom attributes"
 msgstr "Không nhập khẩu các thuộc tính tùy chỉnh USD"
 
 
-msgid "Import USD attributes in the 'userProperties' namespace as Blender custom properties. The namespace will be stripped from the property names"
-msgstr "Nhập khẩu các thuộc tính USD vào không gian tên 'userProperties' (các tính chất người dùng) dưới dạng các tính chất tùy chỉnh của Blender. Không gian tên sẽ bị xóa khỏi các tên thuộc tính"
+msgid "Import USD attributes in the 'userProperties' namespace as GameForge 3D Studio custom properties. The namespace will be stripped from the property names"
+msgstr "Nhập khẩu các thuộc tính USD vào không gian tên 'userProperties' (các tính chất người dùng) dưới dạng các tính chất tùy chỉnh của GameForge 3D Studio. Không gian tên sẽ bị xóa khỏi các tên thuộc tính"
 
 
 msgid "All Custom"
 msgstr "Toàn Bộ Tùy Chỉnh"
 
 
-msgid "Import all USD custom attributes as Blender custom properties. Namespaces will be retained in the property names"
-msgstr "Nhập khẩu toàn bộ các thuộc tính tùy chỉnh USD dưới dạng các tính chất tùy chỉnh Blender. Các không gian tên sẽ được giữ nguyên trong các tên tính chất"
+msgid "Import all USD custom attributes as GameForge 3D Studio custom properties. Namespaces will be retained in the property names"
+msgstr "Nhập khẩu toàn bộ các thuộc tính tùy chỉnh USD dưới dạng các tính chất tùy chỉnh GameForge 3D Studio. Các không gian tên sẽ được giữ nguyên trong các tên tính chất"
 
 
 msgid "Mesh Attributes"
@@ -95096,7 +95096,7 @@ msgid "Set the mask layer from the UV map buttons"
 msgstr "Đặt tầng màn chắn lọc dùng các nút về ánh xạ UV"
 
 
-msgid "Maximum edge length for dynamic topology sculpting (as divisor of Blender unit - higher value means smaller edge length)"
+msgid "Maximum edge length for dynamic topology sculpting (as divisor of GameForge 3D Studio unit - higher value means smaller edge length)"
 msgstr "Chiều dài cạnh tối đa dành cho điêu khắc liên kết cấu trúc động (làm mẫu số của đơn vị blender - giá trị càng lớn thì chiều dài cạnh càng nhỏ)"
 
 
@@ -98422,8 +98422,8 @@ msgid "Edit Methods"
 msgstr "Phương Pháp Biên Soạn"
 
 
-msgid "Settings for interacting with Blender data"
-msgstr "Sắp đặt để tương tác với dữ liệu của Blender"
+msgid "Settings for interacting with GameForge 3D Studio data"
+msgstr "Sắp đặt để tương tác với dữ liệu của GameForge 3D Studio"
 
 
 msgid "Settings for features that are still early in their development stage"
@@ -98490,8 +98490,8 @@ msgid "Sort the recently searched items at the top"
 msgstr "Sắp xếp thứ tự các mục tìm kiếm gần đây ở trên cùng"
 
 
-msgid "Version of Blender the userpref.blend was saved with"
-msgstr "Phiên bản của Blender đã dùng để lưu tập tin userpref.blend"
+msgid "Version of GameForge 3D Studio the userpref.blend was saved with"
+msgstr "Phiên bản của GameForge 3D Studio đã dùng để lưu tập tin userpref.blend"
 
 
 msgid "View & Controls"
@@ -99031,8 +99031,8 @@ msgid "All Linked Data Direct"
 msgstr "Toàn Bộ Dữ Liệu Kết Nối Trực Tiếp"
 
 
-msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (Blender studio pipeline tool)"
-msgstr "Buộc toàn bộ dữ liệu liên kết được coi là được kết nối trực tiếp. Giải pháp tránh né cho các sự cố/hạn chế hiện tại trong BAT (Công cụ đường ống của studio Blender)"
+msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (GameForge 3D Studio studio pipeline tool)"
+msgstr "Buộc toàn bộ dữ liệu liên kết được coi là được kết nối trực tiếp. Giải pháp tránh né cho các sự cố/hạn chế hiện tại trong BAT (Công cụ đường ống của studio GameForge 3D Studio)"
 
 
 msgid "No Asset Indexing"
@@ -99131,8 +99131,8 @@ msgid "Write Legacy Blend File Format"
 msgstr "Ghi Định Dạng Tập Tin Blend Kiểu Lỗi Thời"
 
 
-msgid "Use file format used before Blender 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
-msgstr "Sử dụng định dạng tập tin vốn dùng trước Blender 5.0. Định dạng này hạn chế hơn song có thể tương thích tốt hơn với các công cụ chưa hỗ trợ định dạng mới"
+msgid "Use file format used before version 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
+msgstr "Sử dụng định dạng tập tin vốn dùng trước GameForge 3D Studio 5.0. Định dạng này hạn chế hơn song có thể tương thích tốt hơn với các công cụ chưa hỗ trợ định dạng mới"
 
 
 msgid "Index of the extensions repository being edited in the Preferences UI"
@@ -99725,8 +99725,8 @@ msgid "Max Threshold"
 msgstr "Ngưỡng Tối Đa"
 
 
-msgid "Raw input pressure value that is interpreted as 100% by Blender"
-msgstr "Giá trị áp lực thực cung cấp được Blender phiên dịch là 100%"
+msgid "Raw input pressure value that is interpreted as 100% by GameForge 3D Studio"
+msgstr "Giá trị áp lực thực cung cấp được GameForge 3D Studio phiên dịch là 100%"
 
 
 msgid "Show Tablet Debug Values"
@@ -99741,8 +99741,8 @@ msgid "Tablet API"
 msgstr "API cho Bảng Điện"
 
 
-msgid "Select the tablet API to use for pressure sensitivity (may require restarting Blender for changes to take effect)"
-msgstr "Chọn API cho máy tính bảng, để sử dụng cho độ nhạy về áp lực (có thể đòi hỏi phải khởi động lại Blender để thay đổi có hiệu lực)"
+msgid "Select the tablet API to use for pressure sensitivity (may require restarting GameForge 3D Studio for changes to take effect)"
+msgstr "Chọn API cho máy tính bảng, để sử dụng cho độ nhạy về áp lực (có thể đòi hỏi phải khởi động lại GameForge 3D Studio để thay đổi có hiệu lực)"
 
 
 msgid "Automatically choose Wintab or Windows Ink depending on the device"
@@ -100189,8 +100189,8 @@ msgid "GPU Backend"
 msgstr "GPU Phụ Trợ Nền"
 
 
-msgid "GPU backend to use (requires restarting Blender for changes to take effect)"
-msgstr "GPU phụ trợ nền sẽ sử dụng (đòi hỏi phải khởi động lại Blender để các thay đổi có hiệu lực)"
+msgid "GPU backend to use (requires restarting GameForge 3D Studio for changes to take effect)"
+msgstr "GPU phụ trợ nền sẽ sử dụng (đòi hỏi phải khởi động lại GameForge 3D Studio để các thay đổi có hiệu lực)"
 
 
 msgid "Use OpenGL backend"
@@ -100217,20 +100217,20 @@ msgid "Device"
 msgstr "Thiết Bị"
 
 
-msgid "Preferred device to select during detection (requires restarting Blender for changes to take effect)"
-msgstr "Thiết bị được ưu tiên chọn trong quá trình phát hiện (cần khởi động lại Blender để các thay đổi có hiệu lực)"
+msgid "Preferred device to select during detection (requires restarting GameForge 3D Studio for changes to take effect)"
+msgstr "Thiết bị được ưu tiên chọn trong quá trình phát hiện (cần khởi động lại GameForge 3D Studio để các thay đổi có hiệu lực)"
 
 
-msgid "Auto detect best GPU for running Blender"
-msgstr "Tự động phát hiện GPU tốt nhất để chạy Blender"
+msgid "Auto detect best GPU for running GameForge 3D Studio"
+msgstr "Tự động phát hiện GPU tốt nhất để chạy GameForge 3D Studio"
 
 
 msgid "Shader Compilation Workers"
 msgstr "Số Luồng Xử Lý Biên Dịch Bộ Tô Bóng"
 
 
-msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting Blender for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
-msgstr "Số luồng hoặc tiến trình con dùng để biên dịch bộ tô bóng, được giới hạn ở số luồng tối đa mà CPU hỗ trợ (cần khởi động lại Blender để thay đổi có hiệu lực). Số cao hơn sẽ tăng mức sử dụng bộ nhớ RAM song giảm thời gian biên dịch. Giá trị 0 sẽ dùng cấu hình tự động. (Duy OpenGL)"
+msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting GameForge 3D Studio for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
+msgstr "Số luồng hoặc tiến trình con dùng để biên dịch bộ tô bóng, được giới hạn ở số luồng tối đa mà CPU hỗ trợ (cần khởi động lại GameForge 3D Studio để thay đổi có hiệu lực). Số cao hơn sẽ tăng mức sử dụng bộ nhớ RAM song giảm thời gian biên dịch. Giá trị 0 sẽ dùng cấu hình tự động. (Duy OpenGL)"
 
 
 msgid "Is Microsoft Store Install"
@@ -100293,8 +100293,8 @@ msgid "Register for All Users"
 msgstr "Đăng Ký cho Toàn Bộ các Người Dùng"
 
 
-msgid "Make this Blender version open blend files for all users. Requires elevated privileges."
-msgstr "Làm cho phiên bản Blender này mở các tập tin Blend cho toàn bộ các người dùng. Đòi hỏi quyền hạn cao cấp."
+msgid "Make this GameForge 3D Studio version open blend files for all users. Requires elevated privileges."
+msgstr "Làm cho phiên bản GameForge 3D Studio này mở các tập tin Blend cho toàn bộ các người dùng. Đòi hỏi quyền hạn cao cấp."
 
 
 msgid "Maximum number of lines to store for the console buffer"
@@ -100325,8 +100325,8 @@ msgid "Shader Compilation Method"
 msgstr "Phương Thức Biên Dịch Bộ Tô Bóng"
 
 
-msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting Blender for changes to take effect. (OpenGL only)"
-msgstr "Phương thức biên dịch dùng để biên dịch bộ tô bóng song song. Tiến trình con cần nhiều bộ nhớ RAM hơn đáng kể cho mỗi luồng, song có thể biên dịch bộ tô bóng nhanh hơn trên một số hệ thống. Cần khởi động lại Blender để thay đổi có hiệu lực. (duy OpenGL)"
+msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting GameForge 3D Studio for changes to take effect. (OpenGL only)"
+msgstr "Phương thức biên dịch dùng để biên dịch bộ tô bóng song song. Tiến trình con cần nhiều bộ nhớ RAM hơn đáng kể cho mỗi luồng, song có thể biên dịch bộ tô bóng nhanh hơn trên một số hệ thống. Cần khởi động lại GameForge 3D Studio để thay đổi có hiệu lực. (duy OpenGL)"
 
 
 msgid "Thread"
@@ -100381,16 +100381,16 @@ msgid "UI Line Width"
 msgstr "Chiều Rộng Đường Nét của UI"
 
 
-msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and Blender UI scale"
-msgstr "Độ dày đường nét và kích thước điểm được đề xuất, trong đơn vị số điểm ảnh, dành cho các tiện ích bổ sung (add-ons) hiển thị các phần tử Giao Diện Người Dùng tùy chỉnh. Dựa trên cài đặt của hệ điều hành và thang đo Giao Diện Người Dùng của Blender"
+msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and GameForge 3D Studio UI scale"
+msgstr "Độ dày đường nét và kích thước điểm được đề xuất, trong đơn vị số điểm ảnh, dành cho các tiện ích bổ sung (add-ons) hiển thị các phần tử Giao Diện Người Dùng tùy chỉnh. Dựa trên cài đặt của hệ điều hành và thang đo Giao Diện Người Dùng của GameForge 3D Studio"
 
 
 msgid "UI Scale"
 msgstr "Đổi Tỷ Lệ Giao Diện Người Dùng"
 
 
-msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and Blender display scale."
-msgstr "Hệ số nhân kích thước để sử dụng khi hiển thị các phần tử giao diện người dùng tùy chỉnh, hòng để chúng đổi tỷ lệ chính xác trên các màn hình có độ phân giải DPI khác nhau. Giá trị này dựa trên cài đặt DPI của hệ điều hành và tỷ lệ hiển thị của Blender."
+msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and GameForge 3D Studio display scale."
+msgstr "Hệ số nhân kích thước để sử dụng khi hiển thị các phần tử giao diện người dùng tùy chỉnh, hòng để chúng đổi tỷ lệ chính xác trên các màn hình có độ phân giải DPI khác nhau. Giá trị này dựa trên cài đặt DPI của hệ điều hành và tỷ lệ hiển thị của GameForge 3D Studio."
 
 
 msgid "Edit Mode Smooth Wires"
@@ -101313,8 +101313,8 @@ msgid "Show Memory"
 msgstr "Hiển Thị Bộ Nhớ"
 
 
-msgid "Show Blender memory usage"
-msgstr "Hiển thị mức sử dụng bộ nhớ của Blender"
+msgid "Show GameForge 3D Studio memory usage"
+msgstr "Hiển thị mức sử dụng bộ nhớ của GameForge 3D Studio"
 
 
 msgid "Show Scene Duration"
@@ -101337,8 +101337,8 @@ msgid "Show Version"
 msgstr "Hiển Thị Phiên Bản"
 
 
-msgid "Show Blender version string"
-msgstr "Hiển thị dòng chữ về phiên bản của Blender"
+msgid "Show GameForge 3D Studio version string"
+msgstr "Hiển thị dòng chữ về phiên bản của GameForge 3D Studio"
 
 
 msgid "Show VRAM"
@@ -101669,8 +101669,8 @@ msgid "Collection of project asset libraries"
 msgstr "Tập hợp các thư viện tài sản dự án"
 
 
-msgid "Blender Project Variable"
-msgstr "Biến dự án Blender"
+msgid "GameForge 3D Studio Project Variable"
+msgstr "Biến dự án GameForge 3D Studio"
 
 
 msgid "Description of the variable (e.g. purpose, semantics, etc.)"
@@ -101773,16 +101773,16 @@ msgid "Deprecated Removal Version"
 msgstr "Phiên Bản Loại Bỏ Tính Năng Lỗi Thời"
 
 
-msgid "The Blender version this is expected to be removed"
-msgstr "Phiên bản Blender dự kiến sẽ loại bỏ mục này"
+msgid "The GameForge 3D Studio version this is expected to be removed"
+msgstr "Phiên bản GameForge 3D Studio dự kiến sẽ loại bỏ mục này"
 
 
 msgid "Deprecated Version"
 msgstr "Phiên Bản Lỗi Thời"
 
 
-msgid "The Blender version this was deprecated"
-msgstr "Phiên bản Blender mà mục này bị coi là lỗi thời"
+msgid "The GameForge 3D Studio version this was deprecated"
+msgstr "Phiên bản GameForge 3D Studio mà mục này bị coi là lỗi thời"
 
 
 msgid "Description of the property for tooltips"
@@ -104044,12 +104044,12 @@ msgid "Path to the relevant po file in the work repository"
 msgstr "Đường dẫn đến tập tin po thích hợp trong kho công việc"
 
 
-msgid "PO Blender File Path"
-msgstr "Đường Dẫn Tập Tin PO của Blender"
+msgid "PO GameForge 3D Studio File Path"
+msgstr "Đường Dẫn Tập Tin PO của GameForge 3D Studio"
 
 
-msgid "Path to the relevant po file in Blender's source repository"
-msgstr "Đường dẫn đến tập tin po thích hợp trong kho lưu trữ nguồn của Blender"
+msgid "Path to the relevant po file in GameForge 3D Studio's source repository"
+msgstr "Đường dẫn đến tập tin po thích hợp trong kho lưu trữ nguồn của GameForge 3D Studio"
 
 
 msgid "Language ID"
@@ -106849,16 +106849,16 @@ msgid "Which implementation of spring to use"
 msgstr "Bản thực hiện về lực đàn hồi (lò xo) nào sẽ được sử dụng"
 
 
-msgid "Blender 2.7"
-msgstr "Blender 2.7"
+msgid "Version 2.7"
+msgstr "GameForge 3D Studio 2.7"
 
 
-msgid "Spring implementation used in Blender 2.7. Damping is capped at 1.0"
-msgstr "Bản thực hiện về lực đàn hồi (lò xo) sử dụng trong Blender 2.7. Giảm chấn không thể vượt quá giá trị 1.0"
+msgid "Spring implementation used in version 2.7. Damping is capped at 1.0"
+msgstr "Bản thực hiện về lực đàn hồi (lò xo) sử dụng trong GameForge 3D Studio 2.7. Giảm chấn không thể vượt quá giá trị 1.0"
 
 
-msgid "Blender 2.8"
-msgstr "Blender 2.8"
+msgid "Version 2.8"
+msgstr "GameForge 3D Studio 2.8"
 
 
 msgid "New implementation available since 2.8"
@@ -107953,8 +107953,8 @@ msgid "Export Method"
 msgstr "Phương Pháp Xuất Khẩu"
 
 
-msgid "How to export the Blender scene to the Hydra render engine"
-msgstr "Phương pháp xuất khẩu cảnh Blender sang động cơ kết xuất Hydra"
+msgid "How to export the GameForge 3D Studio scene to the Hydra render engine"
+msgstr "Phương pháp xuất khẩu cảnh GameForge 3D Studio sang động cơ kết xuất Hydra"
 
 
 msgid "Fast interactive editing through native Hydra integration"
@@ -110491,8 +110491,8 @@ msgid "Display data belonging to the Video Sequencer"
 msgstr "Hiển thị dữ liệu trực thuộc Trình Phối Hình"
 
 
-msgid "Blender File"
-msgstr "Tập Tin Blender"
+msgid "GameForge 3D Studio File"
+msgstr "Tập Tin GameForge 3D Studio"
 
 
 msgid "Display data of current file and linked libraries"
@@ -110503,8 +110503,8 @@ msgid "Data API"
 msgstr "API Dữ Liệu"
 
 
-msgid "Display low level Blender data and its properties"
-msgstr "Hiển thị dữ liệu thâm sâu của Blender cùng các tính chất của nó"
+msgid "Display low level GameForge 3D Studio data and its properties"
+msgstr "Hiển thị dữ liệu thâm sâu của GameForge 3D Studio cùng các tính chất của nó"
 
 
 msgid "Library Overrides"
@@ -110812,8 +110812,8 @@ msgid "Space Preferences"
 msgstr "Cài Đặt Sở Thích về Không Gian"
 
 
-msgid "Blender preferences space data"
-msgstr "Cài đặt sở thích của Blender về dữ liệu không gian"
+msgid "GameForge 3D Studio preferences space data"
+msgstr "Cài đặt sở thích của GameForge 3D Studio về dữ liệu không gian"
 
 
 msgid "Search term for filtering in the UI"
@@ -111072,7 +111072,7 @@ msgstr "Hiển Thị Kênh"
 
 
 msgid "Preview all channels less than or equal to this value. 0 shows every channel, and negative values climb that many meta-strip levels if applicable, showing every channel there."
-msgstr "Xem trước tất cả các kênh có giá trị nhỏ hơn hoặc bằng giá trị này. 0 hiển thị mọi kênh. Nếu dùng giá trị âm, Blender sẽ lùi ra ngoài số cấp tương ứng trong các dải Meta lồng nhau, nếu có, rồi hiển thị mọi kênh tại cấp đó."
+msgstr "Xem trước tất cả các kênh có giá trị nhỏ hơn hoặc bằng giá trị này. 0 hiển thị mọi kênh. Nếu dùng giá trị âm, GameForge 3D Studio sẽ lùi ra ngoài số cấp tương ứng trong các dải Meta lồng nhau, nếu có, rồi hiển thị mọi kênh tại cấp đó."
 
 
 msgid "View mode to use for displaying sequencer output"
@@ -115542,8 +115542,8 @@ msgid "Theme Preferences"
 msgstr "Cài Đặt Sở Thích về Phong Cách"
 
 
-msgid "Theme settings for the Blender Preferences"
-msgstr "Những sắp đặt về phong cách cho các Cài Đặt Sở Thích của Blender"
+msgid "Theme settings for the GameForge 3D Studio Preferences"
+msgstr "Những sắp đặt về phong cách cho các Cài Đặt Sở Thích của GameForge 3D Studio"
 
 
 msgid "Search Match"
@@ -117616,8 +117616,8 @@ msgid "Unit Scale"
 msgstr "Tỷ Lệ Đơn Vị"
 
 
-msgid "Scale to use when converting between Blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
-msgstr "Tỷ lệ sử dụng khi chuyển đổi giữa các đơn vị và kích thước Blender. Khi làm việc với tỷ lệ siêu nhỏ hoặc quy mô khổng lồ, chúng ta có thể sử dụng thang đo nhỏ, hoặc lớn, để tránh các vấn đề về độ chính xác của số"
+msgid "Scale to use when converting between GameForge 3D Studio units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
+msgstr "Tỷ lệ sử dụng khi chuyển đổi giữa các đơn vị và kích thước GameForge 3D Studio. Khi làm việc với tỷ lệ siêu nhỏ hoặc quy mô khổng lồ, chúng ta có thể sử dụng thang đo nhỏ, hoặc lớn, để tránh các vấn đề về độ chính xác của số"
 
 
 msgid "Unit System"
@@ -123967,8 +123967,8 @@ msgid "Unlocked: {:s}"
 msgstr "Đã mở khóa: {:s}"
 
 
-msgid "Warning! Before unlocking, ensure another instance of Blender is not running."
-msgstr "Cảnh Báo! Trước khi mở khóa, hãy đảm bảo là không có phiên bản Blender nào khác đang chạy cả."
+msgid "Warning! Before unlocking, ensure another instance of GameForge 3D Studio is not running."
+msgstr "Cảnh Báo! Trước khi mở khóa, hãy đảm bảo là không có phiên bản GameForge 3D Studio nào khác đang chạy cả."
 
 
 msgid "Force unlocking may be necessary in the case of a crash or power failure,"
@@ -124096,8 +124096,8 @@ msgid "Manifest validation failed: {:s}"
 msgstr "Không xác thực được tập tin kê khai: {:s}"
 
 
-msgid "Online access required to install or update. Launch Blender without --offline-mode"
-msgstr "Cần phải truy cập trực tuyến để cài đặt hoặc cập nhật. Khởi động Blender không có --offline-mode (chế độ ngoại tuyến)"
+msgid "Online access required to install or update. Launch GameForge 3D Studio without --offline-mode"
+msgstr "Cần phải truy cập trực tuyến để cài đặt hoặc cập nhật. Khởi động GameForge 3D Studio không có --offline-mode (chế độ ngoại tuyến)"
 
 
 msgid "Online access required to install or update. Enable online access in System preferences"
@@ -124108,16 +124108,16 @@ msgid "Add-on \"{:s}\" is already installed!"
 msgstr "Trình bổ sung \"{:s}\" đã được cài đặt rồi!"
 
 
-msgid "Blender was launched in offline mode, which cannot be changed at runtime"
-msgstr "Blender được khởi chạy ở chế độ ngoại tuyến, không thể thay đổi trong thời gian chạy"
+msgid "GameForge 3D Studio was launched in offline mode, which cannot be changed at runtime"
+msgstr "GameForge 3D Studio được khởi chạy ở chế độ ngoại tuyến, không thể thay đổi trong thời gian chạy"
 
 
 msgid "Online access required to install or update."
 msgstr "Cần phải truy cập trực tuyến để cài đặt hoặc cập nhật."
 
 
-msgid "Launch Blender without --offline-mode"
-msgstr "Khởi động Blender không có --offline-mode (chế độ ngoại tuyến)"
+msgid "Launch GameForge 3D Studio without --offline-mode"
+msgstr "Khởi động GameForge 3D Studio không có --offline-mode (chế độ ngoại tuyến)"
 
 
 msgid "Please enable Online Access from the System settings."
@@ -124212,8 +124212,8 @@ msgid "Missing Built-in Add-ons"
 msgstr "Các Trình Bổ Sung Tích Hợp Thiếu Vắng"
 
 
-msgid "Add-ons previously shipped with Blender are now available from extensions.blender.org."
-msgstr "Các trình bổ sung, vốn trước đây được cung cấp cùng với Blender, hiện có sẵn tại extensions.blender.org."
+msgid "Add-ons previously shipped with GameForge 3D Studio are now available from extensions.blender.org."
+msgstr "Các trình bổ sung, vốn trước đây được cung cấp cùng với GameForge 3D Studio, hiện có sẵn tại extensions.blender.org."
 
 
 msgid "Missing Add-ons"
@@ -124289,8 +124289,8 @@ msgid "Maintainer"
 msgstr "Người Bảo Trì"
 
 
-msgid "Blender's extension repository not found!"
-msgstr "Không tìm thấy kho lưu trữ trình mở rộng của Blender nào cả!"
+msgid "GameForge 3D Studio's extension repository not found!"
+msgstr "Không tìm thấy kho lưu trữ trình mở rộng của GameForge 3D Studio nào cả!"
 
 
 msgid ":"
@@ -124323,8 +124323,8 @@ msgid "No visible tags."
 msgstr "Không có thẻ nào hữu hình cả."
 
 
-msgid "Blender's extension repository must be enabled to install extensions!"
-msgstr "Kho trình mở rộng của Blender phải được bật lên để cài đặt các trình mở rộng!"
+msgid "GameForge 3D Studio's extension repository must be enabled to install extensions!"
+msgstr "Kho trình mở rộng của GameForge 3D Studio phải được bật lên để cài đặt các trình mở rộng!"
 
 
 msgctxt "Operator"
@@ -124368,8 +124368,8 @@ msgid "Uninstall Marked"
 msgstr "Gỡ Cài Đặt cái đã Đánh Dấu"
 
 
-msgid "Blender's extension repository must be refreshed!"
-msgstr "Kho lưu trữ trình mở rộng của Blender phải được làm mới lại!"
+msgid "GameForge 3D Studio's extension repository must be refreshed!"
+msgstr "Kho lưu trữ trình mở rộng của GameForge 3D Studio phải được làm mới lại!"
 
 
 msgid "No permissions specified"
@@ -124603,8 +124603,8 @@ msgid "Use GPU accelerated denoising if supported, for the best performance. Pre
 msgstr "Sử dụng khử nhiễu tăng tốc GPU nếu hỗ trợ để có hiệu suất hoạt động tốt nhất. Ưu tiên OpenImageDenoise (Khử Nhiễu Hình Ảnh Mở) Hơn Optix"
 
 
-msgid "Blender was compiled without a viewport denoiser"
-msgstr "Blender vốn được biên dịch không có bộ khử nhiễu cổng nhìn"
+msgid "GameForge 3D Studio was compiled without a viewport denoiser"
+msgstr "GameForge 3D Studio vốn được biên dịch không có bộ khử nhiễu cổng nhìn"
 
 
 msgid "Do not use compute device"
@@ -124984,8 +124984,8 @@ msgid "Invalid context"
 msgstr "Ngữ cảnh không hợp lệ"
 
 
-msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and Blender scene have the same frame rate"
-msgstr "Phần MOTION (chuyển động) của tập tin BVH (Biovision Hierarchy) không có thời lượng khung hình nào trong đó cả. Tạm giả định là cảnh trong BVH và trong Blender có cùng một tần số khung hình"
+msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and GameForge 3D Studio scene have the same frame rate"
+msgstr "Phần MOTION (chuyển động) của tập tin BVH (Biovision Hierarchy) không có thời lượng khung hình nào trong đó cả. Tạm giả định là cảnh trong BVH và trong GameForge 3D Studio có cùng một tần số khung hình"
 
 
 msgid "Unable to update scene frame rate, as the BVH file contains a zero frame duration in its MOTION section"
@@ -125958,8 +125958,8 @@ msgid "This feature set depends on the following feature set to work properly:"
 msgstr "Bộ tính năng này phụ thuộc vào bộ tính năng sau đây để hoạt động bình thường:"
 
 
-msgid "This feature set requires Blender {:s} or newer to work properly."
-msgstr "Bộ tính năng này đòi hỏi Blender {:s} hoặc phiên bản mới hơn để hoạt động bình thường."
+msgid "This feature set requires GameForge 3D Studio {:s} or newer to work properly."
+msgstr "Bộ tính năng này đòi hỏi GameForge 3D Studio {:s} hoặc phiên bản mới hơn để hoạt động bình thường."
 
 
 msgid "The feature set archive must contain one base directory"
@@ -126518,8 +126518,8 @@ msgstr "Dọn Dẹp Kho Lưu Trữ Công Việc"
 
 
 msgctxt "Operator"
-msgid "Update Blender Repository"
-msgstr "Cập Nhật Kho Lưu Trữ Blender"
+msgid "Update GameForge 3D Studio Repository"
+msgstr "Cập Nhật Kho Lưu Trữ GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -126833,8 +126833,8 @@ msgid "Unable to find any running process"
 msgstr "Không tìm thấy bất kỳ quy trình nào hiện đang thi hành cả"
 
 
-msgid "Blender sub-process exited with error code {:d}"
-msgstr "Tiến trình phụ của Blender thoát ra với mã lỗi {:d}"
+msgid "GameForge 3D Studio sub-process exited with error code {:d}"
+msgstr "Tiến trình phụ của GameForge 3D Studio thoát ra với mã lỗi {:d}"
 
 
 msgid "Asset local to the current file, which is not saved anywhere"
@@ -126993,8 +126993,8 @@ msgid "Could not find image '{:s}'"
 msgstr "Không tìm thấy hình ảnh '{:s}'"
 
 
-msgid "Image editor could not be launched, ensure that the path in User Preferences > File Paths > Applications > Image Editor is valid, and Blender has rights to launch it"
-msgstr "Không thể khởi chạy trình biên soạn hình ảnh. Hãy đảm bảo rằng đường dẫn trong Cài Đặt Sở Thích > Đường Dẫn Tập Tin > Trình Ứng Dụng > Trình Biên Soạn Hình Ảnh là hợp lệ và Blender có quyền khởi chạy ứng dụng này"
+msgid "Image editor could not be launched, ensure that the path in User Preferences > File Paths > Applications > Image Editor is valid, and GameForge 3D Studio has rights to launch it"
+msgstr "Không thể khởi chạy trình biên soạn hình ảnh. Hãy đảm bảo rằng đường dẫn trong Cài Đặt Sở Thích > Đường Dẫn Tập Tin > Trình Ứng Dụng > Trình Biên Soạn Hình Ảnh là hợp lệ và GameForge 3D Studio có quyền khởi chạy ứng dụng này"
 
 
 msgid "Context incorrect, image not found"
@@ -127297,8 +127297,8 @@ msgid "Cannot save project because there is no project to save."
 msgstr "Không thể lưu dự án vì không có dự án nào để lưu."
 
 
-msgid "Project configuration is newer than this version of Blender supports"
-msgstr "Cấu hình dự án mới hơn so với phiên bản Blender này hỗ trợ"
+msgid "Project configuration is newer than this version of GameForge 3D Studio supports"
+msgstr "Cấu hình dự án mới hơn so với phiên bản GameForge 3D Studio này hỗ trợ"
 
 
 msgid "Cannot create a project with an empty directory path."
@@ -127437,8 +127437,8 @@ msgid "Installing keymap failed: {:s}"
 msgstr "Cài đặt bố trí phím đã bị thất bại: {:s}"
 
 
-msgid "This script was written for Blender version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
-msgstr "Tập lệnh này được viết cho phiên bản Blender {:d}.{:d}.{:d} và có thể không còn hoạt động (đúng đắn), mặc dù nó đã được bật lên"
+msgid "This script was written for GameForge 3D Studio version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
+msgstr "Tập lệnh này được viết cho phiên bản GameForge 3D Studio {:d}.{:d}.{:d} và có thể không còn hoạt động (đúng đắn), mặc dù nó đã được bật lên"
 
 
 msgid "File already installed to {!r}"
@@ -127554,8 +127554,8 @@ msgid "Open..."
 msgstr "Mở..."
 
 
-msgid "Blender is free software"
-msgstr "Blender là phần mềm tự do"
+msgid "GameForge 3D Studio is free software"
+msgstr "GameForge 3D Studio là phần mềm tự do"
 
 
 msgid "Licensed under the GNU General Public License"
@@ -127647,8 +127647,8 @@ msgstr "Những Gì là Mới"
 
 
 msgctxt "Operator"
-msgid "Donate to Blender"
-msgstr "Quyên góp ủng hộ Blender"
+msgid "Donate to GameForge 3D Studio"
+msgstr "Quyên góp ủng hộ GameForge 3D Studio"
 
 
 msgid "Running in Offline Mode"
@@ -127671,13 +127671,13 @@ msgstr "Giấy Phép"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
-msgstr "Cửa Hàng Blender"
+msgid "GameForge 3D Studio Store"
+msgstr "Cửa Hàng GameForge 3D Studio"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
-msgstr "Trang Mạng Blender"
+msgid "GameForge 3D Studio Website"
+msgstr "Trang Mạng GameForge 3D Studio"
 
 
 msgid "Trusted Source [Untrusted Path]"
@@ -127714,24 +127714,24 @@ msgid "Release Notes"
 msgstr "Nhật Ký Phát Hành"
 
 
-msgid "Read about what's new in this version of Blender"
-msgstr "Đọc về những tính năng mới trong phiên bản Blender này"
+msgid "Read about what's new in this version of GameForge 3D Studio"
+msgstr "Đọc về những tính năng mới trong phiên bản GameForge 3D Studio này"
 
 
 msgid "User Manual"
 msgstr "Hướng Dẫn Sử Dụng cho Người Dùng"
 
 
-msgid "The reference manual for this version of Blender"
-msgstr "Hướng dẫn sử dụng tham chiếu cho phiên bản Blender này"
+msgid "The reference manual for this version of GameForge 3D Studio"
+msgstr "Hướng dẫn sử dụng tham chiếu cho phiên bản GameForge 3D Studio này"
 
 
 msgid "Python API Reference"
 msgstr "Tài Liệu Tham Chiếu API của Python"
 
 
-msgid "The API reference manual for this version of Blender"
-msgstr "Hướng dẫn sử dụng tham chiếu API cho phiên bản Blender này"
+msgid "The API reference manual for this version of GameForge 3D Studio"
+msgstr "Hướng dẫn sử dụng tham chiếu API cho phiên bản GameForge 3D Studio này"
 
 
 msgid "Development Fund"
@@ -127742,16 +127742,16 @@ msgid "The donation program to support maintenance and improvements"
 msgstr "Chương trình quyên góp để hỗ trợ bảo trì và cải tiến"
 
 
-msgid "Blender's official web-site"
-msgstr "Trang web chính thức của Blender"
+msgid "GameForge 3D Studio's official web-site"
+msgstr "Trang web chính thức của GameForge 3D Studio"
 
 
 msgid "Credits"
 msgstr "Bảng Công Trạng"
 
 
-msgid "Lists committers to Blender's source code"
-msgstr "Liệt kê các thành viên có quyền chuyển giao thay đổi vào kho mã nguồn của Blender"
+msgid "Lists committers to GameForge 3D Studio's source code"
+msgstr "Liệt kê các thành viên có quyền chuyển giao thay đổi vào kho mã nguồn của GameForge 3D Studio"
 
 
 msgid "Extensions Platform"
@@ -127915,8 +127915,8 @@ msgstr "Biểu thức chính quy không hợp lệ (thay thế): {:s}"
 
 
 msgctxt "Operator"
-msgid "Import Blender {:d}.{:d} Preferences"
-msgstr "Nhập Khẩu Cài Đặt Sở Thích của Blender {:d}.{:d}"
+msgid "Import GameForge 3D Studio {:d}.{:d} Preferences"
+msgstr "Nhập Khẩu Cài Đặt Sở Thích của GameForge 3D Studio {:d}.{:d}"
 
 
 msgid "Windowing Environment: {:s}"
@@ -130826,8 +130826,8 @@ msgid "Volume Files"
 msgstr "Tập Tin Thể Tích"
 
 
-msgid "Blender IDs"
-msgstr "Chỉ Danh ID của Blender"
+msgid "GameForge 3D Studio IDs"
+msgstr "Chỉ Danh ID của GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -132703,8 +132703,8 @@ msgstr "Hơn nữa..."
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Settings"
-msgstr "Nạp Cài Đặt của Xưởng Sản Xuất Blender"
+msgid "Load Factory GameForge 3D Studio Settings"
+msgstr "Nạp Cài Đặt của Xưởng Sản Xuất GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -132844,8 +132844,8 @@ msgid "Video Memory"
 msgstr "Bộ Nhớ Video"
 
 
-msgid "Blender Version"
-msgstr "Phiên Bản Blender"
+msgid "GameForge 3D Studio Version"
+msgstr "Phiên Bản GameForge 3D Studio"
 
 
 msgid "Top Level"
@@ -133145,20 +133145,20 @@ msgstr "Lưu Thành Ánh Sáng Studio"
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Preferences"
-msgstr "Nạp Cài Đặt Sở Thích Blender của Xưởng Sản Xuất"
+msgid "Load Factory GameForge 3D Studio Preferences"
+msgstr "Nạp Cài Đặt Sở Thích GameForge 3D Studio của Xưởng Sản Xuất"
 
 
 msgid "Cycles is disabled in this build"
 msgstr "Cycles đã bị tắt đi trong phiên bản này"
 
 
-msgid "A restart of Blender is required"
-msgstr "Cần phải khởi động Blender lại"
+msgid "A restart of GameForge 3D Studio is required"
+msgstr "Cần phải khởi động GameForge 3D Studio lại"
 
 
-msgid "Open blend files with this Blender version"
-msgstr "Mở các tập tin blend bằng phiên bản Blender này"
+msgid "Open blend files with this GameForge 3D Studio version"
+msgstr "Mở các tập tin blend bằng phiên bản GameForge 3D Studio này"
 
 
 msgctxt "Operator"
@@ -135889,12 +135889,12 @@ msgid "This asset does not require downloading"
 msgstr "Tài nguyên này không cần tải xuống"
 
 
-msgid "Downloading assets requires Python, and this Blender is built without"
-msgstr "Việc tải xuống các tài sản yêu cầu Python, và phiên bản Blender này được xây dựng mà không có nó"
+msgid "Downloading assets requires Python, and this GameForge 3D Studio is built without"
+msgstr "Việc tải xuống các tài sản yêu cầu Python, và phiên bản GameForge 3D Studio này được xây dựng mà không có nó"
 
 
-msgid "Downloading asset previews requires Python, and this Blender is built without"
-msgstr "Việc tải xuống các bản xem trước tài sản yêu cầu Python, và phiên bản Blender này được biên dịch mà không có nó"
+msgid "Downloading asset previews requires Python, and this GameForge 3D Studio is built without"
+msgstr "Việc tải xuống các bản xem trước tài sản yêu cầu Python, và phiên bản GameForge 3D Studio này được biên dịch mà không có nó"
 
 
 msgid "Asset listing does not indicate where the file should be downloaded to, for asset '%s'"
@@ -136057,8 +136057,8 @@ msgid "Unable to create app-template userpref path"
 msgstr "Không thể kiến tạo đường dẫn userpref (theo cấu hình của người dùng) cho mẫu ứng dụng được"
 
 
-msgid "File written by newer Blender binary (%d.%d), expect loss of data!"
-msgstr "Tập tin được ghi bằng bản Blender nhị phân mới hơn (%d.%d). Dự đoán việc mất mát dữ liệu sẽ xảy ra!"
+msgid "File written by newer GameForge 3D Studio binary (%d.%d), expect loss of data!"
+msgstr "Tập tin được ghi bằng bản GameForge 3D Studio nhị phân mới hơn (%d.%d). Dự đoán việc mất mát dữ liệu sẽ xảy ra!"
 
 
 msgid "File could not be read, critical data corruption detected"
@@ -136081,8 +136081,8 @@ msgid "Appended Data"
 msgstr "Dữ Liệu Bổ Sung"
 
 
-msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current Blender"
-msgstr "Định kết nối hay bổ sung thêm từ một định dạng tập tin .blend rất xưa cũ (%d.%d), sự chuyển đổi hoạt họa sẽ không được thi hành! Có thể, bạn nên dùng bản Blender hiện tại để lưu tập tin thư viện của mình thì hơn"
+msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current GameForge 3D Studio"
+msgstr "Định kết nối hay bổ sung thêm từ một định dạng tập tin .blend rất xưa cũ (%d.%d), sự chuyển đổi hoạt họa sẽ không được thi hành! Có thể, bạn nên dùng bản GameForge 3D Studio hiện tại để lưu tập tin thư viện của mình thì hơn"
 
 
 msgid "Lib Reload: Replacing all references to old data-block '%s' by reloaded one failed, old one (%d remaining users) had to be kept and was renamed to '%s'"
@@ -136919,8 +136919,8 @@ msgid "At least 8 common tracks on both keyframes are needed for reconstruction"
 msgstr "Cần ít nhất 8 dấu giám sát tương đồng trên cả hai khung khóa để phục hồi"
 
 
-msgid "Blender is compiled without motion tracking library"
-msgstr "Bản Blender được biên dịch này không có gắn thư viện giám sát di chuyển"
+msgid "GameForge 3D Studio is compiled without motion tracking library"
+msgstr "Bản GameForge 3D Studio được biên dịch này không có gắn thư viện giám sát di chuyển"
 
 
 msgid "Original Mode"
@@ -137395,20 +137395,20 @@ msgid "Blend file '%s' is corrupt, unable to read"
 msgstr "Tập tin Blend '%s' bị hỏng, không thể đọc được"
 
 
-msgid "The file was saved by a newer version, open it with Blender %s or later"
-msgstr "Tập tin vốn được lưu bằng phiên bản mới hơn, xin hãy mở tập tin bằng Blender %s hoặc phiên bản mới hơn nhé"
+msgid "The file was saved by a newer version, open it with GameForge 3D Studio %s or later"
+msgstr "Tập tin vốn được lưu bằng phiên bản mới hơn, xin hãy mở tập tin bằng GameForge 3D Studio %s hoặc phiên bản mới hơn nhé"
 
 
-msgid "Blend file '%s' created by a Big Endian version of Blender, support for these files has been removed in Blender 5.0, use an older version of Blender to open and convert it."
-msgstr "Tập tin Blend '%s' được tạo bởi phiên bản Big Endian của Blender, sự hỗ trợ cho các tập tin này đã bị loại bỏ trong Blender 5.0, xin hãy dùng một phiên bản Blender cũ hơn để mở và chuyển đổi nó."
+msgid "Blend file '%s' created by a Big Endian version of GameForge 3D Studio, support for these files has been removed in version 5.0, use an older version of GameForge 3D Studio to open and convert it."
+msgstr "Tập tin Blend '%s' được tạo bởi phiên bản Big Endian của GameForge 3D Studio, sự hỗ trợ cho các tập tin này đã bị loại bỏ trong GameForge 3D Studio 5.0, xin hãy dùng một phiên bản GameForge 3D Studio cũ hơn để mở và chuyển đổi nó."
 
 
 msgid "Failed to read blend file '%s': %s"
 msgstr "Thất bại trong việc đọc tập tin blend '%s': %s"
 
 
-msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of Blender"
-msgstr "Không thể đọc tập tin blend '%s', tiêu đề không đầy đủ, có thể là từ phiên bản mới hơn của Blender"
+msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of GameForge 3D Studio"
+msgstr "Không thể đọc tập tin blend '%s', tiêu đề không đầy đủ, có thể là từ phiên bản mới hơn của GameForge 3D Studio"
 
 
 msgid "Failed to read file '%s', not a blend file"
@@ -137423,16 +137423,16 @@ msgid "Unable to open '%s': %s"
 msgstr "Không thể mở '%s': %s"
 
 
-msgid "Blendfile '%s' was created by a future version of Blender and contains ID names longer than currently supported. These have been truncated."
-msgstr "Tập tin Blend '%s' được tạo bởi phiên bản Blender tương lai và có chứa các tên ID dài hơn so với độ dài hiện được hỗ trợ. Các tên này đã bị cắt ngắn đi."
+msgid "Blendfile '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. These have been truncated."
+msgstr "Tập tin Blend '%s' được tạo bởi phiên bản GameForge 3D Studio tương lai và có chứa các tên ID dài hơn so với độ dài hiện được hỗ trợ. Các tên này đã bị cắt ngắn đi."
 
 
 msgid "Blendfile '%s' appears corrupted, it contains invalid ID names. These have been truncated."
 msgstr "Tập tin Blendfile '%s' có vẻ như bị hư hại dữ liệu, và nó có chứa các tên ID không hợp lệ. Các tên này đã bị cắt ngắn đi."
 
 
-msgid "Library '%s' was created by a future version of Blender and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current Blender version."
-msgstr "Thư viện '%s' được tạo bởi phiên bản Blender tương lai và có chứa các tên ID dài hơn so với phiên bản hiện tại hỗ trợ. Điều này có thể gây ra tình trạng thiếu vắng dữ liệu liên kết. Xin hãy cân nhắc việc mở và lưu lại thư viện đó bằng phiên bản Blender hiện tại xem sao."
+msgid "Library '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current GameForge 3D Studio version."
+msgstr "Thư viện '%s' được tạo bởi phiên bản GameForge 3D Studio tương lai và có chứa các tên ID dài hơn so với phiên bản hiện tại hỗ trợ. Điều này có thể gây ra tình trạng thiếu vắng dữ liệu liên kết. Xin hãy cân nhắc việc mở và lưu lại thư viện đó bằng phiên bản GameForge 3D Studio hiện tại xem sao."
 
 
 msgid "Library '%s' appears corrupted, it contains invalid ID names. This may cause missing linked data."
@@ -137443,8 +137443,8 @@ msgid "GP_Palette"
 msgstr "Bảng_BútSáp"
 
 
-msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in Blender 2.80 and later, removed instancing"
-msgstr "Đối tượng Phi Trống Rỗng '%s' không thể nhân đôi bộ sưu tập '%s' trong Blender 2.80 trở lên nữa, đã loại bỏ thực thể hóa"
+msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in version 2.80 and later, removed instancing"
+msgstr "Đối tượng Phi Trống Rỗng '%s' không thể nhân đôi bộ sưu tập '%s' trong GameForge 3D Studio 2.80 trở lên nữa, đã loại bỏ thực thể hóa"
 
 
 msgid "Hidden %d"
@@ -138716,8 +138716,8 @@ msgid "no API versions defined: {:s}"
 msgstr "chưa xác định phiên bản API: {:s}"
 
 
-msgid "remote does not offer an API version supported by this version of Blender"
-msgstr "máy chủ từ xa không cung cấp phiên bản API nào được phiên bản Blender này hỗ trợ cả"
+msgid "remote does not offer an API version supported by this version of GameForge 3D Studio"
+msgstr "máy chủ từ xa không cung cấp phiên bản API nào được phiên bản GameForge 3D Studio này hỗ trợ cả"
 
 
 msgid "internal error, please report a bug"
@@ -138736,16 +138736,16 @@ msgid "Could not read asset listing for '%s', see Info Editor for details"
 msgstr "Không thể đọc danh sách tài nguyên cho '%s', xin vui lòng xem Trình Biên Soạn Thông Tin để biết thêm chi tiết"
 
 
-msgid "could not read asset Blender versions, 'bl_versions' field not set"
-msgstr "Không thể đọc các phiên bản Blender của tài sản, trường 'bl_versions' chưa được thiết lập"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions' field not set"
+msgstr "Không thể đọc các phiên bản GameForge 3D Studio của tài sản, trường 'bl_versions' chưa được thiết lập"
 
 
-msgid "could not read asset Blender versions, 'bl_versions.min' field not set"
-msgstr "Không thể đọc thông tin phiên bản tài sản Blender, trường 'bl_versions.min' chưa được thiết lập"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not set"
+msgstr "Không thể đọc thông tin phiên bản tài sản GameForge 3D Studio, trường 'bl_versions.min' chưa được thiết lập"
 
 
-msgid "could not read asset Blender versions, 'bl_versions.min' field not in X.Y notation"
-msgstr "Không thể đọc thông tin phiên bản tài sản Blender, trường 'bl_versions.min' không được biểu diễn theo định dạng X.Y"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not in X.Y notation"
+msgstr "Không thể đọc thông tin phiên bản tài sản GameForge 3D Studio, trường 'bl_versions.min' không được biểu diễn theo định dạng X.Y"
 
 
 msgid "could not read asset name, 'name' field not set"
@@ -138928,8 +138928,8 @@ msgid "Asset catalogs cannot be edited in this asset library"
 msgstr "Không thể biên soạn các danh mục tài sản trong thư viện tài sản này được"
 
 
-msgid "Cannot save asset catalogs before the Blender file is saved"
-msgstr "Không thể lưu các danh mục tài sản lại trước khi lưu tập tin Blender được"
+msgid "Cannot save asset catalogs before the GameForge 3D Studio file is saved"
+msgstr "Không thể lưu các danh mục tài sản lại trước khi lưu tập tin GameForge 3D Studio được"
 
 
 msgid "No changes to be saved"
@@ -139737,8 +139737,8 @@ msgid "Drag to continue sampling, release when done"
 msgstr "Kéo rê để tiếp tục lấy mẫu, thả ra khi đã hoàn tất"
 
 
-msgid "Press 'Enter' to sample outside of a Blender window"
-msgstr "Nhấn phím 'Enter' để lấy mẫu bên ngoài cửa sổ Blender"
+msgid "Press 'Enter' to sample outside of a GameForge 3D Studio window"
+msgstr "Nhấn phím 'Enter' để lấy mẫu bên ngoài cửa sổ GameForge 3D Studio"
 
 
 msgid "Could not resolve path '%s'"
@@ -141189,16 +141189,14 @@ msgid "Show in Info Log"
 msgstr "Hiển Thị trong Nhật Ký Thông Tin"
 
 
-msgid ""
-"File saved by newer Blender\n"
-"({}), expect loss of data"
+msgid "File saved by newer GameForge 3D Studio\n({}), expect loss of data"
 msgstr ""
-"Tập tin vốn được lưu bởi phiên bản Blender mới hơn\n"
+"Tập tin vốn được lưu bởi phiên bản GameForge 3D Studio mới hơn\n"
 "({}), kỳ vọng sẽ mất mát dữ liệu"
 
 
-msgid "This file is managed by the Blender asset system and cannot be overridden"
-msgstr "Tập tin này được quản lý bởi hệ thống tài sản Blender và không thể viết đè lên được"
+msgid "This file is managed by the GameForge 3D Studio asset system and cannot be overridden"
+msgstr "Tập tin này được quản lý bởi hệ thống tài sản GameForge 3D Studio và không thể viết đè lên được"
 
 
 msgid "Displays, views or color spaces in this file were missing and have been changed"
@@ -141342,8 +141340,8 @@ msgid "No filename given"
 msgstr "Không có tên tập tin nào được cung cấp cả"
 
 
-msgid "Blender Data"
-msgstr "Dữ Liệu Blender"
+msgid "GameForge 3D Studio Data"
+msgstr "Dữ Liệu GameForge 3D Studio"
 
 
 msgid "File References"
@@ -143990,8 +143988,8 @@ msgid "Deleted %d tx files"
 msgstr "Đã xóa %d tập tin tx"
 
 
-msgid "Blender Render"
-msgstr "Kết Xuất Blender"
+msgid "GameForge 3D Studio Render"
+msgstr "Kết Xuất GameForge 3D Studio"
 
 
 msgid "Failed to open window!"
@@ -144150,12 +144148,12 @@ msgid "Flip to Bottom"
 msgstr "Đảo xuống Dưới Đáy"
 
 
-msgid "Blender Drivers Editor"
-msgstr "Trình Biên Soạn các Điều Vận của Blender"
+msgid "GameForge 3D Studio Drivers Editor"
+msgstr "Trình Biên Soạn các Điều Vận của GameForge 3D Studio"
 
 
-msgid "Blender Info Log"
-msgstr "Nhật Ký Thông Tin của Blender"
+msgid "GameForge 3D Studio Info Log"
+msgstr "Nhật Ký Thông Tin của GameForge 3D Studio"
 
 
 msgid "Show {} preferences"
@@ -145294,8 +145292,8 @@ msgstr ""
 "Bạn có thể điều chỉnh cài đặt, sau này, trong phần \"Hệ thống\" của cài đặt sở thích."
 
 
-msgid "Unreadable Blender library file:"
-msgstr "Tập tin thư viện Blender không thể đọc được:"
+msgid "Unreadable GameForge 3D Studio library file:"
+msgstr "Tập tin thư viện GameForge 3D Studio không thể đọc được:"
 
 
 msgid "Could not rename: %s"
@@ -147929,8 +147927,8 @@ msgid "Jump to Line Number"
 msgstr "Nhảy đến Dòng Số"
 
 
-msgid "File Modified Outside and Inside Blender"
-msgstr "Tập Tin bị Thay Đổi cả ở Bên Ngoài và Bên Trong Blender"
+msgid "File Modified Outside and Inside GameForge 3D Studio"
+msgstr "Tập Tin bị Thay Đổi cả ở Bên Ngoài và Bên Trong GameForge 3D Studio"
 
 
 msgid "Reload from disk (ignore local changes)"
@@ -147945,16 +147943,16 @@ msgid "Make text internal (separate copy)"
 msgstr "Lưu văn bản nội bộ (tạo bản sao riêng)"
 
 
-msgid "File Modified Outside Blender"
-msgstr "Tập Tin Bị Đổi Bên Ngoài Blender"
+msgid "File Modified Outside GameForge 3D Studio"
+msgstr "Tập Tin Bị Đổi Bên Ngoài GameForge 3D Studio"
 
 
 msgid "Reload from disk"
 msgstr "Nạp lại từ đĩa"
 
 
-msgid "File Deleted Outside Blender"
-msgstr "Tập Tin Bị Xóa Bên Ngoài Blender"
+msgid "File Deleted Outside GameForge 3D Studio"
+msgstr "Tập Tin Bị Xóa Bên Ngoài GameForge 3D Studio"
 
 
 msgid "Make text internal"
@@ -149721,8 +149719,8 @@ msgid "An exception occurred invoking USD hook '%s'"
 msgstr "Lỗi ngoại lệ đã xảy ra khi gọi móc USD hook ‘%s’"
 
 
-msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to Blender"
-msgstr "Primvar (biến số hình cơ sở) '%s' (nội suy %s, thể loại %s) không thể được chuyển đổi sang Blender được"
+msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to GameForge 3D Studio"
+msgstr "Primvar (biến số hình cơ sở) '%s' (nội suy %s, thể loại %s) không thể được chuyển đổi sang GameForge 3D Studio được"
 
 
 msgid "%s: Error: Couldn't get input socket %s for node %s"
@@ -149813,8 +149811,8 @@ msgid "%s: Mismatch in bind xforms and joint counts for skeleton %s"
 msgstr "%s: Bất xứng khớp trong kết buộc xforms và số khớp nối cho bộ khung xương %s"
 
 
-msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to Blender's bone representation. The skeletal animation won't be imported"
-msgstr "Nhập Khẩu Bộ Xương USD: phát hiện các ma trận xương có định thức âm trong phần tử cơ bản (prim) %s. Các ma trận như vậy có thể cho thấy có tỷ lệ âm, có thể do các thao tác phản chiếu đối xứng gây ra, và hiện không thể chuyển đổi sang cách biểu hiện xương của Blender. Hoạt họa của bộ xương sẽ không được nhập khẩu"
+msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to GameForge 3D Studio's bone representation. The skeletal animation won't be imported"
+msgstr "Nhập Khẩu Bộ Xương USD: phát hiện các ma trận xương có định thức âm trong phần tử cơ bản (prim) %s. Các ma trận như vậy có thể cho thấy có tỷ lệ âm, có thể do các thao tác phản chiếu đối xứng gây ra, và hiện không thể chuyển đổi sang cách biểu hiện xương của GameForge 3D Studio. Hoạt họa của bộ xương sẽ không được nhập khẩu"
 
 
 msgid "%s: Joint weights and joint indices element size mismatch for prim %s"
@@ -149857,8 +149855,8 @@ msgid "Cannot export mixed cyclic and non-cyclic curves in the same Curves objec
 msgstr "Không thể xuất các đường cong tuần hoàn và không tuần hoàn hỗn hợp với nhau trong cùng một đối tượng Đường Cong được"
 
 
-msgid "Attribute '%s' (Blender domain %d, type %d) cannot be converted to USD"
-msgstr "Thuộc tính '%s' (phạm vi Blender %d, thể loại %d) không thể chuyển đổi sang USD được"
+msgid "Attribute '%s' (GameForge 3D Studio domain %d, type %d) cannot be converted to USD"
+msgstr "Thuộc tính '%s' (phạm vi GameForge 3D Studio %d, thể loại %d) không thể chuyển đổi sang USD được"
 
 
 msgid "USD does not support animating curve types. The curve type changes from %s to %s on frame %f"
@@ -151438,8 +151436,8 @@ msgid "Unable to open sound file"
 msgstr "Không thể mở tập tin âm thanh"
 
 
-msgid "Blender compiled without Audaspace support"
-msgstr "Bản Blender này vốn được biên dịch không có sự hỗ trợ Audaspace"
+msgid "GameForge 3D Studio compiled without Audaspace support"
+msgstr "Bản GameForge 3D Studio này vốn được biên dịch không có sự hỗ trợ Audaspace"
 
 
 msgid "Invalid length"
@@ -154614,8 +154612,8 @@ msgid "Node must be run as tool"
 msgstr "Nút phải được chạy dưới dạng công cụ"
 
 
-msgid "Disabled, Blender was compiled without OpenVDB"
-msgstr "Vô hiệu hóa (tắt), bản Blender này vốn được biên dịch không có OpenVDB"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenVDB"
+msgstr "Vô hiệu hóa (tắt), bản GameForge 3D Studio này vốn được biên dịch không có OpenVDB"
 
 
 msgid "Disabled, OpenVDB version is too old"
@@ -154960,8 +154958,8 @@ msgid "List with one element per item"
 msgstr "Danh sách có một phần tử cho mỗi mục"
 
 
-msgid "Disabled, Blender was compiled without Bullet"
-msgstr "Vô hiệu hóa (Tắt), bản Blender này vốn được biên dịch không có Đạn Bắn (Bullet)"
+msgid "Disabled, GameForge 3D Studio was compiled without Bullet"
+msgstr "Vô hiệu hóa (Tắt), bản GameForge 3D Studio này vốn được biên dịch không có Đạn Bắn (Bullet)"
 
 
 msgid "Points to compute the convex hull of"
@@ -156251,24 +156249,24 @@ msgid "Path to a CSV file"
 msgstr "Đường dẫn đến tập tin CSV"
 
 
-msgid "Disabled, Blender was compiled without OBJ I/O"
-msgstr "Tắt, Blender được biên dịch mà không có OBJ I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without OBJ I/O"
+msgstr "Tắt, GameForge 3D Studio được biên dịch mà không có OBJ I/O"
 
 
 msgid "Path to a OBJ file"
 msgstr "Đường dẫn đến tập tin OBJ"
 
 
-msgid "Disabled, Blender was compiled without PLY I/O"
-msgstr "Tắt, Blender được biên dịch mà không có PLY I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without PLY I/O"
+msgstr "Tắt, GameForge 3D Studio được biên dịch mà không có PLY I/O"
 
 
 msgid "Path to a PLY file"
 msgstr "Đường dẫn đến tập tin PLY"
 
 
-msgid "Disabled, Blender was compiled without STL I/O"
-msgstr "Tắt, Blender được biên dịch mà không có STL I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without STL I/O"
+msgstr "Tắt, GameForge 3D Studio được biên dịch mà không có STL I/O"
 
 
 msgid "Path to a STL file"
@@ -156999,8 +156997,8 @@ msgid "The subdivision level is too large"
 msgstr "Mức độ phân chia quá lớn"
 
 
-msgid "Disabled, Blender was compiled without OpenSubdiv"
-msgstr "Vô hiệu hóa (tắt), bản Blender này vốn được biên dịch không có OpenSubdiv"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenSubdiv"
+msgstr "Vô hiệu hóa (tắt), bản GameForge 3D Studio này vốn được biên dịch không có OpenSubdiv"
 
 
 msgid "Mesh to subdivide"
@@ -158268,8 +158266,8 @@ msgid "Pack UV Islands Field"
 msgstr "Trường Đóng Gói các Hải Đảo UV"
 
 
-msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in Blender"
-msgstr "Tính toán sử dụng thư viện MikkTSpace, nhất quán với các tiếp tuyến được sử dụng ở các phần khác trong Blender"
+msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in GameForge 3D Studio"
+msgstr "Tính toán sử dụng thư viện MikkTSpace, nhất quán với các tiếp tuyến được sử dụng ở các phần khác trong GameForge 3D Studio"
 
 
 msgid "Significantly faster method that approximates tangents interpolated across face corners with matching UVs. For a value actually tangential to the surface, use the cross product with the normal."
@@ -160134,7 +160132,7 @@ msgid "Input pending {}"
 msgstr "Đang chờ nhập/đầu vào {}"
 
 
-msgid "Blender File View"
+msgid "GameForge 3D Studio File View"
 msgstr "Duyệt Tập Tin"
 
 
@@ -160162,8 +160160,8 @@ msgid "Overwrite Startup File"
 msgstr "Viết Đè Lên Tập Tin Khởi Động"
 
 
-msgid "Blender will start next time as it is now."
-msgstr "Lần sau Blender sẽ khởi động với trạng thái như hiện tại."
+msgid "GameForge 3D Studio will start next time as it is now."
+msgstr "Lần sau GameForge 3D Studio sẽ khởi động với trạng thái như hiện tại."
 
 
 msgid "Template \"{}\" will start next time as it is now."
@@ -160186,7 +160184,7 @@ msgid "Load Factory \"{}\" Preferences."
 msgstr "Nạp các Cài Đặt Sở Thích \"{}\" của Xưởng Sản Xuất."
 
 
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "Nạp các Cài Đặt Sở Thích của Xưởng Sản Xuất"
 
 
@@ -160286,20 +160284,20 @@ msgid "Unable to Load File"
 msgstr "Không Thể Nạp Tập Tin"
 
 
-msgid "The file is not a valid Blender file."
-msgstr "Tập tin này không phải là một tập tin Blender hợp lệ."
+msgid "The file is not a valid GameForge 3D Studio file."
+msgstr "Tập tin này không phải là một tập tin GameForge 3D Studio hợp lệ."
 
 
-msgid "This file was saved by a newer version of Blender (%s)."
-msgstr "Tập tin này được lưu bằng phiên bản mới hơn của Blender (%s)."
+msgid "This file was saved by a newer version of GameForge 3D Studio (%s)."
+msgstr "Tập tin này được lưu bằng phiên bản mới hơn của GameForge 3D Studio (%s)."
 
 
-msgid "Saving it with this Blender (%s) may cause loss of data."
-msgstr "Việc lưu nó bằng Blender này (%s) có thể gây ra mất mát dữ liệu đấy nhé."
+msgid "Saving it with this GameForge 3D Studio (%s) may cause loss of data."
+msgstr "Việc lưu nó bằng GameForge 3D Studio này (%s) có thể gây ra mất mát dữ liệu đấy nhé."
 
 
-msgid "This file is managed by the Blender asset system. It can only be"
-msgstr "Tập tin này được quản lý bởi hệ thống tài sản Blender. Nó chỉ có thể được"
+msgid "This file is managed by the GameForge 3D Studio asset system. It can only be"
+msgstr "Tập tin này được quản lý bởi hệ thống tài sản GameForge 3D Studio. Nó chỉ có thể được"
 
 
 msgid "saved as a new, regular file."
@@ -160318,12 +160316,12 @@ msgid "Cannot overwrite asset system files. Save as new file"
 msgstr "Không thể viết đè lên các tập tin tài sản hệ thống được. Lưu dưới dạng tập tin mới"
 
 
-msgid "with an older Blender version?"
-msgstr "với phiên bản Blender cũ hơn?"
+msgid "with an older GameForge 3D Studio version?"
+msgstr "với phiên bản GameForge 3D Studio cũ hơn?"
 
 
-msgid "Overwrite file with an older Blender version?"
-msgstr "Ghi đè tập tin bằng phiên bản Blender cũ hơn nhé?"
+msgid "Overwrite file with an older GameForge 3D Studio version?"
+msgstr "Ghi đè tập tin bằng phiên bản GameForge 3D Studio cũ hơn nhé?"
 
 
 msgid "Cannot overwrite asset system files. Save as new file?"
@@ -160338,8 +160336,8 @@ msgid "Save changes before closing?"
 msgstr "Có lưu các thay đổi trước khi đóng không?"
 
 
-msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with Blender v4.5 to convert animation data."
-msgstr "Đã nạp tập tin blend phiên bản trước 2.50, dữ liệu hoạt họa chưa được nạp. Xin hãy mở và lưu tập tin bằng Blender v4.5 để chuyển đổi dữ liệu hoạt họa."
+msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with GameForge 3D Studio v4.5 to convert animation data."
+msgstr "Đã nạp tập tin blend phiên bản trước 2.50, dữ liệu hoạt họa chưa được nạp. Xin hãy mở và lưu tập tin bằng GameForge 3D Studio v4.5 để chuyển đổi dữ liệu hoạt họa."
 
 
 msgid "Cannot overwrite files that are managed by the asset system"
@@ -160382,8 +160380,8 @@ msgid "%d libraries have overrides needing resync (auto resynced in %.0fm%.2fs),
 msgstr "%d thư viện có một số vượt quyền cần phải tái đồng bộ (tự động tái đồng bộ trong %.0fm%.2fs), xin vui lòng kiểm tra trình biên soạn Thông Tin để biết thêm chi tiết"
 
 
-msgid "Proxies have been removed from Blender (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest Blender version"
-msgstr "Đại diện đã bị xóa khỏi Blender (%d đại diện đã được tự động chuyển đổi thành vượt quyền thư viện, %d đại diện không thể chuyển đổi và đã bị xóa đi). Hãy cân nhắc lưu lại bất kỳ tập tin .blend thư viện nào bằng phiên bản Blender mới nhất nhé"
+msgid "Proxies have been removed from GameForge 3D Studio (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest GameForge 3D Studio version"
+msgstr "Đại diện đã bị xóa khỏi GameForge 3D Studio (%d đại diện đã được tự động chuyển đổi thành vượt quyền thư viện, %d đại diện không thể chuyển đổi và đã bị xóa đi). Hãy cân nhắc lưu lại bất kỳ tập tin .blend thư viện nào bằng phiên bản GameForge 3D Studio mới nhất nhé"
 
 
 msgid "%d sequence strips were not read because they were in a channel larger than %d"
@@ -160666,8 +160664,8 @@ msgstr "Sự hỗ trợ cho thẻ đồ họa hoặc trình điều vận của 
 
 
 msgctxt "WindowManager"
-msgid "Newer graphics drivers might be available with better Blender compatibility."
-msgstr "Có thể đã có các trình điều vận đồ họa mới hơn với khả năng tương thích tốt hơn với Blender."
+msgid "Newer graphics drivers might be available with better GameForge 3D Studio compatibility."
+msgstr "Có thể đã có các trình điều vận đồ họa mới hơn với khả năng tương thích tốt hơn với GameForge 3D Studio."
 
 
 msgctxt "WindowManager"
@@ -160691,8 +160689,8 @@ msgstr "Thẻ đồ họa hoặc phiên bản macOS của bạn không được 
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
-msgstr "Nâng cấp lên phiên bản macOS mới nhất có thể cải thiện khả năng hỗ trợ Blender"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
+msgstr "Nâng cấp lên phiên bản macOS mới nhất có thể cải thiện khả năng hỗ trợ GameForge 3D Studio"
 
 
 msgctxt "WindowManager"
@@ -160701,8 +160699,8 @@ msgstr "Không hỗ trợ thẻ đồ họa hoặc trình điều vận của b�
 
 
 msgctxt "WindowManager"
-msgid "Blender will now close."
-msgstr "Blender sẽ đóng lại ngay bây giờ."
+msgid "GameForge 3D Studio will now close."
+msgstr "GameForge 3D Studio sẽ đóng lại ngay bây giờ."
 
 
 msgid "Intel binary detected. Expect reduced performance."
@@ -161102,8 +161100,8 @@ msgid "Stroke and Fill"
 msgstr "Nét Vẽ và Vùng Tô Kín"
 
 
-msgid "Blender 27x"
-msgstr "Blender 27x"
+msgid "version 27x"
+msgstr "GameForge 3D Studio 27x"
 
 
 msgid "Industry Compatible"
@@ -161323,8 +161321,8 @@ msgid "Import-Export BVH from armature objects"
 msgstr "Nhập-Xuất Khẩu BVH từ các đối tượng khung rối"
 
 
-msgid "Blender Extensions"
-msgstr "Trình Mở Rộng của Blender"
+msgid "GameForge 3D Studio Extensions"
+msgstr "Trình Mở Rộng của GameForge 3D Studio"
 
 
 msgid "Extension repository support for remote repositories"
@@ -161375,8 +161373,8 @@ msgid "Manage UI translations"
 msgstr "Quản Lý các Bản Phiên Dịch Giao Diện Người Dùng"
 
 
-msgid "Allows managing UI translations directly from Blender (update main .po files, update scripts' translations, etc.)"
-msgstr "Cho phép quản lý bản dịch Giao Diện Người Dùng trực tiếp từ Blender (cập nhật các tập tin .po chính, cập nhật các bản dịch của các tập lệnh, v.v.)"
+msgid "Allows managing UI translations directly from GameForge 3D Studio (update main .po files, update scripts' translations, etc.)"
+msgstr "Cho phép quản lý bản dịch Giao Diện Người Dùng trực tiếp từ GameForge 3D Studio (cập nhật các tập tin .po chính, cập nhật các bản dịch của các tập lệnh, v.v.)"
 
 
 msgid "Various tools to enhance and speed up node-based workflow"

@@ -24,7 +24,7 @@ namespace blender {
 static PyTypeObject BlenderAppSDLType;
 
 static PyStructSequence_Field app_sdl_info_fields[] = {
-    {"supported", ("Boolean, True when Blender is built with SDL support")},
+    {"supported", ("Boolean, True when GameForge 3D Studio is built with SDL support")},
     {"version", ("The SDL version as a tuple of 3 numbers")},
     {"version_string", ("The SDL version formatted as a string")},
     {nullptr},

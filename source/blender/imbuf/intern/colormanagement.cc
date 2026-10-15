@@ -545,7 +545,7 @@ static void colormanage_config_load_candidates(const Span<ColorManagedConfigPath
   }
 
   if (g_config_active().source == ColorManagedConfigSource::Blender) {
-    CLOG_INFO(&LOG, "Using Blender config: \"%s\"", g_config_active().path.c_str());
+    CLOG_INFO(&LOG, "Using GameForge 3D Studio config: \"%s\"", g_config_active().path.c_str());
   }
   else if (g_config_active().source == ColorManagedConfigSource::Project) {
     CLOG_INFO(&LOG, "Using project config: \"%s\"", g_config_active().path.c_str());

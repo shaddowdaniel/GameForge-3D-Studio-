@@ -1371,7 +1371,7 @@ msgid "Is Internal"
 msgstr "On sisäinen"
 
 
-msgid "The attribute is meant for internal use by Blender"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
 msgstr "Attribuutti on tarkoitettu Blenderin sisäiseen käyttöön"
 
 
@@ -2291,8 +2291,8 @@ msgid "Collection of worlds"
 msgstr "Kokoelma maailmoista"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Only link data, instead of appending it"
@@ -10380,8 +10380,8 @@ msgid "Texture Node Editor"
 msgstr "Tekstuurinoodieditori"
 
 
-msgid "Blender File"
-msgstr "Blender-tiedosto"
+msgid "GameForge 3D Studio File"
+msgstr "GameForge 3D Studio-tiedosto"
 
 
 msgid "Show visible objects"
@@ -14314,8 +14314,8 @@ msgid "Scene has no camera"
 msgstr "Kohtauksessa ei ole kameraa"
 
 
-msgid "Blender Render"
-msgstr "Blender renderöinti"
+msgid "GameForge 3D Studio Render"
+msgstr "GameForge 3D Studio renderöinti"
 
 
 msgid "Failed to open window!"
@@ -16543,8 +16543,8 @@ msgstr "Näytönohjaimesi tai macOS-vesio ei ole tuettu"
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
-msgstr "Päivittäminen viimeisimpään macOS-versioon saattaa parantaa Blender-tukea"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
+msgstr "Päivittäminen viimeisimpään macOS-versioon saattaa parantaa GameForge 3D Studio-tukea"
 
 
 msgid "Failed to create window"
@@ -16755,8 +16755,8 @@ msgid "Stroke and Fill"
 msgstr "Piirrä ja täytä"
 
 
-msgid "Blender 27x"
-msgstr "Blender 27x"
+msgid "version 27x"
+msgstr "GameForge 3D Studio 27x"
 
 
 msgid "Industry Compatible"
@@ -16934,8 +16934,8 @@ msgid "Video Editing"
 msgstr "Videoeditointi"
 
 
-msgid "Blender Extensions"
-msgstr "Blender-laajennukset"
+msgid "GameForge 3D Studio Extensions"
+msgstr "GameForge 3D Studio-laajennukset"
 
 
 msgid "Cycles Render Engine"
@@ -16958,7 +16958,7 @@ msgid "Manage UI translations"
 msgstr "Hallitse käyttöliittymän käännöksiä"
 
 
-msgid "Allows managing UI translations directly from Blender (update main .po files, update scripts' translations, etc.)"
+msgid "Allows managing UI translations directly from GameForge 3D Studio (update main .po files, update scripts' translations, etc.)"
 msgstr "Mahdollistaa käyttöliittymäkäännösten hallinnan suoraan Blenderistä (päivittää .po-päätiedostot, päivittää skriptien käännökset jne.)"
 
 

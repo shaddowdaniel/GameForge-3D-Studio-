@@ -604,7 +604,7 @@ static void arg_py_context_restore(bContext *C, BlendePyContextStore *c_py)
 
 static void print_version_full()
 {
-  printf("Blender %s\n", BKE_blender_version_string());
+  printf("GameForge 3D Studio %s\n", BKE_blender_version_string());
 #  ifdef BUILD_DATE
   printf("\tbuild date: %s\n", build_date);
   printf("\tbuild time: %s\n", build_time);
@@ -626,19 +626,19 @@ static void print_version_short()
 #  ifdef BUILD_DATE
   /* NOTE: We include built time since sometimes we need to tell broken from
    * working built of the same hash. */
-  printf("Blender %s (hash %s built %s %s)\n",
+  printf("GameForge 3D Studio %s (hash %s built %s %s)\n",
          BKE_blender_version_string(),
          build_hash,
          build_date,
          build_time);
 #  else
-  printf("Blender %s\n", BKE_blender_version_string());
+  printf("GameForge 3D Studio %s\n", BKE_blender_version_string());
 #  endif
 }
 
 static const char arg_handle_print_version_doc[] =
     "\n\t"
-    "Print Blender version and exit.";
+    "Print GameForge 3D Studio version and exit.";
 static int arg_handle_print_version(int /*argc*/, const char ** /*argv*/, void * /*data*/)
 {
   print_version_full();
@@ -661,8 +661,8 @@ static void print_help(bArgs *ba, bool all)
 
 #  define PRINT(...) BLI_args_printf(ba, __VA_ARGS__)
 
-  PRINT("Blender %s\n", BKE_blender_version_string());
-  PRINT("Usage: blender [args ...] [file] [args ...]\n");
+  PRINT("GameForge 3D Studio %s\n", BKE_blender_version_string());
+  PRINT("Usage: GameForge3DStudio [args ...] [file] [args ...]\n");
   PRINT("\n");
 
   PRINT("Render Options:\n");
@@ -1372,7 +1372,7 @@ static const char arg_handle_debug_mode_set_doc[] =
 static int arg_handle_debug_mode_set(int /*argc*/, const char ** /*argv*/, void *data)
 {
   G.debug |= G_DEBUG;
-  printf("Blender %s\n", BKE_blender_version_string());
+  printf("GameForge 3D Studio %s\n", BKE_blender_version_string());
   MEM_set_memory_debug();
 #  ifndef NDEBUG
   BLI_mempool_set_memory_debug();
@@ -1745,7 +1745,7 @@ static const char arg_handle_gpu_device_set_doc[] =
     "\t* 'help' prints supported Vulkan devices and exits.\n"
     "\n"
     "\tOnly used with the Vulkan backend. Other backends print a warning and ignore this option.\n"
-    "\tIf the requested Vulkan device is unavailable, Blender falls back to the saved GPU\n"
+    "\tIf the requested Vulkan device is unavailable, GameForge 3D Studio falls back to the saved GPU\n"
     "\tpreference unless '--gpu-device-no-fallback' is also set.";
 static int arg_handle_gpu_device_set(int argc, const char **argv, void * /*data*/)
 {
@@ -1757,7 +1757,7 @@ static int arg_handle_gpu_device_set(int argc, const char **argv, void * /*data*
 
   const char *spec = argv[1];
   if (STREQ(spec, "help")) {
-    printf("Blender GPU Device Listing (Vulkan):\n");
+    printf("GameForge 3D Studio GPU Device Listing (Vulkan):\n");
     printf("Pass an Index or Device-ID to '--gpu-device'.\n");
 #  ifdef WITH_VULKAN_BACKEND
     GPU_vulkan_supported_devices_print(stdout);
@@ -1985,8 +1985,8 @@ static int arg_handle_env_system_set(int argc, const char **argv, void * /*data*
 
 static const char arg_handle_playback_mode_doc[] =
     "<options> <file(s)>\n"
-    "\tInstead of showing Blender's user interface, this runs Blender as an animation player,\n"
-    "\tto view movies and image sequences rendered in Blender (ignored if '-b' is set).\n"
+    "\tInstead of showing GameForge 3D Studio's user interface, this runs GameForge 3D Studio as an animation player,\n"
+    "\tto view movies and image sequences rendered in GameForge 3D Studio (ignored if '-b' is set).\n"
     "\n"
     "\tPlayback Arguments:\n"
     "\n"
@@ -2218,7 +2218,7 @@ static const char arg_handle_qos_set_doc[] =
     "\n"
     "\tdefault: Uses the default behavior of the OS.\n"
     "\thigh: Always makes use of performance cores.\n"
-    "\teco: Schedules Blender threads exclusively to efficiency cores.";
+    "\teco: Schedules GameForge 3D Studio threads exclusively to efficiency cores.";
 static int arg_handle_qos_set(int argc, const char **argv, void * /*data*/)
 {
   const char *arg_id = "--qos";
@@ -2285,7 +2285,7 @@ static const char arg_handle_output_set_doc[] =
     "\tUse '//' at the start of the path to render relative to the blend-file.\n"
     "\n"
     "\tYou can use path templating features such as '{blend_name}' in the path.\n"
-    "\tSee Blender's documentation on path templates for more details.\n"
+    "\tSee GameForge 3D Studio's documentation on path templates for more details.\n"
     "\n"
     "\tThe '#' characters are replaced by the frame number, and used to define zero padding.\n"
     "\n"
@@ -2326,7 +2326,7 @@ static int arg_handle_engine_set(int argc, const char **argv, void *data)
     const char *engine_name = argv[1];
 
     if (STREQ(engine_name, "help")) {
-      printf("Blender Engine Listing:\n");
+      printf("GameForge 3D Studio Engine Listing:\n");
       for (RenderEngineType &type : R_engines) {
         printf("\t%s\n", type.idname);
       }
@@ -2370,7 +2370,7 @@ static const char arg_handle_image_type_set_doc[] =
     "\tValid options are:\n"
     "\t'TGA' 'RAWTGA' 'JPEG' 'IRIS' 'PNG' 'BMP' 'HDR' 'TIFF'.\n"
     "\n"
-    "\tFormats that can be compiled into Blender, not available on all systems:\n"
+    "\tFormats that can be compiled into GameForge 3D Studio, not available on all systems:\n"
     "\t'OPEN_EXR' 'OPEN_EXR_MULTILAYER' 'FFMPEG' 'CINEON' 'DPX' 'JP2' 'WEBP'.";
 static int arg_handle_image_type_set(int argc, const char **argv, void *data)
 {
@@ -2756,7 +2756,7 @@ static int arg_handle_python_file_run(int argc, const char **argv, void *data)
     }
 #  else
     UNUSED_VARS(C);
-    fprintf(stderr, "This Blender was built without Python support\n");
+    fprintf(stderr, "This GameForge 3D Studio was built without Python support\n");
 #  endif /* WITH_PYTHON */
 
     return 1;
@@ -2794,7 +2794,7 @@ static int arg_handle_python_text_run(int argc, const char **argv, void *data)
     }
 #  else
     UNUSED_VARS(C);
-    fprintf(stderr, "This Blender was built without Python support\n");
+    fprintf(stderr, "This GameForge 3D Studio was built without Python support\n");
 #  endif /* WITH_PYTHON */
 
     return 1;
@@ -2825,7 +2825,7 @@ static int arg_handle_python_expr_run(int argc, const char **argv, void *data)
     }
 #  else
     UNUSED_VARS(C);
-    fprintf(stderr, "This Blender was built without Python support\n");
+    fprintf(stderr, "This GameForge 3D Studio was built without Python support\n");
 #  endif /* WITH_PYTHON */
 
     return 1;
@@ -2836,7 +2836,7 @@ static int arg_handle_python_expr_run(int argc, const char **argv, void *data)
 
 static const char arg_handle_python_console_run_doc[] =
     "\n\t"
-    "Run Blender with an interactive console.";
+    "Run GameForge 3D Studio with an interactive console.";
 static int arg_handle_python_console_run(int /*argc*/, const char ** /*argv*/, void *data)
 {
   bContext *C = static_cast<bContext *>(data);
@@ -2845,7 +2845,7 @@ static int arg_handle_python_console_run(int /*argc*/, const char ** /*argv*/, v
   BPY_CTX_SETUP(BPY_run_string_eval(C, imports, "code.interact()"));
 #  else
   UNUSED_VARS(C);
-  fprintf(stderr, "This Blender was built without python support\n");
+  fprintf(stderr, "This GameForge 3D Studio was built without python support\n");
 #  endif /* WITH_PYTHON */
 
   return 0;

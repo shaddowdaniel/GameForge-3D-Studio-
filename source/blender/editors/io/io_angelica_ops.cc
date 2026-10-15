@@ -364,6 +364,77 @@ void WM_OT_angelica_import(wmOperatorType *ot)
 /** \} */
 
 /* -------------------------------------------------------------------- */
+/** \name Open an Asset of a Client
+ * \{ */
+
+static wmOperatorStatus wm_angelica_import_asset_exec(bContext *C, wmOperator *op)
+{
+  AngelicaAssetImportParams params;
+  RNA_string_get(op->ptr, "client_root", params.client_root);
+  RNA_string_get(op->ptr, "engine_path", params.engine_path);
+  if (!params.client_root[0] || !params.engine_path[0]) {
+    BKE_report(op->reports, RPT_ERROR, "No client folder or asset path given");
+    return OPERATOR_CANCELLED;
+  }
+  params.global_scale = RNA_float_get(op->ptr, "global_scale");
+  params.import_textures = RNA_boolean_get(op->ptr, "import_textures");
+  params.import_armature = RNA_boolean_get(op->ptr, "import_armature");
+  params.import_animations = RNA_boolean_get(op->ptr, "import_animations");
+  params.reports = op->reports;
+
+  const std::vector<io::angelica::ImportedAsset> assets = io::angelica::import_client_asset(
+      CTX_data_main(C), CTX_data_scene(C), CTX_data_view_layer(C), params);
+  if (assets.empty()) {
+    return OPERATOR_CANCELLED;
+  }
+  finish_import(C, op, assets);
+  return OPERATOR_FINISHED;
+}
+
+void WM_OT_angelica_import_asset(wmOperatorType *ot)
+{
+  ot->name = "Open Client Asset";
+  ot->description =
+      "Open an asset of the game client with every file it uses (skins, skeleton, animations, "
+      "textures), read from inside its packages without extracting anything";
+  ot->idname = "WM_OT_angelica_import_asset";
+
+  ot->exec = wm_angelica_import_asset_exec;
+  ot->poll = WM_operator_winactive;
+  ot->flag = OPTYPE_REGISTER | OPTYPE_UNDO;
+
+  RNA_def_string(ot->srna,
+                 "client_root",
+                 nullptr,
+                 FILE_MAX,
+                 "Client Folder",
+                 "Folder of the game client (usually 'element')");
+  RNA_def_string(ot->srna,
+                 "engine_path",
+                 nullptr,
+                 FILE_MAX,
+                 "Asset Path",
+                 "Path of the asset inside the client, for example 'models\\npcs\\x\\x.ecm'");
+  RNA_def_float(ot->srna, "global_scale", 1.0f, 1e-6f, 1e6f, "Scale", "", 0.001f, 1000.0f);
+  RNA_def_boolean(ot->srna, "import_textures", true, "Textures", "Load the textures of the asset");
+  RNA_def_boolean(ot->srna,
+                  "import_armature",
+                  true,
+                  "Armature",
+                  "Create an armature from the skeleton (.bon) and skin the meshes to it");
+  RNA_def_boolean(ot->srna,
+                  "import_animations",
+                  true,
+                  "Animations",
+                  "Import the skeleton animations (.stck) of the model as actions");
+  def_asset_properties(ot);
+  /* Opened to be edited: not added to the file's asset library unless asked. */
+  RNA_def_property_boolean_default(RNA_struct_type_find_property(ot->srna, "mark_as_assets"), false);
+}
+
+/** \} */
+
+/* -------------------------------------------------------------------- */
 /** \name Import Map Folder
  * \{ */
 

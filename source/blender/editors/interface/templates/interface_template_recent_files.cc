@@ -79,7 +79,7 @@ static void template_recent_files_tooltip_func(bContext & /*C*/,
 
   if (version_str[0]) {
     tooltip_text_field_add(
-        tip, fmt::format("Blender {}", version_str), {}, TIP_STYLE_NORMAL, TIP_LC_VALUE);
+        tip, fmt::format("GameForge 3D Studio {}", version_str), {}, TIP_STYLE_NORMAL, TIP_LC_VALUE);
   }
 
   BLI_stat_t status;

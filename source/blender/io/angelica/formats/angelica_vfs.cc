@@ -234,13 +234,13 @@ std::shared_ptr<PckArchive> ClientFileSystem::package_for_mount(const std::strin
   if (root_.empty() || missing_mounts_.count(mount)) {
     return nullptr;
   }
-  const std::string pck_path = find_file_nocase(root_, mount + ".pck");
+  const std::string pck_path = resolve_nocase(root_, mount + ".pck");
   if (pck_path.empty()) {
     missing_mounts_[mount] = true;
     return nullptr;
   }
-  auto package = std::make_shared<PckArchive>();
-  if (!package->open(pck_path, nullptr)) {
+  std::shared_ptr<PckArchive> package = open_package_shared(pck_path, nullptr);
+  if (!package) {
     missing_mounts_[mount] = true;
     return nullptr;
   }
@@ -248,70 +248,147 @@ std::shared_ptr<PckArchive> ClientFileSystem::package_for_mount(const std::strin
   return package;
 }
 
-bool ClientFileSystem::read_loose(const std::string &normalized, Bytes &r_data)
+static FileLocation packed_location(const std::string &normalized,
+                                    const std::string &mount,
+                                    const std::shared_ptr<PckArchive> &package,
+                                    const PckEntry &entry)
 {
-  if (root_.empty()) {
-    return false;
-  }
-  const std::string path = resolve_nocase(root_, normalized);
-  return !path.empty() && read_file(path, r_data);
+  FileLocation location;
+  location.kind = FileLocation::Kind::Packed;
+  location.engine_path = normalized;
+  location.container = package->part_paths().front();
+  location.mount = mount;
+  location.entry = entry.path_display;
+  location.size = entry.size;
+  location.package = package;
+  location.pck_entry = &entry;
+  return location;
 }
 
-bool ClientFileSystem::read_packed(const std::string &normalized, Bytes &r_data)
+FileLocation ClientFileSystem::locate_packed(const std::string &normalized)
 {
-  const size_t sep = normalized.find('\\');
+  /* The package whose folder holds the path: `help\script\x` lives in `help\script.pck`, so two
+   * levels are tried before the first folder alone. */
+  size_t sep = normalized.find('\\');
   if (sep != std::string::npos) {
-    const std::string mount = normalized.substr(0, sep);
-    if (std::shared_ptr<PckArchive> package = package_for_mount(mount)) {
+    const size_t sep2 = normalized.find('\\', sep + 1);
+    std::vector<size_t> ends;
+    if (sep2 != std::string::npos) {
+      ends.push_back(sep2);
+    }
+    ends.push_back(sep);
+    for (const size_t end : ends) {
+      const std::string mount = normalized.substr(0, end);
+      std::shared_ptr<PckArchive> package = package_for_mount(mount);
+      if (!package) {
+        continue;
+      }
       /* Entries are stored either with or without the mount folder, depending on the tool that
        * built the package. */
       const PckEntry *entry = package->find(normalized);
       if (entry == nullptr) {
-        entry = package->find(normalized.substr(sep + 1));
+        entry = package->find(normalized.substr(end + 1));
       }
-      if (entry && package->read(*entry, r_data, nullptr)) {
-        return true;
+      if (entry) {
+        return packed_location(normalized, mount, package, *entry);
       }
+      /* The engine falls back to the loose file when its package lacks the entry. */
+      return {};
     }
   }
-  /* Fall back to every opened package, for paths that do not start with a mount folder. */
+  /* Paths that do not start with a mount folder: every opened package. */
   for (auto &item : packages_) {
     const PckEntry *entry = item.second->find(normalized);
     if (entry == nullptr) {
       entry = item.second->find(item.first + "\\" + normalized);
     }
-    if (entry && item.second->read(*entry, r_data, nullptr)) {
-      return true;
+    if (entry) {
+      return packed_location(normalized, item.first, item.second, *entry);
     }
   }
-  return false;
+  return {};
 }
 
-bool ClientFileSystem::read(std::string_view engine_path, Bytes &r_data, std::string_view base_dir)
+FileLocation ClientFileSystem::locate_loose(const std::string &normalized)
+{
+  if (root_.empty()) {
+    return {};
+  }
+  const std::string path = resolve_nocase(root_, normalized);
+  std::error_code ec;
+  if (path.empty() || !fs::is_regular_file(to_fs_path(path), ec)) {
+    return {};
+  }
+  FileLocation location;
+  location.kind = FileLocation::Kind::Loose;
+  location.engine_path = normalized;
+  location.container = path;
+  location.size = fs::file_size(to_fs_path(path), ec);
+  return location;
+}
+
+FileLocation ClientFileSystem::locate(std::string_view engine_path, std::string_view base_dir)
 {
   const std::string normalized = normalize_engine_path(engine_path, false);
   if (normalized.empty()) {
-    return false;
+    return {};
   }
+  std::vector<std::string> candidates;
   if (!base_dir.empty()) {
-    const std::string relative = normalize_engine_path(base_dir, false) + "\\" + normalized;
-    if (read_loose(relative, r_data) || read_packed(relative, r_data)) {
-      return true;
-    }
+    candidates.push_back(normalize_engine_path(base_dir, false) + "\\" + normalized);
   }
-  if (read_loose(normalized, r_data) || read_packed(normalized, r_data)) {
-    return true;
+  candidates.push_back(normalized);
+  for (const std::string &candidate : candidates) {
+    FileLocation location = locate_packed(candidate);
+    if (location.kind == FileLocation::Kind::None) {
+      location = locate_loose(candidate);
+    }
+    if (location.kind != FileLocation::Kind::None) {
+      return location;
+    }
   }
   for (const std::string &dir : search_dirs_) {
     std::string path = resolve_nocase(dir, normalized);
     if (path.empty()) {
       path = resolve_nocase(dir, path_basename(normalized));
     }
-    if (!path.empty() && read_file(path, r_data)) {
-      return true;
+    std::error_code ec;
+    if (!path.empty() && fs::is_regular_file(to_fs_path(path), ec)) {
+      FileLocation location;
+      location.kind = FileLocation::Kind::External;
+      location.engine_path = normalized;
+      location.container = path;
+      location.size = fs::file_size(to_fs_path(path), ec);
+      return location;
     }
   }
-  return false;
+  return {};
+}
+
+bool ClientFileSystem::read(const FileLocation &location, Bytes &r_data)
+{
+  bool ok = false;
+  switch (location.kind) {
+    case FileLocation::Kind::None:
+      return false;
+    case FileLocation::Kind::Packed:
+      ok = location.package && location.pck_entry &&
+           location.package->read(*location.pck_entry, r_data, nullptr);
+      break;
+    case FileLocation::Kind::Loose:
+    case FileLocation::Kind::External:
+      ok = read_file(location.container, r_data);
+      break;
+  }
+  if (ok && read_log_) {
+    read_log_->push_back(location);
+  }
+  return ok;
+}
+
+bool ClientFileSystem::read(std::string_view engine_path, Bytes &r_data, std::string_view base_dir)
+{
+  return read(locate(engine_path, base_dir), r_data);
 }
 
 void ClientFileSystem::add_search_dir(std::string directory)
@@ -325,8 +402,7 @@ void ClientFileSystem::add_search_dir(std::string directory)
 
 bool ClientFileSystem::exists(std::string_view engine_path)
 {
-  Bytes data;
-  return read(engine_path, data);
+  return locate(engine_path).kind != FileLocation::Kind::None;
 }
 
 }  // namespace blender::io::angelica

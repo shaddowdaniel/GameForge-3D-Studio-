@@ -32,7 +32,7 @@ const char *GHOST_SystemPathsWin32::getSystemDir(int, const char *versionstr) co
 
   if (hResult == S_OK) {
     conv_utf_16_to_8(knownpath_16, knownpath, MAX_PATH * 3);
-    strcat(knownpath, "\\Blender Foundation\\Blender\\");
+    strcat(knownpath, "\\ATOM GameForge\\GameForge 3D Studio\\");
     strcat(knownpath, versionstr);
     system_dir = knownpath;
   }
@@ -53,7 +53,9 @@ const char *GHOST_SystemPathsWin32::getUserDir(int, const char *versionstr) cons
 
   if (hResult == S_OK) {
     conv_utf_16_to_8(knownpath_16, knownpath, MAX_PATH * 3);
-    strcat(knownpath, "\\Blender Foundation\\Blender\\");
+    /* GameForge 3D Studio's own folder: see #BKE_appdir_legacy_user_folder_migrate for the
+     * files of versions that shared Blender's `Blender Foundation\Blender` folder. */
+    strcat(knownpath, "\\ATOM GameForge\\GameForge 3D Studio\\");
     strcat(knownpath, versionstr);
     user_dir = knownpath;
   }

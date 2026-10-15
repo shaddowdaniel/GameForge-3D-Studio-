@@ -378,7 +378,7 @@ GHOST_ContextD3D *GHOST_SystemWin32::createOffscreenContextD3D()
   /* NOTE: the `gpu_settings` could be passed in here, as it is with similar functions. */
   const GHOST_ContextParams context_params_offscreen = GHOST_CONTEXT_PARAMS_NONE;
   HWND wnd = CreateWindowA("STATIC",
-                           "Blender XR",
+                           "GameForge 3D Studio XR",
                            WS_OVERLAPPEDWINDOW | WS_CLIPSIBLINGS | WS_CLIPCHILDREN,
                            0,
                            0,
@@ -2870,7 +2870,7 @@ GHOST_TSuccess GHOST_SystemWin32::showMessageBox(const char *title,
   config.pszMainIcon = (dialog_options & GHOST_DialogError   ? TD_ERROR_ICON :
                         dialog_options & GHOST_DialogWarning ? TD_WARNING_ICON :
                                                                TD_INFORMATION_ICON);
-  config.pszWindowTitle = L"Blender";
+  config.pszWindowTitle = L"GameForge 3D Studio";
   config.pszMainInstruction = title_16;
   config.pszContent = message_16;
   const bool has_link = link && strlen(link);

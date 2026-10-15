@@ -666,7 +666,7 @@ msgid "Fribidi Library"
 msgstr "FriBidi ﯼﺮﯾﺮﺒﺋﻻ﻿"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
 msgstr "FriBidi ﺖﺤﺗ ﮯﮐ ﺲﮑﻨﯿﻟ ﺍﺬﮩﻟ.) ﯼﺮﯾﺮﺒﺋﻻ﻿ ﮦﺩﺮﮐ ﺐﺗﺮﻣ ﯽﺳ ، .dll ﺎﻧﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﺎﮐ ﮏﯾﺍ ﻞﻣﺎﺷ ﮟﯿﻣ ﮮﺮﯿﺧﺫ ﮯﮐ ﮞﻮﯾﺮﯾﺮﺒﺋﻻ﻿ ﺭﮉﻨﯿﻠﺑ ﺮﭘ ﺭﻮﻃ ﮯﮐ ﻝﺎﺜﻣ ، ﯽﮔﻮﮨ ﺎﻧﺮﮐ ﻢﯿﻣﺮﺗ ﮟﯿﻣ ﺱﺍ ﺮﭘ ﺭﻮﻃ ﮧﻨﮑﻤﻣ ﻮﮐ ﭖﺁ ﻮﺗ ﮟﯿﮨ ﺖﺤﺗ ﮯﮐ ﺯﻭﮉﻧﻭ ﭖﺁ ﺮﮔﺍ ، (... ﺖﺤﺗ ﮯﮐ ﺯﻭﮉﻧﻭ"
 
 
@@ -690,7 +690,7 @@ msgid "Source Root"
 msgstr "ﭦﻭﺭ ﺱﺭﻮﺳ"
 
 
-msgid "The Blender source root path"
+msgid "The GameForge 3D Studio source root path"
 msgstr "ﮫﺗﺎﭘ ﭦﻭﺭ ﺱﺭﻮﺳ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -714,7 +714,7 @@ msgid "Persistent Data Path"
 msgstr "ﮫﺗﺎﭘ ﺎﭩﯾﮈ ﻞﻘﺘﺴﻣ"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
 msgstr "(ﺎﺗﺮﮐ ﮟﯿﮩﻧ ﻡﺎﮐ ﮞﺎﮩﯾ ﻡﺎﻈﻧ ﺎﮐ ﺭﮉﻨﯿﻠﺑ ،ﮯﺳ ﯽﺘﻤﺴﻗﺪﺑ) ﻡﺎﻧ ﺎﮐ ﻞﺋﺎﻓ json ﯽﻟﺍﻭ ﮯﻧﺮﮐ ﮦﺮﯿﺧﺫ ﻮﮐ ﺕﺎﺒﯿﺗﺮﺗ ﻥﺍ"
 
 
@@ -1598,7 +1598,7 @@ msgid "Current File"
 msgstr "ﻞﺋﺎﻓ ﮦﺩﻮﺟﻮﻣ"
 
 
-msgid "Show the assets currently available in this Blender session"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
 msgstr "ﮟﯿﺋﺎﮭﮐﺩ ﮯﺛﺎﺛﺍ ﺏﺎﯿﺘﺳﺩ ﻝﺎﺤﻟﺍ ﯽﻓ ﮟﯿﻣ ﻦﺸﯿﺳ blender ﺱﺍ"
 
 
@@ -1666,7 +1666,7 @@ msgid "Catalog UUID"
 msgstr "UUID ﮒﻼ﻿ﭩﯿﮐ"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
 msgstr "۔ﮯﯿﮨﺎﭼ ﺎﻧﻮﮨ UUID ﻖﺑﺎﻄﻣ ﮯﮐ RFC4122 ۔ﮯﮨ ﺎﺗﺎﺟ ﺎﯿﮐ ﻝﺎﻤﻌﺘﺳﺍ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﺵﻼ﻿ﺗ ﻮﮐ ﮯﺘﺳﺍﺭ ﮯﮐ ﮒﻼ﻿ﭩﯿﮐ ﮯﮐ ﮧﺛﺎﺛﺍ ﮯﻌﯾﺭﺫ ﮯﮐ ﺭﮉﻨﯿﻠﺑ ،ﮦﺪﻨﻨﮐ ﺖﺧﺎﻨﺷ ﮯﯿﻟ ﮯﮐ ﮒﻼ﻿ﭩﯿﮐ ﮯﮐ ﮧﺛﺎﺛﺍ"
 
 
@@ -2327,7 +2327,7 @@ msgid "Is Internal"
 msgstr "ﮯﮨ ﯽﻧﻭﺭﺪﻧﺍ"
 
 
-msgid "The attribute is meant for internal use by Blender"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
 msgstr "ﮯﮨ ﮯﯿﻟ ﮯﮐ ﻝﺎﻤﻌﺘﺳﺍ ﯽﻧﻭﺭﺪﻧﺍ ﮯﮐ ﺭﮉﻨﯿﻠﺑ ﻒﺻﻭ ﮧﯾ"
 
 
@@ -3519,8 +3519,8 @@ msgid "Project"
 msgstr "ﭧﮑﯿﺟﻭﺮﭘ"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Fallback"
@@ -3552,11 +3552,11 @@ msgid "Path"
 msgstr "ﮧﺘﺳﺍﺭ"
 
 
-msgid "Blender RNA"
+msgid "GameForge 3D Studio RNA"
 msgstr "ﮮﺍ ﻦﯾﺍ ﺭﺁ ﺭﮉﻨﯿﻠﺑ"
 
 
-msgid "Blender RNA structure definitions"
+msgid "GameForge 3D Studio RNA structure definitions"
 msgstr "ﻒﯾﺮﻌﺗ ﯽﮐ ﺖﺧﺎﺳ ﯽﮐ ﮮﺍ ﻦﯾﺍ ﺭﺁ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -7272,7 +7272,7 @@ msgid "Lin error"
 msgstr "ﯽﻄﻠﻏ ﯽﮐ ﻦﻟ"
 
 
-msgid "Amount of residual error in Blender space unit for constraints that work on position"
+msgid "Amount of residual error in GameForge 3D Studio space unit for constraints that work on position"
 msgstr "ﺭﺍﺪﻘﻣ ﯽﮐ ﯽﻄﻠﻏ ﺎﯾﺎﻘﺑ ﮟﯿﻣ ﭧﻧﻮﯾ ﺲﯿﭙﺳﺍ ﺭﮉﻨﯿﻠﺑ ﮯﯿﻟ ﮯﮐ ﮞﻮﭨﻭﺎﮐﺭ ﯽﻟﺍﻭ ﮯﻧﺮﮐ ﻡﺎﮐ ﺮﭘ  ﻡﺎﻘﻣ"
 
 
@@ -11089,7 +11089,7 @@ msgid "Max Velocity"
 msgstr "ﺭﺎﺘﻓﺭ ﮦﺩﺎﯾﺯ ﮯﺳ ﮦﺩﺎﯾﺯ"
 
 
-msgid "Velocity considered as maximum influence (Blender units per frame)"
+msgid "Velocity considered as maximum influence (GameForge 3D Studio units per frame)"
 msgstr "(ﭧﻧﻮﯾ ﺭﮉﻨﯿﻠﺑ ﻢﯾﺮﻓ ﯽﻓ) ﮯﮨ ﺎﺗﺎﺟ ﺎﮭﺠﻤﺳ ﺥﻮﺳﺭ ﻭ ﺮﺛﺍ ﮦﺩﺎﯾﺯ ﮯﺳ ﮦﺩﺎﯾﺯ ﻮﮐ ﺭﺎﺘﻓﺭ"
 
 
@@ -11467,7 +11467,7 @@ msgid "Premultiply Alpha"
 msgstr "ﺎﻔﻟﺍ ﺖﻗﻭ ﺯﺍ ﻞﺒﻗ"
 
 
-msgid "Multiply color by alpha (recommended for Blender input)"
+msgid "Multiply color by alpha (recommended for GameForge 3D Studio input)"
 msgstr "(ﮦﺩﺮﮐ ﺰﯾﻮﺠﺗ ﮯﯿﻟ ﮯﮐ ﭧﭘ ﻥﺍ ﺭﮉﻨﯿﻠﺑ) ﮟﯾﺩ ﺏﺮﺿ ﮯﺳ ﺎﻔﻟﺍ ﻮﮐ ﮓﻧﺭ"
 
 
@@ -13733,7 +13733,7 @@ msgid "Hide .blend files items that are not data-blocks with asset metadata"
 msgstr ".blend ﮟﯿﮨ ﮟﯿﮩﻧ ﮎﻼ﻿ﺑ ﺎﭩﯾﮈ ﮫﺗﺎﺳ ﮯﮐ ﺎﭩﯾﮈ ﺎﭩﯿﻣ ﮧﺛﺎﺛﺍ ﻮﺟ ﮟﯿﺋﺎﭙﮭﭼ ﻮﮐ ﮞﻮﻠﺋﺎﻓ"
 
 
-msgid "Filter Blender Backup Files"
+msgid "Filter GameForge 3D Studio Backup Files"
 msgstr "ﮟﯾﺮﮐ ﺮﭩﻠﻓ ﻮﮐ ﮞﻮﻠﺋﺎﻓ ﭖﺍ ﮏﯿﺑ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -13741,7 +13741,7 @@ msgid "Show .blend1, .blend2, etc. files"
 msgstr "Show .blend1, .blend2, etc. files"
 
 
-msgid "Filter Blender"
+msgid "Filter GameForge 3D Studio"
 msgstr "ﺭﮉﻨﯿﻠﺑ ﺮﭩﻠﻓ"
 
 
@@ -13749,7 +13749,7 @@ msgid "Show .blend files"
 msgstr ".blend ﮟﯿﺋﺎﮭﮐﺩ ﺰﻠﺋﺎﻓ"
 
 
-msgid "Filter Blender IDs"
+msgid "Filter GameForge 3D Studio IDs"
 msgstr "ﮟﯾﺮﮐ ﺮﭩﻠﻓ ﻮﮐ ﺰﯾﮈ ﯽﺋﺁ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -13825,7 +13825,7 @@ msgid "Library Browser"
 msgstr "ﺭﺯﺅﺍﺮﺑ ﯼﺮﯾﺮﺒﺋﻻ﻿"
 
 
-msgid "Whether we may browse Blender files' content or not"
+msgid "Whether we may browse GameForge 3D Studio files' content or not"
 msgstr "ﮟﯿﮩﻧ ﺎﯾ ﮟﯿﮨ ﮯﺘﮑﺳ ﺮﮐ ﺯﺅﺍﺮﺑ ﻮﮐ ﺩﺍﻮﻣ ﮯﮐ ﮞﻮﻠﺋﺎﻓ ﺭﮉﻨﯿﻠﺑ ﻢﮨ ﺎﯾﺁ"
 
 
@@ -14189,7 +14189,7 @@ msgid "Export Mantaflow Script"
 msgstr "ﮟﯾﺮﮐ ﺪﻣﺁﺮﺑ ﭧﭘﺮﮑﺳﺍ ﻮﻠﻓ ﺎﭩﻨﯿﻣ"
 
 
-msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of Blender) after baking the simulation."
+msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of GameForge 3D Studio) after baking the simulation."
 msgstr ".ﻦﭘﻭﺮﺨﺗ the ﮓﻨﮑﯿﺑ ﺪﻌﺑ ﮯﮐ (ﺭﮉﻨﯿﻠﺑ of ﺮﮨﺎﺑ) in Mantaflow directly (ﺕﺍﺭﺫ ,vectors ﺭﺎﺘﻓﺭ ,ﺯﮈﺮﮔ ﮟﯿﮭﮑﯾﺩ .e.g) ﮯﺸﯿﮐ the ﮟﯾﺮﮐ ﮧﯾﺰﺠﺗ if you plan to ﮯﮨ ﺕﺭﻭﺮﺿ ﻑﺮﺻ This is .ﺎﻧﺎﮑﭘ during ﺕﺎﺒﯿﺗﺮﺗ ﯽﮐ ﻦﯿﻣﻭﮈ ﭧﻧﺮﮐ ﮯﺳ ﮟﯾﺮﮐ ﺪﻣﺁﺮﺑ ﭧﭘﺮﮑﺳﺍ ﻮﻠﻓ ﺎﭩﻨﯿﻣ and ﮟﯾﺮﮐ ﺍﺪﯿﭘ"
 
 
@@ -21777,8 +21777,8 @@ msgid "Library Overrides Need resync"
 msgstr "ﮯﮨ ﺕﺭﻭﺮﺿ ﯽﮐ ﯼﺮﯾﺬﭘ ﺖﻘﺑﺎﻄﻣ ﮦﺭﺎﺑﻭﺩ ﻮﮐ ﺯﮉﯿﺋﺍﺭ ﺭﻭﻭﺍ ﯼﺮﯾﺮﺒﺋﻻ﻿"
 
 
-msgid "Version of Blender the library .blend was saved with"
-msgstr "Blender ﻥﮊﺭﻭ ﺎﮐ ﯼﺮﺒﯿﺋﻻ﻿ ﯽﮐ .blend ﺎﮭﺗ ﺎﯿﮔ ﺎﯿﮐ ﻅﻮﻔﺤﻣ ﮫﺗﺎﺳ ﮯﮐ"
+msgid "Version of GameForge 3D Studio the library .blend was saved with"
+msgstr "GameForge 3D Studio ﻥﮊﺭﻭ ﺎﮐ ﯼﺮﺒﯿﺋﻻ﻿ ﯽﮐ .blend ﺎﮭﺗ ﺎﯿﮔ ﺎﯿﮐ ﻅﻮﻔﺤﻣ ﮫﺗﺎﺳ ﮯﮐ"
 
 
 msgctxt "Light"
@@ -26645,11 +26645,11 @@ msgid "Noise basis used for turbulence"
 msgstr "ﮯﮨ ﯽﺗﻮﮨ ﻝﺎﻤﻌﺘﺳﺍ ﮯﯿﻟ ﮯﮐ ﯼﺰﯿﺧ ﮧﻣﺎﮕﻨﮨ ﺩﺎﯿﻨﺑ ﯽﮐ ﺭﻮﺷ"
 
 
-msgid "Blender Original"
+msgid "GameForge 3D Studio Original"
 msgstr "ﻞﻨﺠﯾﺭﻭﺍ ﺭﮉﻨﯿﻠﺑ"
 
 
-msgid "Noise algorithm - Blender original: Smooth interpolated noise"
+msgid "Noise algorithm - GameForge 3D Studio original: Smooth interpolated noise"
 msgstr "ﺭﻮﺷ ﮉﭩﯿﻟﻮﭘﺮﭩﻧﺍ ﺭﺍﻮﻤﮨ :ﻞﺻﺍ ﺭﮉﻨﯿﻠﺑ - ﻢﮭﺗﺭﻮﮕﻟﺍ ﺭﻮﺷ"
 
 
@@ -27435,7 +27435,7 @@ msgid "Asset Blend Path"
 msgstr "ﮧﺘﺳﺍﺭ ﺎﮐ ﭖﻼ﻿ﻣ ﮧﺛﺎﺛﺍ"
 
 
-msgid "Full path to the Blender file containing the active asset"
+msgid "Full path to the GameForge 3D Studio file containing the active asset"
 msgstr "ﮧﺘﺳﺍﺭ ﻞﻤﮑﻣ ﺎﮐ ﻞﺋﺎﻓ ﺭﮉﻨﯿﻠﺑ ﻞﻤﺘﺸﻣ ﺮﭘ ﮧﺛﺎﺛﺍ ﻝﺎﻌﻓ"
 
 
@@ -28411,7 +28411,7 @@ msgid "Custom Icon"
 msgstr "ﻦﮑﯿﺋﺁ ﺕﺭﻭﺮﺿ ﺐﺴﺣ"
 
 
-msgid "True if this preview icon has been modified by py script, and is no more auto-generated by Blender"
+msgid "True if this preview icon has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
 msgstr "ﮯﮨ ﺎﯿﮔ ﺎﯿﮐ ﮟﯿﮩﻧ ﺭﺎﯿﺗ ﺮﭘ ﺭﻮﻃ ﺭﺎﮐﺩﻮﺧ ﮧﻌﯾﺭﺫ ﮯﮐ ﺭﮉﻨﯿﻠﺑ ﮧﯾ ﺭﻭﺍ ،ﮯﮨ ﯽﺌﮔ ﯽﮐ ﺮﺋﺎﻔﯾﮈﻮﻣ ﮧﻌﯾﺭﺫ ﮯﮐ ﭧﭘﺮﮑﺳﺍ py ﮟﯿﻣ ﻦﮑﯿﺋﺁ ﻮﯾﻮﯾﺮﭘ  ﺱﺍ ﺮﮔﺍ ﮯﮨ ﺖﺳﺭﺩ"
 
 
@@ -28419,7 +28419,7 @@ msgid "Custom Image"
 msgstr "ﺮﯾﻮﺼﺗ ﺕﺭﻭﺮﺿ ﺐﺴﺣ"
 
 
-msgid "True if this preview image has been modified by py script, and is no more auto-generated by Blender"
+msgid "True if this preview image has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
 msgstr "ﮯﮨ ﯽﺌﮔ ﯽﮐ ﮟﯿﮩﻧ ﺭﺎﯿﺗ ﮯﺳ ﮯﻘﯾﺮﻃ ﺭﺎﮐ ﺩﻮﺧ ﮧﻌﯾﺭﺫ ﮯﮐ ﺭﮉﻨﯿﻠﺑ ﮧﯾ ﺭﻭﺍ ،ﮯﮨ ﯽﺌﮔ ﯽﮐ ﺮﺋﺎﻔﯾﮈﻮﻣ ﮧﻌﯾﺭﺫ ﮯﮐ ﭧﭘﺮﮑﺳﺍ py ﮟﯿﻣ ﺮﯾﻮﺼﺗ ﯽﮐ ﻮﯾﻮﯾﺮﭘ  ﺱﺍ ﺮﮔﺍ ﮯﮨ ﺖﺳﺭﺩ"
 
 
@@ -46397,19 +46397,19 @@ msgid "World space normal mapping"
 msgstr "ﯼﺯﺎﺳ ﮧﺸﻘﻧ ﯽﻣﻮﻤﻋ ﯽﺋﻼ﻿ﺧ ﯽﻤﻟﺎﻋ"
 
 
-msgid "Blender Object Space"
+msgid "GameForge 3D Studio Object Space"
 msgstr "ﺲﯿﭙﺳﺍ ﮯﺷ ﺭﮉﻨﯿﻠﺑ"
 
 
-msgid "Object space normal mapping, compatible with Blender render baking"
+msgid "Object space normal mapping, compatible with GameForge 3D Studio render baking"
 msgstr "ﮓﻨﮨﺁ ﻢﮨ ﮫﺗﺎﺳ ﮯﮐ ﮓﻨﮑﯿﺑ ﺭﮉﻨﯾﺭ ﺭﮉﻨﯿﻠﺑ ،ﮓﻨﭙﯿﻣ ﻞﻣﺭﺎﻧ ﺲﯿﭙﺳﺍ ﺰﯿﭼ"
 
 
-msgid "Blender World Space"
+msgid "GameForge 3D Studio World Space"
 msgstr "ﺲﯿﭙﺳﺍ ﮉﻟﺭﻭ ﺭﮉﻨﯿﻠﺑ"
 
 
-msgid "World space normal mapping, compatible with Blender render baking"
+msgid "World space normal mapping, compatible with GameForge 3D Studio render baking"
 msgstr "ﮓﻨﮨﺁ ﻢﮨ ﮫﺗﺎﺳ ﮯﮐ ﮓﻨﮑﯿﺑ ﺭﮉﻨﯾﺭ ﺭﮉﻨﯿﻠﺑ ،ﯼﺯﺎﺳ ﮧﺸﻘﻧ ﯽﻣﻮﻤﻋ ﯽﺋﻼ﻿ﺧ ﯽﻤﻟﺎﻋ"
 
 
@@ -49107,7 +49107,7 @@ msgid "Clear Status"
 msgstr "ﺖﯿﺜﯿﺣ ﮟﯾﺮﮐ ﻑﺎﺻ"
 
 
-msgid "Allow Blender to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, Blender cannot prevent third-party add-ons from violating this rule."
+msgid "Allow GameForge 3D Studio to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, GameForge 3D Studio cannot prevent third-party add-ons from violating this rule."
 msgstr "ﺎﺘﮑﺳ ﮎﻭﺭ ﮟﯿﮩﻧ ﮯﺳ ﯼﺯﺭﻭ ﻑﻼ﻿ﺧ ﯽﮐ ﻝﻮﺻﺍ ﺱﺍ ﻮﮐ ﮯﻓﺎﺿﺍ ﮯﮐ ﺚﻟﺎﺛ ﻖﯾﺮﻓ ﺭﮉﻨﯿﻠﺑ ،ﻢﮨﺎﺗ ﮞﻮﮨ ﻝﺎﻌﻓ ﺮﮔﺍ ﮯﮔ ﮞﻮﮨ ﮏﻠﺴﻨﻣ ﮯﺳ ﭧﯿﻧﺮﭩﻧﺍ ﻑﺮﺻ ﻥﺁ ﮉﯾﺍ ﮯﻟﺍﻭ ﮯﻧﺮﮐ ﯼﻭﺮﯿﭘ ﯽﮐ ﺐﯿﺗﺮﺗ ﺱﺍ ﮟﯾﺩ ﺕﺯﺎﺟﺍ ﯽﮐ ﯽﺋﺎﺳﺭ ﮏﺗ ﭧﯿﻧﺮﭩﻧﺍ ﻮﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -50145,7 +50145,7 @@ msgid "Uninstall Studio Light"
 msgstr "ﮟﯾﺮﮐ ﻝﺎﭩﺴﻧﺍ ﻥﺍ ﭧﺋﻻ﻿ ﻮﯾﮈﻮﭩﺳﺍ"
 
 
-msgid "Load and apply a Blender XML theme file"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
 msgstr "ﮟﯾﺮﮐ ﻮﮔﻻ﻿ ﺭﻭﺍ ﮈﻮﻟ ﻞﺋﺎﻓ ﻢﯿﮭﺗ XML ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -50497,12 +50497,12 @@ msgid "I18n Save Settings"
 msgstr "I18n ﺕﺎﺒﯿﺗﺮﺗ ﮟﯾﺮﮐ ﻅﻮﻔﺤﻣ"
 
 
-msgid "Update i18n data (po files) in Blender source code repository"
+msgid "Update i18n data (po files) in GameForge 3D Studio source code repository"
 msgstr "ﮟﯾﺮﮐ ﭧﯾﮈ ﭖﺍ ﻮﮐ (ﺰﻠﺋﺎﻓ po) ﺎﭩﯾﮈ i18n ﮟﯿﻣ ﯼﺮﭨﺯﻮﭙﯾﺭ ﮈﻮﮐ ﺱﺭﻮﺳ ﺭﮉﻨﯿﻠﺑ"
 
 
 msgctxt "Operator"
-msgid "Update I18n Blender Repository"
+msgid "Update I18n GameForge 3D Studio Repository"
 msgstr "Repository ﺭﮉﻨﯿﻠﺑ I18n ﮟﯾﺮﮐ ﭧﯾﮈ ﭖﺍ"
 
 
@@ -56316,7 +56316,7 @@ msgid "Apply Scalings"
 msgstr "ﮟﯿﺋﺎﮕﻟ ﮓﻨﻠﯿﮑﺳﺍ"
 
 
-msgid "How to apply custom and units scalings in generated FBX file (Blender uses FBX scale to detect units on import, but many other applications do not handle the same way)"
+msgid "How to apply custom and units scalings in generated FBX file (GameForge 3D Studio uses FBX scale to detect units on import, but many other applications do not handle the same way)"
 msgstr "(ﮟﯿﮨ ﯽﺘﻠﭼ ﮟﯿﮩﻧ ﺡﺮﻃ ﯽﺳﺍ ﺰﻨﺸﯿﮐ ﯽﻠﭙﯾﺍ ﯼﺮﺳﻭﺩ ﯽﺳ ﺖﮩﺑ ﻦﮑﯿﻟ ،ﮯﮨ ﺎﺗﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﺎﮐ ﮧﻧﺎﻤﯿﭘ  FBX ﮯﯿﻟ ﮯﮐ ﮯﻧﺎﮕﻟ ﮧﺘﭘ ﺎﮐ ﺲﭩﻧﻮﯾ ﺮﭘ ﺪﻣﺁﺭﺩ ﺭﮉﻨﯿﻠﺑ) ﮯﺋﺎﺟ ﺎﯿﮐ ﻮﮔﻻ﻿ ﮯﺴﯿﮐ ﻮﮐ ﮓﻨﻠﯿﮑﺳﺍ  ﺲﭩﻧﻮﯾ ﺭﻭﺍ ﻢﭩﺴﮐ ﮟﯿﻣ ﻞﺋﺎﻓ FBX ﮦﺩﺮﮐ ﺭﺎﯿﺗ"
 
 
@@ -56356,7 +56356,7 @@ msgid "Apply Unit"
 msgstr "ﮟﯾﺮﮐ ﻕﻼ﻿ﻃﺍ ﺎﮐ ﭧﻧﻮﯾ"
 
 
-msgid "Take into account current Blender units settings (if unset, raw Blender Units values are used as-is)"
+msgid "Take into account current GameForge 3D Studio units settings (if unset, raw GameForge 3D Studio Units values are used as-is)"
 msgstr "(ﮟﯿﮨ ﯽﺗﺎﺟ ﯽﮐ ﻝﺎﻤﻌﺘﺳﺍ ﮧﮐ ﺎﺴﯿﺟ ﮟﯾﺭﺪﻗ ﯽﮐ ﺲﭩﻧﻮﯾ ﺭﮉﻨﯿﻠﺑ ﻡﺎﺧ ،ﻮﺗ ﺎﯿﮔ ﺎﯿﮐ ﮟﯿﮩﻧ ﭧﯿﺳ ﺮﮔﺍ) ﮟﯿﮭﮐﺭ ﺮﻈﻧﺪﻣ ﻮﮐ ﺕﺎﺒﯿﺗﺮﺗ ﯽﮐ ﺲﭩﻧﻮﯾ ﺭﮉﻨﯿﻠﺑ ﮦﺩﻮﺟﻮﻣ"
 
 
@@ -56364,7 +56364,7 @@ msgid "Armature FBXNode Type"
 msgstr "ﻢﺴﻗ ﯽﮐ ﮈﻮﻧ ﺲﮑﯾﺍ ﯽﺑ ﻒﯾﺍ ﺮﭽﻣﺭﺁ"
 
 
-msgid "FBX type of node (object) used to represent Blender's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into Blender...)"
+msgid "FBX type of node (object) used to represent GameForge 3D Studio's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into GameForge 3D Studio...)"
 msgstr "FBX ﮯﺘﮑﺳ ﺮﮐ ﮟﯿﮩﻧ ﺪﻣﺁﺭﺩ ﺲﭘﺍﻭ ﻞﮑﻟﺎﺑ ﮟﯿﻣ ﺭﮉﻨﯿﻠﺑ ﺏﺎﺨﺘﻧﺍ ﮮﺮﺳﻭﺩ ﮧﮑﻧﻮﯿﮐ ،ﻮﮨ ﮧﻧ ﺎﻨﻣﺎﺳ ﺎﮐ ﻞﺋﺎﺴﻣ ﮫﺗﺎﺳ ﮯﮐ ﭗﯾﺍ ﯼﺮﺳﻭﺩ ﻮﮐ ﭖﺁ ﮧﮐ ﮏﺗ ﺐﺟ ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﺎﮐ ﻢﺴﻗ ﻝﻮﻧ) ﮯﮨ ﺎﺗﻮﮨ ﻝﺎﻤﻌﺘﺳﺍ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﯽﮔﺪﻨﺋﺎﻤﻧ ﯽﮐ ﺯﺮﭽﻣﺭﺁ ﮯﮐ ﺭﮉﻨﯿﻠﺑ ﻮﺟ (ﭧﮑﯿﺠﺑﺁ) ﮈﻮﻧ ﺎﮐ ﻢﺴﻗ...)"
 
 
@@ -56372,8 +56372,8 @@ msgid "Null"
 msgstr "ﻡﺪﻌﻟﺎﮐ"
 
 
-msgid "'Null' FBX node, similar to Blender's Empty (default)"
-msgstr "(ﮦﺪﺷ ﮯﻃ) ﯽﻟﺎﺧ to Blender's ﺡﺮﻃ ﯽﺳﺍ ,ﮈﻮﻧ FBX 'ﻡﺪﻌﻟﺎﮐ'"
+msgid "'Null' FBX node, similar to GameForge 3D Studio's Empty (default)"
+msgstr "(ﮦﺪﺷ ﮯﻃ) ﯽﻟﺎﺧ to GameForge 3D Studio's ﺡﺮﻃ ﯽﺳﺍ ,ﮈﻮﻧ FBX 'ﻡﺪﻌﻟﺎﮐ'"
 
 
 msgid "'Root' FBX node, supposed to be the root of chains of bones..."
@@ -56488,7 +56488,7 @@ msgid "Apply Transform"
 msgstr "ﮟﯿﺋﺎﮕﻟ ﻡﺭﺎﻔﺴﻧﺍﺮﭨ"
 
 
-msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
+msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with GameForge 3D Studio's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
 msgstr "(ﮯﮨ ﺎﻧﺎﺟ ﺍﮌﻮﺗ ﮫﺗﺎﺳ ﮯﮐ ﺕﺎﯿﮐﺮﺣ /ﺯﺮﭽﻣﺭﺁ ﮯﺴﺟ ،ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﺮﭘ ﮮﺮﻄﺧ ﮯﻨﭘﺍ ،ﺭﺎﯿﺘﺧﺍ ﯽﺗﺎﺑﺮﺠﺗ !ﮦﺎﺒﺘﻧﺍ) ﮟﯾﺮﮐ ﺰﯾﺮﮔ ﮯﺳ ﮯﻧﺮﮐ ﺵﺩﺮﮔ ﮦﺪﯾﺪﻨﺴﭘﺎﻧ ﻮﮐ ءﺎﯿﺷﺍ ﻮﺗ ﻮﮨ ﮧﻧ ﮏﻠﺴﻨﻣ ﮫﺗﺎﺳ ﮯﮐ ﺲﯿﭙﺳﺍ ﯽﮐ ﺭﮉﻨﯿﻠﺑ ﺲﯿﭙﺳﺍ ﭧﮔﺭﺎﭨ ﺐﺟ ،ﮟﯾﺮﮐ ﻞﯾﺪﺒﺗ ﮟﯿﻣ ﺎﭩﯾﮈ ﮯﺷ ﻮﮐ ﺲﯿﭙﺳﺍ ﮏﯿﺑ"
 
 
@@ -56704,7 +56704,7 @@ msgid "Use Modifiers Render Setting"
 msgstr "ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﺎﮐ ﮓﻨﭩﯿﺳ ﺭﮉﻨﯾﺭ ﺮﺋﺎﻔﯾﮈﻮﻣ"
 
 
-msgid "Use render settings when applying modifiers to mesh objects (DISABLED in Blender 2.8)"
+msgid "Use render settings when applying modifiers to mesh objects (DISABLED in version 2.8)"
 msgstr "(ﻝﺎﻌﻓ ﺮﯿﻏ ﮟﯿﻣ 2.8 ﺭﮉﻨﯿﻠﺑ) ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﺎﮐ ﺕﺎﺒﯿﺗﺮﺗ ﯽﮐ ﺭﮉﻨﯾﺭ ﺖﻗﻭ ﮯﺗﺎﮕﻟ ﺮﺋﺎﻔﯾﮈﻮﻣ ﺮﭘ ﮯﺷ ﺶﯿﻣ"
 
 
@@ -57152,7 +57152,7 @@ msgid "Raw (Deprecated)"
 msgstr "(ﮦﺩﻮﺳﺮﻓ) ﻡﺎﺧ"
 
 
-msgid "Blender lighting strengths with no conversion"
+msgid "GameForge 3D Studio lighting strengths with no conversion"
 msgstr "ﮯﮐ ﯽﻠﯾﺪﺒﺗ ﯽﺴﮐ ﺮﯿﻐﺑ ﺖﻗﺎﻃ ﯽﮐ ﯽﻨﺷﻭﺭ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -57296,7 +57296,7 @@ msgid "When exporting animations, disable viewport for other objects, for perfor
 msgstr "ﮟﯾﺮﮐ ﻝﺎﻌﻓ ﺮﯿﻏ ﻮﮐ ﭦﺭﻮﭘ ﻮﯾﻭ ﮯﯿﻟ ﮯﮐ ءﺎﯿﺷﺍ ﺮﮕﯾﺩ ﮯﯿﻟ ﮯﮐ ﯽﮔﺩﺮﮐﺭﺎﮐ ،ﺖﻗﻭ ﮯﺗﺮﮐ ﺪﻣﺁﺮﺑ ﺮﯾﻭﺎﺼﺗ ﮎﺮﺤﺘﻣ"
 
 
-msgid "Export original glTF PBR Specular, instead of Blender Principled Shader Specular"
+msgid "Export original glTF PBR Specular, instead of GameForge 3D Studio Principled Shader Specular"
 msgstr "ﮟﯾﺮﮐ ﺪﻣﺁﺮﺑ ﺮﻟﻮﮑﯿﭙﺳ glTF PBR ﻞﺻﺍ ﮯﺋﺎﺠﺑ ﯽﮐ ﺮﻟﻮﮑﯿﭙﺴﺘﮕﻧﺭ ﮉﻠﭙﺴﻧﺮﭘ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -57476,7 +57476,7 @@ msgid "Remember Export Settings"
 msgstr "ﮟﯿﮭﮐﺭ ﺩﺎﯾ ﻮﮐ ﺕﺎﺒﯿﺗﺮﺗ ﯽﮐ ﭦﺭﻮﭙﺴﮑﯾﺍ"
 
 
-msgid "Store glTF export settings in the Blender project"
+msgid "Store glTF export settings in the GameForge 3D Studio project"
 msgstr "ﮟﯾﺮﮐ ﺭﻮﭩﺳﺍ ﻮﮐ ﺕﺎﺒﯿﺗﺮﺗ ﯽﮐ ﺪﻣﺁﺮﺑ glTF ﮟﯿﻣ ﭧﮑﯿﺟﻭﺮﭘ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -61279,7 +61279,7 @@ msgid "Definition"
 msgstr "ﻒﯾﺮﻌﺗ"
 
 
-msgid "Number of pixels per inch or Blender Unit"
+msgid "Number of pixels per inch or GameForge 3D Studio Unit"
 msgstr "ﺩﺍﺪﻌﺗ ﯽﮐ ﭧﻧﻮﯾ ﺭﮉﻨﯿﻠﺑ ﺎﯾ ﭻﻧﺍ ﯽﻓ ﺰﻠﺴﮑﭘ"
 
 
@@ -61303,7 +61303,7 @@ msgid "Force Reload"
 msgstr "ﮟﯾﺮﮐ ﮈﻮﻟ ﮦﺭﺎﺑﻭﺩ ﯽﺘﺳﺩﺮﺑﺯ"
 
 
-msgid "Force reload the image if it is already opened elsewhere in Blender"
+msgid "Force reload the image if it is already opened elsewhere in GameForge 3D Studio"
 msgstr "Blenderﮯﮨ ﯽﺋﻮﮨ ﯽﻠﮭﮐ ﺭﻭﺍ ﮟﯿﮩﮐ ﮯﺳ ﮯﻠﮩﭘ ﮧﯾ ﺮﮔﺍ ﮟﯾﺮﮐ ﮈﻮﻟ ﮦﺭﺎﺑﻭﺩ ﯽﺘﺳﺩﺮﺑﺯ ﻮﮐ ﺮﯾﻮﺼﺗ"
 
 
@@ -61395,11 +61395,11 @@ msgid "Scale based on pixels per inch"
 msgstr "ﮧﻧﺎﻤﯿﭘ ﺮﭘ ﺩﺎﯿﻨﺑ ﯽﮐ ﭻﻧﺍ ﯽﻓ ﺰﻠﺴﮑﭘ"
 
 
-msgid "Pixels per Blender Unit"
+msgid "Pixels per GameForge 3D Studio Unit"
 msgstr "ﭧﻧﻮﯾ ﺭﮉﻨﯿﻠﺑ per ﺰﻠﺴﮑﭘ"
 
 
-msgid "Scale based on pixels per Blender Unit"
+msgid "Scale based on pixels per GameForge 3D Studio Unit"
 msgstr "ﮧﻧﺎﻤﯿﭘ ﺮﭘ ﺩﺎﯿﻨﺑ ﯽﮐ ﺰﻠﺴﮑﭘ ﭧﻧﻮﯾ ﺭﮉﻨﯿﻠﺑ ﯽﻓ"
 
 
@@ -61656,7 +61656,7 @@ msgid "Save the image with another name and/or settings"
 msgstr "ﮟﯾﺮﮐ ﻅﻮﻔﺤﻣ ﮫﺗﺎﺳ ﮯﮐ ﺕﺎﺒﯿﺗﺮﺗ ﺎﯾ/ﺭﻭﺍ ﻡﺎﻧ ﺭﻭﺍ ﯽﺴﮐ ﻮﮐ ﺮﯾﻮﺼﺗ"
 
 
-msgid "Create a new image file without modifying the current image in Blender"
+msgid "Create a new image file without modifying the current image in GameForge 3D Studio"
 msgstr "ﮟﯿﺋﺎﻨﺑ ﻞﺋﺎﻓ ﯼﺮﯾﻮﺼﺗ ﯽﺌﻧ ﮏﯾﺍ ﺮﯿﻐﺑ ﮯﯿﮐ ﺮﺋﺎﻔﯾﮈﻮﻣ ﮟﯿﻣ ﺮﯾﻮﺼﺗ ﮦﺩﻮﺟﻮﻣ ﮟﯿﻣ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -61948,7 +61948,7 @@ msgid "Import FBX animation"
 msgstr "ﮟﯾﺮﮐ ﺪﻣﺁﺭﺩ ﺕﺎﯿﮐﺮﺣ  ﺲﮑﯾﺍ ﯽﺑ ﻒﯾﺍ"
 
 
-msgid "Import custom normals, if available (otherwise Blender will recompute them)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will recompute them)"
 msgstr "(ﺎﮔ ﮮﺮﮐ ﯽﺘﻨﮔ ﮦﺭﺎﺑﻭﺩ ﯽﮐ ﻥﺍ ﺭﮉﻨﯿﻠﺑ ﺮﮕﯾﺩ ﺕﺭﻮﺼﺑ) ﮟﯾﺮﮐ ﺪﻣﺁﺭﺩ ﻞﻣﺭﺎﻧ ﺕﺭﻭﺮﺿ ﺐﺴﺣ ﻮﺗ ﻮﮨ ﺏﺎﯿﺘﺳﺩ ﺮﮔﺍ"
 
 
@@ -62004,11 +62004,11 @@ msgid "Heuristic for placing bones. Tries to make bones pretty"
 msgstr "ﮯﮨ ﺎﺗﺮﮐ ﺶﺷﻮﮐ ﯽﮐ ﮯﻧﺎﻨﺑ ﺕﺭﻮﺼﺑﻮﺧ ﻮﮐ ﮞﻮﯾﮉﮨ ﮏﭩﺳﺭﻮﯿﮨ ﮯﯿﻟ ﮯﮐ ﮯﻨﮭﮐﺭ ﻮﮐ ﮞﻮﯾﮉﮨ"
 
 
-msgid "Blender (best for import/export round trip)"
+msgid "GameForge 3D Studio (best for import/export round trip)"
 msgstr "(ﻦﯾﺮﺘﮩﺑ ﮯﯿﻟ ﮯﮐ ﭖﺮﭨ ﮉﻧﺅﺍﺭ ﺪﻣﺁﺮﺑ/ﺪﻣﺁﺭﺩ) ﺭﮉﻨﯿﻠﺑ"
 
 
-msgid "Good for re-importing glTFs exported from Blender, and re-exporting glTFs to glTFs after Blender editing. Bone tips are placed on their local +Y axis (in glTF space)"
+msgid "Good for re-importing glTFs exported from GameForge 3D Studio, and re-exporting glTFs to glTFs after GameForge 3D Studio editing. Bone tips are placed on their local +Y axis (in glTF space)"
 msgstr "(ﮟﯿﻣ ﮧﮕﺟ glTF) ﮟﯿﮨ ﮯﺗﺎﺟ ﮯﮭﮐﺭ ﺮﭘ ﺭﻮﺤﻣ Y+ ﯽﻣﺎﻘﻣ ﮯﮐ ﻥﺍ ﮮﺭﺎﺷﺍ ﮯﮐ ﮞﻮﯾﮉﮨ ﮯﮨ ﺎﮭﭼﺍ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﺪﻣﺁﺮﺑ ﮦﺭﺎﺑﻭﺩ ﻮﮐ glTFs ﺪﻌﺑ ﮯﮐ ﺮﺋﺎﻔﯾﮈﻮﻣ ﮟﯿﻣ ﺭﮉﻨﯿﻠﺑ ﺭﻭﺍ ﮯﻧﺮﮐ ﺪﻣﺁﺭﺩ ﮦﺭﺎﺑﻭﺩ ﻮﮐ glTFs ﮦﺪﺷ ﺪﻣﺁﺮﺑ ﮯﺳ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -62112,7 +62112,7 @@ msgid "Update Reports Display"
 msgstr "ﮟﯾﺮﮐ ﭧﯾﮈ ﭖﺍ ﻮﮐ ﮯﻧﺎﮭﮐﺩ ﺲﭨﺭﻮﭘﺭ"
 
 
-msgid "Update the display of reports in Blender UI (internal use)"
+msgid "Update the display of reports in GameForge 3D Studio UI (internal use)"
 msgstr "(ﻝﺎﻤﻌﺘﺳﺍ ﯽﻧﻭﺭﺪﻧﺍ) ﮟﯾﺮﮐ ﭧﯾﮈ ﭖﺍ ﻮﮐ ﮯﻧﺎﮭﮐﺩ ﮯﮐ ﺲﭨﺭﻮﭘﺭ ﮟﯿﻣ UI ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -72861,7 +72861,7 @@ msgid "Check for Updates on Startup"
 msgstr "ﮟﯾﺮﮐ ﭻﻧﺎﺟ ﯽﮐ ﺲﭩﯾﮈ ﭖﺍ ﺮﭘ ﭖﺍ ﭦﺭﺎﭩﺳﺍ"
 
 
-msgid "Allow Blender to check for updates upon launch"
+msgid "Allow GameForge 3D Studio to check for updates upon launch"
 msgstr "ﮟﯾﺩ ﺕﺯﺎﺟﺍ ﯽﮐ ﮯﻧﺮﮐ ﮏﯿﭼ ﺲﭩﯾﮈ ﭖﺍ ﺮﭘ ﮯﻧﻮﮨ ﭻﻧﻻ﻿ ﻮﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -74098,7 +74098,7 @@ msgid "Save Screenshot"
 msgstr "ﮟﯾﺮﮐ ﻅﻮﻔﺤﻣ ﭦﺎﺷ ﻦﯾﺮﮑﺳﺍ"
 
 
-msgid "Capture a picture of the whole Blender window"
+msgid "Capture a picture of the whole GameForge 3D Studio window"
 msgstr "ﮟﯿﭽﻨﯿﮭﮐ ﺮﯾﻮﺼﺗ ﯽﮐ ﯽﮐﮍﮭﮐ ﺭﮉﻨﯿﻠﺑ ﯼﺭﻮﭘ"
 
 
@@ -77704,7 +77704,7 @@ msgid "Eyedropper"
 msgstr "ﺮﭘﺍﺭﮈ ﯽﺋﺁ"
 
 
-msgid "Sample a color from the Blender window to store in a property"
+msgid "Sample a color from the GameForge 3D Studio window to store in a property"
 msgstr "ﮟﯿﻟ ﮧﻧﻮﻤﻧ ﺎﮐ ﮓﻧﺭ ﮯﺳ ﯽﮐﮍﮭﮐ ﺭﮉﻨﯿﻠﺑ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﮦﺮﯿﺧﺫ ﮟﯿﻣ ﯽﭨﺮﭘﺍﺮﭘ"
 
 
@@ -77801,7 +77801,7 @@ msgid "Grease Pencil Eyedropper"
 msgstr "Grease Pencil ﺮﭘﺍﺭﮈ ﯽﺋﺁ"
 
 
-msgid "Sample a color from the Blender Window and create Grease Pencil material"
+msgid "Sample a color from the GameForge 3D Studio Window and create Grease Pencil material"
 msgstr "ﮟﯿﺋﺎﻨﺑ ﺩﺍﻮﻣ ﻞﺴﻨﭘ ﺲﯾﺮﮔ ﺭﻭﺍ ﮟﯿﻟ ﮧﻧﻮﻤﻧ ﺎﮐ ﮓﻧﺭ ﮯﺳ ﯽﮐﮍﮭﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -79988,7 +79988,7 @@ msgid "Run as Background Job"
 msgstr "ﮟﯿﺋﻼ﻿ﭼ ﺮﭘ ﺭﻮﻃ ﮯﮐ ﺏﺎﺟ ﮉﻧﺅﺍﺮﮔ ﮏﯿﺑ"
 
 
-msgid "Enable this to run the import in the background, disable to block Blender while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgid "Enable this to run the import in the background, disable to block GameForge 3D Studio while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
 msgstr "ﮟﯿﺋﻼ﻿ﺑ ﮯﯿﻟ ﮯﮐ ﮯﻧﻼ﻿ﭼ ﺮﭘ ﺭﻮﻃ ﮯﮐ ﺏﺎﺟ ﮉﻧﺅﺍﺮﮔ ﮏﯿﺑ ﮯﺳﺍ ﺭﻭﺍ ،ﮟﯿﺋﻼ﻿ﭼ ﻮﮐ ﺮﭩﯾﺮﭘﺁ ﺱﺍ ﮯﯿﻟ ﮯﮐ ﮯﻧﻼ﻿ﭼ ﮟﯿﻣﻮﯾﻭ ﺶﯿﭘ ؛ﮯﮨ ﮦﺩﻮﺳﺮﻓ ﺭﺎﯿﺘﺧﺍ ﮧﯾ ﮟﯾﺮﮐ ﻝﺎﻌﻓ ﺮﯿﻏ ﻮﮐ ﮯﻧﺮﮐ ﮎﻼ﻿ﺑ ﻮﮐ ﺭﮉﻨﯿﻠﺑ ﺖﻗﻭ ﮯﺗﺮﮐ ﺪﻣﺁﺭﺩ ،ﮟﯾﺮﮐ ﻝﺎﻌﻓ ﮯﺳﺍ ﮯﯿﻟ ﮯﮐ ﮯﻧﻼ﻿ﭼ ﻮﮐ ﺪﻣﺁﺭﺩ ﮟﯿﻣﻮﯾﻭ ﺲﭘ"
 
 
@@ -80153,7 +80153,7 @@ msgid "Add cache modifiers and constraints to imported objects even if they are 
 msgstr "ﮯﮑﺳ ﺎﺟ ﺎﯿﮐ ﭧﯾﮈ ﭖﺍ ﮟﯿﮩﻧﺍ ﺖﻗﻭ ﮯﺗﺮﮐ ﮈﻮﻟ ﮦﺭﺎﺑﻭﺩ ﻮﮐ ﻮﯿﺋﺎﮐﺭﺁ ﮏﺒﻤﯿﻟﺍ ﮧﮐﺎﺗ ﮞﻮﮨ ﮧﻧ ﮎﺮﺤﺘﻣ ﮦﻭ ﮯﮨﺎﭼ ﮟﯾﺮﮐ ﻞﻣﺎﺷ ﮟﯿﭨﻭﺎﮐﺭ ﺭﻭﺍ ﺮﺋﺎﻔﯾﮈﻮﻣ ﺶﯿﮐ ﮟﯿﻣ ءﺎﯿﺷﺍ ﮦﺪﺷ ﺪﻣﺁﺭﺩ"
 
 
-msgid "Enable this to run the export in the background, disable to block Blender while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgid "Enable this to run the export in the background, disable to block GameForge 3D Studio while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
 msgstr "ﮟﯿﺋﻼ﻿ﺑ ﮯﯿﻟ ﮯﮐ ﮯﻧﻼ﻿ﭼ ﺮﭘ ﺭﻮﻃ ﮯﮐ ﺏﺎﺟ ﮉﻧﺅﺍﺮﮔ ﮏﯿﺑ ﮯﺳﺍ ﺭﻭﺍ ،ﮟﯿﺋﻼ﻿ﭼ ﻮﮐ ﺮﭩﯾﺮﭘﺁ ﺱﺍ ﮯﯿﻟ ﮯﮐ ﮯﻧﻼ﻿ﭼ ﮟﯿﻣﻮﯾﻭ ﺶﯿﭘ ؛ﮯﮨ ﮦﺩﻮﺳﺮﻓ ﺭﺎﯿﺘﺧﺍ ﮧﯾ ﮟﯾﺮﮐ ﻝﺎﻌﻓ ﺮﯿﻏ ﻮﮐ ﮯﻧﺮﮐ ﮎﻼ﻿ﺑ ﻮﮐ ﺭﮉﻨﯿﻠﺑ ﺖﻗﻭ ﮯﺗﺮﮐ ﭦﺭﻮﭙﺴﮑﯾﺍ ،ﮟﯾﺮﮐ ﻝﺎﻌﻓ ﮯﺳﺍ ﮯﯿﻟ ﮯﮐ ﮯﻧﻼ﻿ﭼ ﭦﺭﻮﭙﺴﮑﯾﺍ ﮟﯿﻣ ﮉﻧﺅﺍﺮﮔ ﮏﯿﺑ"
 
 
@@ -80455,7 +80455,7 @@ msgid "Vertex colors in the file are in linear color space"
 msgstr "ﮟﯿﮨ ﮟﯿﻣ ﮧﮕﺟ ﯽﮐ ﮓﻧﺭ ﯼﺮﯿﮑﻟ ﮓﻧﺭ ﯼﺩﻮﻤﻋ ﮟﯿﻣ ﻞﺋﺎﻓ"
 
 
-msgid "Import custom normals, if available (otherwise Blender will compute them)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will compute them)"
 msgstr "(ﺎﮔ ﮮﺮﮐ ﯽﺘﻨﮔ ﯽﮐ ﻥﺍ ﺭﮉﻨﯿﻠﺑ ﺮﮕﯾﺩ ﺕﺭﻮﺼﺑ) ﻮﮨ ﺏﺎﯿﺘﺳﺩ ﺮﮔﺍ ،ﮟﯾﺮﮐ ﺪﻣﺁﺭﺩ ﻞﻣﺭﺎﻧ ﻖﺑﺎﻄﻣ ﮯﮐ ﯽﺿﺮﻣ ﯽﻨﭘﺍ"
 
 
@@ -80796,7 +80796,7 @@ msgid "Open"
 msgstr "ﮟﯿﻟﻮﮭﮐ"
 
 
-msgid "Open a Blender file"
+msgid "Open a GameForge 3D Studio file"
 msgstr "ﮟﯿﻟﻮﮭﮐ ﻞﺋﺎﻓ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -80935,7 +80935,7 @@ msgid "Enable Python evaluation for selected files"
 msgstr "ﮟﯾﺮﮐ ﻝﺎﻌﻓ ﻮﮐ ﺺﯿﺨﺸﺗ ﯽﮐPython ﮯﯿﻟ ﮯﮐ ﮞﻮﻠﺋﺎﻓ ﺐﺨﺘﻨﻣ"
 
 
-msgid "Show Blender files in the File Browser"
+msgid "Show GameForge 3D Studio files in the File Browser"
 msgstr "ﮟﯿﺋﺎﮭﮐﺩ ﮟﯿﻠﺋﺎﻓ ﺭﮉﻨﯿﻠﺑ ﮟﯿﻣ ﺭﺯﺅﺍﺮﺑ ﻞﺋﺎﻓ"
 
 
@@ -81110,11 +81110,11 @@ msgstr "ﮯﮨ ﯽﺘﮑﺳ ﺎﺟ ﯽﮐ ﺮﺋﺎﻔﯾﮈﻮﻣ ﺮﭘ ﺭﻮ
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "ﮟﯾﺩ ﮌﻮﮭﭼ ﺭﮉﻨﯿﻠﺑ"
 
 
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "ﮟﯾﺩ ﮌﻮﮭﭼ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -81430,19 +81430,19 @@ msgstr "ﮟﯾﺮﮐ ﻅﻮﻔﺤﻣ ﻮﮐ ﻞﺋﺎﻓ ﭖﺍ ﭦﺭﺎﭩﺳ�
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
+msgid "Save GameForge 3D Studio File"
 msgstr "ﮟﯾﺮﮐ ﻅﻮﻔﺤﻣ ﻮﮐ ﻞﺋﺎﻓ ﺭﮉﻨﯿﻠﺑ"
 
 
-msgid "Save the current Blender file"
+msgid "Save the current GameForge 3D Studio file"
 msgstr "ﮟﯾﺮﮐ ﻅﻮﻔﺤﻣ ﻮﮐ ﻞﺋﺎﻓ ﺭﮉﻨﯿﻠﺑ ﮦﺩﻮﺟﻮﻣ"
 
 
-msgid "Exit Blender after saving"
+msgid "Exit GameForge 3D Studio after saving"
 msgstr "ﮟﯿﻠﮑﻧ ﺮﮨﺎﺑ ﮯﺳ ﺭﮉﻨﯿﻠﺑ ﺪﻌﺑ ﮯﮐ ﮯﻧﺮﮐ ﻅﻮﻔﺤﻣ"
 
 
-msgid "Save the current Blender file with a numerically incremented name that does not overwrite any existing files"
+msgid "Save the current GameForge 3D Studio file with a numerically incremented name that does not overwrite any existing files"
 msgstr "ﮯﮨ ﺎﺗﺮﮐ ﮟﯿﮩﻧ ﭧﺋﺍﺭ ﺭﻭﻭﺍ ﻮﮐ ﻞﺋﺎﻓ ﮦﺩﻮﺟﻮﻣ ﯽﮭﺑ ﯽﺴﮐ ﻮﺟ ﮟﯾﺮﮐ ﻅﻮﻔﺤﻣ ﮫﺗﺎﺳ ﮯﮐ ﻡﺎﻧ ﮯﺋﻮﮨ ﮯﮬﮍﺑ ﺮﭘ ﺭﻮﻃ ﯼﺩﺪﻋ ﻮﮐ ﻞﺋﺎﻓ ﺭﮉﻨﯿﻠﺑ ﮦﺩﻮﺟﻮﻣ"
 
 
@@ -81605,11 +81605,11 @@ msgstr "ﮟﯿﻟﻮﮭﮐ ﻦﯾﺮﮑﺳﺍ ﺶﯿﻠﭙﺳ ﮫﺗﺎﺳ ﮯ�
 
 
 msgctxt "Operator"
-msgid "About Blender"
+msgid "About GameForge 3D Studio"
 msgstr "ﮟﯿﻣ ﮮﺭﺎﺑ ﮯﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
-msgid "Open a window with information about Blender"
+msgid "Open a window with information about GameForge 3D Studio"
 msgstr "ﮟﯿﻟﻮﮭﮐ ﯽﮐﮍﮭﮐ ﮏﯾﺍ ﮫﺗﺎﺳ ﮯﮐ ﺕﺎﻣﻮﻠﻌﻣ ﮟﯿﻣ ﮮﺭﺎﺑ ﮯﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -81712,11 +81712,11 @@ msgid "Preserve UTF-8 encoded characters when writing USD prim and property name
 msgstr "USD ﺖﻗﻭ ﮯﺘﮭﮑﻟ ﻡﺎﻧ ﮯﮐ ﯽﭨﺮﭘﺍﺮﭘ ﺭﻭﺍ ﻢﺋﺍﺮﭘ UTF-8 ﺖﻗﻭ ﮯﺘﻟﻮﮭﮐ ﻮﮐ ﮞﻮﻠﺋﺎﻓ ﮟﯿﻣ ﮯﺠﯿﺘﻧ) ﮟﯾﺮﮐ ﻅﻮﻔﺤﻣ ﻮﮐ ﻑﻭﺮﺣ ﮦﺪﺷ ﮈﻮﮑﻧﺍ USD 24.03 ﮯﮨ ﯽﺗﻮﮨ ﺕﺭﻭﺮﺿ ﯽﮐ ﺮﺌﯾﻭ ﭧﻓﺎﺳ ﮯﻟﺍﻭ ﮯﻧﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﮦﺩﺎﯾﺯ ﮯﺳ ﺱﺍ ﺎﯾ)"
 
 
-msgid "Blender Names"
+msgid "GameForge 3D Studio Names"
 msgstr "ﻡﺎﻧ ﺭﮉﻨﯿﻠﺑ"
 
 
-msgid "Author USD custom attributes containing the original Blender object and object data names"
+msgid "Author USD custom attributes containing the original GameForge 3D Studio object and object data names"
 msgstr "ﺕﺎﯿﺻﻮﺼﺧ ﺕﺭﻭﺮﺿ ﺐﺴﺣ USD ﻒﻨﺼﻣ ﻞﻤﺘﺸﻣ ﺮﭘ ﮞﻮﻣﺎﻧ ﮯﮐ ﺎﭩﯾﮈ ﭧﮑﯿﺠﺑﺁ ﺭﻭﺍ ﭧﮑﯿﺠﺑﺁ ﺭﮉﻨﯿﻠﺑ ﻞﺻﺍ"
 
 
@@ -82145,7 +82145,7 @@ msgid "Scale for the intensity of imported lights"
 msgstr "ﮧﻧﺎﻤﯿﭘ ﺎﮐ ﺕﺪﺷ ﯽﮐ ﺲﭩﺋﻻ﻿ ﮉﭨﺭﻮﭙﻣﺍ"
 
 
-msgid "Import each USD material as a unique Blender material"
+msgid "Import each USD material as a unique GameForge 3D Studio material"
 msgstr "ﮟﯾﺮﮐ ﺪﻣﺁﺭﺩ ﺮﭘ ﺭﻮﻃ ﮯﮐ ﺩﺍﻮﻣ ﺭﮉﻨﯿﻠﺑ ﺩﺮﻔﻨﻣ ﮏﯾﺍ ﻮﮐ ﺩﺍﻮﻣ USD ﺮﮨ"
 
 
@@ -82157,7 +82157,7 @@ msgid "Import only the primitive at the given path and its descendants. Multiple
 msgstr "ﮟﯿﮨ ﮯﺘﮑﺳ ﺎﺟ ﮯﯿﮐ ﻦﯿﻌﺘﻣ ﮯﺘﺳﺍﺭ ﺩﺪﻌﺘﻣ ﮟﯿﻣ ﺖﺳﺮﮩﻓ ﮦﺩﺮﮐ ﺩﻭﺪﺤﻣ ﮯﻌﯾﺭﺫ ﮯﮐ ﻥﻮﻟﺎﮐ ﯽﻤﯿﺳ ﺎﯾ ﺎﻣﻮﮐ ﮟﯾﺮﮐ ﺪﻣﺁﺭﺩ ﻮﮐ ﻢﯾﺪﻗ ﻑﺮﺻ ﺮﭘ ﺩﻻ﻿ﻭﺍ ﯽﮐ ﺱﺍ ﺭﻭﺍ ﮯﺘﺳﺍﺭ ﮯﺌﮔ ﮯﯾﺩ"
 
 
-msgid "Behavior when importing USD attributes as Blender custom properties"
+msgid "Behavior when importing USD attributes as GameForge 3D Studio custom properties"
 msgstr "ﺅﺎﺗﺮﺑ ﺖﻗﻭ ﮯﺗﺮﮐ ﺪﻣﺁﺭﺩ ﺏﺎﺴﺘﻧﺍ USD ﺭﻮﻄﺑ ﮯﮐ ﺕﺎﯿﺻﻮﺼﺧ ﺕﺭﻭﺮﺿ ﺐﺴﺣ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -82165,7 +82165,7 @@ msgid "Do not import USD custom attributes"
 msgstr "USD ﮟﯾﺮﮐ ﮧﻧ ﺪﻣﺁﺭﺩ ﻑﺎﺻﻭﺍ ﺕﺭﻭﺮﺿ ﺐﺴﺣ"
 
 
-msgid "Import USD attributes in the 'userProperties' namespace as Blender custom properties. The namespace will be stripped from the property names"
+msgid "Import USD attributes in the 'userProperties' namespace as GameForge 3D Studio custom properties. The namespace will be stripped from the property names"
 msgstr "ﯽﮔ ﮯﺋﺎﺟ ﯽﻟ ﻦﯿﮭﭼ ﮯﺳ ﮞﻮﻣﺎﻧ ﮯﮐ ﺩﺍﺪﯿﺋﺎﺟ ﮧﮕﺟ ﯽﮐ ﻡﺎﻧ ﮟﯾﺮﮐ ﺪﻣﺁﺭﺩ ﺕﺎﯿﺻﻮﺼﺧ ﯽﮐ USD ﮟﯿﻣ ﮧﮕﺟ ﯽﮐ ﻡﺎﻧ 'userProperties' ﺮﭘ ﺭﻮﻃ ﮯﮐ ﺕﺎﯿﺻﻮﺼﺧ ﺕﺭﻭﺮﺿ ﺐﺴﺣ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -82173,7 +82173,7 @@ msgid "All Custom"
 msgstr "ﺕﺭﻭﺮﺿ ﺐﺴﺣ ﻡﺎﻤﺗ"
 
 
-msgid "Import all USD custom attributes as Blender custom properties. Namespaces will be retained in the property names"
+msgid "Import all USD custom attributes as GameForge 3D Studio custom properties. Namespaces will be retained in the property names"
 msgstr "ﯽﮔ ﮟﯿﺋﺎﺟ ﯽﮭﮐﺭ ﺭﺍﺮﻗﺮﺑ ﮟﯿﮩﮕﺟ ﯽﮐ ﻡﺎﻧ ﮟﯿﻣ ﮞﻮﻣﺎﻧ ﮯﮐ ﺩﺍﺪﯿﺋﺎﺟ ﮟﯾﺮﮐ ﺪﻣﺁﺭﺩ ﺮﭘ ﺭﻮﻃ ﮯﮐ ﺕﺎﯿﺻﻮﺼﺧ ﻖﺑﺎﻄﻣ ﮯﮐ ﯽﺿﺮﻣ ﯽﻨﭘﺍ ﺭﮉﻨﯿﻠﺑ ﻮﮐ ﺕﺎﯿﺻﻮﺼﺧ ﺕﺭﻭﺮﺿ ﺐﺴﺣ USD ﻡﺎﻤﺗ"
 
 
@@ -82846,7 +82846,7 @@ msgid "Set the mask layer from the UV map buttons"
 msgstr "ﮟﯾﺮﮐ ﭧﯿﺳ ﮧﮩﺗ ﯽﮐ ﮏﺳﺎﻣ ﮯﺳ ﮞﻮﻨﭩﺑ ﮯﮐ ﮧﺸﻘﻧ  ﯼﻭﻮﯾ"
 
 
-msgid "Maximum edge length for dynamic topology sculpting (as divisor of Blender unit - higher value means smaller edge length)"
+msgid "Maximum edge length for dynamic topology sculpting (as divisor of GameForge 3D Studio unit - higher value means smaller edge length)"
 msgstr "(ﯽﺋﺎﺒﻤﻟ ﯽﮐ ﮮﺭﺎﻨﮐ ﮯﭨﻮﮭﭼ ﮯﮨ ﺐﻠﻄﻣ ﺎﮐ ﺭﺪﻗ ﮦﺩﺎﯾﺯ - ﺮﭘ ﺭﻮﻃ ﮯﮐ ﺭﺎﮐ ﻢﯿﺴﻘﺗ ﮯﮐ ﭧﻧﻮﯾ ﺭﮉﻨﯿﻠﺑ) ﯽﺋﺎﺒﻤﻟ ﯽﮐ ﮮﺭﺎﻨﮐ ﮦﺩﺎﯾﺯ ﮯﺳ ﮦﺩﺎﯾﺯ ﮯﯿﻟ ﮯﮐ ﯼﺯﺎﺳ ﮧﻤﺴﺠﻣ ﯽﺟﻮﻟﻮﭘﻮﭨ ﮎﺮﺤﺘﻣ"
 
 
@@ -85875,7 +85875,7 @@ msgid "Edit Methods"
 msgstr "ﮟﯾﺮﮐ ﺮﺋﺎﻔﯾﮈﻮﻣ ﮟﯿﻣ ﮞﻮﻘﯾﺮﻃ"
 
 
-msgid "Settings for interacting with Blender data"
+msgid "Settings for interacting with GameForge 3D Studio data"
 msgstr "ﺕﺎﺒﯿﺗﺮﺗ ﯽﮐ ﻞﻣﺎﻌﺗ ﮫﺗﺎﺳ ﮯﮐ ﺎﭩﯾﮈ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -85931,7 +85931,7 @@ msgid "Sort the recently searched items at the top"
 msgstr "ﮟﯾﺩ ﺐﯿﺗﺮﺗ ﺮﭘﻭﺍ ﮯﺳ ﺐﺳ ﻮﮐ ءﺎﯿﺷﺍ ﯽﺌﮔ ﯽﮐ ﺵﻼ﻿ﺗ ﮟﯿﻣ ﯽﮨ ﻝﺎﺣ"
 
 
-msgid "Version of Blender the userpref.blend was saved with"
+msgid "Version of GameForge 3D Studio the userpref.blend was saved with"
 msgstr "ﺎﮭﺗ ﺎﯿﮔ ﺎﯿﮐ ﻅﻮﻔﺤﻣ ﮫﺗﺎﺳ ﮯﮐ blend.ﻒﯾﺮﭘ ﺭﺯﻮﯾ ﻥﮊﺭﻭ ﺎﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -86428,7 +86428,7 @@ msgid "All Linked Data Direct"
 msgstr "ﭧﮑﯾﺮﺋﺍﮈ ﺎﭩﯾﮈ ﮉﮑﻨﻟ ﻡﺎﻤﺗ"
 
 
-msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (Blender studio pipeline tool)"
+msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (GameForge 3D Studio studio pipeline tool)"
 msgstr "ﻡﺎﮐ ﮯﯿﻟ ﮯﮐ ﺩﻭﺪﺣ/ﻞﺋﺎﺴﻣ ﮦﺩﻮﺟﻮﻣ ﮟﯿﻣ (ﻝﻮﭨ ﻦﺋﻻ﻿ ﭗﺋﺎﭘ ﻮﯾﮈﻮﭩﺳﺍ ﺭﮉﻨﯿﻠﺑ) ﯽﭨ ﮮﺍ ﯽﺑ ﮯﮨ ﺎﺗﺮﮐ ﺭﻮﺒﺠﻣ ﺮﭘ ﮯﻧﺮﮐ ﺭﻮﺼﺗ ﮏﻠﺴﻨﻣ ﺖﺳﺍﺭ ﮦﺍﺮﺑ ﻮﮐ ﺎﭩﯾﮈ ﮏﻠﺴﻨﻣ ﻡﺎﻤﺗ"
 
 
@@ -86943,7 +86943,7 @@ msgid "Max Threshold"
 msgstr "ﺪﺣ ﮦﺩﺎﯾﺯ ﮯﺳ ﮦﺩﺎﯾﺯ"
 
 
-msgid "Raw input pressure value that is interpreted as 100% by Blender"
+msgid "Raw input pressure value that is interpreted as 100% by GameForge 3D Studio"
 msgstr "ﮯﮨ ﺎﺗﺎﺟ ﺎﮭﺠﻤﺳ %100 ﮧﻌﯾﺭﺫ ﮯﮐ ﺭﮉﻨﯿﻠﺑ ﻮﮐ ﺲﺟ ﻮﯿﻠﯾﻭ ﺮﺸﯾﺮﭘ ﭧﭘ ﻥﺍ ﻡﺎﺧ"
 
 
@@ -86951,7 +86951,7 @@ msgid "Tablet API"
 msgstr "API ﭧﻠﺒﯿﭨ"
 
 
-msgid "Select the tablet API to use for pressure sensitivity (may require restarting Blender for changes to take effect)"
+msgid "Select the tablet API to use for pressure sensitivity (may require restarting GameForge 3D Studio for changes to take effect)"
 msgstr "(ﮯﮨ ﯽﺘﮑﺳ ﮍﭘ ﺕﺭﻭﺮﺿ ﯽﮐ ﮯﻧﺮﮐ ﻉﻭﺮﺷ ﮦﺭﺎﺑﻭﺩ ﻮﮐ ﺭﮉﻨﯿﻠﺑ ﮯﯿﻟ ﮯﮐ ﮯﻧﺁ ﮟﯿﻣ ﺮﺛﺍ ﮯﮐ ﮞﻮﯿﻠﯾﺪﺒﺗ) ﮟﯾﺮﮐ ﺏﺎﺨﺘﻧﺍ ﺎﮐ API ﭧﯿﻠﺒﯿﭨ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﮯﯿﻟ ﮯﮐ ﺖﯿﺳﺎﺴﺣ ﯽﮐ ﺅﺎﺑﺩ"
 
 
@@ -87387,7 +87387,7 @@ msgid "GPU Backend"
 msgstr "GPU ﮉﻨﯾﺍ ﮏﯿﺑ"
 
 
-msgid "GPU backend to use (requires restarting Blender for changes to take effect)"
+msgid "GPU backend to use (requires restarting GameForge 3D Studio for changes to take effect)"
 msgstr "(ﮯﮨ ﺕﺭﻭﺮﺿ ﯽﮐ ﮯﻧﺮﮐ ﻉﻭﺮﺷ ﮦﺭﺎﺑﻭﺩ ﻮﮐ ﺭﮉﻨﯿﻠﺑ ﮯﯿﻟ ﮯﮐ ﮯﻧﻮﮨ ﺯﺍﺪﻧﺍ ﺮﺛﺍ ﻮﮐ ﮞﻮﯿﻠﯾﺪﺒﺗ) ﺪﯾﺪﺴﭘ GPU ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ"
 
 
@@ -87463,7 +87463,7 @@ msgid "Register for All Users"
 msgstr "ﮟﯾﺮﮐ ﺮﭩﺴﺟﺭ ﮯﯿﻟ ﮯﮐ ﻦﯿﻓﺭﺎﺻ ﻡﺎﻤﺗ"
 
 
-msgid "Make this Blender version open blend files for all users. Requires elevated privileges."
+msgid "Make this GameForge 3D Studio version open blend files for all users. Requires elevated privileges."
 msgstr ".Requires elevated privileges .ﮯﯿﻟ ﮯﮐ ﻦﯿﻓﺭﺎﺻ ﻡﺎﻤﺗ ﺰﻠﺋﺎﻓ ﮉﻨﯿﻠﺑ ﮟﯿﻟﻮﮭﮐ ﻥﮊﺭﻭ ﺭﮉﻨﯿﻠﺑ this ﮟﯿﺋﺎﻨﺑ"
 
 
@@ -87519,7 +87519,7 @@ msgid "UI Line Width"
 msgstr "UI ﯽﺋﺍﮌﻮﭼ ﯽﮐ ﻦﺋﻻ﻿"
 
 
-msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and Blender UI scale"
+msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and GameForge 3D Studio UI scale"
 msgstr "ﮟﯿﻣ ﺰﻠﺴﮑﭘ ﺰﺋﺎﺳ ﭧﻨﺋﺍﻮﭘ ﺭﻭﺍ ﯽﺋﺎﭨﻮﻣ ﯽﮐ ﻦﺋﻻ﻿ ﮦﺩﺮﮐ ﺰﯾﻮﺠﺗ ﮯﯿﻟ ﮯﮐ ﺰﻧﺁ ﮉﯾﺍ ﮯﻟﺍﻭ ﮯﻧﺮﮐ ﺮﮨﺎﻇ ﻮﮐ ﺮﺻﺎﻨﻋ ﺲﯿﻓﺮﭩﻧﺍ ﻑﺭﺎﺻ ﺕﺭﻭﺮﺿ ﺐﺴﺣ ﺮﭘ ﺩﺎﯿﻨﺑ ﯽﮐ ﮧﻧﺎﻤﯿﭘ  UI ﺭﮉﻨﯿﻠﺑ ﺭﻭﺍ ﺕﺎﺒﯿﺗﺮﺗ ﯽﮐ ﻢﭩﺴﺳ ﮓﻨﭩﯾﺮﭘﺁ"
 
 
@@ -87527,7 +87527,7 @@ msgid "UI Scale"
 msgstr "UI  ﻞﯿﮑﺳﺍ"
 
 
-msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and Blender display scale."
+msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and GameForge 3D Studio display scale."
 msgstr ".ﮧﻧﺎﻤﯿﭘ ﮯﻠﭙﺳﮈ ﺭﮉﻨﯿﻠﺑ and ﺕﺎﺒﯿﺗﺮﺗ DPI ﻢﭩﺴﺳ is based on operating ﺭﺪﻗ with different DPI. This ﮟﯿﻨﯾﺮﮑﺳ correctly on ﮧﻧﺎﻤﯿﭘ so that they are ,ﺮﺻﺎﻨﻋ ﺲﯿﻓﺮﭩﻧﺍ ﺭﺯﻮﯾ ﻖﺑﺎﻄﻣ ﮯﮐ ﯽﺿﺮﻣ ﯽﻨﭘﺍ to use when displaying ﺏﺭﺎﺿ ﺰﺋﺎﺳ"
 
 
@@ -88007,7 +88007,7 @@ msgid "Show Memory"
 msgstr "ﮟﯿﺋﺎﮭﮐﺩ ﯼﺭﻮﻤﯿﻣ"
 
 
-msgid "Show Blender memory usage"
+msgid "Show GameForge 3D Studio memory usage"
 msgstr "ﮟﯿﺋﺎﮭﮐﺩ ﻝﺎﻤﻌﺘﺳﺍ ﺎﮐ ﯼﺭﻮﻤﯿﻣ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -88031,7 +88031,7 @@ msgid "Show Version"
 msgstr "ﮟﯿﺋﺎﮭﮐﺩ ﻥﮊﺭﻭ"
 
 
-msgid "Show Blender version string"
+msgid "Show GameForge 3D Studio version string"
 msgstr "ﮟﯿﺋﺎﮭﮐﺩ ﮓﻧﺮﭩﺳﺍ ﯽﮐ ﻥﮊﺭﻭ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -89945,11 +89945,11 @@ msgid "Path to the relevant po file in the work repository"
 msgstr "ﮧﺘﺳﺍﺭ ﺎﮐ ﻞﺋﺎﻓ ﻮﭘ ﮧﻘﻠﻌﺘﻣ ﮟﯿﻣ ﯼﺮﭨﺯﻮﭙﯾﺭ ﮎﺭﻭ"
 
 
-msgid "PO Blender File Path"
+msgid "PO GameForge 3D Studio File Path"
 msgstr "ﮫﺗﺎﭘ ﻞﺋﺎﻓ ﺭﮉﻨﯿﻠﺑ ﻭﺍ ﯽﭘ"
 
 
-msgid "Path to the relevant po file in Blender's source repository"
+msgid "Path to the relevant po file in GameForge 3D Studio's source repository"
 msgstr "ﮧﺘﺳﺍﺭ ﺎﮐ ﻞﺋﺎﻓ ﻮﭘ ﮧﻘﻠﻌﺘﻣ ﮟﯿﻣ ﯼﺮﭨﺯﻮﭙﯾﺭ ﺱﺭﻮﺳ ﮯﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -92429,15 +92429,15 @@ msgid "Which implementation of spring to use"
 msgstr "ﺫﺎﻔﻧ ﺎﺳ ﻥﻮﮐ ﮯﮐ ﺭﺎﮩﺑ ﻢﺳﻮﻣ ﮯﺌﻟ ﮯﮐ ﮯﻧﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ"
 
 
-msgid "Blender 2.7"
+msgid "Version 2.7"
 msgstr "2.7 ﺭﮉﻨﯿﻠﺑ"
 
 
-msgid "Spring implementation used in Blender 2.7. Damping is capped at 1.0"
+msgid "Spring implementation used in version 2.7. Damping is capped at 1.0"
 msgstr "ﮯﮨ ﺩﻭﺪﺤﻣ ﺮﭘ 1.0 ﮓﻨﭙﻤﯾﮈ ﺫﺎﻔﻧ ﺎﮐ ﺭﺎﮩﺑ ﮟﯿﻣ 2.7 ﺭﮉﻨﯿﻠﺑ"
 
 
-msgid "Blender 2.8"
+msgid "Version 2.8"
 msgstr "2.8 ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -93425,7 +93425,7 @@ msgid "Export Method"
 msgstr "ﮧﻘﯾﺮﻃ ﺎﮐ ﺪﻣﺁﺮﺑ"
 
 
-msgid "How to export the Blender scene to the Hydra render engine"
+msgid "How to export the GameForge 3D Studio scene to the Hydra render engine"
 msgstr "ﮟﯾﺮﮐ ﭦﺭﻮﭙﺴﮑﯾﺍ ﮯﺴﯿﮐ ﮟﯿﻣ ﻦﺠﻧﺍ ﺭﮉﻨﯾﺭ ﺍﺭﮉﯿﺋﺎﮨ ﻮﮐ ﻦﯿﺳ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -95711,7 +95711,7 @@ msgid "Display data belonging to the Video Sequencer"
 msgstr "ﮟﯾﺮﮐ ﮯﻧﺎﮭﮐﺩ ﺎﭩﯾﮈ ﻻ﻿ﺍﻭ ﮯﻨﮭﮐﺭ ﻖﻠﻌﺗ ﮯﺳ ﺮﺴﻨﯾﻮﮑﯿﺳ ﻮﯾﮉﯾﻭ"
 
 
-msgid "Blender File"
+msgid "GameForge 3D Studio File"
 msgstr "ﻞﺋﺎﻓ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -95723,7 +95723,7 @@ msgid "Data API"
 msgstr "API ﺎﭩﯾﮈ"
 
 
-msgid "Display low level Blender data and its properties"
+msgid "Display low level GameForge 3D Studio data and its properties"
 msgstr "ﮟﯿﺋﺎﮭﮐﺩ ﺕﺎﯿﺻﻮﺼﺧ ﯽﮐ ﺱﺍ ﺭﻭﺍ ﺎﭩﯾﮈ ﺭﮉﻨﯿﻠﺑ ﮯﮐ ﺢﻄﺳ ﻢﮐ"
 
 
@@ -95944,7 +95944,7 @@ msgid "Space Preferences"
 msgstr "ﺕﺎﺤﯿﺟﺮﺗ ﯽﺋﻼ﻿ﺧ"
 
 
-msgid "Blender preferences space data"
+msgid "GameForge 3D Studio preferences space data"
 msgstr "ﺎﭩﯾﮈ ﯽﺋﻼ﻿ﺧ ﺕﺎﺤﯿﺟﺮﺗ ﯽﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -99901,7 +99901,7 @@ msgid "Theme Preferences"
 msgstr "ﺕﺎﺤﯿﺟﺮﺗ ﯽﮐ ﻢﯿﮭﺗ"
 
 
-msgid "Theme settings for the Blender Preferences"
+msgid "Theme settings for the GameForge 3D Studio Preferences"
 msgstr "ﺕﺎﺒﯿﺗﺮﺗ ﯽﮐ ﻢﯿﮭﺗ ﮯﯿﻟ ﮯﮐ ﺕﺎﺤﯿﺟﺮﺗ ﯽﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -101579,7 +101579,7 @@ msgid "Unit Scale"
 msgstr "ﮧﻧﺎﻤﯿﭘ ﭧﻧﻮﯾ"
 
 
-msgid "Scale to use when converting between Blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
+msgid "Scale to use when converting between GameForge 3D Studio units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
 msgstr "ﮯﮨ ﺎﺘﮑﺳ ﺎﺟ ﺎﯿﮐ ﻝﺎﻤﻌﺘﺳﺍ ﺎﮐ ﮯﻧﺎﻤﯿﭘ ﭧﻧﻮﯾ ﮮﮍﺑ ﺎﯾ ﮯﭨﻮﮭﭼ ﺐﯿﺗﺮﺘﻟﺎﺑ ﮯﯿﻟ ﮯﮐ ﮯﻨﭽﺑ ﮯﺳ ﻞﺋﺎﺴﻣ ﮯﮐ ﯽﮕﺘﺳﺭﺩ ﯼﺩﺪﻋ ،ﺖﻗﻭ ﮯﺗﺮﮐ ﻡﺎﮐ ﺮﭘ ﮯﻧﺎﻤﯿﭘ ﯽﺗﺎﯿﮑﻠﻓ ﺎﯾ ﯽﻨﯿﺑﺩﺭﻮﺧ ﮧﻧﺎﻤﯿﭘ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﺖﻗﻭ ﮯﺗﺮﮐ ﻞﯾﺪﺒﺗ ﻥﺎﯿﻣﺭﺩ ﮯﮐ ﺽﺮﻋ ﻭ ﻝﻮﻃ ﺭﻭﺍ ﺲﭩﻧﻮﯾ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -106517,7 +106517,7 @@ msgid "Unlocked: {:s}"
 msgstr "‬{:s}‪ :ﻞﻔﻘﻣ ﺮﯿﻏ"
 
 
-msgid "Warning! Before unlocking, ensure another instance of Blender is not running."
+msgid "Warning! Before unlocking, ensure another instance of GameForge 3D Studio is not running."
 msgstr "ﮯﮨ ﯽﮨﺭ ﻞﭼ ﮟﯿﮩﻧ ﻝﺎﺜﻣ ﯼﺮﺳﻭﺩ ﯽﮐ ﺭﮉﻨﯿﻠﺑ ﮧﮐ ﮟﯿﺋﺎﻨﺑ ﯽﻨﯿﻘﯾ ،ﮯﻠﮩﭘ ﮯﺳ ﮯﻧﺮﮐ ﮎﻼ﻿ﻧﺍ !ﮓﻨﻧﺭﺍﻭ"
 
 
@@ -106622,7 +106622,7 @@ msgid "No user repositories"
 msgstr "ﮯﮨ ﮟﯿﮩﻧ ﮦﺮﯿﺧﺫ ﻑﺭﺎﺻ ﯽﺋﻮﮐ"
 
 
-msgid "Online access required to install or update. Launch Blender without --offline-mode"
+msgid "Online access required to install or update. Launch GameForge 3D Studio without --offline-mode"
 msgstr "ﮟﯾﺮﮐ ﭻﻧﻻ﻿ ﺭﮉﻨﯿﻠﺑ ﺮﯿﻐﺑ ﮯﮐ ﮈﻮﻣ ﻦﺋﻻ﻿ ﻑﺁ-- ﮯﮨ ﺭﺎﮐﺭﺩ ﯽﺋﺎﺳﺭ ﻦﺋﻻ﻿ ﻥﺁ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﭧﯾﮈ ﭖﺍ ﺎﯾ ﻝﺎﭩﺴﻧﺍ"
 
 
@@ -106634,7 +106634,7 @@ msgid "Add-on \"{:s}\" is already installed!"
 msgstr "!ﮯﮨ ﻝﺎﭩﺴﻧﺍ ﮯﺳ ﮯﻠﮩﭘ \"{:s}\"‬‪ ﻥﺁ ﮉﯾﺍ"
 
 
-msgid "Blender was launched in offline mode, which cannot be changed at runtime"
+msgid "GameForge 3D Studio was launched in offline mode, which cannot be changed at runtime"
 msgstr "ﺎﺘﮑﺳ ﺎﺟ ﺎﯿﮐ ﮟﯿﮩﻧ ﻞﯾﺪﺒﺗ ﺮﭘ ﻢﺋﺎﭨ ﻥﺭ ﮯﺴﺟ ،ﺎﮭﺗ ﺎﯿﮔ ﺎﯿﮐ ﭻﻧﻻ﻿ ﮟﯿﻣ ﮈﻮﻣ ﻦﺋﻻ﻿ ﻑﺁ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -106642,7 +106642,7 @@ msgid "Online access required to install or update."
 msgstr "ﮯﮨ ﺭﺎﮐﺭﺩ ﯽﺋﺎﺳﺭ ﻦﺋﻻ﻿ ﻥﺁ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﭧﯾﮈ ﭖﺍ ﺎﯾ ﻝﺎﭩﺴﻧﺍ"
 
 
-msgid "Launch Blender without --offline-mode"
+msgid "Launch GameForge 3D Studio without --offline-mode"
 msgstr "ﮟﯾﺮﮐ ﭻﻧﻻ﻿ ﺭﮉﻨﯿﻠﺑ ﺮﯿﻐﺑ ﮯﮐ ﮈﻮﻣ ﻦﺋﻻ﻿ ﻑﺁ--"
 
 
@@ -106714,7 +106714,7 @@ msgid "Missing Built-in Add-ons"
 msgstr "ﮟﯿﮨ ﺐﺋﺎﻏ ﺰﻧﺁ ﮉﯾﺍ ﻥﺍ ﭧﻠﺑ"
 
 
-msgid "Add-ons previously shipped with Blender are now available from extensions.blender.org."
+msgid "Add-ons previously shipped with GameForge 3D Studio are now available from extensions.blender.org."
 msgstr "ﮟﯿﮨ ﺏﺎﯿﺘﺳﺩ ﺮﭘ extensions.blender.org ﺏﺍ ﺰﻧﺁ ﮉﯾﺍ ﮯﺌﮔ ﮯﺠﯿﮭﺑ ﮯﻠﮩﭘ ﮫﺗﺎﺳ ﮯﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -106791,8 +106791,8 @@ msgid "Maintainer"
 msgstr "ﻻ﻿ﺍﻭ ﮯﻧﺮﮐ ﻝﺎﮭﺑ ﮫﮑﯾﺩ"
 
 
-msgid "Blender's extension repository not found!"
-msgstr "Blender's ﻼ﻿ﻣ ﮟﯿﮩﻧ ﮦﺮﯿﺧﺫ ﯽﻌﯿﺳﻮﺗ!"
+msgid "GameForge 3D Studio's extension repository not found!"
+msgstr "GameForge 3D Studio's ﻼ﻿ﻣ ﮟﯿﮩﻧ ﮦﺮﯿﺧﺫ ﯽﻌﯿﺳﻮﺗ!"
 
 
 msgid ":"
@@ -106825,7 +106825,7 @@ msgid "No visible tags."
 msgstr "ﮟﯿﮩﻧ ﮓﯿﭨ ﻻ﻿ﺍﻭ ﮯﻧﺁ ﺮﻈﻧ ﯽﺋﻮﮐ"
 
 
-msgid "Blender's extension repository must be enabled to install extensions!"
+msgid "GameForge 3D Studio's extension repository must be enabled to install extensions!"
 msgstr "!ﮯﮨ ﯼﺭﻭﺮﺿ ﺎﻧﻮﮨ ﻝﺎﻌﻓ ﺎﮐ ﯼﺮﭨﺯﻮﭙﯾﺭ ﻦﺸﻨﯿﭩﺴﮑﯾﺍ ﯽﮐ ﺭﮉﻨﯿﻠﺑ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﻝﺎﭩﺴﻧﺍ ﻮﮐ ﺰﻨﺸﻨﯿﭩﺴﮑﯾﺍ"
 
 
@@ -106870,7 +106870,7 @@ msgid "Uninstall Marked"
 msgstr "ﺩﺯ ﻥﺎﺸﻧ ﻝﺎﭩﺴﻧﺍ ﻥﺍ"
 
 
-msgid "Blender's extension repository must be refreshed!"
+msgid "GameForge 3D Studio's extension repository must be refreshed!"
 msgstr "!ﮯﮨ ﯼﺭﻭﺮﺿ ﺎﻧﺮﮐ ﮦﺯﺎﺗ ﻮﮐ ﮦﺮﯿﺧﺫ ﯽﻌﯿﺳﻮﺗ ﮯﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -106981,7 +106981,7 @@ msgid "Use GPU accelerated denoising if supported, for the best performance. Pre
 msgstr "ﮟﯾﺩ ﺢﯿﺟﺮﺗ ﻮﮐ OpenImageDenoise ﺮﭘ OptiX ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﺎﮐ ﮓﻧﺰﺋﺍﻮﻨﯾﮈ ﮉﭩﯾﺮﻠﺴﮑﯾﺍ GPU ﻮﺗ ﻮﮨ ﮧﺘﻓﺎﯾ ﻥﻭﺎﻌﺗ ﺮﮔﺍ ،ﮯﯿﻟ ﮯﮐ ﯽﮔﺩﺮﮐﺭﺎﮐ ﻦﯾﺮﺘﮩﺑ"
 
 
-msgid "Blender was compiled without a viewport denoiser"
+msgid "GameForge 3D Studio was compiled without a viewport denoiser"
 msgstr "ﺎﮭﺗ ﺎﯿﮔ ﺎﯿﮐ ﺐﺗﺮﻣ ﺮﯿﻐﺑ ﮯﮐ ﺭﺰﺋﺍﻮﻨﯾﮈ ﭦﺭﻮﭘ ﻮﯾﻭ ﻮﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -107217,7 +107217,7 @@ msgid "Motion Capture (.bvh)"
 msgstr "(bvh.) ﺮﭽﭙﯿﮐ ﺖﮐﺮﺣ"
 
 
-msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and Blender scene have the same frame rate"
+msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and GameForge 3D Studio scene have the same frame rate"
 msgstr "BVH ﮧﮐ ﮯﺋﻮﮨ ﮯﺗﺮﮐ ﺽﺮﻓ ﮧﯾ ،ﮯﮨ ﮟﯿﮩﻧ ﻞﻣﺎﺷ ﮧﯿﻧﺍﺭﻭﺩ ﺎﮐ ﻢﯾﺮﻓ ﮟﯿﻣ ﻦﺸﮑﯿﺳ ﺖﮐﺮﺣ  ﮯﮐ ﺱﺍ ﮟﯿﻣ ﻞﺋﺎﻓ BVH ﮯﮨ ﺎﺴﯿﺟ ﮏﯾﺍ ﭧﯾﺭ ﻢﯾﺮﻓ ﺎﮐ ﻦﯿﺳ ﺭﮉﻨﯿﻠﺑ ﺭﻭﺍ"
 
 
@@ -107833,8 +107833,8 @@ msgid "This feature set depends on the following feature set to work properly:"
 msgstr ":ﮯﮨ ﺮﺼﺤﻨﻣ ﺮﭘ ﭧﯿﺳ ﺮﭽﯿﻓ ﻞﯾﺫ ﺝﺭﺩ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﻡﺎﮐ ﮯﺳ ﮯﻘﯾﺮﻃ ﺐﺳﺎﻨﻣ ﭧﯿﺳ ﺮﭽﯿﻓ ﮧﯾ"
 
 
-msgid "This feature set requires Blender {:s} or newer to work properly."
-msgstr "ﮯﮨ ﺕﺭﻭﺮﺿ ﯽﮐ ﺮﺗ ﺪﯾﺪﺟ ﮯﺳ ﺱﺍ ﺎﯾ Blender ‪{:s}‬ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﻡﺎﮐ ﮯﺳ ﮯﻘﯾﺮﻃ ﺢﯿﺤﺻ ﻮﮐ ﭧﯿﺳ ﺮﭽﯿﻓ ﺱﺍ"
+msgid "This feature set requires GameForge 3D Studio {:s} or newer to work properly."
+msgstr "ﮯﮨ ﺕﺭﻭﺮﺿ ﯽﮐ ﺮﺗ ﺪﯾﺪﺟ ﮯﺳ ﺱﺍ ﺎﯾ GameForge 3D Studio ‪{:s}‬ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﻡﺎﮐ ﮯﺳ ﮯﻘﯾﺮﻃ ﺢﯿﺤﺻ ﻮﮐ ﭧﯿﺳ ﺮﭽﯿﻓ ﺱﺍ"
 
 
 msgid "The feature set archive must contain one base directory"
@@ -108356,7 +108356,7 @@ msgstr "ﮟﯾﺮﮐ ﻑﺎﺻ ﻮﮐ ﯼﺮﭨﺯﻮﭙﯾﺭ ﮎﺭﻭ"
 
 
 msgctxt "Operator"
-msgid "Update Blender Repository"
+msgid "Update GameForge 3D Studio Repository"
 msgstr "Repository ﺭﮉﻨﯿﻠﺑ ﮟﯾﺮﮐ ﭧﯾﮈ ﭖﺍ"
 
 
@@ -108602,7 +108602,7 @@ msgid "Unable to find any running process"
 msgstr "ﮯﮨ ﺮﺻﺎﻗ ﮯﺳ ﮯﻧﺮﮐ ﺵﻼ﻿ﺗ ﻞﻤﻋ ﻻ﻿ﺍﻭ ﮯﻨﻠﭼ ﯽﺋﻮﮐ"
 
 
-msgid "Blender sub-process exited with error code {:d}"
+msgid "GameForge 3D Studio sub-process exited with error code {:d}"
 msgstr "ﺎﯿﮔ ﻮﮨ ﻢﺘﺧ ﮫﺗﺎﺳ ﮯﮐ {:d}‬‪ ﮈﻮﮐ ﯽﻄﻠﻏ ﻞﻤﻋ ﯽﻠﯾﺫ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -109067,7 +109067,7 @@ msgid "Open..."
 msgstr "...ﮟﯿﻟﻮﮭﮐ"
 
 
-msgid "Blender is free software"
+msgid "GameForge 3D Studio is free software"
 msgstr "ﮯﮨ ﺮﺌﯾﻭ ﭧﻓﺎﺳ ﺖﻔﻣ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -109166,12 +109166,12 @@ msgstr "ﺲﻨﺴﺋﻻ﻿"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
+msgid "GameForge 3D Studio Store"
 msgstr "ﺭﻮﭩﺳﺍ ﺭﮉﻨﯿﻠﺑ"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
+msgid "GameForge 3D Studio Website"
 msgstr "ﭧﺋﺎﺳ ﺐﯾﻭ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -109209,7 +109209,7 @@ msgid "Release Notes"
 msgstr "ﺲﭨﻮﻧ ﺰﯿﻠﯾﺭ"
 
 
-msgid "Read about what's new in this version of Blender"
+msgid "Read about what's new in this version of GameForge 3D Studio"
 msgstr "ﮯﮨ ﺎﯿﻧ ﺎﯿﮐ ﮟﯿﻣ ﻥﮊﺭﻭ ﺱﺍ ﮯﮐ ﺭﮉﻨﯿﻠﺑ ﮧﮐ ﮟﯿﮬﮍﭘ ﮟﯿﻣ ﮮﺭﺎﺑ ﺱﺍ"
 
 
@@ -109217,7 +109217,7 @@ msgid "User Manual"
 msgstr "ﯽﺘﺳﺩ ﻑﺭﺎﺻ"
 
 
-msgid "The reference manual for this version of Blender"
+msgid "The reference manual for this version of GameForge 3D Studio"
 msgstr "ﯽﺘﺳﺩ ﮧﻟﺍﻮﺣ ﮯﯿﻟ ﮯﮐ ﻥﮊﺭﻭ ﺱﺍ ﮯﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -109225,7 +109225,7 @@ msgid "Python API Reference"
 msgstr "Python API ﮧﻟﺍﻮﺣ"
 
 
-msgid "The API reference manual for this version of Blender"
+msgid "The API reference manual for this version of GameForge 3D Studio"
 msgstr "ﯽﺘﺳﺩ ﮧﻟﺍﻮﺣ API ﮯﯿﻟ ﮯﮐ ﻥﮊﺭﻭ ﺱﺍ ﮯﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -109237,7 +109237,7 @@ msgid "The donation program to support maintenance and improvements"
 msgstr "ﻡﺍﺮﮔﻭﺮﭘ ﺎﮐ ﮧﯿﻄﻋ ﮯﯿﻟ ﮯﮐ ﺩﺪﻣ ﮟﯿﻣ ﯼﺮﺘﮩﺑ ﺭﻭﺍ ﻝﺎﮭﺑ ﮫﮑﯾﺩ"
 
 
-msgid "Blender's official web-site"
+msgid "GameForge 3D Studio's official web-site"
 msgstr "ﭧﺋﺎﺳ ﺐﯾﻭ ﯼﺭﺎﮐﺮﺳ ﯽﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -109245,7 +109245,7 @@ msgid "Credits"
 msgstr "ﺲﭨﮉﯾﺮﮐ"
 
 
-msgid "Lists committers to Blender's source code"
+msgid "Lists committers to GameForge 3D Studio's source code"
 msgstr "ﺖﺳﺮﮩﻓ ﯽﮐ ﺯﺮﭩﭩﻤﮐ ﮟﯿﻣ ﮈﻮﮐ ﺬﺧﺎﻣ ﮯﮐ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -109385,7 +109385,7 @@ msgstr "ﺩﺍﻮﻣ"
 
 
 msgctxt "Operator"
-msgid "Import Blender {:d}.{:d} Preferences"
+msgid "Import GameForge 3D Studio {:d}.{:d} Preferences"
 msgstr "ﺕﺎﺤﯿﺟﺮﺗ {:d}‬.‪{:d}‬‪ ﺭﮉﻨﯿﻠﺑ ﮟﯾﺮﮐ ﺪﻣﺁﺭﺩ"
 
 
@@ -111969,7 +111969,7 @@ msgid "Volume Files"
 msgstr "ﺰﻠﺋﺎﻓ ﻡﻮﯿﻟﺍﻭ"
 
 
-msgid "Blender IDs"
+msgid "GameForge 3D Studio IDs"
 msgstr "ﺰﯾﮈ ﯽﺋﺁ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -113431,7 +113431,7 @@ msgstr "...ﺪﯾﺰﻣ"
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Settings"
+msgid "Load Factory GameForge 3D Studio Settings"
 msgstr "ﮟﯾﺮﮐ ﮈﻮﻟ ﺕﺎﺒﯿﺗﺮﺗ ﯽﮐ ﺭﮉﻨﯿﻠﺑ ﯼﺮﭩﮑﯿﻓ"
 
 
@@ -113558,7 +113558,7 @@ msgid "Video Memory"
 msgstr "ﯼﺭﻮﻤﯿﻣ ﻮﯾﮉﯾﻭ"
 
 
-msgid "Blender Version"
+msgid "GameForge 3D Studio Version"
 msgstr "ﻥﮊﺭﻭ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -113819,7 +113819,7 @@ msgstr "ﮟﯾﺮﮐ ﻅﻮﻔﺤﻣ ﺮﭘ ﺭﻮﻃ ﮯﮐ ﭧﺋﻻ﻿ ﻮﯾ
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "ﮟﯾﺮﮐ ﮈﻮﻟ ﺕﺎﺤﯿﺟﺮﺗ ﯽﮐ ﺭﮉﻨﯿﻠﺑ ﯼﺮﭩﮑﯿﻓ"
 
 
@@ -113827,11 +113827,11 @@ msgid "Cycles is disabled in this build"
 msgstr "Cycles is ﺭﻭﺬﻌﻣ in this ﮟﯾﺮﮐ ﺮﯿﻤﻌﺗ"
 
 
-msgid "A restart of Blender is required"
-msgstr "Blender  ۔ﮯﮨ ﺕﺭﻭﺮﺿ ﯽﮐ ﮯﻧﺮﮐ ﻉﻭﺮﺷ ﮦﺭﺎﺑﻭﺩ ﻮﮐ"
+msgid "A restart of GameForge 3D Studio is required"
+msgstr "GameForge 3D Studio  ۔ﮯﮨ ﺕﺭﻭﺮﺿ ﯽﮐ ﮯﻧﺮﮐ ﻉﻭﺮﺷ ﮦﺭﺎﺑﻭﺩ ﻮﮐ"
 
 
-msgid "Open blend files with this Blender version"
+msgid "Open blend files with this GameForge 3D Studio version"
 msgstr "ﮟﯿﻟﻮﮭﮐ ﻮﮐ ﮞﻮﻠﺋﺎﻓ ﮉﻨﯿﻠﺑ ﮫﺗﺎﺳ ﮯﮐ ﻥﮊﺭﻭ ﺭﮉﻨﯿﻠﺑ ﺱﺍ"
 
 
@@ -116316,7 +116316,7 @@ msgid "Unable to create app-template userpref path"
 msgstr "ﮯﮨ ﺮﺻﺎﻗ ﮯﺳ ﮯﻧﺎﻨﺒﮩﺘﺳﺍﺮﻔﯾﺮﭘ ﻑﺭﺎﺻ ﭧﯿﻠﭙﻤﯿﭨ ﭗﯾﺍ"
 
 
-msgid "File written by newer Blender binary (%d.%d), expect loss of data!"
+msgid "File written by newer GameForge 3D Studio binary (%d.%d), expect loss of data!"
 msgstr "!ﮯﮨ ﻊﻗﻮﺗ ﯽﮐ ﮯﻧﻮﮨ ﻊﺋﺎﺿ ﮯﮐ ﺎﭩﯾﮈ ،ﻞﺋﺎﻓ ﯽﺌﮔ ﯽﮭﮑﻟ ﮯﻌﯾﺭﺫ ﮯﮐ (%d‬.‪%d‬‪) ﯼﺮﻨﺋﺎﺑ ﺭﮉﻨﯿﻠﺑ ﯽﺌﻧ"
 
 
@@ -116336,7 +116336,7 @@ msgid "Appended Data"
 msgstr "ﺎﭩﯾﮈ ﮏﻠﺴﻨﻣ"
 
 
-msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current Blender"
+msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current GameForge 3D Studio"
 msgstr "ﮟﯿﮨ ﮯﺘﮨﺎﭼ ﺎﻧﺮﮐ ﻅﻮﻔﺤﻣ ﮦﺭﺎﺑﻭﺩ ﮫﺗﺎﺳ ﮯﮐ ﺭﮉﻨﯿﻠﺑ ﮦﺩﻮﺟﻮﻣ ﻮﮐ ﻞﺋﺎﻓ lib ﯽﻨﭘﺍ ﭖﺁ !ﺎﮔ ﮯﺋﺎﺟ ﺎﯿﮐ ﮟﯿﮩﻧ ﻥﮊﺭﻮﻨﮐ ﺕﺎﯿﮐﺮﺣ  ﯽﺋﻮﮐ ،ﺎﻧﺮﮐ ﮏﻠﺴﻨﻣ ﺎﯾ ﺎﻧﺮﮐ ﮏﻨﻟ ﮯﺳ (%d‬.‪%d‬‪) ﭧﯿﻣﺭﺎﻓ ﻞﺋﺎﻓ blend. ﮯﻧﺍﺮﭘ ﺖﮩﺑ ﮏﯾﺍ"
 
 
@@ -117024,7 +117024,7 @@ msgid "At least 8 common tracks on both keyframes are needed for reconstruction"
 msgstr "ﮯﮨ ﺕﺭﻭﺮﺿ ﯽﮐ ﺲﮑﯾﺮﭨ ﻡﺎﻋ 8 ﻢﮐ ﺯﺍ ﻢﮐ ﺮﭘ ﮞﻮﻤﯾﺮﻓ ﯼﺪﯿﻠﮐ ﮞﻮﻧﻭﺩ ﮯﯿﻟ ﮯﮐ ﻮﻧ ﺮﯿﻤﻌﺗ"
 
 
-msgid "Blender is compiled without motion tracking library"
+msgid "GameForge 3D Studio is compiled without motion tracking library"
 msgstr "ﮯﮨ ﺎﯿﮔ ﺎﯿﮐ ﺐﺗﺮﻣ ﺮﯿﻐﺑ ﮯﮐ ﯼﺮﯾﺮﺒﺋﻻ﻿ ﮓﻨﮑﯾﺮﭨ ﺖﮐﺮﺣ  ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -117444,7 +117444,7 @@ msgid "Critical blend-file corruption: Conflicts and/or otherwise invalid data-b
 msgstr "(ﮟﯿﮭﮑﯾﺩ ﻝﻮﺴﻨﮐ ﮯﯿﻟ ﮯﮐ ﺕﻼ﻿ﯿﺼﻔﺗ) ﻡﺎﻧ ﮯﮐ ﺲﮐﻼ﻿ﺑ ﺎﭩﯾﮈ ﻂﻠﻏ ﺮﮕﯾﺩ ﺕﺭﻮﺼﺑ ﺎﯾ/ﺭﻭﺍ ﺕﺎﻋﺯﺎﻨﺗ :ﯽﻧﺍﻮﻨﻋﺪﺑ ﮟﯿﻣ ﻞﺋﺎﻓ ﺐﮐﺮﻣ ﯼﺪﯿﻘﻨﺗ"
 
 
-msgid "The file was saved by a newer version, open it with Blender %s or later"
+msgid "The file was saved by a newer version, open it with GameForge 3D Studio %s or later"
 msgstr "ﮟﯿﻟﻮﮭﮐ ﮫﺗﺎﺳ ﮯﮐ ﺪﻌﺑ ﺎﯾ %s‬‪ ﺭﮉﻨﯿﻠﺑ ﮯﺳﺍ ،ﺎﮭﺗ ﺎﯿﮔ ﺎﯿﮐ ﻅﻮﻔﺤﻣ ﮯﻌﯾﺭﺫ ﮯﮐ ﻥﮊﺭﻭ ﮯﺌﻧ ﮏﯾﺍ ﻮﮐ ﻞﺋﺎﻓ"
 
 
@@ -117464,7 +117464,7 @@ msgid "GP_Palette"
 msgstr "GP_Palette"
 
 
-msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in Blender 2.80 and later, removed instancing"
+msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in version 2.80 and later, removed instancing"
 msgstr "ﻝﺎﺜﻣ ﺎﯿﮔ ﺎﯾﺩ ﺎﭩﮨ ،ﺎﺘﮑﺳ ﺎﻨﺑ ﮟﯿﮩﻧ ﻞﻘﻧ ﯽﮐ '%s'‬‪ ﮯﻋﻮﻤﺠﻣ ﮯﮐ ﺪﻌﺑ ﮯﮐ ﺱﺍ ﺭﻭﺍ 2.80 ﺭﮉﻨﯿﻠﺑ '%s'‬‪ ﮯﺷ ﯽﻟﺎﺧ ﺮﯿﻏ"
 
 
@@ -118254,7 +118254,7 @@ msgid "Asset catalogs cannot be edited in this asset library"
 msgstr "ﮯﮨ ﯽﺘﮑﺳ ﺎﺟ ﯽﮐ ﮟﯿﮩﻧ ﺮﺋﺎﻔﯾﮈﻮﻣ ﮟﯿﻣ ﮒﻼ﻿ﭩﯿﮐ ﮧﺛﺎﺛﺍ ﮟﯿﻣ ﯼﺮﯾﺮﺒﺋﻻ﻿ ﯽﮐ ﮧﺛﺎﺛﺍ ﺱﺍ"
 
 
-msgid "Cannot save asset catalogs before the Blender file is saved"
+msgid "Cannot save asset catalogs before the GameForge 3D Studio file is saved"
 msgstr "ﺎﺘﮑﺳ ﺎﺟ ﺎﯿﮐ ﮟﯿﮩﻧ ﻅﻮﻔﺤﻣ ﻮﮐ ﮒﻼ﻿ﭩﯿﮐ ﯽﮐ ﮞﻮﺛﺎﺛﺍ ﮯﻠﮩﭘ ﮯﺳ ﮯﻧﻮﮨ ﻅﻮﻔﺤﻣ ﮯﮐ ﻞﺋﺎﻓ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -119700,7 +119700,7 @@ msgid "Show in Info Log"
 msgstr "ﮟﯿﺋﺎﮭﮐﺩ ﮟﯿﻣ ﮒﻻ﻿ ﻦﺸﯿﻣﺭﺎﻔﻧﺍ"
 
 
-msgid "This file is managed by the Blender asset system and cannot be overridden"
+msgid "This file is managed by the GameForge 3D Studio asset system and cannot be overridden"
 msgstr "ﺎﺘﮑﺳ ﺎﺟ ﺎﯿﮐ ﮟﯿﮩﻧ ﮉﺋﺍﺭ ﺭﻭﻭﺍ ﮯﺳﺍ ﺭﻭﺍ ﮯﮨ ﺎﺗﺎﺟ ﺎﯿﮐ ﻢﻈﻨﻣ ﮯﻌﯾﺭﺫ ﮯﮐ ﻢﭩﺴﺳ ﮧﺛﺎﺛﺍ ﺭﮉﻨﯿﻠﺑ ﻮﮐ ﻞﺋﺎﻓ ﺱﺍ"
 
 
@@ -119800,7 +119800,7 @@ msgid "No filename given"
 msgstr "No ﻡﺎﻧ ﺎﮐ ﻞﺋﺎﻓ given"
 
 
-msgid "Blender Data"
+msgid "GameForge 3D Studio Data"
 msgstr "ﺎﭩﯾﮈ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -121726,7 +121726,7 @@ msgid "Unable to remove material slot in edit mode"
 msgstr "ﮯﮨ ﺮﺻﺎﻗ ﮯﺳ ﮯﻧﺎﭩﮨ ﻮﮐ ﭦﻼ﻿ﺳ ﯽﮐ ﺩﺍﻮﻣ ﮟﯿﻣ ﺭﻮﻃ ﮯﮐ ﻢﯿﻣﺮﺗ"
 
 
-msgid "Blender Render"
+msgid "GameForge 3D Studio Render"
 msgstr "ﺭﮉﻨﯾﺭ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -121818,11 +121818,11 @@ msgid "Flip to Bottom"
 msgstr "ﮟﯿﺋﺎﭩﻠﭘ ﻑﺮﻃ ﯽﮐ ﮯﭽﯿﻧ"
 
 
-msgid "Blender Drivers Editor"
+msgid "GameForge 3D Studio Drivers Editor"
 msgstr "ﺮﭩﯾﮉﯾﺍ ﺭﻮﯿﺋﺍﺭﮈ ﺭﮉﻨﯿﻠﺑ"
 
 
-msgid "Blender Info Log"
+msgid "GameForge 3D Studio Info Log"
 msgstr "ﮒﻻ﻿ ﻦﺸﯿﻣﺭﺎﻔﻧﺍ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -122630,7 +122630,7 @@ msgid "Path to asset library does not exist:"
 msgstr ":ﮯﮨ ﮟﯿﮩﻧ ﺩﻮﺟﻮﻣ ﮧﺘﺳﺍﺭ ﺎﮐ ﯼﺮﯾﺮﺒﺋﻻ﻿ ﮧﺛﺎﺛﺍ"
 
 
-msgid "Unreadable Blender library file:"
+msgid "Unreadable GameForge 3D Studio library file:"
 msgstr ":ﻞﺋﺎﻓ ﯼﺮﯾﺮﺒﺋﻻ﻿ ﺭﮉﻨﯿﻠﺑ ﮯﻨﮬﮍﭘ ﻞﺑﺎﻗﺎﻧ"
 
 
@@ -124195,7 +124195,7 @@ msgid "Jump to Line Number"
 msgstr "ﺮﺒﻤﻧ ﻦﺋﻻ﻿ ﮟﯿﺋﺎﺟ ﺮﭘ"
 
 
-msgid "File Modified Outside and Inside Blender"
+msgid "File Modified Outside and Inside GameForge 3D Studio"
 msgstr "ﺭﮉﻨﯿﻠﺑ ﺭﺪﻧﺍ ﺭﻭﺍ ﺮﮨﺎﺑ ﮦﺪﺷ ﺮﺋﺎﻔﯾﮈﻮﻣ ﮟﯿﻣ ﻞﺋﺎﻓ"
 
 
@@ -124211,7 +124211,7 @@ msgid "Make text internal (separate copy)"
 msgstr "(ﯽﭘﺎﮐ ﮓﻟﺍ) ﮟﯿﺋﺎﻨﺑ ﯽﻧﻭﺭﺪﻧﺍ ﻮﮐ ﻦﺘﻣ"
 
 
-msgid "File Modified Outside Blender"
+msgid "File Modified Outside GameForge 3D Studio"
 msgstr "ﺭﮉﻨﯿﻠﺑ ﺮﮨﺎﺑ ﮦﺪﺷ ﺮﺋﺎﻔﯾﮈﻮﻣ ﮟﯿﻣ ﻞﺋﺎﻓ"
 
 
@@ -124219,7 +124219,7 @@ msgid "Reload from disk"
 msgstr "ﮟﯾﺮﮐ ﮈﻮﻟ ﮦﺭﺎﺑﻭﺩ ﮯﺳ ﮏﺳﮈ"
 
 
-msgid "File Deleted Outside Blender"
+msgid "File Deleted Outside GameForge 3D Studio"
 msgstr "ﯽﺌﮔ ﯼﺩ ﺮﮐ ﻑﺬﺣ ﺮﮨﺎﺑ ﮯﮐ ﺭﮉﻨﯿﻠﺑ ﻞﺋﺎﻓ"
 
 
@@ -125490,7 +125490,7 @@ msgid "An exception occurred invoking USD hook '%s'"
 msgstr "USD ﮏﮨ ‪'%s'‬ ﺎﯾﺁ ﺶﯿﭘ ءﺎﻨﺜﺘﺳﺍ ﮏﯾﺍ ﮯﺋﻮﮨ ﮯﺗﺮﮐ ﺖﺳﺍﻮﺧﺭﺩ ﯽﮐ"
 
 
-msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to Blender"
+msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to GameForge 3D Studio"
 msgstr "ﺎﺘﮑﺳ ﺎﺟ ﺎﯿﮐ ﮟﯿﮩﻧ ﻞﯾﺪﺒﺗ ﮟﯿﻣ ﺭﮉﻨﯿﻠﺑ ﻮﮐ (%s‬‪ ﭗﺋﺎﭨ ،%s‬‪ ﻦﺸﯿﻟﻮﭘﺮﭩﻧﺍ) '%s'‬‪ ﺭﺍﻮﻤﺋﺍﺮﭘ"
 
 
@@ -125602,7 +125602,7 @@ msgid "Cannot export mixed cyclic and non-cyclic curves in the same Curves objec
 msgstr "ﺎﺘﮑﺳ ﺎﺟ ﺎﯿﮐ ﮟﯿﮩﻧ ﺪﻣﺁﺮﺑ ﻮﮐ  ﮟﯿﻤﺧ ﯼﺮﮑﭼ ﺮﯿﻏ ﺭﻭﺍ ﯽﺗﺍﺮﮑﭼ ﻁﻮﻠﺨﻣ ﮟﯿﻣ ﮯﺷ Curves ﯽﮨ ﮏﯾﺍ"
 
 
-msgid "Attribute '%s' (Blender domain %d, type %d) cannot be converted to USD"
+msgid "Attribute '%s' (GameForge 3D Studio domain %d, type %d) cannot be converted to USD"
 msgstr "ﺎﺘﮑﺳ ﺎﺟ ﺎﯿﮐ ﮟﯿﮩﻧ ﻞﯾﺪﺒﺗ ﮟﯿﻣ USD ﻮﮐ (%d‬‪ ﭗﺋﺎﭨ ،%d‬‪ ﻦﯿﻣﻭﮈ ﺭﮉﻨﯿﻠﺑ) '%s'‬‪ ﺏﺎﺴﺘﻧﺍ"
 
 
@@ -126741,7 +126741,7 @@ msgid "Recursion detected, cannot use this strip"
 msgstr "ﺎﺘﮑﺳ ﺎﺟ ﺎﯿﮐ ﮟﯿﮩﻧ ﻝﺎﻤﻌﺘﺳﺍ ﻮﮐ ﯽﭩﭘ ﺱﺍ ،ﻼ﻿ﭼ ﮧﺘﭘ ﺎﮐ ﺭﺍﺮﮑﺗ"
 
 
-msgid "Blender compiled without Audaspace support"
+msgid "GameForge 3D Studio compiled without Audaspace support"
 msgstr "ﺎﯿﮔ ﺎﯿﮐ ﺐﺗﺮﻣ ﺮﯿﻐﺑ ﮯﮐ ﭦﺭﻮﭙﺳ ﺲﯿﭙﺳﺍﮈﺁ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -128392,7 +128392,7 @@ msgid "Node must be run as tool"
 msgstr "ﮯﯿﮨﺎﭼ ﺎﻧﺎﺟ ﺎﯾﻼ﻿ﭼ ﺭﺍﺯﻭﺍ  ﺭﻮﻄﺑ ﻮﮐ ﮈﻮﻧ"
 
 
-msgid "Disabled, Blender was compiled without OpenVDB"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenVDB"
 msgstr "ﺎﮭﺗ ﺎﯿﮔ ﺎﯿﮐ ﺐﺗﺮﻣ ﺮﯿﻐﺑ ﮯﮐ ﯽﺑ ﯼﮈ ﯼﻭ ﻦﭘﻭﺍ ﺭﮉﻨﯿﻠﺑ ،ﻝﺎﻌﻓ ﺮﯿﻏ"
 
 
@@ -128540,7 +128540,7 @@ msgid "Reset the transforms of every child instance in the output. Only used whe
 msgstr "ﮞﻮﮨ ﻝﺎﻌﻓ ﮯﭽﺑ ﮦﺪﺤﯿﻠﻋ ﺐﺟ ﮯﮨ ﺎﺗﺎﺟ ﺎﯿﮐ ﻝﺎﻤﻌﺘﺳﺍ ﺖﻗﻭ ﺱﺍ ﻑﺮﺻ ﮟﯾﺩ ﺐﯿﺗﺮﺗ ﮦﺭﺎﺑﻭﺩ ﻮﮐ ﮞﻮﯿﻠﯾﺪﺒﺗ ﯽﮐ ﻝﺎﺜﻣ ﯽﮐ ﮯﭽﺑ ﺮﮨ ﮟﯿﻣ ﭧﭘ ﭦﺅﺁ"
 
 
-msgid "Disabled, Blender was compiled without Bullet"
+msgid "Disabled, GameForge 3D Studio was compiled without Bullet"
 msgstr "ﺎﮭﺗ ﺎﯿﮔ ﺎﯿﮐ ﺐﺗﺮﻣ ﺮﯿﻐﺑ ﮯﮐ ﭧﯿﻠﺑ ﻮﮐ ﺭﮉﻨﯿﻠﺑ ،ﻝﺎﻌﻓ ﺮﯿﻏ"
 
 
@@ -129174,7 +129174,7 @@ msgid "Delimiter"
 msgstr "ﻻ﻿ﺍﻭ ﮯﻧﺮﮐ ﯼﺪﻨﺑ ﺪﺣ"
 
 
-msgid "Disabled, Blender was compiled without OBJ I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without OBJ I/O"
 msgstr "ﺎﮭﺗ ﺎﯿﮔ ﺎﯿﮐ ﺐﺗﺮﻣ ﺮﯿﻐﺑ ﮯﮐ OBJ I/O ﺭﮉﻨﯿﻠﺑ ،ﻝﺎﻌﻓ ﺮﯿﻏ"
 
 
@@ -129182,7 +129182,7 @@ msgid "Path to a OBJ file"
 msgstr "ﻞﺋﺎﻓ to a OBJ ﮧﺘﺳﺍﺭ"
 
 
-msgid "Disabled, Blender was compiled without PLY I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without PLY I/O"
 msgstr "ﺎﮭﺗ ﺎﯿﮔ ﺎﯿﮐ ﺐﺗﺮﻣ ﺮﯿﻐﺑ ﮯﮐ PLY I/O ﺭﮉﻨﯿﻠﺑ ،ﻝﺎﻌﻓ ﺮﯿﻏ"
 
 
@@ -129190,7 +129190,7 @@ msgid "Path to a PLY file"
 msgstr "ﻞﺋﺎﻓ to a PLY ﮧﺘﺳﺍﺭ"
 
 
-msgid "Disabled, Blender was compiled without STL I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without STL I/O"
 msgstr "ﺎﮭﺗ ﺎﯿﮔ ﺎﯿﮐ ﺐﺗﺮﻣ ﺮﯿﻐﺑ ﮯﮐ STL I/O ﺭﮉﻨﯿﻠﺑ ،ﻝﺎﻌﻓ ﺮﯿﻏ"
 
 
@@ -129693,7 +129693,7 @@ msgid "The number of horizontal rings"
 msgstr "ﺩﺍﺪﻌﺗ ﯽﮐ ﮞﻮﻘﻠﺣ ﯽﻘﻓﺍ"
 
 
-msgid "Disabled, Blender was compiled without OpenSubdiv"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenSubdiv"
 msgstr "ﺎﮭﺗ ﺎﯿﮔ ﺎﯿﮐ ﺐﺗﺮﻣ ﺮﯿﻐﺑ ﮯﮐ ﻮﯾﮉﺒﺳ ﻦﭘﻭﺍ ﺭﮉﻨﯿﻠﺑ ،ﻝﺎﻌﻓ ﺮﯿﻏ"
 
 
@@ -131398,7 +131398,7 @@ msgid "Dragging {} files"
 msgstr "ﺎﻨﭩﯿﺴﮭﮔ ﻮﮐ ﮞﻮﻠﺋﺎﻓ {}‬‪"
 
 
-msgid "Blender File View"
+msgid "GameForge 3D Studio File View"
 msgstr "ﻮﯾﻭ ﻞﺋﺎﻓ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -131414,7 +131414,7 @@ msgid "Load Factory \"{}\" Preferences."
 msgstr ".ﺕﺎﺤﯿﺟﺮﺗ Factory ‪\"{}\"‬ ﮈﻮﻟ"
 
 
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "ﮟﯾﺮﮐ ﮈﻮﻟ ﺕﺎﺤﯿﺟﺮﺗ ﯽﮐ ﺭﮉﻨﯿﻠﺑ ﯼﺮﭩﮑﯿﻓ"
 
 
@@ -131494,7 +131494,7 @@ msgid "For security reasons, automatic execution of Python scripts in this file 
 msgstr ":ﺎﮭﺗ ﺎﯿﮔ ﺎﯾﺩ ﺮﮐ ﻝﺎﻌﻓ ﺮﯿﻏ ﻮﮐ ﺪﻣﺁﺭﺩ ﻞﻤﻋ ﮯﺳ ﮯﻘﯾﺮﻃ ﺭﺎﮐﺩﻮﺧ ﺎﮐ ﭧﭘﺮﮑﺳﺍ ﮯﮐPython ﮟﯿﻣ ﻞﺋﺎﻓ ﺱﺍ ،ﺮﭘ ءﺎﻨﺑ ﯽﮐ ﺕﺎﮨﻮﺟﻭ ﯽﺘﻇﺎﻔﺣ"
 
 
-msgid "This file is managed by the Blender asset system. It can only be"
+msgid "This file is managed by the GameForge 3D Studio asset system. It can only be"
 msgstr "ﮯﮨ ﺎﺘﮑﺳ ﻮﮨ ﻑﺮﺻ ﮧﯾ ﮯﮨ ﻡﺎﻈﺘﻧﺍ ﺮﯾﺯ ﮯﮐ ﻢﭩﺴﺳ ﮧﺛﺎﺛﺍ ﺭﮉﻨﯿﻠﺑ ﻞﺋﺎﻓ ﮧﯾ"
 
 
@@ -131506,11 +131506,11 @@ msgid "Cannot overwrite asset system files. Save as new file"
 msgstr "ﮟﯾﺮﮐ ﻅﻮﻔﺤﻣ ﺮﭘ ﺭﻮﻃ ﮯﮐ ﻞﺋﺎﻓ ﯽﺌﻧ ﺎﺘﮑﺳ ﺎﺟ ﺎﯿﮐ ﮟﯿﮩﻧ ﭧﺋﺍﺭ ﺭﻭﻭﺍ ﻮﮐ ﮞﻮﻠﺋﺎﻓ ﻢﭩﺴﺳ ﮧﺛﺎﺛﺍ"
 
 
-msgid "with an older Blender version?"
+msgid "with an older GameForge 3D Studio version?"
 msgstr "؟ﮫﺗﺎﺳ ﮯﮐ ﻥﮊﺭﻭ ﺭﮉﻨﯿﻠﺑ ﮯﻧﺍﺮﭘ"
 
 
-msgid "Overwrite file with an older Blender version?"
+msgid "Overwrite file with an older GameForge 3D Studio version?"
 msgstr "؟ﮟﯾﺮﮐ ﭧﺋﺍﺭ ﺭﻭﻭﺍ ﻮﮐ ﻞﺋﺎﻓ ﮫﺗﺎﺳ ﮯﮐ ﻥﮊﺭﻭ ﺭﮉﻨﯿﻠﺑ ﮯﻧﺍﺮﭘ"
 
 
@@ -131558,7 +131558,7 @@ msgid "%d libraries have overrides needing resync (auto resynced in %.0fm%.2fs),
 msgstr "‪%d‬ ﮟﯿﮨ ﺯﮉﯿﺋﺍﺭ ﺭﻭﻭﺍ ﺮﭘ ﺕﺭﻭﺮﺿ ﯽﮐ ﯼﺮﯾﺬﭘ ﺖﻘﺑﺎﻄﻣ ﮦﺭﺎﺑﻭﺩ ﮟﯿﻣ ﮞﻮﯾﺮﯾﺮﺒﺋﻻ﻿ (‪%.0f‬m‪%.2f‬s ﮟﯾﺮﮐ ﮏﯿﭼ ﻮﮐ ﺮﭩﯾﮉﯾﺍ ﻦﺸﯿﻣﺭﺎﻔﻧﺍ ﻡﺮﮐ ﮦﺍﺮﺑ ﮯﯿﻟ ﮯﮐ ﺕﻼ﻿ﯿﺼﻔﺗ ،(ﺮﯾﺬﭘ ﺖﻘﺑﺎﻄﻣ ﮦﺭﺎﺑﻭﺩ ﺮﭘ ﺭﻮﻃ ﺭﺎﮐﺩﻮﺧ ﮟﯿﻣ"
 
 
-msgid "Proxies have been removed from Blender (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest Blender version"
+msgid "Proxies have been removed from GameForge 3D Studio (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest GameForge 3D Studio version"
 msgstr "ﮟﯾﺮﮐ ﺭﻮﻏ ﺮﭘ ﮯﻧﺮﮐ ﻅﻮﻔﺤﻣ ﮦﺭﺎﺑﻭﺩ ﻮﮐ ﻞﺋﺎﻓ blend. ﯼﺮﯾﺮﺒﺋﻻ﻿ ﯽﮭﺑ ﯽﺴﮐ ﮫﺗﺎﺳ ﮯﮐ ﻥﮊﺭﻭ ﻦﯾﺮﺗ ﮦﺯﺎﺗ ﮯﮐ ﺭﮉﻨﯿﻠﺑ (ﺎﯿﮔ ﺎﯾﺩ ﺮﮐ ﻑﺎﺻ ﮟﯿﮩﻧﺍ ﺭﻭﺍ ﺎﮑﺳ ﺎﺟ ﺎﯿﮐ ﮟﯿﮩﻧ ﻞﯾﺪﺒﺗ ﻮﮐ ﺰﯿﺴﮐﺍﺮﭘ %d‬‪ ،ﺎﮭﺗ ﺎﯿﮔ ﺎﯾﺩ ﺮﮐ ﻞﯾﺪﺒﺗ ﮟﯿﻣ ﺯﮉﯿﺋﺍﺭ ﺭﻭﻭﺍ ﯼﺮﯾﺮﺒﺋﻻ﻿ ﺩﻮﺨﺑ ﺩﻮﺧ ﻮﮐ ﺰﯿﺴﮐﺍﺮﭘ %d‬‪) ﮯﮨ ﺎﯿﮔ ﺎﯾﺩ ﺎﭩﮨ ﻮﮐ ﺰﯿﺴﮐﺍﺮﭘ ﮯﺳ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -131756,7 +131756,7 @@ msgstr "ﮯﮨ ﮟﯿﮩﻧ ﮧﺘﻓﺎﯾ ﻥﻭﺎﻌﺗ ﻥﮊﺭﻭ macOS �
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
 msgstr "ﮯﮨ ﺎﺘﮑﺳ ﺎﺟ ﺎﯾﺎﻨﺑ ﺮﺘﮩﺑ ﻮﮐ ﭦﺭﻮﭙﺳ ﺭﮉﻨﯿﻠﺑ ﮯﺳ ﮯﻧﺮﮐ ﮉﯾﺮﮔ ﭖﺍ ﮟﯿﻣ ﻥﮊﺭﻭ macOS ﻦﯾﺮﺗ ﮦﺯﺎﺗ"
 
 
@@ -132136,7 +132136,7 @@ msgid "Stroke and Fill"
 msgstr "ﮟﯾﺮﮭﺑ ﺭﻭﺍ ﮎﻭﺮﭩﺳﺍ"
 
 
-msgid "Blender 27x"
+msgid "version 27x"
 msgstr "27x ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -132328,7 +132328,7 @@ msgid "Import-Export BVH from armature objects"
 msgstr "ﮟﯾﺮﮐ ﭦﺭﻮﭙﺴﮑﯾﺍ ﭦﺭﻮﭙﻣﺍ BVH ﮯﺳ ﭧﮑﯿﺠﺑﺁ ﺮﭽﻣﺭﺁ"
 
 
-msgid "Blender Extensions"
+msgid "GameForge 3D Studio Extensions"
 msgstr "ﺰﻨﺸﻨﯿﭩﺴﮑﯾﺍ ﺭﮉﻨﯿﻠﺑ"
 
 
@@ -132372,7 +132372,7 @@ msgid "Manage UI translations"
 msgstr "UI ﮟﯾﺮﮐ ﻢﻈﻧ ﺎﮐ ﮧﻤﺟﺮﺗ"
 
 
-msgid "Allows managing UI translations directly from Blender (update main .po files, update scripts' translations, etc.)"
+msgid "Allows managing UI translations directly from GameForge 3D Studio (update main .po files, update scripts' translations, etc.)"
 msgstr "(ﮦﺮﯿﻏﻭ ،ﮟﯾﺮﮐ ﭧﯾﮈ ﭖﺍ ﻮﮐ ﮯﻤﺟﺮﺗ ﮯﮐ ﭧﭘﺮﮑﺳﺍ ،ﮟﯾﺮﮐ ﭧﯾﮈ ﭖﺍ ﻮﮐ ﮞﻮﻠﺋﺎﻓ po. ﻦﯿﻣ) ﮯﮨ ﺎﺘﯾﺩ ﺕﺯﺎﺟﺍ ﯽﮐ ﮯﻧﺮﮐ ﻡﺎﻈﺘﻧﺍ ﺎﮐ ﮧﻤﺟﺮﺗ UI ﺖﺳﺍﺭ ﮦﺍﺮﺑ ﮯﺳ ﺭﮉﻨﯿﻠﺑ"
 
 

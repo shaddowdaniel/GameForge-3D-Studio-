@@ -11,6 +11,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <filesystem>
 
 #include "BLI_fileops.hh"
 #include "BLI_fileops_types.hh"
@@ -220,14 +221,83 @@ void BKE_appdir_folder_caches(char *path, const size_t path_maxncpy)
   BLI_path_join(path,
                 path_maxncpy,
                 caches_root_path->c_str(),
-                "Blender Foundation",
-                "Blender",
+                "ATOM GameForge",
+                "GameForge 3D Studio",
                 "Cache",
                 SEP_STR);
 #elif defined(__APPLE__)
   BLI_path_join(path, path_maxncpy, caches_root_path->c_str(), "Blender", SEP_STR);
 #else /* __linux__ */
   BLI_path_join(path, path_maxncpy, caches_root_path->c_str(), "blender", SEP_STR);
+#endif
+}
+
+void BKE_appdir_legacy_user_folder_migrate()
+{
+#ifdef WIN32
+  /* Before it had its own folder, GameForge 3D Studio kept its user files (preferences, add-ons,
+   * the GameForge account) in `%APPDATA%\Blender Foundation\Blender\<version>`, the folder of
+   * Blender itself. Copy them once into its own folder; the old folder is left untouched. */
+  const std::optional<std::string> user_dir = BKE_appdir_resource_path_id_with_version(
+      BLENDER_RESOURCE_PATH_USER, false, BLENDER_VERSION);
+  if (!user_dir || BLI_exists(user_dir->c_str())) {
+    return;
+  }
+
+  PWSTR appdata_16 = nullptr;
+  const HRESULT result = SHGetKnownFolderPath(
+      FOLDERID_RoamingAppData, KF_FLAG_DEFAULT, nullptr, &appdata_16);
+  char appdata[FILE_MAX] = "";
+  if (result == S_OK) {
+    conv_utf_16_to_8(appdata_16, appdata, sizeof(appdata));
+  }
+  CoTaskMemFree(appdata_16);
+  if (appdata[0] == '\0') {
+    return;
+  }
+
+  const char *version = blender_version_decimal(BLENDER_VERSION);
+  char expected[FILE_MAX];
+  BLI_path_join(
+      expected, sizeof(expected), appdata, "ATOM GameForge", "GameForge 3D Studio", version);
+  if (BLI_path_cmp(expected, user_dir->c_str()) != 0) {
+    /* The user folder was moved (`BLENDER_USER_RESOURCES`, portable installation): leave it. */
+    return;
+  }
+  char legacy[FILE_MAX];
+  BLI_path_join(legacy, sizeof(legacy), appdata, "Blender Foundation", "Blender", version);
+  if (!BLI_is_dir(legacy)) {
+    return;
+  }
+
+  /* Copy next to the destination and rename at the end, so an interrupted copy is retried on
+   * the next start instead of leaving a half filled folder. */
+  namespace fs = std::filesystem;
+  const fs::path src(reinterpret_cast<const char8_t *>(legacy));
+  const fs::path dst(reinterpret_cast<const char8_t *>(user_dir->c_str()));
+  fs::path tmp = dst;
+  tmp += u8".migrating";
+  std::error_code ec;
+  fs::remove_all(tmp, ec);
+  ec.clear();
+  fs::create_directories(dst.parent_path(), ec);
+  if (!ec) {
+    fs::copy(src, tmp, fs::copy_options::recursive, ec);
+  }
+  if (!ec) {
+    fs::rename(tmp, dst, ec);
+  }
+  if (ec) {
+    CLOG_WARN(&LOG,
+              "Could not copy the user folder '%s' to '%s': %s",
+              legacy,
+              user_dir->c_str(),
+              ec.message().c_str());
+    std::error_code ignored;
+    fs::remove_all(tmp, ignored);
+    return;
+  }
+  CLOG_INFO(&LOG, "Copied the user folder '%s' to '%s'", legacy, user_dir->c_str());
 #endif
 }
 

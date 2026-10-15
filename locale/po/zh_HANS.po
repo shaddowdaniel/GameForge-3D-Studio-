@@ -838,8 +838,8 @@ msgid "Fribidi Library"
 msgstr "Fribidi 库文件"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
-msgstr "FriBidi C 语言编译库 (Linux 系统下为 .so, Windows 系统下为 .dll ...), 若在 Windows 系统下则可能需要编辑此库, 例如当使用包含在 Blender 存储库中的库文件时"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
+msgstr "FriBidi C 语言编译库 (Linux 系统下为 .so, Windows 系统下为 .dll ...), 若在 Windows 系统下则可能需要编辑此库, 例如当使用包含在 GameForge 3D Studio 存储库中的库文件时"
 
 
 msgid "Translation Root"
@@ -862,8 +862,8 @@ msgid "Source Root"
 msgstr "源文件根目录"
 
 
-msgid "The Blender source root path"
-msgstr "Blender 源文件的根路径"
+msgid "The GameForge 3D Studio source root path"
+msgstr "GameForge 3D Studio 源文件的根路径"
 
 
 msgid "Spell Cache"
@@ -886,8 +886,8 @@ msgid "Persistent Data Path"
 msgstr "持久数据路径"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "存储这些设置的 json 文件的名称 (但 Blender 的系统对此不支持)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
+msgstr "存储这些设置的 json 文件的名称 (但 GameForge 3D Studio 的系统对此不支持)"
 
 
 msgid "User Add-ons"
@@ -1766,8 +1766,8 @@ msgid "Edit persistent configuration settings"
 msgstr "编辑持久配置的设置"
 
 
-msgid "Manage the current Blender project"
-msgstr "管理当前的 Blender 项目"
+msgid "Manage the current GameForge 3D Studio project"
+msgstr "管理当前的 GameForge 3D Studio 项目"
 
 
 msgid "Width"
@@ -1862,8 +1862,8 @@ msgid "Is Editable"
 msgstr "可编辑的"
 
 
-msgid "Assets and catalogs in this library can be edited from the current Blender instance"
-msgstr "此库中的资产和目录可在当前的 Blender 实例中进行编辑"
+msgid "Assets and catalogs in this library can be edited from the current GameForge 3D Studio instance"
+msgstr "此库中的资产和目录可在当前的 GameForge 3D Studio 实例中进行编辑"
 
 
 msgid "Library Type"
@@ -1882,16 +1882,16 @@ msgid "Current File"
 msgstr "当前文件"
 
 
-msgid "Show the assets currently available in this Blender session"
-msgstr "显示此 Blender 会话中当前可用的资产"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
+msgstr "显示此 GameForge 3D Studio 会话中当前可用的资产"
 
 
 msgid "Essentials"
 msgstr "基本的"
 
 
-msgid "Show basic building blocks and utilities coming with Blender"
-msgstr "显示 Blender 附带的基本构建块和实用工具"
+msgid "Show basic building blocks and utilities coming with GameForge 3D Studio"
+msgstr "显示 GameForge 3D Studio 附带的基本构建块和实用工具"
 
 
 msgid "Online Essentials"
@@ -1962,8 +1962,8 @@ msgid "Catalog UUID"
 msgstr "目录 UUID"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
-msgstr "资产目录的标识符，用于 Blender 查找资产的目录路径。必须是符合 RFC4122 的 UUID．"
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgstr "资产目录的标识符，用于 GameForge 3D Studio 查找资产的目录路径。必须是符合 RFC4122 的 UUID．"
 
 
 msgid "Catalog Simple Name"
@@ -2711,8 +2711,8 @@ msgid "Is Internal"
 msgstr "是内部的"
 
 
-msgid "The attribute is meant for internal use by Blender"
-msgstr "该属性供 Blender 内部使用"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
+msgstr "该属性供 GameForge 3D Studio 内部使用"
 
 
 msgid "Is Required"
@@ -3430,8 +3430,8 @@ msgid "All Data-Blocks"
 msgstr "所有数据块"
 
 
-msgid "Read-only list of all IDs listed in Blender data-base. Warning: Order is not guaranteed and should be considered an internal implementation detail"
-msgstr "Blender 数据库中所有 ID 的只读列表。警告：不保证排序顺序，应将其视为内部实现细节"
+msgid "Read-only list of all IDs listed in GameForge 3D Studio data-base. Warning: Order is not guaranteed and should be considered an internal implementation detail"
+msgstr "GameForge 3D Studio 数据库中所有 ID 的只读列表。警告：不保证排序顺序，应将其视为内部实现细节"
 
 
 msgid "Annotation"
@@ -3603,8 +3603,8 @@ msgid "Project"
 msgstr "项目"
 
 
-msgid "The currently active Blender project, if any"
-msgstr "当前活动的 Blender 项目（如有）"
+msgid "The currently active GameForge 3D Studio project, if any"
+msgstr "当前活动的 GameForge 3D Studio 项目（如有）"
 
 
 msgid "Scene data-blocks"
@@ -4043,12 +4043,12 @@ msgid "The active project's OpenColorIO configuration setting"
 msgstr "活动项目的 OpenColorIO 配置设置"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
-msgid "The OpenColorIO configuration bundled with Blender"
-msgstr "Blender 随附的 OpenColorIO 配置"
+msgid "The OpenColorIO configuration bundled with GameForge 3D Studio"
+msgstr "GameForge 3D Studio 随附的 OpenColorIO 配置"
 
 
 msgid "Fallback"
@@ -4308,8 +4308,8 @@ msgid "Library (blend-file) reference in a BlendImportContext data. Currently on
 msgstr "Blend导入上下文数据中的库 (blend文件) 引用，目前仅作为只读数据公开给 预/后 blend导入处理程序"
 
 
-msgid "Blender Project"
-msgstr "Blender 项目"
+msgid "GameForge 3D Studio Project"
+msgstr "GameForge 3D Studio 项目"
 
 
 msgid "Active Project Variable"
@@ -4340,8 +4340,8 @@ msgid "OpenColorIO configuration to use for this project"
 msgstr "本项目使用的 OpenColorIO 配置"
 
 
-msgid "The default Blender OpenColorIO configuration. Works with both ACES workflows and Blender specific views and color spaces"
-msgstr "Blender 的默认 OpenColorIO 配置。既适用于 ACES 工作流程，也适用于 Blender 特有的视图和色彩空间"
+msgid "The default GameForge 3D Studio OpenColorIO configuration. Works with both ACES workflows and GameForge 3D Studio specific views and color spaces"
+msgstr "GameForge 3D Studio 的默认 OpenColorIO 配置。既适用于 ACES 工作流程，也适用于 GameForge 3D Studio 特有的视图和色彩空间"
 
 
 msgid "ACES 2.0 Studio"
@@ -4392,12 +4392,12 @@ msgid "The variables in this project"
 msgstr "本项目中的变量"
 
 
-msgid "Blender RNA"
-msgstr "Blender RNA"
+msgid "GameForge 3D Studio RNA"
+msgstr "GameForge 3D Studio RNA"
 
 
-msgid "Blender RNA structure definitions"
-msgstr "Blender 的 RNA 结构类型定义"
+msgid "GameForge 3D Studio RNA structure definitions"
+msgstr "GameForge 3D Studio 的 RNA 结构类型定义"
 
 
 msgid "Structs"
@@ -9267,8 +9267,8 @@ msgid "Lin error"
 msgstr "位置误差"
 
 
-msgid "Amount of residual error in Blender space unit for constraints that work on position"
-msgstr "对位置起作用的约束的残余误差量, Blender 空间单位"
+msgid "Amount of residual error in GameForge 3D Studio space unit for constraints that work on position"
+msgstr "对位置起作用的约束的残余误差量, GameForge 3D Studio 空间单位"
 
 
 msgid "Rotation error"
@@ -13239,7 +13239,7 @@ msgid "Max Velocity"
 msgstr "最大速度"
 
 
-msgid "Velocity considered as maximum influence (Blender units per frame)"
+msgid "Velocity considered as maximum influence (GameForge 3D Studio units per frame)"
 msgstr "作为最大影响量的速率 (Blender单位每帧)"
 
 
@@ -13617,8 +13617,8 @@ msgid "Premultiply Alpha"
 msgstr "预乘 Alpha"
 
 
-msgid "Multiply color by alpha (recommended for Blender input)"
-msgstr "将颜色乘以 Alpha (推荐用于 Blender 输入)"
+msgid "Multiply color by alpha (recommended for GameForge 3D Studio input)"
+msgstr "将颜色乘以 Alpha (推荐用于 GameForge 3D Studio 输入)"
 
 
 msgid "Use Shrink"
@@ -16021,24 +16021,24 @@ msgid "Hide .blend files items that are not data-blocks with asset metadata"
 msgstr "隐藏没有资产元数据的数据块的 .blend 文件项"
 
 
-msgid "Filter Blender Backup Files"
-msgstr "过滤 Blender 备份文件"
+msgid "Filter GameForge 3D Studio Backup Files"
+msgstr "过滤 GameForge 3D Studio 备份文件"
 
 
 msgid "Show .blend1, .blend2, etc. files"
 msgstr "显示 .blend1, .blend2 等备份文件"
 
 
-msgid "Filter Blender"
-msgstr "过滤 Blender 文件"
+msgid "Filter GameForge 3D Studio"
+msgstr "过滤 GameForge 3D Studio 文件"
 
 
 msgid "Show .blend files"
 msgstr "显示 .blend 文件"
 
 
-msgid "Filter Blender IDs"
-msgstr "过滤 Blender ID"
+msgid "Filter GameForge 3D Studio IDs"
+msgstr "过滤 GameForge 3D Studio ID"
 
 
 msgid "Show .blend files items (objects, materials, etc.)"
@@ -16113,8 +16113,8 @@ msgid "Library Browser"
 msgstr "库浏览器"
 
 
-msgid "Whether we may browse Blender files' content or not"
-msgstr "是否可浏览 Blender 文件的内容"
+msgid "Whether we may browse GameForge 3D Studio files' content or not"
+msgstr "是否可浏览 GameForge 3D Studio 文件的内容"
 
 
 msgid "Reverse Sorting"
@@ -16573,8 +16573,8 @@ msgid "Export Mantaflow Script"
 msgstr "导出Mantaflow脚本"
 
 
-msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of Blender) after baking the simulation."
-msgstr "在烘焙期间从当前域设置生成和导出 Mantaflow 脚本。只有在烘焙模拟后直接（在 Blender 外部）分析 Mantaflow 中的缓存（比如查看栅格、速度矢量、粒子）时，才需要这样做。"
+msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of GameForge 3D Studio) after baking the simulation."
+msgstr "在烘焙期间从当前域设置生成和导出 Mantaflow 脚本。只有在烘焙模拟后直接（在 GameForge 3D Studio 外部）分析 Mantaflow 中的缓存（比如查看栅格、速度矢量、粒子）时，才需要这样做。"
 
 
 msgid "Flame Grid"
@@ -19870,8 +19870,8 @@ msgid "Is Legacy Action"
 msgstr "是旧式动作"
 
 
-msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since Blender 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
-msgstr "返回此动作是否为旧版, 旧版动作没有层或槽. 自 Blender 4.4 版起, 动作会自动更新为分层动作. 只在动作为空时才会返回真值"
+msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since version 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
+msgstr "返回此动作是否为旧版, 旧版动作没有层或槽. 自 GameForge 3D Studio 4.4 版起, 动作会自动更新为分层动作. 只在动作为空时才会返回真值"
 
 
 msgid "Is Empty"
@@ -21870,7 +21870,7 @@ msgid "Unprojected Size"
 msgstr "未投影尺寸"
 
 
-msgid "Diameter of brush in Blender units"
+msgid "Diameter of brush in GameForge 3D Studio units"
 msgstr "笔刷直径 (Blender单位)"
 
 
@@ -23662,7 +23662,7 @@ msgstr "物体字体"
 
 
 msgid "Use objects as font characters (give font objects a common name followed by the character they represent, eg. 'family-a', 'family-b', etc, set this setting to 'family-', and turn on Vertex Instancing)"
-msgstr "将 Blender 物体用作字符 (为文字物体赋予通用名称, 其后包含它们所代表的字符, 如 family-a, family-b 等, 将其归类至 'family-', 并启用顶点实例)"
+msgstr "将 GameForge 3D Studio 物体用作字符 (为文字物体赋予通用名称, 其后包含它们所代表的字符, 如 family-a, family-b 等, 将其归类至 'family-', 并启用顶点实例)"
 
 
 msgid "Text on Curve"
@@ -25202,8 +25202,8 @@ msgid "Source library from which this archive of packed IDs was generated"
 msgstr "生成内含打包 ID 的归档的源库"
 
 
-msgid "Path to the library .blend file. WARNING: Typically, this value should be considered read-only, changing this path without proper processing afterwards can leave Blender data in an invalid state"
-msgstr "库文件 .blend 的路径。警告：通常，此值应视为只读，如果在修改此路径后未进行适当的后续处理，可能会导致 Blender 数据处于无效状态"
+msgid "Path to the library .blend file. WARNING: Typically, this value should be considered read-only, changing this path without proper processing afterwards can leave GameForge 3D Studio data in an invalid state"
+msgstr "库文件 .blend 的路径。警告：通常，此值应视为只读，如果在修改此路径后未进行适当的后续处理，可能会导致 GameForge 3D Studio 数据处于无效状态"
 
 
 msgid "Is Archive"
@@ -25226,8 +25226,8 @@ msgid "True if this library contains library overrides that are linked in curren
 msgstr "如果此库包含在当前 blend 文件中链接的库重写，并且必须在加载时递归地重新同步（建议打开并重新保存该库 blend 文件），则为 True（真）"
 
 
-msgid "Version of Blender the library .blend was saved with"
-msgstr "保存库.blend 文件的 Blender 程序版本"
+msgid "Version of GameForge 3D Studio the library .blend was saved with"
+msgstr "保存库.blend 文件的 GameForge 3D Studio 程序版本"
 
 
 msgctxt "Light"
@@ -30473,11 +30473,11 @@ msgid "Noise basis used for turbulence"
 msgstr "用于湍流的噪波基数"
 
 
-msgid "Blender Original"
-msgstr "Blender 原生"
+msgid "GameForge 3D Studio Original"
+msgstr "GameForge 3D Studio 原生"
 
 
-msgid "Noise algorithm - Blender original: Smooth interpolated noise"
+msgid "Noise algorithm - GameForge 3D Studio original: Smooth interpolated noise"
 msgstr "噪波算法 - Blender原始型: 平滑差值噪波"
 
 
@@ -31347,7 +31347,7 @@ msgid "Asset Blend Path"
 msgstr "资产Blend路径"
 
 
-msgid "Full path to the Blender file containing the active asset"
+msgid "Full path to the GameForge 3D Studio file containing the active asset"
 msgstr "包含活动资产的Blender文件的完整路径"
 
 
@@ -32499,16 +32499,16 @@ msgid "Custom Icon"
 msgstr "自定义图标"
 
 
-msgid "True if this preview icon has been modified by py script, and is no more auto-generated by Blender"
-msgstr "如果此预览图标已被 py 脚本修改，则为真，并且不再由 Blender 自动生成"
+msgid "True if this preview icon has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
+msgstr "如果此预览图标已被 py 脚本修改，则为真，并且不再由 GameForge 3D Studio 自动生成"
 
 
 msgid "Custom Image"
 msgstr "自定义图像"
 
 
-msgid "True if this preview image has been modified by py script, and is no more auto-generated by Blender"
-msgstr "如果此预览图像已被 py 脚本修改，则为真，并且不再由 Blender 自动生成"
+msgid "True if this preview image has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
+msgstr "如果此预览图像已被 py 脚本修改，则为真，并且不再由 GameForge 3D Studio 自动生成"
 
 
 msgid "Parameters defining how an Image data-block is used by another data-block"
@@ -52921,20 +52921,20 @@ msgid "World space normal mapping"
 msgstr "世界空间法线映射"
 
 
-msgid "Blender Object Space"
-msgstr "Blender 物体空间"
+msgid "GameForge 3D Studio Object Space"
+msgstr "GameForge 3D Studio 物体空间"
 
 
-msgid "Object space normal mapping, compatible with Blender render baking"
-msgstr "物体空间法线映射，与 Blender 渲染烘焙兼容"
+msgid "Object space normal mapping, compatible with GameForge 3D Studio render baking"
+msgstr "物体空间法线映射，与 GameForge 3D Studio 渲染烘焙兼容"
 
 
-msgid "Blender World Space"
-msgstr "Blender 世界空间"
+msgid "GameForge 3D Studio World Space"
+msgstr "GameForge 3D Studio 世界空间"
 
 
-msgid "World space normal mapping, compatible with Blender render baking"
-msgstr "世界空间法线映射, 与 Blender 渲染烘焙兼容"
+msgid "World space normal mapping, compatible with GameForge 3D Studio render baking"
+msgstr "世界空间法线映射, 与 GameForge 3D Studio 渲染烘焙兼容"
 
 
 msgid "UV Map for tangent space maps"
@@ -55835,8 +55835,8 @@ msgstr "Rigify 升级元骨骼层"
 
 
 msgctxt "Operator"
-msgid "Get active/selected colors from current Blender theme"
-msgstr "从当前 Blender 主题中获取活动的/选中的颜色"
+msgid "Get active/selected colors from current GameForge 3D Studio theme"
+msgstr "从当前 GameForge 3D Studio 主题中获取活动的/选中的颜色"
 
 
 msgid "Validates references from rig component settings to bone collections"
@@ -56341,7 +56341,7 @@ msgid "Clear Status"
 msgstr "清除状态"
 
 
-msgid "Allow Blender to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, Blender cannot prevent third-party add-ons from violating this rule."
+msgid "Allow GameForge 3D Studio to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, GameForge 3D Studio cannot prevent third-party add-ons from violating this rule."
 msgstr "允许Blender访问互联网。遵循此设置的插件仅在启用时才能连接到互联网。然而，Blender无法防止第三方插件违反此规则。"
 
 
@@ -57550,8 +57550,8 @@ msgid "Uninstall Studio Light"
 msgstr "卸载自定义棚灯"
 
 
-msgid "Load and apply a Blender XML theme file"
-msgstr "加载并应用一个 Blender 的 XML 主题文件"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
+msgstr "加载并应用一个 GameForge 3D Studio 的 XML 主题文件"
 
 
 msgctxt "Operator"
@@ -58028,13 +58028,13 @@ msgid "I18n Save Settings"
 msgstr "I18n保存设置"
 
 
-msgid "Update i18n data (po files) in Blender source code repository"
-msgstr "在 Blender 源代码库中更新 i18n 数据（po 文件）"
+msgid "Update i18n data (po files) in GameForge 3D Studio source code repository"
+msgstr "在 GameForge 3D Studio 源代码库中更新 i18n 数据（po 文件）"
 
 
 msgctxt "Operator"
-msgid "Update I18n Blender Repository"
-msgstr "更新 I18n Blender 存储库"
+msgid "Update I18n GameForge 3D Studio Repository"
+msgstr "更新 I18n GameForge 3D Studio 存储库"
 
 
 msgid "Init settings for i18n files update operators"
@@ -59761,8 +59761,8 @@ msgid "Debug Channel List"
 msgstr "调试通道列表"
 
 
-msgid "Log the channel list info in the terminal. This operator is only available in debug builds of Blender"
-msgstr "在终端中记录通道列表信息。此操作仅在 Blender 的调试版本中可用"
+msgid "Log the channel list info in the terminal. This operator is only available in debug builds of GameForge 3D Studio"
+msgstr "在终端中记录通道列表信息。此操作仅在 GameForge 3D Studio 的调试版本中可用"
 
 
 msgctxt "Operator"
@@ -60813,8 +60813,8 @@ msgid "Upgrade the metarig from bone layers to bone collections"
 msgstr "升级元骨骼层为骨骼集合"
 
 
-msgid "Set the color palette to match Blender's active theme for selected and active bones"
-msgstr "将配色方案设置为与 Blender 的当前主题匹配，以适应所选和活动骨骼"
+msgid "Set the color palette to match GameForge 3D Studio's active theme for selected and active bones"
+msgstr "将配色方案设置为与 GameForge 3D Studio 的当前主题匹配，以适应所选和活动骨骼"
 
 
 msgid ""
@@ -64488,8 +64488,8 @@ msgid "Apply Scalings"
 msgstr "应用缩放"
 
 
-msgid "How to apply custom and units scalings in generated FBX file (Blender uses FBX scale to detect units on import, but many other applications do not handle the same way)"
-msgstr "如何在生成的 FBX 文件应用自定义和单位缩放 (Blender 导入时使用 FBX 缩放来检测单位，但是其它程序处理方式不一样)"
+msgid "How to apply custom and units scalings in generated FBX file (GameForge 3D Studio uses FBX scale to detect units on import, but many other applications do not handle the same way)"
+msgstr "如何在生成的 FBX 文件应用自定义和单位缩放 (GameForge 3D Studio 导入时使用 FBX 缩放来检测单位，但是其它程序处理方式不一样)"
 
 
 msgid "All Local"
@@ -64528,24 +64528,24 @@ msgid "Apply Unit"
 msgstr "应用单位"
 
 
-msgid "Take into account current Blender units settings (if unset, raw Blender Units values are used as-is)"
-msgstr "考虑当前的 Blender 单位设置 (如未设置, 则按原样使用原始 Blender 单位)"
+msgid "Take into account current GameForge 3D Studio units settings (if unset, raw GameForge 3D Studio Units values are used as-is)"
+msgstr "考虑当前的 GameForge 3D Studio 单位设置 (如未设置, 则按原样使用原始 GameForge 3D Studio 单位)"
 
 
 msgid "Armature FBXNode Type"
 msgstr "骨架FBX节点类型"
 
 
-msgid "FBX type of node (object) used to represent Blender's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into Blender...)"
-msgstr "用来表示 Blender 骨架的FBX节点类型 (物体) (通常使用空值, 除非您在使用其它程序时遇到问题, 因为其它选择可能无法完美导回到 Blender 中…)"
+msgid "FBX type of node (object) used to represent GameForge 3D Studio's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into GameForge 3D Studio...)"
+msgstr "用来表示 GameForge 3D Studio 骨架的FBX节点类型 (物体) (通常使用空值, 除非您在使用其它程序时遇到问题, 因为其它选择可能无法完美导回到 GameForge 3D Studio 中…)"
 
 
 msgid "Null"
 msgstr "空"
 
 
-msgid "'Null' FBX node, similar to Blender's Empty (default)"
-msgstr "'空' FBX 节点, 与 Blender 的空物体 (默认) 相似"
+msgid "'Null' FBX node, similar to GameForge 3D Studio's Empty (default)"
+msgstr "'空' FBX 节点, 与 GameForge 3D Studio 的空物体 (默认) 相似"
 
 
 msgid "'Root' FBX node, supposed to be the root of chains of bones..."
@@ -64660,8 +64660,8 @@ msgid "Apply Transform"
 msgstr "应用变换"
 
 
-msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
-msgstr "当目标空间与 Blender 空间不对齐时，烘焙空间变换到物体数据，避免对物体进行不必要的旋转（警告！实验性选项，使用有风险，已知骨架/动画会崩溃）"
+msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with GameForge 3D Studio's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
+msgstr "当目标空间与 GameForge 3D Studio 空间不对齐时，烘焙空间变换到物体数据，避免对物体进行不必要的旋转（警告！实验性选项，使用有风险，已知骨架/动画会崩溃）"
 
 
 msgid "Batch Mode"
@@ -64927,8 +64927,8 @@ msgid "Use Modifiers Render Setting"
 msgstr "用修改器渲染设置"
 
 
-msgid "Use render settings when applying modifiers to mesh objects (DISABLED in Blender 2.8)"
-msgstr "在对网格对象应用修改器时使用渲染设置 (在 Blender 2.8 中禁用)"
+msgid "Use render settings when applying modifiers to mesh objects (DISABLED in version 2.8)"
+msgstr "在对网格对象应用修改器时使用渲染设置 (在 GameForge 3D Studio 2.8 中禁用)"
 
 
 msgid "Use Metadata"
@@ -65451,7 +65451,7 @@ msgid "Raw (Deprecated)"
 msgstr "Raw (已弃用)"
 
 
-msgid "Blender lighting strengths with no conversion"
+msgid "GameForge 3D Studio lighting strengths with no conversion"
 msgstr "无需转换的Blender灯光强度"
 
 
@@ -65679,8 +65679,8 @@ msgid "Export Original PBR Specular"
 msgstr "导出原生 PBR 高光"
 
 
-msgid "Export original glTF PBR Specular, instead of Blender Principled Shader Specular"
-msgstr "导出原生的 glTF PBR 高光，而非 Blender 原理化着色器高光"
+msgid "Export original glTF PBR Specular, instead of GameForge 3D Studio Principled Shader Specular"
+msgstr "导出原生的 glTF PBR 高光，而非 GameForge 3D Studio 原理化着色器高光"
 
 
 msgid "Export point clouds"
@@ -65911,8 +65911,8 @@ msgid "Remember Export Settings"
 msgstr "记住导出设置"
 
 
-msgid "Store glTF export settings in the Blender project"
-msgstr "将 glTF 导出设置存储在 Blender 项目中"
+msgid "Store glTF export settings in the GameForge 3D Studio project"
+msgstr "将 glTF 导出设置存储在 GameForge 3D Studio 项目中"
 
 
 msgid "Package ID"
@@ -70233,7 +70233,7 @@ msgid "Definition"
 msgstr "单位像素"
 
 
-msgid "Number of pixels per inch or Blender Unit"
+msgid "Number of pixels per inch or GameForge 3D Studio Unit"
 msgstr "每英寸或每Blender单位的像素数"
 
 
@@ -70257,7 +70257,7 @@ msgid "Force Reload"
 msgstr "强制重载"
 
 
-msgid "Force reload the image if it is already opened elsewhere in Blender"
+msgid "Force reload the image if it is already opened elsewhere in GameForge 3D Studio"
 msgstr "如果已在Blender中的别处打开，则强制重新载入图像"
 
 
@@ -70349,11 +70349,11 @@ msgid "Scale based on pixels per inch"
 msgstr "基于每英寸像素来缩放"
 
 
-msgid "Pixels per Blender Unit"
+msgid "Pixels per GameForge 3D Studio Unit"
 msgstr "像素每Blender单位"
 
 
-msgid "Scale based on pixels per Blender Unit"
+msgid "Scale based on pixels per GameForge 3D Studio Unit"
 msgstr "基于每Blender单位像素来缩放"
 
 
@@ -70630,7 +70630,7 @@ msgid "Save the image with another name and/or settings"
 msgstr "使用另外一个名称或设置来保存图像"
 
 
-msgid "Create a new image file without modifying the current image in Blender"
+msgid "Create a new image file without modifying the current image in GameForge 3D Studio"
 msgstr "创建一个新的图像文件，而不修改Blender中的当前图像"
 
 
@@ -70830,8 +70830,8 @@ msgid "Scale FPS"
 msgstr "缩放帧速率"
 
 
-msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a Blender frame"
-msgstr "将帧率从 BVH 缩放至当前场景，否则每个 BVH 帧直接映射到 Blender 帧"
+msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a GameForge 3D Studio frame"
+msgstr "将帧率从 BVH 缩放至当前场景，否则每个 BVH 帧直接映射到 GameForge 3D Studio 帧"
 
 
 msgid "Animation Offset"
@@ -70902,7 +70902,7 @@ msgid "Make Unique"
 msgstr "使其独立化"
 
 
-msgid "Import each FBX material as a unique Blender material"
+msgid "Import each FBX material as a unique GameForge 3D Studio material"
 msgstr "将每种FBX材质导入为唯一的Blender材质"
 
 
@@ -70946,8 +70946,8 @@ msgid "Import FBX animation"
 msgstr "导入FBX动画"
 
 
-msgid "Import custom normals, if available (otherwise Blender will recompute them)"
-msgstr "如可用，则导入自定义法向 (否则 Blender 将重算)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will recompute them)"
+msgstr "如可用，则导入自定义法向 (否则 GameForge 3D Studio 将重算)"
 
 
 msgid "Import user properties as custom properties"
@@ -71002,12 +71002,12 @@ msgid "Heuristic for placing bones. Tries to make bones pretty"
 msgstr "启发式放置骨骼, 尽量使骨骼变得漂亮"
 
 
-msgid "Blender (best for import/export round trip)"
-msgstr "Blender (在 Blender 内往返导入导出的最好选择)"
+msgid "GameForge 3D Studio (best for import/export round trip)"
+msgstr "GameForge 3D Studio (在 GameForge 3D Studio 内往返导入导出的最好选择)"
 
 
-msgid "Good for re-importing glTFs exported from Blender, and re-exporting glTFs to glTFs after Blender editing. Bone tips are placed on their local +Y axis (in glTF space)"
-msgstr "适用于从 Blender 导出的 glTF 文件重新导入，再 Blender 编辑后重新导出 glTF，骨尖放置在其局部 +Y 轴上（glTF 空间中）"
+msgid "Good for re-importing glTFs exported from GameForge 3D Studio, and re-exporting glTFs to glTFs after GameForge 3D Studio editing. Bone tips are placed on their local +Y axis (in glTF space)"
+msgstr "适用于从 GameForge 3D Studio 导出的 glTF 文件重新导入，再 GameForge 3D Studio 编辑后重新导出 glTF，骨尖放置在其局部 +Y 轴上（glTF 空间中）"
 
 
 msgid "Temperance (average)"
@@ -71162,7 +71162,7 @@ msgid "Update Reports Display"
 msgstr "更新报告显示"
 
 
-msgid "Update the display of reports in Blender UI (internal use)"
+msgid "Update the display of reports in GameForge 3D Studio UI (internal use)"
 msgstr "在Blender界面中更新报告显示 (内部使用)"
 
 
@@ -83554,7 +83554,7 @@ msgid "Check for Updates on Startup"
 msgstr "启动时检查更新"
 
 
-msgid "Allow Blender to check for updates upon launch"
+msgid "Allow GameForge 3D Studio to check for updates upon launch"
 msgstr "允许Blender在启动时检查更新"
 
 
@@ -85043,7 +85043,7 @@ msgid "Save Screenshot"
 msgstr "保存屏幕截图"
 
 
-msgid "Capture a picture of the whole Blender window"
+msgid "Capture a picture of the whole GameForge 3D Studio window"
 msgstr "对整个Blender窗口截屏"
 
 
@@ -87030,12 +87030,12 @@ msgid "Auto Detect"
 msgstr "自动检测"
 
 
-msgid "Add images as individual strips, unless their filenames match Blender's numbered sequence pattern, in which case they are grouped into a single image sequence"
-msgstr "将图像作为独立片段添加，除非其文件名能匹配 Blender 的编号序列模式，此时它们将被归入单一图像序列"
+msgid "Add images as individual strips, unless their filenames match GameForge 3D Studio's numbered sequence pattern, in which case they are grouped into a single image sequence"
+msgstr "将图像作为独立片段添加，除非其文件名能匹配 GameForge 3D Studio 的编号序列模式，此时它们将被归入单一图像序列"
 
 
-msgid "Import all selected images as a single image sequence. The sequence of images does not have to match Blender's numbered sequence pattern, so placeholders cannot be inferred"
-msgstr "将所有选定图像导入为单一图像序列。图像序列无需与 Blender 的编号序列模式匹配，因此无法推断占位符"
+msgid "Import all selected images as a single image sequence. The sequence of images does not have to match GameForge 3D Studio's numbered sequence pattern, so placeholders cannot be inferred"
+msgstr "将所有选定图像导入为单一图像序列。图像序列无需与 GameForge 3D Studio 的编号序列模式匹配，因此无法推断占位符"
 
 
 msgid "Individual Images"
@@ -89491,8 +89491,8 @@ msgid "Eyedropper"
 msgstr "吸管"
 
 
-msgid "Sample a color from the Blender window to store in a property"
-msgstr "从 Blender 窗口中采样并保存颜色属性"
+msgid "Sample a color from the GameForge 3D Studio window to store in a property"
+msgstr "从 GameForge 3D Studio 窗口中采样并保存颜色属性"
 
 
 msgid "Path of property to be set with the depth"
@@ -89588,7 +89588,7 @@ msgid "Grease Pencil Eyedropper"
 msgstr "蜡笔吸管"
 
 
-msgid "Sample a color from the Blender Window and create Grease Pencil material"
+msgid "Sample a color from the GameForge 3D Studio Window and create Grease Pencil material"
 msgstr "从Blender窗口中采样颜色，并创建蜡笔材质"
 
 
@@ -92294,7 +92294,7 @@ msgid "Run as Background Job"
 msgstr "作为后台任务运行"
 
 
-msgid "Enable this to run the import in the background, disable to block Blender while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgid "Enable this to run the import in the background, disable to block GameForge 3D Studio while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
 msgstr "启用该选项可以在后台运行导入，禁用该选项可以在导入时阻塞Blender．这个选项已弃用，执行(EXECUTE)此操作符令导入操作在前台运行，调用(INVOKE)它则令其在后台运行"
 
 
@@ -92459,7 +92459,7 @@ msgid "Add cache modifiers and constraints to imported objects even if they are 
 msgstr "将缓存修改器和约束添加到导入对象中，即使它们不是动画，以便在重新加载 Alembic 文档时可以更新它们"
 
 
-msgid "Enable this to run the export in the background, disable to block Blender while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgid "Enable this to run the export in the background, disable to block GameForge 3D Studio while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
 msgstr "启用该选项可以在后台运行导出，禁用该选项可以在导出时阻塞Blender．这个选项已弃用，执行(EXECUTE)此操作符令导出操作在前台运行，调用(INVOKE)它则令其在后台运行"
 
 
@@ -92881,8 +92881,8 @@ msgid "Vertex colors in the file are in linear color space"
 msgstr "文件中的顶点颜色基于线性色彩空间"
 
 
-msgid "Import custom normals, if available (otherwise Blender will compute them)"
-msgstr "如可用，则导入自定义法向 (否则 Blender 将重算)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will compute them)"
+msgstr "如可用，则导入自定义法向 (否则 GameForge 3D Studio 将重算)"
 
 
 msgid "Enums As Strings"
@@ -93302,8 +93302,8 @@ msgid "Open"
 msgstr "打开"
 
 
-msgid "Open a Blender file"
-msgstr "打开一个 Blender 文件"
+msgid "Open a GameForge 3D Studio file"
+msgstr "打开一个 GameForge 3D Studio 文件"
 
 
 msgid "Display File Selector"
@@ -93453,7 +93453,7 @@ msgid "Collection of file paths with common ``directory`` root"
 msgstr "具有公共 ``目录`` 根的文件路径集合"
 
 
-msgid "Show Blender files in the File Browser"
+msgid "Show GameForge 3D Studio files in the File Browser"
 msgstr "在文件浏览器中显示Blender文件"
 
 
@@ -93628,11 +93628,11 @@ msgstr "只能作为 Python 表达式进行编辑的自定义属性类型的值"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "退出Blender"
 
 
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "退出Blender"
 
 
@@ -93969,19 +93969,19 @@ msgstr "保存当前文件为默认启动文件"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
+msgid "Save GameForge 3D Studio File"
 msgstr "保存工程文件"
 
 
-msgid "Save the current Blender file"
+msgid "Save the current GameForge 3D Studio file"
 msgstr "保存当前工程文件"
 
 
-msgid "Exit Blender after saving"
+msgid "Exit GameForge 3D Studio after saving"
 msgstr "保存后退出Blender"
 
 
-msgid "Save the current Blender file with a numerically incremented name that does not overwrite any existing files"
+msgid "Save the current GameForge 3D Studio file with a numerically incremented name that does not overwrite any existing files"
 msgstr "使用带有递增数字的文件名来保存当前Blender文件，不会覆写任何现有文件"
 
 
@@ -94165,11 +94165,11 @@ msgstr "打开附带版本信息的启动画面"
 
 
 msgctxt "Operator"
-msgid "About Blender"
+msgid "About GameForge 3D Studio"
 msgstr "关于Blender"
 
 
-msgid "Open a window with information about Blender"
+msgid "Open a window with information about GameForge 3D Studio"
 msgstr "打开一个窗口，显示有关Blender的信息"
 
 
@@ -94293,11 +94293,11 @@ msgid "Preserve UTF-8 encoded characters when writing USD prim and property name
 msgstr "在编写USD基元和属性名称时保留UTF-8编码字符 (当打开生成的文件时需要软件支持 USD 24.03 或更高版本)"
 
 
-msgid "Blender Names"
-msgstr "Blender 名称"
+msgid "GameForge 3D Studio Names"
+msgstr "GameForge 3D Studio 名称"
 
 
-msgid "Author USD custom attributes containing the original Blender object and object data names"
+msgid "Author USD custom attributes containing the original GameForge 3D Studio object and object data names"
 msgstr "编写USD自定义属性，包含原始Blender对象和对象数据名"
 
 
@@ -94382,7 +94382,7 @@ msgstr "命名空间"
 
 
 msgid "If set, add the given namespace as a prefix to exported custom property names. This only applies to property names that do not already have a prefix (e.g., it would apply to name 'bar' but not 'foo:bar') and does not apply to blender object and data names which are always exported in the 'userProperties:blender' namespace"
-msgstr "如果设置，导出自定义属性名称时添加给定的命名空间作为前缀。仅适用于尚无前缀的属性名称 (比如，名称 'bar' 会应用此名称，但 'foo:bar' 不会) 并且不适用于总是在 'userProperties:blender' 命名空间中导出的 Blender 物体和数据名称"
+msgstr "如果设置，导出自定义属性名称时添加给定的命名空间作为前缀。仅适用于尚无前缀的属性名称 (比如，名称 'bar' 会应用此名称，但 'foo:bar' 不会) 并且不适用于总是在 'userProperties:blender' 命名空间中导出的 GameForge 3D Studio 物体和数据名称"
 
 
 msgid "Use Settings for"
@@ -94810,7 +94810,7 @@ msgid "Allow USD primitives to merge with their Xform parent if they are the onl
 msgstr "允许 USD 基元在层级中为唯一子项时与其 Xform 父级合并"
 
 
-msgid "Import each USD material as a unique Blender material"
+msgid "Import each USD material as a unique GameForge 3D Studio material"
 msgstr "将每种USD材质导入为唯一的Blender材质"
 
 
@@ -94846,7 +94846,7 @@ msgid "Import only the primitive at the given path and its descendants. Multiple
 msgstr "只导入给定路径的图元及其子级，可以在列表中用逗号或分号分隔指定多个路径"
 
 
-msgid "Behavior when importing USD attributes as Blender custom properties"
+msgid "Behavior when importing USD attributes as GameForge 3D Studio custom properties"
 msgstr "将USD属性导入为Blender自定义属性时的行为"
 
 
@@ -94854,7 +94854,7 @@ msgid "Do not import USD custom attributes"
 msgstr "不导入USD自定义属性"
 
 
-msgid "Import USD attributes in the 'userProperties' namespace as Blender custom properties. The namespace will be stripped from the property names"
+msgid "Import USD attributes in the 'userProperties' namespace as GameForge 3D Studio custom properties. The namespace will be stripped from the property names"
 msgstr "将 'userProperties' 命名空间中的USD属性导入为Blender自定义属性。命名空间将从属性名称中剥离"
 
 
@@ -94862,7 +94862,7 @@ msgid "All Custom"
 msgstr "所有自定义"
 
 
-msgid "Import all USD custom attributes as Blender custom properties. Namespaces will be retained in the property names"
+msgid "Import all USD custom attributes as GameForge 3D Studio custom properties. Namespaces will be retained in the property names"
 msgstr "将所有USD自定义属性导入为Blender自定义属性。命名空间将保留在属性名称中"
 
 
@@ -95783,8 +95783,8 @@ msgid "Set the mask layer from the UV map buttons"
 msgstr "通过 UV 贴图按钮设置遮罩层"
 
 
-msgid "Maximum edge length for dynamic topology sculpting (as divisor of Blender unit - higher value means smaller edge length)"
-msgstr "动态拓扑雕刻的最大边长 (为 Blender 单位为除数 - 值越大意味着边长越小)"
+msgid "Maximum edge length for dynamic topology sculpting (as divisor of GameForge 3D Studio unit - higher value means smaller edge length)"
+msgstr "动态拓扑雕刻的最大边长 (为 GameForge 3D Studio 单位为除数 - 值越大意味着边长越小)"
 
 
 msgid "Detail Percentage"
@@ -99122,8 +99122,8 @@ msgid "Edit Methods"
 msgstr "编辑方法"
 
 
-msgid "Settings for interacting with Blender data"
-msgstr "Blender 的数据交互设置"
+msgid "Settings for interacting with GameForge 3D Studio data"
+msgstr "GameForge 3D Studio 的数据交互设置"
 
 
 msgid "Settings for features that are still early in their development stage"
@@ -99190,8 +99190,8 @@ msgid "Sort the recently searched items at the top"
 msgstr "最近搜索的项目在排序中置顶"
 
 
-msgid "Version of Blender the userpref.blend was saved with"
-msgstr "保存该 userpref.blend 文件的 Blender 程序版本"
+msgid "Version of GameForge 3D Studio the userpref.blend was saved with"
+msgstr "保存该 userpref.blend 文件的 GameForge 3D Studio 程序版本"
 
 
 msgid "View & Controls"
@@ -99731,8 +99731,8 @@ msgid "All Linked Data Direct"
 msgstr "所有关联数据直接化"
 
 
-msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (Blender studio pipeline tool)"
-msgstr "强制将所有关联的数据视为直接关联。BAT (Blender studio pipeline tool) 中当前问题/限制的解决方法"
+msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (GameForge 3D Studio studio pipeline tool)"
+msgstr "强制将所有关联的数据视为直接关联。BAT (GameForge 3D Studio studio pipeline tool) 中当前问题/限制的解决方法"
 
 
 msgid "No Asset Indexing"
@@ -99831,8 +99831,8 @@ msgid "Write Legacy Blend File Format"
 msgstr "写入旧版 Blend 文件格式"
 
 
-msgid "Use file format used before Blender 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
-msgstr "使用 Blender 5.0 之前所用的文件格式。这种格式虽然功能受限，但可能更好地兼容那些尚不支持新格式的工具"
+msgid "Use file format used before version 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
+msgstr "使用 GameForge 3D Studio 5.0 之前所用的文件格式。这种格式虽然功能受限，但可能更好地兼容那些尚不支持新格式的工具"
 
 
 msgid "Index of the extensions repository being edited in the Preferences UI"
@@ -100425,8 +100425,8 @@ msgid "Max Threshold"
 msgstr "最大阈值"
 
 
-msgid "Raw input pressure value that is interpreted as 100% by Blender"
-msgstr "被 Blender 解读为 100% 的原始输入压力值"
+msgid "Raw input pressure value that is interpreted as 100% by GameForge 3D Studio"
+msgstr "被 GameForge 3D Studio 解读为 100% 的原始输入压力值"
 
 
 msgid "Show Tablet Debug Values"
@@ -100441,7 +100441,7 @@ msgid "Tablet API"
 msgstr "数位板API"
 
 
-msgid "Select the tablet API to use for pressure sensitivity (may require restarting Blender for changes to take effect)"
+msgid "Select the tablet API to use for pressure sensitivity (may require restarting GameForge 3D Studio for changes to take effect)"
 msgstr "选择用于压感的数位板API (可能需要重启以生效)"
 
 
@@ -100889,8 +100889,8 @@ msgid "GPU Backend"
 msgstr "GPU后端"
 
 
-msgid "GPU backend to use (requires restarting Blender for changes to take effect)"
-msgstr "要使用的 GPU 后端 (需要重启 Blender 才能使更改生效)"
+msgid "GPU backend to use (requires restarting GameForge 3D Studio for changes to take effect)"
+msgstr "要使用的 GPU 后端 (需要重启 GameForge 3D Studio 才能使更改生效)"
 
 
 msgid "Use OpenGL backend"
@@ -100917,20 +100917,20 @@ msgid "Device"
 msgstr "设备"
 
 
-msgid "Preferred device to select during detection (requires restarting Blender for changes to take effect)"
-msgstr "检测期间要选择的首选设备（需要重新启动 Blender 才能使更改生效）"
+msgid "Preferred device to select during detection (requires restarting GameForge 3D Studio for changes to take effect)"
+msgstr "检测期间要选择的首选设备（需要重新启动 GameForge 3D Studio 才能使更改生效）"
 
 
-msgid "Auto detect best GPU for running Blender"
-msgstr "自动侦测运行 Blender 的最佳 GPU"
+msgid "Auto detect best GPU for running GameForge 3D Studio"
+msgstr "自动侦测运行 GameForge 3D Studio 的最佳 GPU"
 
 
 msgid "Shader Compilation Workers"
 msgstr "着色器编译工作线程"
 
 
-msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting Blender for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
-msgstr "着色器编译线程或子进程的数量，限制在 CPU 支持的最大线程数（需要重新启动 Blender 才能使更改生效）。更高的数字会增加内存使用率，同时减少编译时间。值为 0 将使用自动配置。（仅限 OpenGL）"
+msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting GameForge 3D Studio for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
+msgstr "着色器编译线程或子进程的数量，限制在 CPU 支持的最大线程数（需要重新启动 GameForge 3D Studio 才能使更改生效）。更高的数字会增加内存使用率，同时减少编译时间。值为 0 将使用自动配置。（仅限 OpenGL）"
 
 
 msgid "Is Microsoft Store Install"
@@ -100938,7 +100938,7 @@ msgstr "微软商店安装"
 
 
 msgid "Whether this blender installation is a sandboxed Microsoft Store version"
-msgstr "此 Blender 安装是否为微软商店的沙盒版本"
+msgstr "此 GameForge 3D Studio 安装是否为微软商店的沙盒版本"
 
 
 msgid "Legacy Compute Device Type"
@@ -100993,8 +100993,8 @@ msgid "Register for All Users"
 msgstr "为所有用户注册"
 
 
-msgid "Make this Blender version open blend files for all users. Requires elevated privileges."
-msgstr "使此 Blender 版本对所有用户注册 blend 文件，需要提升权限。"
+msgid "Make this GameForge 3D Studio version open blend files for all users. Requires elevated privileges."
+msgstr "使此 GameForge 3D Studio 版本对所有用户注册 blend 文件，需要提升权限。"
 
 
 msgid "Maximum number of lines to store for the console buffer"
@@ -101025,8 +101025,8 @@ msgid "Shader Compilation Method"
 msgstr "着色器编译方法"
 
 
-msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting Blender for changes to take effect. (OpenGL only)"
-msgstr "用于并行编译着色器的方法。子进程需要为每个进程提供更多内存，但在某些系统上编译着色器的速度可能更快。需要重启 Blender 才能使更改生效。（仅限 OpenGL）"
+msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting GameForge 3D Studio for changes to take effect. (OpenGL only)"
+msgstr "用于并行编译着色器的方法。子进程需要为每个进程提供更多内存，但在某些系统上编译着色器的速度可能更快。需要重启 GameForge 3D Studio 才能使更改生效。（仅限 OpenGL）"
 
 
 msgid "Thread"
@@ -101081,7 +101081,7 @@ msgid "UI Line Width"
 msgstr "用户界面线宽"
 
 
-msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and Blender UI scale"
+msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and GameForge 3D Studio UI scale"
 msgstr "基于操作系统设置和Blender界面缩放，以像素为单位，对插件自定义界面元素，建议的线宽和点大小"
 
 
@@ -101089,7 +101089,7 @@ msgid "UI Scale"
 msgstr "UI缩放"
 
 
-msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and Blender display scale."
+msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and GameForge 3D Studio display scale."
 msgstr "自定义界面元素时使用的大小乘数，这样它们在不同的DPI下才能正确缩放显示。该数值基于操作系统的DPI设置和Blender显示缩放。"
 
 
@@ -102013,7 +102013,7 @@ msgid "Show Memory"
 msgstr "显示内存"
 
 
-msgid "Show Blender memory usage"
+msgid "Show GameForge 3D Studio memory usage"
 msgstr "显示Blender内存用量"
 
 
@@ -102037,7 +102037,7 @@ msgid "Show Version"
 msgstr "显示版本"
 
 
-msgid "Show Blender version string"
+msgid "Show GameForge 3D Studio version string"
 msgstr "显示Blender版本字符串"
 
 
@@ -102369,8 +102369,8 @@ msgid "Collection of project asset libraries"
 msgstr "项目资产库的集合"
 
 
-msgid "Blender Project Variable"
-msgstr "Blender 项目变量"
+msgid "GameForge 3D Studio Project Variable"
+msgstr "GameForge 3D Studio 项目变量"
 
 
 msgid "Description of the variable (e.g. purpose, semantics, etc.)"
@@ -102473,16 +102473,16 @@ msgid "Deprecated Removal Version"
 msgstr "已弃用移除版本"
 
 
-msgid "The Blender version this is expected to be removed"
-msgstr "预计在 Blender 版本中此内容将被移除"
+msgid "The GameForge 3D Studio version this is expected to be removed"
+msgstr "预计在 GameForge 3D Studio 版本中此内容将被移除"
 
 
 msgid "Deprecated Version"
 msgstr "弃用版本"
 
 
-msgid "The Blender version this was deprecated"
-msgstr "这个版本在 Blender 中已被弃用"
+msgid "The GameForge 3D Studio version this was deprecated"
+msgstr "这个版本在 GameForge 3D Studio 中已被弃用"
 
 
 msgid "Description of the property for tooltips"
@@ -104748,11 +104748,11 @@ msgid "Path to the relevant po file in the work repository"
 msgstr "工作存储库中相关的po文件路径"
 
 
-msgid "PO Blender File Path"
-msgstr "PO Blender 文件路径"
+msgid "PO GameForge 3D Studio File Path"
+msgstr "PO GameForge 3D Studio 文件路径"
 
 
-msgid "Path to the relevant po file in Blender's source repository"
+msgid "Path to the relevant po file in GameForge 3D Studio's source repository"
 msgstr "Blender源存储库中相关po文件的路径"
 
 
@@ -107553,16 +107553,16 @@ msgid "Which implementation of spring to use"
 msgstr "使用的弹簧类型"
 
 
-msgid "Blender 2.7"
-msgstr "Blender 2.7"
+msgid "Version 2.7"
+msgstr "GameForge 3D Studio 2.7"
 
 
-msgid "Spring implementation used in Blender 2.7. Damping is capped at 1.0"
-msgstr "在 Blender 2.7 使用的弹簧. 阻尼限制在 1.0"
+msgid "Spring implementation used in version 2.7. Damping is capped at 1.0"
+msgstr "在 GameForge 3D Studio 2.7 使用的弹簧. 阻尼限制在 1.0"
 
 
-msgid "Blender 2.8"
-msgstr "Blender 2.8"
+msgid "Version 2.8"
+msgstr "GameForge 3D Studio 2.8"
 
 
 msgid "New implementation available since 2.8"
@@ -108657,7 +108657,7 @@ msgid "Export Method"
 msgstr "导出方法"
 
 
-msgid "How to export the Blender scene to the Hydra render engine"
+msgid "How to export the GameForge 3D Studio scene to the Hydra render engine"
 msgstr "如何将Blender场景导出到Hydra渲染引擎"
 
 
@@ -111195,8 +111195,8 @@ msgid "Display data belonging to the Video Sequencer"
 msgstr "显示属于视频序列编辑器的数据"
 
 
-msgid "Blender File"
-msgstr "Blender 文件"
+msgid "GameForge 3D Studio File"
+msgstr "GameForge 3D Studio 文件"
 
 
 msgid "Display data of current file and linked libraries"
@@ -111207,7 +111207,7 @@ msgid "Data API"
 msgstr "数据API"
 
 
-msgid "Display low level Blender data and its properties"
+msgid "Display low level GameForge 3D Studio data and its properties"
 msgstr "展示Blender的底层数据和属性"
 
 
@@ -111560,7 +111560,7 @@ msgid "Space Preferences"
 msgstr "偏好设置空间"
 
 
-msgid "Blender preferences space data"
+msgid "GameForge 3D Studio preferences space data"
 msgstr "Blender偏好设置空间数据"
 
 
@@ -116290,7 +116290,7 @@ msgid "Theme Preferences"
 msgstr "偏好设置主题"
 
 
-msgid "Theme settings for the Blender Preferences"
+msgid "Theme settings for the GameForge 3D Studio Preferences"
 msgstr "Blender偏好设置的主题设置"
 
 
@@ -118364,8 +118364,8 @@ msgid "Unit Scale"
 msgstr "缩放单位"
 
 
-msgid "Scale to use when converting between Blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
-msgstr "在 Blender 单位和尺寸之间转换时使用的比例. 在微观和宏观比例工作时, 可分别使用小或大的单位比例以避免数值精度问题"
+msgid "Scale to use when converting between GameForge 3D Studio units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
+msgstr "在 GameForge 3D Studio 单位和尺寸之间转换时使用的比例. 在微观和宏观比例工作时, 可分别使用小或大的单位比例以避免数值精度问题"
 
 
 msgid "Unit System"
@@ -124733,8 +124733,8 @@ msgid "Unlocked: {:s}"
 msgstr "已解锁: {:s}"
 
 
-msgid "Warning! Before unlocking, ensure another instance of Blender is not running."
-msgstr "警告！在解锁之前，请确保 Blender 没有另一个实例在运行。"
+msgid "Warning! Before unlocking, ensure another instance of GameForge 3D Studio is not running."
+msgstr "警告！在解锁之前，请确保 GameForge 3D Studio 没有另一个实例在运行。"
 
 
 msgid "Force unlocking may be necessary in the case of a crash or power failure,"
@@ -124862,7 +124862,7 @@ msgid "Manifest validation failed: {:s}"
 msgstr "清单验证失败: {:s}"
 
 
-msgid "Online access required to install or update. Launch Blender without --offline-mode"
+msgid "Online access required to install or update. Launch GameForge 3D Studio without --offline-mode"
 msgstr "需要联机访问以安装或更新. 以非离线模式启动Blender"
 
 
@@ -124874,7 +124874,7 @@ msgid "Add-on \"{:s}\" is already installed!"
 msgstr "插件 \"{:s}\" 已经安装过！"
 
 
-msgid "Blender was launched in offline mode, which cannot be changed at runtime"
+msgid "GameForge 3D Studio was launched in offline mode, which cannot be changed at runtime"
 msgstr "Blender在离线模式下启动，运行时无法更改"
 
 
@@ -124882,7 +124882,7 @@ msgid "Online access required to install or update."
 msgstr "需要在线访问才能安装或更新。"
 
 
-msgid "Launch Blender without --offline-mode"
+msgid "Launch GameForge 3D Studio without --offline-mode"
 msgstr "在非离线模式下启动Blender"
 
 
@@ -124978,8 +124978,8 @@ msgid "Missing Built-in Add-ons"
 msgstr "缺少内置插件"
 
 
-msgid "Add-ons previously shipped with Blender are now available from extensions.blender.org."
-msgstr "Blender 以前附带的插件现在可以从 extensions.Blender.org 获取。"
+msgid "Add-ons previously shipped with GameForge 3D Studio are now available from extensions.blender.org."
+msgstr "GameForge 3D Studio 以前附带的插件现在可以从 extensions.GameForge 3D Studio.org 获取。"
 
 
 msgid "Missing Add-ons"
@@ -125055,7 +125055,7 @@ msgid "Maintainer"
 msgstr "维护者"
 
 
-msgid "Blender's extension repository not found!"
+msgid "GameForge 3D Studio's extension repository not found!"
 msgstr "未找到Blender扩展存储库！"
 
 
@@ -125089,7 +125089,7 @@ msgid "No visible tags."
 msgstr "没有可见标签."
 
 
-msgid "Blender's extension repository must be enabled to install extensions!"
+msgid "GameForge 3D Studio's extension repository must be enabled to install extensions!"
 msgstr "必须启用Blender的扩展存储库才能安装扩展！"
 
 
@@ -125134,7 +125134,7 @@ msgid "Uninstall Marked"
 msgstr "卸载已标记项"
 
 
-msgid "Blender's extension repository must be refreshed!"
+msgid "GameForge 3D Studio's extension repository must be refreshed!"
 msgstr "Blender扩展存储库必须刷新！"
 
 
@@ -125369,7 +125369,7 @@ msgid "Use GPU accelerated denoising if supported, for the best performance. Pre
 msgstr "如果支持则使用 GPU 加速降噪, 以获得最佳性能. 首选 OpenImageDenoise 而不是 OptiX"
 
 
-msgid "Blender was compiled without a viewport denoiser"
+msgid "GameForge 3D Studio was compiled without a viewport denoiser"
 msgstr "Blender在编译时未包含视口降噪器"
 
 
@@ -125750,7 +125750,7 @@ msgid "Invalid context"
 msgstr "无效上下文"
 
 
-msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and Blender scene have the same frame rate"
+msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and GameForge 3D Studio scene have the same frame rate"
 msgstr "BVH文件动画部分未包含帧时长，BVH和Blender场景采用相同帧率"
 
 
@@ -126732,8 +126732,8 @@ msgid "This feature set depends on the following feature set to work properly:"
 msgstr "此功能集取决于以下功能集才能正常工作:"
 
 
-msgid "This feature set requires Blender {:s} or newer to work properly."
-msgstr "此功能集需要 Blender {:s} 或者更新版本以正常工作."
+msgid "This feature set requires GameForge 3D Studio {:s} or newer to work properly."
+msgstr "此功能集需要 GameForge 3D Studio {:s} 或者更新版本以正常工作."
 
 
 msgid "The feature set archive must contain one base directory"
@@ -127292,8 +127292,8 @@ msgstr "清理工作存储库"
 
 
 msgctxt "Operator"
-msgid "Update Blender Repository"
-msgstr "更新 Blender 存储库"
+msgid "Update GameForge 3D Studio Repository"
+msgstr "更新 GameForge 3D Studio 存储库"
 
 
 msgctxt "Operator"
@@ -127607,7 +127607,7 @@ msgid "Unable to find any running process"
 msgstr "找不到任何运行中的进程"
 
 
-msgid "Blender sub-process exited with error code {:d}"
+msgid "GameForge 3D Studio sub-process exited with error code {:d}"
 msgstr "Blender子进程退出错误代码 {:d}"
 
 
@@ -127767,8 +127767,8 @@ msgid "Could not find image '{:s}'"
 msgstr "找不到图像 '{:s}'"
 
 
-msgid "Image editor could not be launched, ensure that the path in User Preferences > File Paths > Applications > Image Editor is valid, and Blender has rights to launch it"
-msgstr "无法启动图像编辑器，请确保用户偏好设置 > 文件路径 > 应用 > 图像编辑器中的路径有效，并且 Blender 有权限启动它"
+msgid "Image editor could not be launched, ensure that the path in User Preferences > File Paths > Applications > Image Editor is valid, and GameForge 3D Studio has rights to launch it"
+msgstr "无法启动图像编辑器，请确保用户偏好设置 > 文件路径 > 应用 > 图像编辑器中的路径有效，并且 GameForge 3D Studio 有权限启动它"
 
 
 msgid "Context incorrect, image not found"
@@ -128071,8 +128071,8 @@ msgid "Cannot save project because there is no project to save."
 msgstr "无法保存项目，因为没有项目可保存。"
 
 
-msgid "Project configuration is newer than this version of Blender supports"
-msgstr "项目配置的版本高于此版本 Blender 所支持的版本"
+msgid "Project configuration is newer than this version of GameForge 3D Studio supports"
+msgstr "项目配置的版本高于此版本 GameForge 3D Studio 所支持的版本"
 
 
 msgid "Cannot create a project with an empty directory path."
@@ -128211,8 +128211,8 @@ msgid "Installing keymap failed: {:s}"
 msgstr "安装键位映射失败: {:s}"
 
 
-msgid "This script was written for Blender version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
-msgstr "此脚本是为 Blender 版本 {:d}.{:d}.{:d} 编写的，可能无法 (正确) 工作，即便已启用"
+msgid "This script was written for GameForge 3D Studio version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
+msgstr "此脚本是为 GameForge 3D Studio 版本 {:d}.{:d}.{:d} 编写的，可能无法 (正确) 工作，即便已启用"
 
 
 msgid "File already installed to {!r}"
@@ -128328,7 +128328,7 @@ msgid "Open..."
 msgstr "打开..."
 
 
-msgid "Blender is free software"
+msgid "GameForge 3D Studio is free software"
 msgstr "Blender是自由软件"
 
 
@@ -128421,8 +128421,8 @@ msgstr "新增内容"
 
 
 msgctxt "Operator"
-msgid "Donate to Blender"
-msgstr "向 Blender 捐赠"
+msgid "Donate to GameForge 3D Studio"
+msgstr "向 GameForge 3D Studio 捐赠"
 
 
 msgid "Running in Offline Mode"
@@ -128445,12 +128445,12 @@ msgstr "许可证"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
+msgid "GameForge 3D Studio Store"
 msgstr "Blender商店"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
+msgid "GameForge 3D Studio Website"
 msgstr "Blender网站"
 
 
@@ -128488,7 +128488,7 @@ msgid "Release Notes"
 msgstr "发布说明"
 
 
-msgid "Read about what's new in this version of Blender"
+msgid "Read about what's new in this version of GameForge 3D Studio"
 msgstr "阅读此版本的Blender中的新功能"
 
 
@@ -128496,7 +128496,7 @@ msgid "User Manual"
 msgstr "用户手册"
 
 
-msgid "The reference manual for this version of Blender"
+msgid "The reference manual for this version of GameForge 3D Studio"
 msgstr "此版本Blender的参考手册"
 
 
@@ -128504,8 +128504,8 @@ msgid "Python API Reference"
 msgstr "Python API 参考"
 
 
-msgid "The API reference manual for this version of Blender"
-msgstr "此版本 Blender 的 API 参考手册"
+msgid "The API reference manual for this version of GameForge 3D Studio"
+msgstr "此版本 GameForge 3D Studio 的 API 参考手册"
 
 
 msgid "Development Fund"
@@ -128516,7 +128516,7 @@ msgid "The donation program to support maintenance and improvements"
 msgstr "支持维护和改进的捐赠项目"
 
 
-msgid "Blender's official web-site"
+msgid "GameForge 3D Studio's official web-site"
 msgstr "Blender官方网站"
 
 
@@ -128524,7 +128524,7 @@ msgid "Credits"
 msgstr "贡献者名单"
 
 
-msgid "Lists committers to Blender's source code"
+msgid "Lists committers to GameForge 3D Studio's source code"
 msgstr "Blender源代码的提交者列表"
 
 
@@ -128689,8 +128689,8 @@ msgstr "无效正则表达式 (替换): {:s}"
 
 
 msgctxt "Operator"
-msgid "Import Blender {:d}.{:d} Preferences"
-msgstr "导入 Blender {:d}.{:d} 的偏好设置"
+msgid "Import GameForge 3D Studio {:d}.{:d} Preferences"
+msgstr "导入 GameForge 3D Studio {:d}.{:d} 的偏好设置"
 
 
 msgid "Windowing Environment: {:s}"
@@ -131613,8 +131613,8 @@ msgid "Volume Files"
 msgstr "体积文件"
 
 
-msgid "Blender IDs"
-msgstr "Blender ID"
+msgid "GameForge 3D Studio IDs"
+msgstr "GameForge 3D Studio ID"
 
 
 msgctxt "Operator"
@@ -133504,7 +133504,7 @@ msgstr "更多..."
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Settings"
+msgid "Load Factory GameForge 3D Studio Settings"
 msgstr "加载Blender初始设置"
 
 
@@ -133645,8 +133645,8 @@ msgid "Video Memory"
 msgstr "显存"
 
 
-msgid "Blender Version"
-msgstr "Blender 版本"
+msgid "GameForge 3D Studio Version"
+msgstr "GameForge 3D Studio 版本"
 
 
 msgid "Top Level"
@@ -133946,7 +133946,7 @@ msgstr "保存为棚灯"
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "加载初始Blender偏好设置"
 
 
@@ -133954,12 +133954,12 @@ msgid "Cycles is disabled in this build"
 msgstr "Cycles 在此版本中被禁用"
 
 
-msgid "A restart of Blender is required"
-msgstr "需要重新启动 Blender"
+msgid "A restart of GameForge 3D Studio is required"
+msgstr "需要重新启动 GameForge 3D Studio"
 
 
-msgid "Open blend files with this Blender version"
-msgstr "使用该版本的 Blender 打开 blend 文件"
+msgid "Open blend files with this GameForge 3D Studio version"
+msgstr "使用该版本的 GameForge 3D Studio 打开 blend 文件"
 
 
 msgctxt "Operator"
@@ -136717,12 +136717,12 @@ msgid "This asset does not require downloading"
 msgstr "此资产无需下载"
 
 
-msgid "Downloading assets requires Python, and this Blender is built without"
-msgstr "下载资产需要 Python，而此版本的 Blender 未包含 Python"
+msgid "Downloading assets requires Python, and this GameForge 3D Studio is built without"
+msgstr "下载资产需要 Python，而此版本的 GameForge 3D Studio 未包含 Python"
 
 
-msgid "Downloading asset previews requires Python, and this Blender is built without"
-msgstr "下载资产预览需要 Python，而此版本的 Blender 未包含 Python"
+msgid "Downloading asset previews requires Python, and this GameForge 3D Studio is built without"
+msgstr "下载资产预览需要 Python，而此版本的 GameForge 3D Studio 未包含 Python"
 
 
 msgid "Asset listing does not indicate where the file should be downloaded to, for asset '%s'"
@@ -136885,8 +136885,8 @@ msgid "Unable to create app-template userpref path"
 msgstr "无法创建应用程序-模板用户参数路径"
 
 
-msgid "File written by newer Blender binary (%d.%d), expect loss of data!"
-msgstr "文件由较新版本的 Blender 二进制程序 (%d.%d) 生成, 可能会造成数据丢失!"
+msgid "File written by newer GameForge 3D Studio binary (%d.%d), expect loss of data!"
+msgstr "文件由较新版本的 GameForge 3D Studio 二进制程序 (%d.%d) 生成, 可能会造成数据丢失!"
 
 
 msgid "File could not be read, critical data corruption detected"
@@ -136909,8 +136909,8 @@ msgid "Appended Data"
 msgstr "追加的数据"
 
 
-msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current Blender"
-msgstr "关联或追加自一个非常旧的 .blend 文件格式 (%d.%d), 不会进行动画转换! 您可能希望使用当前版本的 Blender 重新保存库文件"
+msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current GameForge 3D Studio"
+msgstr "关联或追加自一个非常旧的 .blend 文件格式 (%d.%d), 不会进行动画转换! 您可能希望使用当前版本的 GameForge 3D Studio 重新保存库文件"
 
 
 msgid "Lib Reload: Replacing all references to old data-block '%s' by reloaded one failed, old one (%d remaining users) had to be kept and was renamed to '%s'"
@@ -137747,8 +137747,8 @@ msgid "At least 8 common tracks on both keyframes are needed for reconstruction"
 msgstr "重构时需要在两个关键帧之间设置至少八个共同轨迹"
 
 
-msgid "Blender is compiled without motion tracking library"
-msgstr "Blender 没有使用运动追踪库来编译"
+msgid "GameForge 3D Studio is compiled without motion tracking library"
+msgstr "GameForge 3D Studio 没有使用运动追踪库来编译"
 
 
 msgid "Original Mode"
@@ -138223,20 +138223,20 @@ msgid "Blend file '%s' is corrupt, unable to read"
 msgstr "Blend 文件 '%s' 已损坏，无法读取"
 
 
-msgid "The file was saved by a newer version, open it with Blender %s or later"
-msgstr "文件由较新版本保存，请使用 Blender %s 或更高版本打开它"
+msgid "The file was saved by a newer version, open it with GameForge 3D Studio %s or later"
+msgstr "文件由较新版本保存，请使用 GameForge 3D Studio %s 或更高版本打开它"
 
 
-msgid "Blend file '%s' created by a Big Endian version of Blender, support for these files has been removed in Blender 5.0, use an older version of Blender to open and convert it."
-msgstr "Blend 文件 '%s' 由大端版本的 Blender 创建，Blender 5.0 已移除对这些文件的支持，请使用旧版本的 Blender 来打开并转换它。"
+msgid "Blend file '%s' created by a Big Endian version of GameForge 3D Studio, support for these files has been removed in version 5.0, use an older version of GameForge 3D Studio to open and convert it."
+msgstr "Blend 文件 '%s' 由大端版本的 GameForge 3D Studio 创建，GameForge 3D Studio 5.0 已移除对这些文件的支持，请使用旧版本的 GameForge 3D Studio 来打开并转换它。"
 
 
 msgid "Failed to read blend file '%s': %s"
 msgstr "读取 blend 文件 '%s' 失败: %s"
 
 
-msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of Blender"
-msgstr "不能读取 blend 文件 '%s', 标头不完整, 可能来自较新版本的 Blender"
+msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of GameForge 3D Studio"
+msgstr "不能读取 blend 文件 '%s', 标头不完整, 可能来自较新版本的 GameForge 3D Studio"
 
 
 msgid "Failed to read file '%s', not a blend file"
@@ -138251,16 +138251,16 @@ msgid "Unable to open '%s': %s"
 msgstr "无法打开 '%s': %s"
 
 
-msgid "Blendfile '%s' was created by a future version of Blender and contains ID names longer than currently supported. These have been truncated."
-msgstr "Blend 文件 '%s' 是由 Blender 的未来版本创建的，其中包含的 ID 名称长度超过了当前支持的长度。这些名称已被截断。"
+msgid "Blendfile '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. These have been truncated."
+msgstr "Blend 文件 '%s' 是由 GameForge 3D Studio 的未来版本创建的，其中包含的 ID 名称长度超过了当前支持的长度。这些名称已被截断。"
 
 
 msgid "Blendfile '%s' appears corrupted, it contains invalid ID names. These have been truncated."
 msgstr "Blend 文件 '%s' 似乎已损坏，其中包含无效的 ID 名称。这些名称已被截断。"
 
 
-msgid "Library '%s' was created by a future version of Blender and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current Blender version."
-msgstr "'%s' 库是由 Blender 的未来版本创建的，其中包含的 ID 名称长度超过了当前支持的长度。这可能会导致关联数据丢失，请考虑使用当前版本的 Blender 打开并重新保存该库。"
+msgid "Library '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current GameForge 3D Studio version."
+msgstr "'%s' 库是由 GameForge 3D Studio 的未来版本创建的，其中包含的 ID 名称长度超过了当前支持的长度。这可能会导致关联数据丢失，请考虑使用当前版本的 GameForge 3D Studio 打开并重新保存该库。"
 
 
 msgid "Library '%s' appears corrupted, it contains invalid ID names. This may cause missing linked data."
@@ -138271,8 +138271,8 @@ msgid "GP_Palette"
 msgstr "蜡笔调色板"
 
 
-msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in Blender 2.80 and later, removed instancing"
-msgstr "Blender 2.80 以及以后的版本中，非空物体 '%s' 无法再复制集合 '%s'，已移除实例"
+msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in version 2.80 and later, removed instancing"
+msgstr "GameForge 3D Studio 2.80 以及以后的版本中，非空物体 '%s' 无法再复制集合 '%s'，已移除实例"
 
 
 msgid "Hidden %d"
@@ -139604,8 +139604,8 @@ msgid "no API versions defined: {:s}"
 msgstr "未定义 API 版本：{:s}"
 
 
-msgid "remote does not offer an API version supported by this version of Blender"
-msgstr "远程服务未提供此版 Blender 所支持的 API 版本"
+msgid "remote does not offer an API version supported by this version of GameForge 3D Studio"
+msgstr "远程服务未提供此版 GameForge 3D Studio 所支持的 API 版本"
 
 
 msgid "internal error, please report a bug"
@@ -139624,16 +139624,16 @@ msgid "Could not read asset listing for '%s', see Info Editor for details"
 msgstr "无法读取 '%s' 的资产列表，详见信息编辑器"
 
 
-msgid "could not read asset Blender versions, 'bl_versions' field not set"
-msgstr "无法读取资产 Blender 版本，'bl_versions' 字段未设置"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions' field not set"
+msgstr "无法读取资产 GameForge 3D Studio 版本，'bl_versions' 字段未设置"
 
 
-msgid "could not read asset Blender versions, 'bl_versions.min' field not set"
-msgstr "无法读取资产 Blender 版本，'bl_versions.min' 字段未设置"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not set"
+msgstr "无法读取资产 GameForge 3D Studio 版本，'bl_versions.min' 字段未设置"
 
 
-msgid "could not read asset Blender versions, 'bl_versions.min' field not in X.Y notation"
-msgstr "无法读取资产 Blender 版本，'bl_versions.min' 字段未采用 X.Y 格式"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not in X.Y notation"
+msgstr "无法读取资产 GameForge 3D Studio 版本，'bl_versions.min' 字段未采用 X.Y 格式"
 
 
 msgid "could not read asset name, 'name' field not set"
@@ -139816,7 +139816,7 @@ msgid "Asset catalogs cannot be edited in this asset library"
 msgstr "无法在此资产库中编辑资产目录"
 
 
-msgid "Cannot save asset catalogs before the Blender file is saved"
+msgid "Cannot save asset catalogs before the GameForge 3D Studio file is saved"
 msgstr "保存Blender文件之前无法保存资产目录"
 
 
@@ -140653,8 +140653,8 @@ msgid "Drag to continue sampling, release when done"
 msgstr "拖动以继续采样，完成后松开"
 
 
-msgid "Press 'Enter' to sample outside of a Blender window"
-msgstr "按 '回车' 在 Blender 窗口外取样"
+msgid "Press 'Enter' to sample outside of a GameForge 3D Studio window"
+msgstr "按 '回车' 在 GameForge 3D Studio 窗口外取样"
 
 
 msgid "Could not resolve path '%s'"
@@ -142120,15 +142120,13 @@ msgid "Show in Info Log"
 msgstr "在信息日志中显示"
 
 
-msgid ""
-"File saved by newer Blender\n"
-"({}), expect loss of data"
+msgid "File saved by newer GameForge 3D Studio\n({}), expect loss of data"
 msgstr ""
 "文件由较新的Blender保存\n"
 "({}), 可能会丢失数据"
 
 
-msgid "This file is managed by the Blender asset system and cannot be overridden"
+msgid "This file is managed by the GameForge 3D Studio asset system and cannot be overridden"
 msgstr "此文件由Blender资产系统管理，不可覆盖"
 
 
@@ -142277,8 +142275,8 @@ msgid "No filename given"
 msgstr "未给出文件名"
 
 
-msgid "Blender Data"
-msgstr "Blender 数据"
+msgid "GameForge 3D Studio Data"
+msgstr "GameForge 3D Studio 数据"
 
 
 msgid "File References"
@@ -144937,8 +144935,8 @@ msgid "Deleted %d tx files"
 msgstr "已删除 %d 个 tx 文件"
 
 
-msgid "Blender Render"
-msgstr "Blender 渲染"
+msgid "GameForge 3D Studio Render"
+msgstr "GameForge 3D Studio 渲染"
 
 
 msgid "Failed to open window!"
@@ -145097,11 +145095,11 @@ msgid "Flip to Bottom"
 msgstr "在底部显示"
 
 
-msgid "Blender Drivers Editor"
+msgid "GameForge 3D Studio Drivers Editor"
 msgstr "Blender驱动器编辑器"
 
 
-msgid "Blender Info Log"
+msgid "GameForge 3D Studio Info Log"
 msgstr "Blender信息日志"
 
 
@@ -146241,8 +146239,8 @@ msgstr ""
 "您稍后可在系统偏好设置中进行调整。"
 
 
-msgid "Unreadable Blender library file:"
-msgstr "不可读的 Blender 库文件:"
+msgid "Unreadable GameForge 3D Studio library file:"
+msgstr "不可读的 GameForge 3D Studio 库文件:"
 
 
 msgid "Could not rename: %s"
@@ -148928,8 +148926,8 @@ msgid "Jump to Line Number"
 msgstr "跳转至行号"
 
 
-msgid "File Modified Outside and Inside Blender"
-msgstr "在 Blender 外部及内部修改的文件"
+msgid "File Modified Outside and Inside GameForge 3D Studio"
+msgstr "在 GameForge 3D Studio 外部及内部修改的文件"
 
 
 msgid "Reload from disk (ignore local changes)"
@@ -148944,16 +148942,16 @@ msgid "Make text internal (separate copy)"
 msgstr "将文本内置 (单独的副本)"
 
 
-msgid "File Modified Outside Blender"
-msgstr "在 Blender 外部修改的文件"
+msgid "File Modified Outside GameForge 3D Studio"
+msgstr "在 GameForge 3D Studio 外部修改的文件"
 
 
 msgid "Reload from disk"
 msgstr "从磁盘重新加载"
 
 
-msgid "File Deleted Outside Blender"
-msgstr "在 Blender 外部被删除的文件"
+msgid "File Deleted Outside GameForge 3D Studio"
+msgstr "在 GameForge 3D Studio 外部被删除的文件"
 
 
 msgid "Make text internal"
@@ -150856,8 +150854,8 @@ msgid "An exception occurred invoking USD hook '%s'"
 msgstr "调用USD钩子 '%s' 时发生异常"
 
 
-msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to Blender"
-msgstr "Primvar '%s' (插值 %s, 类型 %s) 无法被转换到 Blender"
+msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to GameForge 3D Studio"
+msgstr "Primvar '%s' (插值 %s, 类型 %s) 无法被转换到 GameForge 3D Studio"
 
 
 msgid "%s: Error: Couldn't get input socket %s for node %s"
@@ -150948,8 +150946,8 @@ msgid "%s: Mismatch in bind xforms and joint counts for skeleton %s"
 msgstr "%s: 绑定 xform和骨架 %s 的关节数不匹配"
 
 
-msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to Blender's bone representation. The skeletal animation won't be imported"
-msgstr "USD 骨架导入：在基元 %s 中检测到具有负行列式的骨骼矩阵。此类矩阵可能表示负缩放，可能是镜像操作导致的，并且目前无法转换为 Blender 的骨骼表示，骨骼动画将无法导入"
+msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to GameForge 3D Studio's bone representation. The skeletal animation won't be imported"
+msgstr "USD 骨架导入：在基元 %s 中检测到具有负行列式的骨骼矩阵。此类矩阵可能表示负缩放，可能是镜像操作导致的，并且目前无法转换为 GameForge 3D Studio 的骨骼表示，骨骼动画将无法导入"
 
 
 msgid "%s: Joint weights and joint indices element size mismatch for prim %s"
@@ -150992,7 +150990,7 @@ msgid "Cannot export mixed cyclic and non-cyclic curves in the same Curves objec
 msgstr "无法在同一曲线对象中导出混合闭环和非闭环曲线"
 
 
-msgid "Attribute '%s' (Blender domain %d, type %d) cannot be converted to USD"
+msgid "Attribute '%s' (GameForge 3D Studio domain %d, type %d) cannot be converted to USD"
 msgstr "属性 '%s' (Blender域 %d, 类型 %d) 无法转换到 USD"
 
 
@@ -152573,8 +152571,8 @@ msgid "Unable to open sound file"
 msgstr "无法打开声音文件"
 
 
-msgid "Blender compiled without Audaspace support"
-msgstr "Blender 编译时没有 Audaspace 支持"
+msgid "GameForge 3D Studio compiled without Audaspace support"
+msgstr "GameForge 3D Studio 编译时没有 Audaspace 支持"
 
 
 msgid "Invalid length"
@@ -155749,8 +155747,8 @@ msgid "Node must be run as tool"
 msgstr "节点必须作为工具运行"
 
 
-msgid "Disabled, Blender was compiled without OpenVDB"
-msgstr "已禁用, 未使用 OpenVDB 编译 Blender"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenVDB"
+msgstr "已禁用, 未使用 OpenVDB 编译 GameForge 3D Studio"
 
 
 msgid "Disabled, OpenVDB version is too old"
@@ -156095,8 +156093,8 @@ msgid "List with one element per item"
 msgstr "每项包含一个元素的列表"
 
 
-msgid "Disabled, Blender was compiled without Bullet"
-msgstr "已禁用, 未使用 Bullet 编译 Blender"
+msgid "Disabled, GameForge 3D Studio was compiled without Bullet"
+msgstr "已禁用, 未使用 Bullet 编译 GameForge 3D Studio"
 
 
 msgid "Points to compute the convex hull of"
@@ -157478,32 +157476,32 @@ msgid "Path to a CSV file"
 msgstr "指向CSV文件的路径"
 
 
-msgid "Disabled, Blender was compiled without OBJ I/O"
-msgstr "已禁用, 未使用 OBJ I/O 编译 Blender"
+msgid "Disabled, GameForge 3D Studio was compiled without OBJ I/O"
+msgstr "已禁用, 未使用 OBJ I/O 编译 GameForge 3D Studio"
 
 
 msgid "Path to a OBJ file"
 msgstr "指向OBJ文件的路径"
 
 
-msgid "Disabled, Blender was compiled without PLY I/O"
-msgstr "已禁用, 未使用 PLY I/O 编译 Blender"
+msgid "Disabled, GameForge 3D Studio was compiled without PLY I/O"
+msgstr "已禁用, 未使用 PLY I/O 编译 GameForge 3D Studio"
 
 
 msgid "Path to a PLY file"
 msgstr "指向PLY文件的路径"
 
 
-msgid "Disabled, Blender was compiled without SPZ I/O"
-msgstr "已禁用, 未使用 SPZ I/O 编译 Blender"
+msgid "Disabled, GameForge 3D Studio was compiled without SPZ I/O"
+msgstr "已禁用, 未使用 SPZ I/O 编译 GameForge 3D Studio"
 
 
 msgid "Path to a SPZ file"
 msgstr "指向SPZ文件的路径"
 
 
-msgid "Disabled, Blender was compiled without STL I/O"
-msgstr "已禁用, 未使用 STL I/O 编译 Blender"
+msgid "Disabled, GameForge 3D Studio was compiled without STL I/O"
+msgstr "已禁用, 未使用 STL I/O 编译 GameForge 3D Studio"
 
 
 msgid "Path to a STL file"
@@ -158239,8 +158237,8 @@ msgid "The subdivision level is too large"
 msgstr "细分级别过大"
 
 
-msgid "Disabled, Blender was compiled without OpenSubdiv"
-msgstr "已禁用, 未使用 OpenSubdiv 编译 Blender"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenSubdiv"
+msgstr "已禁用, 未使用 OpenSubdiv 编译 GameForge 3D Studio"
 
 
 msgid "Mesh to subdivide"
@@ -159512,8 +159510,8 @@ msgid "Pack UV Islands Field"
 msgstr "拼排UV孤岛场"
 
 
-msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in Blender"
-msgstr "使用 MikkTSpace 库进行计算，与 Blender 中其他地方使用的切线一致"
+msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in GameForge 3D Studio"
+msgstr "使用 MikkTSpace 库进行计算，与 GameForge 3D Studio 中其他地方使用的切线一致"
 
 
 msgid "Significantly faster method that approximates tangents interpolated across face corners with matching UVs. For a value actually tangential to the surface, use the cross product with the normal."
@@ -161386,7 +161384,7 @@ msgid "Input pending {}"
 msgstr "待定输入 {}"
 
 
-msgid "Blender File View"
+msgid "GameForge 3D Studio File View"
 msgstr "Blender文件视图"
 
 
@@ -161414,8 +161412,8 @@ msgid "Overwrite Startup File"
 msgstr "覆写启动文件"
 
 
-msgid "Blender will start next time as it is now."
-msgstr "Blender 将于下一次按现在的状态启动。"
+msgid "GameForge 3D Studio will start next time as it is now."
+msgstr "GameForge 3D Studio 将于下一次按现在的状态启动。"
 
 
 msgid "Template \"{}\" will start next time as it is now."
@@ -161438,7 +161436,7 @@ msgid "Load Factory \"{}\" Preferences."
 msgstr "加载初始 \"{}\" 设置."
 
 
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "加载初始Blender偏好设置"
 
 
@@ -161550,19 +161548,19 @@ msgid "Unable to Load File"
 msgstr "无法加载文件"
 
 
-msgid "The file is not a valid Blender file."
-msgstr "该文件不是有效的 Blender 文件。"
+msgid "The file is not a valid GameForge 3D Studio file."
+msgstr "该文件不是有效的 GameForge 3D Studio 文件。"
 
 
-msgid "This file was saved by a newer version of Blender (%s)."
-msgstr "此文件由较新版本的 Blender (%s) 保存。"
+msgid "This file was saved by a newer version of GameForge 3D Studio (%s)."
+msgstr "此文件由较新版本的 GameForge 3D Studio (%s) 保存。"
 
 
-msgid "Saving it with this Blender (%s) may cause loss of data."
-msgstr "使用此版 Blender (%s) 保存可能会导致数据丢失。"
+msgid "Saving it with this GameForge 3D Studio (%s) may cause loss of data."
+msgstr "使用此版 GameForge 3D Studio (%s) 保存可能会导致数据丢失。"
 
 
-msgid "This file is managed by the Blender asset system. It can only be"
+msgid "This file is managed by the GameForge 3D Studio asset system. It can only be"
 msgstr "此文件由Blender资产系统管理，只能"
 
 
@@ -161586,12 +161584,12 @@ msgid "Cannot overwrite asset system files. Save as new file"
 msgstr "无法覆写资产系统文件。另存为"
 
 
-msgid "with an older Blender version?"
-msgstr "较旧的 Blender 版本的文件？"
+msgid "with an older GameForge 3D Studio version?"
+msgstr "较旧的 GameForge 3D Studio 版本的文件？"
 
 
-msgid "Overwrite file with an older Blender version?"
-msgstr "使用较旧的 Blender 版本覆盖文件？"
+msgid "Overwrite file with an older GameForge 3D Studio version?"
+msgstr "使用较旧的 GameForge 3D Studio 版本覆盖文件？"
 
 
 msgid "Cannot overwrite asset system files. Save as new file?"
@@ -161606,8 +161604,8 @@ msgid "Save changes before closing?"
 msgstr "是否在关闭之前保存更改？"
 
 
-msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with Blender v4.5 to convert animation data."
-msgstr "加载了 2.50 之前的 blend 文件，但尚未加载动画数据。使用 Blender 4.5 打开并保存文件以转换动画数据。"
+msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with GameForge 3D Studio v4.5 to convert animation data."
+msgstr "加载了 2.50 之前的 blend 文件，但尚未加载动画数据。使用 GameForge 3D Studio 4.5 打开并保存文件以转换动画数据。"
 
 
 msgid "Cannot overwrite files that are managed by the asset system"
@@ -161650,8 +161648,8 @@ msgid "%d libraries have overrides needing resync (auto resynced in %.0fm%.2fs),
 msgstr "%d 个库有重写需要重新同步 (自动同步于 %.0fm%.2fs)，详情请查看信息编辑器"
 
 
-msgid "Proxies have been removed from Blender (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest Blender version"
-msgstr "代理已从 Blender 中删除 (%d 个代理自动转换为库重写，%d 个代理无法转换并被清除)。请考虑使用最新的 Blender 版本重新保存任何库.blend 文件"
+msgid "Proxies have been removed from GameForge 3D Studio (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest GameForge 3D Studio version"
+msgstr "代理已从 GameForge 3D Studio 中删除 (%d 个代理自动转换为库重写，%d 个代理无法转换并被清除)。请考虑使用最新的 GameForge 3D Studio 版本重新保存任何库.blend 文件"
 
 
 msgid "%d sequence strips were not read because they were in a channel larger than %d"
@@ -161934,8 +161932,8 @@ msgstr "您的显卡或驱动程序的支持有限。也许可以运行，但存
 
 
 msgctxt "WindowManager"
-msgid "Newer graphics drivers might be available with better Blender compatibility."
-msgstr "较新的图形驱动程序可能具有更好的 Blender 兼容性。"
+msgid "Newer graphics drivers might be available with better GameForge 3D Studio compatibility."
+msgstr "较新的图形驱动程序可能具有更好的 GameForge 3D Studio 兼容性。"
 
 
 msgctxt "WindowManager"
@@ -161959,8 +161957,8 @@ msgstr "不支持您的显卡或者 macOS 版本"
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
-msgstr "升级到最新的 macOS 版本可能会改善对 Blender 的支持"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
+msgstr "升级到最新的 macOS 版本可能会改善对 GameForge 3D Studio 的支持"
 
 
 msgctxt "WindowManager"
@@ -161969,8 +161967,8 @@ msgstr "不支持您的显卡或驱动程序版本。"
 
 
 msgctxt "WindowManager"
-msgid "Blender will now close."
-msgstr "Blender 现在将关闭。"
+msgid "GameForge 3D Studio will now close."
+msgstr "GameForge 3D Studio 现在将关闭。"
 
 
 msgid "Intel binary detected. Expect reduced performance."
@@ -162370,8 +162368,8 @@ msgid "Stroke and Fill"
 msgstr "笔画与填充"
 
 
-msgid "Blender 27x"
-msgstr "Blender 27x"
+msgid "version 27x"
+msgstr "GameForge 3D Studio 27x"
 
 
 msgid "Industry Compatible"
@@ -162379,7 +162377,7 @@ msgstr "行业兼容"
 
 
 msgid "blender default"
-msgstr "Blender 默认"
+msgstr "GameForge 3D Studio 默认"
 
 
 msgid "industry compatible data"
@@ -162607,8 +162605,8 @@ msgid "Import-Export BVH from armature objects"
 msgstr "从骨架物体导入-导出BVH"
 
 
-msgid "Blender Extensions"
-msgstr "Blender 扩展"
+msgid "GameForge 3D Studio Extensions"
+msgstr "GameForge 3D Studio 扩展"
 
 
 msgid "Extension repository support for remote repositories"
@@ -162659,7 +162657,7 @@ msgid "Manage UI translations"
 msgstr "管理UI翻译"
 
 
-msgid "Allows managing UI translations directly from Blender (update main .po files, update scripts' translations, etc.)"
+msgid "Allows managing UI translations directly from GameForge 3D Studio (update main .po files, update scripts' translations, etc.)"
 msgstr "允许直接从Blender管理UI翻译 (更新主 .po 文件, 更新脚本的翻译, 等等.)"
 
 

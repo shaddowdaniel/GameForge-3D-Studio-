@@ -37,9 +37,9 @@ void import_package(ImportContext &ctx,
                     const int max_assets,
                     const ModelOptions &options)
 {
-  auto package = std::make_shared<PckArchive>();
   std::string error;
-  if (!package->open(pck_path, &error)) {
+  std::shared_ptr<PckArchive> package = open_package_shared(pck_path, &error);
+  if (!package) {
     ctx.error("Angelica: cannot open package '" + pck_path + "': " + error);
     return;
   }

@@ -164,7 +164,7 @@ const EnumPropertyItem rna_enum_property_unit_items[] = {
 /* Descriptions for rna_enum_property_flag_items and rna_enum_property_flag_enum_items. */
 static constexpr auto PROP_READ_ONLY_DESCR = "When set, the property cannot be edited";
 static constexpr auto PROP_HIDDEN_DESCR =
-    "For operators: hide from places in the user interface where Blender would add the property "
+    "For operators: hide from places in the user interface where GameForge 3D Studio would add the property "
     "automatically, like Adjust Last Operation. Also this property is not written to presets.";
 static constexpr auto PROP_SKIP_SAVE_DESCR =
     "For operators: the value of this property will not be remembered between invocations of the "
@@ -3470,14 +3470,14 @@ static void rna_def_property(BlenderRNA *brna)
   RNA_def_property_clear_flag(prop, PROP_EDITABLE);
   /* Use 3 values to match `bpy.app.version`. */
   RNA_def_property_array(prop, 3);
-  RNA_def_property_ui_text(prop, "Deprecated Version", "The Blender version this was deprecated");
+  RNA_def_property_ui_text(prop, "Deprecated Version", "The GameForge 3D Studio version this was deprecated");
   RNA_def_property_int_funcs(prop, "rna_Property_deprecated_version_get", nullptr, nullptr);
 
   prop = RNA_def_property(srna, "deprecated_removal_version", PROP_INT, PROP_NONE);
   RNA_def_property_clear_flag(prop, PROP_EDITABLE);
   RNA_def_property_array(prop, 3);
   RNA_def_property_ui_text(
-      prop, "Deprecated Removal Version", "The Blender version this is expected to be removed");
+      prop, "Deprecated Removal Version", "The GameForge 3D Studio version this is expected to be removed");
   RNA_def_property_int_funcs(
       prop, "rna_Property_deprecated_removal_version_get", nullptr, nullptr);
 
@@ -3946,7 +3946,7 @@ void RNA_def_rna(BlenderRNA *brna)
   /* Blender RNA */
   srna = RNA_def_struct(brna, "BlenderRNA", nullptr);
   RNA_def_struct_flag(srna, STRUCT_RNA_DEFINITION);
-  RNA_def_struct_ui_text(srna, "Blender RNA", "Blender RNA structure definitions");
+  RNA_def_struct_ui_text(srna, "GameForge 3D Studio RNA", "GameForge 3D Studio RNA structure definitions");
   RNA_def_struct_ui_icon(srna, ICON_RNA);
 
   prop = RNA_def_property(srna, "structs", PROP_COLLECTION, PROP_NONE);

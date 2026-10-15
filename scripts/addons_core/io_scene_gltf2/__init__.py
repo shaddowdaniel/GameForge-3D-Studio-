@@ -198,7 +198,7 @@ class ConvertGLTF2_Base:
         items=(
             ('SPEC', 'Standard', 'Physically-based glTF lighting units (cd, lx, nt)'),
             ('COMPAT', 'Unitless', 'Non-physical, unitless lighting. Useful when exposure controls are not available'),
-            ('RAW', 'Raw (Deprecated)', 'Blender lighting strengths with no conversion'),
+            ('RAW', 'Raw (Deprecated)', 'GameForge 3D Studio lighting strengths with no conversion'),
         ),
         description='Optional backwards compatibility for non-standard render engines. Applies to lights',  # TODO: and emissive materials',
         default='SPEC'
@@ -1048,14 +1048,14 @@ class ExportGLTF2_Base(ConvertGLTF2_Base):
     export_original_specular: BoolProperty(
         name='Export Original PBR Specular',
         description=(
-            'Export original glTF PBR Specular, instead of Blender Principled Shader Specular'
+            'Export original glTF PBR Specular, instead of GameForge 3D Studio Principled Shader Specular'
         ),
         default=False,
     )
 
     will_save_settings: BoolProperty(
         name='Remember Export Settings',
-        description='Store glTF export settings in the Blender project',
+        description='Store glTF export settings in the GameForge 3D Studio project',
         default=False)
 
     export_hierarchy_full_collections: BoolProperty(
@@ -1984,9 +1984,9 @@ class ImportGLTF2(Operator, ConvertGLTF2_Base, ImportHelper):
     bone_heuristic: EnumProperty(
         name="Bone Dir",
         items=(
-            ("BLENDER", "Blender (best for import/export round trip)",
-                "Good for re-importing glTFs exported from Blender, "
-                "and re-exporting glTFs to glTFs after Blender editing. "
+            ("BLENDER", "GameForge 3D Studio (best for import/export round trip)",
+                "Good for re-importing glTFs exported from GameForge 3D Studio, "
+                "and re-exporting glTFs to glTFs after GameForge 3D Studio editing. "
                 "Bone tips are placed on their local +Y axis (in glTF space)"),
             ("TEMPERANCE", "Temperance (average)",
                 "Decent all-around strategy. "

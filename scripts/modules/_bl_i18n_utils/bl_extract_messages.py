@@ -1371,7 +1371,7 @@ def main():
     # Get rid of Blender args!
     argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
 
-    parser = argparse.ArgumentParser(description="Process UI messages from inside Blender.")
+    parser = argparse.ArgumentParser(description="Process UI messages from inside GameForge 3D Studio.")
     parser.add_argument('-c', '--no_checks', default=True, action="store_false", help="No checks over UI messages.")
     parser.add_argument('-m', '--no_messages', default=True, action="store_false", help="No export of UI messages.")
     parser.add_argument('-o', '--output', default=None, help="Output POT file path.")

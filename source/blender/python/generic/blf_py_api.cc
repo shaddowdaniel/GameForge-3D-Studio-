@@ -894,7 +894,7 @@ static PyMethodDef BLF_methods[] = {
 PyDoc_STRVAR(
     /* Wrap. */
     BLF_doc,
-    "This module provides access to Blender's text drawing functions.");
+    "This module provides access to GameForge 3D Studio's text drawing functions.");
 static PyModuleDef BLF_module_def = {
     /*m_base*/ PyModuleDef_HEAD_INIT,
     /*m_name*/ "blf",

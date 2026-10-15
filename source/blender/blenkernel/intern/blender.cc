@@ -123,7 +123,7 @@ static void blender_version_init()
     version_cycle_compact = "";
   }
   else {
-    BLI_assert_msg(0, "Invalid Blender version cycle");
+    BLI_assert_msg(0, "Invalid GameForge 3D Studio version cycle");
   }
 
   const char *version_suffix = BKE_blender_version_is_lts() ? " LTS" : "";
@@ -248,7 +248,7 @@ void BKE_blender_globals_crash_path_get(char filepath[FILE_MAX])
    * de-referencing. */
 
   if (!(G_MAIN && G_MAIN->filepath[0])) {
-    BLI_path_join(filepath, FILE_MAX, BKE_tempdir_base(), "blender.crash.txt");
+    BLI_path_join(filepath, FILE_MAX, BKE_tempdir_base(), "gameforge3dstudio.crash.txt");
   }
   else {
     BLI_path_join(filepath, FILE_MAX, BKE_tempdir_base(), BLI_path_basename(G_MAIN->filepath));

@@ -342,7 +342,6 @@ def make_splash(logo, fonts, out_path, w=2000, h=1000):
     deco.text((tx, 470), "FORGE.  CREATE.  DOMINATE.", font=f_tag, anchor="ms", fill=GOLD_BRIGHT)
     for i, line in enumerate(("Native Angelica Engine", "Perfect World editors", "AI agents")):
         deco.text((tx, 610 + i * 52), line, font=f_small, anchor="ms", fill=(170, 182, 205))
-    deco.text((tx, h - 70), "Based on Blender", font=f_small, anchor="ms", fill=(120, 130, 150))
 
     frame = ImageDraw.Draw(img)
     ornate_frame(frame, w, h, 18, GOLD, (60, 140, 255))

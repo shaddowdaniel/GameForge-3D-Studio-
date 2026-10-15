@@ -74,6 +74,9 @@ struct KeyTrack {
   int32_t compression = 0;
   /** Version 2 quaternion tracks: stored without `w` (`w = sqrt(1 - x^2 - y^2 - z^2)`). */
   bool quaternion_without_w = false;
+  /** Byte range of the track in the file data (`.stck` files), for copying it unchanged. */
+  size_t record_begin = 0;
+  size_t record_end = 0;
 
   int key_count() const
   {
@@ -95,6 +98,9 @@ struct TrackSet {
   int anim_end = 0;
   int anim_fps = 0;
   std::vector<BoneTrack> tracks;
+  /** Engine path of the file the set was read from (set by the importer), empty when the tracks
+   * came from inside a skeleton. */
+  std::string source_path;
 };
 
 /** Parse a `.stck` file (versions 1 and 2). */

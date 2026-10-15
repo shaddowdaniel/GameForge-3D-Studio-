@@ -75,6 +75,7 @@ _modules = [
     "space_console",
     "space_dopesheet",
     "space_filebrowser",
+    "space_filebrowser_gameforge",
     "space_graph",
     "space_image",
     "space_info",

@@ -101,6 +101,7 @@ bool read_key_track(BinaryReader &reader,
   r_track = KeyTrack();
   const int comps = int(type);
   r_track.components = comps;
+  r_track.record_begin = reader.tell();
 
   const int32_t num_keys = reader.i32();
   const int32_t num_segments = reader.i32();
@@ -141,6 +142,7 @@ bool read_key_track(BinaryReader &reader,
       return anim_fail(r_error, "Truncated track data");
     }
     build_v1_frames(r_track, raw_keys);
+    r_track.record_end = reader.tell();
     return true;
   }
 
@@ -200,6 +202,7 @@ bool read_key_track(BinaryReader &reader,
   if (reader.failed()) {
     return anim_fail(r_error, "Truncated track data");
   }
+  r_track.record_end = reader.tell();
   return true;
 }
 
@@ -230,6 +233,7 @@ bool parse_track_set(ByteSpan data, TrackSet &r_track_set, std::string *r_error)
   r_track_set = TrackSet();
   const AFileContent content = afile_open(data);
   BinaryReader reader(content.body);
+  const size_t body_offset = size_t(content.body.data() - data.data());
 
   const uint32_t flag = reader.u32();
   const uint32_t version = reader.u32();
@@ -264,8 +268,13 @@ bool parse_track_set(ByteSpan data, TrackSet &r_track_set, std::string *r_error)
         return anim_fail(r_error, "Duplicate bone track id " + std::to_string(id));
       }
     }
-    if (!read_bone_track(reader, version, id, r_track_set.tracks[size_t(i)], r_error)) {
+    BoneTrack &track = r_track_set.tracks[size_t(i)];
+    if (!read_bone_track(reader, version, id, track, r_error)) {
       return false;
+    }
+    for (KeyTrack *key_track : {&track.position, &track.rotation}) {
+      key_track->record_begin += body_offset;
+      key_track->record_end += body_offset;
     }
   }
   return true;

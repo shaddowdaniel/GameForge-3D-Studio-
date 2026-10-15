@@ -640,8 +640,8 @@ msgid "Current File"
 msgstr "Dabartinis failas"
 
 
-msgid "Show the assets currently available in this Blender session"
-msgstr "Rodyti išteklius pasiekiamus šioje Blender sesijoje"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
+msgstr "Rodyti išteklius pasiekiamus šioje GameForge 3D Studio sesijoje"
 
 
 msgid "Essentials"
@@ -1041,8 +1041,8 @@ msgid "Version"
 msgstr "Versija"
 
 
-msgid "Blender"
-msgstr "„Blender“"
+msgid "GameForge 3D Studio"
+msgstr "„GameForge 3D Studio“"
 
 
 msgid "Not yet defined"
@@ -3378,8 +3378,8 @@ msgstr "„I18n“ išsaugojimo nustatymai"
 
 
 msgctxt "Operator"
-msgid "Update I18n Blender Repository"
-msgstr "Atnaujinti „I18n Blender“ saugyklą"
+msgid "Update I18n GameForge 3D Studio Repository"
+msgstr "Atnaujinti „I18n GameForge 3D Studio“ saugyklą"
 
 
 msgctxt "Operator"
@@ -3549,8 +3549,8 @@ msgid "Open"
 msgstr "Atidaryti"
 
 
-msgid "Open a Blender file"
-msgstr "Atidaryti „Blender“ failą"
+msgid "Open a GameForge 3D Studio file"
+msgstr "Atidaryti „GameForge 3D Studio“ failą"
 
 
 msgctxt "Operator"
@@ -3559,12 +3559,12 @@ msgstr "Importuoti „PLY“"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Išeiti iš „Blender“"
+msgid "Quit GameForge 3D Studio"
+msgstr "Išeiti iš „GameForge 3D Studio“"
 
 
-msgid "Quit Blender"
-msgstr "Išeiti iš „Blender“"
+msgid "Quit GameForge 3D Studio"
+msgstr "Išeiti iš „GameForge 3D Studio“"
 
 
 msgid "Save Copy"
@@ -3572,17 +3572,17 @@ msgstr "Išsaugoti kopiją"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Išsaugoti „Blender“ failą"
+msgid "Save GameForge 3D Studio File"
+msgstr "Išsaugoti „GameForge 3D Studio“ failą"
 
 
-msgid "Exit Blender after saving"
-msgstr "Išjungti „Blender“ po išsaugojimo"
+msgid "Exit GameForge 3D Studio after saving"
+msgstr "Išjungti „GameForge 3D Studio“ po išsaugojimo"
 
 
 msgctxt "Operator"
-msgid "About Blender"
-msgstr "Apie „Blender“"
+msgid "About GameForge 3D Studio"
+msgstr "Apie „GameForge 3D Studio“"
 
 
 msgctxt "Operator"
@@ -3590,8 +3590,8 @@ msgid "Import STL"
 msgstr "Importuoti „STL“"
 
 
-msgid "Blender Names"
-msgstr "„Blender“ pavadinimai"
+msgid "GameForge 3D Studio Names"
+msgstr "„GameForge 3D Studio“ pavadinimai"
 
 
 msgctxt "Operator"
@@ -3688,12 +3688,12 @@ msgid "Active Language"
 msgstr "Aktyvi kalba"
 
 
-msgid "Blender 2.7"
-msgstr "„Blender 2.7“"
+msgid "Version 2.7"
+msgstr "„GameForge 3D Studio 2.7“"
 
 
-msgid "Blender 2.8"
-msgstr "„Blender 2.8“"
+msgid "Version 2.8"
+msgstr "„GameForge 3D Studio 2.8“"
 
 
 msgid "128 px"
@@ -3865,8 +3865,8 @@ msgid "ID From"
 msgstr "ID iš"
 
 
-msgid "Blender File"
-msgstr "„Blender“ failas"
+msgid "GameForge 3D Studio File"
+msgstr "„GameForge 3D Studio“ failas"
 
 
 msgctxt "ID"
@@ -4298,8 +4298,8 @@ msgstr "Atsiliepimas/-ai"
 
 
 msgctxt "Operator"
-msgid "Update Blender Repository"
-msgstr "Atnaujinti „Blender“ saugyklą"
+msgid "Update GameForge 3D Studio Repository"
+msgstr "Atnaujinti „GameForge 3D Studio“ saugyklą"
 
 
 msgctxt "Operator"
@@ -4317,8 +4317,8 @@ msgid "Open..."
 msgstr "Atidaryti..."
 
 
-msgid "Blender is free software"
-msgstr "„Blender“ yra nemokama taikomoji programa"
+msgid "GameForge 3D Studio is free software"
+msgstr "„GameForge 3D Studio“ yra nemokama taikomoji programa"
 
 
 msgctxt "Operator"
@@ -4327,17 +4327,17 @@ msgstr "Paremti"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
-msgstr "„Blender“ parduotuvė"
+msgid "GameForge 3D Studio Store"
+msgstr "„GameForge 3D Studio“ parduotuvė"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
-msgstr "„Blender“ tinklapis/svetainė"
+msgid "GameForge 3D Studio Website"
+msgstr "„GameForge 3D Studio“ tinklapis/svetainė"
 
 
-msgid "Blender's official web-site"
-msgstr "„Blender“ oficialus tinklapis"
+msgid "GameForge 3D Studio's official web-site"
+msgstr "„GameForge 3D Studio“ oficialus tinklapis"
 
 
 msgid "Object(s)"
@@ -4349,8 +4349,8 @@ msgid "New"
 msgstr "Nauja/-s/-i"
 
 
-msgid "Blender IDs"
-msgstr "„Blender“ ID (dgs.)"
+msgid "GameForge 3D Studio IDs"
+msgstr "„GameForge 3D Studio“ ID (dgs.)"
 
 
 msgctxt "Image"
@@ -4421,8 +4421,8 @@ msgid "Video Memory"
 msgstr "Vaizdo atmintis"
 
 
-msgid "Blender Version"
-msgstr "„Blender“ versija"
+msgid "GameForge 3D Studio Version"
+msgstr "„GameForge 3D Studio“ versija"
 
 
 msgid "Auto-Save"
@@ -4614,8 +4614,8 @@ msgid "New"
 msgstr "Nauja/-s/-i"
 
 
-msgid "Blender Data"
-msgstr "„Blender“ duomenys"
+msgid "GameForge 3D Studio Data"
+msgstr "„GameForge 3D Studio“ duomenys"
 
 
 msgid "Import {} files"
@@ -4631,8 +4631,8 @@ msgid "Magnet"
 msgstr "Magnetas"
 
 
-msgid "Blender Info Log"
-msgstr "„Blender“ informacijos žurnalas"
+msgid "GameForge 3D Studio Info Log"
+msgstr "„GameForge 3D Studio“ informacijos žurnalas"
 
 
 msgid "Saved %s"
@@ -4655,8 +4655,8 @@ msgid "(Unsaved)"
 msgstr "(Neišsaugota/-s)"
 
 
-msgid "Blender 27x"
-msgstr "„Blender 27x“"
+msgid "version 27x"
+msgstr "„GameForge 3D Studio 27x“"
 
 
 msgctxt "WorkSpace"

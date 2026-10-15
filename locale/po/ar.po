@@ -268,7 +268,7 @@ msgid "Source Root"
 msgstr "ﻲﻌﻴﺑﺮﺘﻟﺍ ﺭﺬﺠﻟﺍ"
 
 
-msgid "The Blender source root path"
+msgid "The GameForge 3D Studio source root path"
 msgstr "ﺭﺪﻨﻠﺑ ﺭﺪﺼﻤﻟ ﺭﺬﺠﻟﺍ ﺭﺎﺴﻣ"
 
 
@@ -292,7 +292,7 @@ msgid "Persistent Data Path"
 msgstr "ﺮﻤﺘﺴﻣ"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
 msgstr "(ﺎﻨﻫ ﻞﻤﻌﻳ ﻻ﻿ ﺭﺪﻨﻠﺑ ﻡﺎﻈﻧ ,ﻆﺤﻟﺍ ءﺆﺴﻟ) ﺕﺍﺩﺍﺪﻋﻹ﻿ﺍ ﻩﺬﻬﻟ ﻥﺰّﺨﻤﻟﺍ ﺖﺑﺮﻜﺳ ﺎﻓﺎﺠﻟﺍ ﻒﻠﻣ ﻢﺳﺍ"
 
 
@@ -1432,11 +1432,11 @@ msgid "Path"
 msgstr "ﺭﺎﺴﻤﻟﺍ"
 
 
-msgid "Blender RNA"
+msgid "GameForge 3D Studio RNA"
 msgstr "ﺍ.ﻥ.ﺭ ﺭﺪﻨﻠﺑ"
 
 
-msgid "Blender RNA structure definitions"
+msgid "GameForge 3D Studio RNA structure definitions"
 msgstr "ﺍ.ﻥ.ﺭ ﺭﺪﻨﻠﺒﻟ ﺔﻴﻨﺒﻟﺍ ﺕﺎﻔﻳﺮﻌﺗ"
 
 
@@ -3256,7 +3256,7 @@ msgid "Lin error"
 msgstr "ﻲﻠﺧﺍﺩ ﺄﻄﺧ"
 
 
-msgid "Amount of residual error in Blender space unit for constraints that work on position"
+msgid "Amount of residual error in GameForge 3D Studio space unit for constraints that work on position"
 msgstr "ﺭﺪﻨﻠﺑ ﺱﺎﻴﻗ ﺪﺣﻮﺑ ﻊﻗﻮﻤﻟﺍ ﻰﻠﻋ ﺔﻠﻣﺎﻌﻟﺍ ﺩﻮﻴﻘﻠﻟ ﻲﻘﺒﺘﻤﻟﺍ ﺄﻄﺨﻟﺍ ﺔﻴﻤﻛ"
 
 
@@ -5681,7 +5681,7 @@ msgid "Max Velocity"
 msgstr "ﺔﻋﺮﺳ ﻰﻠﻋﺍ"
 
 
-msgid "Velocity considered as maximum influence (Blender units per frame)"
+msgid "Velocity considered as maximum influence (GameForge 3D Studio units per frame)"
 msgstr "(ﺭﺎﻃﻹ﻿ﺍ ﻲﻓ ﺭﺪﻨﻠﺑ ﺕﺍﺪﺣﻭ) ﻱﻮﺼﻗ ﺮﻴﺛﺄﺘﻛ ﺓﺮﺒﺘﻌﻤﻟﺍ ﺔﻋﺮﺴﻟﺍ"
 
 
@@ -6001,7 +6001,7 @@ msgid "Save this output layer"
 msgstr "ﻩﺬﻫ ﺝﺍﺮﺧﻹ﻿ﺍ ﺔﻘﺒﻃ ﻆﻔﺣﺇ"
 
 
-msgid "Multiply color by alpha (recommended for Blender input)"
+msgid "Multiply color by alpha (recommended for GameForge 3D Studio input)"
 msgstr "(ﺭﺪﻨﻠﺒﻟﺍ ﺕﻼ﻿ﺧﺪﻤﻟ ﺎﻬﺑ ﻰﺻﻮﻣ) ﺎﻔﻟﺃ ﻲﻓ ﻥﻮﻠﻟ ﺔﻴﻠﺒﻗ-ﺔﻔﻋﺎﻀﻣ"
 
 
@@ -7498,7 +7498,7 @@ msgid "Show .blend1, .blend2, etc. files"
 msgstr "blend. ﺕﺎﻔﻠﻣ ﺮﻬﻇﺃ"
 
 
-msgid "Filter Blender"
+msgid "Filter GameForge 3D Studio"
 msgstr "ﺭﺪﻨﻠﺑ ﺔﻴﻔﺼﺗ"
 
 
@@ -7506,7 +7506,7 @@ msgid "Show .blend files"
 msgstr "blend. ﺕﺎﻔﻠﻣ ﺮﻬﻇﺃ"
 
 
-msgid "Filter Blender IDs"
+msgid "Filter GameForge 3D Studio IDs"
 msgstr "ﺭﺪﻨﻠﺑ ﺕﺎﻓﺮﻌﻣ ﻒّﺻ"
 
 
@@ -13191,11 +13191,11 @@ msgid "Noise basis used for turbulence"
 msgstr "ﺏﺍﺮﻄﺿﻻ﻿ﺍ ﻲﻓ ﻡﺪﺨﺘﺴﻤﻟﺍ ﺏﺎﺒﻀﻟﺍ ﺱﺎﺳﺍ"
 
 
-msgid "Blender Original"
+msgid "GameForge 3D Studio Original"
 msgstr "ﺭﺪﻨﻠﺑ ﻲﻠﺻﺃ"
 
 
-msgid "Noise algorithm - Blender original: Smooth interpolated noise"
+msgid "Noise algorithm - GameForge 3D Studio original: Smooth interpolated noise"
 msgstr "ﺲﻠﺳ ﺪﻟﻮﻣ ﺞﻴﺠﺿ :ﺭﺪﻨﻠﺑ ﻲﻠﺻﺃ - ﺞﻴﺠﺿ ﺔﻴﻣﺯﺭﺍﻮﺧ"
 
 
@@ -18932,7 +18932,7 @@ msgid "World space normal mapping"
 msgstr "ءﺎﻀﻔﻟﺍ ﻢﻟﺎﻋ ﺕﻻ﻿ﻮﺤﺗ ﺔﻓﻮﻔﺼﻣ"
 
 
-msgid "Blender Object Space"
+msgid "GameForge 3D Studio Object Space"
 msgstr "ﺭﺪﻨﻠﺑ ﻦﺋﺎﻛ ءﺎﻀﻓ"
 
 
@@ -27348,7 +27348,7 @@ msgstr "ﺔﻤﺴﻟﺍ ﻢﺳﺇ ﻞﻳﺪﻌﺗ"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "ﺭﺪﻨﻠﺑ ﻖﻠﻏﺍ"
 
 
@@ -27435,7 +27435,7 @@ msgstr "ﻲﺋﺍﺪﺒﻟﺍ ﺭﺎﻃﻻ﻿ﺍ ﻊﺿ"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
+msgid "Save GameForge 3D Studio File"
 msgstr "ﺭﺪﻨﻠﺒﻟﺍ ﻒﻠﻣ ﻆﻔﺣﺍ"
 
 
@@ -28928,7 +28928,7 @@ msgid "Edit Methods"
 msgstr "ﺮﻳﺮﺤﺘﻟﺍ ﻕﺮﻃ"
 
 
-msgid "Settings for interacting with Blender data"
+msgid "Settings for interacting with GameForge 3D Studio data"
 msgstr "ﺭﺪﻨﻠﺑ ﺕﺎﻧﺎﻴﺑ ﻊﻣ ﻞﻋﺎﻔﺘﻠﻟ ﺕﺍﺩﺍﺪﻋﺇ"
 
 
@@ -31297,7 +31297,7 @@ msgid "Type of data to take texture from"
 msgstr "ﺞﻴﺴﻨﻟﺍ ﺎﻬﻨﻣ ﺫﻮﺧﺄﻤﻟﺍ ﺕﺎﻧﺎﻴﺒﻟﺍ ﻉﻮﻧ"
 
 
-msgid "Blender File"
+msgid "GameForge 3D Studio File"
 msgstr "ﺭﺪﻨﻠﺑ ﻒﻠﻣ ﺮﻬﻇﺃ"
 
 
@@ -35814,7 +35814,7 @@ msgid "Scene has no camera"
 msgstr "ﺔﻟﺎﻌﻔﻟﺍ ﺍﺮﻴﻤﻜﻟﺍ ﺮﺘﺧﺍ"
 
 
-msgid "Blender Render"
+msgid "GameForge 3D Studio Render"
 msgstr "ﺭﺪﻨﻠﺑ ﺮﻴّﺼﻣ"
 
 
@@ -36747,7 +36747,7 @@ msgid "Rim"
 msgstr "ﺔﻓﺎﺣ"
 
 
-msgid "Blender File View"
+msgid "GameForge 3D Studio File View"
 msgstr "ﺭﺪﻨﻠﺑ ﻒﻠﻣ ﺮﻬﻇﺃ"
 
 

@@ -836,7 +836,7 @@ msgid "Fribidi Library"
 msgstr "Biblioteka fribidi"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
 msgstr "Skompilowaną bibliotekę FriBidi C (.so w systemie Linux, .dll w systemie Windows...) prawdopodobnie będziesz musiał edytować, jeśli korzystasz z systemu Windows, np. używając biblioteki zawartej w repozytorium bibliotek Blendera"
 
 
@@ -860,7 +860,7 @@ msgid "Source Root"
 msgstr "Główne źródło"
 
 
-msgid "The Blender source root path"
+msgid "The GameForge 3D Studio source root path"
 msgstr "Ścieżka główna źródła Blendera"
 
 
@@ -884,7 +884,7 @@ msgid "Persistent Data Path"
 msgstr "Trwała ścieżka danych"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
 msgstr "Nazwa pliku json przechowującego te ustawienia (niestety system Blendera tutaj nie działa)"
 
 
@@ -1764,7 +1764,7 @@ msgid "Edit persistent configuration settings"
 msgstr "Edytuj trwałe ustawienia konfiguracji"
 
 
-msgid "Manage the current Blender project"
+msgid "Manage the current GameForge 3D Studio project"
 msgstr "Zarządzaj bieżącym projektem Blendera"
 
 
@@ -1860,7 +1860,7 @@ msgid "Is Editable"
 msgstr "Jest edytowalna"
 
 
-msgid "Assets and catalogs in this library can be edited from the current Blender instance"
+msgid "Assets and catalogs in this library can be edited from the current GameForge 3D Studio instance"
 msgstr "Zasoby i katalogi w tej bibliotece można edytować z poziomu bieżącej instancji Blendera"
 
 
@@ -1880,7 +1880,7 @@ msgid "Current File"
 msgstr "Aktualny plik"
 
 
-msgid "Show the assets currently available in this Blender session"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
 msgstr "Pokaż zasoby aktualnie dostępne w tej sesji Blendera"
 
 
@@ -1888,7 +1888,7 @@ msgid "Essentials"
 msgstr "Niezbędne"
 
 
-msgid "Show basic building blocks and utilities coming with Blender"
+msgid "Show basic building blocks and utilities coming with GameForge 3D Studio"
 msgstr "Pokaż podstawowe bloki konstrukcyjne i narzędzia dołączone do Blendera"
 
 
@@ -1960,7 +1960,7 @@ msgid "Catalog UUID"
 msgstr "Katalog UUID"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
 msgstr "Identyfikator katalogu zasobu, używany przez Blendera do wyszukiwania ścieżki katalogu zasobu. Musi to być UUID zgodnie z RFC4122."
 
 
@@ -2709,7 +2709,7 @@ msgid "Is Internal"
 msgstr "Jest wewnętrzny"
 
 
-msgid "The attribute is meant for internal use by Blender"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
 msgstr "Atrybut jest przeznaczony do użytku wewnętrznego w Blenderze"
 
 
@@ -3428,7 +3428,7 @@ msgid "All Data-Blocks"
 msgstr "Wszystkie bloki danych"
 
 
-msgid "Read-only list of all IDs listed in Blender data-base. Warning: Order is not guaranteed and should be considered an internal implementation detail"
+msgid "Read-only list of all IDs listed in GameForge 3D Studio data-base. Warning: Order is not guaranteed and should be considered an internal implementation detail"
 msgstr "Lista tylko do odczytu wszystkich identyfikatorów w bazie danych Blendera. Ostrzeżenie: kolejność nie jest gwarantowana i należy ją traktować jako wewnętrzny szczegół implementacji"
 
 
@@ -3601,7 +3601,7 @@ msgid "Project"
 msgstr "Projekt"
 
 
-msgid "The currently active Blender project, if any"
+msgid "The currently active GameForge 3D Studio project, if any"
 msgstr "Aktualnie aktywny projekt Blendera, jeśli taki istnieje"
 
 
@@ -4041,11 +4041,11 @@ msgid "The active project's OpenColorIO configuration setting"
 msgstr "Ustawienie konfiguracji OpenColorIO aktywnego projektu"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
-msgid "The OpenColorIO configuration bundled with Blender"
+msgid "The OpenColorIO configuration bundled with GameForge 3D Studio"
 msgstr "Konfiguracja OpenColorIO dołączona do Blendera"
 
 
@@ -4306,7 +4306,7 @@ msgid "Library (blend-file) reference in a BlendImportContext data. Currently on
 msgstr "Odwołanie do biblioteki (pliku blend) w danych kontekstu importu blend. Obecnie udostępniane tylko jako dane tylko do odczytu dla procedur obsługi importu blend przed/po imporcie"
 
 
-msgid "Blender Project"
+msgid "GameForge 3D Studio Project"
 msgstr "Projekt Blendera"
 
 
@@ -4338,8 +4338,8 @@ msgid "OpenColorIO configuration to use for this project"
 msgstr "Konfiguracja OpenColorIO do użycia w tym projekcie"
 
 
-msgid "The default Blender OpenColorIO configuration. Works with both ACES workflows and Blender specific views and color spaces"
-msgstr "Domyślna konfiguracja OpenColorIO w programie Blender. Współpracuje zarówno z przepływami pracy ACES, jak i z widokami oraz przestrzeniami barwnymi specyficznymi dla Blendera"
+msgid "The default GameForge 3D Studio OpenColorIO configuration. Works with both ACES workflows and GameForge 3D Studio specific views and color spaces"
+msgstr "Domyślna konfiguracja OpenColorIO w programie GameForge 3D Studio. Współpracuje zarówno z przepływami pracy ACES, jak i z widokami oraz przestrzeniami barwnymi specyficznymi dla Blendera"
 
 
 msgid "ACES 2.0 Studio"
@@ -4390,11 +4390,11 @@ msgid "The variables in this project"
 msgstr "Zmienne w tym projekcie"
 
 
-msgid "Blender RNA"
-msgstr "Blender RNA"
+msgid "GameForge 3D Studio RNA"
+msgstr "GameForge 3D Studio RNA"
 
 
-msgid "Blender RNA structure definitions"
+msgid "GameForge 3D Studio RNA structure definitions"
 msgstr "Definicje struktury RNA Blendera"
 
 
@@ -9265,7 +9265,7 @@ msgid "Lin error"
 msgstr "Błąd Lin"
 
 
-msgid "Amount of residual error in Blender space unit for constraints that work on position"
+msgid "Amount of residual error in GameForge 3D Studio space unit for constraints that work on position"
 msgstr "Ilość błędu resztkowego w jednostce przestrzeni Blendera dla ograniczeń działających na pozycję"
 
 
@@ -13237,7 +13237,7 @@ msgid "Max Velocity"
 msgstr "Maksymalna prędkość"
 
 
-msgid "Velocity considered as maximum influence (Blender units per frame)"
+msgid "Velocity considered as maximum influence (GameForge 3D Studio units per frame)"
 msgstr "Prędkość uważana za mającą największy wpływ (jednostki Blendera na klatkę)"
 
 
@@ -13615,7 +13615,7 @@ msgid "Premultiply Alpha"
 msgstr "Wstępne mnożenie alfa"
 
 
-msgid "Multiply color by alpha (recommended for Blender input)"
+msgid "Multiply color by alpha (recommended for GameForge 3D Studio input)"
 msgstr "Mnożenie kolorów przez alfa (zalecane dla danych wejściowych Blendera)"
 
 
@@ -16019,7 +16019,7 @@ msgid "Hide .blend files items that are not data-blocks with asset metadata"
 msgstr "Ukryj elementy plików .blend, które nie są blokami danych z metadanymi zasobów"
 
 
-msgid "Filter Blender Backup Files"
+msgid "Filter GameForge 3D Studio Backup Files"
 msgstr "Filtruj pliki kopii zapasowej Blendera"
 
 
@@ -16027,7 +16027,7 @@ msgid "Show .blend1, .blend2, etc. files"
 msgstr "Pokaż pliki .blend1, .blend2 itd."
 
 
-msgid "Filter Blender"
+msgid "Filter GameForge 3D Studio"
 msgstr "Filtruj Blendera"
 
 
@@ -16035,7 +16035,7 @@ msgid "Show .blend files"
 msgstr "Pokaż pliki .blend"
 
 
-msgid "Filter Blender IDs"
+msgid "Filter GameForge 3D Studio IDs"
 msgstr "Filtruj ID Blendera"
 
 
@@ -16111,7 +16111,7 @@ msgid "Library Browser"
 msgstr "Przeglądarka bibliotek"
 
 
-msgid "Whether we may browse Blender files' content or not"
+msgid "Whether we may browse GameForge 3D Studio files' content or not"
 msgstr "Czy możemy przeglądać zawartość plików Blendera, czy nie"
 
 
@@ -16571,7 +16571,7 @@ msgid "Export Mantaflow Script"
 msgstr "Eksportuj skrypt Mantaflow"
 
 
-msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of Blender) after baking the simulation."
+msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of GameForge 3D Studio) after baking the simulation."
 msgstr "Wygeneruj i wyeksportuj skrypt Mantaflow z bieżących ustawień domeny podczas wypiekania. Jest to potrzebne tylko wtedy, gdy planujesz analizować pamięć podręczną (np. siatki widoku, wektory prędkości, cząsteczki) bezpośrednio w Mantaflow (poza Blenderem) po wypieczeniu symulacji."
 
 
@@ -19868,8 +19868,8 @@ msgid "Is Legacy Action"
 msgstr "Jest akcją dziedziczną"
 
 
-msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since Blender 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
-msgstr "Zwraca wartość, czy jest to starsza akcja. Starsze akcje nie mają warstw ani gniazd. Od wersji Blender 4.4 akcje są automatycznie aktualizowane do akcji warstwowych. Wartość prawda zostanie zwrócona tylko w przypadku pustych akcji"
+msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since version 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
+msgstr "Zwraca wartość, czy jest to starsza akcja. Starsze akcje nie mają warstw ani gniazd. Od wersji GameForge 3D Studio 4.4 akcje są automatycznie aktualizowane do akcji warstwowych. Wartość prawda zostanie zwrócona tylko w przypadku pustych akcji"
 
 
 msgid "Is Empty"
@@ -21868,7 +21868,7 @@ msgid "Unprojected Size"
 msgstr "Rozmiar nierzutowany"
 
 
-msgid "Diameter of brush in Blender units"
+msgid "Diameter of brush in GameForge 3D Studio units"
 msgstr "Średnica pędzla w jednostkach blendera"
 
 
@@ -25200,8 +25200,8 @@ msgid "Source library from which this archive of packed IDs was generated"
 msgstr "Biblioteka źródłowa, z której wygenerowano to archiwum spakowanych ID"
 
 
-msgid "Path to the library .blend file. WARNING: Typically, this value should be considered read-only, changing this path without proper processing afterwards can leave Blender data in an invalid state"
-msgstr "Ścieżka do pliku biblioteki .blend. OSTRZEŻENIE: Zazwyczaj wartość tę należy traktować jako przeznaczoną tylko do odczytu; zmiana tej ścieżki bez późniejszego, odpowiedniego przetworzenia może doprowadzić do nieprawidłowego stanu danych w programie Blender"
+msgid "Path to the library .blend file. WARNING: Typically, this value should be considered read-only, changing this path without proper processing afterwards can leave GameForge 3D Studio data in an invalid state"
+msgstr "Ścieżka do pliku biblioteki .blend. OSTRZEŻENIE: Zazwyczaj wartość tę należy traktować jako przeznaczoną tylko do odczytu; zmiana tej ścieżki bez późniejszego, odpowiedniego przetworzenia może doprowadzić do nieprawidłowego stanu danych w programie GameForge 3D Studio"
 
 
 msgid "Is Archive"
@@ -25224,7 +25224,7 @@ msgid "True if this library contains library overrides that are linked in curren
 msgstr "Prawda, jeśli ta biblioteka zawiera nadpisania bibliotek, które są połączone w bieżącym pliku blend i które musiały zostać rekurencyjnie zsynchronizowane podczas wczytywania (w takim przypadku zaleca się otwarcie i ponowne zapisanie pliku blend tej biblioteki)"
 
 
-msgid "Version of Blender the library .blend was saved with"
+msgid "Version of GameForge 3D Studio the library .blend was saved with"
 msgstr "Wersja Blendera, w której zapisano bibliotekę .blend"
 
 
@@ -30471,12 +30471,12 @@ msgid "Noise basis used for turbulence"
 msgstr "Podstawa szumów używana do analizy turbulencji"
 
 
-msgid "Blender Original"
-msgstr "Oryginalny Blender"
+msgid "GameForge 3D Studio Original"
+msgstr "Oryginalny GameForge 3D Studio"
 
 
-msgid "Noise algorithm - Blender original: Smooth interpolated noise"
-msgstr "Algorytm szumu - Blender oryginalny: Gładki interpolowany szum"
+msgid "Noise algorithm - GameForge 3D Studio original: Smooth interpolated noise"
+msgstr "Algorytm szumu - GameForge 3D Studio oryginalny: Gładki interpolowany szum"
 
 
 msgid "Original Perlin"
@@ -31345,7 +31345,7 @@ msgid "Asset Blend Path"
 msgstr "Ścieżka łączenia zasobów"
 
 
-msgid "Full path to the Blender file containing the active asset"
+msgid "Full path to the GameForge 3D Studio file containing the active asset"
 msgstr "Pełna ścieżka do pliku Blendera zawierającego aktywny zasób"
 
 
@@ -32497,16 +32497,16 @@ msgid "Custom Icon"
 msgstr "Własna ikona"
 
 
-msgid "True if this preview icon has been modified by py script, and is no more auto-generated by Blender"
-msgstr "Prawda, jeśli ta ikona podglądu została zmodyfikowana przez skrypt py i nie jest już automatycznie generowana przez Blender"
+msgid "True if this preview icon has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
+msgstr "Prawda, jeśli ta ikona podglądu została zmodyfikowana przez skrypt py i nie jest już automatycznie generowana przez GameForge 3D Studio"
 
 
 msgid "Custom Image"
 msgstr "Własny obraz"
 
 
-msgid "True if this preview image has been modified by py script, and is no more auto-generated by Blender"
-msgstr "Prawda, jeśli ten obraz podglądu został zmodyfikowany przez skrypt py i nie jest już generowany automatycznie przez Blender"
+msgid "True if this preview image has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
+msgstr "Prawda, jeśli ten obraz podglądu został zmodyfikowany przez skrypt py i nie jest już generowany automatycznie przez GameForge 3D Studio"
 
 
 msgid "Parameters defining how an Image data-block is used by another data-block"
@@ -52919,19 +52919,19 @@ msgid "World space normal mapping"
 msgstr "Mapowanie normalne przestrzeni świata"
 
 
-msgid "Blender Object Space"
+msgid "GameForge 3D Studio Object Space"
 msgstr "Przestrzeń obiektów Blendera"
 
 
-msgid "Object space normal mapping, compatible with Blender render baking"
+msgid "Object space normal mapping, compatible with GameForge 3D Studio render baking"
 msgstr "Mapowanie normalnej przestrzeni obiektów, zgodne z funkcją wypiekania renderowania w Blenderze"
 
 
-msgid "Blender World Space"
+msgid "GameForge 3D Studio World Space"
 msgstr "Przestrzeń świata Blendera"
 
 
-msgid "World space normal mapping, compatible with Blender render baking"
+msgid "World space normal mapping, compatible with GameForge 3D Studio render baking"
 msgstr "Mapowanie normalnej przestrzeni świata, zgodne z funkcją wypiekania renderowania w Blenderze"
 
 
@@ -55833,7 +55833,7 @@ msgstr "Ulepsz warstwy meta szkieletu Rigify"
 
 
 msgctxt "Operator"
-msgid "Get active/selected colors from current Blender theme"
+msgid "Get active/selected colors from current GameForge 3D Studio theme"
 msgstr "Pobierz aktywne / wybrane kolory z bieżącego motywu Blendera"
 
 
@@ -56339,8 +56339,8 @@ msgid "Clear Status"
 msgstr "Wyczyść status"
 
 
-msgid "Allow Blender to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, Blender cannot prevent third-party add-ons from violating this rule."
-msgstr "Zezwól Blenderowi na dostęp do internetu. Dodatki korzystające z tego ustawienia będą łączyć się z internetem tylko wtedy, gdy opcja ta jest włączona. Blender nie może jednak uniemożliwić dodatkom innych firm naruszania tej reguły."
+msgid "Allow GameForge 3D Studio to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, GameForge 3D Studio cannot prevent third-party add-ons from violating this rule."
+msgstr "Zezwól Blenderowi na dostęp do internetu. Dodatki korzystające z tego ustawienia będą łączyć się z internetem tylko wtedy, gdy opcja ta jest włączona. GameForge 3D Studio nie może jednak uniemożliwić dodatkom innych firm naruszania tej reguły."
 
 
 msgid "Open extensions preferences"
@@ -57548,7 +57548,7 @@ msgid "Uninstall Studio Light"
 msgstr "Odinstaluj oświetlenie studyjne"
 
 
-msgid "Load and apply a Blender XML theme file"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
 msgstr "Wczytaj i zastosuj plik motywu XML Blendera"
 
 
@@ -58026,12 +58026,12 @@ msgid "I18n Save Settings"
 msgstr "Zapisz ustawienia I18n"
 
 
-msgid "Update i18n data (po files) in Blender source code repository"
+msgid "Update i18n data (po files) in GameForge 3D Studio source code repository"
 msgstr "Aktualizacja danych i18n (pliki po) w repozytorium kodu źródłowego Blendera"
 
 
 msgctxt "Operator"
-msgid "Update I18n Blender Repository"
+msgid "Update I18n GameForge 3D Studio Repository"
 msgstr "Aktualizuj repozytorium Blendera I18n"
 
 
@@ -59759,7 +59759,7 @@ msgid "Debug Channel List"
 msgstr "Lista kanałów debugowania"
 
 
-msgid "Log the channel list info in the terminal. This operator is only available in debug builds of Blender"
+msgid "Log the channel list info in the terminal. This operator is only available in debug builds of GameForge 3D Studio"
 msgstr "Rejestruje informacje o liście kanałów w terminalu. Ten operator jest dostępny tylko w wersjach Blendera przeznaczonych do debugowania"
 
 
@@ -60811,7 +60811,7 @@ msgid "Upgrade the metarig from bone layers to bone collections"
 msgstr "Ulepsz meta szkielet z warstw kości do kolekcji kości"
 
 
-msgid "Set the color palette to match Blender's active theme for selected and active bones"
+msgid "Set the color palette to match GameForge 3D Studio's active theme for selected and active bones"
 msgstr "Ustaw paletę kolorów tak, aby odpowiadała aktywnemu motywowi Blendera dla wybranych i aktywnych kości"
 
 
@@ -64486,8 +64486,8 @@ msgid "Apply Scalings"
 msgstr "Zastosuj skalowanie"
 
 
-msgid "How to apply custom and units scalings in generated FBX file (Blender uses FBX scale to detect units on import, but many other applications do not handle the same way)"
-msgstr "Jak stosować skalowanie własne i skalowanie jednostek w generowanym pliku FBX (Blender używa skali FBX do wykrywania jednostek podczas importowania, ale wiele innych aplikacji nie obsługuje tego w ten sam sposób)"
+msgid "How to apply custom and units scalings in generated FBX file (GameForge 3D Studio uses FBX scale to detect units on import, but many other applications do not handle the same way)"
+msgstr "Jak stosować skalowanie własne i skalowanie jednostek w generowanym pliku FBX (GameForge 3D Studio używa skali FBX do wykrywania jednostek podczas importowania, ale wiele innych aplikacji nie obsługuje tego w ten sam sposób)"
 
 
 msgid "All Local"
@@ -64526,7 +64526,7 @@ msgid "Apply Unit"
 msgstr "Zastosuj jednostkę"
 
 
-msgid "Take into account current Blender units settings (if unset, raw Blender Units values are used as-is)"
+msgid "Take into account current GameForge 3D Studio units settings (if unset, raw GameForge 3D Studio Units values are used as-is)"
 msgstr "Weź pod uwagę bieżące ustawienia jednostek Blendera (jeśli nie są ustawione, używane są surowe wartości jednostek Blendera)"
 
 
@@ -64534,7 +64534,7 @@ msgid "Armature FBXNode Type"
 msgstr "Typ węzła FBX armatury"
 
 
-msgid "FBX type of node (object) used to represent Blender's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into Blender...)"
+msgid "FBX type of node (object) used to represent GameForge 3D Studio's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into GameForge 3D Studio...)"
 msgstr "Typ węzła (obiektu) FBX używany do reprezentowania armatur Blendera (użyj typu Null, chyba że występują problemy z inną aplikacją, gdyż inne opcje mogą nie dać się idealnie zaimportować do Blendera...)"
 
 
@@ -64542,7 +64542,7 @@ msgid "Null"
 msgstr "Żaden"
 
 
-msgid "'Null' FBX node, similar to Blender's Empty (default)"
+msgid "'Null' FBX node, similar to GameForge 3D Studio's Empty (default)"
 msgstr "Węzeł FBX „Null\", podobny do węzła Empty w Blenderze (domyślny)"
 
 
@@ -64658,7 +64658,7 @@ msgid "Apply Transform"
 msgstr "Zastosuj transformację"
 
 
-msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
+msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with GameForge 3D Studio's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
 msgstr "Wypiekanie transformacji przestrzeni w dane obiektu, zapobiega niechcianym obrotom obiektów, gdy przestrzeń docelowa nie jest wyrównana z przestrzenią Blendera (OSTRZEŻENIE! Opcja eksperymentalna, używaj na własne ryzyko, wiadomo, że jest uszkodzona w przypadku armatury / animacji)"
 
 
@@ -64925,7 +64925,7 @@ msgid "Use Modifiers Render Setting"
 msgstr "Użyj modyfikatorów ustawienia renderowania"
 
 
-msgid "Use render settings when applying modifiers to mesh objects (DISABLED in Blender 2.8)"
+msgid "Use render settings when applying modifiers to mesh objects (DISABLED in version 2.8)"
 msgstr "Użyj ustawień renderowania podczas stosowania modyfikatorów do obiektów siatki (WYŁĄCZONE w Blenderze 2.8)"
 
 
@@ -65449,7 +65449,7 @@ msgid "Raw (Deprecated)"
 msgstr "Surowy (przestarzałe)"
 
 
-msgid "Blender lighting strengths with no conversion"
+msgid "GameForge 3D Studio lighting strengths with no conversion"
 msgstr "Moc oświetlenia Blendera bez konwersji"
 
 
@@ -65677,8 +65677,8 @@ msgid "Export Original PBR Specular"
 msgstr "Eksportuj oryginalny PBR wziernikowy"
 
 
-msgid "Export original glTF PBR Specular, instead of Blender Principled Shader Specular"
-msgstr "Eksportuj oryginalny glTF PBR wziernikowy zamiast pryncypialne cieniowanie wziernikowe Blender"
+msgid "Export original glTF PBR Specular, instead of GameForge 3D Studio Principled Shader Specular"
+msgstr "Eksportuj oryginalny glTF PBR wziernikowy zamiast pryncypialne cieniowanie wziernikowe GameForge 3D Studio"
 
 
 msgid "Export point clouds"
@@ -65909,7 +65909,7 @@ msgid "Remember Export Settings"
 msgstr "Zapamiętaj ustawienia eksportu"
 
 
-msgid "Store glTF export settings in the Blender project"
+msgid "Store glTF export settings in the GameForge 3D Studio project"
 msgstr "Przechowuj ustawienia eksportu glTF w projekcie Blendera"
 
 
@@ -70231,7 +70231,7 @@ msgid "Definition"
 msgstr "Definicja"
 
 
-msgid "Number of pixels per inch or Blender Unit"
+msgid "Number of pixels per inch or GameForge 3D Studio Unit"
 msgstr "Liczba pikseli na cal lub jednostka Blendera"
 
 
@@ -70255,7 +70255,7 @@ msgid "Force Reload"
 msgstr "Wymuś wczytanie ponowne"
 
 
-msgid "Force reload the image if it is already opened elsewhere in Blender"
+msgid "Force reload the image if it is already opened elsewhere in GameForge 3D Studio"
 msgstr "Wymuś ponowne wczytanie obrazu, jeśli został już otwarty gdzie indziej w Blenderze"
 
 
@@ -70347,11 +70347,11 @@ msgid "Scale based on pixels per inch"
 msgstr "Skala oparta na pikselach na cal"
 
 
-msgid "Pixels per Blender Unit"
+msgid "Pixels per GameForge 3D Studio Unit"
 msgstr "Piksele na jednostkę Blendera"
 
 
-msgid "Scale based on pixels per Blender Unit"
+msgid "Scale based on pixels per GameForge 3D Studio Unit"
 msgstr "Skala oparta na pikselach na jednostkę Blendera"
 
 
@@ -70628,7 +70628,7 @@ msgid "Save the image with another name and/or settings"
 msgstr "Zapisz obraz pod inną nazwą i / lub ustawieniami"
 
 
-msgid "Create a new image file without modifying the current image in Blender"
+msgid "Create a new image file without modifying the current image in GameForge 3D Studio"
 msgstr "Utwórz nowy plik obrazu bez modyfikowania bieżącego obrazu w Blenderze"
 
 
@@ -70828,7 +70828,7 @@ msgid "Scale FPS"
 msgstr "Skala klatek na sekundę"
 
 
-msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a Blender frame"
+msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a GameForge 3D Studio frame"
 msgstr "Skaluj liczbę klatek na sekundę z BVH do bieżących scen, w przeciwnym razie każda klatka BVH będzie bezpośrednio mapowana na klatkę Blendera"
 
 
@@ -70900,7 +70900,7 @@ msgid "Make Unique"
 msgstr "Utwórz unikatowy"
 
 
-msgid "Import each FBX material as a unique Blender material"
+msgid "Import each FBX material as a unique GameForge 3D Studio material"
 msgstr "Importuj każdy materiał FBX jako unikatowy materiał Blendera"
 
 
@@ -70944,8 +70944,8 @@ msgid "Import FBX animation"
 msgstr "Importuj animację FBX"
 
 
-msgid "Import custom normals, if available (otherwise Blender will recompute them)"
-msgstr "Importuj własne normalne, jeśli są dostępne (w przeciwnym razie Blender je przeliczy)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will recompute them)"
+msgstr "Importuj własne normalne, jeśli są dostępne (w przeciwnym razie GameForge 3D Studio je przeliczy)"
 
 
 msgid "Import user properties as custom properties"
@@ -71000,11 +71000,11 @@ msgid "Heuristic for placing bones. Tries to make bones pretty"
 msgstr "Heurystyka rozmieszczania kości. Próbuje upiększyć kości"
 
 
-msgid "Blender (best for import/export round trip)"
-msgstr "Blender (najlepszy do importu / eksportu w obie strony)"
+msgid "GameForge 3D Studio (best for import/export round trip)"
+msgstr "GameForge 3D Studio (najlepszy do importu / eksportu w obie strony)"
 
 
-msgid "Good for re-importing glTFs exported from Blender, and re-exporting glTFs to glTFs after Blender editing. Bone tips are placed on their local +Y axis (in glTF space)"
+msgid "Good for re-importing glTFs exported from GameForge 3D Studio, and re-exporting glTFs to glTFs after GameForge 3D Studio editing. Bone tips are placed on their local +Y axis (in glTF space)"
 msgstr "Przydatne do ponownego importowania plików glTF wyeksportowanych z Blendera oraz ponownego eksportowania plików glTF do glTF po edycji w Blenderze. Końcówki kości są umieszczone na lokalnej osi +Y (w przestrzeni glTF)"
 
 
@@ -71160,7 +71160,7 @@ msgid "Update Reports Display"
 msgstr "Aktualizuj wyświetlanie raportów"
 
 
-msgid "Update the display of reports in Blender UI (internal use)"
+msgid "Update the display of reports in GameForge 3D Studio UI (internal use)"
 msgstr "Aktualizacja wyświetlania raportów w interfejsie użytkownika Blendera (do użytku wewnętrznego)"
 
 
@@ -83552,7 +83552,7 @@ msgid "Check for Updates on Startup"
 msgstr "Sprawdź aktualizacje podczas uruchamiania"
 
 
-msgid "Allow Blender to check for updates upon launch"
+msgid "Allow GameForge 3D Studio to check for updates upon launch"
 msgstr "Zezwól Blenderowi na sprawdzanie dostępności aktualizacji podczas uruchamiania"
 
 
@@ -85041,7 +85041,7 @@ msgid "Save Screenshot"
 msgstr "Zapisz zrzut ekranu"
 
 
-msgid "Capture a picture of the whole Blender window"
+msgid "Capture a picture of the whole GameForge 3D Studio window"
 msgstr "Zrób zdjęcie całego okna Blendera"
 
 
@@ -87028,11 +87028,11 @@ msgid "Auto Detect"
 msgstr "Automatyczne wykrywanie"
 
 
-msgid "Add images as individual strips, unless their filenames match Blender's numbered sequence pattern, in which case they are grouped into a single image sequence"
+msgid "Add images as individual strips, unless their filenames match GameForge 3D Studio's numbered sequence pattern, in which case they are grouped into a single image sequence"
 msgstr "Dodawaj obrazy jako pojedyncze paski, chyba że ich nazwy plików odpowiadają wzorcowi numeracji sekwencji Blendera. W takim przypadku są one grupowane w pojedynczą sekwencję obrazów"
 
 
-msgid "Import all selected images as a single image sequence. The sequence of images does not have to match Blender's numbered sequence pattern, so placeholders cannot be inferred"
+msgid "Import all selected images as a single image sequence. The sequence of images does not have to match GameForge 3D Studio's numbered sequence pattern, so placeholders cannot be inferred"
 msgstr "Importuj wszystkie wybrane obrazy jako pojedynczą sekwencję. Sekwencja obrazów nie musi być zgodna ze wzorcem numeracji sekwencji Blendera, więc nie można wywnioskować symboli zastępczych"
 
 
@@ -89489,7 +89489,7 @@ msgid "Eyedropper"
 msgstr "Kroplomierz"
 
 
-msgid "Sample a color from the Blender window to store in a property"
+msgid "Sample a color from the GameForge 3D Studio window to store in a property"
 msgstr "Pobierz próbkę koloru z okna Blendera, aby zapisać ją we właściwości"
 
 
@@ -89586,7 +89586,7 @@ msgid "Grease Pencil Eyedropper"
 msgstr "Kroplomierz Grease Pencil"
 
 
-msgid "Sample a color from the Blender Window and create Grease Pencil material"
+msgid "Sample a color from the GameForge 3D Studio Window and create Grease Pencil material"
 msgstr "Pobierz próbkę koloru z okna Blendera i utwórz materiał Grease Pencil"
 
 
@@ -92292,7 +92292,7 @@ msgid "Run as Background Job"
 msgstr "Uruchom jako zadanie w tle"
 
 
-msgid "Enable this to run the import in the background, disable to block Blender while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgid "Enable this to run the import in the background, disable to block GameForge 3D Studio while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
 msgstr "Włącz tę opcję, aby uruchomić import w tle, wyłącz ją, aby zablokować Blendera podczas importowania. Ta opcja jest przestarzała. Użyj operatora EXECUTE, aby uruchomić go na pierwszym planie, lub INVOKE, aby uruchomić go jako zadanie w tle"
 
 
@@ -92457,7 +92457,7 @@ msgid "Add cache modifiers and constraints to imported objects even if they are 
 msgstr "Dodaj modyfikatory pamięci podręcznej i ograniczenia do importowanych obiektów, nawet jeśli nie są animowane, aby można je było aktualizować podczas ponownego wczytywania archiwum Alembic"
 
 
-msgid "Enable this to run the export in the background, disable to block Blender while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgid "Enable this to run the export in the background, disable to block GameForge 3D Studio while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
 msgstr "Włącz tę opcję, aby uruchomić eksport w tle, wyłącz ją, aby zablokować Blendera podczas eksportowania. Ta opcja jest przestarzała. Użyj operatora EXECUTE, aby uruchomić eksport na pierwszym planie, lub INVOKE, aby uruchomić go jako zadanie w tle"
 
 
@@ -92879,8 +92879,8 @@ msgid "Vertex colors in the file are in linear color space"
 msgstr "Kolory wierzchołków w pliku są w liniowej przestrzeni kolorów"
 
 
-msgid "Import custom normals, if available (otherwise Blender will compute them)"
-msgstr "Importuj własne normalne, jeśli są dostępne (w przeciwnym razie Blender je obliczy)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will compute them)"
+msgstr "Importuj własne normalne, jeśli są dostępne (w przeciwnym razie GameForge 3D Studio je obliczy)"
 
 
 msgid "Enums As Strings"
@@ -93300,7 +93300,7 @@ msgid "Open"
 msgstr "Otwórz"
 
 
-msgid "Open a Blender file"
+msgid "Open a GameForge 3D Studio file"
 msgstr "Otwórz plik Blendera"
 
 
@@ -93451,7 +93451,7 @@ msgid "Collection of file paths with common ``directory`` root"
 msgstr "Kolekcja ścieżek plików ze wspólnym katalogiem głównym"
 
 
-msgid "Show Blender files in the File Browser"
+msgid "Show GameForge 3D Studio files in the File Browser"
 msgstr "Pokaż pliki Blendera w przeglądarce plików"
 
 
@@ -93626,11 +93626,11 @@ msgstr "Wartość dla własnych typów właściwości, które można edytować t
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "Wyjdź z Blendera"
 
 
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "Wyjdź z Blendera"
 
 
@@ -93967,19 +93967,19 @@ msgstr "Ustaw bieżący plik jako domyślny plik startowy"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
+msgid "Save GameForge 3D Studio File"
 msgstr "Zapisz plik Blendera"
 
 
-msgid "Save the current Blender file"
+msgid "Save the current GameForge 3D Studio file"
 msgstr "Zapisz bieżący plik Blendera"
 
 
-msgid "Exit Blender after saving"
+msgid "Exit GameForge 3D Studio after saving"
 msgstr "Wyjdź z Blendera po zapisaniu"
 
 
-msgid "Save the current Blender file with a numerically incremented name that does not overwrite any existing files"
+msgid "Save the current GameForge 3D Studio file with a numerically incremented name that does not overwrite any existing files"
 msgstr "Zapisz bieżący plik Blendera z nazwą zwiększającą się numerycznie, która nie nadpisze żadnych istniejących plików"
 
 
@@ -94163,11 +94163,11 @@ msgstr "Otwórz ekran powitalny z informacjami o wydaniu"
 
 
 msgctxt "Operator"
-msgid "About Blender"
+msgid "About GameForge 3D Studio"
 msgstr "Informacje o Blenderze"
 
 
-msgid "Open a window with information about Blender"
+msgid "Open a window with information about GameForge 3D Studio"
 msgstr "Otwórz okno z informacjami o Blenderze"
 
 
@@ -94291,11 +94291,11 @@ msgid "Preserve UTF-8 encoded characters when writing USD prim and property name
 msgstr "Zachowaj zakodowane znaki UTF-8 podczas zapisywania nazw podstawowych i właściwości USD (wymaga oprogramowania wykorzystującego wersję USD 24.03 lub nowszą podczas otwierania wynikowych plików)"
 
 
-msgid "Blender Names"
+msgid "GameForge 3D Studio Names"
 msgstr "Nazwy Blendera"
 
 
-msgid "Author USD custom attributes containing the original Blender object and object data names"
+msgid "Author USD custom attributes containing the original GameForge 3D Studio object and object data names"
 msgstr "Autor atrybutów własnych USD zawierających oryginalne nazwy obiektów Blendera i danych obiektów"
 
 
@@ -94808,7 +94808,7 @@ msgid "Allow USD primitives to merge with their Xform parent if they are the onl
 msgstr "Zezwól prymitywom USD na scalanie się z ich nadrzędnym elementem Xform, jeśli są jedynym elementem podrzędnym w hierarchii"
 
 
-msgid "Import each USD material as a unique Blender material"
+msgid "Import each USD material as a unique GameForge 3D Studio material"
 msgstr "Importuj każdy materiał USD jako unikatowy materiał Blendera"
 
 
@@ -94844,7 +94844,7 @@ msgid "Import only the primitive at the given path and its descendants. Multiple
 msgstr "Importuj tylko element pierwotny w podanej ścieżce i jego potomków. Można określić wiele ścieżek na liście rozdzielonej przecinkami lub średnikami"
 
 
-msgid "Behavior when importing USD attributes as Blender custom properties"
+msgid "Behavior when importing USD attributes as GameForge 3D Studio custom properties"
 msgstr "Zachowanie podczas importowania atrybutów USD jako własnych właściwości Blendera"
 
 
@@ -94852,7 +94852,7 @@ msgid "Do not import USD custom attributes"
 msgstr "Nie importuj własnych atrybutów USD"
 
 
-msgid "Import USD attributes in the 'userProperties' namespace as Blender custom properties. The namespace will be stripped from the property names"
+msgid "Import USD attributes in the 'userProperties' namespace as GameForge 3D Studio custom properties. The namespace will be stripped from the property names"
 msgstr "Importuj atrybuty USD w przestrzeni nazw „userProperties” jako własne właściwości Blendera. Przestrzeń nazw zostanie usunięta z nazw właściwości"
 
 
@@ -94860,7 +94860,7 @@ msgid "All Custom"
 msgstr "Wszystkie własne"
 
 
-msgid "Import all USD custom attributes as Blender custom properties. Namespaces will be retained in the property names"
+msgid "Import all USD custom attributes as GameForge 3D Studio custom properties. Namespaces will be retained in the property names"
 msgstr "Importuj wszystkie własne atrybuty USD jako własne właściwości Blendera. Przestrzenie nazw zostaną zachowane w nazwach właściwości"
 
 
@@ -95781,7 +95781,7 @@ msgid "Set the mask layer from the UV map buttons"
 msgstr "Ustaw warstwę maski z przycisków mapy UV"
 
 
-msgid "Maximum edge length for dynamic topology sculpting (as divisor of Blender unit - higher value means smaller edge length)"
+msgid "Maximum edge length for dynamic topology sculpting (as divisor of GameForge 3D Studio unit - higher value means smaller edge length)"
 msgstr "Maksymalna długość krawędzi do dynamicznego rzeźbienia topologii (jako dzielnik jednostki Blendera - wyższa wartość oznacza mniejszą długość krawędzi)"
 
 
@@ -99120,7 +99120,7 @@ msgid "Edit Methods"
 msgstr "Metody edycji"
 
 
-msgid "Settings for interacting with Blender data"
+msgid "Settings for interacting with GameForge 3D Studio data"
 msgstr "Ustawienia interakcji z danymi Blendera"
 
 
@@ -99188,7 +99188,7 @@ msgid "Sort the recently searched items at the top"
 msgstr "Sortuj ostatnio wyszukiwane elementy na górze"
 
 
-msgid "Version of Blender the userpref.blend was saved with"
+msgid "Version of GameForge 3D Studio the userpref.blend was saved with"
 msgstr "Wersja Blendera, w której zapisano plik userpref.blend"
 
 
@@ -99729,7 +99729,7 @@ msgid "All Linked Data Direct"
 msgstr "Wszystkie powiązane dane bezpośrednio"
 
 
-msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (Blender studio pipeline tool)"
+msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (GameForge 3D Studio studio pipeline tool)"
 msgstr "Wymusza traktowanie wszystkich powiązanych danych jako bezpośrednio powiązanych. Obejście obecnych problemów / ograniczeń w BAT (narzędziu do obsługi potoków w Blenderze Studio)"
 
 
@@ -99829,7 +99829,7 @@ msgid "Write Legacy Blend File Format"
 msgstr "Zapisz starszy format pliku Blend"
 
 
-msgid "Use file format used before Blender 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
+msgid "Use file format used before version 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
 msgstr "Użyj formatu pliku używanego przed Blenderem 5.0. Ten format jest bardziej ograniczony, ale może zapewniać lepszą kompatybilność z narzędziami, które jeszcze nie obsługują nowego formatu"
 
 
@@ -100423,8 +100423,8 @@ msgid "Max Threshold"
 msgstr "Maksymalny próg"
 
 
-msgid "Raw input pressure value that is interpreted as 100% by Blender"
-msgstr "Surowa wartość ciśnienia wejściowego interpretowana przez Blender jako 100%"
+msgid "Raw input pressure value that is interpreted as 100% by GameForge 3D Studio"
+msgstr "Surowa wartość ciśnienia wejściowego interpretowana przez GameForge 3D Studio jako 100%"
 
 
 msgid "Show Tablet Debug Values"
@@ -100439,8 +100439,8 @@ msgid "Tablet API"
 msgstr "API tabletu"
 
 
-msgid "Select the tablet API to use for pressure sensitivity (may require restarting Blender for changes to take effect)"
-msgstr "Wybierz interfejs API tabletu, który ma być używany do określania czułości na nacisk (aby zmiany zostały wprowadzone, może być konieczne ponowne uruchomienie programu Blender)"
+msgid "Select the tablet API to use for pressure sensitivity (may require restarting GameForge 3D Studio for changes to take effect)"
+msgstr "Wybierz interfejs API tabletu, który ma być używany do określania czułości na nacisk (aby zmiany zostały wprowadzone, może być konieczne ponowne uruchomienie programu GameForge 3D Studio)"
 
 
 msgid "Automatically choose Wintab or Windows Ink depending on the device"
@@ -100887,7 +100887,7 @@ msgid "GPU Backend"
 msgstr "Zaplecze GPU"
 
 
-msgid "GPU backend to use (requires restarting Blender for changes to take effect)"
+msgid "GPU backend to use (requires restarting GameForge 3D Studio for changes to take effect)"
 msgstr "Zaplecze GPU do użycia (aby zmiany zostały wprowadzone, wymagane jest ponowne uruchomienie Blendera)"
 
 
@@ -100915,11 +100915,11 @@ msgid "Device"
 msgstr "Urządzenie"
 
 
-msgid "Preferred device to select during detection (requires restarting Blender for changes to take effect)"
+msgid "Preferred device to select during detection (requires restarting GameForge 3D Studio for changes to take effect)"
 msgstr "Preferowane urządzenie do wyboru podczas wykrywania (aby zmiany zostały wprowadzone, wymagane jest ponowne uruchomienie Blendera)"
 
 
-msgid "Auto detect best GPU for running Blender"
+msgid "Auto detect best GPU for running GameForge 3D Studio"
 msgstr "Automatyczne wykrywanie najlepszego procesora graficznego do uruchomienia Blendera"
 
 
@@ -100927,7 +100927,7 @@ msgid "Shader Compilation Workers"
 msgstr "Wykonawcy kompilacji cieniowania"
 
 
-msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting Blender for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
+msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting GameForge 3D Studio for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
 msgstr "Liczba wątków kompilacji cieniowania lub podprocesów, ograniczona do maksymalnej liczby wątków obsługiwanych przez procesor (wymaga ponownego uruchomienia Blendera, aby zmiany zostały wprowadzone). Wyższa liczba zwiększa użycie pamięci RAM, jednocześnie skracając czas kompilacji. Wartość 0 spowoduje użycie konfiguracji automatycznej. (Tylko OpenGL)"
 
 
@@ -100991,7 +100991,7 @@ msgid "Register for All Users"
 msgstr "Zarejestruj dla wszystkich użytkowników"
 
 
-msgid "Make this Blender version open blend files for all users. Requires elevated privileges."
+msgid "Make this GameForge 3D Studio version open blend files for all users. Requires elevated privileges."
 msgstr "Uczyń tę wersję Blendera otwartą dla wszystkich użytkowników. Wymaga to podwyższonych uprawnień."
 
 
@@ -101023,7 +101023,7 @@ msgid "Shader Compilation Method"
 msgstr "Metoda kompilacji cieniowania"
 
 
-msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting Blender for changes to take effect. (OpenGL only)"
+msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting GameForge 3D Studio for changes to take effect. (OpenGL only)"
 msgstr "Metoda kompilacji używana do równoległego kompilowania cieniowania. Podproces wymaga znacznie więcej pamięci RAM dla każdego procesu roboczego, ale może kompilować cieniowania szybciej w niektórych systemach. Wymaga ponownego uruchomienia Blendera, aby zmiany zostały wprowadzone. (Tylko OpenGL)"
 
 
@@ -101079,7 +101079,7 @@ msgid "UI Line Width"
 msgstr "Szerokość linii interfejsu użytkownika"
 
 
-msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and Blender UI scale"
+msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and GameForge 3D Studio UI scale"
 msgstr "Sugerowana grubość linii i rozmiar punktu w pikselach dla dodatków wyświetlających własnego elementy interfejsu użytkownika, w oparciu o ustawienia systemu operacyjnego i skalę interfejsu użytkownika Blendera"
 
 
@@ -101087,7 +101087,7 @@ msgid "UI Scale"
 msgstr "Skala interfejsu użytkownika"
 
 
-msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and Blender display scale."
+msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and GameForge 3D Studio display scale."
 msgstr "Mnożnik rozmiaru używany podczas wyświetlania własnych elementów interfejsu użytkownika, aby zapewnić ich prawidłowe skalowanie na ekranach o różnej rozdzielczości DPI. Wartość ta jest oparta na ustawieniach DPI systemu operacyjnego i skali ekranu Blendera."
 
 
@@ -102011,7 +102011,7 @@ msgid "Show Memory"
 msgstr "Pokaż pamięć"
 
 
-msgid "Show Blender memory usage"
+msgid "Show GameForge 3D Studio memory usage"
 msgstr "Pokaż użycie pamięci Blendera"
 
 
@@ -102035,7 +102035,7 @@ msgid "Show Version"
 msgstr "Pokaż wersję"
 
 
-msgid "Show Blender version string"
+msgid "Show GameForge 3D Studio version string"
 msgstr "Pokaż ciąg wersji Blendera"
 
 
@@ -102367,7 +102367,7 @@ msgid "Collection of project asset libraries"
 msgstr "Zbiór bibliotek zasobów projektu"
 
 
-msgid "Blender Project Variable"
+msgid "GameForge 3D Studio Project Variable"
 msgstr "Zmienna projektu Blendera"
 
 
@@ -102471,7 +102471,7 @@ msgid "Deprecated Removal Version"
 msgstr "Przestarzała wersja do usunięcia"
 
 
-msgid "The Blender version this is expected to be removed"
+msgid "The GameForge 3D Studio version this is expected to be removed"
 msgstr "Oczekuje się, że wersja Blendera zostanie usunięta"
 
 
@@ -102479,7 +102479,7 @@ msgid "Deprecated Version"
 msgstr "Wersja przestarzała"
 
 
-msgid "The Blender version this was deprecated"
+msgid "The GameForge 3D Studio version this was deprecated"
 msgstr "Wersja Blendera została wycofana"
 
 
@@ -104746,11 +104746,11 @@ msgid "Path to the relevant po file in the work repository"
 msgstr "Ścieżka do odpowiedniego pliku PO w repozytorium prac"
 
 
-msgid "PO Blender File Path"
-msgstr "Ścieżka pliku PO Blender"
+msgid "PO GameForge 3D Studio File Path"
+msgstr "Ścieżka pliku PO GameForge 3D Studio"
 
 
-msgid "Path to the relevant po file in Blender's source repository"
+msgid "Path to the relevant po file in GameForge 3D Studio's source repository"
 msgstr "Ścieżka do odpowiedniego pliku PO w repozytorium źródłowym Blendera"
 
 
@@ -107551,16 +107551,16 @@ msgid "Which implementation of spring to use"
 msgstr "Którą implementację sprężyny zastosować"
 
 
-msgid "Blender 2.7"
-msgstr "Blender 2.7"
+msgid "Version 2.7"
+msgstr "GameForge 3D Studio 2.7"
 
 
-msgid "Spring implementation used in Blender 2.7. Damping is capped at 1.0"
+msgid "Spring implementation used in version 2.7. Damping is capped at 1.0"
 msgstr "Implementacja sprężyny używana w Blenderze 2.7. Tłumienie jest ograniczone do 1,0"
 
 
-msgid "Blender 2.8"
-msgstr "Blender 2.8"
+msgid "Version 2.8"
+msgstr "GameForge 3D Studio 2.8"
 
 
 msgid "New implementation available since 2.8"
@@ -108655,7 +108655,7 @@ msgid "Export Method"
 msgstr "Metoda eksportu"
 
 
-msgid "How to export the Blender scene to the Hydra render engine"
+msgid "How to export the GameForge 3D Studio scene to the Hydra render engine"
 msgstr "Jak wyeksportować scenę Blendera do silnika renderującego Hydra"
 
 
@@ -111193,7 +111193,7 @@ msgid "Display data belonging to the Video Sequencer"
 msgstr "Wyświetl dane należące do sekwencera filmu"
 
 
-msgid "Blender File"
+msgid "GameForge 3D Studio File"
 msgstr "Plik Blendera"
 
 
@@ -111205,7 +111205,7 @@ msgid "Data API"
 msgstr "Dane API"
 
 
-msgid "Display low level Blender data and its properties"
+msgid "Display low level GameForge 3D Studio data and its properties"
 msgstr "Wyświetlanie danych Blendera niskiego poziomu i ich właściwości"
 
 
@@ -111558,7 +111558,7 @@ msgid "Space Preferences"
 msgstr "Przestrzeń preferencji"
 
 
-msgid "Blender preferences space data"
+msgid "GameForge 3D Studio preferences space data"
 msgstr "Preferencje Blendera przestrzeni danych"
 
 
@@ -116288,7 +116288,7 @@ msgid "Theme Preferences"
 msgstr "Motyw preferencji"
 
 
-msgid "Theme settings for the Blender Preferences"
+msgid "Theme settings for the GameForge 3D Studio Preferences"
 msgstr "Ustawienia motywu dla preferencji Blendera"
 
 
@@ -118362,7 +118362,7 @@ msgid "Unit Scale"
 msgstr "Skala jednostki"
 
 
-msgid "Scale to use when converting between Blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
+msgid "Scale to use when converting between GameForge 3D Studio units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
 msgstr "Skala używana podczas konwersji między jednostkami i wymiarami w Blenderze. Podczas pracy w skali mikroskopowej lub astronomicznej można użyć odpowiednio małej lub dużej skali jednostek, aby uniknąć problemów z precyzją numeryczną"
 
 
@@ -124731,7 +124731,7 @@ msgid "Unlocked: {:s}"
 msgstr "Odblokowano: {:s}"
 
 
-msgid "Warning! Before unlocking, ensure another instance of Blender is not running."
+msgid "Warning! Before unlocking, ensure another instance of GameForge 3D Studio is not running."
 msgstr "Uwaga! Przed odblokowaniem upewnij się, że inna instancja Blendera nie jest uruchomiona."
 
 
@@ -124860,7 +124860,7 @@ msgid "Manifest validation failed: {:s}"
 msgstr "Nie można sprawdzić poprawności manifestu: {:s}"
 
 
-msgid "Online access required to install or update. Launch Blender without --offline-mode"
+msgid "Online access required to install or update. Launch GameForge 3D Studio without --offline-mode"
 msgstr "Do instalacji lub aktualizacji wymagany jest dostęp online. Uruchom Blendera bez parametru --offline-mode"
 
 
@@ -124872,15 +124872,15 @@ msgid "Add-on \"{:s}\" is already installed!"
 msgstr "Dodatek „{:s}” jest już zainstalowany!"
 
 
-msgid "Blender was launched in offline mode, which cannot be changed at runtime"
-msgstr "Blender został uruchomiony w trybie offline, którego nie można zmienić w czasie wykonywania"
+msgid "GameForge 3D Studio was launched in offline mode, which cannot be changed at runtime"
+msgstr "GameForge 3D Studio został uruchomiony w trybie offline, którego nie można zmienić w czasie wykonywania"
 
 
 msgid "Online access required to install or update."
 msgstr "Do instalacji lub aktualizacji wymagany jest dostęp do Internetu."
 
 
-msgid "Launch Blender without --offline-mode"
+msgid "Launch GameForge 3D Studio without --offline-mode"
 msgstr "Uruchom Blendera bez --offline-mode"
 
 
@@ -124976,7 +124976,7 @@ msgid "Missing Built-in Add-ons"
 msgstr "Brak wbudowanych dodatków"
 
 
-msgid "Add-ons previously shipped with Blender are now available from extensions.blender.org."
+msgid "Add-ons previously shipped with GameForge 3D Studio are now available from extensions.blender.org."
 msgstr "Dodatki, które wcześniej były dołączane do Blendera, są teraz dostępne na stronie extensions.blender.org."
 
 
@@ -125053,7 +125053,7 @@ msgid "Maintainer"
 msgstr "Opiekun"
 
 
-msgid "Blender's extension repository not found!"
+msgid "GameForge 3D Studio's extension repository not found!"
 msgstr "Nie znaleziono repozytorium rozszerzeń Blendera!"
 
 
@@ -125087,7 +125087,7 @@ msgid "No visible tags."
 msgstr "Brak widocznych oznaczeń."
 
 
-msgid "Blender's extension repository must be enabled to install extensions!"
+msgid "GameForge 3D Studio's extension repository must be enabled to install extensions!"
 msgstr "Aby zainstalować rozszerzenia, należy włączyć repozytorium rozszerzeń Blendera!"
 
 
@@ -125132,7 +125132,7 @@ msgid "Uninstall Marked"
 msgstr "Odinstaluj zaznaczone"
 
 
-msgid "Blender's extension repository must be refreshed!"
+msgid "GameForge 3D Studio's extension repository must be refreshed!"
 msgstr "Repozytorium rozszerzeń Blendera musi zostać odświeżone!"
 
 
@@ -125363,8 +125363,8 @@ msgid "Use GPU accelerated denoising if supported, for the best performance. Pre
 msgstr "Aby uzyskać najlepszą wydajność, użyj odszumiania wspomaganego przez GPU, jeśli jest ono obsługiwane. Preferuj OpenImageDenoise zamiast OptiX"
 
 
-msgid "Blender was compiled without a viewport denoiser"
-msgstr "Blender został skompilowany bez odszumiania rzutni"
+msgid "GameForge 3D Studio was compiled without a viewport denoiser"
+msgstr "GameForge 3D Studio został skompilowany bez odszumiania rzutni"
 
 
 msgid "Do not use compute device"
@@ -125744,7 +125744,7 @@ msgid "Invalid context"
 msgstr "Nieprawidłowy kontekst"
 
 
-msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and Blender scene have the same frame rate"
+msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and GameForge 3D Studio scene have the same frame rate"
 msgstr "Plik BVH nie zawiera czasu trwania klatki w sekcji RUCH, zakładając, że scena BVH i Blendera mają tę samą liczbę klatek na sekundę"
 
 
@@ -126746,8 +126746,8 @@ msgid "This feature set depends on the following feature set to work properly:"
 msgstr "Aby ten zestaw funkcji działał prawidłowo, wymagany jest następujący zestaw funkcji:"
 
 
-msgid "This feature set requires Blender {:s} or newer to work properly."
-msgstr "Aby ten zestaw funkcji działał poprawnie, wymagany jest Blender {:s} lub nowszy."
+msgid "This feature set requires GameForge 3D Studio {:s} or newer to work properly."
+msgstr "Aby ten zestaw funkcji działał poprawnie, wymagany jest GameForge 3D Studio {:s} lub nowszy."
 
 
 msgid "The feature set archive must contain one base directory"
@@ -127306,7 +127306,7 @@ msgstr "Oczyść repozytorium prac"
 
 
 msgctxt "Operator"
-msgid "Update Blender Repository"
+msgid "Update GameForge 3D Studio Repository"
 msgstr "Aktualizuj repozytorium Blendera"
 
 
@@ -127621,7 +127621,7 @@ msgid "Unable to find any running process"
 msgstr "Nie można znaleźć żadnego działającego procesu"
 
 
-msgid "Blender sub-process exited with error code {:d}"
+msgid "GameForge 3D Studio sub-process exited with error code {:d}"
 msgstr "Podproces Blendera zakończył się z kodem błędu {:d}"
 
 
@@ -127781,8 +127781,8 @@ msgid "Could not find image '{:s}'"
 msgstr "Nie można znaleźć obrazu „{:s}”"
 
 
-msgid "Image editor could not be launched, ensure that the path in User Preferences > File Paths > Applications > Image Editor is valid, and Blender has rights to launch it"
-msgstr "Nie można uruchomić edytora obrazów. Upewnij się, że ścieżka w Preferencjach użytkownika > Ścieżki plików > Aplikacje > Edytor obrazów jest prawidłowa i że Blender ma uprawnienia do jego uruchomienia"
+msgid "Image editor could not be launched, ensure that the path in User Preferences > File Paths > Applications > Image Editor is valid, and GameForge 3D Studio has rights to launch it"
+msgstr "Nie można uruchomić edytora obrazów. Upewnij się, że ścieżka w Preferencjach użytkownika > Ścieżki plików > Aplikacje > Edytor obrazów jest prawidłowa i że GameForge 3D Studio ma uprawnienia do jego uruchomienia"
 
 
 msgid "Context incorrect, image not found"
@@ -128085,7 +128085,7 @@ msgid "Cannot save project because there is no project to save."
 msgstr "Nie można zapisać projektu, ponieważ nie ma żadnego projektu do zapisania."
 
 
-msgid "Project configuration is newer than this version of Blender supports"
+msgid "Project configuration is newer than this version of GameForge 3D Studio supports"
 msgstr "Konfiguracja projektu jest nowsza niż ta obsługiwana przez Blendera"
 
 
@@ -128225,7 +128225,7 @@ msgid "Installing keymap failed: {:s}"
 msgstr "Instalacja mapy klawiszy nie powiodła się: {:s}"
 
 
-msgid "This script was written for Blender version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
+msgid "This script was written for GameForge 3D Studio version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
 msgstr "Ten skrypt został napisany dla wersji Blendera {:d}.{:d}.{:d} i może nie działać (poprawnie), mimo że jest włączony"
 
 
@@ -128342,8 +128342,8 @@ msgid "Open..."
 msgstr "Otwórz..."
 
 
-msgid "Blender is free software"
-msgstr "Blender jest darmowym oprogramowaniem"
+msgid "GameForge 3D Studio is free software"
+msgstr "GameForge 3D Studio jest darmowym oprogramowaniem"
 
 
 msgid "Licensed under the GNU General Public License"
@@ -128435,7 +128435,7 @@ msgstr "Co nowego"
 
 
 msgctxt "Operator"
-msgid "Donate to Blender"
+msgid "Donate to GameForge 3D Studio"
 msgstr "Wesprzyj Blendera"
 
 
@@ -128459,12 +128459,12 @@ msgstr "Licencja"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
+msgid "GameForge 3D Studio Store"
 msgstr "Sklep Blendera"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
+msgid "GameForge 3D Studio Website"
 msgstr "Witryna internetowa Blendera"
 
 
@@ -128502,7 +128502,7 @@ msgid "Release Notes"
 msgstr "Notatki wydania"
 
 
-msgid "Read about what's new in this version of Blender"
+msgid "Read about what's new in this version of GameForge 3D Studio"
 msgstr "Przeczytaj o nowościach w tej wersji Blendera"
 
 
@@ -128510,7 +128510,7 @@ msgid "User Manual"
 msgstr "Instrukcja obsługi"
 
 
-msgid "The reference manual for this version of Blender"
+msgid "The reference manual for this version of GameForge 3D Studio"
 msgstr "Podręcznik referencyjny tej wersji Blendera"
 
 
@@ -128518,7 +128518,7 @@ msgid "Python API Reference"
 msgstr "Dokumentacja API Pythona"
 
 
-msgid "The API reference manual for this version of Blender"
+msgid "The API reference manual for this version of GameForge 3D Studio"
 msgstr "Podręcznik referencyjny API dla tej wersji Blendera"
 
 
@@ -128530,7 +128530,7 @@ msgid "The donation program to support maintenance and improvements"
 msgstr "Program darowizn na rzecz wsparcia konserwacji i ulepszeń"
 
 
-msgid "Blender's official web-site"
+msgid "GameForge 3D Studio's official web-site"
 msgstr "Oficjalna witryna internetowa Blendera"
 
 
@@ -128538,7 +128538,7 @@ msgid "Credits"
 msgstr "Autorzy"
 
 
-msgid "Lists committers to Blender's source code"
+msgid "Lists committers to GameForge 3D Studio's source code"
 msgstr "Wyświetla listę osób zatwierdzających kod źródłowy Blendera"
 
 
@@ -128703,7 +128703,7 @@ msgstr "Nieprawidłowe wyrażenie regularne (zamień): {:s}"
 
 
 msgctxt "Operator"
-msgid "Import Blender {:d}.{:d} Preferences"
+msgid "Import GameForge 3D Studio {:d}.{:d} Preferences"
 msgstr "Importuj preferencje Blendera {:d}.{:d}"
 
 
@@ -131627,7 +131627,7 @@ msgid "Volume Files"
 msgstr "Pliki objętości"
 
 
-msgid "Blender IDs"
+msgid "GameForge 3D Studio IDs"
 msgstr "ID Blendera"
 
 
@@ -133518,7 +133518,7 @@ msgstr "Więcej..."
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Settings"
+msgid "Load Factory GameForge 3D Studio Settings"
 msgstr "Wczytaj ustawienia fabryczne blendera"
 
 
@@ -133694,7 +133694,7 @@ msgid "Video Memory"
 msgstr "Pamięć filmu"
 
 
-msgid "Blender Version"
+msgid "GameForge 3D Studio Version"
 msgstr "Wersja Blendera"
 
 
@@ -133995,7 +133995,7 @@ msgstr "Zapisz jako oświetlenie studyjne"
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "Wczytaj preferencje fabryczne Blendera"
 
 
@@ -134003,11 +134003,11 @@ msgid "Cycles is disabled in this build"
 msgstr "W tej kompilacji cykle są wyłączone"
 
 
-msgid "A restart of Blender is required"
+msgid "A restart of GameForge 3D Studio is required"
 msgstr "Wymagane jest ponowne uruchomienie Blendera"
 
 
-msgid "Open blend files with this Blender version"
+msgid "Open blend files with this GameForge 3D Studio version"
 msgstr "Otwórz pliki blend za pomocą tej wersji Blendera"
 
 
@@ -136766,12 +136766,12 @@ msgid "This asset does not require downloading"
 msgstr "Tego zasobu nie trzeba pobierać"
 
 
-msgid "Downloading assets requires Python, and this Blender is built without"
-msgstr "Pobieranie zasobów wymaga języka Python, a ten Blender został stworzony bez niego"
+msgid "Downloading assets requires Python, and this GameForge 3D Studio is built without"
+msgstr "Pobieranie zasobów wymaga języka Python, a ten GameForge 3D Studio został stworzony bez niego"
 
 
-msgid "Downloading asset previews requires Python, and this Blender is built without"
-msgstr "Pobieranie podglądów zasobów wymaga języka Python, a ten Blender został stworzony bez niego"
+msgid "Downloading asset previews requires Python, and this GameForge 3D Studio is built without"
+msgstr "Pobieranie podglądów zasobów wymaga języka Python, a ten GameForge 3D Studio został stworzony bez niego"
 
 
 msgid "Asset listing does not indicate where the file should be downloaded to, for asset '%s'"
@@ -136934,7 +136934,7 @@ msgid "Unable to create app-template userpref path"
 msgstr "Nie można utworzyć ścieżki preferencji użytkownika szablonu aplikacji"
 
 
-msgid "File written by newer Blender binary (%d.%d), expect loss of data!"
+msgid "File written by newer GameForge 3D Studio binary (%d.%d), expect loss of data!"
 msgstr "Plik zapisany przy użyciu nowszej wersji binarnej Blendera (%d.%d), należy spodziewać się utraty danych!"
 
 
@@ -136958,7 +136958,7 @@ msgid "Appended Data"
 msgstr "Dołączone dane"
 
 
-msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current Blender"
+msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current GameForge 3D Studio"
 msgstr "Łączenie lub dołączanie z bardzo starego formatu pliku .blend (%d.%d) spowoduje, że konwersja animacji nie zostanie przeprowadzona! Możesz chcieć ponownie zapisać plik biblioteki w aktualnej wersji Blendera"
 
 
@@ -137796,8 +137796,8 @@ msgid "At least 8 common tracks on both keyframes are needed for reconstruction"
 msgstr "Do rekonstrukcji potrzebnych jest co najmniej 8 wspólnych ścieżek na obu klatkach kluczowych"
 
 
-msgid "Blender is compiled without motion tracking library"
-msgstr "Blender jest kompilowany bez biblioteki śledzenia ruchu"
+msgid "GameForge 3D Studio is compiled without motion tracking library"
+msgstr "GameForge 3D Studio jest kompilowany bez biblioteki śledzenia ruchu"
 
 
 msgid "Original Mode"
@@ -138272,19 +138272,19 @@ msgid "Blend file '%s' is corrupt, unable to read"
 msgstr "Plik blend „%s” jest uszkodzony, nie można go odczytać"
 
 
-msgid "The file was saved by a newer version, open it with Blender %s or later"
+msgid "The file was saved by a newer version, open it with GameForge 3D Studio %s or later"
 msgstr "Plik został zapisany w nowszej wersji, otwórz go za pomocą Blendera %s lub nowszego"
 
 
-msgid "Blend file '%s' created by a Big Endian version of Blender, support for these files has been removed in Blender 5.0, use an older version of Blender to open and convert it."
-msgstr "Plik Blend „%s\" został utworzony przy użyciu wersji Big Endian programu Blender. Obsługa tych plików została usunięta w wersji Blender 5.0. Aby go otworzyć i przekonwertować, należy użyć starszej wersji programu Blender."
+msgid "Blend file '%s' created by a Big Endian version of GameForge 3D Studio, support for these files has been removed in version 5.0, use an older version of GameForge 3D Studio to open and convert it."
+msgstr "Plik Blend „%s\" został utworzony przy użyciu wersji Big Endian programu GameForge 3D Studio. Obsługa tych plików została usunięta w wersji GameForge 3D Studio 5.0. Aby go otworzyć i przekonwertować, należy użyć starszej wersji programu GameForge 3D Studio."
 
 
 msgid "Failed to read blend file '%s': %s"
 msgstr "Nie udało się odczytać pliku blend „%s\": %s"
 
 
-msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of Blender"
+msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of GameForge 3D Studio"
 msgstr "Nie można odczytać pliku blend „%s”, nagłówek jest niekompletny, może pochodzić z nowszej wersji Blendera"
 
 
@@ -138300,7 +138300,7 @@ msgid "Unable to open '%s': %s"
 msgstr "Nie można otworzyć „%s”: %s"
 
 
-msgid "Blendfile '%s' was created by a future version of Blender and contains ID names longer than currently supported. These have been truncated."
+msgid "Blendfile '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. These have been truncated."
 msgstr "Plik Blend „%s” został utworzony w przyszłej wersji Blendera i zawiera nazwy ID dłuższe niż obecnie obsługiwane. Zostały one skrócone."
 
 
@@ -138308,7 +138308,7 @@ msgid "Blendfile '%s' appears corrupted, it contains invalid ID names. These hav
 msgstr "Plik Blend „%s” wydaje się uszkodzony i zawiera nieprawidłowe nazwy ID. Zostały one skrócone."
 
 
-msgid "Library '%s' was created by a future version of Blender and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current Blender version."
+msgid "Library '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current GameForge 3D Studio version."
 msgstr "Biblioteka „%s” została utworzona przez przyszłą wersję Blendera i zawiera nazwy ID dłuższe niż obecnie obsługiwane. Może to spowodować brak powiązanych danych. Rozważ otwarcie i ponowne zapisanie tej biblioteki w aktualnej wersji Blendera."
 
 
@@ -138320,7 +138320,7 @@ msgid "GP_Palette"
 msgstr "GP_paleta"
 
 
-msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in Blender 2.80 and later, removed instancing"
+msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in version 2.80 and later, removed instancing"
 msgstr "Obiekt niepusty „%s” nie może już duplikować kolekcji „%s” w Blenderze 2.80 i nowszych wersjach, usunięto instancjonowanie"
 
 
@@ -139653,7 +139653,7 @@ msgid "no API versions defined: {:s}"
 msgstr "brak zdefiniowanych wersji API: {:s}"
 
 
-msgid "remote does not offer an API version supported by this version of Blender"
+msgid "remote does not offer an API version supported by this version of GameForge 3D Studio"
 msgstr "zdalny nie oferuje wersji API obsługiwanej przez tę wersję Blendera"
 
 
@@ -139673,15 +139673,15 @@ msgid "Could not read asset listing for '%s', see Info Editor for details"
 msgstr "Nie można odczytać listy zasobów dla „%s”. Szczegóły można znaleźć w Edytorze informacji"
 
 
-msgid "could not read asset Blender versions, 'bl_versions' field not set"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions' field not set"
 msgstr "nie można odczytać wersji zasobów Blendera, pole „bl_versions” nie zostało ustawione"
 
 
-msgid "could not read asset Blender versions, 'bl_versions.min' field not set"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not set"
 msgstr "nie można odczytać wersji zasobów Blendera, pole „bl_versions.min” nie zostało ustawione"
 
 
-msgid "could not read asset Blender versions, 'bl_versions.min' field not in X.Y notation"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not in X.Y notation"
 msgstr "nie można odczytać wersji zasobów Blendera, pole „bl_versions.min” nie jest w notacji X.Y"
 
 
@@ -139865,7 +139865,7 @@ msgid "Asset catalogs cannot be edited in this asset library"
 msgstr "Katalogów zasobów nie można edytować w tej bibliotece zasobów"
 
 
-msgid "Cannot save asset catalogs before the Blender file is saved"
+msgid "Cannot save asset catalogs before the GameForge 3D Studio file is saved"
 msgstr "Nie można zapisać katalogów zasobów przed zapisaniem pliku Blendera"
 
 
@@ -140702,7 +140702,7 @@ msgid "Drag to continue sampling, release when done"
 msgstr "Przeciągnij, aby kontynuować próbkowanie, puść po zakończeniu"
 
 
-msgid "Press 'Enter' to sample outside of a Blender window"
+msgid "Press 'Enter' to sample outside of a GameForge 3D Studio window"
 msgstr "Naciśnij „Enter”, aby pobrać próbkę spoza okna Blendera"
 
 
@@ -142169,15 +142169,13 @@ msgid "Show in Info Log"
 msgstr "Pokaż w dzienniku informacji"
 
 
-msgid ""
-"File saved by newer Blender\n"
-"({}), expect loss of data"
+msgid "File saved by newer GameForge 3D Studio\n({}), expect loss of data"
 msgstr ""
 "Plik zapisany przez nowszą wersję Blendera\n"
 "({}), należy spodziewać się utraty danych"
 
 
-msgid "This file is managed by the Blender asset system and cannot be overridden"
+msgid "This file is managed by the GameForge 3D Studio asset system and cannot be overridden"
 msgstr "Plik ten jest zarządzany przez system zasobów Blendera i nie można go nadpisać"
 
 
@@ -142326,7 +142324,7 @@ msgid "No filename given"
 msgstr "Nie podano nazwy pliku"
 
 
-msgid "Blender Data"
+msgid "GameForge 3D Studio Data"
 msgstr "Dane Blendera"
 
 
@@ -144986,7 +144984,7 @@ msgid "Deleted %d tx files"
 msgstr "Usunięto %d plików tx"
 
 
-msgid "Blender Render"
+msgid "GameForge 3D Studio Render"
 msgstr "Renderowanie Blendera"
 
 
@@ -145146,11 +145144,11 @@ msgid "Flip to Bottom"
 msgstr "Odwróć do dołu"
 
 
-msgid "Blender Drivers Editor"
+msgid "GameForge 3D Studio Drivers Editor"
 msgstr "Edytor sterowników Blendera"
 
 
-msgid "Blender Info Log"
+msgid "GameForge 3D Studio Info Log"
 msgstr "Dziennik informacji Blendera"
 
 
@@ -146290,7 +146288,7 @@ msgstr ""
 "Możesz to później zmienić w preferencjach „System”."
 
 
-msgid "Unreadable Blender library file:"
+msgid "Unreadable GameForge 3D Studio library file:"
 msgstr "Niemożliwy do odczytania plik biblioteki Blendera:"
 
 
@@ -148977,7 +148975,7 @@ msgid "Jump to Line Number"
 msgstr "Przeskocz do numeru wiersza"
 
 
-msgid "File Modified Outside and Inside Blender"
+msgid "File Modified Outside and Inside GameForge 3D Studio"
 msgstr "Plik zmodyfikowany poza Blenderem i wewnątrz niego"
 
 
@@ -148993,7 +148991,7 @@ msgid "Make text internal (separate copy)"
 msgstr "Utwórz tekst wewnętrzny (oddzielna kopia)"
 
 
-msgid "File Modified Outside Blender"
+msgid "File Modified Outside GameForge 3D Studio"
 msgstr "Plik zmodyfikowany poza Blenderem"
 
 
@@ -149001,7 +148999,7 @@ msgid "Reload from disk"
 msgstr "Wczytaj ponownie z dysku"
 
 
-msgid "File Deleted Outside Blender"
+msgid "File Deleted Outside GameForge 3D Studio"
 msgstr "Plik usunięty poza Blenderem"
 
 
@@ -150905,7 +150903,7 @@ msgid "An exception occurred invoking USD hook '%s'"
 msgstr "Wystąpił wyjątek podczas wywoływania haka USD „%s”"
 
 
-msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to Blender"
+msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to GameForge 3D Studio"
 msgstr "Primvar „%s” (interpolacja %s, typ %s) nie może zostać przekonwertowany do Blendera"
 
 
@@ -150997,7 +150995,7 @@ msgid "%s: Mismatch in bind xforms and joint counts for skeleton %s"
 msgstr "%s: Niezgodność w powiązaniu xform i liczbie przegubów dla szkieletu %s"
 
 
-msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to Blender's bone representation. The skeletal animation won't be imported"
+msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to GameForge 3D Studio's bone representation. The skeletal animation won't be imported"
 msgstr "Import szkieletu USD: macierze kości z ujemnymi wyznacznikami wykryte w elemencie podstawowym %s. Takie macierze mogą wskazywać ujemne skale, prawdopodobnie z powodu operacji lustrzanego odbicia i obecnie nie można ich przekonwertować na reprezentację kości w Blenderze. Animacja szkieletu nie zostanie zaimportowana"
 
 
@@ -151041,7 +151039,7 @@ msgid "Cannot export mixed cyclic and non-cyclic curves in the same Curves objec
 msgstr "Nie można eksportować mieszanych krzywych cyklicznych i niecyklicznych w tym samym obiekcie krzywe"
 
 
-msgid "Attribute '%s' (Blender domain %d, type %d) cannot be converted to USD"
+msgid "Attribute '%s' (GameForge 3D Studio domain %d, type %d) cannot be converted to USD"
 msgstr "Atrybutu „%s” (domena Blendera %d, typ %d) nie można przekonwertować na USD"
 
 
@@ -152622,8 +152620,8 @@ msgid "Unable to open sound file"
 msgstr "Nie można otworzyć pliku dźwiękowego"
 
 
-msgid "Blender compiled without Audaspace support"
-msgstr "Blender skompilowany bez obsługi Audaspace"
+msgid "GameForge 3D Studio compiled without Audaspace support"
+msgstr "GameForge 3D Studio skompilowany bez obsługi Audaspace"
 
 
 msgid "Invalid length"
@@ -155798,8 +155796,8 @@ msgid "Node must be run as tool"
 msgstr "Węzeł musi zostać uruchomiony jako narzędzie"
 
 
-msgid "Disabled, Blender was compiled without OpenVDB"
-msgstr "Wyłączony, Blender został skompilowany bez OpenVDB"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenVDB"
+msgstr "Wyłączony, GameForge 3D Studio został skompilowany bez OpenVDB"
 
 
 msgid "Disabled, OpenVDB version is too old"
@@ -156144,8 +156142,8 @@ msgid "List with one element per item"
 msgstr "Lista zawierająca jeden element na pozycję"
 
 
-msgid "Disabled, Blender was compiled without Bullet"
-msgstr "Wyłączony, Blender został skompilowany bez Bullet"
+msgid "Disabled, GameForge 3D Studio was compiled without Bullet"
+msgstr "Wyłączony, GameForge 3D Studio został skompilowany bez Bullet"
 
 
 msgid "Points to compute the convex hull of"
@@ -157527,32 +157525,32 @@ msgid "Path to a CSV file"
 msgstr "Ścieżka do pliku CSV"
 
 
-msgid "Disabled, Blender was compiled without OBJ I/O"
-msgstr "Wyłączony, Blender został skompilowany bez wejścia / wyjścia OBJ"
+msgid "Disabled, GameForge 3D Studio was compiled without OBJ I/O"
+msgstr "Wyłączony, GameForge 3D Studio został skompilowany bez wejścia / wyjścia OBJ"
 
 
 msgid "Path to a OBJ file"
 msgstr "Ścieżka do pliku OBJ"
 
 
-msgid "Disabled, Blender was compiled without PLY I/O"
-msgstr "Wyłączony, Blender został skompilowany bez wejścia / wyjścia PLY"
+msgid "Disabled, GameForge 3D Studio was compiled without PLY I/O"
+msgstr "Wyłączony, GameForge 3D Studio został skompilowany bez wejścia / wyjścia PLY"
 
 
 msgid "Path to a PLY file"
 msgstr "Ścieżka do pliku PLY"
 
 
-msgid "Disabled, Blender was compiled without SPZ I/O"
-msgstr "Wyłączono: Blender został skompilowany bez obsługi wejścia / wyjścia SPZ"
+msgid "Disabled, GameForge 3D Studio was compiled without SPZ I/O"
+msgstr "Wyłączono: GameForge 3D Studio został skompilowany bez obsługi wejścia / wyjścia SPZ"
 
 
 msgid "Path to a SPZ file"
 msgstr "Ścieżka do pliku SPZ"
 
 
-msgid "Disabled, Blender was compiled without STL I/O"
-msgstr "Wyłączony, Blender został skompilowany bez wejścia / wyjścia STL"
+msgid "Disabled, GameForge 3D Studio was compiled without STL I/O"
+msgstr "Wyłączony, GameForge 3D Studio został skompilowany bez wejścia / wyjścia STL"
 
 
 msgid "Path to a STL file"
@@ -158288,8 +158286,8 @@ msgid "The subdivision level is too large"
 msgstr "Poziom podpodziału jest zbyt duży"
 
 
-msgid "Disabled, Blender was compiled without OpenSubdiv"
-msgstr "Wyłączony, Blender został skompilowany bez OpenSubdiv"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenSubdiv"
+msgstr "Wyłączony, GameForge 3D Studio został skompilowany bez OpenSubdiv"
 
 
 msgid "Mesh to subdivide"
@@ -159561,7 +159559,7 @@ msgid "Pack UV Islands Field"
 msgstr "Spakuj pole wysp UV"
 
 
-msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in Blender"
+msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in GameForge 3D Studio"
 msgstr "Obliczenia przy użyciu biblioteki MikkTSpace, zgodne ze stycznymi używanymi w innych miejscach w Blenderze"
 
 
@@ -161435,7 +161433,7 @@ msgid "Input pending {}"
 msgstr "Oczekiwanie na wprowadzenie danych {}"
 
 
-msgid "Blender File View"
+msgid "GameForge 3D Studio File View"
 msgstr "Widok pliku Blendera"
 
 
@@ -161463,8 +161461,8 @@ msgid "Overwrite Startup File"
 msgstr "Nadpisz plik startowy"
 
 
-msgid "Blender will start next time as it is now."
-msgstr "Następnym razem Blender uruchomi się tak, jak teraz."
+msgid "GameForge 3D Studio will start next time as it is now."
+msgstr "Następnym razem GameForge 3D Studio uruchomi się tak, jak teraz."
 
 
 msgid "Template \"{}\" will start next time as it is now."
@@ -161487,7 +161485,7 @@ msgid "Load Factory \"{}\" Preferences."
 msgstr "Wczytaj preferencje fabryczne „{}”."
 
 
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "Wczytaj preferencje fabryczne Blendera"
 
 
@@ -161599,19 +161597,19 @@ msgid "Unable to Load File"
 msgstr "Nie można wczytać pliku"
 
 
-msgid "The file is not a valid Blender file."
+msgid "The file is not a valid GameForge 3D Studio file."
 msgstr "Plik nie jest prawidłowym plikiem Blendera."
 
 
-msgid "This file was saved by a newer version of Blender (%s)."
+msgid "This file was saved by a newer version of GameForge 3D Studio (%s)."
 msgstr "Ten plik został zapisany przez nowszą wersję Blendera (%s)."
 
 
-msgid "Saving it with this Blender (%s) may cause loss of data."
+msgid "Saving it with this GameForge 3D Studio (%s) may cause loss of data."
 msgstr "Zapisanie go za pomocą Blendera (%s) może spowodować utratę danych."
 
 
-msgid "This file is managed by the Blender asset system. It can only be"
+msgid "This file is managed by the GameForge 3D Studio asset system. It can only be"
 msgstr "Plik ten jest zarządzany przez system zasobów Blendera. Można go używać tylko"
 
 
@@ -161635,11 +161633,11 @@ msgid "Cannot overwrite asset system files. Save as new file"
 msgstr "Nie można nadpisać plików systemu zasobów. Zapisz jako nowy plik"
 
 
-msgid "with an older Blender version?"
+msgid "with an older GameForge 3D Studio version?"
 msgstr "ze starszą wersją Blendera?"
 
 
-msgid "Overwrite file with an older Blender version?"
+msgid "Overwrite file with an older GameForge 3D Studio version?"
 msgstr "Nadpisać plik starszą wersją Blendera?"
 
 
@@ -161655,7 +161653,7 @@ msgid "Save changes before closing?"
 msgstr "Zapisać zmiany przed zamknięciem?"
 
 
-msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with Blender v4.5 to convert animation data."
+msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with GameForge 3D Studio v4.5 to convert animation data."
 msgstr "Wczytano plik blend w wersji wcześniejszej niż 2.50, ale dane animacji nie zostały wczytane. Otwórz i zapisz plik w Blenderze 4.5, aby przekonwertować dane animacji."
 
 
@@ -161699,7 +161697,7 @@ msgid "%d libraries have overrides needing resync (auto resynced in %.0fm%.2fs),
 msgstr "%d bibliotek ma nadpisania wymagające ponownej synchronizacji (automatyczna ponowna synchronizacja w %.0fm%.2fs). Aby uzyskać więcej informacji, sprawdź edytor informacji"
 
 
-msgid "Proxies have been removed from Blender (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest Blender version"
+msgid "Proxies have been removed from GameForge 3D Studio (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest GameForge 3D Studio version"
 msgstr "Usunięto proxy z Blendera (%d proxy zostało automatycznie przekonwertowanych na nadpisania bibliotek, %d proxy nie mogło zostać przekonwertowanych i zostało wyczyszczonych). Rozważ ponowne zapisanie dowolnego pliku .blend biblioteki w najnowszej wersji Blendera"
 
 
@@ -161983,7 +161981,7 @@ msgstr "Twoja karta graficzna lub wersja sterownika ma ograniczone wsparcie. Mo�
 
 
 msgctxt "WindowManager"
-msgid "Newer graphics drivers might be available with better Blender compatibility."
+msgid "Newer graphics drivers might be available with better GameForge 3D Studio compatibility."
 msgstr "Nowsze sterowniki graficzne mogą być dostępne z lepszą kompatybilnością z Blenderem."
 
 
@@ -162008,7 +162006,7 @@ msgstr "Twoja karta graficzna lub wersja systemu macOS nie jest obsługiwana"
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
 msgstr "Aktualizacja do najnowszej wersji systemu macOS może poprawić obsługę Blendera"
 
 
@@ -162018,8 +162016,8 @@ msgstr "Twoja karta graficzna lub wersja sterownika nie są obsługiwane."
 
 
 msgctxt "WindowManager"
-msgid "Blender will now close."
-msgstr "Blender zostanie teraz zamknięty."
+msgid "GameForge 3D Studio will now close."
+msgstr "GameForge 3D Studio zostanie teraz zamknięty."
 
 
 msgid "Intel binary detected. Expect reduced performance."
@@ -162419,8 +162417,8 @@ msgid "Stroke and Fill"
 msgstr "Obrys i wypełnienie"
 
 
-msgid "Blender 27x"
-msgstr "Blender 27x"
+msgid "version 27x"
+msgstr "GameForge 3D Studio 27x"
 
 
 msgid "Industry Compatible"
@@ -162656,7 +162654,7 @@ msgid "Import-Export BVH from armature objects"
 msgstr "Import-eksport BVH z obiektów armatury"
 
 
-msgid "Blender Extensions"
+msgid "GameForge 3D Studio Extensions"
 msgstr "Rozszerzenia Blendera"
 
 
@@ -162708,7 +162706,7 @@ msgid "Manage UI translations"
 msgstr "Zarządzaj tłumaczeniami interfejsu użytkownika"
 
 
-msgid "Allows managing UI translations directly from Blender (update main .po files, update scripts' translations, etc.)"
+msgid "Allows managing UI translations directly from GameForge 3D Studio (update main .po files, update scripts' translations, etc.)"
 msgstr "Umożliwia zarządzanie tłumaczeniami interfejsu użytkownika bezpośrednio z poziomu Blendera (aktualizowanie głównych plików .po, aktualizowanie tłumaczeń skryptów itp.)"
 
 

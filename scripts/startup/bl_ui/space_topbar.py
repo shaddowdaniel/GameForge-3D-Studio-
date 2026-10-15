@@ -114,7 +114,7 @@ class TOPBAR_MT_editor_menus(Menu):
         if getattr(context.area, "show_menus", False):
             layout.menu("TOPBAR_MT_blender", text="", icon='BLENDER')
         else:
-            layout.menu("TOPBAR_MT_blender", text="Blender")
+            layout.menu("TOPBAR_MT_blender", text="GameForge 3D Studio")
 
         layout.menu("TOPBAR_MT_file")
         layout.menu("TOPBAR_MT_edit")
@@ -129,7 +129,7 @@ class TOPBAR_MT_editor_menus(Menu):
 
 
 class TOPBAR_MT_blender(Menu):
-    bl_label = "Blender"
+    bl_label = "GameForge 3D Studio"
 
     def draw(self, _context):
         layout = self.layout
@@ -188,6 +188,12 @@ class TOPBAR_MT_file(Menu):
         save_incremental = sub.operator("wm.save_mainfile", text="Save Incremental")
         save_incremental.incremental = True
         save_incremental.show_save_modified_images_dialog = True
+
+        layout.separator()
+
+        layout.operator_context = 'INVOKE_AREA'
+        layout.operator("gameforge.client_save", text="Salvar no Cliente do Jogo...", icon='PACKAGE')
+        layout.operator("gameforge.client_save_undo", text="Desfazer Último Salvamento no Cliente")
 
         layout.separator()
 
@@ -324,7 +330,7 @@ class TOPBAR_MT_file_defaults(Menu):
         layout.operator("wm.save_homefile")
         if app_template:
             display_name = bpy.path.display_name(iface_(app_template))
-            props = layout.operator("wm.read_factory_settings", text="Load Factory Blender Settings")
+            props = layout.operator("wm.read_factory_settings", text="Load Factory GameForge 3D Studio Settings")
             props.app_template = app_template
             props = layout.operator(
                 "wm.read_factory_settings",
@@ -416,6 +422,7 @@ class TOPBAR_MT_file_import(Menu):
             self.layout.separator()
             self.layout.operator("wm.angelica_import", text="Angelica / Perfect World (.pck, .ski, .trn2, .hmap, ...)")
             self.layout.operator("wm.angelica_import_map", text="Angelica / Perfect World Map (folder)")
+            self.layout.operator("gameforge.client_add", text="Cliente do jogo (pasta)...", icon='PACKAGE')
 
         if bpy.app.build_options.opentimelineio:
             self.layout.operator("wm.otio_import", text="OpenTimelineIO (.otio)")
@@ -662,10 +669,8 @@ class TOPBAR_MT_help(Menu):
         show_developer = context.preferences.view.show_developer_ui
 
         layout.operator("wm.url_open_preset", text="Manual", icon='URL').type = 'MANUAL'
-        layout.operator("wm.url_open", text="Support").url = "https://www.blender.org/support"
-        layout.operator("wm.url_open", text="User Communities").url = "https://www.blender.org/community/"
-        layout.operator("wm.url_open", text="Get Involved").url = "https://www.blender.org/get-involved/"
-        layout.operator("wm.url_open_preset", text="Release Notes").type = 'RELEASE_NOTES'
+        layout.operator("wm.url_open", text="Support").url = "https://atomgameforge.com"
+        layout.operator("wm.url_open_preset", text="GameForge 3D Studio Website").type = 'BLENDER'
 
         layout.separator()
 
@@ -675,7 +680,6 @@ class TOPBAR_MT_help(Menu):
                 text="Developer Documentation",
                 icon='URL',
             ).url = "https://developer.blender.org/docs/"
-            layout.operator("wm.url_open", text="Developer Community").url = "https://devtalk.blender.org"
             layout.operator("wm.url_open_preset", text="Python API Reference").type = 'API'
             layout.operator("wm.operator_cheat_sheet", icon='TEXT')
 

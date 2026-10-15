@@ -79,7 +79,7 @@ class EditExternally(Operator):
                 {'ERROR'},
                 "Image editor could not be launched, ensure that "
                 "the path in User Preferences > File Paths > Applications > Image Editor is valid, "
-                "and Blender has rights to launch it",
+                "and GameForge 3D Studio has rights to launch it",
             )
 
             return {'CANCELLED'}

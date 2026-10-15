@@ -101,6 +101,7 @@ void ED_operatortypes_io()
 
 #ifdef WITH_IO_ANGELICA
   WM_operatortype_append(WM_OT_angelica_import);
+  WM_operatortype_append(WM_OT_angelica_import_asset);
   WM_operatortype_append(WM_OT_angelica_import_map);
   WM_operatortype_append(WM_OT_angelica_character_import);
   ed::io::angelica_file_handler_add();

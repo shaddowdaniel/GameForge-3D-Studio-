@@ -196,7 +196,7 @@ static PyMethodDef bpy_utils_previews_methods[] = {
 PyDoc_STRVAR(
     /* Wrap. */
     bpy_utils_previews_doc,
-    "This object contains basic static methods to handle cached (non-ID) previews in Blender\n"
+    "This object contains basic static methods to handle cached (non-ID) previews in GameForge 3D Studio\n"
     "(low-level API, not exposed to final users).\n");
 static PyModuleDef bpy_utils_previews_module = {
     /*m_base*/ PyModuleDef_HEAD_INIT,

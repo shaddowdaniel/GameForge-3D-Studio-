@@ -48,6 +48,9 @@ struct SkeletonBone {
    */
   float bone_init[16];
   std::vector<int> children;
+  /** Byte offset of #relative in the file data (#bone_init follows), for writing a changed rest
+   * pose back. */
+  size_t matrices_offset = 0;
 };
 
 struct SkeletonJoint {
