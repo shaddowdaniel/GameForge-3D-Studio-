@@ -29,6 +29,7 @@ sys.path.insert(0, os.path.join(ROOT, "scripts", "modules"))
 sys.path.insert(0, os.path.join(ROOT, "release", "windows", "gameforge"))
 
 from gameforge_update import ed25519, package, signature, versions  # noqa: E402
+from gameforge_update import apply as applier  # noqa: E402
 import pack_update  # noqa: E402
 import write_manifest  # noqa: E402
 
@@ -210,6 +211,132 @@ class PackTest(unittest.TestCase):
             pack_update.pack(b.b1, "Grande demais", b.manifests, b.out, max_bytes=100)
         with self.assertRaises(SystemExit):
             pack_update.pack(b.b1, "Sem base", os.path.join(self.tmp, "vazio"), b.out)
+
+
+def read(root, path):
+    with open(os.path.join(root, *path.split("/")), "rb") as fh:
+        return fh.read()
+
+
+def snapshot(root):
+    """Every file of a folder: {relative path: bytes}."""
+    found = {}
+    for folder, _dirs, names in os.walk(root):
+        for name in names:
+            path = os.path.join(folder, name)
+            with open(path, "rb") as fh:
+                found[os.path.relpath(path, root)] = fh.read()
+    return found
+
+
+class ApplyTest(unittest.TestCase):
+
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmp, True)
+        b = self.builds = Builds(self.tmp)
+        pack_update.pack(b.b1, "Primeira", b.manifests, b.out)
+        release, _changed, _removed = pack_update.pack(b.b2, "Segunda", b.manifests, b.out)
+        self.p2 = os.path.join(self.tmp, "p2.zip")
+        with open(self.p2, "wb") as fh:
+            fh.write(open_release(release)[4])
+
+    def install(self, build):
+        target = os.path.join(self.tmp, "install-" + os.path.basename(build))
+        shutil.copytree(build, target)
+        return target
+
+    def test_from_installer_and_from_update(self):
+        for start in (self.builds.b0, self.builds.b1):
+            install = self.install(start)
+            pdb = read(install, "blender.pdb")
+            self.assertEqual(package.apply_update(install, self.p2, log=lambda _text: None), "5.4.2")
+            self.assertEqual(read(install, "a.txt"), b"a0")
+            self.assertEqual(read(install, "sub/d.py"), b"d1")
+            self.assertFalse(os.path.exists(os.path.join(install, "b.txt")))
+            self.assertEqual(read(install, "blender.pdb"), pdb)  # Debug symbols are left alone.
+            self.assertEqual(versions.installed(install)["version"], "5.4.2")
+            self.assertEqual(versions.installed(install)["base_version"], "5.4.0")
+            with open(os.path.join(install, versions.MANIFEST_FILE), encoding="utf-8") as fh:
+                manifest = json.load(fh)
+            self.assertEqual(manifest["sub/d.py"], hashlib.sha256(b"d1").hexdigest())
+            self.assertNotIn("b.txt", manifest)
+            self.assertIn("blender.pdb", manifest)
+            leftovers = [name for _folder, dirs, names in os.walk(install) for name in names + dirs
+                         if name.endswith(".gfold") or name == ".gameforge-update"]
+            self.assertEqual(leftovers, [])
+
+    @unittest.skipUnless(sys.platform == "win32", "Windows file locks")
+    def test_file_in_use_puts_everything_back(self):
+        install = self.install(self.builds.b1)
+        before = snapshot(install)
+        with open(os.path.join(install, "b.txt"), "rb"):  # Opened without sharing delete: it cannot be renamed.
+            with self.assertRaises(PermissionError) as caught:
+                package.apply_update(install, self.p2, log=lambda _text: None)
+        self.assertIn("b.txt", str(caught.exception))
+        self.assertEqual(snapshot(install), before)
+
+    def test_refusals_change_nothing(self):
+        install = self.install(self.builds.b0)
+        before = snapshot(install)
+        evil = os.path.join(self.tmp, "evil.zip")
+        with zipfile.ZipFile(evil, "w") as zf:
+            zf.writestr(package.UPDATE_FILE, json.dumps({
+                "schema": 1, "version": "5.4.3", "base_version": "5.4.0", "removed": [],
+                "files": {"../x.dll": "0" * 64}, "manifest": {"../x.dll": "0" * 64}}))
+            zf.writestr("../x.dll", b"x")
+        with self.assertRaises(package.UpdateError):
+            package.apply_update(install, evil)
+        later = os.path.join(self.tmp, "later.zip")  # Starts from a base newer than the installation.
+        with zipfile.ZipFile(later, "w") as zf:
+            zf.writestr(package.UPDATE_FILE, json.dumps({
+                "schema": 1, "version": "5.5.1", "base_version": "5.5.0", "removed": [], "files": {}, "manifest": {}}))
+        with self.assertRaises(package.UpdateError):
+            package.apply_update(install, later)
+        self.assertEqual(snapshot(install), before)
+        self.assertFalse(os.path.exists(os.path.join(self.tmp, "x.dll")))
+        package.apply_update(install, self.p2, log=lambda _text: None)
+        updated = snapshot(install)
+        with self.assertRaises(package.UpdateError):  # The same version again.
+            package.apply_update(install, self.p2, log=lambda _text: None)
+        self.assertEqual(snapshot(install), updated)
+
+    def test_apply_role_checks_the_signature(self):
+        install = self.install(self.builds.b0)
+        log = os.path.join(self.tmp, "update.log")
+        signature.PINS["key_test"] = TEST_PINS["key_test"]
+        self.addCleanup(signature.PINS.pop, "key_test", None)
+        good = signature.envelope_from_download(signed_answer("5.4.2", package.file_sha256(self.p2)))
+        for envelope, expected in ((dict(good, version="5.4.9"), 1), (good, 0)):
+            path = os.path.join(self.tmp, "envelope.json")
+            with open(path, "w", encoding="utf-8") as fh:
+                json.dump(envelope, fh)
+            self.assertEqual(applier.apply(install, self.p2, path, log), expected)
+        with open(log, encoding="utf-8") as fh:
+            text = fh.read()
+        self.assertIn("RESULTADO falhou: o pacote não confere com a assinatura do portal", text)
+        self.assertIn("RESULTADO atualizado para 5.4.2", text)
+        self.assertFalse(os.path.exists(os.path.join(install, ".gameforge-package.zip")))
+
+    @unittest.skipUnless(sys.platform == "win32", "Windows command lines")
+    def test_elevated_command_line_keeps_each_argument(self):
+        import ctypes
+        from ctypes import wintypes
+        arguments = ["apply", r"C:\Program Files\ATOM GameForge\GameForge 3D Studio 5.4",
+                     r"C:\Users\Zé Ação\AppData\Local\x y\pacote.zip", 'D:\\a"b\\envelope.json', "C:\\log dir\\"]
+        parse = ctypes.windll.shell32.CommandLineToArgvW
+        parse.argtypes = [wintypes.LPCWSTR, ctypes.POINTER(ctypes.c_int)]
+        parse.restype = ctypes.POINTER(wintypes.LPWSTR)
+        count = ctypes.c_int()
+        argv = parse("python.exe " + applier.elevated_parameters(arguments), ctypes.byref(count))
+        parsed = [argv[i] for i in range(count.value)]
+        ctypes.windll.kernel32.LocalFree(argv)
+        self.assertEqual(parsed[1:3], ["-I", os.path.abspath(applier.__file__)])
+        self.assertEqual(parsed[3:], arguments)
+
+    def test_studio_running(self):
+        self.assertTrue(applier.studio_running('"GameForge3DStudio.exe","1234","Console","1","500.000 K"\r\n'))
+        self.assertFalse(applier.studio_running("INFORMAÇÕES: nenhuma tarefa em execução.\r\n"))
 
 
 if __name__ == "__main__":
