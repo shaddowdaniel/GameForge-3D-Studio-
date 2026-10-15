@@ -22,6 +22,7 @@ import tempfile
 import threading
 import unittest
 import urllib.parse
+import urllib.request
 import zipfile
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
@@ -30,6 +31,8 @@ sys.path.insert(0, os.path.join(ROOT, "release", "windows", "gameforge"))
 
 from gameforge_update import ed25519, package, signature, versions  # noqa: E402
 from gameforge_update import apply as applier  # noqa: E402
+import gameforge_update  # noqa: E402
+from gameforge_account.portal import NetworkError, Portal, PortalError  # noqa: E402
 import pack_update  # noqa: E402
 import write_manifest  # noqa: E402
 
@@ -337,6 +340,102 @@ class ApplyTest(unittest.TestCase):
     def test_studio_running(self):
         self.assertTrue(applier.studio_running('"GameForge3DStudio.exe","1234","Console","1","500.000 K"\r\n'))
         self.assertFalse(applier.studio_running("INFORMAÇÕES: nenhuma tarefa em execução.\r\n"))
+
+
+class FakePortal:
+    def __init__(self, answer, data):
+        self.answer, self.data = answer, data
+
+    def plugin_download(self, slug, token):
+        assert (slug, token) == (gameforge_update.SLUG, "tok")
+        return self.answer
+
+    def fetch_to_file(self, url, path, *, max_bytes, progress=None):
+        with open(path, "wb") as fh:
+            fh.write(self.data)
+        if progress is not None:
+            progress(len(self.data), len(self.data))
+        return hashlib.sha256(self.data).hexdigest()
+
+
+class DownloadTest(unittest.TestCase):
+
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmp, True)
+        old = os.environ.get("LOCALAPPDATA")
+        os.environ["LOCALAPPDATA"] = self.tmp
+        self.addCleanup(lambda: os.environ.__setitem__("LOCALAPPDATA", old) if old else os.environ.pop("LOCALAPPDATA"))
+
+    def test_downloads_and_checks(self):
+        data = b"pacote"
+        answer = signed_answer("5.4.2", hashlib.sha256(data).hexdigest(), base="5.4.0")
+        package_path, envelope_path, version = gameforge_update.download(
+            FakePortal(answer, data), "tok", "5.4.1", pins=TEST_PINS)
+        self.assertEqual(version, "5.4.2")
+        with open(package_path, "rb") as fh:
+            self.assertEqual(fh.read(), data)
+        with open(envelope_path, encoding="utf-8") as fh:
+            self.assertTrue(signature.envelope_ok(json.load(fh), TEST_PINS))
+
+    def test_refusals(self):
+        data = b"pacote"
+        digest = hashlib.sha256(data).hexdigest()
+        with self.assertRaises(gameforge_update.NeedsInstaller):
+            gameforge_update.download(FakePortal(signed_answer("5.5.1", digest, base="5.5.0"), data), "tok", "5.4.2",
+                                      pins=TEST_PINS)
+        cases = (
+            signed_answer("5.4.2", digest, seed=bytes(32)),                # Another key.
+            signed_answer("5.4.2", hashlib.sha256(b"outro").hexdigest()),  # Not what was downloaded.
+            signed_answer("5.4.2", digest, name="Setup.msi"),              # Not an update package.
+            signed_answer("5.4.1", digest),                                # Already installed.
+        )
+        for answer in cases:
+            with self.assertRaises(gameforge_update.UpdateError):
+                gameforge_update.download(FakePortal(answer, data), "tok", "5.4.1", pins=TEST_PINS)
+        self.assertEqual([n for n in os.listdir(gameforge_update.staging_dir()) if n.endswith((".zip", ".part"))], [])
+
+
+class _Files(http.server.BaseHTTPRequestHandler):
+    body = b"x" * (3 * 1024 * 1024 + 5)
+
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header("content-length", str(len(self.body)))
+        self.end_headers()
+        self.wfile.write(self.body if self.path == "/full" else self.body[:1000])  # "/short": the link drops.
+
+    def log_message(self, *_args):
+        pass
+
+
+class FetchTest(unittest.TestCase):
+
+    def setUp(self):
+        self.server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), _Files)
+        threading.Thread(target=self.server.serve_forever, daemon=True).start()
+        self.addCleanup(self.server.shutdown)
+        self.base = "http://127.0.0.1:{:d}".format(self.server.server_address[1])
+        self.portal = Portal(opener=urllib.request.build_opener())
+        self.tmp = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmp, True)
+
+    def test_streams_with_progress(self):
+        seen = []
+        path = os.path.join(self.tmp, "full.part")
+        digest = self.portal.fetch_to_file(self.base + "/full", path, max_bytes=10 * 2 ** 20,
+                                           progress=lambda done, total: seen.append((done, total)))
+        self.assertEqual(digest, hashlib.sha256(_Files.body).hexdigest())
+        self.assertEqual(seen[-1], (len(_Files.body), len(_Files.body)))
+        self.assertGreater(len(seen), 1)
+
+    def test_truncated_download_fails(self):
+        with self.assertRaises(NetworkError):
+            self.portal.fetch_to_file(self.base + "/short", os.path.join(self.tmp, "short.part"), max_bytes=10 * 2 ** 20)
+
+    def test_too_big(self):
+        with self.assertRaises(PortalError):
+            self.portal.fetch_to_file(self.base + "/full", os.path.join(self.tmp, "big.part"), max_bytes=1000)
 
 
 if __name__ == "__main__":

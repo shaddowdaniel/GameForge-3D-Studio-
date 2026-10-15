@@ -27,6 +27,7 @@ _modules = [
     "gameforge_data",
     "gameforge_world",
     "gameforge_tasks",
+    "gameforge_update",
     "gameforge_login",
     "gameforge_plugins",
     "geometry_nodes",
@@ -89,6 +90,7 @@ def register():
     gameforge_world.register()
     gameforge_tasks.register()
     gameforge_agent.register()
+    gameforge_update.register()
 
 
 def unregister():
@@ -98,6 +100,7 @@ def unregister():
         copy_global_transform,
     )
 
+    gameforge_update.unregister()
     gameforge_agent.unregister()
     gameforge_tasks.unregister()
     gameforge_world.unregister()
