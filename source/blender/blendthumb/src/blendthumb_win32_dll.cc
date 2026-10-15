@@ -17,7 +17,7 @@
 extern HRESULT CBlendThumb_CreateInstance(REFIID riid, void **ppv);
 
 #define SZ_CLSID_BLENDTHUMBHANDLER L"{D45F043D-F17F-4e8a-8435-70971D9FA46D}"
-#define SZ_BLENDTHUMBHANDLER L"Blender Thumbnail Handler"
+#define SZ_BLENDTHUMBHANDLER L"GameForge 3D Studio Thumbnail Handler"
 const CLSID CLSID_BlendThumbHandler = {
     0xd45f043d, 0xf17f, 0x4e8a, {0x84, 0x35, 0x70, 0x97, 0x1d, 0x9f, 0xa4, 0x6d}};
 

@@ -195,7 +195,7 @@ static PyMethodDef BPy_BM_methods[] = {
 PyDoc_STRVAR(
     /* Wrap. */
     BPy_BM_doc,
-    "This module provides access to Blender's bmesh data structures.\n"
+    "This module provides access to GameForge 3D Studio's bmesh data structures.\n"
     "\n"
     ".. include:: include__bmesh.rst\n");
 static PyModuleDef BPy_BM_module_def = {

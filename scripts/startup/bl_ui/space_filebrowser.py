@@ -173,7 +173,7 @@ class FILEBROWSER_PT_filter(FileBrowserPanel, Panel):
         if is_lib_browser:
             row = col.row()
             row.label(icon='BLANK1')  # Indentation
-            row.prop(params, "use_filter_blendid", text="Blender IDs", toggle=False)
+            row.prop(params, "use_filter_blendid", text="GameForge 3D Studio IDs", toggle=False)
             if params.use_filter_blendid:
                 row = col.row()
                 row.label(icon='BLANK1')  # Indentation
@@ -1070,7 +1070,7 @@ def register_props():
     # UILayout.prop().
     WindowManager.asset_path_dummy = StringProperty(
         name="Asset Blend Path",
-        description="Full path to the Blender file containing the active asset",
+        description="Full path to the GameForge 3D Studio file containing the active asset",
         get=asset_path_str_get,
     )
 

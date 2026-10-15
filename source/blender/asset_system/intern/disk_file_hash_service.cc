@@ -103,7 +103,7 @@ _result = service.get_hash(Path(filepath), hash_algorithm)
   UNUSED_VARS(C, hash_algorithm);
   const std::string filepath_str = filepath;
   CLOG_ERROR(&LOG,
-             "Blender was built without Python support, cannot compute hash for file [%s]",
+             "GameForge 3D Studio was built without Python support, cannot compute hash for file [%s]",
              filepath_str.c_str());
   return "";
 #endif
@@ -174,7 +174,7 @@ _result = service.file_matches(Path(filepath), hash_algorithm, hexhash, size_in_
   UNUSED_VARS(C, hash_algorithm, hexhash, size_in_bytes);
   const std::string filepath_str = filepath;
   CLOG_ERROR(&LOG,
-             "Blender was built without Python support, cannot check hash for file [%s]",
+             "GameForge 3D Studio was built without Python support, cannot check hash for file [%s]",
              filepath_str.c_str());
   return false;
 #endif

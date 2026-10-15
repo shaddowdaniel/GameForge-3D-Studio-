@@ -65,8 +65,8 @@ class I18nUpdateTranslationLanguage(PropertyGroup):
     )
 
     po_path_blender: StringProperty(
-        name="PO Blender File Path",
-        description="Path to the relevant po file in Blender's source repository",
+        name="PO GameForge 3D Studio File Path",
+        description="Path to the relevant po file in GameForge 3D Studio's source repository",
         subtype='FILE_PATH',
         default="",
     )
@@ -147,7 +147,7 @@ class UI_PT_i18n_update_translations_settings(Panel):
             col.operator("ui.i18n_updatetranslation_work_repo", text="Update Work Repository")
             col.operator("ui.i18n_cleanuptranslation_work_repo", text="Clean up Work Repository")
             col.separator()
-            col.operator("ui.i18n_updatetranslation_blender_repo", text="Update Blender Repository")
+            col.operator("ui.i18n_updatetranslation_blender_repo", text="Update GameForge 3D Studio Repository")
             col.separator()
             col.operator("ui.i18n_updatetranslation_statistics", text="Statistics")
 

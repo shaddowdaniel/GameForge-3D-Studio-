@@ -311,6 +311,9 @@ if(WITH_IO_FBX)
 endif()
 
 if(WITH_IO_ANGELICA)
+  list(APPEND LIB
+    bf_io_angelica
+  )
   add_definitions(-DWITH_IO_ANGELICA)
 endif()
 

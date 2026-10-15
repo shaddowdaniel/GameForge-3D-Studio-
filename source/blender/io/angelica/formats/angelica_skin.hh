@@ -182,6 +182,10 @@ struct SkinMesh {
   /** Per vertex "bone factor" of the spring vertex (1 = fully driven by the bones). */
   std::vector<float> supple_bone_factors;
 
+  /** Byte range of the mesh record in the file data (for writing a changed mesh back). */
+  size_t record_begin = 0;
+  size_t record_end = 0;
+
   int vertex_count() const
   {
     return int(positions.size() / 3);
@@ -207,6 +211,12 @@ struct Skin {
   std::vector<MaterialInfo> materials;
   /** All meshes in file order: skin, rigid, morph skin, morph rigid, supple, muscle. */
   std::vector<SkinMesh> meshes;
+
+  /** Byte offset of the header (after the "MOXB" tag) and range of the bone name table in the
+   * file data. */
+  size_t header_offset = 0;
+  size_t bone_names_begin = 0;
+  size_t bone_names_end = 0;
 };
 
 /** Parse a `.ski` file. On failure returns false and fills `r_error` when not null. */

@@ -520,6 +520,8 @@ bool parse_skin(ByteSpan data, Skin &r_skin, std::string *r_error)
   const AFileContent content = afile_open(data);
   r_skin.is_text = content.is_text;
   BinaryReader reader(content.body);
+  const size_t body_offset = size_t(content.body.data() - data.data());
+  r_skin.header_offset = body_offset;
 
   if (reader.remaining() < 104) {
     return skin_fail(r_error, "File too small for a skin header");
@@ -564,12 +566,14 @@ bool parse_skin(ByteSpan data, Skin &r_skin, std::string *r_error)
     return false;
   }
 
+  r_skin.bone_names_begin = body_offset + reader.tell();
   if (version >= 9) {
     r_skin.bone_names.reserve(size_t(num_skin_bones));
     for (int i = 0; i < num_skin_bones; i++) {
       r_skin.bone_names.push_back(gbk_to_utf8(reader.string_i32()));
     }
   }
+  r_skin.bone_names_end = body_offset + reader.tell();
   for (int i = 0; i < num_textures; i++) {
     std::string raw = reader.string_i32();
     r_skin.textures.push_back(gbk_to_utf8(raw));
@@ -593,6 +597,7 @@ bool parse_skin(ByteSpan data, Skin &r_skin, std::string *r_error)
     for (int i = 0; i < count; i++) {
       SkinMesh mesh;
       mesh.type = type;
+      mesh.record_begin = body_offset + reader.tell();
       bool ok = false;
       switch (type) {
         case SkinMeshType::Skin:
@@ -617,6 +622,7 @@ bool parse_skin(ByteSpan data, Skin &r_skin, std::string *r_error)
       if (!ok) {
         return false;
       }
+      mesh.record_end = body_offset + reader.tell();
       r_skin.meshes.push_back(std::move(mesh));
     }
     return true;

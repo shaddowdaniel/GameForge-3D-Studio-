@@ -1684,8 +1684,8 @@ msgid "Sepia"
 msgstr "Sepia"
 
 
-msgid "Blender File"
-msgstr "Blender Fitxategia"
+msgid "GameForge 3D Studio File"
+msgstr "GameForge 3D Studio Fitxategia"
 
 
 msgid "Speaker"
@@ -2242,8 +2242,8 @@ msgid "%s: failed to load '%s'"
 msgstr "%s: errorea '%s' kargatzean "
 
 
-msgid "Blender File View"
-msgstr "Blender Fitxategi Bista"
+msgid "GameForge 3D Studio File View"
+msgstr "GameForge 3D Studio Fitxategi Bista"
 
 
 msgid "unable to open the file"

@@ -1046,8 +1046,8 @@ msgid "Collection of worlds"
 msgstr "תומלוע ףסוא"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Path"
@@ -3384,8 +3384,8 @@ msgid "Bricks 2"
 msgstr "2 םינבל"
 
 
-msgid "The file is not a valid Blender file."
-msgstr ".יקוח Blender ץבוק וניא ץבוקה"
+msgid "The file is not a valid GameForge 3D Studio file."
+msgstr ".יקוח GameForge 3D Studio ץבוק וניא ץבוקה"
 
 
 msgctxt "WorkSpace"

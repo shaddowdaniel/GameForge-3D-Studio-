@@ -42,8 +42,8 @@ static const EnumPropertyItem rna_enum_ocio_config_source_items[] = {
     {int(ColorManagedConfigSource::Blender),
      "BLENDER",
      0,
-     "Blender",
-     "The OpenColorIO configuration bundled with Blender"},
+     "GameForge 3D Studio",
+     "The OpenColorIO configuration bundled with GameForge 3D Studio"},
     {int(ColorManagedConfigSource::Fallback),
      "FALLBACK",
      0,
@@ -737,14 +737,14 @@ void RNA_def_main(BlenderRNA *brna)
   RNA_def_property_ui_text(
       prop,
       "All Data-Blocks",
-      "Read-only list of all IDs listed in Blender data-base. Warning: Order is not guaranteed "
+      "Read-only list of all IDs listed in GameForge 3D Studio data-base. Warning: Order is not guaranteed "
       "and should be considered an internal implementation detail");
 
   prop = RNA_def_property(srna, "project", PROP_POINTER, PROP_NONE);
   RNA_def_property_clear_flag(prop, PROP_EDITABLE);
   RNA_def_property_struct_type(prop, "BlenderProject");
   RNA_def_property_pointer_funcs(prop, "rna_Main_blender_project_get", nullptr, nullptr, nullptr);
-  RNA_def_property_ui_text(prop, "Project", "The currently active Blender project, if any");
+  RNA_def_property_ui_text(prop, "Project", "The currently active GameForge 3D Studio project, if any");
   RNA_def_property_translation_context(prop, BLT_I18NCONTEXT_EDITOR_PREFERENCES);
 
   RNA_api_main(srna);

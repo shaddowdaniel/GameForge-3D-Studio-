@@ -384,7 +384,7 @@ static std::string template_status_tooltip(bContext *C, void * /*argN*/, const S
     BKE_blender_version_blendfile_string_from_values(
         writer_ver_str, sizeof(writer_ver_str), bmain->versionfile, -1);
     tooltip_message += fmt::format(
-        fmt::runtime(RPT_("File saved by newer Blender\n({}), expect loss of data")),
+        fmt::runtime(RPT_("File saved by newer GameForge 3D Studio\n({}), expect loss of data")),
         writer_ver_str);
   }
   if (bmain->is_asset_edit_file) {
@@ -392,7 +392,7 @@ static std::string template_status_tooltip(bContext *C, void * /*argN*/, const S
       tooltip_message += "\n\n";
     }
     tooltip_message += RPT_(
-        "This file is managed by the Blender asset system and cannot be overridden");
+        "This file is managed by the GameForge 3D Studio asset system and cannot be overridden");
   }
   if (bmain->colorspace.is_failed_opencolorio_config) {
     if (!tooltip_message.empty()) {

@@ -72,7 +72,7 @@ extern "C" __declspec(dllexport) void cpu_check_win32()
   if (!cpu_supports_sse42()) {
     std::string error_title = "Unsupported CPU - " + std::string(cpu_brand_string());
     MessageBoxA(NULL,
-                "Blender requires a CPU with SSE42 support.",
+                "GameForge 3D Studio requires a CPU with SSE42 support.",
                 error_title.c_str(),
                 MB_OK | MB_ICONERROR);
     exit(-1);
@@ -97,7 +97,7 @@ static __attribute__((constructor)) void cpu_check()
 {
 #  ifdef __x86_64
   if (!cpu_supports_sse42()) {
-    printf("Unsupported CPU - %s\nBlender requires a CPU with SSE42 support.", cpu_brand_string());
+    printf("Unsupported CPU - %s\nGameForge 3D Studio requires a CPU with SSE42 support.", cpu_brand_string());
     exit(-1);
   }
   return;

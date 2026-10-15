@@ -22,7 +22,7 @@ namespace blender {
 static PyTypeObject BlenderAppOIIOType;
 
 static PyStructSequence_Field app_oiio_info_fields[] = {
-    {"supported", "Boolean, True when Blender is built with OpenImageIO support"},
+    {"supported", "Boolean, True when GameForge 3D Studio is built with OpenImageIO support"},
     {"version", "The OpenImageIO version as a tuple of 3 numbers"},
     {"version_string", "The OpenImageIO version formatted as a string"},
     {nullptr},

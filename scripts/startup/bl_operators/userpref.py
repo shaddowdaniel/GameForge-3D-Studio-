@@ -514,7 +514,7 @@ class PREFERENCES_OT_addon_enable(Operator):
                 self.report(
                     {'WARNING'},
                     rpt_(
-                        "This script was written for Blender "
+                        "This script was written for GameForge 3D Studio "
                         "version {:d}.{:d}.{:d} and might not "
                         "function (correctly), "
                         "though it is enabled"
@@ -573,7 +573,7 @@ class PREFERENCES_OT_addon_disable(Operator):
 
 
 class PREFERENCES_OT_theme_install(Operator):
-    """Load and apply a Blender XML theme file"""
+    """Load and apply a GameForge 3D Studio XML theme file"""
     bl_idname = "preferences.theme_install"
     bl_label = "Install Theme..."
 

@@ -333,15 +333,15 @@ def addons_panel_draw_missing_with_extension_impl(
             break
 
     box = layout_panel.box()
-    box.label(text="Add-ons previously shipped with Blender are now available from extensions.blender.org.")
+    box.label(text="Add-ons previously shipped with GameForge 3D Studio are now available from extensions.blender.org.")
 
     pkg_manifest_remote = {}
 
     if repo is None:
         # Most likely the user manually removed this.
-        box.label(text="Blender's extension repository not found!", icon='STATUS_ERROR')
+        box.label(text="GameForge 3D Studio's extension repository not found!", icon='STATUS_ERROR')
     elif not repo.enabled:
-        box.label(text="Blender's extension repository must be enabled to install extensions!", icon='STATUS_ERROR')
+        box.label(text="GameForge 3D Studio's extension repository must be enabled to install extensions!", icon='STATUS_ERROR')
         repo_index = -1
     else:
         # Ensure the remote data is available from which to install the extensions.
@@ -351,7 +351,7 @@ def addons_panel_draw_missing_with_extension_impl(
         pkg_manifest_remote = repo_cache_store.refresh_remote_from_directory(directory=repo.directory, error_fn=print)
         if pkg_manifest_remote is None:
             row = box.row()
-            row.label(text="Blender's extension repository must be refreshed!", icon='STATUS_WARNING_FILLED')
+            row.label(text="GameForge 3D Studio's extension repository must be refreshed!", icon='STATUS_WARNING_FILLED')
             # Ideally this would only sync one repository, but there is no operator to do this
             # and this one corner-case doesn't justify adding a new operator.
             rowsub = row.row()

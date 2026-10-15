@@ -131,7 +131,7 @@ GHOST_WindowWin32::GHOST_WindowWin32(GHOST_SystemWin32 *system,
 
   if (!setDrawingContextType(type)) {
     if (type == GHOST_kDrawingContextTypeOpenGL) {
-      const char *title = "Blender - Unsupported Graphics Card Configuration";
+      const char *title = "GameForge 3D Studio - Unsupported Graphics Card Configuration";
       const char *text = "";
 #if defined(WIN32)
       if (strncmp(blender::BLI_getenv("PROCESSOR_IDENTIFIER"), "ARM", 3) == 0 &&
@@ -142,7 +142,7 @@ GHOST_WindowWin32::GHOST_WindowWin32(GHOST_SystemWin32 *system,
             "Qualcomm devices require the \"OpenCL™, OpenGL®, and Vulkan® Compatibility Pack\" "
             "from the Microsoft Store.\n\n"
             "Devices using processors older than a Qualcomm Snapdragon 8cx Gen3 are incompatible, "
-            "but may be able to run an emulated x64 copy of Blender, such as a 3.x LTS release.";
+            "but may be able to run an emulated x64 copy of an older release.";
       }
       else
 #endif
@@ -1230,10 +1230,13 @@ void GHOST_WindowWin32::registerWindowAppUserModelProperties()
   char blender_path[MAX_PATH];
   wchar_t shell_command[MAX_PATH];
 
-  /* Find the current executable, and see if it's blender.exe if not bail out. */
+  /* Find the current executable, and see if it's the application executable, if not bail out
+   * (for example when running as a Python module). */
   GetModuleFileName(0, blender_path, sizeof(blender_path));
-  char *blender_app = strstr(blender_path, "blender.exe");
-  if (!blender_app) {
+  char *blender_app = strstr(blender_path, BLENDER_WIN_EXE_NAME);
+  if (!blender_app ||
+      size_t(blender_app - blender_path) + sizeof(BLENDER_WIN_LAUNCHER_NAME) > sizeof(blender_path))
+  {
     return;
   }
 
@@ -1243,8 +1246,8 @@ void GHOST_WindowWin32::registerWindowAppUserModelProperties()
   }
 
   /* Set the launcher as the shell command so the console window will not flash.
-   * when people pin blender to the taskbar. */
-  strcpy(blender_app, "blender-launcher.exe");
+   * when people pin the application to the taskbar. */
+  strcpy(blender_app, BLENDER_WIN_LAUNCHER_NAME);
   wsprintfW(shell_command, L"\"%S\"", blender_path);
   UTF16_ENCODE(BLENDER_WIN_APPID);
   UTF16_ENCODE(BLENDER_WIN_APPID_FRIENDLY_NAME);

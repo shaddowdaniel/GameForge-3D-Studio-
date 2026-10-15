@@ -836,7 +836,7 @@ msgid "Fribidi Library"
 msgstr "Knjižnica FriBidi"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
 msgstr "Prevedena C-jevska knjižnica FriBidi (končnica .so na Linuxu, .dll na Windowsih ...). Če ste na Windowsih, jo boste najbrž morali prilagoditi, lahko pa npr. uporabite tisto iz Blenderjevega repozitorija knjižnic"
 
 
@@ -860,7 +860,7 @@ msgid "Source Root"
 msgstr "Korenski imenik izvora"
 
 
-msgid "The Blender source root path"
+msgid "The GameForge 3D Studio source root path"
 msgstr "Pot do korenskega imenika Blenderjeve izvorne kode"
 
 
@@ -884,7 +884,7 @@ msgid "Persistent Data Path"
 msgstr "Pot do trajnih podatkov"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
 msgstr "Ime datoteke JSON, ki hrani te nastavitve (žal Blenderjev sistem tukaj ne deluje)"
 
 
@@ -1764,7 +1764,7 @@ msgid "Edit persistent configuration settings"
 msgstr "Za urejanje trajne konfiguracije programa"
 
 
-msgid "Manage the current Blender project"
+msgid "Manage the current GameForge 3D Studio project"
 msgstr "Skrbi za trenutni projekt"
 
 
@@ -1860,7 +1860,7 @@ msgid "Is Editable"
 msgstr "Dovoli urejanje"
 
 
-msgid "Assets and catalogs in this library can be edited from the current Blender instance"
+msgid "Assets and catalogs in this library can be edited from the current GameForge 3D Studio instance"
 msgstr "Sredstva in kataloge v tej knjižnici lahko urejate znotraj trenutne instance Blenderja"
 
 
@@ -1880,7 +1880,7 @@ msgid "Current File"
 msgstr "Trenutna datoteka"
 
 
-msgid "Show the assets currently available in this Blender session"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
 msgstr "Pokaže sredstva, ki so na voljo v trenutni seji programa"
 
 
@@ -1888,7 +1888,7 @@ msgid "Essentials"
 msgstr "Osnove"
 
 
-msgid "Show basic building blocks and utilities coming with Blender"
+msgid "Show basic building blocks and utilities coming with GameForge 3D Studio"
 msgstr "Pokaže osnovne gradnike in pripomočke, ki so privzeto v Blenderju"
 
 
@@ -1960,8 +1960,8 @@ msgid "Catalog UUID"
 msgstr "UUID kataloga"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
-msgstr "Identifikator kataloga, ki mu sredstvo pripada. Z njegovo pomočjo Blender poišče pot do kataloga sredstva. Identifikator mora biti UUID, definiran po RFC4122."
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgstr "Identifikator kataloga, ki mu sredstvo pripada. Z njegovo pomočjo GameForge 3D Studio poišče pot do kataloga sredstva. Identifikator mora biti UUID, definiran po RFC4122."
 
 
 msgid "Catalog Simple Name"
@@ -2709,8 +2709,8 @@ msgid "Is Internal"
 msgstr "Je notranji"
 
 
-msgid "The attribute is meant for internal use by Blender"
-msgstr "Mišljeno je, da atribut interno uporablja Blender"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
+msgstr "Mišljeno je, da atribut interno uporablja GameForge 3D Studio"
 
 
 msgid "Is Required"
@@ -3597,7 +3597,7 @@ msgid "Project"
 msgstr "Projekt"
 
 
-msgid "The currently active Blender project, if any"
+msgid "The currently active GameForge 3D Studio project, if any"
 msgstr "Trenutno aktivni Blenderjev projekt, če obstaja"
 
 
@@ -3993,8 +3993,8 @@ msgid "Project"
 msgstr "Projekcija"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Fallback"
@@ -4250,8 +4250,8 @@ msgid "Library (blend-file) reference in a BlendImportContext data. Currently on
 msgstr "Sklic na knjižnico (datoteke blend) znotraj BlendImportContext. Trenutno so na voljo samo za branje za določitelje pred/po uvozih datotek blend"
 
 
-msgid "Blender Project"
-msgstr "Blender projekt"
+msgid "GameForge 3D Studio Project"
+msgstr "GameForge 3D Studio projekt"
 
 
 msgid "Active Project Variable"
@@ -4298,12 +4298,12 @@ msgid "The variables in this project"
 msgstr "Spremenljivke v tem projektu"
 
 
-msgid "Blender RNA"
-msgstr "Blender RNA"
+msgid "GameForge 3D Studio RNA"
+msgstr "GameForge 3D Studio RNA"
 
 
-msgid "Blender RNA structure definitions"
-msgstr "Definicije strukture Blender RNA"
+msgid "GameForge 3D Studio RNA structure definitions"
+msgstr "Definicije strukture GameForge 3D Studio RNA"
 
 
 msgid "Structs"
@@ -8730,7 +8730,7 @@ msgid "Lin error"
 msgstr "Linearna napaka"
 
 
-msgid "Amount of residual error in Blender space unit for constraints that work on position"
+msgid "Amount of residual error in GameForge 3D Studio space unit for constraints that work on position"
 msgstr "Količina presežne napake, izražene v Blenderjevi prostorski enoti, za omejevalnike, ki omejujejo položaj v prostoru"
 
 
@@ -12702,7 +12702,7 @@ msgid "Max Velocity"
 msgstr "Največja hitrost"
 
 
-msgid "Velocity considered as maximum influence (Blender units per frame)"
+msgid "Velocity considered as maximum influence (GameForge 3D Studio units per frame)"
 msgstr "Hitrost, ki ima največji možni vpliv (Blenderjeve enote na okvir)"
 
 
@@ -13080,7 +13080,7 @@ msgid "Premultiply Alpha"
 msgstr "Predmnoženje alfe"
 
 
-msgid "Multiply color by alpha (recommended for Blender input)"
+msgid "Multiply color by alpha (recommended for GameForge 3D Studio input)"
 msgstr "Pomnoži barvo z alfo (priporočeno za vhod v Blenderju)"
 
 
@@ -15372,7 +15372,7 @@ msgid "Hide .blend files items that are not data-blocks with asset metadata"
 msgstr "Skrije elemente iz datotek .blend, ki niso podatkovni bloki z metapodatki sredstev"
 
 
-msgid "Filter Blender Backup Files"
+msgid "Filter GameForge 3D Studio Backup Files"
 msgstr "Filter Blenderjevih varnostnih kopij"
 
 
@@ -15380,7 +15380,7 @@ msgid "Show .blend1, .blend2, etc. files"
 msgstr "Pokaže datoteke .blend1, .blend2 itd."
 
 
-msgid "Filter Blender"
+msgid "Filter GameForge 3D Studio"
 msgstr "Filter Blenderjevih datotek"
 
 
@@ -15388,7 +15388,7 @@ msgid "Show .blend files"
 msgstr "Pokaže datoteke .blend"
 
 
-msgid "Filter Blender IDs"
+msgid "Filter GameForge 3D Studio IDs"
 msgstr "Filtriraj Blenderjeve ID-je"
 
 
@@ -15464,7 +15464,7 @@ msgid "Library Browser"
 msgstr "Knjižnični brskalnik"
 
 
-msgid "Whether we may browse Blender files' content or not"
+msgid "Whether we may browse GameForge 3D Studio files' content or not"
 msgstr "Ali lahko brskamo po vsebini Blenderjevih datotek ali ne"
 
 
@@ -23532,11 +23532,11 @@ msgid "Noise basis used for turbulence"
 msgstr "Šumna podlaga za turbulenco"
 
 
-msgid "Blender Original"
+msgid "GameForge 3D Studio Original"
 msgstr "Blenderjev izvirnik"
 
 
-msgid "Noise algorithm - Blender original: Smooth interpolated noise"
+msgid "Noise algorithm - GameForge 3D Studio original: Smooth interpolated noise"
 msgstr "Šumni algoritem - Blenderjev izvirnik: gladko interpoliran šum"
 
 
@@ -36454,8 +36454,8 @@ msgid "Clear Status"
 msgstr "Počisti status"
 
 
-msgid "Allow Blender to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, Blender cannot prevent third-party add-ons from violating this rule."
-msgstr "Omogoči Blenderju, da dostopa do interneta. Dodatki, ki upoštevajo to nastavitev, se bodo na internet povezali samo, če je omogočena. Žal pa Blender dodatkom tretjih oseb ne more preprečiti, da prekršijo to pravilo."
+msgid "Allow GameForge 3D Studio to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, GameForge 3D Studio cannot prevent third-party add-ons from violating this rule."
+msgstr "Omogoči Blenderju, da dostopa do interneta. Dodatki, ki upoštevajo to nastavitev, se bodo na internet povezali samo, če je omogočena. Žal pa GameForge 3D Studio dodatkom tretjih oseb ne more preprečiti, da prekršijo to pravilo."
 
 
 msgid "Show system preferences \"Network\" panel to allow online access"
@@ -37210,7 +37210,7 @@ msgid "Uninstall Studio Light"
 msgstr "Odstrani studijsko luč"
 
 
-msgid "Load and apply a Blender XML theme file"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
 msgstr "Naloži in uveljavi datoteko XML za videz Blenderja"
 
 
@@ -37495,7 +37495,7 @@ msgstr "Shrani nastavitve I18n"
 
 
 msgctxt "Operator"
-msgid "Update I18n Blender Repository"
+msgid "Update I18n GameForge 3D Studio Repository"
 msgstr "Posodobi Blenderjev repozitorij I18n"
 
 
@@ -40237,7 +40237,7 @@ msgid "Apply Transform"
 msgstr "Nanesi transformacijo"
 
 
-msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
+msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with GameForge 3D Studio's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
 msgstr "Zapeče prostorsko transformacijo v podatke predmetov. S tem se izognemo nezaželenim rotacijam predmetov, kadar ciljni prostor ni poravnan z Blenderjevim prostorom (POZOR! To je eksperimentalna opcija, ki lahko pokvari okostja/animacije. Uporabite na lastno odgovornost)"
 
 
@@ -42284,7 +42284,7 @@ msgid "Pixels per Inch"
 msgstr "Piksli na palec"
 
 
-msgid "Pixels per Blender Unit"
+msgid "Pixels per GameForge 3D Studio Unit"
 msgstr "Piksli na Blenderjevo enoto"
 
 
@@ -47299,7 +47299,7 @@ msgid "Check for Updates on Startup"
 msgstr "Ob zagonu preveri za posodobitve"
 
 
-msgid "Allow Blender to check for updates upon launch"
+msgid "Allow GameForge 3D Studio to check for updates upon launch"
 msgstr "Dovoli Blenderju da ob zagonu preveri posodobitve"
 
 
@@ -47870,7 +47870,7 @@ msgid "Save Screenshot"
 msgstr "Zajemi sliko okna"
 
 
-msgid "Capture a picture of the whole Blender window"
+msgid "Capture a picture of the whole GameForge 3D Studio window"
 msgstr "Zajame sliko celega Blenderjevega okna"
 
 
@@ -51286,8 +51286,8 @@ msgid "Open"
 msgstr "Odpri"
 
 
-msgid "Open a Blender file"
-msgstr "Odpre datoteko programa Blender"
+msgid "Open a GameForge 3D Studio file"
+msgstr "Odpre datoteko programa GameForge 3D Studio"
 
 
 msgid "Display File Selector"
@@ -51424,11 +51424,11 @@ msgstr "Omeji drsnik za vrednost lastnosti na izbrani interval. Vrednosti izven 
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "Zapiranje Blenderja"
 
 
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "Zapiranje Blenderja"
 
 
@@ -51655,19 +51655,19 @@ msgstr "Nastavi, da se trenutna datoteka privzeto odpre ob zagonu"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Shrani datoteko Blender"
+msgid "Save GameForge 3D Studio File"
+msgstr "Shrani datoteko GameForge 3D Studio"
 
 
-msgid "Save the current Blender file"
+msgid "Save the current GameForge 3D Studio file"
 msgstr "Shrani trenutno datoteko Blenderja"
 
 
-msgid "Exit Blender after saving"
-msgstr "Shrani delo in nato zapre Blender"
+msgid "Exit GameForge 3D Studio after saving"
+msgstr "Shrani delo in nato zapre GameForge 3D Studio"
 
 
-msgid "Save the current Blender file with a numerically incremented name that does not overwrite any existing files"
+msgid "Save the current GameForge 3D Studio file with a numerically incremented name that does not overwrite any existing files"
 msgstr "Shrani trenutno datoteko Blenderja v novo datoteko s povečanim števcem v imenu, da ne prepiše obstoječih datotek"
 
 
@@ -51834,11 +51834,11 @@ msgstr "Odpre pozdravno okno z informacijami o izdaji"
 
 
 msgctxt "Operator"
-msgid "About Blender"
+msgid "About GameForge 3D Studio"
 msgstr "O Blenderju"
 
 
-msgid "Open a window with information about Blender"
+msgid "Open a window with information about GameForge 3D Studio"
 msgstr "Odpre okno z informacijami o Blenderju"
 
 
@@ -51941,7 +51941,7 @@ msgid "Allow Unicode"
 msgstr "Dovoli Unicode"
 
 
-msgid "Blender Names"
+msgid "GameForge 3D Studio Names"
 msgstr "Blenderjeva imena"
 
 
@@ -55596,8 +55596,8 @@ msgid "Max Threshold"
 msgstr "Maksimalni prag"
 
 
-msgid "Raw input pressure value that is interpreted as 100% by Blender"
-msgstr "Neobdelana vrednost pritiska, ki jo Blender interpretira kot 100 %"
+msgid "Raw input pressure value that is interpreted as 100% by GameForge 3D Studio"
+msgstr "Neobdelana vrednost pritiska, ki jo GameForge 3D Studio interpretira kot 100 %"
 
 
 msgid "Tablet API"
@@ -55856,7 +55856,7 @@ msgid "GPU Backend"
 msgstr "Zaledje GPE"
 
 
-msgid "GPU backend to use (requires restarting Blender for changes to take effect)"
+msgid "GPU backend to use (requires restarting GameForge 3D Studio for changes to take effect)"
 msgstr "Katero grafično zaledje naj se uporabi (spremembe bodo uveljavljene ob ponovnem zagonu Blenderja)"
 
 
@@ -55872,12 +55872,12 @@ msgid "Device"
 msgstr "Naprava"
 
 
-msgid "Auto detect best GPU for running Blender"
-msgstr "Samodejno zazna najboljši GPE za Blender"
+msgid "Auto detect best GPU for running GameForge 3D Studio"
+msgstr "Samodejno zazna najboljši GPE za GameForge 3D Studio"
 
 
-msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting Blender for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
-msgstr "Količina niti ali podprocesov za prevajanje senčilnikov, navzgor omejena z največjim številom niti, ki ga podpira CPE (za uveljavitev sprememb je treba Blender ponovno zagnati). Večje število poveča porabo delovnega pomnilnika, a tudi skrajša čas prevajanja. Vrednost 0 pomeni, da bo število določeno samodejno. (Samo OpenGL)"
+msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting GameForge 3D Studio for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
+msgstr "Količina niti ali podprocesov za prevajanje senčilnikov, navzgor omejena z največjim številom niti, ki ga podpira CPE (za uveljavitev sprememb je treba GameForge 3D Studio ponovno zagnati). Večje število poveča porabo delovnega pomnilnika, a tudi skrajša čas prevajanja. Vrednost 0 pomeni, da bo število določeno samodejno. (Samo OpenGL)"
 
 
 msgid "Ambient Color"
@@ -55932,7 +55932,7 @@ msgid "Texture Time Out"
 msgstr "Iztečni čas teksture"
 
 
-msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and Blender UI scale"
+msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and GameForge 3D Studio UI scale"
 msgstr "Predlagana debelina črt in velikosti točk v pikslih za dodatke, ki prikazujejo prilagojene elemente uporabniškega vmesnika. Predlagane vrednosti temeljijo na nastavitvah operacijskega sistema in velikosti Blenderjevega uporabniškega vmesnika"
 
 
@@ -56748,7 +56748,7 @@ msgid "Show Memory"
 msgstr "Pokaži spomin"
 
 
-msgid "Show Blender memory usage"
+msgid "Show GameForge 3D Studio memory usage"
 msgstr "Pokaže Blenderjevo porabo pomnilnika"
 
 
@@ -56768,7 +56768,7 @@ msgid "Show Version"
 msgstr "Pokaži različico"
 
 
-msgid "Show Blender version string"
+msgid "Show GameForge 3D Studio version string"
 msgstr "Pokaže niz z različico Blenderja"
 
 
@@ -57036,8 +57036,8 @@ msgid "Collection of project asset libraries"
 msgstr "Zbirka knjižnic projektnih sredstev"
 
 
-msgid "Blender Project Variable"
-msgstr "Blender projektna spremenljivka"
+msgid "GameForge 3D Studio Project Variable"
+msgstr "GameForge 3D Studio projektna spremenljivka"
 
 
 msgid "A floating point variable"
@@ -59019,12 +59019,12 @@ msgid "Spring Type"
 msgstr "Tip vzmeti"
 
 
-msgid "Blender 2.7"
-msgstr "Blender 2.7"
+msgid "Version 2.7"
+msgstr "GameForge 3D Studio 2.7"
 
 
-msgid "Blender 2.8"
-msgstr "Blender 2.8"
+msgid "Version 2.8"
+msgstr "GameForge 3D Studio 2.8"
 
 
 msgid "Breakable"
@@ -60673,7 +60673,7 @@ msgid "Space Outliner"
 msgstr "Prostor pregleda vsebine"
 
 
-msgid "Blender File"
+msgid "GameForge 3D Studio File"
 msgstr "Datoteka Blenderja"
 
 
@@ -66112,7 +66112,7 @@ msgid "Unlocked: {:s}"
 msgstr "Odklenjeno: {:s}"
 
 
-msgid "Warning! Before unlocking, ensure another instance of Blender is not running."
+msgid "Warning! Before unlocking, ensure another instance of GameForge 3D Studio is not running."
 msgstr "Pozor! Preden odklenete, se prepričajte, da kje ne teče še kakšen primerek Blenderja."
 
 
@@ -66237,8 +66237,8 @@ msgid "No user repositories"
 msgstr "Ni uporabniških repozitorijev"
 
 
-msgid "Online access required to install or update. Launch Blender without --offline-mode"
-msgstr "Za namestitev ali posodabljanje je potreben dostop do interneta. Blender zaženite brez zastavice --offline-mode"
+msgid "Online access required to install or update. Launch GameForge 3D Studio without --offline-mode"
+msgstr "Za namestitev ali posodabljanje je potreben dostop do interneta. GameForge 3D Studio zaženite brez zastavice --offline-mode"
 
 
 msgid "Online access required to install or update. Enable online access in System preferences"
@@ -66249,16 +66249,16 @@ msgid "Add-on \"{:s}\" is already installed!"
 msgstr "Dodatek \"{:s}\" je že nameščen!"
 
 
-msgid "Blender was launched in offline mode, which cannot be changed at runtime"
-msgstr "Blender je bil zagnan v načinu brez internetne povezave (offline), česar med delovanjem ni mogoče spremeniti"
+msgid "GameForge 3D Studio was launched in offline mode, which cannot be changed at runtime"
+msgstr "GameForge 3D Studio je bil zagnan v načinu brez internetne povezave (offline), česar med delovanjem ni mogoče spremeniti"
 
 
 msgid "Online access required to install or update."
 msgstr "Za namestitev ali posodabljanje je potreben dostop do interneta."
 
 
-msgid "Launch Blender without --offline-mode"
-msgstr "Blender zaženite brez zastavice --offline-mode"
+msgid "Launch GameForge 3D Studio without --offline-mode"
+msgstr "GameForge 3D Studio zaženite brez zastavice --offline-mode"
 
 
 msgid "Please enable Online Access from the System settings."
@@ -66353,7 +66353,7 @@ msgid "Missing Built-in Add-ons"
 msgstr "Pogrešani vgrajeni dodatki"
 
 
-msgid "Add-ons previously shipped with Blender are now available from extensions.blender.org."
+msgid "Add-ons previously shipped with GameForge 3D Studio are now available from extensions.blender.org."
 msgstr "Dodatki, ki so prej prišli z Blenderjem, so zdaj na voljo na extensions.blender.org."
 
 
@@ -66430,7 +66430,7 @@ msgid "Maintainer"
 msgstr "Vzdrževalec/ka"
 
 
-msgid "Blender's extension repository not found!"
+msgid "GameForge 3D Studio's extension repository not found!"
 msgstr "Ne najdem Blenderjevega repozitorija razširitev!"
 
 
@@ -66464,7 +66464,7 @@ msgid "No visible tags."
 msgstr "Ni vidnih značk."
 
 
-msgid "Blender's extension repository must be enabled to install extensions!"
+msgid "GameForge 3D Studio's extension repository must be enabled to install extensions!"
 msgstr "Za nameščanje razširitev morate omogočiti Blenderjev repozitorij razširitev!"
 
 
@@ -66509,7 +66509,7 @@ msgid "Uninstall Marked"
 msgstr "Odstrani označeno"
 
 
-msgid "Blender's extension repository must be refreshed!"
+msgid "GameForge 3D Studio's extension repository must be refreshed!"
 msgstr "Blenderjev repozitorij razširitev je treba osvežiti!"
 
 
@@ -66668,8 +66668,8 @@ msgid "Use GPU accelerated denoising if supported, for the best performance. Pre
 msgstr "Za najučinkovitejše izvajanje uporabite grafično pospešeno razšumljanje. Raje izberite OpenImageDenoise kot OptiX"
 
 
-msgid "Blender was compiled without a viewport denoiser"
-msgstr "Blender je bil zgrajen brez razšumnika 3D pogleda"
+msgid "GameForge 3D Studio was compiled without a viewport denoiser"
+msgstr "GameForge 3D Studio je bil zgrajen brez razšumnika 3D pogleda"
 
 
 msgid " (Unoptimized Performance)"
@@ -66997,7 +66997,7 @@ msgid "Invalid context"
 msgstr "Neveljaven kontekst"
 
 
-msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and Blender scene have the same frame rate"
+msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and GameForge 3D Studio scene have the same frame rate"
 msgstr "V razdelku MOTION datoteke BVH ni navedenega trajanja v številu okvirjev, zato predvidevam, da imata BVH in prizor v Blenderju enako hitrost predvajanja"
 
 
@@ -67792,7 +67792,7 @@ msgid "Go to pose mode to copy pose bone colors"
 msgstr "Preklopite v pozirni način, da kopirate pozirne kostne barve"
 
 
-msgid "Blender sub-process exited with error code {:d}"
+msgid "GameForge 3D Studio sub-process exited with error code {:d}"
 msgstr "Podproces Blenderja se je zaključil s kodo napake {:d}"
 
 
@@ -67900,8 +67900,8 @@ msgid "Installing keymap failed: {:s}"
 msgstr "Nameščanje bližnjic ni uspelo: {:s}"
 
 
-msgid "This script was written for Blender version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
-msgstr "Ta program je bil napisan za Blender {:d}.{:d}.{:d} in morda ne bo deloval (pravilno). Kljub temu je omogočen"
+msgid "This script was written for GameForge 3D Studio version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
+msgstr "Ta program je bil napisan za GameForge 3D Studio {:d}.{:d}.{:d} in morda ne bo deloval (pravilno). Kljub temu je omogočen"
 
 
 msgid "File already installed to {!r}"
@@ -67985,8 +67985,8 @@ msgid "Open..."
 msgstr "Odpri ..."
 
 
-msgid "Blender is free software"
-msgstr "Blender je prosto programje"
+msgid "GameForge 3D Studio is free software"
+msgstr "GameForge 3D Studio je prosto programje"
 
 
 msgid "Licensed under the GNU General Public License"
@@ -68053,12 +68053,12 @@ msgstr "Licenca"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
-msgstr "Trgovina Blender Store"
+msgid "GameForge 3D Studio Store"
+msgstr "Trgovina GameForge 3D Studio Store"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
+msgid "GameForge 3D Studio Website"
 msgstr "Blenderjevo spletišče"
 
 
@@ -68088,7 +68088,7 @@ msgid "Release Notes"
 msgstr "Opombe ob izdaji"
 
 
-msgid "Read about what's new in this version of Blender"
+msgid "Read about what's new in this version of GameForge 3D Studio"
 msgstr "Preberite si, kaj je novega v tej različici Blenderja"
 
 
@@ -68096,7 +68096,7 @@ msgid "User Manual"
 msgstr "Uporabniški priročnik"
 
 
-msgid "The reference manual for this version of Blender"
+msgid "The reference manual for this version of GameForge 3D Studio"
 msgstr "Priročnik za to različico Blenderja"
 
 
@@ -68104,7 +68104,7 @@ msgid "Python API Reference"
 msgstr "Napotilo za Python API"
 
 
-msgid "The API reference manual for this version of Blender"
+msgid "The API reference manual for this version of GameForge 3D Studio"
 msgstr "Referenčni priročnik API-ja za to različico Blenderja"
 
 
@@ -68116,7 +68116,7 @@ msgid "The donation program to support maintenance and improvements"
 msgstr "Donacijski program, s katerim podpiramo vzdrževanje in nadgrajevanje"
 
 
-msgid "Blender's official web-site"
+msgid "GameForge 3D Studio's official web-site"
 msgstr "Blenderjevo uradno spletišče"
 
 
@@ -68124,7 +68124,7 @@ msgid "Credits"
 msgstr "Zasluge"
 
 
-msgid "Lists committers to Blender's source code"
+msgid "Lists committers to GameForge 3D Studio's source code"
 msgstr "Izpiše vse, ki so prispevali uveljavitve k Blenderjevi izvorni kodi"
 
 
@@ -68265,7 +68265,7 @@ msgstr "Neveljavni regularni izraz (zamenjava): {:s}"
 
 
 msgctxt "Operator"
-msgid "Import Blender {:d}.{:d} Preferences"
+msgid "Import GameForge 3D Studio {:d}.{:d} Preferences"
 msgstr "Uvozi nastavitve Blenderja {:d}.{:d}"
 
 
@@ -71025,8 +71025,8 @@ msgid "Volume Files"
 msgstr "Datoteke volumnov"
 
 
-msgid "Blender IDs"
-msgstr "ID-ji Blender"
+msgid "GameForge 3D Studio IDs"
+msgstr "ID-ji GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -72865,8 +72865,8 @@ msgstr "Več ..."
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Settings"
-msgstr "Naloži tovarniške nastavitve za Blender"
+msgid "Load Factory GameForge 3D Studio Settings"
+msgstr "Naloži tovarniške nastavitve za GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -73002,7 +73002,7 @@ msgid "Video Memory"
 msgstr "Video pomnilnik"
 
 
-msgid "Blender Version"
+msgid "GameForge 3D Studio Version"
 msgstr "Različica Blenderja"
 
 
@@ -73299,19 +73299,19 @@ msgstr "Shrani kot Studijsko luč"
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Preferences"
-msgstr "Naloži tovarniške nastavitve za Blender"
+msgid "Load Factory GameForge 3D Studio Preferences"
+msgstr "Naloži tovarniške nastavitve za GameForge 3D Studio"
 
 
 msgid "Cycles is disabled in this build"
 msgstr "V tej izgradnji je Cycles onemogočen"
 
 
-msgid "A restart of Blender is required"
-msgstr "Blender je treba ponovno zagnati"
+msgid "A restart of GameForge 3D Studio is required"
+msgstr "GameForge 3D Studio je treba ponovno zagnati"
 
 
-msgid "Open blend files with this Blender version"
+msgid "Open blend files with this GameForge 3D Studio version"
 msgstr "Odpri datoteke blend s to različico Blenderja"
 
 
@@ -75931,7 +75931,7 @@ msgid "Saving preferences failed"
 msgstr "Shranjevanje nastavitev ni uspelo"
 
 
-msgid "File written by newer Blender binary (%d.%d), expect loss of data!"
+msgid "File written by newer GameForge 3D Studio binary (%d.%d), expect loss of data!"
 msgstr "Datoteka je bila zapisana z novejšo različico Blenderja (%d.%d), pričakujte izgubo podatkov!"
 
 
@@ -76541,7 +76541,7 @@ msgid "At least 8 common tracks on both keyframes are needed for reconstruction"
 msgstr "Za rekonstrukcijo potrebujem vsaj 8 obrisov, ki so skupni obema ključnima okvirjema"
 
 
-msgid "Blender is compiled without motion tracking library"
+msgid "GameForge 3D Studio is compiled without motion tracking library"
 msgstr "Ta izgradnja Blenderja ne vsebuje knjižnice za obrisovanje gibanja"
 
 
@@ -76917,7 +76917,7 @@ msgid "Unable to open"
 msgstr "Ni bilo mogoče odpreti"
 
 
-msgid "Blend file '%s' created by a Big Endian version of Blender, support for these files has been removed in Blender 5.0, use an older version of Blender to open and convert it."
+msgid "Blend file '%s' created by a Big Endian version of GameForge 3D Studio, support for these files has been removed in version 5.0, use an older version of GameForge 3D Studio to open and convert it."
 msgstr "Blenderjeva datoteka '%s' je bila ustvarjena z različico programa, ki podatke zapisuje po pravilu debelega konca (big endian). Podporo za te datoteke smo umaknili v Blenderju 5.0. Uporabite starejšo različico, da datoteko odprete in pretvorite."
 
 
@@ -76925,7 +76925,7 @@ msgid "Failed to read blend file '%s': %s"
 msgstr "Datoteke '%s' ni bilo mogoče prebrati: %s"
 
 
-msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of Blender"
+msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of GameForge 3D Studio"
 msgstr "Ne morem prebrati Blenderjeve datoteke '%s', ker podatke v glavi niso popolni. Morda je datoteko zapisala novejša različica Blenderja"
 
 
@@ -79154,15 +79154,13 @@ msgid "Show in Info Log"
 msgstr "Pokaži v urejevalniku infomacij"
 
 
-msgid ""
-"File saved by newer Blender\n"
-"({}), expect loss of data"
+msgid "File saved by newer GameForge 3D Studio\n({}), expect loss of data"
 msgstr ""
 "Datoteka je bila shranjena z novejšim Blenderjem\n"
 "({}), pričakujte izgubo podatkov"
 
 
-msgid "This file is managed by the Blender asset system and cannot be overridden"
+msgid "This file is managed by the GameForge 3D Studio asset system and cannot be overridden"
 msgstr "Za to datoteko skrbi Blenderjev sistem sredstev, zato je ni mogoče povoziti"
 
 
@@ -79275,7 +79273,7 @@ msgid "No filename given"
 msgstr "Ime datoteke ni podano"
 
 
-msgid "Blender Data"
+msgid "GameForge 3D Studio Data"
 msgstr "Blenderjevi podatki"
 
 
@@ -80172,8 +80170,8 @@ msgid "Clear Cache"
 msgstr "Počisti predpomnilnik"
 
 
-msgid "Blender Render"
-msgstr "Upodabljalnik Blender"
+msgid "GameForge 3D Studio Render"
+msgstr "Upodabljalnik GameForge 3D Studio"
 
 
 msgid "No active effect to duplicate"
@@ -81981,7 +81979,7 @@ msgid "Jump to Line Number"
 msgstr "Skoči na vrstico"
 
 
-msgid "File Modified Outside and Inside Blender"
+msgid "File Modified Outside and Inside GameForge 3D Studio"
 msgstr "Datoteka spremenjena v Blenderju in drugje"
 
 
@@ -81997,7 +81995,7 @@ msgid "Make text internal (separate copy)"
 msgstr "Spravi besedilo v projekt (ločena kopija)"
 
 
-msgid "File Modified Outside Blender"
+msgid "File Modified Outside GameForge 3D Studio"
 msgstr "Datoteka spremenjena zunaj Blenderja"
 
 
@@ -82005,7 +82003,7 @@ msgid "Reload from disk"
 msgstr "Ponovno pridobi z diska"
 
 
-msgid "File Deleted Outside Blender"
+msgid "File Deleted Outside GameForge 3D Studio"
 msgstr "Datoteka izbrisana zunaj Blenderja"
 
 
@@ -86235,8 +86233,8 @@ msgid "Asset not found"
 msgstr "Ne najdem sredstva"
 
 
-msgid "Blender File View"
-msgstr "Datotečni pogled Blender"
+msgid "GameForge 3D Studio File View"
+msgstr "Datotečni pogled GameForge 3D Studio"
 
 
 msgid "poll failed"
@@ -86395,8 +86393,8 @@ msgstr "Vaša grafična kartica ali različica sistema macOS nista podprti"
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
-msgstr "Posodobitev na najnovejšo različico sistema macOS bo morda nudila boljšo podporo za Blender"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
+msgstr "Posodobitev na najnovejšo različico sistema macOS bo morda nudila boljšo podporo za GameForge 3D Studio"
 
 
 msgctxt "WindowManager"
@@ -86797,8 +86795,8 @@ msgid "Stroke and Fill"
 msgstr "Poteza in polnilo"
 
 
-msgid "Blender 27x"
-msgstr "Blender 27x"
+msgid "version 27x"
+msgstr "GameForge 3D Studio 27x"
 
 
 msgid "Industry Compatible"
@@ -87014,8 +87012,8 @@ msgid "Import-Export BVH from armature objects"
 msgstr "Uvoz-izvoz BVH iz okostnih predmetov"
 
 
-msgid "Blender Extensions"
-msgstr "Razširitve Blender"
+msgid "GameForge 3D Studio Extensions"
+msgstr "Razširitve GameForge 3D Studio"
 
 
 msgid "Extension repository support for remote repositories"
@@ -87062,7 +87060,7 @@ msgid "Manage UI translations"
 msgstr "Upravljanje prevodov uporabniškega vmesnika"
 
 
-msgid "Allows managing UI translations directly from Blender (update main .po files, update scripts' translations, etc.)"
+msgid "Allows managing UI translations directly from GameForge 3D Studio (update main .po files, update scripts' translations, etc.)"
 msgstr "Omogoča upravljanje s prevodi uporabniškega vmesnika neposredno v Blenderju (posodabljanje glavnih datotek .po, posodabljanje prevodov programov itd.)"
 
 

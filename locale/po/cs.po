@@ -647,7 +647,7 @@ msgid "Fribidi Library"
 msgstr "Fribidská knihovna"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
 msgstr "Zkompilovaná knihovna FriBidi C (.so pod Linuxem, .dll pod Windows...), pokud používáte Windows, budete ji muset upravit, např. pomocí jedné z knihoven zahrnutých v úložišti knihoven Blenderu"
 
 
@@ -671,7 +671,7 @@ msgid "Source Root"
 msgstr "Zdrojový kořen"
 
 
-msgid "The Blender source root path"
+msgid "The GameForge 3D Studio source root path"
 msgstr "Kořenová cesta zdroje blenderu"
 
 
@@ -695,7 +695,7 @@ msgid "Persistent Data Path"
 msgstr "Trvalá datová cesta"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
 msgstr "Název souboru json, který ukládá tato nastavení (bohužel zde nefunguje systém Blenderu)"
 
 
@@ -1391,7 +1391,7 @@ msgid "Current File"
 msgstr "Aktuální soubor"
 
 
-msgid "Show the assets currently available in this Blender session"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
 msgstr "Zobrazit objekty dostupné v této relaci Blenderu"
 
 
@@ -1892,7 +1892,7 @@ msgid "Is Internal"
 msgstr "Je vnitřní"
 
 
-msgid "The attribute is meant for internal use by Blender"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
 msgstr "Tento atribut je určen pro vnitřní použití v Blenderu"
 
 
@@ -2661,12 +2661,12 @@ msgid "Path"
 msgstr "Cesta"
 
 
-msgid "Blender RNA"
-msgstr "Blender RNA"
+msgid "GameForge 3D Studio RNA"
+msgstr "GameForge 3D Studio RNA"
 
 
-msgid "Blender RNA structure definitions"
-msgstr "Definice struktury Blender RNA"
+msgid "GameForge 3D Studio RNA structure definitions"
+msgstr "Definice struktury GameForge 3D Studio RNA"
 
 
 msgid "Structs"
@@ -7588,7 +7588,7 @@ msgid "Show .blend1, .blend2, etc. files"
 msgstr "Ukázat .blend soubory"
 
 
-msgid "Filter Blender"
+msgid "Filter GameForge 3D Studio"
 msgstr "Filtr Blenderu"
 
 
@@ -9798,7 +9798,7 @@ msgid "W"
 msgstr "W"
 
 
-msgid "Version of Blender the library .blend was saved with"
+msgid "Version of GameForge 3D Studio the library .blend was saved with"
 msgstr "Verze Blenderu ve které byla knihovna .blend uložena"
 
 
@@ -11724,8 +11724,8 @@ msgid "Noise basis used for turbulence"
 msgstr "Spustit renderovani"
 
 
-msgid "Blender Original"
-msgstr "Blender Původní"
+msgid "GameForge 3D Studio Original"
+msgstr "GameForge 3D Studio Původní"
 
 
 msgid "Original Perlin"
@@ -18183,8 +18183,8 @@ msgid "Uninstall Studio Light"
 msgstr "Odinstalovat Studiové Světlo"
 
 
-msgid "Load and apply a Blender XML theme file"
-msgstr "Načíst a použít soubor motivu Blender XML"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
+msgstr "Načíst a použít soubor motivu GameForge 3D Studio XML"
 
 
 msgctxt "Operator"
@@ -22220,7 +22220,7 @@ msgstr "Uložit jako obrázek"
 
 
 msgid "Save As Render"
-msgstr "Uložit jako Blender soubor"
+msgstr "Uložit jako GameForge 3D Studio soubor"
 
 
 msgctxt "Operator"
@@ -28613,7 +28613,7 @@ msgid "Eyedropper"
 msgstr "Kapátko"
 
 
-msgid "Sample a color from the Blender window to store in a property"
+msgid "Sample a color from the GameForge 3D Studio window to store in a property"
 msgstr "Vybrat vzorek barvy z okna Blenderu a uložit ji ve vlastnosti"
 
 
@@ -29637,8 +29637,8 @@ msgid "Open"
 msgstr "Otevřít"
 
 
-msgid "Open a Blender file"
-msgstr "Otevře Blender soubor"
+msgid "Open a GameForge 3D Studio file"
+msgstr "Otevře GameForge 3D Studio soubor"
 
 
 msgid "Load UI"
@@ -29697,12 +29697,12 @@ msgstr "Kontex"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Ukončit Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Ukončit GameForge 3D Studio"
 
 
-msgid "Quit Blender"
-msgstr "Ukončit Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Ukončit GameForge 3D Studio"
 
 
 msgid "Primary Data Path"
@@ -29839,16 +29839,16 @@ msgstr "Uložit Spouštěcí Soubor"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Uložit Blender soubor"
+msgid "Save GameForge 3D Studio File"
+msgstr "Uložit GameForge 3D Studio soubor"
 
 
-msgid "Save the current Blender file"
+msgid "Save the current GameForge 3D Studio file"
 msgstr "Uloží současný soubor Blenderu"
 
 
-msgid "Exit Blender after saving"
-msgstr "Ukončit Blender po uložení"
+msgid "Exit GameForge 3D Studio after saving"
+msgstr "Ukončit GameForge 3D Studio po uložení"
 
 
 msgctxt "Operator"
@@ -29916,11 +29916,11 @@ msgstr "Otevřít uvítací okno s informacemi o vydání"
 
 
 msgctxt "Operator"
-msgid "About Blender"
+msgid "About GameForge 3D Studio"
 msgstr "O Blenderu"
 
 
-msgid "Open a window with information about Blender"
+msgid "Open a window with information about GameForge 3D Studio"
 msgstr "Otevřít okno s informacemi o Blenderu"
 
 
@@ -32495,7 +32495,7 @@ msgid "Show Memory"
 msgstr "Zobrazit Paměť"
 
 
-msgid "Show Blender memory usage"
+msgid "Show GameForge 3D Studio memory usage"
 msgstr "Zobrazit využití paměti"
 
 
@@ -32511,7 +32511,7 @@ msgid "Show Version"
 msgstr "Zobrazit Verzi"
 
 
-msgid "Show Blender version string"
+msgid "Show GameForge 3D Studio version string"
 msgstr "Zobrazit verzi Blenderu"
 
 
@@ -33455,12 +33455,12 @@ msgid "Z Axis Stiffness"
 msgstr "Tuhost Osy Z"
 
 
-msgid "Blender 2.7"
-msgstr "Blender 2.7"
+msgid "Version 2.7"
+msgstr "GameForge 3D Studio 2.7"
 
 
-msgid "Blender 2.8"
-msgstr "Blender 2.8"
+msgid "Version 2.8"
+msgstr "GameForge 3D Studio 2.8"
 
 
 msgid "Type of Rigid Body Constraint"
@@ -34454,8 +34454,8 @@ msgid "Type of information to display"
 msgstr "Jaký typ informace zobrazit"
 
 
-msgid "Blender File"
-msgstr "Otevřít Blender soubor"
+msgid "GameForge 3D Studio File"
+msgstr "Otevřít GameForge 3D Studio soubor"
 
 
 msgctxt "ID"
@@ -37064,12 +37064,12 @@ msgstr "Licence"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
-msgstr "Blender obchod"
+msgid "GameForge 3D Studio Store"
+msgstr "GameForge 3D Studio obchod"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
+msgid "GameForge 3D Studio Website"
 msgstr "Webové stránky blenderu"
 
 
@@ -38225,7 +38225,7 @@ msgid "Text Files"
 msgstr "Textové soubory"
 
 
-msgid "Blender IDs"
+msgid "GameForge 3D Studio IDs"
 msgstr "ID Blenderu"
 
 
@@ -38977,7 +38977,7 @@ msgid "Video Memory"
 msgstr "Videopamět"
 
 
-msgid "Blender Version"
+msgid "GameForge 3D Studio Version"
 msgstr "Verze blenderu"
 
 
@@ -41530,8 +41530,8 @@ msgid "Unable to remove material slot in edit mode"
 msgstr "Zobrazit materiál daného objektu"
 
 
-msgid "Blender Render"
-msgstr "Blender render"
+msgid "GameForge 3D Studio Render"
+msgstr "GameForge 3D Studio render"
 
 
 msgid "Maximize Area"

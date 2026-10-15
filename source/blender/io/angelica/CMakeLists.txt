@@ -17,8 +17,11 @@ set(INC_SYS
 set(SRC
   IO_angelica.cc
   IO_angelica_character.cc
+  IO_angelica_python.cc
   formats/angelica_aipolicy.cc
+  formats/angelica_dds.cc
   formats/angelica_anim.cc
+  formats/angelica_deps.cc
   formats/angelica_domain.cc
   formats/angelica_elements.cc
   formats/angelica_gshop.cc
@@ -27,6 +30,7 @@ set(SRC
   formats/angelica_npcgen.cc
   formats/angelica_pathmap.cc
   formats/angelica_pck.cc
+  formats/angelica_pck_writer.cc
   formats/angelica_precinct.cc
   formats/angelica_reader.cc
   formats/angelica_skeleton.cc
@@ -44,7 +48,9 @@ set(SRC
   IO_angelica.hh
   IO_angelica_character.hh
   formats/angelica_aipolicy.hh
+  formats/angelica_dds.hh
   formats/angelica_anim.hh
+  formats/angelica_deps.hh
   formats/angelica_domain.hh
   formats/angelica_elements.hh
   formats/angelica_gshop.hh
@@ -53,6 +59,7 @@ set(SRC
   formats/angelica_npcgen.hh
   formats/angelica_pathmap.hh
   formats/angelica_pck.hh
+  formats/angelica_pck_writer.hh
   formats/angelica_precinct.hh
   formats/angelica_reader.hh
   formats/angelica_skeleton.hh
@@ -81,6 +88,7 @@ set(LIB
   PRIVATE bf::nodes
   PRIVATE bf::windowmanager
   PRIVATE bf::dependencies::zlib
+  PRIVATE bf::dependencies::optional::python
   bf_io_common
 )
 

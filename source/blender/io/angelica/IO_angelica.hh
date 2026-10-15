@@ -61,6 +61,20 @@ struct AngelicaImportParams {
   ReportList *reports = nullptr;
 };
 
+/** Import one asset of a game client by its path inside the client (packed or loose). */
+struct AngelicaAssetImportParams {
+  /** Client folder (usually `element`). */
+  char client_root[FILE_MAX] = "";
+  /** Engine path of the asset, for example `models\npcs\x\x.ecm`. */
+  char engine_path[FILE_MAX] = "";
+  float global_scale = 1.0f;
+  bool import_textures = true;
+  bool import_armature = true;
+  bool import_animations = true;
+
+  ReportList *reports = nullptr;
+};
+
 struct AngelicaMapImportParams {
   /** Map folder, for example `element/maps/a19`. Its name is the map code. */
   char directory[FILE_MAX] = "";
@@ -105,6 +119,18 @@ std::vector<ImportedAsset> import_file(Main *bmain,
                                        Scene *scene,
                                        ViewLayer *view_layer,
                                        const AngelicaImportParams &params);
+
+/**
+ * Import one asset of a client (`.ecm`, `.smd`, `.ski`, `.bon`, `.bmd`, `.mox`) by its engine
+ * path, read from inside the client's packages or folder without extracting anything. The asset's
+ * collection gets a `gameforge_source` property (JSON): the client, the asset path and every file
+ * of the client the import read, with the package and entry each one came from, so edits can be
+ * written back to the right files.
+ */
+std::vector<ImportedAsset> import_client_asset(Main *bmain,
+                                               Scene *scene,
+                                               ViewLayer *view_layer,
+                                               const AngelicaAssetImportParams &params);
 
 /** Import a map folder (terrain, heightmaps) by its map code. */
 std::vector<ImportedAsset> import_map(Main *bmain,

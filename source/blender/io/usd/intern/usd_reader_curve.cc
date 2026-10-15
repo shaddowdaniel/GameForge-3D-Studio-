@@ -187,7 +187,7 @@ void USDCurvesReader::read_custom_data(bke::CurvesGeometry &curves,
       const pxr::TfToken pv_name = pxr::UsdGeomPrimvar::StripPrimvarsName(pv.GetPrimvarName());
       BKE_reportf(reports(),
                   RPT_WARNING,
-                  "Primvar '%s' (interpolation %s, type %s) cannot be converted to Blender",
+                  "Primvar '%s' (interpolation %s, type %s) cannot be converted to GameForge 3D Studio",
                   pv_name.GetText(),
                   pv_interp.GetText(),
                   pv_type.GetAsToken().GetText());

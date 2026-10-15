@@ -83,7 +83,7 @@ void USDPointsWriter::write_generic_data(const bke::AttributeIter &attr,
   if (!pv_interp || !pv_type) {
     BKE_reportf(this->reports(),
                 RPT_WARNING,
-                "Attribute '%s' (Blender domain %d, type %d) cannot be converted to USD",
+                "Attribute '%s' (GameForge 3D Studio domain %d, type %d) cannot be converted to USD",
                 attr.name.c_str(),
                 int(attr.domain),
                 int(attr.data_type));

@@ -2135,7 +2135,7 @@ static PyMethodDef M_Geometry_methods[] = {
 PyDoc_STRVAR(
     /* Wrap. */
     M_Geometry_doc,
-    "The Blender geometry module.");
+    "The GameForge 3D Studio geometry module.");
 static PyModuleDef M_Geometry_module_def = {
     /*m_base*/ PyModuleDef_HEAD_INIT,
     /*m_name*/ "mathutils.geometry",

@@ -24,7 +24,7 @@ namespace blender {
 static PyTypeObject BlenderAppOVDBType;
 
 static PyStructSequence_Field app_openvdb_info_fields[] = {
-    {"supported", "Boolean, True when Blender is built with OpenVDB support"},
+    {"supported", "Boolean, True when GameForge 3D Studio is built with OpenVDB support"},
     {"version", "The OpenVDB version as a tuple of 3 numbers"},
     {"version_string", "The OpenVDB version formatted as a string"},
     {nullptr},

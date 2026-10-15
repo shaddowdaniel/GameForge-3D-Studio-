@@ -6555,13 +6555,13 @@ static void def_sh_normal_map(BlenderRNA * /*brna*/, StructRNA *srna)
       {SHD_SPACE_BLENDER_OBJECT,
        "BLENDER_OBJECT",
        0,
-       "Blender Object Space",
-       "Object space normal mapping, compatible with Blender render baking"},
+       "GameForge 3D Studio Object Space",
+       "Object space normal mapping, compatible with GameForge 3D Studio render baking"},
       {SHD_SPACE_BLENDER_WORLD,
        "BLENDER_WORLD",
        0,
-       "Blender World Space",
-       "World space normal mapping, compatible with Blender render baking"},
+       "GameForge 3D Studio World Space",
+       "World space normal mapping, compatible with GameForge 3D Studio render baking"},
       {0, nullptr, 0, nullptr, nullptr},
   };
 

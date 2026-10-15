@@ -1876,7 +1876,7 @@ PyDoc_STRVAR(
     quaternion_doc,
     ".. class:: Quaternion(seq=(1.0, 0.0, 0.0, 0.0), angle=0.0, /)\n"
     "\n"
-    "   This object gives access to Quaternions in Blender.\n"
+    "   This object gives access to Quaternions in GameForge 3D Studio.\n"
     "\n"
     "   :param seq: A (w, x, y, z) quaternion, a 3D exponential map vector,\n"
     "      or a 3D axis vector (when *angle* is also provided).\n"

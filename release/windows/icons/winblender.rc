@@ -24,11 +24,15 @@ BEGIN
     BEGIN
       VALUE "FileVersion", BLEN_VER_RC_STR
       VALUE "ProductVersion", BLEN_VER_RC_STR
-      VALUE "CompanyName", "Blender Foundation"
-      VALUE "FileDescription", "Blender"
-      VALUE "LegalCopyright", "GPLv3 (Blender Foundation)"
-      VALUE "OriginalFilename", "blender.exe"
-      VALUE "ProductName", "Blender"
+      VALUE "CompanyName", "ATOM GameForge"
+      VALUE "FileDescription", "GameForge 3D Studio"
+      VALUE "LegalCopyright", "GPLv3 (ATOM GameForge e colaboradores)"
+#ifdef BLENDER_RC_LAUNCHER
+      VALUE "OriginalFilename", BLENDER_WIN_LAUNCHER_NAME
+#else
+      VALUE "OriginalFilename", BLENDER_WIN_EXE_NAME
+#endif
+      VALUE "ProductName", "GameForge 3D Studio"
     END
   END
   BLOCK "VarFileInfo"

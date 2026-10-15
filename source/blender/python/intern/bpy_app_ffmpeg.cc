@@ -36,7 +36,7 @@ static PyTypeObject BlenderAppFFmpegType;
   }
 
 static PyStructSequence_Field app_ffmpeg_info_fields[] = {
-    {"supported", "Boolean, True when Blender is built with FFmpeg support"},
+    {"supported", "Boolean, True when GameForge 3D Studio is built with FFmpeg support"},
 
     DEF_FFMPEG_LIB_VERSION(avcodec),
     DEF_FFMPEG_LIB_VERSION(avdevice),

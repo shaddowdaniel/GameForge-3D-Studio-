@@ -2503,17 +2503,17 @@ msgid "Memory Statistics"
 msgstr "Эс статистикасы"
 
 
-msgid "Open a Blender file"
-msgstr "Blender файлын ачуу"
+msgid "Open a GameForge 3D Studio file"
+msgstr "GameForge 3D Studio файлын ачуу"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Blender'ден чыгуу"
+msgid "Quit GameForge 3D Studio"
+msgstr "GameForge 3D Studio'ден чыгуу"
 
 
-msgid "Quit Blender"
-msgstr "Blender'ден чыгуу"
+msgid "Quit GameForge 3D Studio"
+msgstr "GameForge 3D Studio'ден чыгуу"
 
 
 msgid "Image ID"

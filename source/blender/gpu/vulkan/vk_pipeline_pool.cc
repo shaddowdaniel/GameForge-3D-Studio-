@@ -725,7 +725,7 @@ void VKPipelinePool::read_from_disk()
      */
     CLOG_INFO(&LOG,
               "Pipeline cache on disk [%s] is ignored as it was written by a different driver or "
-              "Blender version. Cache will be overwritten when exiting.",
+              "GameForge 3D Studio version. Cache will be overwritten when exiting.",
               cache_file.c_str());
     return;
   }

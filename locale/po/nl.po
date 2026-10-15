@@ -792,8 +792,8 @@ msgid "Fribidi Library"
 msgstr "Fribidi Bibliotheek"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
-msgstr "De door FriBidi C gecompileerde bibliotheek (.so onder Linux, .dll onder Windows...), zul je deze waarschijnlijk moeten bewerken als je onder Windows werkt, b.v. met behulp van degene die is opgenomen in de Blender bibliotheken repository."
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
+msgstr "De door FriBidi C gecompileerde bibliotheek (.so onder Linux, .dll onder Windows...), zul je deze waarschijnlijk moeten bewerken als je onder Windows werkt, b.v. met behulp van degene die is opgenomen in de GameForge 3D Studio bibliotheken repository."
 
 
 msgid "The bf-translation repository"
@@ -812,8 +812,8 @@ msgid "Source Root"
 msgstr "Bron Wortel"
 
 
-msgid "The Blender source root path"
-msgstr "De Blender bron wortel pad"
+msgid "The GameForge 3D Studio source root path"
+msgstr "De GameForge 3D Studio bron wortel pad"
 
 
 msgid "A cache storing validated msgids, to avoid re-spellchecking them"
@@ -828,8 +828,8 @@ msgid "Warn about messages not starting by a capitalized letter (with a few allo
 msgstr "Waarschuw voor berichten die niet met een hoofdletter starten (met een paar toegestane uitzonderingen!)"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "De naam van een json-bestand dat die instellingen opslaat (helaas, Blender's systeem werkt hier niet)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
+msgstr "De naam van een json-bestand dat die instellingen opslaat (helaas, GameForge 3D Studio's systeem werkt hier niet)"
 
 
 msgid "User Add-ons"
@@ -1524,8 +1524,8 @@ msgid "Show assets from all of the listed asset libraries"
 msgstr "Toon assets van alle vermelde asset bibliotheken"
 
 
-msgid "Show the assets currently available in this Blender session"
-msgstr "Toon de assets momenteel beschikbaar in deze Blender sessie"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
+msgstr "Toon de assets momenteel beschikbaar in deze GameForge 3D Studio sessie"
 
 
 msgid "Essentials"
@@ -2621,8 +2621,8 @@ msgid "A color space, view or display was not found, which likely means the Open
 msgstr "Er was geen kleurruimte, beeld of weergave gevonden, wat waarschijnlijk betekent dat de OpenColorIO config gebruikt om dit blend bestand te creëren mist"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Only link data, instead of appending it"
@@ -2770,12 +2770,12 @@ msgid "Path"
 msgstr "Pad"
 
 
-msgid "Blender RNA"
-msgstr "Blender RNA"
+msgid "GameForge 3D Studio RNA"
+msgstr "GameForge 3D Studio RNA"
 
 
-msgid "Blender RNA structure definitions"
-msgstr "Blender RNA structuur definities"
+msgid "GameForge 3D Studio RNA structure definitions"
+msgstr "GameForge 3D Studio RNA structuur definities"
 
 
 msgid "Structs"
@@ -8734,8 +8734,8 @@ msgid "Save Screenshot"
 msgstr "Sla screenshot op"
 
 
-msgid "Capture a picture of the whole Blender window"
-msgstr "Maak een afbeelding van het hele Blender scherm"
+msgid "Capture a picture of the whole GameForge 3D Studio window"
+msgstr "Maak een afbeelding van het hele GameForge 3D Studio scherm"
 
 
 msgctxt "Operator"
@@ -9302,8 +9302,8 @@ msgid "Append mesh name to object name, separated by a '_'"
 msgstr "Voeg mesh-naam bij aan object-naam, gescheiden door een '_'"
 
 
-msgid "Open a Blender file"
-msgstr "Open een Blender Bestand"
+msgid "Open a GameForge 3D Studio file"
+msgstr "Open een GameForge 3D Studio Bestand"
 
 
 msgctxt "Operator"
@@ -9321,12 +9321,12 @@ msgstr "Alle Types"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Blender Afsluiten"
+msgid "Quit GameForge 3D Studio"
+msgstr "GameForge 3D Studio Afsluiten"
 
 
-msgid "Quit Blender"
-msgstr "Blender Afsluiten"
+msgid "Quit GameForge 3D Studio"
+msgstr "GameForge 3D Studio Afsluiten"
 
 
 msgctxt "Operator"
@@ -9391,12 +9391,12 @@ msgstr "Sla Opstartbestand Op"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Sla Blender Bestand op"
+msgid "Save GameForge 3D Studio File"
+msgstr "Sla GameForge 3D Studio Bestand op"
 
 
-msgid "Save the current Blender file"
-msgstr "Sla het huidige Blender bestand op"
+msgid "Save the current GameForge 3D Studio file"
+msgstr "Sla het huidige GameForge 3D Studio bestand op"
 
 
 msgctxt "Operator"
@@ -9414,8 +9414,8 @@ msgstr "Interface"
 
 
 msgctxt "Operator"
-msgid "About Blender"
-msgstr "Over Blender"
+msgid "About GameForge 3D Studio"
+msgstr "Over GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -11296,8 +11296,8 @@ msgid "Scene Statistics"
 msgstr "Scene Statistieken"
 
 
-msgid "Blender Version"
-msgstr "Blender Versie"
+msgid "GameForge 3D Studio Version"
+msgstr "GameForge 3D Studio Versie"
 
 
 msgid "Show Warning"
@@ -12207,8 +12207,8 @@ msgid "Render active scene"
 msgstr "Render actieve scene"
 
 
-msgid "Blender Render"
-msgstr "Blender Render"
+msgid "GameForge 3D Studio Render"
+msgstr "GameForge 3D Studio Render"
 
 
 msgid "Failed to open window!"

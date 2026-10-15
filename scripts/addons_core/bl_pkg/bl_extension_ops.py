@@ -2256,7 +2256,7 @@ class EXTENSIONS_OT_repo_unlock(Operator):
 
         layout = self.layout
         col = layout.column()
-        col.label(text="Warning! Before unlocking, ensure another instance of Blender is not running.")
+        col.label(text="Warning! Before unlocking, ensure another instance of GameForge 3D Studio is not running.")
         col.label(text="Force unlocking may be necessary in the case of a crash or power failure,")
         col.label(text="otherwise it should be avoided.")
 
@@ -4489,8 +4489,8 @@ class EXTENSIONS_OT_userpref_show_online(Operator):
 
 
 class EXTENSIONS_OT_userpref_allow_online(Operator):
-    """Allow Blender to access the internet. Add-ons that follow this setting will only connect to """ \
-        """the internet if enabled. However, Blender cannot prevent third-party add-ons from """ \
+    """Allow GameForge 3D Studio to access the internet. Add-ons that follow this setting will only connect to """ \
+        """the internet if enabled. However, GameForge 3D Studio cannot prevent third-party add-ons from """ \
         """violating this rule."""
     bl_idname = "extensions.userpref_allow_online"
     bl_label = ""
@@ -4512,8 +4512,8 @@ class EXTENSIONS_OT_userpref_allow_online(Operator):
 # NOTE: this is a wrapper for `extensions.userpref_allow_online`.
 # It exists *only* show a dialog.
 class EXTENSIONS_OT_userpref_allow_online_popup(Operator):
-    """Allow Blender to access the internet. Add-ons that follow this setting will only connect to """ \
-        """the internet if enabled. However, Blender cannot prevent third-party add-ons from """ \
+    """Allow GameForge 3D Studio to access the internet. Add-ons that follow this setting will only connect to """ \
+        """the internet if enabled. However, GameForge 3D Studio cannot prevent third-party add-ons from """ \
         """violating this rule."""
     bl_idname = "extensions.userpref_allow_online_popup"
     bl_label = ""

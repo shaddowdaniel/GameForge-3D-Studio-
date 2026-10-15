@@ -700,8 +700,8 @@ msgid "Fribidi Library"
 msgstr "Βιβλιοθήκη Fribidi"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
-msgstr "Η Βιβλιοθήκη FriBidi μεταγλωττισμένη με C (.so στο Linux, .dll στα windows...), πιθανώς να πρέπει να την επεξεργαστείς εάν χρησιμοποιείς Windows, π.χ. χρησιμοποιώντας αυτήν η οποία συμπεριλαμβάνεται στο αποθετήριο βιβλιοθηκών του Blender"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
+msgstr "Η Βιβλιοθήκη FriBidi μεταγλωττισμένη με C (.so στο Linux, .dll στα windows...), πιθανώς να πρέπει να την επεξεργαστείς εάν χρησιμοποιείς Windows, π.χ. χρησιμοποιώντας αυτήν η οποία συμπεριλαμβάνεται στο αποθετήριο βιβλιοθηκών του GameForge 3D Studio"
 
 
 msgid "The bf-translation repository"
@@ -716,8 +716,8 @@ msgid "Warn about messages not starting by a capitalized letter (with a few allo
 msgstr "Προειδοποίηση για μηνύματα τα οποία δεν ξεκινούν με κεφαλαίο γράμμα (με μερικές επιτρεπόμενες εξαιρέσεις)"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Το όνομα ενός αρχείου json το οποίο περιέχει αυτές τις ρυθμίσεις (δυστυχώς, το σύστημα του Blender δεν λειτουργεί εδώ)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
+msgstr "Το όνομα ενός αρχείου json το οποίο περιέχει αυτές τις ρυθμίσεις (δυστυχώς, το σύστημα του GameForge 3D Studio δεν λειτουργεί εδώ)"
 
 
 msgid "User Add-ons"
@@ -1232,8 +1232,8 @@ msgid "Preferences"
 msgstr "Προτιμήσεις"
 
 
-msgid "Manage the current Blender project"
-msgstr "Διαχείριση του τρέχοντος έργου Blender"
+msgid "Manage the current GameForge 3D Studio project"
+msgstr "Διαχείριση του τρέχοντος έργου GameForge 3D Studio"
 
 
 msgid "Width"
@@ -2361,11 +2361,11 @@ msgstr "Remove"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "Έξοδος"
 
 
-msgid "Quit Blender"
+msgid "Quit GameForge 3D Studio"
 msgstr "Έξοδος"
 
 

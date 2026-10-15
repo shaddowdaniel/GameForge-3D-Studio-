@@ -23,6 +23,7 @@
 #include "BLI_map.hh"
 #include "BLI_math_matrix_types.hh"
 #include "BLI_math_vector_types.hh"
+#include "BLI_string_ref.hh"
 
 #include "IO_angelica.hh"
 
@@ -61,7 +62,17 @@ struct TextureRequest {
   std::string path;
   /** Engine directory of the file that references the texture. */
   std::string base_dir;
+  /** Skins: the `.ski` file title, for the engine's `<dir>\Tex_<title>\` texture folder. */
+  std::string skin_title;
 };
+
+/**
+ * Store where imported data came from as a custom property of the data-block (`gameforge_*`),
+ * so the Studio can write edits back to the right file of the client.
+ */
+void set_source_property(ID *id, StringRef name, StringRefNull value);
+void set_source_property(ID *id, StringRef name, int value);
+void set_source_property(ID *id, StringRef name, double value);
 
 class ImportContext {
  public:

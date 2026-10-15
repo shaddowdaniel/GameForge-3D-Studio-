@@ -1329,11 +1329,11 @@ msgstr "Spremi kopiju"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Spremi Blender datoteku"
+msgid "Save GameForge 3D Studio File"
+msgstr "Spremi GameForge 3D Studio datoteku"
 
 
-msgid "Save the current Blender file"
+msgid "Save the current GameForge 3D Studio file"
 msgstr "Spremi otvorenu datoteku"
 
 
@@ -1650,8 +1650,8 @@ msgid "Open..."
 msgstr "Otvori..."
 
 
-msgid "Blender is free software"
-msgstr "Blender softver je besplatan"
+msgid "GameForge 3D Studio is free software"
+msgstr "GameForge 3D Studio softver je besplatan"
 
 
 msgid "Licensed under the GNU General Public License"
@@ -1674,7 +1674,7 @@ msgstr "Više..."
 
 
 msgctxt "Operator"
-msgid "Donate to Blender"
+msgid "Donate to GameForge 3D Studio"
 msgstr "Doniraj Blenderu"
 
 
@@ -1693,8 +1693,8 @@ msgstr "Licenca"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
-msgstr "Blender web stranica"
+msgid "GameForge 3D Studio Website"
+msgstr "GameForge 3D Studio web stranica"
 
 
 msgid "Assign"
@@ -1705,7 +1705,7 @@ msgid "Bug"
 msgstr "Greška"
 
 
-msgid "Read about what's new in this version of Blender"
+msgid "Read about what's new in this version of GameForge 3D Studio"
 msgstr "Pročitaj što je sve novo u ovoj verziji Blendera"
 
 
@@ -1713,7 +1713,7 @@ msgid "User Manual"
 msgstr "Korisnički priručnik"
 
 
-msgid "The reference manual for this version of Blender"
+msgid "The reference manual for this version of GameForge 3D Studio"
 msgstr "Korisnički priručnik za ovu verziju Blendera"
 
 
@@ -1849,8 +1849,8 @@ msgstr "Više..."
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Settings"
-msgstr "Vrati Blender na tvorničke postavke"
+msgid "Load Factory GameForge 3D Studio Settings"
+msgstr "Vrati GameForge 3D Studio na tvorničke postavke"
 
 
 msgctxt "Operator"

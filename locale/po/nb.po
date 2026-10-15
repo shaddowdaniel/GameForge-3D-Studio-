@@ -836,8 +836,8 @@ msgid "Fribidi Library"
 msgstr "Fribidi-bibliotek"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
-msgstr "Fribidi C kompilerte bibliotek (.so under Linux, .dll under windows …), du må sannsynligvis redigere det, hvis du er under windows, f.eks. ved å bruke den som er inkludert i Blender library repository"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
+msgstr "Fribidi C kompilerte bibliotek (.so under Linux, .dll under windows …), du må sannsynligvis redigere det, hvis du er under windows, f.eks. ved å bruke den som er inkludert i GameForge 3D Studio library repository"
 
 
 msgid "Translation Root"
@@ -860,8 +860,8 @@ msgid "Source Root"
 msgstr "Kilde rot"
 
 
-msgid "The Blender source root path"
-msgstr "Blender-kildens rotsti"
+msgid "The GameForge 3D Studio source root path"
+msgstr "GameForge 3D Studio-kildens rotsti"
 
 
 msgid "Spell Cache"
@@ -884,7 +884,7 @@ msgid "Persistent Data Path"
 msgstr "Vedvarende data sti"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
 msgstr "Navnet på en json-fil som lagrer disse innstillingene (dessverre, fungerer ikke Blenders system her)"
 
 
@@ -1812,8 +1812,8 @@ msgid "Current File"
 msgstr "Gjeldende fil"
 
 
-msgid "Show the assets currently available in this Blender session"
-msgstr "Vis de tilgjengelige eiendelene i denne Blender-økta"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
+msgstr "Vis de tilgjengelige eiendelene i denne GameForge 3D Studio-økta"
 
 
 msgid "Essentials"
@@ -1872,8 +1872,8 @@ msgid "Catalog UUID"
 msgstr "Katalog UUID"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
-msgstr "Identifikator for eiendelens katalog, brukes av Blender for å søke etter eiendelens katalog sti. Må være en UUID i følge RFC4122."
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgstr "Identifikator for eiendelens katalog, brukes av GameForge 3D Studio for å søke etter eiendelens katalog sti. Må være en UUID i følge RFC4122."
 
 
 msgid "Catalog Simple Name"
@@ -2533,8 +2533,8 @@ msgid "Is Internal"
 msgstr "Er intern"
 
 
-msgid "The attribute is meant for internal use by Blender"
-msgstr "Egenskapen er ment for intern bruk av Blender"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
+msgstr "Egenskapen er ment for intern bruk av GameForge 3D Studio"
 
 
 msgid "Is Required"
@@ -3792,8 +3792,8 @@ msgid "A color space, view or display was not found, which likely means the Open
 msgstr "Fant ikke et fargerom, visning eller skjerm, noe som sannsynligvis betyr at OpenColorIO-oppsettet brukt til opprettelse av denne blend-fila mangler"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Color space used for all scene linear colors in this file, and for compositing, shader and geometry nodes processing"
@@ -4017,12 +4017,12 @@ msgid "Collection of source libraries, i.e. blendfile paths"
 msgstr "Samling av kildebibliotek, f.eks. blend-fil-stier"
 
 
-msgid "Blender RNA"
-msgstr "Blender RNA"
+msgid "GameForge 3D Studio RNA"
+msgstr "GameForge 3D Studio RNA"
 
 
-msgid "Blender RNA structure definitions"
-msgstr "Definisjoner av RNA-struktur i Blender"
+msgid "GameForge 3D Studio RNA structure definitions"
+msgstr "Definisjoner av RNA-struktur i GameForge 3D Studio"
 
 
 msgid "Structs"
@@ -5223,8 +5223,8 @@ msgstr "Åpne velkomstbildet med utgivelsesinfo"
 
 
 msgctxt "Operator"
-msgid "About Blender"
-msgstr "Om Blender"
+msgid "About GameForge 3D Studio"
+msgstr "Om GameForge 3D Studio"
 
 
 msgid "Onion Skin"
@@ -5536,8 +5536,8 @@ msgid "Open..."
 msgstr "Åpne …"
 
 
-msgid "Blender is free software"
-msgstr "Blender er fri programvare"
+msgid "GameForge 3D Studio is free software"
+msgstr "GameForge 3D Studio er fri programvare"
 
 
 msgid "Licensed under the GNU General Public License"
@@ -5569,8 +5569,8 @@ msgstr "Dette er nytt"
 
 
 msgctxt "Operator"
-msgid "Donate to Blender"
-msgstr "Gi pengegave til Blender"
+msgid "Donate to GameForge 3D Studio"
+msgstr "Gi pengegave til GameForge 3D Studio"
 
 
 msgid "Running in Offline Mode"
@@ -5593,13 +5593,13 @@ msgstr "Lisens"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
-msgstr "Blender-butikk"
+msgid "GameForge 3D Studio Store"
+msgstr "GameForge 3D Studio-butikk"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
-msgstr "Blender-nettside"
+msgid "GameForge 3D Studio Website"
+msgstr "GameForge 3D Studio-nettside"
 
 
 msgctxt "Operator"
@@ -5710,8 +5710,8 @@ msgid "Translate"
 msgstr "Oversett"
 
 
-msgid "Blender Version"
-msgstr "Blender-versjon"
+msgid "GameForge 3D Studio Version"
+msgstr "GameForge 3D Studio-versjon"
 
 
 msgctxt "Operator"

@@ -677,8 +677,8 @@ msgid "Source Root"
 msgstr "Quellverzeichnis"
 
 
-msgid "The Blender source root path"
-msgstr "Der Blender Quellverzeichnis-Stammpfad"
+msgid "The GameForge 3D Studio source root path"
+msgstr "Der GameForge 3D Studio Quellverzeichnis-Stammpfad"
 
 
 msgid "Spell Cache"
@@ -701,8 +701,8 @@ msgid "Persistent Data Path"
 msgstr "Durchgängiger Datenpfad"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Der Name einer json Datei, welche die Einstellungen gespeichert hat (unglücklicherweiße, funktioniert Blender's System hier nicht)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
+msgstr "Der Name einer json Datei, welche die Einstellungen gespeichert hat (unglücklicherweiße, funktioniert GameForge 3D Studio's System hier nicht)"
 
 
 msgid "User Add-ons"
@@ -3061,8 +3061,8 @@ msgid "Project"
 msgstr "Projekt"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Options for this blendfile import operation"
@@ -3242,12 +3242,12 @@ msgid "The path to the root folder of the project"
 msgstr "Der Pfade zum Stammordner des Projektes"
 
 
-msgid "Blender RNA"
-msgstr "Blender RNA"
+msgid "GameForge 3D Studio RNA"
+msgstr "GameForge 3D Studio RNA"
 
 
-msgid "Blender RNA structure definitions"
-msgstr "Blender RNA Strukturdefinitionen"
+msgid "GameForge 3D Studio RNA structure definitions"
+msgstr "GameForge 3D Studio RNA Strukturdefinitionen"
 
 
 msgid "Structs"
@@ -6290,8 +6290,8 @@ msgid "Lin error"
 msgstr "Lin-Fehler"
 
 
-msgid "Amount of residual error in Blender space unit for constraints that work on position"
-msgstr "Menge des Restfehlers in der Blender-Raumeinheit für Abhängigkeiten, die auf dieser Position arbeiten"
+msgid "Amount of residual error in GameForge 3D Studio space unit for constraints that work on position"
+msgstr "Menge des Restfehlers in der GameForge 3D Studio-Raumeinheit für Abhängigkeiten, die auf dieser Position arbeiten"
 
 
 msgid "Rotation error"
@@ -9056,7 +9056,7 @@ msgstr "Vormultipliziertes Alpha"
 
 
 msgid "Open Borders"
-msgstr "Blender-Datei öffnen"
+msgstr "GameForge 3D Studio-Datei öffnen"
 
 
 msgid "UV Map"
@@ -10390,7 +10390,7 @@ msgstr "Rekursion"
 
 
 msgid "Blend File"
-msgstr "Blender Datei"
+msgstr "GameForge 3D Studio Datei"
 
 
 msgid "List .blend files' content"
@@ -10489,24 +10489,24 @@ msgid "Hide .blend files items that are not data-blocks with asset metadata"
 msgstr "Ausblenden von .blend-Dateien, die keine Datenblöcke mit Asset-Metadaten sind"
 
 
-msgid "Filter Blender Backup Files"
-msgstr "Filter Blender Sicherungsdateien"
+msgid "Filter GameForge 3D Studio Backup Files"
+msgstr "Filter GameForge 3D Studio Sicherungsdateien"
 
 
 msgid "Show .blend1, .blend2, etc. files"
 msgstr ".blend-Dateien anzeigen"
 
 
-msgid "Filter Blender"
-msgstr "Blender filtern"
+msgid "Filter GameForge 3D Studio"
+msgstr "GameForge 3D Studio filtern"
 
 
 msgid "Show .blend files"
 msgstr ".blend-Dateien anzeigen"
 
 
-msgid "Filter Blender IDs"
-msgstr "Blender IDs filtern"
+msgid "Filter GameForge 3D Studio IDs"
+msgstr "GameForge 3D Studio IDs filtern"
 
 
 msgid "Show .blend files items (objects, materials, etc.)"
@@ -13999,8 +13999,8 @@ msgid "W"
 msgstr "W"
 
 
-msgid "Version of Blender the library .blend was saved with"
-msgstr "Version von Blender wurde die Bibliothek .blend mit"
+msgid "Version of GameForge 3D Studio the library .blend was saved with"
+msgstr "Version von GameForge 3D Studio wurde die Bibliothek .blend mit"
 
 
 msgctxt "Light"
@@ -16390,8 +16390,8 @@ msgid "Grayscale"
 msgstr "Graustufen"
 
 
-msgid "Blender Original"
-msgstr "Blender Original"
+msgid "GameForge 3D Studio Original"
+msgstr "GameForge 3D Studio Original"
 
 
 msgid "Voronoi F1"
@@ -24544,8 +24544,8 @@ msgid "Object space normal mapping"
 msgstr "Objektdaten"
 
 
-msgid "Blender Object Space"
-msgstr "Blender-Objektraum"
+msgid "GameForge 3D Studio Object Space"
+msgstr "GameForge 3D Studio-Objektraum"
 
 
 msgid "UV Map for tangent space maps"
@@ -25173,7 +25173,7 @@ msgstr "Alles zeigen"
 
 msgctxt "Operator"
 msgid "Open Blend File"
-msgstr "Blender-Datei öffnen"
+msgstr "GameForge 3D Studio-Datei öffnen"
 
 
 msgid "Add or remove a Camera Preset"
@@ -30556,7 +30556,7 @@ msgstr "Bild unter anderem Namen und/oder Einstellungen speichern"
 
 
 msgid "Save As Render"
-msgstr "Als Blender-Datei speichern"
+msgstr "Als GameForge 3D Studio-Datei speichern"
 
 
 msgctxt "Operator"
@@ -38570,8 +38570,8 @@ msgid "Open"
 msgstr "Öffnen"
 
 
-msgid "Open a Blender file"
-msgstr "Eine Blender-Datei öffnen"
+msgid "Open a GameForge 3D Studio file"
+msgstr "Eine GameForge 3D Studio-Datei öffnen"
 
 
 msgid "Display File Selector"
@@ -38662,12 +38662,12 @@ msgstr "Weiche Begrenzungen"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Blender beenden"
+msgid "Quit GameForge 3D Studio"
+msgstr "GameForge 3D Studio beenden"
 
 
-msgid "Quit Blender"
-msgstr "Blender beenden"
+msgid "Quit GameForge 3D Studio"
+msgstr "GameForge 3D Studio beenden"
 
 
 msgctxt "Operator"
@@ -38854,16 +38854,16 @@ msgstr "Startdatei festlegen"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Blender-Datei speichern"
+msgid "Save GameForge 3D Studio File"
+msgstr "GameForge 3D Studio-Datei speichern"
 
 
-msgid "Save the current Blender file"
-msgstr "Aktuelle Blender-Datei speichern"
+msgid "Save the current GameForge 3D Studio file"
+msgstr "Aktuelle GameForge 3D Studio-Datei speichern"
 
 
-msgid "Exit Blender after saving"
-msgstr "Blender nach dem Speichern beenden"
+msgid "Exit GameForge 3D Studio after saving"
+msgstr "GameForge 3D Studio nach dem Speichern beenden"
 
 
 msgctxt "Operator"
@@ -38903,8 +38903,8 @@ msgstr "Startbildschirm"
 
 
 msgctxt "Operator"
-msgid "About Blender"
-msgstr "Über Blender"
+msgid "About GameForge 3D Studio"
+msgstr "Über GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -41022,8 +41022,8 @@ msgid "Sort the recently searched items at the top"
 msgstr "Zeige zuletzt gesuchte Begriffe oben an"
 
 
-msgid "Version of Blender the userpref.blend was saved with"
-msgstr "Version der Blender mit der die userpref.blend gespeichert wurde"
+msgid "Version of GameForge 3D Studio the userpref.blend was saved with"
+msgstr "Version der GameForge 3D Studio mit der die userpref.blend gespeichert wurde"
 
 
 msgid "Add/Replace"
@@ -42295,8 +42295,8 @@ msgid "Show Memory"
 msgstr "Speicher anzeigen"
 
 
-msgid "Show Blender memory usage"
-msgstr "Blender Speicherbenutzung anzeigen"
+msgid "Show GameForge 3D Studio memory usage"
+msgstr "GameForge 3D Studio Speicherbenutzung anzeigen"
 
 
 msgid "Show Statistics"
@@ -42311,7 +42311,7 @@ msgid "Show Version"
 msgstr "Version anzeigen"
 
 
-msgid "Show Blender version string"
+msgid "Show GameForge 3D Studio version string"
 msgstr "Blenderversionzeichenkette anzeigen"
 
 
@@ -43927,12 +43927,12 @@ msgid "Which implementation of spring to use"
 msgstr "Welche Implementierung der Sprungfeder verwendet wird"
 
 
-msgid "Blender 2.7"
-msgstr "Blender 2.7"
+msgid "Version 2.7"
+msgstr "Version 2.7"
 
 
-msgid "Blender 2.8"
-msgstr "Blender 2.8"
+msgid "Version 2.8"
+msgstr "Version 2.8"
 
 
 msgid "New implementation available since 2.8"
@@ -45268,8 +45268,8 @@ msgid "Type of information to display"
 msgstr "Darzustellender Informationstyp"
 
 
-msgid "Blender File"
-msgstr "Blender-Datei"
+msgid "GameForge 3D Studio File"
+msgstr "GameForge 3D Studio-Datei"
 
 
 msgid "Library Overrides"
@@ -46959,7 +46959,7 @@ msgid "Theme Preferences"
 msgstr "Themeeinstellungen"
 
 
-msgid "Theme settings for the Blender Preferences"
+msgid "Theme settings for the GameForge 3D Studio Preferences"
 msgstr "Themeneinstellungen für die Blendereinstellungen"
 
 
@@ -49315,8 +49315,8 @@ msgid "Open..."
 msgstr "Öffnen..."
 
 
-msgid "Blender is free software"
-msgstr "Blender ist eine kostenlose Software"
+msgid "GameForge 3D Studio is free software"
+msgstr "GameForge 3D Studio ist eine kostenlose Software"
 
 
 msgid "Licensed under the GNU General Public License"
@@ -49362,13 +49362,13 @@ msgstr "Lizens"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
-msgstr "Blender Store"
+msgid "GameForge 3D Studio Store"
+msgstr "GameForge 3D Studio Store"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
-msgstr "Blender Website"
+msgid "GameForge 3D Studio Website"
+msgstr "GameForge 3D Studio Website"
 
 
 msgid "Trusted Source [Untrusted Path]"
@@ -51180,8 +51180,8 @@ msgid "Volume Files"
 msgstr "Volumendateien"
 
 
-msgid "Blender IDs"
-msgstr "Blender IDs"
+msgid "GameForge 3D Studio IDs"
+msgstr "GameForge 3D Studio IDs"
 
 
 msgctxt "Operator"
@@ -52200,7 +52200,7 @@ msgid "Video Memory"
 msgstr "Videospeicher"
 
 
-msgid "Blender Version"
+msgid "GameForge 3D Studio Version"
 msgstr "Blenderversion"
 
 
@@ -53734,8 +53734,8 @@ msgid "Unable to create app-template userpref path"
 msgstr "Benutzerdefinierter App-Template Pfad konnte nicht erstellt werden"
 
 
-msgid "File written by newer Blender binary (%d.%d), expect loss of data!"
-msgstr "Datei wurden von neuer Blender binary (%d.%d) geschrieben, rechne mit Datenverlust!"
+msgid "File written by newer GameForge 3D Studio binary (%d.%d), expect loss of data!"
+msgstr "Datei wurden von neuer GameForge 3D Studio binary (%d.%d) geschrieben, rechne mit Datenverlust!"
 
 
 msgid "Loading failed: "
@@ -53969,8 +53969,8 @@ msgid "Plane Track"
 msgstr "Ebenenspur"
 
 
-msgid "Blender is compiled without motion tracking library"
-msgstr "Blender ist ohne Bewegungsverfolgungs-Bibliothek kompiliert"
+msgid "GameForge 3D Studio is compiled without motion tracking library"
+msgstr "GameForge 3D Studio ist ohne Bewegungsverfolgungs-Bibliothek kompiliert"
 
 
 msgid "Original Mode"
@@ -55826,8 +55826,8 @@ msgid "Clear Texture Cache?"
 msgstr "Textur-Cache leeren?"
 
 
-msgid "Blender Render"
-msgstr "Blender Renderer"
+msgid "GameForge 3D Studio Render"
+msgstr "GameForge 3D Studio Renderer"
 
 
 msgid "Failed to open window!"
@@ -55870,8 +55870,8 @@ msgid "Flip to Bottom"
 msgstr "Nach unten schieben"
 
 
-msgid "Blender Info Log"
-msgstr "Blender Information Log"
+msgid "GameForge 3D Studio Info Log"
+msgstr "GameForge 3D Studio Information Log"
 
 
 msgid "Unable to close area"
@@ -58190,8 +58190,8 @@ msgid "Wave Effect"
 msgstr "Welleneffekt"
 
 
-msgid "Blender File View"
-msgstr "Blender-Dateibetrachter"
+msgid "GameForge 3D Studio File View"
+msgstr "GameForge 3D Studio-Dateibetrachter"
 
 
 msgid "Failed to open file browser!"
@@ -58373,8 +58373,8 @@ msgstr "Deine Grafikkarte oder macOS-Version wird nicht unterstützt"
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
-msgstr "Ein Upgrade auf die aktuellste macOS-Version könnte die Unterstützung von Blender verbessern"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
+msgstr "Ein Upgrade auf die aktuellste macOS-Version könnte die Unterstützung von GameForge 3D Studio verbessern"
 
 
 msgid "Stereo 3D Mode requires the window to be fullscreen"

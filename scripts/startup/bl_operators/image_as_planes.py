@@ -648,7 +648,7 @@ class IMAGE_OT_import_as_mesh_planes(
     force_reload: BoolProperty(
         name="Force Reload",
         default=False,
-        description="Force reload the image if it is already opened elsewhere in Blender",
+        description="Force reload the image if it is already opened elsewhere in GameForge 3D Studio",
     )
 
     image_sequence: BoolProperty(
@@ -751,7 +751,7 @@ class IMAGE_OT_import_as_mesh_planes(
             ('ABSOLUTE', "Absolute", "Use absolute size"),
             ('CAMERA', "Scale to Camera Frame", "Scale to fit or fill the camera frame"),
             ('DPI', "Pixels per Inch", "Scale based on pixels per inch"),
-            ('DPBU', "Pixels per Blender Unit", "Scale based on pixels per Blender Unit"),
+            ('DPBU', "Pixels per GameForge 3D Studio Unit", "Scale based on pixels per GameForge 3D Studio Unit"),
         ),
         update=update_size_mode,
         description="Method for computing the plane size",
@@ -781,7 +781,7 @@ class IMAGE_OT_import_as_mesh_planes(
         name="Definition",
         min=1.0,
         default=600.0,
-        description="Number of pixels per inch or Blender Unit",
+        description="Number of pixels per inch or GameForge 3D Studio Unit",
     )
 
     # -------

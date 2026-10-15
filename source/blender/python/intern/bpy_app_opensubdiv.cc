@@ -24,7 +24,7 @@ namespace blender {
 static PyTypeObject BlenderAppOpenSubdivType;
 
 static PyStructSequence_Field app_opensubdiv_info_fields[] = {
-    {"supported", "Boolean, True when Blender is built with OpenSubdiv support"},
+    {"supported", "Boolean, True when GameForge 3D Studio is built with OpenSubdiv support"},
     {"version", "The OpenSubdiv version as a tuple of 3 numbers"},
     {"version_string", "The OpenSubdiv version formatted as a string"},
     {nullptr},

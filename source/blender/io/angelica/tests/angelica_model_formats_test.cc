@@ -980,6 +980,48 @@ TEST(angelica_static, parse_bmd_lightmap_and_extended)
   EXPECT_FLOAT_EQ(model.meshes[0].detail_tile, 4.0f);
   EXPECT_TRUE(model.meshes[0].day_colors.empty());
   EXPECT_EQ(model.night_lightmap, "night.dds");
+
+  /* The newer extended versions: 0x10000302 has 32-bit indices; 0x10000305 also an int32 after the
+   * transform and four floats before each mesh's material. Larger extra blocks, then a building's
+   * (empty) collision data. */
+  for (const uint32_t version : {0x10000302u, 0x10000305u}) {
+    Writer y;
+    y.raw(MOXB, 4).u32(BRUSH_BUILDING_VERSION).u8(0);
+    y.u32(version).vec3(1, 1, 1).vec3(0, 0, 1).vec3(0, 1, 0).vec3(10, 20, 30);
+    if (version >= 0x10000303) {
+      y.i32(-1);
+    }
+    y.i32(1).u8(0).u8(0);
+    y.u8(0).u8(0).str("Plane01").str("tex\\b.dds").i32(3).i32(1);
+    for (int i = 0; i < 3; i++) {
+      y.vec3(float(i), 0, 0).u32(0xff767678).f32(0).f32(0);
+    }
+    y.u32(2).u32(1).u32(0);
+    for (int i = 0; i < 3; i++) {
+      y.vec3(0, 1, 0);
+    }
+    if (version >= 0x10000305) {
+      y.f32(1).f32(1).f32(1).f32(1);
+    }
+    y.material("m");
+    for (int i = 0; i < 6; i++) {
+      y.u32(0xff767678);
+    }
+    y.zeros(48);
+    y.u32(4 + 4 + 4 + 4 + 8).f32(5.0f).f32(1.0f).str("").zeros(8);
+    y.u32(36).zeros(32);
+    y.i32(0);
+    ASSERT_TRUE(parse_bmd(y.data, model, &error)) << error;
+    ASSERT_EQ(model.meshes.size(), 1u);
+    EXPECT_TRUE(model.meshes[0].indices.empty());
+    ASSERT_EQ(model.meshes[0].indices32.size(), 3u);
+    EXPECT_EQ(model.meshes[0].indices32[0], 2u);
+    EXPECT_EQ(model.meshes[0].material.name, "m");
+    EXPECT_EQ(model.meshes[0].day_colors.size(), 3u);
+    EXPECT_FLOAT_EQ(model.meshes[0].detail_tile, 5.0f);
+    EXPECT_FLOAT_EQ(model.world_matrix[13], 20.0f);
+    EXPECT_TRUE(model.has_collision_data);
+  }
 }
 
 TEST(angelica_static, parse_bmd_shared)

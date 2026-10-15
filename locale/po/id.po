@@ -838,8 +838,8 @@ msgid "Fribidi Library"
 msgstr "Perpustakaan Fribidi"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
-msgstr "Perpustakaan FriBidi C yang tersusun (.so pada Linux, .dll pada windows...), kemungkinan besar Anda perlu mengeditnya jika Anda menggunakan Windows, misal jika menggunakan yang terdapat di repositori pustaka Blender"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
+msgstr "Perpustakaan FriBidi C yang tersusun (.so pada Linux, .dll pada windows...), kemungkinan besar Anda perlu mengeditnya jika Anda menggunakan Windows, misal jika menggunakan yang terdapat di repositori pustaka GameForge 3D Studio"
 
 
 msgid "Translation Root"
@@ -862,8 +862,8 @@ msgid "Source Root"
 msgstr "Direktori Sumber"
 
 
-msgid "The Blender source root path"
-msgstr "Direktori Sumber Blender"
+msgid "The GameForge 3D Studio source root path"
+msgstr "Direktori Sumber GameForge 3D Studio"
 
 
 msgid "Spell Cache"
@@ -886,8 +886,8 @@ msgid "Persistent Data Path"
 msgstr "Jalur Data yang Persisten"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Nama dokumen json yang menyimpan pengaturan tersebut (sayangnya, sistem Blender tidak bekerja disini)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
+msgstr "Nama dokumen json yang menyimpan pengaturan tersebut (sayangnya, sistem GameForge 3D Studio tidak bekerja disini)"
 
 
 msgid "User Add-ons"
@@ -1758,7 +1758,7 @@ msgid "Edit persistent configuration settings"
 msgstr "Edit pengaturan konfigurasi yang persisten"
 
 
-msgid "Manage the current Blender project"
+msgid "Manage the current GameForge 3D Studio project"
 msgstr "Kelola proyek blender saat ini"
 
 
@@ -1854,8 +1854,8 @@ msgid "Is Editable"
 msgstr "Dapat Mengedit"
 
 
-msgid "Assets and catalogs in this library can be edited from the current Blender instance"
-msgstr "Aset dan katalog di pustaka ini dapat disunting dari instansi Blender yang sedang berjalan"
+msgid "Assets and catalogs in this library can be edited from the current GameForge 3D Studio instance"
+msgstr "Aset dan katalog di pustaka ini dapat disunting dari instansi GameForge 3D Studio yang sedang berjalan"
 
 
 msgid "Library Type"
@@ -1874,8 +1874,8 @@ msgid "Current File"
 msgstr "Berkas Sekarang"
 
 
-msgid "Show the assets currently available in this Blender session"
-msgstr "Menampilkan aset yang sekarang tersedia di sesi Blender ini"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
+msgstr "Menampilkan aset yang sekarang tersedia di sesi GameForge 3D Studio ini"
 
 
 msgid "Essentials"
@@ -1934,8 +1934,8 @@ msgid "Catalog UUID"
 msgstr "UUID Katalog"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
-msgstr "Pengenal untuk katalog aset, digunakan Blender untuk melihat jalur katalog aset. Harus berupa UUID menurut RFC4122."
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgstr "Pengenal untuk katalog aset, digunakan GameForge 3D Studio untuk melihat jalur katalog aset. Harus berupa UUID menurut RFC4122."
 
 
 msgid "Catalog Simple Name"
@@ -2559,8 +2559,8 @@ msgid "Is Internal"
 msgstr "Merupakan Internal"
 
 
-msgid "The attribute is meant for internal use by Blender"
-msgstr "Atribut hanya untuk penggunaan internal oleh Blender"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
+msgstr "Atribut hanya untuk penggunaan internal oleh GameForge 3D Studio"
 
 
 msgid "Is Required"
@@ -3731,8 +3731,8 @@ msgid "Project"
 msgstr "Proyek"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Blendfile Import Context"
@@ -3816,12 +3816,12 @@ msgid "Path"
 msgstr "Jalur"
 
 
-msgid "Blender RNA"
-msgstr "RNA Blender"
+msgid "GameForge 3D Studio RNA"
+msgstr "RNA GameForge 3D Studio"
 
 
-msgid "Blender RNA structure definitions"
-msgstr "Definisi struktur Blender RNA"
+msgid "GameForge 3D Studio RNA structure definitions"
+msgstr "Definisi struktur GameForge 3D Studio RNA"
 
 
 msgid "Structs"
@@ -10468,24 +10468,24 @@ msgid "Only Assets"
 msgstr "Hanya Aset"
 
 
-msgid "Filter Blender Backup Files"
-msgstr "Flter Berkas Backup Blender"
+msgid "Filter GameForge 3D Studio Backup Files"
+msgstr "Flter Berkas Backup GameForge 3D Studio"
 
 
 msgid "Show .blend1, .blend2, etc. files"
 msgstr "Tampilkan blend1, .blend2, etc. dokumen"
 
 
-msgid "Filter Blender"
-msgstr "Filter Blender"
+msgid "Filter GameForge 3D Studio"
+msgstr "Filter GameForge 3D Studio"
 
 
 msgid "Show .blend files"
 msgstr "Tampilkan file .blend"
 
 
-msgid "Filter Blender IDs"
-msgstr "Filter ID Blender"
+msgid "Filter GameForge 3D Studio IDs"
+msgstr "Filter ID GameForge 3D Studio"
 
 
 msgid "Show .blend files items (objects, materials, etc.)"
@@ -23346,7 +23346,7 @@ msgstr "Setelah Ini"
 
 msgctxt "Operator"
 msgid "Render"
-msgstr "Situs Blender"
+msgstr "Situs GameForge 3D Studio"
 
 
 msgctxt "Curve"
@@ -25337,8 +25337,8 @@ msgstr "Semua Tipe"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Situs Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Situs GameForge 3D Studio"
 
 
 msgid "Image ID"
@@ -25389,8 +25389,8 @@ msgstr "Data Animasi"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Situs Blender"
+msgid "Save GameForge 3D Studio File"
+msgstr "Situs GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -25408,12 +25408,12 @@ msgstr "Interlace"
 
 
 msgctxt "Operator"
-msgid "About Blender"
-msgstr "Tentang Blender"
+msgid "About GameForge 3D Studio"
+msgstr "Tentang GameForge 3D Studio"
 
 
-msgid "Open a window with information about Blender"
-msgstr "Buka jendela dengan informasi tentang Blender"
+msgid "Open a window with information about GameForge 3D Studio"
+msgstr "Buka jendela dengan informasi tentang GameForge 3D Studio"
 
 
 msgid "Preserve"
@@ -26316,8 +26316,8 @@ msgid "Show Memory"
 msgstr "Tampilkan Memori"
 
 
-msgid "Show Blender memory usage"
-msgstr "Tampilkan penggunaan memori Blender"
+msgid "Show GameForge 3D Studio memory usage"
+msgstr "Tampilkan penggunaan memori GameForge 3D Studio"
 
 
 msgid "Show Statistics"
@@ -27192,8 +27192,8 @@ msgid "Texture Node Editor"
 msgstr "Editor Simpul Tekstur"
 
 
-msgid "Blender File"
-msgstr "Situs Blender"
+msgid "GameForge 3D Studio File"
+msgstr "Situs GameForge 3D Studio"
 
 
 msgid "Space Preferences"
@@ -28810,8 +28810,8 @@ msgid "Open..."
 msgstr "Buka..."
 
 
-msgid "Blender is free software"
-msgstr "Blender adalah perangkat lunak yang gratis"
+msgid "GameForge 3D Studio is free software"
+msgstr "GameForge 3D Studio adalah perangkat lunak yang gratis"
 
 
 msgid "Licensed under the GNU General Public License"
@@ -28841,17 +28841,17 @@ msgstr "Lisensi"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
-msgstr "Toko Blender"
+msgid "GameForge 3D Studio Store"
+msgstr "Toko GameForge 3D Studio"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
-msgstr "Website Blender"
+msgid "GameForge 3D Studio Website"
+msgstr "Website GameForge 3D Studio"
 
 
-msgid "Read about what's new in this version of Blender"
-msgstr "Baca tentang apa yang baru dengan versi Blender terbaru ini"
+msgid "Read about what's new in this version of GameForge 3D Studio"
+msgstr "Baca tentang apa yang baru dengan versi GameForge 3D Studio terbaru ini"
 
 
 msgctxt "Operator"
@@ -30030,8 +30030,8 @@ msgid "Volume Files"
 msgstr "Berkas Volume"
 
 
-msgid "Blender IDs"
-msgstr "Blender ID"
+msgid "GameForge 3D Studio IDs"
+msgstr "GameForge 3D Studio ID"
 
 
 msgctxt "Operator"
@@ -30602,8 +30602,8 @@ msgid "Video Memory"
 msgstr "Memori Video"
 
 
-msgid "Blender Version"
-msgstr "Versi Blender"
+msgid "GameForge 3D Studio Version"
+msgstr "Versi GameForge 3D Studio"
 
 
 msgid "Align To"
@@ -32249,8 +32249,8 @@ msgid "Clear Texture Cache?"
 msgstr "Hapus Cache Tekstur?"
 
 
-msgid "Blender Render"
-msgstr "Render Blender"
+msgid "GameForge 3D Studio Render"
+msgstr "Render GameForge 3D Studio"
 
 
 msgid "Failed to open window!"
@@ -32285,12 +32285,12 @@ msgid "Flip to Bottom"
 msgstr "Balik ke Bawah"
 
 
-msgid "Blender Drivers Editor"
-msgstr "Editor Drivers Blender"
+msgid "GameForge 3D Studio Drivers Editor"
+msgstr "Editor Drivers GameForge 3D Studio"
 
 
-msgid "Blender Info Log"
-msgstr "Info Log Blender"
+msgid "GameForge 3D Studio Info Log"
+msgstr "Info Log GameForge 3D Studio"
 
 
 msgid "Missing surface mesh"
@@ -33710,8 +33710,8 @@ msgid "window_managers"
 msgstr "pengelola_jendela"
 
 
-msgid "Blender File View"
-msgstr "Tampilan Berkas Blender"
+msgid "GameForge 3D Studio File View"
+msgstr "Tampilan Berkas GameForge 3D Studio"
 
 
 msgid "Allow Execution"
@@ -33863,8 +33863,8 @@ msgstr "Kartu grafis anda atau versi macOS tidak didukung"
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
-msgstr "Meningkatkan ke versi macOS terbaru mungkin dapat meningkatkan dukungan Blender"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
+msgstr "Meningkatkan ke versi macOS terbaru mungkin dapat meningkatkan dukungan GameForge 3D Studio"
 
 
 msgid "(Unsaved)"

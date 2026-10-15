@@ -317,6 +317,11 @@ static PyObject *CCL_initPython()
 PyObject *BPyInit_hydra();
 #endif
 
+#ifdef WITH_IO_ANGELICA
+/* Defined in `io_angelica` module. */
+PyObject *BPyInit__angelica();
+#endif
+
 static _inittab bpy_internal_modules[] = {
     {"mathutils", PyInit_mathutils},
 #if 0
@@ -347,6 +352,9 @@ static _inittab bpy_internal_modules[] = {
     {"idprop", BPyInit_idprop},
 #ifdef WITH_HYDRA
     {"_bpy_hydra", BPyInit_hydra},
+#endif
+#ifdef WITH_IO_ANGELICA
+    {"_angelica", BPyInit__angelica},
 #endif
     {nullptr, nullptr},
 };
@@ -551,7 +559,7 @@ void BPY_python_start(bContext *C, int argc, const char **argv)
          * doesn't handle these correctly. */
         if (strchr(py_path_bundle->c_str(), ':')) {
           fprintf(stderr,
-                  "Warning! Blender application is located in a path containing ':' or '/' chars\n"
+                  "Warning! GameForge 3D Studio application is located in a path containing ':' or '/' chars\n"
                   "This may make Python import function fail\n");
         }
 #  endif /* __APPLE__ */

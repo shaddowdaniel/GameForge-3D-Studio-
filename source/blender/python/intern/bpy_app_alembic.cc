@@ -24,7 +24,7 @@ namespace blender {
 static PyTypeObject BlenderAppABCType;
 
 static PyStructSequence_Field app_alembic_info_fields[] = {
-    {"supported", "Boolean, True when Blender is built with Alembic support"},
+    {"supported", "Boolean, True when GameForge 3D Studio is built with Alembic support"},
     {"version", "The Alembic version as a tuple of 3 numbers"},
     {"version_string", "The Alembic version formatted as a string"},
     {nullptr},

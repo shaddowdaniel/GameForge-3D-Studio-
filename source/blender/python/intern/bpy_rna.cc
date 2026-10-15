@@ -219,7 +219,7 @@ static void pyrna_prop_warn_deprecated(const PointerRNA *ptr,
 {
   PyErr_WarnFormat(PyExc_DeprecationWarning,
                    1,
-                   "'%s.%s' is expected to be removed in Blender %d.%d",
+                   "'%s.%s' is expected to be removed in GameForge 3D Studio %d.%d",
                    RNA_struct_identifier(ptr->type),
                    RNA_property_identifier(prop),
                    deprecated->removal_version / 100,
@@ -4197,7 +4197,7 @@ PyDoc_STRVAR(
     "      if the input data cannot be converted into a full data path.\n"
     "\n"
     "      .. note:: Even if all input data is correct, this function might\n"
-    "         error out because Blender cannot derive a valid path.\n"
+    "         error out because GameForge 3D Studio cannot derive a valid path.\n"
     "         The incomplete path will be printed in the error message.\n");
 static PyObject *pyrna_struct_path_from_module(BPy_StructRNA *self, PyObject *args)
 {
@@ -4286,7 +4286,7 @@ PyDoc_STRVAR(
     "      if the input data cannot be converted into a full data path.\n"
     "\n"
     "      .. note:: Even if all input data is correct, this function might\n"
-    "         error out because Blender cannot derive a valid path.\n"
+    "         error out because GameForge 3D Studio cannot derive a valid path.\n"
     "         The incomplete path will be printed in the error message.\n");
 static PyObject *pyrna_prop_path_from_module(BPy_PropertyRNA *self)
 {
@@ -5799,7 +5799,7 @@ PyDoc_STRVAR(
     pyrna_struct_as_pointer_doc,
     ".. method:: as_pointer()\n"
     "\n"
-    "   Returns the memory address which holds a pointer to Blender's internal data\n"
+    "   Returns the memory address which holds a pointer to GameForge 3D Studio's internal data\n"
     "\n"
     "   :return: int (memory address).\n"
     "   :rtype: int\n"
@@ -9227,7 +9227,7 @@ static void bpy_types_module_free(void *self)
 PyDoc_STRVAR(
     /* Wrap. */
     bpy_types_module_doc,
-    "Access to internal Blender types.");
+    "Access to internal GameForge 3D Studio types.");
 static PyModuleDef bpy_types_module_def = {
     /*m_base*/ PyModuleDef_HEAD_INIT,
     /*m_name*/ "bpy.types",
@@ -10528,9 +10528,9 @@ PyDoc_STRVAR(
     pyrna_register_class_doc,
     ".. function:: register_class(cls)\n"
     "\n"
-    "   Register a subclass of a Blender type class.\n"
+    "   Register a subclass of a GameForge 3D Studio type class.\n"
     "\n"
-    "   :param cls: Registerable Blender class type.\n"
+    "   :param cls: Registerable GameForge 3D Studio class type.\n"
     "   :type cls: " BPY_TYPEDEF_REGISTERABLE_DOC
     "\n"
     "\n"
@@ -10792,7 +10792,7 @@ PyDoc_STRVAR(
     "\n"
     "   Unload the Python class from blender.\n"
     "\n"
-    "   :param cls: Blender type class, \n"
+    "   :param cls: GameForge 3D Studio type class, \n"
     "      see :func:`bpy.utils.register_class` for classes which can \n"
     "      be registered.\n"
     "   :type cls: " BPY_TYPEDEF_REGISTERABLE_DOC

@@ -31,12 +31,12 @@ const EnumPropertyItem rna_enum_asset_library_type_items[] = {
      "LOCAL",
      0,
      "Current File",
-     "Show the assets currently available in this Blender session"},
+     "Show the assets currently available in this GameForge 3D Studio session"},
     {ASSET_LIBRARY_ESSENTIALS,
      "ESSENTIALS",
      0,
      "Essentials",
-     "Show basic building blocks and utilities coming with Blender"},
+     "Show basic building blocks and utilities coming with GameForge 3D Studio"},
     {ASSET_LIBRARY_ONLINE_ESSENTIALS,
      "ONLINE_ESSENTIALS",
      0,
@@ -724,7 +724,7 @@ static void rna_def_asset_data(BlenderRNA *brna)
   RNA_def_property_update(prop, 0, "rna_AssetMetaData_catalog_id_update");
   RNA_def_property_ui_text(prop,
                            "Catalog UUID",
-                           "Identifier for the asset's catalog, used by Blender to look up the "
+                           "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the "
                            "asset's catalog path. Must be a UUID according to RFC4122.");
 
   prop = RNA_def_property(srna, "catalog_simple_name", PROP_STRING, PROP_NONE);
@@ -862,7 +862,7 @@ static void rna_def_asset_library(BlenderRNA *brna)
   RNA_def_property_ui_text(
       prop,
       "Is Editable",
-      "Assets and catalogs in this library can be edited from the current Blender instance");
+      "Assets and catalogs in this library can be edited from the current GameForge 3D Studio instance");
 
   prop = RNA_def_property(srna, "user_library", PROP_POINTER, PROP_NONE);
   RNA_def_property_struct_type(prop, "UserAssetLibrary");

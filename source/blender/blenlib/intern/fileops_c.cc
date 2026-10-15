@@ -1304,7 +1304,7 @@ int BLI_delete_soft(const char *filepath, const char **r_error_message)
   }
   else {
     *r_error_message =
-        "Blender may not support moving files or directories to trash on your system.";
+        "GameForge 3D Studio may not support moving files or directories to trash on your system.";
     result = -1;
   }
 

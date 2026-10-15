@@ -1132,24 +1132,24 @@ class WM_OT_url_open_preset(Operator):
           tip_("Report a bug with pre-filled version information")),
          _url_from_bug),
         (('RELEASE_NOTES', iface_("Release Notes"),
-          tip_("Read about what's new in this version of Blender")),
+          tip_("Read about what's new in this version of GameForge 3D Studio")),
          _url_from_release_notes),
         (('MANUAL', iface_("User Manual"),
-          tip_("The reference manual for this version of Blender")),
+          tip_("The reference manual for this version of GameForge 3D Studio")),
          _url_from_manual),
         (('API', iface_("Python API Reference"),
-          tip_("The API reference manual for this version of Blender")),
+          tip_("The API reference manual for this version of GameForge 3D Studio")),
          _url_from_api),
 
         # Static URL's.
         (('FUND', iface_("Development Fund"),
           tip_("The donation program to support maintenance and improvements")),
          "https://fund.blender.org"),
-        (('BLENDER', "blender.org",
-          tip_("Blender's official web-site")),
-         "https://www.blender.org"),
+        (('BLENDER', "atomgameforge.com",
+          tip_("GameForge 3D Studio's official web-site")),
+         "https://atomgameforge.com"),
         (('CREDITS', iface_("Credits"),
-          tip_("Lists committers to Blender's source code")),
+          tip_("Lists committers to GameForge 3D Studio's source code")),
          "https://www.blender.org/about/credits/"),
         (('EXTENSIONS', iface_("Extensions Platform"),
           tip_("Online directory of free and open source extensions")),
@@ -3479,7 +3479,7 @@ class WM_MT_splash_quick_setup(Menu):
             col = split.column()
             col.operator(
                 "preferences.copy_prev",
-                text=iface_("Import Blender {:d}.{:d} Preferences", "Operator").format(*old_version),
+                text=iface_("Import GameForge 3D Studio {:d}.{:d} Preferences", "Operator").format(*old_version),
                 icon='NONE',
                 translate=False,
             )
@@ -3516,9 +3516,10 @@ class WM_MT_splash_quick_setup(Menu):
         kc_prefs = kc.preferences
 
         sub = col.column(heading="Keymap")
-        text = bpy.path.display_name(kc.name)
+        import rna_keymap_ui
+        text = rna_keymap_ui.keyconfig_display_name(kc.name)
         if not text:
-            text = "Blender"
+            text = "GameForge 3D Studio"
         sub.menu("USERPREF_MT_keyconfigs", text=text)
 
         if hasattr(kc_prefs, "select_mouse"):
@@ -3573,10 +3574,8 @@ class WM_MT_splash(Menu):
             col2_title.label(text="Getting Started")
 
             col2.operator("wm.url_open_preset", text="Manual", icon='URL').type = 'MANUAL'
-            col2.operator("wm.url_open", text="Support", icon='URL').url = "https://www.blender.org/support/"
-            col2.operator("wm.url_open", text="User Communities", icon='URL').url = "https://www.blender.org/community/"
-            col2.operator("wm.url_open", text="Get Involved", icon='URL').url = "https://www.blender.org/get-involved/"
-            col2.operator("wm.url_open_preset", text="Blender Website", icon='URL').type = 'BLENDER'
+            col2.operator("wm.url_open", text="Support", icon='URL').url = "https://atomgameforge.com"
+            col2.operator("wm.url_open_preset", text="GameForge 3D Studio Website", icon='URL').type = 'BLENDER'
 
         col_sep = layout.column()
         col_sep.separator()
@@ -3593,8 +3592,10 @@ class WM_MT_splash(Menu):
 
         col2 = split.column()
 
-        col2.operator("wm.url_open_preset", text="What's New", icon='URL').type = 'RELEASE_NOTES'
-        col2.operator("wm.url_open_preset", text="Donate to Blender", icon='FUND').type = 'FUND'
+        # Without recent files the links are already listed under "Getting Started".
+        if found_recent:
+            col2.operator("wm.url_open_preset", text="GameForge 3D Studio Website", icon='URL').type = 'BLENDER'
+            col2.operator("wm.url_open", text="Support", icon='URL').url = "https://atomgameforge.com"
 
         layout.separator()
 
@@ -3635,18 +3636,16 @@ class WM_MT_splash_about(Menu):
         del _ghost_backend, ghost_backend
 
         col.separator(factor=2.0)
-        col.label(text="Blender is free software")
+        col.label(text="GameForge 3D Studio is free software")
         col.label(text="Licensed under the GNU General Public License")
 
         col = split.column(align=True)
         col.emboss = 'PULLDOWN_MENU'
-        col.operator("wm.url_open_preset", text="Donate", icon='FUND').type = 'FUND'
-        col.operator("wm.url_open_preset", text="What's New", icon='URL').type = 'RELEASE_NOTES'
+        col.operator("wm.url_open_preset", text="GameForge 3D Studio Website", icon='URL').type = 'BLENDER'
+        col.operator("wm.url_open", text="Support", icon='URL').url = "https://atomgameforge.com"
         col.separator(factor=2.0)
         col.operator("wm.url_open_preset", text="Credits", icon='URL').type = 'CREDITS'
-        col.operator("wm.url_open", text="License", icon='URL').url = "https://www.blender.org/about/license/"
-        col.operator("wm.url_open", text="Blender Store", icon='URL').url = "https://store.blender.org"
-        col.operator("wm.url_open_preset", text="Blender Website", icon='URL').type = 'BLENDER'
+        col.operator("wm.url_open", text="License", icon='URL').url = "https://www.gnu.org/licenses/gpl-3.0.html"
 
 
 class WM_MT_region_toggle_pie(Menu):

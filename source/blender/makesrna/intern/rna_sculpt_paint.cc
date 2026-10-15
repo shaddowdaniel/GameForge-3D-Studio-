@@ -918,7 +918,7 @@ static void rna_def_unified_paint_settings(BlenderRNA *brna)
   RNA_def_property_flag(prop, PROP_CONTEXT_UPDATE);
   RNA_def_property_range(prop, 0.001, FLT_MAX);
   RNA_def_property_ui_range(prop, 0.001, 1, 1, -1);
-  RNA_def_property_ui_text(prop, "Unprojected Size", "Diameter of brush in Blender units");
+  RNA_def_property_ui_text(prop, "Unprojected Size", "Diameter of brush in GameForge 3D Studio units");
   RNA_def_property_update(prop, 0, "rna_UnifiedPaintSettings_size_update");
 
   prop = RNA_def_property(srna, "strength", PROP_FLOAT, PROP_FACTOR);
@@ -1268,7 +1268,7 @@ static void rna_def_sculpt(BlenderRNA *brna)
   RNA_def_property_ui_text(prop,
                            "Resolution",
                            "Maximum edge length for dynamic topology sculpting (as divisor "
-                           "of Blender unit - higher value means smaller edge length)");
+                           "of GameForge 3D Studio unit - higher value means smaller edge length)");
   RNA_def_property_update(prop, NC_SCENE | ND_TOOLSETTINGS, nullptr);
 
   prop = RNA_def_property(srna, "symmetrize_direction", PROP_ENUM, PROP_NONE);

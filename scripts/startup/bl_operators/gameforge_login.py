@@ -267,6 +267,8 @@ def register():
 def unregister():
     if bpy.app.timers.is_registered(_gate_tick):
         bpy.app.timers.unregister(_gate_tick)
-    if _Gate.menu_added:
-        bpy.types.TOPBAR_MT_blender.remove(_draw_account_menu)
-        _Gate.menu_added = False
+    # At exit the top bar menus may already be unregistered.
+    menu = getattr(bpy.types, "TOPBAR_MT_blender", None)
+    if _Gate.menu_added and menu is not None:
+        menu.remove(_draw_account_menu)
+    _Gate.menu_added = False

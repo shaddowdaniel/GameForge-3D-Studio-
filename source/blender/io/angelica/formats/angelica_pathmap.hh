@@ -6,8 +6,9 @@
  * \ingroup angelica
  *
  * Reader and writer for the id to path tables of the client (`DataPathMan`):
- * `data\path.data` (paths referenced by id from `elements.data`) and
- * `configs\DynamicObjects.data` (models of the dynamic objects of `npcgen.data`).
+ * `configs\DynamicObjects.data` (models of the dynamic objects of `npcgen.data`) and
+ * `data\path.data` of other Angelica games (Perfect World's `elements.data` stores its file paths
+ * inline, as 128 byte GBK strings, and does not use `path.data`).
  *
  * Layout: `uint32 identify` (`PMID`, or a time stamp written by some editors), `uint32 count`,
  * then per entry `uint32 id`, `uint32 length` and `length` bytes of GBK path (no terminator).

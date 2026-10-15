@@ -1272,7 +1272,7 @@ static PyMethodDef M_Noise_methods[] = {
 PyDoc_STRVAR(
     /* Wrap. */
     M_Noise_doc,
-    "The Blender noise module.");
+    "The GameForge 3D Studio noise module.");
 static PyModuleDef M_Noise_module_def = {
     /*m_base*/ PyModuleDef_HEAD_INIT,
     /*m_name*/ "mathutils.noise",

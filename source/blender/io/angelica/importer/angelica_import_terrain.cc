@@ -9,7 +9,8 @@
  * with its own texture layers, 8-bit blend masks and lightmap, so every mask area becomes one
  * object with a material that reproduces the client's splatting:
  *
- *   color = layer0; color = mix(color, layerN, maskN) for each further layer; color *= lightmap
+ *   color = layer0; color = mix(color, layerN, maskN) for each further layer;
+ *   color = saturate(color * lightmap * 2)
  *
  * Layer textures are projected like the client does (`byProjAxis`): 1 = top (x, z), which is
  * almost every layer, 2 = front (x, y - min height), 0 = side (z, y - min height), then scaled by
@@ -37,6 +38,7 @@
 #include "BLI_string.hh"
 
 #include "DNA_collection_types.h"
+#include "DNA_image_types.h"
 #include "DNA_layer_types.h"
 #include "DNA_material_types.h"
 #include "DNA_mesh_types.h"
@@ -183,6 +185,22 @@ static void set_input_float(bNode *node, const char *id, const float value)
   }
 }
 
+static void set_input_color(bNode *node, const char *id, const float4 &value)
+{
+  if (bNodeSocket *socket = bke::node_find_socket(*node, SOCK_IN, UString(id))) {
+    copy_v4_v4(static_cast<bNodeSocketValueRGBA *>(socket->default_value)->value, value);
+  }
+}
+
+/** Terrain textures use their alpha for other things than transparency (their color must not be
+ * premultiplied away where it is 0, which shows black ground). */
+static void keep_color_without_alpha(Image *image)
+{
+  if (image != nullptr) {
+    image->alpha_mode = IMA_ALPHA_CHANNEL_PACKED;
+  }
+}
+
 static bNode *add_uv_node(bNodeTree *ntree, const char *uv_name, const float x, const float y)
 {
   bNode *node = add_node(ntree, SH_NODE_UVMAP, x, y);
@@ -248,6 +266,7 @@ static Material *make_splat_material(ImportContext &ctx,
     if (image == nullptr) {
       continue;
     }
+    keep_color_without_alpha(image);
 
     bNode *uv = add_uv_node(ntree, uv_for_axis(layer.proj_axis), -1200.0f, y);
     bNode *mapping = add_node(ntree, SH_NODE_MAPPING, -1000.0f, y);
@@ -290,13 +309,20 @@ static Material *make_splat_material(ImportContext &ctx,
   }
 
   if (color_node != nullptr && lightmap != nullptr) {
+    keep_color_without_alpha(lightmap);
     bNode *lm_tex = add_image_node(ntree, lightmap, -300.0f, -600.0f);
     link(ntree, mask_uv, "UV", lm_tex, "Vector");
     bNode *mul = add_mix_color(ntree, MA_RAMP_MULT, 200.0f, 300.0f);
     set_input_float(mul, "Factor_Float", 1.0f);
     link(ntree, color_node, color_socket, mul, "A_Color");
     link(ntree, lm_tex, "Color", mul, "B_Color");
-    color_node = mul;
+    /* The client's terrain shader (t2_3layer_batch_14) modulates twice ("mul_x2", saturated):
+     * lightmaps keep half the range. */
+    bNode *twice = add_mix_color(ntree, MA_RAMP_MULT, 400.0f, 300.0f);
+    set_input_float(twice, "Factor_Float", 1.0f);
+    set_input_color(twice, "B_Color", float4(2.0f, 2.0f, 2.0f, 1.0f));
+    link(ntree, mul, "Result_Color", twice, "A_Color");
+    color_node = twice;
     color_socket = "Result_Color";
   }
   if (color_node != nullptr) {

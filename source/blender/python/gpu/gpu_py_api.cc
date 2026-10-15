@@ -96,7 +96,7 @@ static PyMethodDef pygpu_tp_methods[] = {
 PyDoc_STRVAR(
     /* Wrap. */
     pygpu_doc,
-    "This module provides Python wrappers for the GPU implementation in Blender.\n"
+    "This module provides Python wrappers for the GPU implementation in GameForge 3D Studio.\n"
     "Some higher level functions can be found in the :mod:`gpu_extras` module.\n");
 static PyModuleDef pygpu_module_def = {
     /*m_base*/ PyModuleDef_HEAD_INIT,

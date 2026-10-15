@@ -501,9 +501,9 @@ static wmOperatorStatus wm_splash_about_invoke(bContext *C,
 
 void WM_OT_splash_about(wmOperatorType *ot)
 {
-  ot->name = "About Blender";
+  ot->name = "About GameForge 3D Studio";
   ot->idname = "WM_OT_splash_about";
-  ot->description = "Open a window with information about Blender";
+  ot->description = "Open a window with information about GameForge 3D Studio";
 
   ot->invoke = wm_splash_about_invoke;
   ot->poll = WM_operator_winactive;

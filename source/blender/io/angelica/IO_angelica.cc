@@ -7,6 +7,7 @@
  */
 
 #include <cctype>
+#include <sstream>
 
 #include "BKE_appdir.hh"
 #include "BKE_collection.hh"
@@ -14,6 +15,8 @@
 
 #include "BLI_fileops.hh"
 #include "BLI_path_utils.hh"
+#include "BLI_serialize.hh"
+#include "BLI_set.hh"
 
 #include "DEG_depsgraph.hh"
 #include "DEG_depsgraph_build.hh"
@@ -86,6 +89,72 @@ static std::string engine_path_in_client(const std::string &client_root, const s
     }
   }
   return path.substr(root.size() + 1);
+}
+
+static const char *location_kind_name(const FileLocation::Kind kind)
+{
+  switch (kind) {
+    case FileLocation::Kind::Packed:
+      return "PACKED";
+    case FileLocation::Kind::Loose:
+      return "LOOSE";
+    case FileLocation::Kind::External:
+      return "EXTERNAL";
+    case FileLocation::Kind::None:
+      break;
+  }
+  return "NONE";
+}
+
+std::vector<ImportedAsset> import_client_asset(Main *bmain,
+                                               Scene *scene,
+                                               ViewLayer *view_layer,
+                                               const AngelicaAssetImportParams &params)
+{
+  ImportContext ctx(bmain,
+                    scene,
+                    view_layer,
+                    params.reports,
+                    params.client_root,
+                    params.global_scale,
+                    params.import_textures,
+                    true);
+  ModelOptions options;
+  options.import_armature = params.import_armature;
+  options.import_animations = params.import_animations;
+
+  const std::string engine_path = normalize_engine_path(params.engine_path, false);
+  std::vector<FileLocation> read_log;
+  ctx.vfs.set_read_log(&read_log);
+  Collection *collection = import_model(ctx, engine_path, options, ctx.target_collection());
+  ctx.vfs.set_read_log(nullptr);
+  if (collection == nullptr) {
+    BKE_reportf(params.reports, RPT_ERROR, "Angelica: cannot open '%s'", engine_path.c_str());
+    return {};
+  }
+
+  /* Where the asset came from: the files to write back when it is edited. */
+  io::serialize::DictionaryValue source;
+  source.append_str("client", params.client_root);
+  source.append_str("path", engine_path);
+  io::serialize::ArrayValue &files = *source.append_array("files");
+  Set<std::string> listed;
+  for (const FileLocation &location : read_log) {
+    if (!listed.add(location.engine_path)) {
+      continue;
+    }
+    io::serialize::DictionaryValue &file = *files.append_dict();
+    file.append_str("path", location.engine_path);
+    file.append_str("kind", location_kind_name(location.kind));
+    file.append_str("container", location.container);
+    file.append_str("mount", location.mount);
+    file.append_str("entry", location.entry);
+    file.append_int("size", int64_t(location.size));
+  }
+  std::ostringstream json;
+  io::serialize::JsonFormatter().serialize(json, source);
+  set_source_property(&collection->id, "gameforge_source", json.str());
+  return ctx.assets;
 }
 
 std::vector<ImportedAsset> import_file(Main *bmain,

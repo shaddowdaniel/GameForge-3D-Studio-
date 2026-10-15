@@ -102,7 +102,7 @@ static PyMethodDef M_Interpolate_methods[] = {
 PyDoc_STRVAR(
     /* Wrap. */
     M_Interpolate_doc,
-    "The Blender interpolate module.");
+    "The GameForge 3D Studio interpolate module.");
 static PyModuleDef M_Interpolate_module_def = {
     /*m_base*/ PyModuleDef_HEAD_INIT,
     /*m_name*/ "mathutils.interpolate",

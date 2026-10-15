@@ -58,9 +58,9 @@ static const EnumPropertyItem rna_enum_project_ocio_config_items[] = {
     {int(ProjectOCIOConfig::Blender),
      "BLENDER",
      0,
-     "Blender",
-     "The default Blender OpenColorIO configuration. Works with both ACES workflows "
-     "and Blender specific views and color spaces"},
+     "GameForge 3D Studio",
+     "The default GameForge 3D Studio OpenColorIO configuration. Works with both ACES workflows "
+     "and GameForge 3D Studio specific views and color spaces"},
     {int(ProjectOCIOConfig::ACES_2_0_Studio),
      "ACES_2_0_STUDIO",
      0,
@@ -789,7 +789,7 @@ static void rna_def_project_variable(BlenderRNA *brna)
   PropertyRNA *prop;
 
   srna = RNA_def_struct(brna, "ProjectVariable", nullptr);
-  RNA_def_struct_ui_text(srna, "Blender Project Variable", "");
+  RNA_def_struct_ui_text(srna, "GameForge 3D Studio Project Variable", "");
   RNA_def_struct_refine_func(srna, "rna_ProjectVariable_refine");
 
   prop = RNA_def_property(srna, "type", PROP_ENUM, PROP_NONE);
@@ -920,7 +920,7 @@ static void rna_def_project_asset_library_collection(BlenderRNA *brna, PropertyR
 static void rna_def_blender_project(BlenderRNA *brna)
 {
   StructRNA *srna = RNA_def_struct(brna, "BlenderProject", nullptr);
-  RNA_def_struct_ui_text(srna, "Blender Project", "");
+  RNA_def_struct_ui_text(srna, "GameForge 3D Studio Project", "");
 
   PropertyRNA *prop;
   prop = RNA_def_property(srna, "is_dirty", PROP_BOOLEAN, PROP_NONE);

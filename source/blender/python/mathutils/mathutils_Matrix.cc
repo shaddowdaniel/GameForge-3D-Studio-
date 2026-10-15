@@ -3718,7 +3718,7 @@ PyDoc_STRVAR(
     matrix_doc,
     ".. class:: Matrix(rows=((1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1)), /)\n"
     "\n"
-    "   This object gives access to Matrices in Blender, supporting square and rectangular\n"
+    "   This object gives access to Matrices in GameForge 3D Studio, supporting square and rectangular\n"
     "   matrices from 2x2 up to 4x4.\n"
     "\n"
     "   :param rows: Sequence of rows.\n"

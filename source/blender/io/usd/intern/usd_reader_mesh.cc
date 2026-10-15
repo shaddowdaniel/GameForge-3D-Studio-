@@ -136,7 +136,7 @@ static void assign_materials(Main *bmain,
 
       if (!assigned_mat) {
         CLOG_WARN(&LOG,
-                  "Couldn't create Blender material from USD material %s",
+                  "Couldn't create GameForge 3D Studio material from USD material %s",
                   item.key.GetAsString().c_str());
         continue;
       }

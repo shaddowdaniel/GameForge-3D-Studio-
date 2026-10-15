@@ -26,6 +26,9 @@
  *   `bool support LM, use LM`, [inline: name, texture strings, `int verts, faces`, vertices,
  *   indices, normals, material, [LM coords]], [colors], `A3DAABB`, a sized extra block (detail
  *   tile, hardness, detail texture), light map strings, a sized model extra block.
+ * - 0x10000301..0x10000305 (no source, newer clients): the extended layout with
+ *   [>= 0x10000302: `uint32` indices], [>= 0x10000303: `int32` before `nNumMeshes`] and, per mesh
+ *   before the material, [0x10000304: `int32`], [0x10000305: 4 floats]. See #LIT_MODEL_VERSION_EX_LAST.
  * - Building collision data follows (`int nNumHull`, ...), not decoded.
  *
  * `.mox` layout (`A3DFrame::Load`, `A3DMesh::Load`, binary mode): see `parse_frame` and
@@ -139,6 +142,13 @@ static void read_u16_array(BinaryReader &r, std::vector<uint16_t> &arr)
 {
   for (uint16_t &v : arr) {
     v = r.u16();
+  }
+}
+
+static void read_u32_array(BinaryReader &r, std::vector<uint32_t> &arr)
+{
+  for (uint32_t &v : arr) {
+    v = r.u32();
   }
 }
 
@@ -357,11 +367,18 @@ static bool read_lit_model_shared_or_ex(LitReadContext &ctx,
                                         const LitSharedDataLoader &loader)
 {
   BinaryReader &r = ctx.reader;
-  const bool ex = model.version == LIT_MODEL_VERSION_EX;
+  const uint32_t version = model.version;
+  const bool ex = version >= LIT_MODEL_VERSION_EX;
+  const bool index32 = version >= LIT_MODEL_VERSION_EX_INDEX32;
+  /* Bytes of the newer versions before each inline mesh's material. */
+  const size_t before_material = version == 0x10000304 ? 4 : version >= 0x10000305 ? 16 : 0;
   bool lightmap = false;
   bool shared = true;
   int32_t num_meshes = 0;
   if (ex) {
+    if (version >= 0x10000303) {
+      r.skip(4);
+    }
     num_meshes = r.i32();
     lightmap = r.u8() != 0;
     shared = r.u8() != 0;
@@ -416,8 +433,16 @@ static bool read_lit_model_shared_or_ex(LitReadContext &ctx,
       resize_lit_mesh(mesh, size_t(verts), size_t(faces));
       std::vector<uint32_t> diffuse;
       read_lit_vertices(r, mesh, false, diffuse);
-      read_u16_array(r, mesh.indices);
+      if (index32) {
+        mesh.indices.clear();
+        mesh.indices32.resize(size_t(faces) * 3);
+        read_u32_array(r, mesh.indices32);
+      }
+      else {
+        read_u16_array(r, mesh.indices);
+      }
       read_vec3_array(r, mesh.normals);
+      r.skip(before_material);
       mesh.has_material = true;
       if (!afile_read_material(r, ctx.is_text, mesh.material, ctx.r_error)) {
         return false;
@@ -492,10 +517,11 @@ bool parse_bmd(ByteSpan data,
     case LIT_MODEL_VERSION_LIGHTMAP_OLD:
     case LIT_MODEL_VERSION_LIGHTMAP:
     case LIT_MODEL_VERSION_SHARED:
-    case LIT_MODEL_VERSION_EX:
       break;
     default:
-      return static_fail(r_error, "Not a lit model (.bmd) file or unsupported version");
+      if (version < LIT_MODEL_VERSION_EX || version > LIT_MODEL_VERSION_EX_LAST) {
+        return static_fail(r_error, "Not a lit model (.bmd) file or unsupported version");
+      }
   }
   r_model.version = version;
   read_vec3(r, r_model.scale);
@@ -507,7 +533,7 @@ bool parse_bmd(ByteSpan data,
   }
   compute_world_matrix(r_model);
 
-  if (version == LIT_MODEL_VERSION_SHARED || version == LIT_MODEL_VERSION_EX) {
+  if (version == LIT_MODEL_VERSION_SHARED || version >= LIT_MODEL_VERSION_EX) {
     if (!read_lit_model_shared_or_ex(ctx, r_model, shared_data_loader)) {
       return false;
     }

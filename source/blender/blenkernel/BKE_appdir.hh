@@ -58,7 +58,7 @@ bool BKE_appdir_folder_documents(char *dir) ATTR_NONNULL(1) ATTR_WARN_UNUSED_RES
 /**
  * Get the user's cache directory, i.e.
  * - Linux: `$HOME/.cache/blender/`
- * - Windows: `%USERPROFILE%\AppData\Local\Blender Foundation\Blender\Cache\`
+ * - Windows: `%USERPROFILE%\AppData\Local\ATOM GameForge\GameForge 3D Studio\Cache\`
  * - MacOS: `$HOME/Library/Caches/Blender/`
  *
  * \note In rare cases when the cache directory is inaccessible,
@@ -68,6 +68,13 @@ bool BKE_appdir_folder_documents(char *dir) ATTR_NONNULL(1) ATTR_WARN_UNUSED_RES
  * The caller is responsible for creating the directory.
  */
 void BKE_appdir_folder_caches(char *path, size_t path_maxncpy) ATTR_NONNULL(1);
+
+/**
+ * Windows: copy the user files kept in Blender's own user folder by earlier versions of
+ * GameForge 3D Studio into its folder, once (when that folder doesn't exist yet).
+ * Must run after #BKE_appdir_init and before the preferences are read.
+ */
+void BKE_appdir_legacy_user_folder_migrate();
 
 /**
  * Get a folder out of the \a folder_id presets for paths.

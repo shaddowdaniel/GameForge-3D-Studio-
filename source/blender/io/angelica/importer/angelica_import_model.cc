@@ -110,6 +110,18 @@ static std::string engine_dirname(const std::string &engine_path)
   return path_dirname(normalize_engine_path(engine_path, false));
 }
 
+/** Engine path of the file #read_model_file reads for `path`, empty when there is none. */
+static std::string located_path(ImportContext &ctx,
+                                const std::string &path,
+                                const std::string &base_dir)
+{
+  FileLocation location = ctx.vfs.locate(path, base_dir);
+  if (location.kind == FileLocation::Kind::None && path_basename(path) != path) {
+    location = ctx.vfs.locate(path_basename(path), base_dir);
+  }
+  return location.engine_path;
+}
+
 /** Remove scale and move a mirror into bone space, so the matrix is a proper rotation. */
 static float4x4 orthonormal_bone_matrix(float4x4 m)
 {
@@ -226,6 +238,8 @@ struct MeshSource {
   Span<float> uvs;
   Span<float> uvs2;
   Span<uint16_t> indices;
+  /** Used instead of #indices when not empty (32-bit triangle lists). */
+  Span<uint32_t> indices32;
 };
 
 /**
@@ -238,14 +252,29 @@ static Mesh *build_mesh(const MeshSource &src, const float scale, const char *uv
   if (vert_count == 0) {
     return nullptr;
   }
+  const bool wide = !src.indices32.is_empty();
+  const int64_t index_count = wide ? src.indices32.size() : src.indices.size();
+  auto index = [&](const int64_t i) -> int64_t {
+    return wide ? int64_t(src.indices32[i]) : int64_t(src.indices[i]);
+  };
+  auto position = [&](const int64_t v) { return float3(&src.positions[size_t(v) * 3]); };
   Vector<int3> tris;
-  tris.reserve(int64_t(src.indices.size() / 3));
-  for (int64_t i = 0; i + 2 < src.indices.size(); i += 3) {
-    const int a = src.indices[i], b = src.indices[i + 1], c = src.indices[i + 2];
+  tris.reserve(index_count / 3);
+  for (int64_t i = 0; i + 2 < index_count; i += 3) {
+    const int64_t a = index(i), b = index(i + 1), c = index(i + 2);
     if (a >= vert_count || b >= vert_count || c >= vert_count || a == b || b == c || a == c) {
       continue;
     }
-    tris.append(int3(a, b, c));
+    /* Triangles without area draw nothing in the game, and next to them Blender's custom normals
+     * go wrong (a near zero normal for the whole fan of the vertex). */
+    const float3 ab = position(b) - position(a);
+    const float3 ac = position(c) - position(a);
+    const float longest = std::max(
+        {math::length_squared(ab), math::length_squared(ac), math::length_squared(ac - ab)});
+    if (math::length(math::cross(ab, ac)) <= 1e-6f * longest) {
+      continue;
+    }
+    tris.append(int3(int(a), int(b), int(c)));
   }
   if (tris.is_empty()) {
     return nullptr;
@@ -260,10 +289,12 @@ static Mesh *build_mesh(const MeshSource &src, const float scale, const char *uv
   MutableSpan<int> corner_verts = mesh->corner_verts_for_write();
   for (const int64_t f : tris.index_range()) {
     face_offsets[f] = int(f) * 3;
-    /* The Y/Z swap is a reflection: the engine's clockwise order becomes counter-clockwise. */
+    /* The Y/Z swap mirrors the model, which keeps the engine's front faces clockwise seen from
+     * outside; Blender's are counter-clockwise, so the last two corners swap (and swap back when
+     * a skin is saved, see `gameforge_angelica.skins`). */
     corner_verts[f * 3 + 0] = tris[f][0];
-    corner_verts[f * 3 + 1] = tris[f][1];
-    corner_verts[f * 3 + 2] = tris[f][2];
+    corner_verts[f * 3 + 1] = tris[f][2];
+    corner_verts[f * 3 + 2] = tris[f][1];
   }
   bke::mesh_calc_edges(*mesh, false, false);
   bke::mesh_smooth_set(*mesh, true);
@@ -326,7 +357,8 @@ static Material *material_from_info(ImportContext &ctx,
                                     const std::string &name,
                                     const std::string &texture,
                                     const std::string &base_dir,
-                                    const MaterialInfo *info)
+                                    const MaterialInfo *info,
+                                    const std::string &skin_title = {})
 {
   float diffuse[4] = {1.0f, 1.0f, 1.0f, 1.0f};
   bool two_sided = false;
@@ -337,7 +369,7 @@ static Material *material_from_info(ImportContext &ctx,
     diffuse[3] = info->diffuse.a > 0.0f ? info->diffuse.a : 1.0f;
     two_sided = info->two_sided;
   }
-  Image *image = ctx.load_image({texture, base_dir});
+  Image *image = ctx.load_image({texture, base_dir, skin_title});
   const std::string mat_name = texture.empty() ? name : name_from_engine_path(texture);
   /* Most character and plant textures use their alpha channel as a cut-out. */
   return ctx.material_for_texture(mat_name, image, diffuse, image ? 1 : 0, two_sided);
@@ -366,7 +398,8 @@ static float4x4 bind_matrix(const SkeletonBone &bone, const float scale)
 static ArmatureBuild build_armature(ImportContext &ctx,
                                     Collection *collection,
                                     const Skeleton &skeleton,
-                                    const std::string &name)
+                                    const std::string &name,
+                                    const std::string &skeleton_path)
 {
   ArmatureBuild build;
   const int bone_count = int(skeleton.bones.size());
@@ -379,6 +412,14 @@ static ArmatureBuild build_armature(ImportContext &ctx,
   Object *ob = add_model_object(ctx, collection, name, OB_ARMATURE, &arm->id);
   ob->dtx |= OB_DRAW_IN_FRONT;
   build.object = ob;
+  /* For saving the skeleton and its animations back into the client. */
+  if (!skeleton_path.empty()) {
+    set_source_property(&ob->id, "gameforge_skeleton_file", skeleton_path);
+  }
+  set_source_property(&ob->id, "gameforge_scale", double(ctx.scale));
+  if (!ctx.vfs.root().empty()) {
+    set_source_property(&ob->id, "gameforge_client", ctx.vfs.root());
+  }
 
   ED_armature_to_edit(arm);
   Vector<EditBone *> ebones(bone_count, nullptr);
@@ -508,9 +549,13 @@ static int import_skin(ImportContext &ctx,
                        const ArmatureBuild *armature)
 {
   const std::string base_dir = engine_dirname(skin_path);
+  const std::string skin_title = normalize_engine_path(path_stem(skin_path), false);
+  const std::string skin_file = normalize_engine_path(skin_path, false);
   const Vector<int> bone_map = skin_bone_map(skin, skeleton);
   int created = 0;
+  int mesh_index = -1;
   for (const SkinMesh &src : skin.meshes) {
+    mesh_index++;
     if (!src.morph_channels.empty()) {
       ctx.warn("Angelica: morph targets of '" + path_basename(skin_path) +
                "' are imported in their base shape");
@@ -539,7 +584,14 @@ static int import_skin(ImportContext &ctx,
                                 src.material_index < int(skin.materials.size())) ?
                                    &skin.materials[src.material_index] :
                                    nullptr;
-    assign_material(ctx, ob, material_from_info(ctx, name, texture, base_dir, info));
+    assign_material(ctx, ob, material_from_info(ctx, name, texture, base_dir, info, skin_title));
+    set_source_property(&ob->id, "gameforge_skin_file", skin_file);
+    set_source_property(&ob->id, "gameforge_skin_mesh", mesh_index);
+    /* Saving the mesh back converts with the inverse scale. */
+    set_source_property(&ob->id, "gameforge_scale", double(ctx.scale));
+    if (!ctx.vfs.root().empty()) {
+      set_source_property(&ob->id, "gameforge_client", ctx.vfs.root());
+    }
 
     if (armature && armature->object) {
       add_armature_modifier(ob, armature->object);
@@ -714,6 +766,19 @@ static bAction *import_action(ImportContext &ctx,
   action.frame_end = 1.0f + float(frame_count - 1) * frame_scale;
   action.flag |= ACT_FRAME_RANGE;
 
+  /* Where the keys came from, for saving the action back: Blender frame `1 + (f - start) *
+   * frame_scale` is engine frame `f` of the track set. */
+  if (!tracks.source_path.empty()) {
+    set_source_property(&action.id, "gameforge_file", tracks.source_path);
+    if (!ctx.vfs.root().empty()) {
+      set_source_property(&action.id, "gameforge_client", ctx.vfs.root());
+    }
+  }
+  set_source_property(&action.id, "gameforge_anim_start", double(start_frame));
+  set_source_property(&action.id, "gameforge_anim_end", double(end_frame));
+  set_source_property(&action.id, "gameforge_anim_fps", double(anim_fps));
+  set_source_property(&action.id, "gameforge_frame_scale", double(frame_scale));
+
   /* The first action plays on the imported armature. */
   const AnimData *adt = BKE_animdata_ensure_id(id);
   if (adt && adt->action == nullptr) {
@@ -746,7 +811,7 @@ static LoadedSkeleton load_skeleton(ImportContext &ctx,
     return result;
   }
   result.valid = true;
-  result.path = base_dir.empty() ? path : base_dir + "\\" + path;
+  result.path = located_path(ctx, path, base_dir);
   return result;
 }
 
@@ -782,6 +847,7 @@ static bool load_tracks(ImportContext &ctx,
     ctx.warn("Angelica: cannot read animation '" + path + "': " + error);
     return false;
   }
+  r_tracks.source_path = located_path(ctx, path, base_dir);
   return true;
 }
 
@@ -824,7 +890,7 @@ static Object *import_skin_model(ImportContext &ctx,
   const bool use_armature = options.import_armature && skeleton.valid &&
                             !skeleton.skeleton.bones.empty();
   if (use_armature) {
-    armature = build_armature(ctx, collection, skeleton.skeleton, name);
+    armature = build_armature(ctx, collection, skeleton.skeleton, name, skeleton.path);
   }
 
   int meshes = 0;
@@ -956,7 +1022,10 @@ static Collection *import_ecm(ImportContext &ctx,
 
   Vector<std::string> extra_skins;
   for (const std::string &skin : model.additional_skins) {
-    extra_skins.append(resolve(skin));
+    /* The engine loads additional skins from under `Models\` (`CECModel::LoadAdditionalSkin`). */
+    const std::string under_models = "models\\" + skin;
+    extra_skins.append(ctx.vfs.exists(under_models) ? normalize_engine_path(under_models, false) :
+                                                      resolve(skin));
   }
   Object *armature = nullptr;
   if (!model.skin_model_path.empty()) {
@@ -1014,13 +1083,16 @@ static int import_bmd(ImportContext &ctx, const std::string &engine_path, Collec
   }
 
   int created = 0;
+  int mesh_index = -1;
   for (const LitMesh &src : model.meshes) {
+    mesh_index++;
     MeshSource geometry;
     geometry.positions = src.positions;
     geometry.normals = src.normals;
     geometry.uvs = src.uvs;
     geometry.uvs2 = src.lightmap_uvs;
     geometry.indices = src.indices;
+    geometry.indices32 = src.indices32;
     Mesh *mesh_nomain = build_mesh(geometry, ctx.scale, "Lightmap");
     if (mesh_nomain == nullptr) {
       continue;
@@ -1033,6 +1105,8 @@ static int import_bmd(ImportContext &ctx, const std::string &engine_path, Collec
         ob,
         material_from_info(
             ctx, name, src.texture, base_dir, src.has_material ? &src.material : nullptr));
+    set_source_property(&ob->id, "gameforge_bmd_file", normalize_engine_path(engine_path, false));
+    set_source_property(&ob->id, "gameforge_bmd_mesh", mesh_index);
     created++;
   }
   return created;
@@ -1142,7 +1216,8 @@ Collection *import_model(ImportContext &ctx,
     const std::string base_dir = engine_dirname(engine_path);
     LoadedSkeleton skeleton = load_skeleton(ctx, path_basename(engine_path), base_dir);
     if (skeleton.valid && !skeleton.skeleton.bones.empty()) {
-      ArmatureBuild armature = build_armature(ctx, collection, skeleton.skeleton, name);
+      ArmatureBuild armature = build_armature(
+          ctx, collection, skeleton.skeleton, name, skeleton.path);
       has_armature = true;
       if (options.import_animations) {
         TrackSet tracks;
@@ -1209,7 +1284,7 @@ Object *import_bon_with_skins(ImportContext &ctx,
     return nullptr;
   }
   ArmatureBuild armature = build_armature(
-      ctx, collection, skeleton.skeleton, name_from_engine_path(bon_path));
+      ctx, collection, skeleton.skeleton, name_from_engine_path(bon_path), skeleton.path);
   for (const std::string &skin_path : skins) {
     Skin skin;
     if (load_skin(ctx, skin_path, "", skin)) {

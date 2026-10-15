@@ -13,6 +13,7 @@ namespace blender {
 struct wmOperatorType;
 
 void WM_OT_angelica_import(wmOperatorType *ot);
+void WM_OT_angelica_import_asset(wmOperatorType *ot);
 void WM_OT_angelica_import_map(wmOperatorType *ot);
 
 namespace ed::io {

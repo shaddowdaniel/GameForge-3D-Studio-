@@ -66,13 +66,13 @@
         <CustomAction Id="RegisterBlender" 
                       Impersonate="no"
                       Execute="deferred"
-                      FileKey="CM_FP_Blender.blender_launcher.exe"
+                      FileKey="CM_FP_Blender.GameForge3DStudio_launcher.exe"
                       ExeCommand="--register-allusers"
                       Return="ignore" />
         <CustomAction Id="UnRegisterBlender" 
                       Impersonate="no"
                       Execute="deferred"
-                      FileKey="CM_FP_Blender.blender_launcher.exe"
+                      FileKey="CM_FP_Blender.GameForge3DStudio_launcher.exe"
                       ExeCommand="--unregister-allusers"
                       Return="ignore" />
         <InstallExecuteSequence>

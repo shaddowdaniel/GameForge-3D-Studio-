@@ -3628,7 +3628,7 @@ PyDoc_STRVAR(
     vector_doc,
     ".. class:: Vector(seq=(0.0, 0.0, 0.0), /)\n"
     "\n"
-    "   This object gives access to Vectors in Blender.\n"
+    "   This object gives access to Vectors in GameForge 3D Studio.\n"
     "\n"
     "   :param seq: Components of the vector, must be a sequence of at least two.\n"
     "   :type seq: Sequence[float]\n");

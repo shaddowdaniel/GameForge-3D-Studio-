@@ -9,6 +9,7 @@
 #include <cstring>
 
 #include "BKE_collection.hh"
+#include "BKE_idprop.hh"
 #include "BKE_image.hh"
 #include "BKE_layer.hh"
 #include "BKE_lib_id.hh"
@@ -173,19 +174,35 @@ Image *ImportContext::load_image(const TextureRequest &request)
     return *cached;
   }
 
-  Bytes data;
-  bool found = vfs.read(request.path, data, request.base_dir);
-  if (!found) {
-    /* Models keep their textures in a `textures` folder next to them, referenced by name. */
-    const std::string name = path_basename(request.path);
-    found = vfs.read(path_join("textures", name), data, request.base_dir) ||
-            vfs.read(path_join("tex", name), data, request.base_dir);
+  /* The engine's order for skins (`A3DSkin::LoadTextures`): `<dir>\Textures\<name>`, then
+   * `<dir>\Tex_<skin title>\<name>`; other models reference textures by path. */
+  const std::string name = path_basename(request.path);
+  const std::string base = normalize_engine_path(request.base_dir, false);
+  auto in_base = [&](const std::string &relative) {
+    return base.empty() ? relative : base + "\\" + relative;
+  };
+  std::vector<std::string> candidates;
+  if (!request.skin_title.empty()) {
+    candidates.push_back(in_base("textures\\" + name));
+    candidates.push_back(in_base("tex_" + request.skin_title + "\\" + name));
   }
+  candidates.push_back(in_base(request.path));
+  candidates.push_back(request.path);
+  candidates.push_back(in_base("textures\\" + name));
+  candidates.push_back(in_base("tex\\" + name));
 
+  FileLocation location;
+  for (const std::string &candidate : candidates) {
+    location = vfs.locate(candidate);
+    if (location.kind != FileLocation::Kind::None) {
+      break;
+    }
+  }
+  Bytes data;
   Image *image = nullptr;
-  if (found && !data.empty()) {
+  if (location.kind != FileLocation::Kind::None && vfs.read(location, data) && !data.empty()) {
     image = image_from_memory(name_from_engine_path(request.path) + path_extension(request.path),
-                              normalize_engine_path(request.path, false),
+                              location.engine_path,
                               data.data(),
                               data.size());
   }
@@ -217,8 +234,27 @@ Image *ImportContext::image_from_memory(const std::string &name,
     image->source = IMA_SRC_FILE;
     image->type = IMA_TYPE_IMAGE;
     BKE_libblock_rename(*bmain, image->id, name.c_str());
+    set_source_property(&image->id, "gameforge_file", virtual_path);
+    if (!vfs.root().empty()) {
+      set_source_property(&image->id, "gameforge_client", vfs.root());
+    }
   }
   return image;
+}
+
+void set_source_property(ID *id, StringRef name, StringRefNull value)
+{
+  IDP_ReplaceInGroup(IDP_EnsureProperties(id), bke::idprop::create(name, value).release());
+}
+
+void set_source_property(ID *id, StringRef name, const int value)
+{
+  IDP_ReplaceInGroup(IDP_EnsureProperties(id), bke::idprop::create(name, value).release());
+}
+
+void set_source_property(ID *id, StringRef name, const double value)
+{
+  IDP_ReplaceInGroup(IDP_EnsureProperties(id), bke::idprop::create(name, value).release());
 }
 
 Image *ImportContext::image_from_pixels(const std::string &name,

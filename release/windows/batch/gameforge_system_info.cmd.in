@@ -11,6 +11,6 @@ if exist "%PYTHON_BIN%" (
 
 echo ERROR: Failed to find python executable at: %PYTHON_BIN%
 echo Possible causes include:
-echo - Your Blender installation is corrupt or missing @PYTHON_EXECUTABLE_NAME_ONLY@.
+echo - Your GameForge 3D Studio installation is corrupt or missing @PYTHON_EXECUTABLE_NAME_ONLY@.
 echo - The location or name of @PYTHON_EXECUTABLE_NAME_ONLY@ has changed.
 pause

@@ -836,7 +836,7 @@ msgid "Fribidi Library"
 msgstr "Fribidi-biblioteket"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
 msgstr "Det kompilerade C-biblioteket FriBidi (.so i Linux, .dll i Windows …). I Windows behöver du troligen ändra detta, till exempel till versionen i Blenders biblioteksarkiv"
 
 
@@ -860,7 +860,7 @@ msgid "Source Root"
 msgstr "Källrot"
 
 
-msgid "The Blender source root path"
+msgid "The GameForge 3D Studio source root path"
 msgstr "Sökvägen till Blenders källkodsrot"
 
 
@@ -884,7 +884,7 @@ msgid "Persistent Data Path"
 msgstr "Beständig datasökväg"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
 msgstr "Namnet på en JSON-fil som lagrar dessa inställningar (Blenders system fungerar tyvärr inte här)"
 
 
@@ -1764,8 +1764,8 @@ msgid "Edit persistent configuration settings"
 msgstr "Redigera beständiga konfigurationsinställningar"
 
 
-msgid "Manage the current Blender project"
-msgstr "Hantera det aktuella Blender-projektet"
+msgid "Manage the current GameForge 3D Studio project"
+msgstr "Hantera det aktuella GameForge 3D Studio-projektet"
 
 
 msgid "Width"
@@ -1860,8 +1860,8 @@ msgid "Is Editable"
 msgstr "Kan redigeras"
 
 
-msgid "Assets and catalogs in this library can be edited from the current Blender instance"
-msgstr "Resurser och kataloger i detta bibliotek kan redigeras från den aktuella Blender-instansen"
+msgid "Assets and catalogs in this library can be edited from the current GameForge 3D Studio instance"
+msgstr "Resurser och kataloger i detta bibliotek kan redigeras från den aktuella GameForge 3D Studio-instansen"
 
 
 msgid "Library Type"
@@ -1880,16 +1880,16 @@ msgid "Current File"
 msgstr "Aktuell fil"
 
 
-msgid "Show the assets currently available in this Blender session"
-msgstr "Visa resurserna som för närvarande är tillgängliga i denna Blender-session"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
+msgstr "Visa resurserna som för närvarande är tillgängliga i denna GameForge 3D Studio-session"
 
 
 msgid "Essentials"
 msgstr "Grundresurser"
 
 
-msgid "Show basic building blocks and utilities coming with Blender"
-msgstr "Visa grundläggande byggblock och verktyg som medföljer Blender"
+msgid "Show basic building blocks and utilities coming with GameForge 3D Studio"
+msgstr "Visa grundläggande byggblock och verktyg som medföljer GameForge 3D Studio"
 
 
 msgid "Online Essentials"
@@ -1960,8 +1960,8 @@ msgid "Catalog UUID"
 msgstr "Katalog-UUID"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
-msgstr "Identifierare för resursens katalog, som Blender använder för att slå upp katalogsökvägen. Måste vara en UUID enligt RFC 4122."
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgstr "Identifierare för resursens katalog, som GameForge 3D Studio använder för att slå upp katalogsökvägen. Måste vara en UUID enligt RFC 4122."
 
 
 msgid "Catalog Simple Name"
@@ -2709,8 +2709,8 @@ msgid "Is Internal"
 msgstr "Är intern"
 
 
-msgid "The attribute is meant for internal use by Blender"
-msgstr "Attributet är avsett för internt bruk av Blender"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
+msgstr "Attributet är avsett för internt bruk av GameForge 3D Studio"
 
 
 msgid "Is Required"
@@ -3428,7 +3428,7 @@ msgid "All Data-Blocks"
 msgstr "Alla datablock"
 
 
-msgid "Read-only list of all IDs listed in Blender data-base. Warning: Order is not guaranteed and should be considered an internal implementation detail"
+msgid "Read-only list of all IDs listed in GameForge 3D Studio data-base. Warning: Order is not guaranteed and should be considered an internal implementation detail"
 msgstr "Skrivskyddad lista över alla ID:n i Blenders databas. Varning: ordningen är inte garanterad och ska betraktas som en intern implementeringsdetalj"
 
 
@@ -3601,8 +3601,8 @@ msgid "Project"
 msgstr "Projekt"
 
 
-msgid "The currently active Blender project, if any"
-msgstr "Det aktuella Blender-projektet, om något är aktivt"
+msgid "The currently active GameForge 3D Studio project, if any"
+msgstr "Det aktuella GameForge 3D Studio-projektet, om något är aktivt"
 
 
 msgid "Scene data-blocks"
@@ -3997,8 +3997,8 @@ msgid "Project"
 msgstr "Projicera"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Fallback"
@@ -4254,8 +4254,8 @@ msgid "Library (blend-file) reference in a BlendImportContext data. Currently on
 msgstr "Biblioteksreferens (blend-fil) i BlendImportContext-data. För närvarande endast tillgängligt som skrivskyddade data för hanterare före och efter blend-import."
 
 
-msgid "Blender Project"
-msgstr "Blender-projekt"
+msgid "GameForge 3D Studio Project"
+msgstr "GameForge 3D Studio-projekt"
 
 
 msgid "Active Project Variable"
@@ -4302,12 +4302,12 @@ msgid "The variables in this project"
 msgstr "Variablerna i det här projektet"
 
 
-msgid "Blender RNA"
-msgstr "Blender RNA"
+msgid "GameForge 3D Studio RNA"
+msgstr "GameForge 3D Studio RNA"
 
 
-msgid "Blender RNA structure definitions"
-msgstr "Definitioner av Blender RNA-strukturer"
+msgid "GameForge 3D Studio RNA structure definitions"
+msgstr "Definitioner av GameForge 3D Studio RNA-strukturer"
 
 
 msgid "Structs"
@@ -8908,7 +8908,7 @@ msgid "Lin error"
 msgstr "Positionsfel"
 
 
-msgid "Amount of residual error in Blender space unit for constraints that work on position"
+msgid "Amount of residual error in GameForge 3D Studio space unit for constraints that work on position"
 msgstr "Restfelets storlek i Blenders rymdenheter för begränsningar som arbetar med position"
 
 
@@ -12880,8 +12880,8 @@ msgid "Max Velocity"
 msgstr "Största hastighet"
 
 
-msgid "Velocity considered as maximum influence (Blender units per frame)"
-msgstr "Hastighet som räknas som maximal påverkan (Blender-enheter per bildruta)"
+msgid "Velocity considered as maximum influence (GameForge 3D Studio units per frame)"
+msgstr "Hastighet som räknas som maximal påverkan (GameForge 3D Studio-enheter per bildruta)"
 
 
 msgid "Velocity Color Ramp"
@@ -13258,8 +13258,8 @@ msgid "Premultiply Alpha"
 msgstr "Förmultiplicera alfa"
 
 
-msgid "Multiply color by alpha (recommended for Blender input)"
-msgstr "Multiplicera färgen med alfa (rekommenderas för indata till Blender)"
+msgid "Multiply color by alpha (recommended for GameForge 3D Studio input)"
+msgstr "Multiplicera färgen med alfa (rekommenderas för indata till GameForge 3D Studio)"
 
 
 msgid "Use Shrink"
@@ -15662,24 +15662,24 @@ msgid "Hide .blend files items that are not data-blocks with asset metadata"
 msgstr "Dölj .blend-filposter som inte är datablock med tillgångsmetadata"
 
 
-msgid "Filter Blender Backup Files"
-msgstr "Filtrera säkerhetskopior av Blender-filer"
+msgid "Filter GameForge 3D Studio Backup Files"
+msgstr "Filtrera säkerhetskopior av GameForge 3D Studio-filer"
 
 
 msgid "Show .blend1, .blend2, etc. files"
 msgstr "Visa .blend1-, .blend2- och liknande filer"
 
 
-msgid "Filter Blender"
-msgstr "Filtrera Blender-filer"
+msgid "Filter GameForge 3D Studio"
+msgstr "Filtrera GameForge 3D Studio-filer"
 
 
 msgid "Show .blend files"
 msgstr "Visa .blend-filer"
 
 
-msgid "Filter Blender IDs"
-msgstr "Filtrera Blender-ID:n"
+msgid "Filter GameForge 3D Studio IDs"
+msgstr "Filtrera GameForge 3D Studio-ID:n"
 
 
 msgid "Show .blend files items (objects, materials, etc.)"
@@ -15754,8 +15754,8 @@ msgid "Library Browser"
 msgstr "Biblioteksbläddrare"
 
 
-msgid "Whether we may browse Blender files' content or not"
-msgstr "Anger om innehållet i Blender-filer kan bläddras"
+msgid "Whether we may browse GameForge 3D Studio files' content or not"
+msgstr "Anger om innehållet i GameForge 3D Studio-filer kan bläddras"
 
 
 msgid "Reverse Sorting"
@@ -16214,7 +16214,7 @@ msgid "Export Mantaflow Script"
 msgstr "Exportera Mantaflow-skript"
 
 
-msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of Blender) after baking the simulation."
+msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of GameForge 3D Studio) after baking the simulation."
 msgstr "Generera och exportera Mantaflow-skript från aktuella domäninställningar vid bakning. Behövs endast om du vill analysera cachen direkt i Mantaflow efter bakningen, till exempel rutnät, hastighetsvektorer eller partiklar."
 
 
@@ -19511,8 +19511,8 @@ msgid "Is Legacy Action"
 msgstr "Är äldre åtgärd"
 
 
-msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since Blender 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
-msgstr "Returnerar om detta är en äldre åtgärd. Äldre åtgärder saknar lager och platser. Sedan Blender 4.4 uppdateras åtgärder automatiskt till lagerindelade åtgärder. Funktionen returnerar endast sant för tomma åtgärder."
+msgid "Return whether this is a legacy Action. Legacy Actions have no layers or slots. Since version 4.4 actions are automatically updated to layered actions. This will only return true on empty actions"
+msgstr "Returnerar om detta är en äldre åtgärd. Äldre åtgärder saknar lager och platser. Sedan GameForge 3D Studio 4.4 uppdateras åtgärder automatiskt till lagerindelade åtgärder. Funktionen returnerar endast sant för tomma åtgärder."
 
 
 msgid "Is Empty"
@@ -21511,8 +21511,8 @@ msgid "Unprojected Size"
 msgstr "Oprojekterad storlek"
 
 
-msgid "Diameter of brush in Blender units"
-msgstr "Penselns diameter i Blender-enheter"
+msgid "Diameter of brush in GameForge 3D Studio units"
+msgstr "Penselns diameter i GameForge 3D Studio-enheter"
 
 
 msgid "Accumulate"
@@ -24863,8 +24863,8 @@ msgid "True if this library contains library overrides that are linked in curren
 msgstr "Sant om biblioteket innehåller biblioteksåsidosättningar som är länkade i den aktuella blend-filen och som måste synkroniseras rekursivt vid inläsning. Då rekommenderas att bibliotekets blend-fil öppnas och sparas på nytt."
 
 
-msgid "Version of Blender the library .blend was saved with"
-msgstr "Blender-version som bibliotekets .blend-fil sparades med"
+msgid "Version of GameForge 3D Studio the library .blend was saved with"
+msgstr "GameForge 3D Studio-version som bibliotekets .blend-fil sparades med"
 
 
 msgctxt "Light"
@@ -30086,12 +30086,12 @@ msgid "Noise basis used for turbulence"
 msgstr "Brusgrund som används för turbulens"
 
 
-msgid "Blender Original"
-msgstr "Blender Original"
+msgid "GameForge 3D Studio Original"
+msgstr "GameForge 3D Studio Original"
 
 
-msgid "Noise algorithm - Blender original: Smooth interpolated noise"
-msgstr "Brusalgoritm – Blender original: mjukt interpolerat brus"
+msgid "Noise algorithm - GameForge 3D Studio original: Smooth interpolated noise"
+msgstr "Brusalgoritm – GameForge 3D Studio original: mjukt interpolerat brus"
 
 
 msgid "Original Perlin"
@@ -30960,8 +30960,8 @@ msgid "Asset Blend Path"
 msgstr "Resursens Blend-sökväg"
 
 
-msgid "Full path to the Blender file containing the active asset"
-msgstr "Fullständig sökväg till Blender-filen som innehåller den aktiva resursen"
+msgid "Full path to the GameForge 3D Studio file containing the active asset"
+msgstr "Fullständig sökväg till GameForge 3D Studio-filen som innehåller den aktiva resursen"
 
 
 msgid "Filter by Repository"
@@ -32112,16 +32112,16 @@ msgid "Custom Icon"
 msgstr "Anpassad ikon"
 
 
-msgid "True if this preview icon has been modified by py script, and is no more auto-generated by Blender"
-msgstr "Sant om denna förhandsgranskningsikon har modifierats av ett Python-skript och inte längre genereras automatiskt av Blender"
+msgid "True if this preview icon has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
+msgstr "Sant om denna förhandsgranskningsikon har modifierats av ett Python-skript och inte längre genereras automatiskt av GameForge 3D Studio"
 
 
 msgid "Custom Image"
 msgstr "Anpassad bild"
 
 
-msgid "True if this preview image has been modified by py script, and is no more auto-generated by Blender"
-msgstr "Sant om denna förhandsgranskningsbild har modifierats av ett Python-skript och inte längre genereras automatiskt av Blender"
+msgid "True if this preview image has been modified by py script, and is no more auto-generated by GameForge 3D Studio"
+msgstr "Sant om denna förhandsgranskningsbild har modifierats av ett Python-skript och inte längre genereras automatiskt av GameForge 3D Studio"
 
 
 msgid "Parameters defining how an Image data-block is used by another data-block"
@@ -52412,20 +52412,20 @@ msgid "World space normal mapping"
 msgstr "Normalmappning i världsrum"
 
 
-msgid "Blender Object Space"
-msgstr "Blender-objektrum"
+msgid "GameForge 3D Studio Object Space"
+msgstr "GameForge 3D Studio-objektrum"
 
 
-msgid "Object space normal mapping, compatible with Blender render baking"
-msgstr "Normalmappning i objektrum, kompatibel med Blender-renderingsbakning"
+msgid "Object space normal mapping, compatible with GameForge 3D Studio render baking"
+msgstr "Normalmappning i objektrum, kompatibel med GameForge 3D Studio-renderingsbakning"
 
 
-msgid "Blender World Space"
-msgstr "Blender-världsrum"
+msgid "GameForge 3D Studio World Space"
+msgstr "GameForge 3D Studio-världsrum"
 
 
-msgid "World space normal mapping, compatible with Blender render baking"
-msgstr "Normalmappning i världsrum, kompatibel med Blender-renderingsbakning"
+msgid "World space normal mapping, compatible with GameForge 3D Studio render baking"
+msgstr "Normalmappning i världsrum, kompatibel med GameForge 3D Studio-renderingsbakning"
 
 
 msgid "UV Map for tangent space maps"
@@ -55326,8 +55326,8 @@ msgstr "Rigify: uppgradera metarigglager"
 
 
 msgctxt "Operator"
-msgid "Get active/selected colors from current Blender theme"
-msgstr "Hämta färger för aktiv/vald från aktuellt Blender-tema"
+msgid "Get active/selected colors from current GameForge 3D Studio theme"
+msgstr "Hämta färger för aktiv/vald från aktuellt GameForge 3D Studio-tema"
 
 
 msgid "Validates references from rig component settings to bone collections"
@@ -55832,8 +55832,8 @@ msgid "Clear Status"
 msgstr "Rensa status"
 
 
-msgid "Allow Blender to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, Blender cannot prevent third-party add-ons from violating this rule."
-msgstr "Tillåt Blender att ansluta till internet. Tillägg som följer denna inställning kommer endast att ansluta till internet om de är aktiverade. Blender kan dock inte förhindra att tillägg från tredje part bryter mot denna regel."
+msgid "Allow GameForge 3D Studio to access the internet. Add-ons that follow this setting will only connect to the internet if enabled. However, GameForge 3D Studio cannot prevent third-party add-ons from violating this rule."
+msgstr "Tillåt GameForge 3D Studio att ansluta till internet. Tillägg som följer denna inställning kommer endast att ansluta till internet om de är aktiverade. GameForge 3D Studio kan dock inte förhindra att tillägg från tredje part bryter mot denna regel."
 
 
 msgid "Open extensions preferences"
@@ -57041,8 +57041,8 @@ msgid "Uninstall Studio Light"
 msgstr "Avinstallera Studio Light"
 
 
-msgid "Load and apply a Blender XML theme file"
-msgstr "Ladda och tillämpa en Blender XML-temafil"
+msgid "Load and apply a GameForge 3D Studio XML theme file"
+msgstr "Ladda och tillämpa en GameForge 3D Studio XML-temafil"
 
 
 msgctxt "Operator"
@@ -57519,12 +57519,12 @@ msgid "I18n Save Settings"
 msgstr "Spara I18n-inställningar"
 
 
-msgid "Update i18n data (po files) in Blender source code repository"
+msgid "Update i18n data (po files) in GameForge 3D Studio source code repository"
 msgstr "Uppdatera I18n-data (PO-filer) i Blenders källkodsarkiv"
 
 
 msgctxt "Operator"
-msgid "Update I18n Blender Repository"
+msgid "Update I18n GameForge 3D Studio Repository"
 msgstr "Uppdatera Blenders I18n-arkiv"
 
 
@@ -59252,8 +59252,8 @@ msgid "Debug Channel List"
 msgstr "Felsökningskanallista"
 
 
-msgid "Log the channel list info in the terminal. This operator is only available in debug builds of Blender"
-msgstr "Skriv kanallisteinformationen till terminalen. Den här operatorn är endast tillgänglig i felsökningsbyggen av Blender"
+msgid "Log the channel list info in the terminal. This operator is only available in debug builds of GameForge 3D Studio"
+msgstr "Skriv kanallisteinformationen till terminalen. Den här operatorn är endast tillgänglig i felsökningsbyggen av GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -60246,7 +60246,7 @@ msgid "Upgrade the metarig from bone layers to bone collections"
 msgstr "Uppgradera metariggen från benlager till bensamlingar"
 
 
-msgid "Set the color palette to match Blender's active theme for selected and active bones"
+msgid "Set the color palette to match GameForge 3D Studio's active theme for selected and active bones"
 msgstr "Ange färgpaletten så att den motsvarar Blenders aktiva tema för markerade och aktiva ben"
 
 
@@ -63921,8 +63921,8 @@ msgid "Apply Scalings"
 msgstr "Tillämpa skalning"
 
 
-msgid "How to apply custom and units scalings in generated FBX file (Blender uses FBX scale to detect units on import, but many other applications do not handle the same way)"
-msgstr "Hur anpassad skalning och enhetsskalning ska tillämpas i den genererade FBX-filen (Blender använder FBX-skala för att identifiera enheter vid import, men många andra program hanterar inte detta på samma sätt)"
+msgid "How to apply custom and units scalings in generated FBX file (GameForge 3D Studio uses FBX scale to detect units on import, but many other applications do not handle the same way)"
+msgstr "Hur anpassad skalning och enhetsskalning ska tillämpas i den genererade FBX-filen (GameForge 3D Studio använder FBX-skala för att identifiera enheter vid import, men många andra program hanterar inte detta på samma sätt)"
 
 
 msgid "All Local"
@@ -63961,23 +63961,23 @@ msgid "Apply Unit"
 msgstr "Tillämpa enhet"
 
 
-msgid "Take into account current Blender units settings (if unset, raw Blender Units values are used as-is)"
-msgstr "Ta hänsyn till aktuella inställningar för Blender-enheter (om dessa inte är inställda används råa Blender-enhetsvärden som de är)"
+msgid "Take into account current GameForge 3D Studio units settings (if unset, raw GameForge 3D Studio Units values are used as-is)"
+msgstr "Ta hänsyn till aktuella inställningar för GameForge 3D Studio-enheter (om dessa inte är inställda används råa GameForge 3D Studio-enhetsvärden som de är)"
 
 
 msgid "Armature FBXNode Type"
 msgstr "Armatur FBXNode-typ"
 
 
-msgid "FBX type of node (object) used to represent Blender's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into Blender...)"
-msgstr "FBX-nodtyp (objekt) som används för att representera Blenders armaturer (använd typen Null om du inte stöter på problem med det andra programmet, eftersom andra val kanske inte importeras perfekt tillbaka till Blender...)"
+msgid "FBX type of node (object) used to represent GameForge 3D Studio's armatures (use the Null type unless you experience issues with the other app, as other choices may not import back perfectly into GameForge 3D Studio...)"
+msgstr "FBX-nodtyp (objekt) som används för att representera Blenders armaturer (använd typen Null om du inte stöter på problem med det andra programmet, eftersom andra val kanske inte importeras perfekt tillbaka till GameForge 3D Studio...)"
 
 
 msgid "Null"
 msgstr "Null"
 
 
-msgid "'Null' FBX node, similar to Blender's Empty (default)"
+msgid "'Null' FBX node, similar to GameForge 3D Studio's Empty (default)"
 msgstr "”Null”-FBX-nod, liknande Blenders tomma objekt (standard)"
 
 
@@ -64093,7 +64093,7 @@ msgid "Apply Transform"
 msgstr "Tillämpa transformering"
 
 
-msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
+msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with GameForge 3D Studio's space (WARNING! experimental option, use at own risk, known to be broken with armatures/animations)"
 msgstr "Baka rumstransformering till objektdata för att undvika oönskade rotationer av objekt när målutrymmet inte är inriktat med Blenders utrymme (VARNING! Experimentellt alternativ; använd på egen risk, känt för att inte fungera med armaturer/animeringar)"
 
 
@@ -64360,8 +64360,8 @@ msgid "Use Modifiers Render Setting"
 msgstr "Använd modifierarnas renderingsinställningar"
 
 
-msgid "Use render settings when applying modifiers to mesh objects (DISABLED in Blender 2.8)"
-msgstr "Använd renderingsinställningar när du tillämpar modifierare på meshobjekt (INAKTIVERAT i Blender 2.8)"
+msgid "Use render settings when applying modifiers to mesh objects (DISABLED in version 2.8)"
+msgstr "Använd renderingsinställningar när du tillämpar modifierare på meshobjekt (INAKTIVERAT i GameForge 3D Studio 2.8)"
 
 
 msgid "Use Metadata"
@@ -64884,8 +64884,8 @@ msgid "Raw (Deprecated)"
 msgstr "Rå (föråldrad)"
 
 
-msgid "Blender lighting strengths with no conversion"
-msgstr "Blender-belysningsstyrkor utan konvertering"
+msgid "GameForge 3D Studio lighting strengths with no conversion"
+msgstr "GameForge 3D Studio-belysningsstyrkor utan konvertering"
 
 
 msgid "Bone Influences"
@@ -65112,8 +65112,8 @@ msgid "Export Original PBR Specular"
 msgstr "Exportera ursprunglig PBR-spegling"
 
 
-msgid "Export original glTF PBR Specular, instead of Blender Principled Shader Specular"
-msgstr "Exportera ursprunglig glTF PBR-spegling i stället för Blender Principled Shader-spegling"
+msgid "Export original glTF PBR Specular, instead of GameForge 3D Studio Principled Shader Specular"
+msgstr "Exportera ursprunglig glTF PBR-spegling i stället för GameForge 3D Studio Principled Shader-spegling"
 
 
 msgid "Export point clouds"
@@ -65344,8 +65344,8 @@ msgid "Remember Export Settings"
 msgstr "Kom ihåg exportinställningar"
 
 
-msgid "Store glTF export settings in the Blender project"
-msgstr "Spara glTF-exportinställningar i Blender-projektet"
+msgid "Store glTF export settings in the GameForge 3D Studio project"
+msgstr "Spara glTF-exportinställningar i GameForge 3D Studio-projektet"
 
 
 msgid "Package ID"
@@ -69657,8 +69657,8 @@ msgid "Definition"
 msgstr "Definition"
 
 
-msgid "Number of pixels per inch or Blender Unit"
-msgstr "Antal pixlar per tum eller Blender-enhet"
+msgid "Number of pixels per inch or GameForge 3D Studio Unit"
+msgstr "Antal pixlar per tum eller GameForge 3D Studio-enhet"
 
 
 msgid "Filepath used for importing the file"
@@ -69681,8 +69681,8 @@ msgid "Force Reload"
 msgstr "Tvinga omladdning"
 
 
-msgid "Force reload the image if it is already opened elsewhere in Blender"
-msgstr "Tvinga omladdning av bilden om den redan är öppen någon annanstans i Blender"
+msgid "Force reload the image if it is already opened elsewhere in GameForge 3D Studio"
+msgstr "Tvinga omladdning av bilden om den redan är öppen någon annanstans i GameForge 3D Studio"
 
 
 msgid "Height of the created plane"
@@ -69773,12 +69773,12 @@ msgid "Scale based on pixels per inch"
 msgstr "Skala baserad på pixlar per tum"
 
 
-msgid "Pixels per Blender Unit"
-msgstr "Pixlar per Blender-enhet"
+msgid "Pixels per GameForge 3D Studio Unit"
+msgstr "Pixlar per GameForge 3D Studio-enhet"
 
 
-msgid "Scale based on pixels per Blender Unit"
-msgstr "Skala baserad på pixlar per Blender-enhet"
+msgid "Scale based on pixels per GameForge 3D Studio Unit"
+msgstr "Skala baserad på pixlar per GameForge 3D Studio-enhet"
 
 
 msgctxt "Operator"
@@ -70054,8 +70054,8 @@ msgid "Save the image with another name and/or settings"
 msgstr "Spara bilden med ett annat namn och/eller andra inställningar"
 
 
-msgid "Create a new image file without modifying the current image in Blender"
-msgstr "Skapa en ny bildfil utan att ändra den aktuella bilden i Blender"
+msgid "Create a new image file without modifying the current image in GameForge 3D Studio"
+msgstr "Skapa en ny bildfil utan att ändra den aktuella bilden i GameForge 3D Studio"
 
 
 msgid "Save As Render"
@@ -70254,8 +70254,8 @@ msgid "Scale FPS"
 msgstr "Skala FPS"
 
 
-msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a Blender frame"
-msgstr "Skala bildfrekvensen från BVH-filen till den aktuella scenen; annars motsvarar varje BVH-bildruta direkt en Blender-bildruta"
+msgid "Scale the frame-rate from the BVH to the current scenes, otherwise each BVH frame maps directly to a GameForge 3D Studio frame"
+msgstr "Skala bildfrekvensen från BVH-filen till den aktuella scenen; annars motsvarar varje BVH-bildruta direkt en GameForge 3D Studio-bildruta"
 
 
 msgid "Animation Offset"
@@ -70326,8 +70326,8 @@ msgid "Make Unique"
 msgstr "Skapa unikt"
 
 
-msgid "Import each FBX material as a unique Blender material"
-msgstr "Importera varje FBX-material som ett unikt Blender-material"
+msgid "Import each FBX material as a unique GameForge 3D Studio material"
+msgstr "Importera varje FBX-material som ett unikt GameForge 3D Studio-material"
 
 
 msgid "Reference Existing"
@@ -70370,8 +70370,8 @@ msgid "Import FBX animation"
 msgstr "Importera FBX-animation"
 
 
-msgid "Import custom normals, if available (otherwise Blender will recompute them)"
-msgstr "Importera egna normaler om de är tillgängliga (annars beräknar Blender om dem)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will recompute them)"
+msgstr "Importera egna normaler om de är tillgängliga (annars beräknar GameForge 3D Studio om dem)"
 
 
 msgid "Import user properties as custom properties"
@@ -70426,12 +70426,12 @@ msgid "Heuristic for placing bones. Tries to make bones pretty"
 msgstr "Heuristik för placering av ben. Försöker placera benen snyggt"
 
 
-msgid "Blender (best for import/export round trip)"
-msgstr "Blender (bäst för import/export tur och retur)"
+msgid "GameForge 3D Studio (best for import/export round trip)"
+msgstr "GameForge 3D Studio (bäst för import/export tur och retur)"
 
 
-msgid "Good for re-importing glTFs exported from Blender, and re-exporting glTFs to glTFs after Blender editing. Bone tips are placed on their local +Y axis (in glTF space)"
-msgstr "Bra för att återimportera glTF-filer som exporterats från Blender och återexportera glTF-filer efter redigering i Blender. Benändarna placeras på sin lokala +Y-axel (i glTF-rymden)"
+msgid "Good for re-importing glTFs exported from GameForge 3D Studio, and re-exporting glTFs to glTFs after GameForge 3D Studio editing. Bone tips are placed on their local +Y axis (in glTF space)"
+msgstr "Bra för att återimportera glTF-filer som exporterats från GameForge 3D Studio och återexportera glTF-filer efter redigering i GameForge 3D Studio. Benändarna placeras på sin lokala +Y-axel (i glTF-rymden)"
 
 
 msgid "Temperance (average)"
@@ -70586,7 +70586,7 @@ msgid "Update Reports Display"
 msgstr "Uppdatera rapportvisning"
 
 
-msgid "Update the display of reports in Blender UI (internal use)"
+msgid "Update the display of reports in GameForge 3D Studio UI (internal use)"
 msgstr "Uppdatera visningen av rapporter i Blenders gränssnitt (internt bruk)"
 
 
@@ -82891,8 +82891,8 @@ msgid "Check for Updates on Startup"
 msgstr "Sök efter uppdateringar vid start"
 
 
-msgid "Allow Blender to check for updates upon launch"
-msgstr "Tillåt Blender att söka efter uppdateringar vid start"
+msgid "Allow GameForge 3D Studio to check for updates upon launch"
+msgstr "Tillåt GameForge 3D Studio att söka efter uppdateringar vid start"
 
 
 msgctxt "Operator"
@@ -84380,8 +84380,8 @@ msgid "Save Screenshot"
 msgstr "Spara skärmdump"
 
 
-msgid "Capture a picture of the whole Blender window"
-msgstr "Ta en bild av hela Blender-fönstret"
+msgid "Capture a picture of the whole GameForge 3D Studio window"
+msgstr "Ta en bild av hela GameForge 3D Studio-fönstret"
 
 
 msgctxt "Operator"
@@ -86367,11 +86367,11 @@ msgid "Auto Detect"
 msgstr "Identifiera automatiskt"
 
 
-msgid "Add images as individual strips, unless their filenames match Blender's numbered sequence pattern, in which case they are grouped into a single image sequence"
+msgid "Add images as individual strips, unless their filenames match GameForge 3D Studio's numbered sequence pattern, in which case they are grouped into a single image sequence"
 msgstr "Lägg till bilder som enskilda remsor, om inte deras filnamn matchar Blenders numrerade sekvensmönster; då grupperas de till en bildsekvens"
 
 
-msgid "Import all selected images as a single image sequence. The sequence of images does not have to match Blender's numbered sequence pattern, so placeholders cannot be inferred"
+msgid "Import all selected images as a single image sequence. The sequence of images does not have to match GameForge 3D Studio's numbered sequence pattern, so placeholders cannot be inferred"
 msgstr "Importera alla markerade bilder som en enda bildsekvens. Bildsekvensen behöver inte matcha Blenders numrerade sekvensmönster, så platshållare kan inte härledas"
 
 
@@ -88813,8 +88813,8 @@ msgid "Eyedropper"
 msgstr "Pipett"
 
 
-msgid "Sample a color from the Blender window to store in a property"
-msgstr "Hämta en färg från Blender-fönstret för att lagra i en egenskap"
+msgid "Sample a color from the GameForge 3D Studio window to store in a property"
+msgstr "Hämta en färg från GameForge 3D Studio-fönstret för att lagra i en egenskap"
 
 
 msgid "Path of property to be set with the depth"
@@ -88910,8 +88910,8 @@ msgid "Grease Pencil Eyedropper"
 msgstr "Grease Pencil-pipett"
 
 
-msgid "Sample a color from the Blender Window and create Grease Pencil material"
-msgstr "Hämta en färg från Blender-fönstret och skapa Grease Pencil-material"
+msgid "Sample a color from the GameForge 3D Studio Window and create Grease Pencil material"
+msgstr "Hämta en färg från GameForge 3D Studio-fönstret och skapa Grease Pencil-material"
 
 
 msgctxt "GPencil"
@@ -91616,8 +91616,8 @@ msgid "Run as Background Job"
 msgstr "Kör som bakgrundsuppgift"
 
 
-msgid "Enable this to run the import in the background, disable to block Blender while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
-msgstr "Aktivera detta för att köra importen i bakgrunden. Inaktivera för att blockera Blender under importen. Alternativet är föråldrat; kör denna operator med EXECUTE i förgrunden och med INVOKE som bakgrundsjobb"
+msgid "Enable this to run the import in the background, disable to block GameForge 3D Studio while importing. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgstr "Aktivera detta för att köra importen i bakgrunden. Inaktivera för att blockera GameForge 3D Studio under importen. Alternativet är föråldrat; kör denna operator med EXECUTE i förgrunden och med INVOKE som bakgrundsjobb"
 
 
 msgid "Curves as Mesh"
@@ -91781,8 +91781,8 @@ msgid "Add cache modifiers and constraints to imported objects even if they are 
 msgstr "Lägg till cachemodifierare och begränsningar till importerade objekt även om de inte är animerade, så att de kan uppdateras när Alembic-arkivet laddas om"
 
 
-msgid "Enable this to run the export in the background, disable to block Blender while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
-msgstr "Aktivera detta för att köra exporten i bakgrunden. Inaktivera för att blockera Blender under exporten. Alternativet är föråldrat; kör denna operator med EXECUTE i förgrunden och med INVOKE som bakgrundsjobb"
+msgid "Enable this to run the export in the background, disable to block GameForge 3D Studio while exporting. This option is deprecated; EXECUTE this operator to run in the foreground, and INVOKE it to run as a background job"
+msgstr "Aktivera detta för att köra exporten i bakgrunden. Inaktivera för att blockera GameForge 3D Studio under exporten. Alternativet är föråldrat; kör denna operator med EXECUTE i förgrunden och med INVOKE som bakgrundsjobb"
 
 
 msgid "Is Sequence"
@@ -92203,8 +92203,8 @@ msgid "Vertex colors in the file are in linear color space"
 msgstr "Hörnpunktsfärgerna i filen är i linjär färgrymd"
 
 
-msgid "Import custom normals, if available (otherwise Blender will compute them)"
-msgstr "Importera anpassade normaler om sådana finns (annars beräknar Blender dem)"
+msgid "Import custom normals, if available (otherwise GameForge 3D Studio will compute them)"
+msgstr "Importera anpassade normaler om sådana finns (annars beräknar GameForge 3D Studio dem)"
 
 
 msgid "Enums As Strings"
@@ -92624,8 +92624,8 @@ msgid "Open"
 msgstr "Öppna"
 
 
-msgid "Open a Blender file"
-msgstr "Öppna en Blender-fil"
+msgid "Open a GameForge 3D Studio file"
+msgstr "Öppna en GameForge 3D Studio-fil"
 
 
 msgid "Display File Selector"
@@ -92775,8 +92775,8 @@ msgid "Collection of file paths with common ``directory`` root"
 msgstr "Samling av filsökvägar med den gemensamma rotvägen ``directory``"
 
 
-msgid "Show Blender files in the File Browser"
-msgstr "Visa Blender-filer i filbläddraren"
+msgid "Show GameForge 3D Studio files in the File Browser"
+msgstr "Visa GameForge 3D Studio-filer i filbläddraren"
 
 
 msgid "Show folders in the File Browser"
@@ -92950,12 +92950,12 @@ msgstr "Värde för anpassade egenskapstyper som endast kan redigeras som ett Py
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "Avsluta Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Avsluta GameForge 3D Studio"
 
 
-msgid "Quit Blender"
-msgstr "Avsluta Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "Avsluta GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -93112,7 +93112,7 @@ msgstr "Fabriksstart"
 
 
 msgid "Load the default ('factory startup') blend file. This is independent of the normal start-up file that the user can save"
-msgstr "Ladda standardfilen för Blender (”fabriksstart”). Den är oberoende av den vanliga startfil som användaren kan spara"
+msgstr "Ladda standardfilen för GameForge 3D Studio (”fabriksstart”). Den är oberoende av den vanliga startfil som användaren kan spara"
 
 
 msgctxt "Operator"
@@ -93291,20 +93291,20 @@ msgstr "Gör den aktuella filen till standardstartfil"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "Spara Blender-fil"
+msgid "Save GameForge 3D Studio File"
+msgstr "Spara GameForge 3D Studio-fil"
 
 
-msgid "Save the current Blender file"
-msgstr "Spara den aktuella Blender-filen"
+msgid "Save the current GameForge 3D Studio file"
+msgstr "Spara den aktuella GameForge 3D Studio-filen"
 
 
-msgid "Exit Blender after saving"
-msgstr "Avsluta Blender efter att ha sparat"
+msgid "Exit GameForge 3D Studio after saving"
+msgstr "Avsluta GameForge 3D Studio efter att ha sparat"
 
 
-msgid "Save the current Blender file with a numerically incremented name that does not overwrite any existing files"
-msgstr "Spara den aktuella Blender-filen under ett numeriskt ökat namn utan att skriva över befintliga filer"
+msgid "Save the current GameForge 3D Studio file with a numerically incremented name that does not overwrite any existing files"
+msgstr "Spara den aktuella GameForge 3D Studio-filen under ett numeriskt ökat namn utan att skriva över befintliga filer"
 
 
 msgctxt "Operator"
@@ -93487,12 +93487,12 @@ msgstr "Öppna startskärmen med versionsinformation"
 
 
 msgctxt "Operator"
-msgid "About Blender"
-msgstr "Om Blender"
+msgid "About GameForge 3D Studio"
+msgstr "Om GameForge 3D Studio"
 
 
-msgid "Open a window with information about Blender"
-msgstr "Öppna ett fönster med information om Blender"
+msgid "Open a window with information about GameForge 3D Studio"
+msgstr "Öppna ett fönster med information om GameForge 3D Studio"
 
 
 msgctxt "Operator"
@@ -93606,12 +93606,12 @@ msgid "Preserve UTF-8 encoded characters when writing USD prim and property name
 msgstr "Bevara UTF-8-kodade tecken när USD-prim- och egenskapsnamn skrivs (kräver programvara som använder USD 24.03 eller senare för att öppna de resulterande filerna)"
 
 
-msgid "Blender Names"
-msgstr "Blender-namn"
+msgid "GameForge 3D Studio Names"
+msgstr "GameForge 3D Studio-namn"
 
 
-msgid "Author USD custom attributes containing the original Blender object and object data names"
-msgstr "Skapa USD-anpassade attribut som innehåller de ursprungliga namnen på Blender-objekt och objektdata"
+msgid "Author USD custom attributes containing the original GameForge 3D Studio object and object data names"
+msgstr "Skapa USD-anpassade attribut som innehåller de ursprungliga namnen på GameForge 3D Studio-objekt och objektdata"
 
 
 msgid "Convert Orientation"
@@ -93695,7 +93695,7 @@ msgstr "Namnområde"
 
 
 msgid "If set, add the given namespace as a prefix to exported custom property names. This only applies to property names that do not already have a prefix (e.g., it would apply to name 'bar' but not 'foo:bar') and does not apply to blender object and data names which are always exported in the 'userProperties:blender' namespace"
-msgstr "Om angivet läggs det angivna namnområdet till som prefix för exporterade anpassade egenskapsnamn. Detta gäller endast egenskapsnamn som inte redan har ett prefix (t.ex. namnet ”bar”, men inte ”foo:bar”) och gäller inte Blender-objekt och datanamn som alltid exporteras i namnområdet ”userProperties:blender”"
+msgstr "Om angivet läggs det angivna namnområdet till som prefix för exporterade anpassade egenskapsnamn. Detta gäller endast egenskapsnamn som inte redan har ett prefix (t.ex. namnet ”bar”, men inte ”foo:bar”) och gäller inte GameForge 3D Studio-objekt och datanamn som alltid exporteras i namnområdet ”userProperties:blender”"
 
 
 msgid "Use Settings for"
@@ -94123,8 +94123,8 @@ msgid "Allow USD primitives to merge with their Xform parent if they are the onl
 msgstr "Tillåt USD-primitiv att slås samman med sin Xform-förälder om de är det enda barnet i hierarkin"
 
 
-msgid "Import each USD material as a unique Blender material"
-msgstr "Importera varje USD-material som ett unikt Blender-material"
+msgid "Import each USD material as a unique GameForge 3D Studio material"
+msgstr "Importera varje USD-material som ett unikt GameForge 3D Studio-material"
 
 
 msgid "Material Purpose"
@@ -94159,24 +94159,24 @@ msgid "Import only the primitive at the given path and its descendants. Multiple
 msgstr "Importera endast primitivet på den angivna sökvägen och dess underordnade objekt. Flera sökvägar kan anges i en lista avgränsad med kommatecken eller semikolon"
 
 
-msgid "Behavior when importing USD attributes as Blender custom properties"
-msgstr "Beteende vid import av USD-attribut som anpassade egenskaper i Blender"
+msgid "Behavior when importing USD attributes as GameForge 3D Studio custom properties"
+msgstr "Beteende vid import av USD-attribut som anpassade egenskaper i GameForge 3D Studio"
 
 
 msgid "Do not import USD custom attributes"
 msgstr "Importera inte anpassade USD-attribut"
 
 
-msgid "Import USD attributes in the 'userProperties' namespace as Blender custom properties. The namespace will be stripped from the property names"
-msgstr "Importera USD-attribut i namnområdet \"userProperties\" som anpassade egenskaper i Blender. Namnområdet kommer att tas bort från egenskapsnamnen"
+msgid "Import USD attributes in the 'userProperties' namespace as GameForge 3D Studio custom properties. The namespace will be stripped from the property names"
+msgstr "Importera USD-attribut i namnområdet \"userProperties\" som anpassade egenskaper i GameForge 3D Studio. Namnområdet kommer att tas bort från egenskapsnamnen"
 
 
 msgid "All Custom"
 msgstr "Alla anpassade"
 
 
-msgid "Import all USD custom attributes as Blender custom properties. Namespaces will be retained in the property names"
-msgstr "Importera alla anpassade USD-attribut som anpassade egenskaper i Blender. Namnområden behålls i egenskapsnamnen"
+msgid "Import all USD custom attributes as GameForge 3D Studio custom properties. Namespaces will be retained in the property names"
+msgstr "Importera alla anpassade USD-attribut som anpassade egenskaper i GameForge 3D Studio. Namnområden behålls i egenskapsnamnen"
 
 
 msgid "Mesh Attributes"
@@ -95096,8 +95096,8 @@ msgid "Set the mask layer from the UV map buttons"
 msgstr "Ange masklagret med knapparna för UV-kartor"
 
 
-msgid "Maximum edge length for dynamic topology sculpting (as divisor of Blender unit - higher value means smaller edge length)"
-msgstr "Maximal kantlängd för skulptering med dynamisk topologi (som delare av Blender-enheten – högre värde innebär kortare kanter)"
+msgid "Maximum edge length for dynamic topology sculpting (as divisor of GameForge 3D Studio unit - higher value means smaller edge length)"
+msgstr "Maximal kantlängd för skulptering med dynamisk topologi (som delare av GameForge 3D Studio-enheten – högre värde innebär kortare kanter)"
 
 
 msgid "Detail Percentage"
@@ -98422,8 +98422,8 @@ msgid "Edit Methods"
 msgstr "Redigeringsmetoder"
 
 
-msgid "Settings for interacting with Blender data"
-msgstr "Inställningar för interaktion med Blender-data"
+msgid "Settings for interacting with GameForge 3D Studio data"
+msgstr "Inställningar för interaktion med GameForge 3D Studio-data"
 
 
 msgid "Settings for features that are still early in their development stage"
@@ -98490,8 +98490,8 @@ msgid "Sort the recently searched items at the top"
 msgstr "Sortera de senast sökta objekten högst upp"
 
 
-msgid "Version of Blender the userpref.blend was saved with"
-msgstr "Version av Blender som userpref.blend sparades med"
+msgid "Version of GameForge 3D Studio the userpref.blend was saved with"
+msgstr "Version av GameForge 3D Studio som userpref.blend sparades med"
 
 
 msgid "View & Controls"
@@ -99031,8 +99031,8 @@ msgid "All Linked Data Direct"
 msgstr "All länkad data direkt"
 
 
-msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (Blender studio pipeline tool)"
-msgstr "Tvingar all länkad data att betraktas som direkt länkad. Tillfällig lösning för aktuella problem och begränsningar i BAT (Blender Studio Pipeline Tool)"
+msgid "Forces all linked data to be considered as directly linked. Workaround for current issues/limitations in BAT (GameForge 3D Studio studio pipeline tool)"
+msgstr "Tvingar all länkad data att betraktas som direkt länkad. Tillfällig lösning för aktuella problem och begränsningar i BAT (GameForge 3D Studio Studio Pipeline Tool)"
 
 
 msgid "No Asset Indexing"
@@ -99131,8 +99131,8 @@ msgid "Write Legacy Blend File Format"
 msgstr "Skriv äldre Blend-filformat"
 
 
-msgid "Use file format used before Blender 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
-msgstr "Använd filformatet som användes före Blender 5.0. Detta format är mer begränsat men kan ha bättre kompatibilitet med verktyg som ännu inte stöder det nya formatet"
+msgid "Use file format used before version 5.0. This format is more limited but it may have better compatibility with tools that don't support the new format yet"
+msgstr "Använd filformatet som användes före GameForge 3D Studio 5.0. Detta format är mer begränsat men kan ha bättre kompatibilitet med verktyg som ännu inte stöder det nya formatet"
 
 
 msgid "Index of the extensions repository being edited in the Preferences UI"
@@ -99725,8 +99725,8 @@ msgid "Max Threshold"
 msgstr "Maximal tröskel"
 
 
-msgid "Raw input pressure value that is interpreted as 100% by Blender"
-msgstr "Rått indatatryckvärde som Blender tolkar som 100 %"
+msgid "Raw input pressure value that is interpreted as 100% by GameForge 3D Studio"
+msgstr "Rått indatatryckvärde som GameForge 3D Studio tolkar som 100 %"
 
 
 msgid "Show Tablet Debug Values"
@@ -99741,8 +99741,8 @@ msgid "Tablet API"
 msgstr "API för ritplatta"
 
 
-msgid "Select the tablet API to use for pressure sensitivity (may require restarting Blender for changes to take effect)"
-msgstr "Välj API:t för ritplattan som ska användas för tryckkänslighet (Blender kan behöva startas om för att ändringarna ska börja gälla)"
+msgid "Select the tablet API to use for pressure sensitivity (may require restarting GameForge 3D Studio for changes to take effect)"
+msgstr "Välj API:t för ritplattan som ska användas för tryckkänslighet (GameForge 3D Studio kan behöva startas om för att ändringarna ska börja gälla)"
 
 
 msgid "Automatically choose Wintab or Windows Ink depending on the device"
@@ -100189,8 +100189,8 @@ msgid "GPU Backend"
 msgstr "GPU-bakände"
 
 
-msgid "GPU backend to use (requires restarting Blender for changes to take effect)"
-msgstr "GPU-bakände att använda (Blender måste startas om för att ändringarna ska börja gälla)"
+msgid "GPU backend to use (requires restarting GameForge 3D Studio for changes to take effect)"
+msgstr "GPU-bakände att använda (GameForge 3D Studio måste startas om för att ändringarna ska börja gälla)"
 
 
 msgid "Use OpenGL backend"
@@ -100217,20 +100217,20 @@ msgid "Device"
 msgstr "Enhet"
 
 
-msgid "Preferred device to select during detection (requires restarting Blender for changes to take effect)"
-msgstr "Föredragen enhet att välja vid identifiering (Blender måste startas om för att ändringarna ska börja gälla)"
+msgid "Preferred device to select during detection (requires restarting GameForge 3D Studio for changes to take effect)"
+msgstr "Föredragen enhet att välja vid identifiering (GameForge 3D Studio måste startas om för att ändringarna ska börja gälla)"
 
 
-msgid "Auto detect best GPU for running Blender"
-msgstr "Identifiera automatiskt bästa GPU för att köra Blender"
+msgid "Auto detect best GPU for running GameForge 3D Studio"
+msgstr "Identifiera automatiskt bästa GPU för att köra GameForge 3D Studio"
 
 
 msgid "Shader Compilation Workers"
 msgstr "Arbetare för skuggarkompilering"
 
 
-msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting Blender for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
-msgstr "Antal trådar eller underprocesser för kompilering av skuggare, begränsat till det högsta antal trådar som stöds av CPU:n (Blender måste startas om för att ändringarna ska börja gälla). Ett högre antal ökar RAM-användningen och minskar kompileringstiden. Värdet 0 använder automatisk konfiguration. (Endast OpenGL)"
+msgid "Number of shader compilation threads or subprocesses, clamped at the max threads supported by the CPU (requires restarting GameForge 3D Studio for changes to take effect). A higher number increases the RAM usage while reducing compilation time. A value of 0 will use automatic configuration. (OpenGL only)"
+msgstr "Antal trådar eller underprocesser för kompilering av skuggare, begränsat till det högsta antal trådar som stöds av CPU:n (GameForge 3D Studio måste startas om för att ändringarna ska börja gälla). Ett högre antal ökar RAM-användningen och minskar kompileringstiden. Värdet 0 använder automatisk konfiguration. (Endast OpenGL)"
 
 
 msgid "Is Microsoft Store Install"
@@ -100238,7 +100238,7 @@ msgstr "Är en Microsoft Store-installation"
 
 
 msgid "Whether this blender installation is a sandboxed Microsoft Store version"
-msgstr "Om den här Blender-installationen är en sandlådekörd Microsoft Store-version"
+msgstr "Om den här GameForge 3D Studio-installationen är en sandlådekörd Microsoft Store-version"
 
 
 msgid "Legacy Compute Device Type"
@@ -100293,8 +100293,8 @@ msgid "Register for All Users"
 msgstr "Registrera för alla användare"
 
 
-msgid "Make this Blender version open blend files for all users. Requires elevated privileges."
-msgstr "Gör så att denna Blender-version öppnar blend-filer för alla användare. Kräver utökade behörigheter."
+msgid "Make this GameForge 3D Studio version open blend files for all users. Requires elevated privileges."
+msgstr "Gör så att denna GameForge 3D Studio-version öppnar blend-filer för alla användare. Kräver utökade behörigheter."
 
 
 msgid "Maximum number of lines to store for the console buffer"
@@ -100325,8 +100325,8 @@ msgid "Shader Compilation Method"
 msgstr "Metod för skuggarkompilering"
 
 
-msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting Blender for changes to take effect. (OpenGL only)"
-msgstr "Kompileringsmetod för parallell kompilering av skuggare. Underprocesser kräver mycket mer RAM för varje arbetare men kan kompilera skuggare snabbare på vissa system. Blender måste startas om för att ändringarna ska börja gälla. (Endast OpenGL)"
+msgid "Compilation method used for compiling shaders in parallel. Subprocess requires a lot more RAM for each worker but might compile shaders faster on some systems. Requires restarting GameForge 3D Studio for changes to take effect. (OpenGL only)"
+msgstr "Kompileringsmetod för parallell kompilering av skuggare. Underprocesser kräver mycket mer RAM för varje arbetare men kan kompilera skuggare snabbare på vissa system. GameForge 3D Studio måste startas om för att ändringarna ska börja gälla. (Endast OpenGL)"
 
 
 msgid "Thread"
@@ -100381,7 +100381,7 @@ msgid "UI Line Width"
 msgstr "UI-linjebredd"
 
 
-msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and Blender UI scale"
+msgid "Suggested line thickness and point size in pixels, for add-ons displaying custom user interface elements, based on operating system settings and GameForge 3D Studio UI scale"
 msgstr "Rekommenderad linjetjocklek och punktstorlek i pixlar för tillägg som visar anpassade användargränssnittselement, baserat på operativsystemets inställningar och Blenders UI-skala"
 
 
@@ -100389,7 +100389,7 @@ msgid "UI Scale"
 msgstr "UI-skala"
 
 
-msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and Blender display scale."
+msgid "Size multiplier to use when displaying custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and GameForge 3D Studio display scale."
 msgstr "Storleksmultiplikator som används vid visning av anpassade användargränssnittselement, så att de skalas korrekt på skärmar med olika DPI. Detta värde baseras på operativsystemets DPI-inställningar och Blenders visningsskala."
 
 
@@ -101313,7 +101313,7 @@ msgid "Show Memory"
 msgstr "Visa minne"
 
 
-msgid "Show Blender memory usage"
+msgid "Show GameForge 3D Studio memory usage"
 msgstr "Visa Blenders minnesanvändning"
 
 
@@ -101337,8 +101337,8 @@ msgid "Show Version"
 msgstr "Visa version"
 
 
-msgid "Show Blender version string"
-msgstr "Visa Blender-versionssträng"
+msgid "Show GameForge 3D Studio version string"
+msgstr "Visa GameForge 3D Studio-versionssträng"
 
 
 msgid "Show VRAM"
@@ -101669,8 +101669,8 @@ msgid "Collection of project asset libraries"
 msgstr "Samling av projektets resursbibliotek"
 
 
-msgid "Blender Project Variable"
-msgstr "Blender-projektvariabel"
+msgid "GameForge 3D Studio Project Variable"
+msgstr "GameForge 3D Studio-projektvariabel"
 
 
 msgid "Description of the variable (e.g. purpose, semantics, etc.)"
@@ -101773,16 +101773,16 @@ msgid "Deprecated Removal Version"
 msgstr "Version för borttagning vid utfasning"
 
 
-msgid "The Blender version this is expected to be removed"
-msgstr "Blender-version där detta förväntas tas bort"
+msgid "The GameForge 3D Studio version this is expected to be removed"
+msgstr "GameForge 3D Studio-version där detta förväntas tas bort"
 
 
 msgid "Deprecated Version"
 msgstr "Version för utfasning"
 
 
-msgid "The Blender version this was deprecated"
-msgstr "Blender-versionen där detta fasades ut"
+msgid "The GameForge 3D Studio version this was deprecated"
+msgstr "GameForge 3D Studio-versionen där detta fasades ut"
 
 
 msgid "Description of the property for tooltips"
@@ -104044,11 +104044,11 @@ msgid "Path to the relevant po file in the work repository"
 msgstr "Sökväg till relevant po-fil i arbetsarkivet"
 
 
-msgid "PO Blender File Path"
-msgstr "Sökväg till Blender-PO-fil"
+msgid "PO GameForge 3D Studio File Path"
+msgstr "Sökväg till GameForge 3D Studio-PO-fil"
 
 
-msgid "Path to the relevant po file in Blender's source repository"
+msgid "Path to the relevant po file in GameForge 3D Studio's source repository"
 msgstr "Sökväg till relevant PO-fil i Blenders källkodsarkiv"
 
 
@@ -106849,16 +106849,16 @@ msgid "Which implementation of spring to use"
 msgstr "Vilken fjäderimplementering som ska användas"
 
 
-msgid "Blender 2.7"
-msgstr "Blender 2.7"
+msgid "Version 2.7"
+msgstr "GameForge 3D Studio 2.7"
 
 
-msgid "Spring implementation used in Blender 2.7. Damping is capped at 1.0"
-msgstr "Fjäderimplementering som används i Blender 2.7. Dämpningen är begränsad till 1,0"
+msgid "Spring implementation used in version 2.7. Damping is capped at 1.0"
+msgstr "Fjäderimplementering som används i GameForge 3D Studio 2.7. Dämpningen är begränsad till 1,0"
 
 
-msgid "Blender 2.8"
-msgstr "Blender 2.8"
+msgid "Version 2.8"
+msgstr "GameForge 3D Studio 2.8"
 
 
 msgid "New implementation available since 2.8"
@@ -107953,8 +107953,8 @@ msgid "Export Method"
 msgstr "Exportmetod"
 
 
-msgid "How to export the Blender scene to the Hydra render engine"
-msgstr "Hur Blender-scenen exporteras till Hydra-renderingsmotorn"
+msgid "How to export the GameForge 3D Studio scene to the Hydra render engine"
+msgstr "Hur GameForge 3D Studio-scenen exporteras till Hydra-renderingsmotorn"
 
 
 msgid "Fast interactive editing through native Hydra integration"
@@ -110491,8 +110491,8 @@ msgid "Display data belonging to the Video Sequencer"
 msgstr "Visa data som tillhör videosekvenseraren"
 
 
-msgid "Blender File"
-msgstr "Blender-fil"
+msgid "GameForge 3D Studio File"
+msgstr "GameForge 3D Studio-fil"
 
 
 msgid "Display data of current file and linked libraries"
@@ -110503,8 +110503,8 @@ msgid "Data API"
 msgstr "Data-API"
 
 
-msgid "Display low level Blender data and its properties"
-msgstr "Visa Blender-data på låg nivå och dess egenskaper"
+msgid "Display low level GameForge 3D Studio data and its properties"
+msgstr "Visa GameForge 3D Studio-data på låg nivå och dess egenskaper"
 
 
 msgid "Library Overrides"
@@ -110812,8 +110812,8 @@ msgid "Space Preferences"
 msgstr "Inställningsutrymme"
 
 
-msgid "Blender preferences space data"
-msgstr "Rumsdata för Blender-inställningar"
+msgid "GameForge 3D Studio preferences space data"
+msgstr "Rumsdata för GameForge 3D Studio-inställningar"
 
 
 msgid "Search term for filtering in the UI"
@@ -115542,8 +115542,8 @@ msgid "Theme Preferences"
 msgstr "Tema för inställningar"
 
 
-msgid "Theme settings for the Blender Preferences"
-msgstr "Temainställningar för Blender-inställningarna"
+msgid "Theme settings for the GameForge 3D Studio Preferences"
+msgstr "Temainställningar för GameForge 3D Studio-inställningarna"
 
 
 msgid "Search Match"
@@ -117616,8 +117616,8 @@ msgid "Unit Scale"
 msgstr "Enhetsskala"
 
 
-msgid "Scale to use when converting between Blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
-msgstr "Skala som ska användas vid konvertering mellan Blender-enheter och dimensioner. Vid arbete i mikroskopisk eller astronomisk skala kan en liten respektive stor enhetsskala användas för att undvika problem med numerisk precision"
+msgid "Scale to use when converting between GameForge 3D Studio units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems"
+msgstr "Skala som ska användas vid konvertering mellan GameForge 3D Studio-enheter och dimensioner. Vid arbete i mikroskopisk eller astronomisk skala kan en liten respektive stor enhetsskala användas för att undvika problem med numerisk precision"
 
 
 msgid "Unit System"
@@ -123967,8 +123967,8 @@ msgid "Unlocked: {:s}"
 msgstr "Upplåst: {:s}"
 
 
-msgid "Warning! Before unlocking, ensure another instance of Blender is not running."
-msgstr "Varning! Innan du låser upp, se till att ingen annan instans av Blender körs."
+msgid "Warning! Before unlocking, ensure another instance of GameForge 3D Studio is not running."
+msgstr "Varning! Innan du låser upp, se till att ingen annan instans av GameForge 3D Studio körs."
 
 
 msgid "Force unlocking may be necessary in the case of a crash or power failure,"
@@ -124096,8 +124096,8 @@ msgid "Manifest validation failed: {:s}"
 msgstr "Manifestvalidering misslyckades: {:s}"
 
 
-msgid "Online access required to install or update. Launch Blender without --offline-mode"
-msgstr "Internetåtkomst krävs för installation eller uppdatering. Starta Blender utan --offline-mode"
+msgid "Online access required to install or update. Launch GameForge 3D Studio without --offline-mode"
+msgstr "Internetåtkomst krävs för installation eller uppdatering. Starta GameForge 3D Studio utan --offline-mode"
 
 
 msgid "Online access required to install or update. Enable online access in System preferences"
@@ -124108,16 +124108,16 @@ msgid "Add-on \"{:s}\" is already installed!"
 msgstr "Tillägget \"{:s}\" är redan installerat!"
 
 
-msgid "Blender was launched in offline mode, which cannot be changed at runtime"
-msgstr "Blender startades i offline-läge, vilket inte kan ändras under körning"
+msgid "GameForge 3D Studio was launched in offline mode, which cannot be changed at runtime"
+msgstr "GameForge 3D Studio startades i offline-läge, vilket inte kan ändras under körning"
 
 
 msgid "Online access required to install or update."
 msgstr "Internetåtkomst krävs för installation eller uppdatering."
 
 
-msgid "Launch Blender without --offline-mode"
-msgstr "Starta Blender utan --offline-mode"
+msgid "Launch GameForge 3D Studio without --offline-mode"
+msgstr "Starta GameForge 3D Studio utan --offline-mode"
 
 
 msgid "Please enable Online Access from the System settings."
@@ -124212,8 +124212,8 @@ msgid "Missing Built-in Add-ons"
 msgstr "Saknade inbyggda tillägg"
 
 
-msgid "Add-ons previously shipped with Blender are now available from extensions.blender.org."
-msgstr "Tillägg som tidigare levererades med Blender finns nu tillgängliga på extensions.blender.org."
+msgid "Add-ons previously shipped with GameForge 3D Studio are now available from extensions.blender.org."
+msgstr "Tillägg som tidigare levererades med GameForge 3D Studio finns nu tillgängliga på extensions.blender.org."
 
 
 msgid "Missing Add-ons"
@@ -124289,7 +124289,7 @@ msgid "Maintainer"
 msgstr "Underhållsansvarig"
 
 
-msgid "Blender's extension repository not found!"
+msgid "GameForge 3D Studio's extension repository not found!"
 msgstr "Blenders tilläggsarkiv hittades inte!"
 
 
@@ -124323,7 +124323,7 @@ msgid "No visible tags."
 msgstr "Inga synliga taggar."
 
 
-msgid "Blender's extension repository must be enabled to install extensions!"
+msgid "GameForge 3D Studio's extension repository must be enabled to install extensions!"
 msgstr "Blenders tilläggsarkiv måste vara aktiverat för att kunna installera tillägg!"
 
 
@@ -124368,7 +124368,7 @@ msgid "Uninstall Marked"
 msgstr "Avinstallera markerade"
 
 
-msgid "Blender's extension repository must be refreshed!"
+msgid "GameForge 3D Studio's extension repository must be refreshed!"
 msgstr "Blenders tilläggsarkiv måste uppdateras!"
 
 
@@ -124603,8 +124603,8 @@ msgid "Use GPU accelerated denoising if supported, for the best performance. Pre
 msgstr "Använd GPU-accelererad brusreducering om det stöds, för bästa prestanda. Använd OpenImageDenoise framför OptiX"
 
 
-msgid "Blender was compiled without a viewport denoiser"
-msgstr "Blender kompilerades utan brusreducerare för visningsområdet"
+msgid "GameForge 3D Studio was compiled without a viewport denoiser"
+msgstr "GameForge 3D Studio kompilerades utan brusreducerare för visningsområdet"
 
 
 msgid "Do not use compute device"
@@ -124984,8 +124984,8 @@ msgid "Invalid context"
 msgstr "Ogiltigt sammanhang"
 
 
-msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and Blender scene have the same frame rate"
-msgstr "BVH-filen innehåller ingen bildrutelängd i avsnittet MOTION; BVH-filen och Blender-scenen antas ha samma bildfrekvens"
+msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and GameForge 3D Studio scene have the same frame rate"
+msgstr "BVH-filen innehåller ingen bildrutelängd i avsnittet MOTION; BVH-filen och GameForge 3D Studio-scenen antas ha samma bildfrekvens"
 
 
 msgid "Unable to update scene frame rate, as the BVH file contains a zero frame duration in its MOTION section"
@@ -125958,8 +125958,8 @@ msgid "This feature set depends on the following feature set to work properly:"
 msgstr "Denna funktionsuppsättning är beroende av följande funktionsuppsättning för att fungera korrekt:"
 
 
-msgid "This feature set requires Blender {:s} or newer to work properly."
-msgstr "Denna funktionsuppsättning kräver Blender {:s} eller nyare för att fungera korrekt."
+msgid "This feature set requires GameForge 3D Studio {:s} or newer to work properly."
+msgstr "Denna funktionsuppsättning kräver GameForge 3D Studio {:s} eller nyare för att fungera korrekt."
 
 
 msgid "The feature set archive must contain one base directory"
@@ -126518,8 +126518,8 @@ msgstr "Rensa arbetsarkivet"
 
 
 msgctxt "Operator"
-msgid "Update Blender Repository"
-msgstr "Uppdatera Blender-arkivet"
+msgid "Update GameForge 3D Studio Repository"
+msgstr "Uppdatera GameForge 3D Studio-arkivet"
 
 
 msgctxt "Operator"
@@ -126833,8 +126833,8 @@ msgid "Unable to find any running process"
 msgstr "Kan inte hitta någon körande process"
 
 
-msgid "Blender sub-process exited with error code {:d}"
-msgstr "Blender-underprocess avslutades med felkod {:d}"
+msgid "GameForge 3D Studio sub-process exited with error code {:d}"
+msgstr "GameForge 3D Studio-underprocess avslutades med felkod {:d}"
 
 
 msgid "Asset local to the current file, which is not saved anywhere"
@@ -126993,8 +126993,8 @@ msgid "Could not find image '{:s}'"
 msgstr "Kunde inte hitta bilden '{:s}'"
 
 
-msgid "Image editor could not be launched, ensure that the path in User Preferences > File Paths > Applications > Image Editor is valid, and Blender has rights to launch it"
-msgstr "Bildredigeraren kunde inte startas. Kontrollera att sökvägen i Användarinställningar > Filsökvägar > Program > Bildredigerare är giltig och att Blender har behörighet att starta den"
+msgid "Image editor could not be launched, ensure that the path in User Preferences > File Paths > Applications > Image Editor is valid, and GameForge 3D Studio has rights to launch it"
+msgstr "Bildredigeraren kunde inte startas. Kontrollera att sökvägen i Användarinställningar > Filsökvägar > Program > Bildredigerare är giltig och att GameForge 3D Studio har behörighet att starta den"
 
 
 msgid "Context incorrect, image not found"
@@ -127297,8 +127297,8 @@ msgid "Cannot save project because there is no project to save."
 msgstr "Det går inte att spara projektet eftersom det inte finns något projekt att spara."
 
 
-msgid "Project configuration is newer than this version of Blender supports"
-msgstr "Projektkonfigurationen är nyare än den här Blender-versionen stöder"
+msgid "Project configuration is newer than this version of GameForge 3D Studio supports"
+msgstr "Projektkonfigurationen är nyare än den här GameForge 3D Studio-versionen stöder"
 
 
 msgid "Cannot create a project with an empty directory path."
@@ -127437,8 +127437,8 @@ msgid "Installing keymap failed: {:s}"
 msgstr "Installationen av tangentuppsättningen misslyckades: {:s}"
 
 
-msgid "This script was written for Blender version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
-msgstr "Skriptet skrevs för Blender version {:d}.{:d}.{:d} och kanske inte fungerar korrekt trots att det är aktiverat"
+msgid "This script was written for GameForge 3D Studio version {:d}.{:d}.{:d} and might not function (correctly), though it is enabled"
+msgstr "Skriptet skrevs för GameForge 3D Studio version {:d}.{:d}.{:d} och kanske inte fungerar korrekt trots att det är aktiverat"
 
 
 msgid "File already installed to {!r}"
@@ -127554,8 +127554,8 @@ msgid "Open..."
 msgstr "Öppna..."
 
 
-msgid "Blender is free software"
-msgstr "Blender är fri programvara"
+msgid "GameForge 3D Studio is free software"
+msgstr "GameForge 3D Studio är fri programvara"
 
 
 msgid "Licensed under the GNU General Public License"
@@ -127647,8 +127647,8 @@ msgstr "Vad är nytt"
 
 
 msgctxt "Operator"
-msgid "Donate to Blender"
-msgstr "Donera till Blender"
+msgid "Donate to GameForge 3D Studio"
+msgstr "Donera till GameForge 3D Studio"
 
 
 msgid "Running in Offline Mode"
@@ -127671,12 +127671,12 @@ msgstr "Licens"
 
 
 msgctxt "Operator"
-msgid "Blender Store"
-msgstr "Blender Store"
+msgid "GameForge 3D Studio Store"
+msgstr "GameForge 3D Studio Store"
 
 
 msgctxt "Operator"
-msgid "Blender Website"
+msgid "GameForge 3D Studio Website"
 msgstr "Blenders webbplats"
 
 
@@ -127714,24 +127714,24 @@ msgid "Release Notes"
 msgstr "Versionsinformation"
 
 
-msgid "Read about what's new in this version of Blender"
-msgstr "Läs om vad som är nytt i den här versionen av Blender"
+msgid "Read about what's new in this version of GameForge 3D Studio"
+msgstr "Läs om vad som är nytt i den här versionen av GameForge 3D Studio"
 
 
 msgid "User Manual"
 msgstr "Användarhandbok"
 
 
-msgid "The reference manual for this version of Blender"
-msgstr "Referenshandboken för den här versionen av Blender"
+msgid "The reference manual for this version of GameForge 3D Studio"
+msgstr "Referenshandboken för den här versionen av GameForge 3D Studio"
 
 
 msgid "Python API Reference"
 msgstr "Python API-referens"
 
 
-msgid "The API reference manual for this version of Blender"
-msgstr "API-referenshandboken för den här versionen av Blender"
+msgid "The API reference manual for this version of GameForge 3D Studio"
+msgstr "API-referenshandboken för den här versionen av GameForge 3D Studio"
 
 
 msgid "Development Fund"
@@ -127742,7 +127742,7 @@ msgid "The donation program to support maintenance and improvements"
 msgstr "Donationsprogrammet för att stödja underhåll och förbättringar"
 
 
-msgid "Blender's official web-site"
+msgid "GameForge 3D Studio's official web-site"
 msgstr "Blenders officiella webbplats"
 
 
@@ -127750,7 +127750,7 @@ msgid "Credits"
 msgstr "Medverkande"
 
 
-msgid "Lists committers to Blender's source code"
+msgid "Lists committers to GameForge 3D Studio's source code"
 msgstr "Listar personer som har bidragit till Blenders källkod"
 
 
@@ -127915,8 +127915,8 @@ msgstr "Ogiltigt reguljärt uttryck (ersätt): {:s}"
 
 
 msgctxt "Operator"
-msgid "Import Blender {:d}.{:d} Preferences"
-msgstr "Importera inställningar från Blender {:d}.{:d}"
+msgid "Import GameForge 3D Studio {:d}.{:d} Preferences"
+msgstr "Importera inställningar från GameForge 3D Studio {:d}.{:d}"
 
 
 msgid "Windowing Environment: {:s}"
@@ -130826,8 +130826,8 @@ msgid "Volume Files"
 msgstr "Volymfiler"
 
 
-msgid "Blender IDs"
-msgstr "Blender-ID:n"
+msgid "GameForge 3D Studio IDs"
+msgstr "GameForge 3D Studio-ID:n"
 
 
 msgctxt "Operator"
@@ -132703,7 +132703,7 @@ msgstr "Mer..."
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Settings"
+msgid "Load Factory GameForge 3D Studio Settings"
 msgstr "Ladda Blenders fabriksinställningar"
 
 
@@ -132844,8 +132844,8 @@ msgid "Video Memory"
 msgstr "Videominne"
 
 
-msgid "Blender Version"
-msgstr "Blender-version"
+msgid "GameForge 3D Studio Version"
+msgstr "GameForge 3D Studio-version"
 
 
 msgid "Top Level"
@@ -133145,7 +133145,7 @@ msgstr "Spara som studioljus"
 
 
 msgctxt "Operator"
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "Ladda Blenders fabriksinställningar"
 
 
@@ -133153,12 +133153,12 @@ msgid "Cycles is disabled in this build"
 msgstr "Cycles är inaktiverat i denna version"
 
 
-msgid "A restart of Blender is required"
-msgstr "En omstart av Blender krävs"
+msgid "A restart of GameForge 3D Studio is required"
+msgstr "En omstart av GameForge 3D Studio krävs"
 
 
-msgid "Open blend files with this Blender version"
-msgstr "Öppna .blend-filer med den här Blender-versionen"
+msgid "Open blend files with this GameForge 3D Studio version"
+msgstr "Öppna .blend-filer med den här GameForge 3D Studio-versionen"
 
 
 msgctxt "Operator"
@@ -135889,12 +135889,12 @@ msgid "This asset does not require downloading"
 msgstr "Den här resursen behöver inte hämtas"
 
 
-msgid "Downloading assets requires Python, and this Blender is built without"
-msgstr "Hämtning av resurser kräver Python, men denna Blender-version är byggd utan det"
+msgid "Downloading assets requires Python, and this GameForge 3D Studio is built without"
+msgstr "Hämtning av resurser kräver Python, men denna GameForge 3D Studio-version är byggd utan det"
 
 
-msgid "Downloading asset previews requires Python, and this Blender is built without"
-msgstr "Hämtning av resursförhandsvisningar kräver Python, men denna Blender-version är byggd utan det"
+msgid "Downloading asset previews requires Python, and this GameForge 3D Studio is built without"
+msgstr "Hämtning av resursförhandsvisningar kräver Python, men denna GameForge 3D Studio-version är byggd utan det"
 
 
 msgid "Asset listing does not indicate where the file should be downloaded to, for asset '%s'"
@@ -136057,8 +136057,8 @@ msgid "Unable to create app-template userpref path"
 msgstr "Det går inte att skapa app-mallens användarinställningssökväg"
 
 
-msgid "File written by newer Blender binary (%d.%d), expect loss of data!"
-msgstr "Filen skrevs av en nyare Blender-binärfil (%d.%d); dataförlust kan uppstå!"
+msgid "File written by newer GameForge 3D Studio binary (%d.%d), expect loss of data!"
+msgstr "Filen skrevs av en nyare GameForge 3D Studio-binärfil (%d.%d); dataförlust kan uppstå!"
 
 
 msgid "File could not be read, critical data corruption detected"
@@ -136081,8 +136081,8 @@ msgid "Appended Data"
 msgstr "Tillagda data"
 
 
-msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current Blender"
-msgstr "Vid länkning eller tillägg från ett mycket gammalt .blend-filformat (%d.%d) konverteras ingen animering. Spara om lib-filen med aktuell Blender."
+msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current GameForge 3D Studio"
+msgstr "Vid länkning eller tillägg från ett mycket gammalt .blend-filformat (%d.%d) konverteras ingen animering. Spara om lib-filen med aktuell GameForge 3D Studio."
 
 
 msgid "Lib Reload: Replacing all references to old data-block '%s' by reloaded one failed, old one (%d remaining users) had to be kept and was renamed to '%s'"
@@ -136919,8 +136919,8 @@ msgid "At least 8 common tracks on both keyframes are needed for reconstruction"
 msgstr "Minst 8 gemensamma spår på båda nyckelbilderna krävs för rekonstruktion"
 
 
-msgid "Blender is compiled without motion tracking library"
-msgstr "Blender är kompilerad utan bibliotek för rörelsespårning"
+msgid "GameForge 3D Studio is compiled without motion tracking library"
+msgstr "GameForge 3D Studio är kompilerad utan bibliotek för rörelsespårning"
 
 
 msgid "Original Mode"
@@ -137395,20 +137395,20 @@ msgid "Blend file '%s' is corrupt, unable to read"
 msgstr ".blend-filen ”%s” är skadad och kan inte läsas"
 
 
-msgid "The file was saved by a newer version, open it with Blender %s or later"
-msgstr "Filen har sparats med en nyare version. Öppna den med Blender %s eller senare"
+msgid "The file was saved by a newer version, open it with GameForge 3D Studio %s or later"
+msgstr "Filen har sparats med en nyare version. Öppna den med GameForge 3D Studio %s eller senare"
 
 
-msgid "Blend file '%s' created by a Big Endian version of Blender, support for these files has been removed in Blender 5.0, use an older version of Blender to open and convert it."
-msgstr ".blend-filen ”%s” skapades av en Big Endian-version av Blender. Stöd för dessa filer togs bort i Blender 5.0. Använd en äldre Blender-version för att öppna och konvertera den."
+msgid "Blend file '%s' created by a Big Endian version of GameForge 3D Studio, support for these files has been removed in version 5.0, use an older version of GameForge 3D Studio to open and convert it."
+msgstr ".blend-filen ”%s” skapades av en Big Endian-version av GameForge 3D Studio. Stöd för dessa filer togs bort i GameForge 3D Studio 5.0. Använd en äldre GameForge 3D Studio-version för att öppna och konvertera den."
 
 
 msgid "Failed to read blend file '%s': %s"
 msgstr "Det gick inte att läsa blend-filen '%s': %s"
 
 
-msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of Blender"
-msgstr "Det går inte att läsa .blend-filen ”%s”: ofullständigt huvud, kan komma från en nyare Blender-version"
+msgid "Cannot read blend file '%s', incomplete header, may be from a newer version of GameForge 3D Studio"
+msgstr "Det går inte att läsa .blend-filen ”%s”: ofullständigt huvud, kan komma från en nyare GameForge 3D Studio-version"
 
 
 msgid "Failed to read file '%s', not a blend file"
@@ -137423,16 +137423,16 @@ msgid "Unable to open '%s': %s"
 msgstr "Det går inte att öppna '%s': %s"
 
 
-msgid "Blendfile '%s' was created by a future version of Blender and contains ID names longer than currently supported. These have been truncated."
-msgstr ".blend-filen ”%s” skapades av en framtida Blender-version och innehåller ID-namn längre än vad som stöds. De har kortats av."
+msgid "Blendfile '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. These have been truncated."
+msgstr ".blend-filen ”%s” skapades av en framtida GameForge 3D Studio-version och innehåller ID-namn längre än vad som stöds. De har kortats av."
 
 
 msgid "Blendfile '%s' appears corrupted, it contains invalid ID names. These have been truncated."
 msgstr ".blend-filen ”%s” verkar vara skadad och innehåller ogiltiga ID-namn. De har kortats av."
 
 
-msgid "Library '%s' was created by a future version of Blender and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current Blender version."
-msgstr "Biblioteket '%s' skapades av en framtida version av Blender och innehåller ID-namn som är längre än vad som för närvarande stöds. Detta kan orsaka att länkade data saknas. Överväg att öppna och spara om biblioteket med den aktuella versionen av Blender."
+msgid "Library '%s' was created by a future version of GameForge 3D Studio and contains ID names longer than currently supported. This may cause missing linked data, consider opening and re-saving that library with the current GameForge 3D Studio version."
+msgstr "Biblioteket '%s' skapades av en framtida version av GameForge 3D Studio och innehåller ID-namn som är längre än vad som för närvarande stöds. Detta kan orsaka att länkade data saknas. Överväg att öppna och spara om biblioteket med den aktuella versionen av GameForge 3D Studio."
 
 
 msgid "Library '%s' appears corrupted, it contains invalid ID names. This may cause missing linked data."
@@ -137443,8 +137443,8 @@ msgid "GP_Palette"
 msgstr "GP_Palette"
 
 
-msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in Blender 2.80 and later, removed instancing"
-msgstr "Icke-tomt objekt '%s' kan inte längre duplicera samlingen '%s' i Blender 2.80 och senare, instansiering har tagits bort"
+msgid "Non-Empty object '%s' cannot duplicate collection '%s' anymore in version 2.80 and later, removed instancing"
+msgstr "Icke-tomt objekt '%s' kan inte längre duplicera samlingen '%s' i GameForge 3D Studio 2.80 och senare, instansiering har tagits bort"
 
 
 msgid "Hidden %d"
@@ -138716,8 +138716,8 @@ msgid "no API versions defined: {:s}"
 msgstr "Inga API-versioner har angetts: {:s}"
 
 
-msgid "remote does not offer an API version supported by this version of Blender"
-msgstr "fjärrservern erbjuder inte en API-version som stöds av denna Blender-version"
+msgid "remote does not offer an API version supported by this version of GameForge 3D Studio"
+msgstr "fjärrservern erbjuder inte en API-version som stöds av denna GameForge 3D Studio-version"
 
 
 msgid "internal error, please report a bug"
@@ -138736,16 +138736,16 @@ msgid "Could not read asset listing for '%s', see Info Editor for details"
 msgstr "Det gick inte att läsa resurslistan för ”%s”. Se informationsredigeraren för detaljer."
 
 
-msgid "could not read asset Blender versions, 'bl_versions' field not set"
-msgstr "Det gick inte att läsa resursens Blender-versioner: fältet ”bl_versions” saknas"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions' field not set"
+msgstr "Det gick inte att läsa resursens GameForge 3D Studio-versioner: fältet ”bl_versions” saknas"
 
 
-msgid "could not read asset Blender versions, 'bl_versions.min' field not set"
-msgstr "Det gick inte att läsa resursens Blender-versioner: fältet ”bl_versions.min” saknas"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not set"
+msgstr "Det gick inte att läsa resursens GameForge 3D Studio-versioner: fältet ”bl_versions.min” saknas"
 
 
-msgid "could not read asset Blender versions, 'bl_versions.min' field not in X.Y notation"
-msgstr "Det gick inte att läsa resursens Blender-versioner: fältet ”bl_versions.min” har inte formatet X.Y"
+msgid "could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not in X.Y notation"
+msgstr "Det gick inte att läsa resursens GameForge 3D Studio-versioner: fältet ”bl_versions.min” har inte formatet X.Y"
 
 
 msgid "could not read asset name, 'name' field not set"
@@ -138928,7 +138928,7 @@ msgid "Asset catalogs cannot be edited in this asset library"
 msgstr "Resurskataloger kan inte redigeras i detta resursbibliotek"
 
 
-msgid "Cannot save asset catalogs before the Blender file is saved"
+msgid "Cannot save asset catalogs before the GameForge 3D Studio file is saved"
 msgstr "Det går inte att spara resurskataloger innan .blend-filen har sparats"
 
 
@@ -139737,8 +139737,8 @@ msgid "Drag to continue sampling, release when done"
 msgstr "Dra för att fortsätta provtagningen, släpp när du är klar"
 
 
-msgid "Press 'Enter' to sample outside of a Blender window"
-msgstr "Tryck på Retur för att ta ett prov utanför ett Blender-fönster"
+msgid "Press 'Enter' to sample outside of a GameForge 3D Studio window"
+msgstr "Tryck på Retur för att ta ett prov utanför ett GameForge 3D Studio-fönster"
 
 
 msgid "Could not resolve path '%s'"
@@ -141189,15 +141189,13 @@ msgid "Show in Info Log"
 msgstr "Visa i informationsloggen"
 
 
-msgid ""
-"File saved by newer Blender\n"
-"({}), expect loss of data"
+msgid "File saved by newer GameForge 3D Studio\n({}), expect loss of data"
 msgstr ""
-"Filen sparades med en nyare version av Blender\n"
+"Filen sparades med en nyare version av GameForge 3D Studio\n"
 "({}); risk för dataförlust"
 
 
-msgid "This file is managed by the Blender asset system and cannot be overridden"
+msgid "This file is managed by the GameForge 3D Studio asset system and cannot be overridden"
 msgstr "Denna fil hanteras av Blenders resurssystem och kan inte åsidosättas"
 
 
@@ -141342,8 +141340,8 @@ msgid "No filename given"
 msgstr "Inget filnamn angivet"
 
 
-msgid "Blender Data"
-msgstr "Blender-data"
+msgid "GameForge 3D Studio Data"
+msgstr "GameForge 3D Studio-data"
 
 
 msgid "File References"
@@ -143990,8 +143988,8 @@ msgid "Deleted %d tx files"
 msgstr "Tog bort %d tx-filer"
 
 
-msgid "Blender Render"
-msgstr "Blender-rendering"
+msgid "GameForge 3D Studio Render"
+msgstr "GameForge 3D Studio-rendering"
 
 
 msgid "Failed to open window!"
@@ -144150,11 +144148,11 @@ msgid "Flip to Bottom"
 msgstr "Vänd nedåt"
 
 
-msgid "Blender Drivers Editor"
+msgid "GameForge 3D Studio Drivers Editor"
 msgstr "Blenders drivrutinsredigerare"
 
 
-msgid "Blender Info Log"
+msgid "GameForge 3D Studio Info Log"
 msgstr "Blenders informationslogg"
 
 
@@ -145294,8 +145292,8 @@ msgstr ""
 "Du kan ändra detta senare i inställningarna under ”System”."
 
 
-msgid "Unreadable Blender library file:"
-msgstr "Oläsbar Blender-biblioteksfil:"
+msgid "Unreadable GameForge 3D Studio library file:"
+msgstr "Oläsbar GameForge 3D Studio-biblioteksfil:"
 
 
 msgid "Could not rename: %s"
@@ -147929,8 +147927,8 @@ msgid "Jump to Line Number"
 msgstr "Hoppa till radnummer"
 
 
-msgid "File Modified Outside and Inside Blender"
-msgstr "Filen har ändrats utanför och i Blender"
+msgid "File Modified Outside and Inside GameForge 3D Studio"
+msgstr "Filen har ändrats utanför och i GameForge 3D Studio"
 
 
 msgid "Reload from disk (ignore local changes)"
@@ -147945,16 +147943,16 @@ msgid "Make text internal (separate copy)"
 msgstr "Gör texten intern (separat kopia)"
 
 
-msgid "File Modified Outside Blender"
-msgstr "Filen har ändrats utanför Blender"
+msgid "File Modified Outside GameForge 3D Studio"
+msgstr "Filen har ändrats utanför GameForge 3D Studio"
 
 
 msgid "Reload from disk"
 msgstr "Ladda om från disk"
 
 
-msgid "File Deleted Outside Blender"
-msgstr "Filen raderades utanför Blender"
+msgid "File Deleted Outside GameForge 3D Studio"
+msgstr "Filen raderades utanför GameForge 3D Studio"
 
 
 msgid "Make text internal"
@@ -149733,8 +149731,8 @@ msgid "An exception occurred invoking USD hook '%s'"
 msgstr "Ett undantag inträffade vid anrop av USD-kroken ”%s”"
 
 
-msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to Blender"
-msgstr "Primvar ”%s” (interpolering %s, typ %s) kan inte konverteras till Blender"
+msgid "Primvar '%s' (interpolation %s, type %s) cannot be converted to GameForge 3D Studio"
+msgstr "Primvar ”%s” (interpolering %s, typ %s) kan inte konverteras till GameForge 3D Studio"
 
 
 msgid "%s: Error: Couldn't get input socket %s for node %s"
@@ -149825,7 +149823,7 @@ msgid "%s: Mismatch in bind xforms and joint counts for skeleton %s"
 msgstr "%s: Antalet bindningstransformeringar och leder stämmer inte överens i skelettet %s"
 
 
-msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to Blender's bone representation. The skeletal animation won't be imported"
+msgid "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. Such matrices may indicate negative scales, possibly due to mirroring operations, and cannot currently be converted to GameForge 3D Studio's bone representation. The skeletal animation won't be imported"
 msgstr "USD-skelettimport: Benmatriser med negativa determinanter upptäcktes i prim %s. Sådana matriser kan tyda på negativ skala, möjligen på grund av speglingsåtgärder, och kan för närvarande inte konverteras till Blenders benrepresentation. Skelettanimeringen importeras inte"
 
 
@@ -149869,8 +149867,8 @@ msgid "Cannot export mixed cyclic and non-cyclic curves in the same Curves objec
 msgstr "Det går inte att exportera blandade cykliska och icke-cykliska kurvor i samma kurvoobjekt"
 
 
-msgid "Attribute '%s' (Blender domain %d, type %d) cannot be converted to USD"
-msgstr "Attributet '%s' (Blender-domän %d, typ %d) kan inte konverteras till USD"
+msgid "Attribute '%s' (GameForge 3D Studio domain %d, type %d) cannot be converted to USD"
+msgstr "Attributet '%s' (GameForge 3D Studio-domän %d, typ %d) kan inte konverteras till USD"
 
 
 msgid "USD does not support animating curve types. The curve type changes from %s to %s on frame %f"
@@ -151450,8 +151448,8 @@ msgid "Unable to open sound file"
 msgstr "Det gick inte att öppna ljudfilen"
 
 
-msgid "Blender compiled without Audaspace support"
-msgstr "Blender kompilerades utan stöd för Audaspace"
+msgid "GameForge 3D Studio compiled without Audaspace support"
+msgstr "GameForge 3D Studio kompilerades utan stöd för Audaspace"
 
 
 msgid "Invalid length"
@@ -154626,8 +154624,8 @@ msgid "Node must be run as tool"
 msgstr "Noden måste köras som verktyg"
 
 
-msgid "Disabled, Blender was compiled without OpenVDB"
-msgstr "Inaktiverad, Blender kompilerades utan OpenVDB"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenVDB"
+msgstr "Inaktiverad, GameForge 3D Studio kompilerades utan OpenVDB"
 
 
 msgid "Disabled, OpenVDB version is too old"
@@ -154972,8 +154970,8 @@ msgid "List with one element per item"
 msgstr "Lista med ett element per objekt"
 
 
-msgid "Disabled, Blender was compiled without Bullet"
-msgstr "Inaktiverad, Blender kompilerades utan Bullet"
+msgid "Disabled, GameForge 3D Studio was compiled without Bullet"
+msgstr "Inaktiverad, GameForge 3D Studio kompilerades utan Bullet"
 
 
 msgid "Points to compute the convex hull of"
@@ -156263,24 +156261,24 @@ msgid "Path to a CSV file"
 msgstr "Sökväg till en CSV-fil"
 
 
-msgid "Disabled, Blender was compiled without OBJ I/O"
-msgstr "Inaktiverad, Blender kompilerades utan OBJ I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without OBJ I/O"
+msgstr "Inaktiverad, GameForge 3D Studio kompilerades utan OBJ I/O"
 
 
 msgid "Path to a OBJ file"
 msgstr "Sökväg till en OBJ-fil"
 
 
-msgid "Disabled, Blender was compiled without PLY I/O"
-msgstr "Inaktiverad, Blender kompilerades utan PLY I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without PLY I/O"
+msgstr "Inaktiverad, GameForge 3D Studio kompilerades utan PLY I/O"
 
 
 msgid "Path to a PLY file"
 msgstr "Sökväg till en PLY-fil"
 
 
-msgid "Disabled, Blender was compiled without STL I/O"
-msgstr "Inaktiverad, Blender kompilerades utan STL I/O"
+msgid "Disabled, GameForge 3D Studio was compiled without STL I/O"
+msgstr "Inaktiverad, GameForge 3D Studio kompilerades utan STL I/O"
 
 
 msgid "Path to a STL file"
@@ -157011,8 +157009,8 @@ msgid "The subdivision level is too large"
 msgstr "Underindelningsnivån är för stor"
 
 
-msgid "Disabled, Blender was compiled without OpenSubdiv"
-msgstr "Inaktiverad, Blender kompilerades utan OpenSubdiv"
+msgid "Disabled, GameForge 3D Studio was compiled without OpenSubdiv"
+msgstr "Inaktiverad, GameForge 3D Studio kompilerades utan OpenSubdiv"
 
 
 msgid "Mesh to subdivide"
@@ -158280,8 +158278,8 @@ msgid "Pack UV Islands Field"
 msgstr "Fält för packning av UV-öar"
 
 
-msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in Blender"
-msgstr "Beräkning med hjälp av biblioteket MikkTSpace, i överensstämmelse med tangenter som används på andra ställen i Blender"
+msgid "Calculation using the MikkTSpace library, consistent with tangents used elsewhere in GameForge 3D Studio"
+msgstr "Beräkning med hjälp av biblioteket MikkTSpace, i överensstämmelse med tangenter som används på andra ställen i GameForge 3D Studio"
 
 
 msgid "Significantly faster method that approximates tangents interpolated across face corners with matching UVs. For a value actually tangential to the surface, use the cross product with the normal."
@@ -160146,8 +160144,8 @@ msgid "Input pending {}"
 msgstr "Indata väntar {}"
 
 
-msgid "Blender File View"
-msgstr "Blender-filvy"
+msgid "GameForge 3D Studio File View"
+msgstr "GameForge 3D Studio-filvy"
 
 
 msgid "Invalid context: \"%s\", %s"
@@ -160174,8 +160172,8 @@ msgid "Overwrite Startup File"
 msgstr "Skriv över startfilen"
 
 
-msgid "Blender will start next time as it is now."
-msgstr "Blender startar nästa gång i nuvarande skick."
+msgid "GameForge 3D Studio will start next time as it is now."
+msgstr "GameForge 3D Studio startar nästa gång i nuvarande skick."
 
 
 msgid "Template \"{}\" will start next time as it is now."
@@ -160198,7 +160196,7 @@ msgid "Load Factory \"{}\" Preferences."
 msgstr "Ladda fabriksinställningarna för ”{}”."
 
 
-msgid "Load Factory Blender Preferences"
+msgid "Load Factory GameForge 3D Studio Preferences"
 msgstr "Ladda Blenders fabriksinställningar"
 
 
@@ -160298,19 +160296,19 @@ msgid "Unable to Load File"
 msgstr "Kan inte ladda filen"
 
 
-msgid "The file is not a valid Blender file."
-msgstr "Filen är inte en giltig Blender-fil."
+msgid "The file is not a valid GameForge 3D Studio file."
+msgstr "Filen är inte en giltig GameForge 3D Studio-fil."
 
 
-msgid "This file was saved by a newer version of Blender (%s)."
-msgstr "Denna fil har sparats med en nyare version av Blender (%s)."
+msgid "This file was saved by a newer version of GameForge 3D Studio (%s)."
+msgstr "Denna fil har sparats med en nyare version av GameForge 3D Studio (%s)."
 
 
-msgid "Saving it with this Blender (%s) may cause loss of data."
-msgstr "Om du sparar den med denna Blender (%s) kan det leda till dataförlust."
+msgid "Saving it with this GameForge 3D Studio (%s) may cause loss of data."
+msgstr "Om du sparar den med denna GameForge 3D Studio (%s) kan det leda till dataförlust."
 
 
-msgid "This file is managed by the Blender asset system. It can only be"
+msgid "This file is managed by the GameForge 3D Studio asset system. It can only be"
 msgstr "Den här filen hanteras av Blenders resurssystem. Den kan endast"
 
 
@@ -160330,12 +160328,12 @@ msgid "Cannot overwrite asset system files. Save as new file"
 msgstr "Systemfiler för resurser kan inte skrivas över. Spara som en ny fil"
 
 
-msgid "with an older Blender version?"
-msgstr "med en äldre version av Blender?"
+msgid "with an older GameForge 3D Studio version?"
+msgstr "med en äldre version av GameForge 3D Studio?"
 
 
-msgid "Overwrite file with an older Blender version?"
-msgstr "Skriv över filen med en äldre version av Blender?"
+msgid "Overwrite file with an older GameForge 3D Studio version?"
+msgstr "Skriv över filen med en äldre version av GameForge 3D Studio?"
 
 
 msgid "Cannot overwrite asset system files. Save as new file?"
@@ -160350,8 +160348,8 @@ msgid "Save changes before closing?"
 msgstr "Spara ändringar innan du stänger?"
 
 
-msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with Blender v4.5 to convert animation data."
-msgstr "En Blenderfil från före version 2.50 har lästs in, men animationsdata har inte lästs in. Öppna och spara filen med Blender v4.5 för att konvertera animationsdata."
+msgid "Loaded a pre-2.50 blend file, animation data has not been loaded. Open & save the file with GameForge 3D Studio v4.5 to convert animation data."
+msgstr "En Blenderfil från före version 2.50 har lästs in, men animationsdata har inte lästs in. Öppna och spara filen med GameForge 3D Studio v4.5 för att konvertera animationsdata."
 
 
 msgid "Cannot overwrite files that are managed by the asset system"
@@ -160394,8 +160392,8 @@ msgid "%d libraries have overrides needing resync (auto resynced in %.0fm%.2fs),
 msgstr "%d bibliotek har åsidosättningar som behöver synkroniseras om (synkroniserades automatiskt på %.0fm%.2fs). Kontrollera Info-redigeraren för mer information"
 
 
-msgid "Proxies have been removed from Blender (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest Blender version"
-msgstr "Proxyobjekt har tagits bort från Blender (%d proxyobjekt konverterades automatiskt till biblioteksåsidosättningar, %d kunde inte konverteras och rensades). Överväg att spara om alla .blend-biblioteksfiler med den senaste versionen av Blender"
+msgid "Proxies have been removed from GameForge 3D Studio (%d proxies were automatically converted to library overrides, %d proxies could not be converted and were cleared). Consider re-saving any library .blend file with the newest GameForge 3D Studio version"
+msgstr "Proxyobjekt har tagits bort från GameForge 3D Studio (%d proxyobjekt konverterades automatiskt till biblioteksåsidosättningar, %d kunde inte konverteras och rensades). Överväg att spara om alla .blend-biblioteksfiler med den senaste versionen av GameForge 3D Studio"
 
 
 msgid "%d sequence strips were not read because they were in a channel larger than %d"
@@ -160678,8 +160676,8 @@ msgstr "Ditt grafikkort eller din drivrutinsversion stöds endast begränsat. De
 
 
 msgctxt "WindowManager"
-msgid "Newer graphics drivers might be available with better Blender compatibility."
-msgstr "Det kan finnas nyare grafikdrivrutiner med bättre Blender-kompatibilitet."
+msgid "Newer graphics drivers might be available with better GameForge 3D Studio compatibility."
+msgstr "Det kan finnas nyare grafikdrivrutiner med bättre GameForge 3D Studio-kompatibilitet."
 
 
 msgctxt "WindowManager"
@@ -160703,8 +160701,8 @@ msgstr "Ditt grafikkort eller din version av macOS stöds inte"
 
 
 msgctxt "WindowManager"
-msgid "Upgrading to the latest macOS version may improve Blender support"
-msgstr "En uppgradering till den senaste versionen av macOS kan förbättra Blender-stödet"
+msgid "Upgrading to the latest macOS version may improve GameForge 3D Studio support"
+msgstr "En uppgradering till den senaste versionen av macOS kan förbättra GameForge 3D Studio-stödet"
 
 
 msgctxt "WindowManager"
@@ -160713,8 +160711,8 @@ msgstr "Ditt grafikkort eller din drivrutinsversion stöds inte."
 
 
 msgctxt "WindowManager"
-msgid "Blender will now close."
-msgstr "Blender stängs nu."
+msgid "GameForge 3D Studio will now close."
+msgstr "GameForge 3D Studio stängs nu."
 
 
 msgid "Intel binary detected. Expect reduced performance."
@@ -161114,8 +161112,8 @@ msgid "Stroke and Fill"
 msgstr "Streck och fyllning"
 
 
-msgid "Blender 27x"
-msgstr "Blender 27x"
+msgid "version 27x"
+msgstr "GameForge 3D Studio 27x"
 
 
 msgid "Industry Compatible"
@@ -161335,8 +161333,8 @@ msgid "Import-Export BVH from armature objects"
 msgstr "Importera-exportera BVH från armaturer"
 
 
-msgid "Blender Extensions"
-msgstr "Blender-utökningar"
+msgid "GameForge 3D Studio Extensions"
+msgstr "GameForge 3D Studio-utökningar"
 
 
 msgid "Extension repository support for remote repositories"
@@ -161387,8 +161385,8 @@ msgid "Manage UI translations"
 msgstr "Hantera översättningar av användargränssnittet"
 
 
-msgid "Allows managing UI translations directly from Blender (update main .po files, update scripts' translations, etc.)"
-msgstr "Gör det möjligt att hantera översättningar av användargränssnittet direkt från Blender (uppdatera huvudsakliga .po-filer, uppdatera skriptens översättningar osv.)"
+msgid "Allows managing UI translations directly from GameForge 3D Studio (update main .po files, update scripts' translations, etc.)"
+msgstr "Gör det möjligt att hantera översättningar av användargränssnittet direkt från GameForge 3D Studio (uppdatera huvudsakliga .po-filer, uppdatera skriptens översättningar osv.)"
 
 
 msgid "Various tools to enhance and speed up node-based workflow"

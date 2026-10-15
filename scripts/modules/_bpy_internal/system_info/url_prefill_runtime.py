@@ -18,7 +18,7 @@ def url_from_blender():
 
     query_params = {
         "type": "bug_report",
-        "project": "blender",
+        "project": "gameforge-3d-studio",
     }
 
     query_params["os"] = "{:s} {:d} Bits".format(
@@ -53,4 +53,4 @@ def url_from_blender():
     )
 
     query_str = urllib.parse.urlencode(query_params)
-    return "https://redirect.blender.org/?" + query_str
+    return "https://atomgameforge.com/?" + query_str

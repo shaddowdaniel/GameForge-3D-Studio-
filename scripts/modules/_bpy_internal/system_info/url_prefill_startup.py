@@ -24,7 +24,7 @@ def url_from_blender() -> str:
 
     print("Collecting system information...")
 
-    query_params = {"type": "bug_report", "project": "blender"}
+    query_params = {"type": "bug_report", "project": "gameforge-3d-studio"}
 
     query_params["os"] = "{:s} {:d} Bits".format(
         platform.platform(),
@@ -44,7 +44,7 @@ def url_from_blender() -> str:
     if os_type == "Darwin":  # macOS appears as Darwin.
         blender_bin = script_directory.joinpath("../../../../../../MacOS/Blender")
     elif os_type == "Windows":
-        blender_bin = script_directory.joinpath("../../../../../Blender.exe")
+        blender_bin = script_directory.joinpath("../../../../../GameForge3DStudio.exe")
     else:  # Linux and other Unix systems.
         blender_bin = script_directory.joinpath("../../../../../blender")
 
@@ -70,7 +70,7 @@ def url_from_blender() -> str:
 
     # Gather Blender version information.
     values: dict[str, str] = {
-        "version": re_group_or_unknown(re.search(r"^Blender (.*)", text, flags=re.MULTILINE)),
+        "version": re_group_or_unknown(re.search(r"^GameForge 3D Studio (.*)", text, flags=re.MULTILINE)),
         "branch": re_group_or_unknown(re.search(r"^\s+build branch: (.*)", text, flags=re.MULTILINE)),
         "commit_date": re_group_or_unknown(re.search(r"^\s+build commit date: (.*)", text, flags=re.MULTILINE)),
         "commit_time": re_group_or_unknown(re.search(r"^\s+build commit time: (.*)", text, flags=re.MULTILINE)),
@@ -79,8 +79,8 @@ def url_from_blender() -> str:
 
     if not (set(values.values()) - {unknown_string}):
         # No valid Blender info could be found.
-        print("Blender did not provide any build information. Blender may be corrupt or blocked from running.")
-        print("Please try reinstalling Blender and double check your anti-virus isn't blocking it from running.")
+        print("GameForge 3D Studio did not provide any build information. It may be corrupt or blocked from running.")
+        print("Please try reinstalling GameForge 3D Studio and double check your anti-virus isn't blocking it from running.")
         return ""
 
     query_params["broken_version"] = (
@@ -89,7 +89,7 @@ def url_from_blender() -> str:
         )
     )
 
-    return "https://redirect.blender.org/?{:s}".format(urllib.parse.urlencode(query_params))
+    return "https://atomgameforge.com/?{:s}".format(urllib.parse.urlencode(query_params))
 
 
 def main() -> int:

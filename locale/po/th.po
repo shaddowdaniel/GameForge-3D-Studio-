@@ -674,7 +674,7 @@ msgid "Fribidi Library"
 msgstr "ห้องสมุดฟริบิดี"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in Blender libraries repository"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in GameForge 3D Studio libraries repository"
 msgstr "คลังโปรแกรมฟรีบีดีที่แปลโปรแกรมด้วยภาษาซี (จุดเอสโอ บนลินุกซ์, จุดดีแอลแอล บนวินโดวส์...) คุณอาจต้องแก้ไขหากใช้วินโดวส์ เช่น ใช้คลังโปรแกรมที่มีอยู่ในคลังโปรแกรมของเบลนเดอร์"
 
 
@@ -698,7 +698,7 @@ msgid "Source Root"
 msgstr "รากแหล่งที่มา"
 
 
-msgid "The Blender source root path"
+msgid "The GameForge 3D Studio source root path"
 msgstr "เส้นทางรากของรหัสต้นฉบับเบลนเดอร์"
 
 
@@ -722,7 +722,7 @@ msgid "Persistent Data Path"
 msgstr "เส้นทางข้อมูลถาวร"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgid "The name of a json file storing those settings (unfortunately, GameForge 3D Studio's system does not work here)"
 msgstr "ชื่อไฟล์เจสันที่เก็บการตั้งค่าเหล่านั้น (น่าเสียดายที่ระบบของเบลนเดอร์ไม่รองรับส่วนนี้)"
 
 
@@ -1646,7 +1646,7 @@ msgid "Current File"
 msgstr "ไฟล์ปัจจุบัน"
 
 
-msgid "Show the assets currently available in this Blender session"
+msgid "Show the assets currently available in this GameForge 3D Studio session"
 msgstr "แสดงสินทรัพย์ที่มีอยู่ในช่วงสมัยของเบลนเดอร์นี้"
 
 
@@ -1706,7 +1706,7 @@ msgid "Catalog UUID"
 msgstr "ยูยูไอดีของสารบัญแฟ้ม"
 
 
-msgid "Identifier for the asset's catalog, used by Blender to look up the asset's catalog path. Must be a UUID according to RFC4122."
+msgid "Identifier for the asset's catalog, used by GameForge 3D Studio to look up the asset's catalog path. Must be a UUID according to RFC4122."
 msgstr "ตัวระบุสำหรับสารบัญแฟ้มของสินทรัพย์ ซึ่งเบลนเดอร์ใช้ในการค้นหาเส้นทางสารบัญแฟ้มของสินทรัพย์ ต้องเป็นยูยูไอดีตามมาตรฐานอาร์เอฟซี4122"
 
 
@@ -2363,7 +2363,7 @@ msgid "Is Internal"
 msgstr "เป็นการภายใน"
 
 
-msgid "The attribute is meant for internal use by Blender"
+msgid "The attribute is meant for internal use by GameForge 3D Studio"
 msgstr "ลักษณะประจำนี้มีไว้สำหรับใช้งานภายในของเบลนเดอร์เท่านั้น"
 
 
@@ -3610,8 +3610,8 @@ msgid "A color space, view or display was not found, which likely means the Open
 msgstr "ไม่พบพื้นที่สี มุมมอง หรือการแสดงผล ซึ่งอาจหมายความว่าไฟล์การกำหนดค่า OpenColorIO ที่ใช้สร้างไฟล์ Blend นี้หายไป"
 
 
-msgid "Blender"
-msgstr "Blender"
+msgid "GameForge 3D Studio"
+msgstr "GameForge 3D Studio"
 
 
 msgid "Color space used for all scene linear colors in this file, and for compositing, shader and geometry nodes processing"
@@ -6195,8 +6195,8 @@ msgstr "ลบ"
 
 
 msgctxt "Operator"
-msgid "Quit Blender"
-msgstr "ออกจาก Blender"
+msgid "Quit GameForge 3D Studio"
+msgstr "ออกจาก GameForge 3D Studio"
 
 
 msgid "Zoom Path"
@@ -6218,8 +6218,8 @@ msgstr "บันทึกการคัดลอก"
 
 
 msgctxt "Operator"
-msgid "Save Blender File"
-msgstr "บันทึกเป็นไฟล์ Blender"
+msgid "Save GameForge 3D Studio File"
+msgstr "บันทึกเป็นไฟล์ GameForge 3D Studio"
 
 
 msgid "Red-Cyan"
@@ -7075,8 +7075,8 @@ msgid "Text Files"
 msgstr "ไฟล์ข้อความ"
 
 
-msgid "Blender IDs"
-msgstr "Blender ID"
+msgid "GameForge 3D Studio IDs"
+msgstr "GameForge 3D Studio ID"
 
 
 msgctxt "Operator"
@@ -7981,8 +7981,8 @@ msgid "Paper"
 msgstr "กระดาษ"
 
 
-msgid "Blender Render"
-msgstr "ตัวเรนเดอร์ของ Blender"
+msgid "GameForge 3D Studio Render"
+msgstr "ตัวเรนเดอร์ของ GameForge 3D Studio"
 
 
 msgid "%d x %d"

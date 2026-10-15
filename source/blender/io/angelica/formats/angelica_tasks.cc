@@ -118,7 +118,8 @@ int max_award_scales(uint32_t v)
 /**
  * Bits of `CombinedSwitches`, in the order the engine assigns them. A switch exists in versions
  * `[min, max]` (0 meaning unbounded); the bit index of a switch is the number of existing switches
- * before it.
+ * before it. Checked against the servers' `ECombinedSwitch` of versions 191 (20 bytes) and 194 (21
+ * bytes, bit 160 = ShowMethod); the switches after ShowMethod come from sTASKedit's table.
  */
 struct SwitchInfo {
   const char *name;
@@ -287,7 +288,32 @@ constexpr SwitchInfo SWITCHES[] = {
     {"BindedRecaller", 167, 0},
     {"ShowNeedFriendPoint", 167, 0},
     {"HistoryVarTask", 175, 0},
+    /* In the version 191 and 194 sources, introduced after HistoryVarTask. */
+    {"PremRank", 175, 0},
+    {"DeliverByUI", 175, 0},
+    {"WarTaskAward", 175, 0},
+    {"HideOtherPlayer", 175, 0},
+    {"RecordDeliverTime", 175, 0},
     {"ShowMethod", 194, 0},
+    {"CheckPanguLevel", 198, 0},
+    {"AchievementSeriesId", 198, 0},
+    {"VaguePromptingMode", 198, 0},
+    {"CheckPanguEquip", 215, 0},
+    {"ShowPanguEquipPremise", 215, 0},
+    {"ShowExploreIcon", 215, 0},
+    {"ShowByExpNotFull", 234, 0},
+    {"CheckInventorySize", 218, 0},
+    {"CheckStorageSize", 218, 0},
+    {"ShowPackSizePremise", 218, 0},
+    {"ShowByRealmExpNotFull", 234, 0},
+    {"AllowBatchAward", 234, 0},
+    {"CheckExp", 223, 0},
+    {"CheckRealmExp", 223, 0},
+    {"ShowPropertyPremis", 223, 0},
+    {"CheckLieMoLevel", 223, 0},
+    {"CheckYuMoLevel", 223, 0},
+    {"ShowDailyActivityPremise", 229, 0},
+    {"FailIconStateID", 236, 0},
 };
 
 bool switch_exists(const SwitchInfo &s, uint32_t v)

@@ -282,7 +282,7 @@ PyDoc_STRVAR(
     "        filepath may be absolute, or relative to the loaded blend-file. The output\n"
     "        ``libraries`` attribute is always ``None``.\n"
     "      - A ``version`` attribute, representing the version of the loaded library blend-file\n"
-    "        (for the input) or the version of the current Blender (for the output).\n"
+    "        (for the input) or the version of the current GameForge 3D Studio (for the output).\n"
     "\n"
     "   Notes:\n"
     "      - Not all data-block types are linkable (e.g. WindowManager, Library, ...).\n"

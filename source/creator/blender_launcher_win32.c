@@ -15,6 +15,10 @@
 #include <PathCch.h>
 #include <tlhelp32.h>
 
+/* `BLENDER_WIN_EXE_NAME` is a narrow string literal defined by CMake. */
+#define WIDEN_IMPL(x) L##x
+#define WIDEN(x) WIDEN_IMPL(x)
+
 static BOOL LaunchedFromSteam(void)
 {
   HANDLE hSnapShot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
@@ -77,7 +81,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
   siStartInfo.wShowWindow = SW_HIDE;
   siStartInfo.dwFlags = STARTF_USESHOWWINDOW;
 
-  /* Get the path to the currently running executable (`blender-launcher.exe`). */
+  /* Get the path to the currently running executable (`GameForge3DStudio-launcher.exe`). */
 
   DWORD nSize = GetModuleFileName(NULL, path, MAX_PATH);
   if (!nSize) {
@@ -93,13 +97,13 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
     return -1;
   }
 
-  /* Remove the filename (blender-launcher.exe) from path. */
+  /* Remove the filename (the launcher) from path. */
   if (PathCchRemoveFileSpec(path, MAX_PATH) != S_OK) {
     return -1;
   }
 
-  /* Add blender.exe to path, resulting in the full path to the blender executable. */
-  if (PathCchCombine(path, MAX_PATH, path, L"blender.exe") != S_OK) {
+  /* Add the application executable to path, resulting in its full path. */
+  if (PathCchCombine(path, MAX_PATH, path, WIDEN(BLENDER_WIN_EXE_NAME)) != S_OK) {
     return -1;
   }
 

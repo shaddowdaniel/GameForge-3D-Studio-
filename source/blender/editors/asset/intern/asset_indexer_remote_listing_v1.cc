@@ -77,20 +77,20 @@ static ReadingResult<bool> blender_version_matches(const DictionaryValue &asset_
   const DictionaryValue *bl_versions_dict = asset_dictionary.lookup_dict("bl_versions");
   if (!bl_versions_dict) {
     return ReadingResult<bool>::Failure(
-        N_("could not read asset Blender versions, 'bl_versions' field not set"));
+        N_("could not read asset GameForge 3D Studio versions, 'bl_versions' field not set"));
   }
 
   /* Check the 'min' field. */
   const std::optional<StringRef> min_opt = bl_versions_dict->lookup_str("min");
   if (!min_opt) {
     return ReadingResult<bool>::Failure(
-        N_("could not read asset Blender versions, 'bl_versions.min' field not set"));
+        N_("could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not set"));
   }
 
   const std::optional<int> bl_version_min = blender_version_from_string(*min_opt);
   if (!bl_version_min) {
     return ReadingResult<bool>::Failure(
-        N_("could not read asset Blender versions, 'bl_versions.min' field not in X.Y notation"));
+        N_("could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not in X.Y notation"));
   }
   if (BLENDER_VERSION < *bl_version_min) {
     /* This Blender version is older than what the asset needs, so skip it. */
@@ -108,7 +108,7 @@ static ReadingResult<bool> blender_version_matches(const DictionaryValue &asset_
   const std::optional<int> bl_version_until = blender_version_from_string(*until_opt);
   if (!bl_version_until) {
     return ReadingResult<bool>::Failure(
-        N_("could not read asset Blender versions, 'bl_versions.min' field not in X.Y notation"));
+        N_("could not read asset GameForge 3D Studio versions, 'bl_versions.min' field not in X.Y notation"));
   }
   return ReadingResult<bool>::Success(BLENDER_VERSION < *bl_version_until);
 }

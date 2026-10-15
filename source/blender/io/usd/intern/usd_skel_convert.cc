@@ -884,7 +884,7 @@ void import_skeleton(Main *bmain,
         RPT_WARNING,
         "USD Skeleton Import: bone matrices with negative determinants detected in prim %s. "
         "Such matrices may indicate negative scales, possibly due to mirroring operations, "
-        "and cannot currently be converted to Blender's bone representation. "
+        "and cannot currently be converted to GameForge 3D Studio's bone representation. "
         "The skeletal animation won't be imported",
         skel.GetPath().GetAsString().c_str());
   }
